@@ -318,85 +318,90 @@
                         <hr class="navbar-vertical-divider mx-3">
                     </ul>
 
-                    {{-- penilaian reka bentuk bangunan --}}
-                    <a class="nav-link py-0 dropdown-indicator {{ Request::is('dashboard/*') ? 'active-main' : '' }}"
-                        href="#dashboard" role="button" data-bs-toggle="collapse"
-                        aria-expanded="{{ Request::is('dashboard') ? 'true' : 'false' }}" aria-controls="dashboard">
+                    {{-- penilaian reka bentuk bangunan--}}
+                    <a class="nav-link py-0 dropdown-indicator {{ Request::is('penilaian_reka_bentuk_bangunan/*') ? 'active-main' : '' }}"
+                        href="#penilaian_reka_bentuk_bangunan" role="button" data-bs-toggle="collapse"
+                        aria-expanded="{{ Request::is('penilaian_reka_bentuk_bangunan') ? 'true' : 'false' }}"
+                        aria-controls="penilaian_reka_bentuk_bangunan">
                         <div class="d-flex align-items-center nav-link-side px-0">
                             <span class="px-3"><span class="fas fa-home"></span> Penilaian Reka Bentuk Bangunan</span>
                         </div>
                     </a>
-                    <ul class="nav-item collapse {{ Request::is('dashboard/*') ? 'show' : 'false' }} my-1"
-                        id="dashboard">
+                    <ul class="nav-item collapse {{ Request::is('penilaian_reka_bentuk_bangunan/*') ? 'show' : 'false' }} my-1"
+                        id="penilaian_reka_bentuk_bangunan">
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('dashboard/laman_utama') ? 'active' : '' }} py-0"
-                                href="/dashboard/laman_utama">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/senarai_projek') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/senarai_projek">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('dashboard/laman_utama') ? 'text-dark' : '' }}">Paparan
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/senarai_projek') ? 'text-dark' : '' }}">Paparan
                                         Senarai Projek</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
-                                href="/dashboard/pengesahan_pengguna">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/pemudah_cara">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Melantik
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
                                         Pemudah Cara</span>
                                 </div>
                             </a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
-                                href="/dashboard/pengesahan_pengguna">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/penilaian_reka_bentuk') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/penilaian_reka_bentuk">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Penilaian
-                                        Verifikasi</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/penilaian_reka_bentuk') ? 'text-dark' : '' }}">Penilaian Verifikasi</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/pengesahan_penilaian_reka_bentuk') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_verifikasi">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pengesahan_penilaian_verifikasi') ? 'text-dark' : '' }}">Pengesahan Penilaian 
+                                    Verifikasi</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/jana_sijil') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/jana_sijil">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/jana_sijil') ? 'text-dark' : '' }}">Jana Sijil</span>
                                 </div>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
-                                href="/dashboard/pengesahan_pengguna">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/semakan_rawak') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/semakan_rawak">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Pengesahan
-                                        Penilaian Verifikasi</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Semakan Rawak</span>
                                 </div>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
-                                href="/dashboard/pengesahan_pengguna">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/pendaftaran_projek">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Jana
-                                        Sijil</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pendaftaran_projek') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil 
+                                        Verifikasi Pemarkahan</span>
                                 </div>
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
-                                href="/dashboard/pengesahan_pengguna">
-                                <div class="d-flex align-items-center nav-link-side">
-                                    <span
-                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Semakan
-                                        Rawak</span>
-                                </div>
-                            </a>
-                        </li>
-
-
-
                         <hr class="navbar-vertical-divider mx-3">
                     </ul>
+
+                    
 
                 </li>
                 <hr class="navbar-vertical-divider mx-3">

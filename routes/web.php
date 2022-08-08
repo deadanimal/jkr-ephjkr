@@ -74,5 +74,11 @@ Route::middleware('auth')->group(function () {
         ]);
     });
 
+    Route::prefix('/penilaian_reka_bentuk_bangunan')->group(function (){
+        Route::resources([
+            // 'senarai_projek'=>ProjekController::class,
+        ]);
+    });
+
     
 });
