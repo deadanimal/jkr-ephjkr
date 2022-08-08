@@ -238,80 +238,80 @@
                     </ul>
 
                     {{-- penilaian reka bentuk --}}
-                    <a class="nav-link py-0 dropdown-indicator {{ Request::is('penialaian_reka_bentuk_gpss/*') ? 'active-main' : '' }}"
-                        href="#penialaian_reka_bentuk_gpss" role="button" data-bs-toggle="collapse"
-                        aria-expanded="{{ Request::is('penialaian_reka_bentuk_gpss') ? 'true' : 'false' }}"
-                        aria-controls="penialaian_reka_bentuk_gpss">
+                    <a class="nav-link py-0 dropdown-indicator {{ Request::is('penilaian_reka_bentuk_gpss/*') ? 'active-main' : '' }}"
+                        href="#penilaian_reka_bentuk_gpss" role="button" data-bs-toggle="collapse"
+                        aria-expanded="{{ Request::is('penilaian_reka_bentuk_gpss') ? 'true' : 'false' }}"
+                        aria-controls="penilaian_reka_bentuk_gpss">
                         <div class="d-flex align-items-center nav-link-side px-0">
                             <span class="px-3"><span class="fas fa-home"></span> Penilaian Reka Bentuk GPSS</span>
                         </div>
                     </a>
-                    <ul class="nav-item collapse {{ Request::is('penialaian_reka_bentuk_gpss/*') ? 'show' : 'false' }} my-1"
-                        id="penialaian_reka_bentuk_gpss">
+                    <ul class="nav-item collapse {{ Request::is('penilaian_reka_bentuk_gpss/*') ? 'show' : 'false' }} my-1"
+                        id="penilaian_reka_bentuk_gpss">
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/senarai_projek') ? 'active' : '' }} py-0"
-                                href="/penialaian_reka_bentuk_gpss/senarai_projek">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/senarai_projek') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_gpss/senarai_projek">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penialaian_reka_bentuk_gpss/senarai_projek') ? 'text-dark' : '' }}">Paparan
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/senarai_projek') ? 'text-dark' : '' }}">Paparan
                                         Senarai Projek</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/pemudah_cara') ? 'active' : '' }} py-0"
-                                href="/penialaian_reka_bentuk_gpss/pemudah_cara">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/pemudah_cara') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_gpss/pemudah_cara">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penialaian_reka_bentuk_gpss/pemudah_cara') ? 'text-dark' : '' }}">Melantik
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/pemudah_cara') ? 'text-dark' : '' }}">Melantik
                                         Pemudah Cara</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/penilaian_reka_bentuk') ? 'active' : '' }} py-0"
-                                href="/penialaian_reka_bentuk_gpss/penilaian_reka_bentuk">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/penilaian_reka_bentuk') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_gpss/penilaian_reka_bentuk">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penialaian_reka_bentuk_gpss/penilaian_reka_bentuk') ? 'text-dark' : '' }}">Penilaian Reka Bentuk</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/penilaian_reka_bentuk') ? 'text-dark' : '' }}">Penilaian Reka Bentuk</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/pengesahan_penilaian_reka_bentuk') ? 'active' : '' }} py-0"
-                                href="/penialaian_reka_bentuk_gpss/pengesahan_penilaian_reka_bentuk">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/pengesahan_penilaian_reka_bentuk') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian_reka_bentuk">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penialaian_reka_bentuk_gpss/pengesahan_penilaian_reka_bentuk') ? 'text-dark' : '' }}">Pengesahan Penilaian Reka Bentuk</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/pengesahan_penilaian_reka_bentuk') ? 'text-dark' : '' }}">Pengesahan Penilaian Reka Bentuk</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/jana_keputusan') ? 'active' : '' }} py-0"
-                                href="/penialaian_reka_bentuk_gpss/jana_keputusan">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/jana_keputusan') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_gpss/jana_keputusan">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penialaian_reka_bentuk_gpss/jana_keputusan') ? 'text-dark' : '' }}">Jana Keputusan</span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/skor_penilaian') ? 'active' : '' }} py-0"
-                                href="/penialaian_reka_bentuk_gpss/skor_penilaian">
-                                <div class="d-flex align-items-center nav-link-side">
-                                    <span
-                                        class="px-0 {{ Request::is('penialaian_reka_bentuk_gpss/skor_penilaian') ? 'text-dark' : '' }}">Papar dan Muat Turun Skor Kad Penilaian Reka Bentuk</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/jana_keputusan') ? 'text-dark' : '' }}">Jana Keputusan</span>
                                 </div>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penialaian_reka_bentuk_gpss/pendaftaran_projek') ? 'active' : '' }} py-0"
-                                href="/penialaian_reka_bentuk_gpss/pendaftaran_projek">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/skor_penilaian') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_gpss/skor_penilaian">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penialaian_reka_bentuk_gpss/pendaftaran_projek') ? 'text-dark' : '' }}">Pendaftaran Projek</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/skor_penilaian') ? 'text-dark' : '' }}">Papar dan Muat Turun Skor Kad Penilaian Reka Bentuk</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_gpss/pendaftaran_projek">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/pendaftaran_projek') ? 'text-dark' : '' }}">Pendaftaran Projek</span>
                                 </div>
                             </a>
                         </li>
