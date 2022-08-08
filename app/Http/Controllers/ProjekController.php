@@ -15,7 +15,7 @@ class ProjekController extends Controller
      */
     public function index()
     {
-        //
+        return view('Projek.index');
     }
 
     /**

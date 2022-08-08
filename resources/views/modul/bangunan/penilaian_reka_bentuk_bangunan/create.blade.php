@@ -1,1 +1,3 @@
-{{-- @extends('layouts.base') --}}
+@extends('layouts.base') 
+
+@se
