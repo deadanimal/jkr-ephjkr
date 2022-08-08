@@ -318,6 +318,86 @@
                         <hr class="navbar-vertical-divider mx-3">
                     </ul>
 
+                    {{-- penilaian reka bentuk bangunan --}}
+                    <a class="nav-link py-0 dropdown-indicator {{ Request::is('dashboard/*') ? 'active-main' : '' }}"
+                        href="#dashboard" role="button" data-bs-toggle="collapse"
+                        aria-expanded="{{ Request::is('dashboard') ? 'true' : 'false' }}" aria-controls="dashboard">
+                        <div class="d-flex align-items-center nav-link-side px-0">
+                            <span class="px-3"><span class="fas fa-home"></span> Penilaian Reka Bentuk Bangunan</span>
+                        </div>
+                    </a>
+                    <ul class="nav-item collapse {{ Request::is('dashboard/*') ? 'show' : 'false' }} my-1"
+                        id="dashboard">
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('dashboard/laman_utama') ? 'active' : '' }} py-0"
+                                href="/dashboard/laman_utama">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('dashboard/laman_utama') ? 'text-dark' : '' }}">Paparan
+                                        Senarai Projek</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
+                                href="/dashboard/pengesahan_pengguna">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Melantik
+                                        Pemudah Cara</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
+                                href="/dashboard/pengesahan_pengguna">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Penilaian
+                                        Verifikasi</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
+                                href="/dashboard/pengesahan_pengguna">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Pengesahan
+                                        Penilaian Verifikasi</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
+                                href="/dashboard/pengesahan_pengguna">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Jana
+                                        Sijil</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('dashboard/pengesahan_pengguna') ? 'active' : '' }} py-0"
+                                href="/dashboard/pengesahan_pengguna">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span
+                                        class="px-0 {{ Request::is('dashboard/pengesahan_pengguna') ? 'text-dark' : '' }}">Semakan
+                                        Rawak</span>
+                                </div>
+                            </a>
+                        </li>
+
+
+
+                        <hr class="navbar-vertical-divider mx-3">
+                    </ul>
+
                 </li>
                 <hr class="navbar-vertical-divider mx-3">
             </ul>
