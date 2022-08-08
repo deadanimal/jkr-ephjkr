@@ -246,7 +246,7 @@
                             <span class="px-3"><span class="fas fa-home"></span> Penilaian Reka Bentuk GPSS</span>
                         </div>
                     </a>
-                    <ul class="nav-item collapse {{ Request::is('penilaian_reka_bentuk_gpss/*') ? 'show' : 'false' }} my-1"
+                    <ul class="nav-item collapse {{ Request::is('penilaian_reka_bentuk_gpss') ? 'show' : 'false' }} my-1"
                         id="penilaian_reka_bentuk_gpss">
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/senarai_projek') ? 'active' : '' }} py-0"

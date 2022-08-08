@@ -46,33 +46,42 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->group(function () {
-
-    Route::prefix('/dashboard')->group(function (){
-        Route::resources([
-            'laman_utama'=>LamanUtamaController::class,
-            'pengesahan_pengguna'=>PengesahanPenggunaController::class,
-        ]);
-    });
-
-    Route::prefix('/pengurusan_maklumat')->group(function () {
-        Route::resources([
-            'profil' => ProfilController::class,
-            'pengguna' => PenggunaController::class,
-            'manual_dan_standard' => ManualDanStandardController::class,
-            'faq' => FaqController::class,
-            'audit_trail' => AuditTrailController::class,
-            'makluma_balas' => MaklumBalasController::class,
-            'hebahan' => HebahanController::class,
-            'pendaftaran_projek' => ProjekController::class,
-        ]);
-    });
-
-    Route::prefix('/penilaian_reka_bentuk_gpss')->group(function (){
-        Route::resources([
-            'senarai_projek'=>ProjekController::class,
-        ]);
-    });
+// Route::middleware('auth')->group(function () {
 
     
+
+    
+// });
+
+Route::prefix('/dashboard')->group(function (){
+    Route::resources([
+        'laman_utama'=>LamanUtamaController::class,
+        'pengesahan_pengguna'=>PengesahanPenggunaController::class,
+    ]);
 });
+
+Route::prefix('/pengurusan_maklumat')->group(function () {
+    Route::resources([
+        'profil' => ProfilController::class,
+        'pengguna' => PenggunaController::class,
+        'manual_dan_standard' => ManualDanStandardController::class,
+        'faq' => FaqController::class,
+        'audit_trail' => AuditTrailController::class,
+        'makluma_balas' => MaklumBalasController::class,
+        'hebahan' => HebahanController::class,
+        'pendaftaran_projek' => ProjekController::class,
+    ]);
+});
+
+Route::prefix('/penilaian_reka_bentuk_gpss')->group(function (){
+    Route::resources([
+        'senarai_projek'=>ProjekController::class,
+        'pemudah_cara'=>ProjekController::class,
+        'penilaian_reka_bentuk'=>ProjekController::class,
+        'pengesahan_penilaian_reka_bentuk'=>ProjekController::class,
+        'jana_keputusan'=>ProjekController::class,
+        'skor_penilaian'=>ProjekController::class,
+    ]);
+});
+
+Route::resource('/Projek', ProjekController::class);
