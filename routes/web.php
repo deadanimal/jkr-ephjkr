@@ -88,9 +88,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
             'senarai_projek_bangunan'=>ProjekController::class,
             'pemudah_cara_bangunan'=>ProjekController::class,
             'penilaian_verifikasi'=>ProjekController::class,
-            'semakan_rawak'=>ProjekController::class,
+            'pengesahan_penilaian_verifikasi'=>ProjekController::class,
             'jana_sijil'=>ProjekController::class,
-            'sijilverifikasipermarkahan'=>ProjekController::class,
+            'semakan_rawak'=>ProjekController::class,
+            'sijil_verifikasi_permarkahan'=>ProjekController::class,
         ]);
     });
 
