@@ -17,6 +17,7 @@ class ProjekController extends Controller
     {
         return view('modul.bangunan.penilaian_reka_bentuk_bangunan.senarai_projek_bangunan.index');
         return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.index');
+    
 
     }
 
@@ -27,7 +28,7 @@ class ProjekController extends Controller
      */
     public function create()
     {
-        //
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
     }
 
     /**

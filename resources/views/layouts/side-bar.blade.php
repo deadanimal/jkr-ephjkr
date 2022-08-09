@@ -342,11 +342,11 @@
                         </li>
                         {{-- Melantik Pemudah Cara --}}
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara_bangunan') ? 'active' : '' }} py-0"
-                                href="/penilaian_reka_bentuk_bangunan/pemudah_cara_bangunan">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara_bangunan/create') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/pemudah_cara_bangunan/create">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara_bangunan') ? 'text-dark' : '' }}">Melantik
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara_bangunan/create') ? 'text-dark' : '' }}">Melantik
                                         Pemudah Cara</span>
                                 </div>
                             </a>

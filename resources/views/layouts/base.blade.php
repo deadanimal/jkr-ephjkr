@@ -197,8 +197,8 @@
         .tox .tox-menu__footer .tox-button:last-child,
         .tox .tox-dialog__footer .tox-button:last-child {
             color: #fff;
-            background-color: #8DB368;
-            border-color: #8DB368;
+            background-color: #F4A258;
+            border-color: #F4A258;
             -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
             box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
         }
@@ -208,8 +208,8 @@
         .tox .tox-menu__footer .tox-button:hover:last-child,
         .tox .tox-dialog__footer .tox-button:hover:last-child {
             color: #fff;
-            background-color: #8DB368;
-            border-color: #8DB368;
+            background-color: #F4A258;
+            border-color: #F4A258;
         }
 
         .btn-check:focus+.btn-primary,
