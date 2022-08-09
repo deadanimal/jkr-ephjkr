@@ -9,8 +9,8 @@
     {{-- horizontal line --}}
     <hr style="color: #EB5500"></hr>
 </div>
-    <div class="container-fluid">
-        <div class="card">
+    {{-- <div class="container-fluid"> --}}
+        {{-- <div class="card"> --}}
             <div class="card-header" style="color: #EB5500">
                 {{-- <b>Maklumat Pemudah Cara</b> --}}
             </div>
@@ -34,52 +34,36 @@
                     </div>
                     </div>
 
-                    <!--No. Telefon-->
+                    <!--Alamat-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Alamat:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="number" autocapitalize="off" name="name" placeholder="No.Tel"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Alamat"/>                        
                     </div>
                     </div>
 
-                    <!--No. Fax-->
+                    <!--Kos Projek Semasa-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Kos Projek Semasa:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="number" autocapitalize="off" name="name" placeholder="No.Fax"/>                        
-                    </div>
-                    </div>
-
-                    <!--Emel-->
-                    <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">E-mel:</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Emel"/>                        
-                    </div>
-                    </div>
-
-                    <!--Disiplin-->
-                    <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Disiplin:</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Disiplin"/>
+                        <input class="form-control" type="number" autocapitalize="off" name="name" placeholder="Kos Projek Semasa"/>                        
                     </div>
                     </div>
 
                     <!--Button Daftar-->
                     {{-- <button class="btn btn-primary" type="submit">Daftar</button> --}}
 
-                    <!--Button Daftar (TOOLTIPS)-->
-                    <div class="text-center">
+                    <!--Button Jana (TOOLTIPS)-->
+                    <div class="text-left">
                         <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                        title="Daftar Pemudah Cara" type="submit">Jana</button>
                     </div>
 
                     
                 </form>
             </div>
-        </div> <!--Card-->
-    </div> <!--Container Fluid-->
+        {{-- </div> <!--Card--> --}}
+    {{-- </div> <!--Container Fluid--> --}}
 
             <!--JS-->
             <!--JS BUTTON TOOLTIPS-->

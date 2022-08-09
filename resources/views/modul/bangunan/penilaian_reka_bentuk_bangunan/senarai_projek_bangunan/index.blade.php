@@ -57,11 +57,17 @@
 
 </div>
     <div class="container-fluid">
-        <div class="input-group rounded">
-            <label class="col-sm-2 col-form-label">Nama Projek:</label>
-            <input type="search" class="form-control rounded" placeholder="Carian" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn btn-primary">Carian</button>
-          </div>
+        {{-- Carian --}}
+        <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label" >Nama Projek:</label>
+                    <div class="col-md-5">
+                        <input type="search" class="form-control rounded" placeholder="Carian" aria-label="Search" aria-describedby="search-addon" />
+                    </div>
+                        <div class="col-md-5">
+                            <button type="button" class="btn btn-primary">Carian</button>
+                        </div>         
+        </div>
+
           
         <div class="col-12">
             <div class="card mt-4">
@@ -114,15 +120,4 @@
             </div>
         </div>
     </div>
-
-<!--from DataTables-->
-{{-- <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    
-<script>
-        $(document).ready( function () {
-    $('#senaraiprojekbangunan').DataTable();
-} );
-</script> --}}
-
 @endsection
