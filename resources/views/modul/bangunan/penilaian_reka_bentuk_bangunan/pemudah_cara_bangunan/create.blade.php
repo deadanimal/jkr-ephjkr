@@ -4,14 +4,16 @@
 <!--Title: Header-->
 <div class="header">
     Melantik Pemudah Cara > Daftar Pemudah Cara
-    <h1 class="header-title">
+    <h1 class="header-title" style="color: #EB5500">
         Penilaian Reka Bentuk Bangunan
     </h1>
+    {{-- horizontal line --}}
+    <hr style="color: #EB5500"></hr>
 </div>
     <div class="container-fluid">
         <div class="card">
-            <div class="card-header">
-                Maklumat Pemudah Cara
+            <div class="card-header" style="color: #EB5500">
+                <b>Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
                 <form action="/pemudah_cara_bangunan" method="post" enctype="multipart/form-data">
