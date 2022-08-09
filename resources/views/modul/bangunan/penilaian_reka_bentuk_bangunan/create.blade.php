@@ -1,3 +1,5 @@
 @extends('layouts.base') 
 
-@se
+@section
+@endsection
+

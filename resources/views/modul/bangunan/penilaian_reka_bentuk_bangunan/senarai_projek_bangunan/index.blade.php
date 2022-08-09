@@ -25,17 +25,17 @@
                                 <table class="table table-bordered table-striped fs--1 mb-0">
 
                                     <!--DATATABLES CODE-->
-                                    <table id="pdkk" class="stripe" >
+                                    <table id="pdkk" class="stripe" style="width:100%">
 
                                         <thead class="bg-200 text-900">
                                             <tr>
-                                                <th class="text-center" style="background-color: #f0a420" >Bil</th>
-                                                <th class="text-center" style="background-color: #f0a420">ID Rujukan</th>
-                                                <th class="text-center" style="background-color: #f0a420">Nama Projek</th>
-                                                <th class="text-center" style="background-color: #f0a420">Alamat</th>
-                                                <th class="text-center" style="background-color: #f0a420">Status</th>
-                                                <th class="text-center" style="background-color: #f0a420">Tindakan</th>
-                                                {{-- <th></th>  --}}
+                                                <th class="text-center">Bil</th>
+                                                <th class="text-center">ID Rujukan</th>
+                                                <th class="text-center">Nama Projek</th>
+                                                <th class="text-center">Alamat</th>
+                                                <th class="text-center">Status</th>
+                                                <th class="text-center">Tindakan</th>
+                                                <th></th> 
                                             </tr>
                                         </thead>
 

@@ -330,11 +330,11 @@
                     <ul class="nav-item collapse {{ Request::is('penilaian_reka_bentuk_bangunan/*') ? 'show' : 'false' }} my-1"
                         id="penilaian_reka_bentuk_bangunan">
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/senarai_projek') ? 'active' : '' }} py-0"
-                                href="/penilaian_reka_bentuk_bangunan/senarai_projek">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/senarai_projek_bangunan">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/senarai_projek') ? 'text-dark' : '' }}">Paparan
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan') ? 'text-dark' : '' }}">Paparan
                                         Senarai Projek</span>
                                 </div>
                             </a>

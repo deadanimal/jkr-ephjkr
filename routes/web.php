@@ -44,12 +44,14 @@ Route::get('/dashboard', function () {
 
 Auth::routes();
 
-Route::resource('/penilaian_reka_bentuk_bangunan', ProjekController::class);  
+// Route::resource('/penilaian_reka_bentuk_bangunan', ProjekController::class);  
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
+
+    // });
 
     Route::prefix('/dashboard')->group(function (){
         Route::resources([
@@ -77,10 +79,10 @@ Route::middleware('auth')->group(function () {
         ]);
     });
 
-    // Route::prefix('/penilaian_reka_bentuk_bangunan')->group(function (){
-    //     Route::resources([
-    //         // 'senarai_projek'=>ProjekController::class,
-    //     ]);
-    // });
+    Route::prefix('/penilaian_reka_bentuk_bangunan')->group(function (){
+        Route::resources([
+            'senarai_projek_bangunan'=>ProjekController::class,
+        ]);
+    });
 
-});
+
