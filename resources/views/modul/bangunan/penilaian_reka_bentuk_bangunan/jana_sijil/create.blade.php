@@ -26,11 +26,11 @@
                     </div>
                     </div>
 
-                    <!--Syarikat/Cawangan-->
+                    <!--ID Rujukan Skala-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">ID Rujukan Skala:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Syarikat"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="ID Rujukan Skala"/>                        
                     </div>
                     </div>
 
