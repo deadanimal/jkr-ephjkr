@@ -16,6 +16,8 @@ class ProjekController extends Controller
     public function index()
     {
         return view('modul.bangunan.penilaian_reka_bentuk_bangunan.senarai_projek_bangunan.index');
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.index');
+
     }
 
     /**

@@ -53,6 +53,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
     // });
 
+    // Dashboard
     Route::prefix('/dashboard')->group(function (){
         Route::resources([
             'laman_utama'=>LamanUtamaController::class,
@@ -60,6 +61,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
         ]);
     });
 
+    // Pengurusan Maklumat
     Route::prefix('/pengurusan_maklumat')->group(function () {
         Route::resources([
             'profil' => ProfilController::class,
@@ -73,15 +75,22 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
         ]);
     });
 
+    // Penilaian Reka Bentuk GPSS
     Route::prefix('/penilaian_reka_bentuk_gpss')->group(function (){
         Route::resources([
             'senarai_projek'=>ProjekController::class,
         ]);
     });
 
+    // Penilaian Reka Bentuk Bangunan
     Route::prefix('/penilaian_reka_bentuk_bangunan')->group(function (){
         Route::resources([
             'senarai_projek_bangunan'=>ProjekController::class,
+            'pemudah_cara_bangunan'=>ProjekController::class,
+            'penilaian_verifikasi'=>ProjekController::class,
+            'semakan_rawak'=>ProjekController::class,
+            'jana_sijil'=>ProjekController::class,
+            'sijilverifikasipermarkahan'=>ProjekController::class,
         ]);
     });
 
