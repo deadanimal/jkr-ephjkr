@@ -8,6 +8,7 @@
 @section('content')
 <!--Title: Header-->
 <div class="header">
+        Paparan Senarai Projek
     <h1 class="header-title">
         Penilaian Reka Bentuk Bangunan
     </h1>
@@ -16,9 +17,9 @@
         <div class="col-12">
             <div class="card mt-4">
                 <div class="card-header">
-                    <div class="card-body">
+                    {{-- <div class="card-body">
 
-                    </div>
+                    </div> --}}
                     
                             <!--TO ENABLE SCROLLBAR AT TABLES-->
                             <div class="table-responsive scrollbar">
