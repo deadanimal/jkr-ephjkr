@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreProjekRequest;
-use App\Http\Requests\UpdateProjekRequest;
-use App\Models\Projek;
+use Illuminate\Http\Request;
 
-class ProjekController extends Controller
+class PemudahCaraController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +14,8 @@ class ProjekController extends Controller
     public function index()
     {
         //
-        return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.index');
+        return view('modul.gpss.penilaian_reka_bentuk_gpss.pemudah_cara_gpss.index');
+
     }
 
     /**
@@ -27,17 +26,15 @@ class ProjekController extends Controller
     public function create()
     {
         //
-        return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.create');
-
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreProjekRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreProjekRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -45,10 +42,10 @@ class ProjekController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Projek  $projek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Projek $projek)
+    public function show($id)
     {
         //
     }
@@ -56,10 +53,10 @@ class ProjekController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Projek  $projek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Projek $projek)
+    public function edit($id)
     {
         //
     }
@@ -67,11 +64,11 @@ class ProjekController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateProjekRequest  $request
-     * @param  \App\Models\Projek  $projek
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProjekRequest $request, Projek $projek)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -79,10 +76,10 @@ class ProjekController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Projek  $projek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Projek $projek)
+    public function destroy($id)
     {
         //
     }

@@ -1,4 +1,4 @@
-@extends('layouts.base')
+{{-- @extends('layouts.base')
 
 <!--from DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
@@ -10,34 +10,34 @@
 <!--Title: Header-->
 <div class="header">
     <h1 class="header-title">
-        Akaun Pendaftaran Keselamatan Kebakaran
+        PENILAIAN REKA BENTUK GPSS
     </h1>
 </div>
     <div class="container-fluid">
         <div class="col-12">
             <div class="card mt-4">
-                <div class="card-header">
-                    <div class="card-body">
+                <div class="card-header" >
+                    <div class="card-body" >
 
                     </div>
                     
                             <!--TO ENABLE SCROLLBAR AT TABLES-->
-                            <div class="table-responsive scrollbar">
+                            <div class="table-responsive scrollbar" >
                                 <table class="table table-bordered table-striped fs--1 mb-0">
 
                                     <!--DATATABLES CODE-->
                                     <table id="pdkk" class="display" style="width:100%">
 
-                                        <thead class="bg-200 text-900">
+                                        <thead class="bg-200 text-900" >
                                             <tr>
-                                                <th class="text-center">No</th>
-                                                <th class="text-center">Nama</th>
-                                                <th class="text-center">No. Kad Pengenalan</th>
-                                                <th class="text-center">No. Telefon</th>
-                                                <th class="text-center">Alamat</th>
-                                                <th class="text-center">Status</th>
-                                                <th class="text-center">Tindakan</th>
-                                                <th></th> 
+                                                <th class="text-center" style="background-color: #f0a420;">Bil.</th>
+                                                <th class="text-center" style="background-color: #f0a420;">ID Rujukan</th>
+                                                <th class="text-center" style="background-color: #f0a420;">Nama Projek</th>
+                                                <th class="text-center" style="background-color: #f0a420;">Alamat</th>
+                                                <th class="text-center" style="background-color: #f0a420;">Alamat</th>
+                                                <th class="text-center" style="background-color: #f0a420;">Status</th>
+                                                <th class="text-center" style="background-color: #f0a420;">Tindakan</th>
+                                                
                                             </tr>
                                         </thead>
 
@@ -92,4 +92,4 @@ $(document).ready(function() {
 </script>
 
     
-@endsection
+@endsection --}}

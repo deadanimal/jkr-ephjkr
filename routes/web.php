@@ -12,6 +12,7 @@ use App\Http\Controllers\PengesahanPenggunaController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProjekController;
+use App\Http\Controllers\PemudahCaraController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -75,13 +76,13 @@ Route::prefix('/pengurusan_maklumat')->group(function () {
 
 Route::prefix('/penilaian_reka_bentuk_gpss')->group(function (){
     Route::resources([
-        'senarai_projek'=>ProjekController::class,
-        'pemudah_cara'=>ProjekController::class,
+        'senarai_projek_gpss'=>ProjekController::class,
+        'pemudah_cara_gpss'=>ProjekController::class,
         'penilaian_reka_bentuk'=>ProjekController::class,
         'pengesahan_penilaian_reka_bentuk'=>ProjekController::class,
         'jana_keputusan'=>ProjekController::class,
-        'skor_penilaian'=>ProjekController::class,
+        'skor_penilaian'=>ProjekController::class,  
     ]);
 });
 
-Route::resource('/Projek', ProjekController::class);
+// Route::resource('/penilaian_reka_bentuk_gpss/pemudah_cara_gpss', ProjekController::class);
