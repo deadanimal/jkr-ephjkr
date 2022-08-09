@@ -374,11 +374,11 @@
                         </li>
                         {{-- Jana Sijil --}}
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/jana_sijil') ? 'active' : '' }} py-0"
-                                href="/penilaian_reka_bentuk_bangunan/jana_sijil">
+                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/jana_sijil/create') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/jana_sijil/create">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/jana_sijil') ? 'text-dark' : '' }}">Jana Sijil</span>
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/jana_sijil/create') ? 'text-dark' : '' }}">Jana Sijil</span>
                                 </div>
                             </a>
                         </li>

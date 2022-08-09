@@ -8,7 +8,7 @@
 @section('content')
 <!--Title: Header-->
 <div class="header">
-        Paparan Senarai Projek
+        Penilaian Verifikasi
     <h1 class="header-title">
         Penilaian Reka Bentuk Bangunan
     </h1>
@@ -26,7 +26,7 @@
                                 <table class="table table-bordered table-striped fs--1 mb-0">
 
                                     <!--DATATABLES CODE-->
-                                    <table id="pdkk" class="stripe" style="width:100%">
+                                    <table id="penilaian_verifikasi" class="stripe" style="width:100%">
 
                                         <thead class="bg-200 text-900">
                                             <tr>
@@ -77,7 +77,7 @@
     
 <script>
         $(document).ready( function () {
-    $('#pdkk').DataTable();
+    $('#penilaian_verifikasi').DataTable();
 } );
 </script>
 

@@ -48,6 +48,7 @@ Route::resource('/penilaian_reka_bentuk_bangunan/senarai_projek_bangunan', Proje
 Route::resource('/penilaian_reka_bentuk_bangunan/pemudah_cara_bangunan', ProjekController::class); 
 Route::resource('/penilaian_reka_bentuk_bangunan/penilaian_verifikasi', ProjekController::class);
 Route::resource('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_verifikasi', ProjekController::class); 
+Route::resource('/penilaian_reka_bentuk_bangunan/jana_sijil', ProjekController::class);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
