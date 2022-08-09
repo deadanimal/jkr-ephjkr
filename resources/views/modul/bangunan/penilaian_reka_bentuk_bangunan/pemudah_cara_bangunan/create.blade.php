@@ -67,9 +67,6 @@
                     </div>
                     </div>
 
-                    <!--Button Daftar-->
-                    {{-- <button class="btn btn-primary" type="submit">Daftar</button> --}}
-
                     <!--Button Daftar (TOOLTIPS)-->
                     <div class="text-center">
                         <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 

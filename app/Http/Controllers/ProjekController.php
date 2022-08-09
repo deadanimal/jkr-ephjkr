@@ -34,7 +34,7 @@ class ProjekController extends Controller
     public function create()
     {
         return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
-        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.jana_sijil.create');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.jana_sijil.create');
 
     }
 
