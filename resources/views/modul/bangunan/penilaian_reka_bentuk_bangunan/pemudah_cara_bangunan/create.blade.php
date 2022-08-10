@@ -5,7 +5,7 @@
 <div class="header">
     Melantik Pemudah Cara > Daftar Pemudah Cara
     <h1 class="header-title" style="color: #EB5500">
-        Penilaian Reka Bentuk Bangunan
+        PENILAIAN REKA BENTUK BANGUNAN
     </h1>
     {{-- horizontal line --}}
     <hr style="color: #EB5500"></hr>

@@ -10,7 +10,7 @@
 <div class="header">
         Melantik Pemudah Cara > Daftar Pemudah Cara
     <h1 class="header-title">
-        Penilaian Reka Bentuk Bangunan
+        PENILAIAN REKA BENTUK BANGUNAN
     </h1>
 </div>
     <div class="container-fluid">

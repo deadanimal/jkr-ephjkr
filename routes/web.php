@@ -12,6 +12,11 @@ use App\Http\Controllers\PengesahanPenggunaController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProjekController;
+use App\Http\Controllers\SenaraiprojekbangunanController;
+use App\Http\Controllers\PemudahcarabangunanController;
+use App\Http\Controllers\PenilaianrekabentukController;
+use App\Http\Controllers\PengesahanpenilaianrekabentukController;
+use App\Http\Controllers\SemakanrawakjanasijilController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -89,12 +94,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     // Penilaian Reka Bentuk Bangunan
     Route::prefix('/penilaian_reka_bentuk_bangunan')->group(function (){
         Route::resources([
-            'senarai_projek_bangunan'=>ProjekController::class,
-            'pemudah_cara_bangunan'=>ProjekController::class,
-            'penilaian_verifikasi'=>ProjekController::class,
-            'pengesahan_penilaian_verifikasi'=>ProjekController::class,
-            'jana_sijil'=>ProjekController::class,
-            'semakan_rawak'=>ProjekController::class,
+            'senarai_projek_bangunan'=>SenaraiprojekbangunanController::class,
+            'pemudah_cara_bangunan'=>PemudahcarabangunanController::class,
+            'penilaian_reka_bentuk'=>PenilaianrekabentukController::class,
+            'pengesahan_penilaian_reka_bentuk'=>PengesahanpenilaianrekabentukController::class,
+            'semakan_rawak_jana_sijil'=>SemakanrawakjanasijilController::class,
             'sijil_verifikasi_permarkahan'=>ProjekController::class,
         ]);
     });

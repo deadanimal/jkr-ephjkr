@@ -26,7 +26,7 @@
                                 <table class="table table-bordered table-striped fs--1 mb-0">
 
                                     <!--DATATABLES CODE-->
-                                    <table id="penilaian_verifikasi" class="stripe" style="width:100%">
+                                    <table id="penilaian_reka_bentuk" class="stripe" style="width:100%">
 
                                         <thead class="bg-200 text-900">
                                             <tr>
@@ -77,7 +77,7 @@
     
 <script>
         $(document).ready( function () {
-    $('#penilaian_verifikasi').DataTable();
+    $('#penilaian_reka_bentuk').DataTable();
 } );
 </script>
 
