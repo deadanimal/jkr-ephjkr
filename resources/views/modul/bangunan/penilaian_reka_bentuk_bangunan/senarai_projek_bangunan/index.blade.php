@@ -92,26 +92,26 @@
 
                                     {{-- <tbody> --}}
                                         <!--LOOPING TABLES-->
-                                        {{-- @foreach ($projek as $key => $spb) --}}
+                                        {{-- @foreach ($senaraiprojekbangunan as $key => $p) --}}
                                             {{-- <tr> --}}
-                                                {{-- <td>{{ $pdkk->id }}</td> --}}
+                                                {{-- <td>{{ $p->id }}</td> --}}
                                                 {{-- <td style="text-align: center; vertical-align: middle;">{{$key + 1}}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $spb->namaProjek }}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $spb->alamatProjek }}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $spb->statusProjek }}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $pdkk->alamat }}</td> --}}
+                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->namaProjek }}</td> --}}
+                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->alamatProjek }}</td> --}}
+                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->statusProjek }}</td> --}}
+                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->alamat }}</td> --}}
                                                 {{-- <td style="text-align: center; vertical-align: middle;">{{ $pdkk->status}}</td> --}}
                                                 {{-- <td style="text-align: center; vertical-align: middle;"><a href="/pendaftarankeselamatankebakaran/{{$pdkk->id}}/edit">Kemaskini</a></td> --}}
                                                 {{-- <td>
-                                                    <form action="/penilaianrekabentukbangunan/{{ $spb->id }}" method="post">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class="btn btn-outline-dark btn-sm">Delete</button>
+                                                    <form action="/senaraiprojekbangunan/{{ $p->id }}" method="post">
+                                                        @csrf --}}
+                                                        {{-- @method('DELETE') --}}
+                                                        {{-- <button type="submit" class="btn btn-outline-dark btn-sm">Daftar</button>
                                                     </form>
                                                 </td>
                                             </tr>
                                         @endforeach
-                                    </tbody> --}}
+                                    </tbody>  --}}
                                 </table>
                             </div>
                         </div>

@@ -12,11 +12,6 @@ use App\Http\Controllers\PengesahanPenggunaController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProjekController;
-use App\Http\Controllers\SenaraiprojekbangunanController;
-use App\Http\Controllers\PemudahcarabangunanController;
-use App\Http\Controllers\PenilaianrekabentukController;
-use App\Http\Controllers\PengesahanpenilaianrekabentukController;
-use App\Http\Controllers\SemakanrawakjanasijilController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -92,15 +87,36 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     });
 
     // Penilaian Reka Bentuk Bangunan
-    Route::prefix('/penilaian_reka_bentuk_bangunan')->group(function (){
-        Route::resources([
-            'senarai_projek_bangunan'=>SenaraiprojekbangunanController::class,
-            'pemudah_cara_bangunan'=>PemudahcarabangunanController::class,
-            'penilaian_reka_bentuk'=>PenilaianrekabentukController::class,
-            'pengesahan_penilaian_reka_bentuk'=>PengesahanpenilaianrekabentukController::class,
-            'semakan_rawak_jana_sijil'=>SemakanrawakjanasijilController::class,
-            'sijil_verifikasi_permarkahan'=>ProjekController::class,
-        ]);
-    });
+    // Route::prefix('/penilaian_reka_bentuk_bangunan')->group(function (){
+        // Route::resources([
+            // 'senarai_projek_bangunan'=>SenaraiprojekbangunanController::class,
+            // 'pemudah_cara_bangunan'=>ProjekController::class,
+            // 'penilaian_reka_bentuk'=>PenilaianrekabentukController::class,
+            // 'semakan_rawak_jana_sijil'=>SemakanrawakjanasijilController::class,
+            // 'pengesahan_penilaian_reka_bentuk'=>PengesahanpenilaianrekabentukController::class,
+            // 'sijil_verifikasi_bangunan'=>SijilverifikasipenilaianrekabentukController::class,
+        // ]);
+
+        // Route::get('/senarai_projek_bangunan', [ProjekController::class, 'senarai_projek_bangunan']);
+        // Route::get([
+        //     'senarai_projek_bangunan'=>ProjekController::class,
+        // ]);
+
+    // });
+
+    // custom
+    Route::get('/senarai_projek_bangunan', [ProjekController::class, 'senarai_projek_bangunan']);
+    Route::get('/pemudah_cara_bangunan', [ProjekController::class, 'pemudah_cara_bangunan']);
+    Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
+    Route::get('/pengesahan_penilaian_reka_bentuk', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk']);
+    Route::get('/semakan_rawak_jana_sijil', [ProjekController::class, 'semakan_rawak_jana_sijil']);
+    Route::get('/sijil_verifikasi_bangunan', [ProjekController::class, 'sijil_verifikasi_bangunan']);
+
+    // Route::get('/pemudah_cara_bangunan', [ProjekController::class, 'create']);
+
+
+    // Route::get('/pemudah_cara_bangunan', [ProjekController::class, 'pemudah_cara_bangunan.create']);
+
+
 
 

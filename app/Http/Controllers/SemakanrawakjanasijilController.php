@@ -15,7 +15,7 @@ class SemakanrawakjanasijilController extends Controller
      */
     public function index()
     {
-        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.semakan_rawak_jana_sijil.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.semakan_rawak_jana_sijil.index');
     }
 
     /**
@@ -25,7 +25,7 @@ class SemakanrawakjanasijilController extends Controller
      */
     public function create()
     {
-        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.semakan_rawak_jana_sijil.create');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.semakan_rawak_jana_sijil.create');
 
     }
 

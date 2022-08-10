@@ -15,6 +15,12 @@ class CreatePemudahcarabangunansTable extends Migration
     {
         Schema::create('pemudahcarabangunans', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('syarikat');
+            $table->string('noTel');
+            $table->string('noFax');
+            $table->string('emel');
+            $table->string('disiplin');
             $table->timestamps();
         });
     }

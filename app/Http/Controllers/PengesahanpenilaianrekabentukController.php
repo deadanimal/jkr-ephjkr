@@ -15,7 +15,7 @@ class PengesahanpenilaianrekabentukController extends Controller
      */
     public function index()
     {
-        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pengesahan_penilaian_reka_bentuk.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pengesahan_penilaian_reka_bentuk.index');
 
     }
 

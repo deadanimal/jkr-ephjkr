@@ -47,7 +47,7 @@
 @section('content')
 <!--Title: Header-->
 <div class="header">
-        <b>Semakan Rawak dan Jana Sijil</b>
+        <b>Papar dan Muat Turun Sijil Verifikasi Penilaian Reka Bentuk</b>
     <h1 class="header-title" style="color: #EB5500">
         PENILAIAN REKA BENTUK BANGUNAN
     </h1>
