@@ -86,3 +86,7 @@ Route::prefix('/penilaian_reka_bentuk_gpss')->group(function (){
 });
 
 // Route::resource('/penilaian_reka_bentuk_gpss/pemudah_cara_gpss', ProjekController::class);
+
+// trying creating own controller & function for every section
+Route::get('pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'index']);
+Route::post('pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'store']);

@@ -18,7 +18,7 @@
                 <b>Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
-                <form action="/pemudah_cara_bangunan" method="post" enctype="multipart/form-data">
+                <form action="/pemudah_cara" method="post" enctype="multipart/form-data">
                     @csrf
 
                     <!--Nama-->

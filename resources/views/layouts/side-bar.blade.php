@@ -270,7 +270,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/penilaian_reka_bentuk') ? 'active' : '' }} py-0"
-                                href="/penilaian_reka_bentuk_gpss/penilaian_reka_bentuk_gpss">
+                                href="/penilaian_reka_bentuk_gpss/senarai_projek_gpss">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
                                         class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/penilaian_reka_bentuk') ? 'text-dark' : '' }}">Penilaian Reka Bentuk</span>
