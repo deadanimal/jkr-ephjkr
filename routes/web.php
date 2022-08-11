@@ -12,6 +12,7 @@ use App\Http\Controllers\PengesahanPenggunaController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProjekController;
+use App\Http\Controllers\PemudahCaraController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -53,11 +54,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::middleware('auth')->group(function () {
+Route::middleware('auth')->group(function () {
 
-    // });
-
-    // Dashboard
+// Dashboard
     Route::prefix('/dashboard')->group(function (){
         Route::resources([
             'laman_utama'=>LamanUtamaController::class,
@@ -117,6 +116,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
     // Route::get('/pemudah_cara_bangunan', [ProjekController::class, 'pemudah_cara_bangunan.create']);
 
-
-
-
+// trying creating own controller & function for every section
+Route::get('/senarai_projek_gpss', [ProjekController::class, 'senarai_projek_gpss']);
+Route::get('/pemudah_cara_gpss', [ProjekController::class, 'pemudah_cara_gpss']);
+Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
+Route::get('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk_gpss']);
+// Route::post('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'store']);
+    
+});

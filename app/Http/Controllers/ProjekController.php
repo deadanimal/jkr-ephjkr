@@ -15,6 +15,30 @@ class ProjekController extends Controller
      */
     public function index()
     {
+        //
+        // return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.index');
+    }
+
+    public function senarai_projek_gpss()
+    {
+        return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.index');
+    }
+
+    public function pemudah_cara_gpss()
+    {
+        return view('modul.gpss.penilaian_reka_bentuk_gpss.pemudah_cara_gpss.index');
+        
+    }
+
+    public function penilaian_reka_bentuk()
+    {
+        return view('modul.gpss.penilaian_reka_bentuk_gpss.penilaian_reka_bentuk.index');
+        
+    }
+
+    public function pengesahan_penilaian_reka_bentuk_gpss()
+    {
+        return view('modul.gpss.penilaian_reka_bentuk_gpss.pengesahan_penilaian_reka_bentuk_gpss.index');
         // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.senarai_projek_bangunan.index');
         // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.index');
         // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.penilaian_reka_bentuk.index');
@@ -70,6 +94,8 @@ class ProjekController extends Controller
      */
     public function create()
     {
+        //
+        return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.create');
         // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
         // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.jana_sijil.create');
 
