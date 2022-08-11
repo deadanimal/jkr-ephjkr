@@ -86,19 +86,20 @@
                                                 <th class="text-center">Nama Projek</th>
                                                 <th class="text-center">Alamat</th>
                                                 <th class="text-center">Status</th>
-                                                <th class="text-center">Tindakan</th> 
+                                                {{-- <th class="text-center">Tindakan</th>  --}}
                                             </tr>
                                         </thead>
 
-                                    {{-- <tbody> --}}
+                                    <tbody>
                                         <!--LOOPING TABLES-->
                                         {{-- @foreach ($senaraiprojekbangunan as $key => $p) --}}
-                                            {{-- <tr> --}}
+                                            <tr>
                                                 {{-- <td>{{ $p->id }}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{$key + 1}}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->namaProjek }}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->alamatProjek }}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->statusProjek }}</td> --}}
+                                                <td style="text-align: center; vertical-align: middle;">1</td>
+                                                <td style="text-align: center; vertical-align: middle;">SKL0202</td>
+                                                <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
+                                                <td style="text-align: center; vertical-align: middle;">Mukah</td>
+                                                <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
                                                 {{-- <td style="text-align: center; vertical-align: middle;">{{ $p->alamat }}</td> --}}
                                                 {{-- <td style="text-align: center; vertical-align: middle;">{{ $pdkk->status}}</td> --}}
                                                 {{-- <td style="text-align: center; vertical-align: middle;"><a href="/pendaftarankeselamatankebakaran/{{$pdkk->id}}/edit">Kemaskini</a></td> --}}
@@ -108,10 +109,10 @@
                                                         {{-- @method('DELETE') --}}
                                                         {{-- <button type="submit" class="btn btn-outline-dark btn-sm">Daftar</button>
                                                     </form>
-                                                </td>
+                                                {{-- </td> --}}
                                             </tr>
-                                        @endforeach
-                                    </tbody>  --}}
+                                        {{--@endforeach--}}
+                                    </tbody>
                                 </table>
                             </div>
                         </div>

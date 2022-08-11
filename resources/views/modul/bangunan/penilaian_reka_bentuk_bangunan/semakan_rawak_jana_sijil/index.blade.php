@@ -87,28 +87,28 @@
                                         </tr>
                                     </thead>
 
-                                {{-- <tbody> --}}
+                                <tbody>
                                     <!--LOOPING TABLES-->
                                     {{-- @foreach ($projek as $key => $spb) --}}
-                                        {{-- <tr> --}}
+                                            <tr>
                                             {{-- <td>{{ $pdkk->id }}</td> --}}
                                             {{-- <td style="text-align: center; vertical-align: middle;">{{$key + 1}}</td> --}}
-                                            {{-- <td style="text-align: center; vertical-align: middle;">{{ $spb->namaProjek }}</td> --}}
-                                            {{-- <td style="text-align: center; vertical-align: middle;">{{ $spb->alamatProjek }}</td> --}}
-                                            {{-- <td style="text-align: center; vertical-align: middle;">{{ $spb->statusProjek }}</td> --}}
-                                            {{-- <td style="text-align: center; vertical-align: middle;">{{ $pdkk->alamat }}</td> --}}
-                                            {{-- <td style="text-align: center; vertical-align: middle;">{{ $pdkk->status}}</td> --}}
+                                            <td style="text-align: center; vertical-align: middle;">1</td>
+                                            <td style="text-align: center; vertical-align: middle;">SKL0202</td>
+                                            <td style="text-align: center; vertical-align: middle;">Hospital</td>
+                                            <td style="text-align: center; vertical-align: middle;">Mukah</td>
+                                            <td style="text-align: center; vertical-align: middle;">Status</td>
                                             {{-- <td style="text-align: center; vertical-align: middle;"><a href="/pendaftarankeselamatankebakaran/{{$pdkk->id}}/edit">Kemaskini</a></td> --}}
-                                            {{-- <td>
-                                                <form action="/penilaianrekabentukbangunan/{{ $spb->id }}" method="post">
+                                            <td>
+                                                {{-- <form action="/" method="post" enctype="multipart/form-data">
                                                     @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-outline-dark btn-sm">Delete</button>
-                                                </form>
+                                                    @method('PUT') --}}
+                                                    <button type="submit" class="btn btn-outline-dark btn-sm">Papar</button>
+                                                {{-- </form> --}}
                                             </td>
                                         </tr>
-                                    @endforeach
-                                </tbody> --}}
+                                    {{-- @endforeach --}}
+                                </tbody> 
                             </table>
                         </div>
                     </div>

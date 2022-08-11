@@ -418,15 +418,15 @@
         }
 
     .img {
-      width: 60px;
-      height: 60px;
-      border:10px solid #fff;
-      background: url(/JATA_NEGARA_MALAYSIA.png) no-repeat;
-      box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
+        position: absolute;
+        width: 283.73px;
+        height: 87.31px;
+        left: 110px;
+        top: 24.47px;
+
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
+    
  
     </style>
     <?php
@@ -447,10 +447,18 @@
                 {{-- <a href="">LOGO</a> --}}
                 <div class="column">
                     <div class="img">
-                        <img src="JATA_NEGARA_MALAYSIA.png" alt="Jata Negara" width="60" height="60">
+                        <img src="Logo.png" alt="JKR" width="70" height="70">
                     </div>
                 </div>
             </div>
+            {{-- <div class="col-1"> --}}
+                {{-- <a href="">LOGO</a> --}}
+                {{-- <div class="column">
+                    <div class="img2">
+                        <img src="JATA_NEGARA_MALAYSIA.png" alt="Jata Negara" width="70" height="60">
+                    </div>
+                </div>
+            </div> --}}
         
             <div class="col-2 text-end">
                 <a href="#" style="color: #F4A258">UTAMA</a>

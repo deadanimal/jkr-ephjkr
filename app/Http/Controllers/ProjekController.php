@@ -33,8 +33,8 @@ class ProjekController extends Controller
 
     public function pemudah_cara_bangunan()
     {
-        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.index');
-        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.index');
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
         
     }
     

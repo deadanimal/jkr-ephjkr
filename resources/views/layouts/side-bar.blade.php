@@ -262,10 +262,10 @@
                         {{-- Melantik Pemudah Cara --}}
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('/pemudah_cara_bangunan/*') ? 'active' : '' }} py-0"
-                                href="/pemudah_cara_bangunan">
+                                href="/pemudah_cara_bangunan/">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('/pemudah_cara_bangunan') ? 'text-dark' : '' }}">Melantik
+                                        class="px-0 {{ Request::is('/pemudah_cara_bangunan/') ? 'text-dark' : '' }}">Melantik
                                         Pemudah Cara</span>
                                 </div>
                             </a>
