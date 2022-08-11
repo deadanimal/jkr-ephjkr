@@ -197,8 +197,8 @@
         .tox .tox-menu__footer .tox-button:last-child,
         .tox .tox-dialog__footer .tox-button:last-child {
             color: #fff;
-            background-color: #8DB368;
-            border-color: #8DB368;
+            background-color: #F4A258;
+            border-color: #F4A258;
             -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
             box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
         }
@@ -208,8 +208,8 @@
         .tox .tox-menu__footer .tox-button:hover:last-child,
         .tox .tox-dialog__footer .tox-button:hover:last-child {
             color: #fff;
-            background-color: #8DB368;
-            border-color: #8DB368;
+            background-color: #F4A258;
+            border-color: #F4A258;
         }
 
         .btn-check:focus+.btn-primary,
@@ -416,6 +416,18 @@
             background-color: #009640;
             color: var(--falcon-choices-item-selectable-highlighted-bg);
         }
+
+    .img {
+      width: 60px;
+      height: 60px;
+      border:10px solid #fff;
+      background: url(/JATA_NEGARA_MALAYSIA.png) no-repeat;
+      box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+    }
+ 
     </style>
     <?php
     use Illuminate\Support\Facades\Auth;
@@ -430,9 +442,16 @@
     <main class="main" id="top">
         <nav class="navbar navbar-expand p-3" style="box-shadow: 0px 2px 2px 1px lightgrey; background-color: white; z-index: 2;">
         
-            <div class="col-2">
-                <a href="">LOGO</a>
+        
+            <div class="col-1">
+                {{-- <a href="">LOGO</a> --}}
+                <div class="column">
+                    <div class="img">
+                        <img src="JATA_NEGARA_MALAYSIA.png" alt="Jata Negara" width="60" height="60">
+                    </div>
+                </div>
             </div>
+        
             <div class="col-2 text-end">
                 <a href="#" style="color: #F4A258">UTAMA</a>
             </div>
