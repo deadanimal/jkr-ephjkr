@@ -104,27 +104,4 @@ Route::middleware('auth')->group(function () {
 
     // });
 
-    // custom
-    Route::get('/senarai_projek_bangunan', [ProjekController::class, 'senarai_projek_bangunan']);
-    Route::get('/pemudah_cara_bangunan', [ProjekController::class, 'pemudah_cara_bangunan']);
-    Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
-    Route::get('/pengesahan_penilaian_reka_bentuk', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk']);
-    Route::get('/semakan_rawak_jana_sijil', [ProjekController::class, 'semakan_rawak_jana_sijil']);
-    Route::get('/sijil_verifikasi_bangunan', [ProjekController::class, 'sijil_verifikasi_bangunan']);
-
-    // melantik pemudah cara gpss
-    Route::post('/melantik_pemudah_cara_gpss', [PenilaianRekaBentukGpss::class, 'melantik_pemudah_cara']);
-
-    // Route::get('/pemudah_cara_bangunan', [ProjekController::class, 'create']);
-
-
-    // Route::get('/pemudah_cara_bangunan', [ProjekController::class, 'pemudah_cara_bangunan.create']);
-
-    // trying creating own controller & function for every section
-    Route::get('/senarai_projek_gpss', [ProjekController::class, 'senarai_projek_gpss']);
-    Route::get('/pemudah_cara_gpss', [ProjekController::class, 'pemudah_cara_gpss']);
-    Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
-    Route::get('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk_gpss']);
-    // Route::post('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'store']);
-
 });

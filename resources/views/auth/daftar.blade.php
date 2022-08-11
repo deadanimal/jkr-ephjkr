@@ -23,10 +23,10 @@
                         <label >No. Kad Pengguna:</label>
                     </div>
                     <div class="col-9 mb-2">
-                        <input type="text" name="name" id="name" class="form-control">
+                        <input type="text" name="icPengguna" id="name" class="form-control">
                     </div>
                     <div class="col-3">
-                        <label >Nama Pengguna:</label>
+                        <label >E-mel Pengguna:</label>
                     </div>
                     <div class="col-9 mb-2">
                         <input type="text" name="name" id="name" class="form-control">
