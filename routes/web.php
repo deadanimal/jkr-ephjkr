@@ -128,7 +128,6 @@ Route::middleware('auth')->group(function () {
     // Route::post('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'store']);
 
 });
-<<<<<<< HEAD
 
 Route::prefix('/pengurusan_maklumat')->group(function () {
     Route::resources([
@@ -162,5 +161,3 @@ Route::get('/pemudah_cara_gpss', [ProjekController::class, 'pemudah_cara_gpss'])
 Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
 Route::get('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk_gpss']);
 // Route::post('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'create']);
-=======
->>>>>>> a47077ecd88e0e920878efdeb8f2b87d6b896840
