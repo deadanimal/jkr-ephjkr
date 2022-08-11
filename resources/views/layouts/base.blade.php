@@ -447,7 +447,7 @@
                 {{-- <a href="">LOGO</a> --}}
                 <div class="column">
                     <div class="img">
-                        <img src="Logo.png" alt="JKR" width="70" height="70">
+                        <img src="Logo.png" alt="JKR" width="100" height="70">
                     </div>
                 </div>
             </div>

@@ -24,6 +24,7 @@
 .content-table th,
 .content-table td {
   padding: 20px 10px;
+  border: 1px solid #F4A258;
 }
 
 .content-table tbody tr {
@@ -35,12 +36,12 @@
 }
 
 .content-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid #fff;
 }
 
 .content-table tbody tr.active-row {
   font-weight: bold;
-  color: #009879;
+  color: #fff;
 }
 
 </style>
@@ -70,7 +71,7 @@
 
           
         <div class="col-12">
-            <div class="card mt-4">
+            {{-- <div class="card mt-4"> --}}
                 <div class="card-header">
                     {{-- <div class="card-body">
 
@@ -81,7 +82,7 @@
                                 <table class="content-table">
                                         <thead>
                                             <tr>
-                                                <th class="text-center">Bil</th>
+                                                <th class="text-center" >Bil</th>
                                                 <th class="text-center">ID Rujukan</th>
                                                 <th class="text-center">Nama Projek</th>
                                                 <th class="text-center">Alamat</th>
@@ -104,12 +105,12 @@
                                                 {{-- <td style="text-align: center; vertical-align: middle;">{{ $pdkk->status}}</td> --}}
                                                 {{-- <td style="text-align: center; vertical-align: middle;"><a href="/pendaftarankeselamatankebakaran/{{$pdkk->id}}/edit">Kemaskini</a></td> --}}
                                                 {{-- <td>
-                                                    <form action="/senaraiprojekbangunan/{{ $p->id }}" method="post">
-                                                        @csrf --}}
-                                                        {{-- @method('DELETE') --}}
-                                                        {{-- <button type="submit" class="btn btn-outline-dark btn-sm">Daftar</button>
+                                                    <form action="/senarai_projek_bangunan/" method="post">
+                                                        @csrf 
+
+                                                        <button type="submit" class="btn btn-outline-dark btn-sm">Daftar</button>
                                                     </form>
-                                                {{-- </td> --}}
+                                                </td> --}}
                                             </tr>
                                         {{--@endforeach--}}
                                     </tbody>
@@ -118,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            {{-- </div> --}}
         </div>
     </div>
 @endsection
