@@ -29,7 +29,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/check_base', function () {
@@ -37,7 +37,7 @@ Route::get('/check_base', function () {
 });
 
 Route::get('/check_auth', function () {
-    return view('auth.daftar');
+    return view('auth.auth_pass');
 });
 
 Route::get('/dashboard', function () {
@@ -102,6 +102,8 @@ Route::middleware('auth')->group(function () {
     //     'senarai_projek_bangunan'=>ProjekController::class,
     // ]);
 
-    // });
+    Route::get('/senarai_projek_gpss', function () {
+        return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.index');
+    });
 
 });
