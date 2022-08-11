@@ -507,14 +507,14 @@
                 {{-- </div> --}}
             </div>
         </div>
-        <section class="preloader" id="preload2">
+        {{-- <section class="preloader" id="preload2">
             <div class="spinner" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
             <div class="word">
                 <span>Sila Tunggu...</span>
             </div>
-        </section>
+        </section> --}}
 
 
         <footer class="jkr-footer">
