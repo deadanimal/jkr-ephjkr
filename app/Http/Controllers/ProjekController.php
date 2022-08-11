@@ -39,6 +39,50 @@ class ProjekController extends Controller
     public function pengesahan_penilaian_reka_bentuk_gpss()
     {
         return view('modul.gpss.penilaian_reka_bentuk_gpss.pengesahan_penilaian_reka_bentuk_gpss.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.senarai_projek_bangunan.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.penilaian_reka_bentuk.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pengesahan_penilaian_reka_bentuk.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.jana_sijil.index');
+
+        
+    
+
+    }
+
+    public function senarai_projek_bangunan()
+    {
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.senarai_projek_bangunan.index');
+    }
+
+    public function pemudah_cara_bangunan()
+    {
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.index');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
+        
+    }
+    
+    public function penilaian_reka_bentuk()
+    {
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.penilaian_reka_bentuk.index');
+        
+    }
+
+    public function pengesahan_penilaian_reka_bentuk()
+    {
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pengesahan_penilaian_reka_bentuk.index');
+        
+    }
+
+    public function semakan_rawak_jana_sijil()
+    {
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.semakan_rawak_jana_sijil.index');
+        
+    }
+
+    public function sijil_verifikasi_bangunan()
+    {
+        return view('modul.bangunan.penilaian_reka_bentuk_bangunan.sijil_verifikasi_bangunan.index');
         
     }
     
@@ -52,7 +96,8 @@ class ProjekController extends Controller
     {
         //
         return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.create');
-        
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
+        // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.jana_sijil.create');
 
     }
 
