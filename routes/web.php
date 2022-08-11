@@ -92,4 +92,4 @@ Route::get('/senarai_projek_gpss', [ProjekController::class, 'senarai_projek_gps
 Route::get('/pemudah_cara_gpss', [ProjekController::class, 'pemudah_cara_gpss']);
 Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
 Route::get('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk_gpss']);
-// Route::post('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'store']);
+// Route::post('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'create']);
