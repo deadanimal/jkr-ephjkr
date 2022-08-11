@@ -23,6 +23,7 @@ class CreatePemudahCarasTable extends Migration
             $table->string('email')->nullable();
             $table->string('disiplin')->nullable();
             $table->foreignIdFor(Projek::class)->nullable()->constrained()->cascadeOnDelete();
+            $table->string('kategori')->nullable();
             $table->timestamps();
         });
     }
