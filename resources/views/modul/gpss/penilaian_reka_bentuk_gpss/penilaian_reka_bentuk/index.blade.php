@@ -2,6 +2,10 @@
 
 @section('content')
 
+@extends('layouts.base')
+
+@section('content')
+
     {{-- header --}}
     <div class="header" >
         <h1 class="header-title" style="color: #EB5500">
@@ -39,7 +43,7 @@
                     <th scope="col">Nama Projek</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
-                    {{-- <th scope="col">Tindakan</th> --}}
+                    <th scope="col">Tindakan</th>
                 </tr>
                 
             </thead>
@@ -50,9 +54,9 @@
                     <td>Hospital Seri Iskandar</td>
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
-                    {{-- <td>
-                        <a href="/senarai_projek_gpss/create" type="button" class="btn btn-warning">DAFTAR</a>
-                    </td> --}}
+                    <td>
+                        <a href="/pengesahan_penilaian_reka_bentuk_gpss" type="button" class="btn btn-warning">PAPAR</a>
+                    </td>
                     </tr>                    
             </tbody>
             </table>
@@ -60,6 +64,9 @@
     </div>
 
 
+
+    
+@endsection
 
     
 @endsection
