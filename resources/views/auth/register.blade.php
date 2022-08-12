@@ -1,77 +1,107 @@
-@extends('layouts.app')
-
+@extends('layouts.landing-base')
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    <div class="container mt-4">
+        <div class="row text-orange">
+            <div class="col text-center">
+                DAFTAR AKAUN
+                <hr class="text-orange">
+            </div>
+        </div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <form method="POST" action="{{ route('register') }}">
+                    @csrf
+                    <div class="row">
+                        <div class="col-3">
+                            <label>Nama Pengguna:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>No. Kad Pengguna:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="icPengguna" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>E-mel Pengguna:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="email" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>No. Tel Bimbit Pengguna:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="notelbimbitPengguna" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>No. Fax Bimbit Pengguna:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="nofaxPengguna" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>Nama Syarikat:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="namaSyarikat" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>Alamat Syarikat:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="alamatSyarikat" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>Daerah:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="daerah" class="form-control">
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                        <div class="col-3">
+                            <label>Negeri:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="negeri" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>Kata Laluan:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>Pengesahan Kata Laluan:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="password" name="password_confirmation" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>Sijil Kompeten:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="sijilKompeten" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <label>Kelayakan Akademik:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="kelayakanAkademik" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-9">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-orange">Hantar</button>
                             </div>
                         </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-</div>
 @endsection

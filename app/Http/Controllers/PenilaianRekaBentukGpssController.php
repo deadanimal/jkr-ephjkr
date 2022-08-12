@@ -1,13 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Requests\StorePenilaianRekaBentukBangunanRequest;
-use App\Http\Requests\UpdatePenilaianRekaBentukBangunanRequest;
-
 
 use Illuminate\Http\Request;
 
-class PenilaianRekaBentukBangunanController extends Controller
+class PenilaianRekaBentukGpssController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +14,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function index()
     {
         // paparan senarai projek
-        return view('modul.penilaian_reka_bentuk_bangunan.index');
+        return view('modul.penilaian_reka_bentuk_gpss.index');
     }
 
     /**
@@ -90,55 +87,54 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function papar_projek()
     {
         // papar table projek with button melantik pemudah cara
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
+        return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index');
     }
 
     public function pemudah_cara($id)
     {
         // papar form pemudah cara with id projek
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create');
+        return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.create');
     }
 
     public function melantik_pemudah_cara(Request $request, $id)
     {
         // submit form melantik pemudah cara
-        return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
-
+        return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
     }
 
     # bawah ni utk skor penilaian
     public function skor_penilaian()
     {
         // papar mcm index tapi ada button utk skor
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index');
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.index');
     }
     public function papar_skor_penilaian($id)
     {
         // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.edit');
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit');
     }
 
     public function simpan_skor(Request $request, $id)
     {
         // simpan skor penilaian
-        return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
     }
 
     #pengesahan penilaian
     public function pengesahan_penilaian()
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.index');
     }
     public function papar_pengesahan_penilaian($id)
     {
         // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.edit');
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.edit');
     }
 
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
         // simpan pengesahan penilaian
-        return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
+        return redirect('/penilaian_reka_bentuk_gpss/pengesahan_penilaian');
     }
 }

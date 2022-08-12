@@ -70,8 +70,20 @@
             padding-right: 15px;
         }
 
-        body{
+        body {
             background-color: white !important;
+        }
+
+        .form-control {
+            border-color: #F4A258;
+            -moz-box-shadow: inset 0 0 5px rgba(173, 173, 173, 0.658);
+            -webkit-box-shadow: inset 0 0 5px rgba(173, 173, 173, 0.658);
+            box-shadow: inset 0 0 5px rgba(173, 173, 173, 0.658);
+        }
+
+        .btn-orange{
+            color: white;
+            background-color: #F4A258;
         }
 
         /* primary blue to green */
@@ -102,26 +114,19 @@
         }
 
         .btn-orange-header {
-            color: #EB5500;
+            color: #F4A258;
             background-color: transparent;
             border-color: transparent;
         }
 
         .btn-orange-header:hover {
             color: #fff;
-            background-color: #EB5500;
-            border-color: #EB5500;
+            background-color: #F4A258;
+            border-color: #F4A258;
         }
 
         footer {
             background-color: #EDEEED;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 15px;
-            padding-right: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
     </style>
 
