@@ -46,7 +46,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
 
     // Dashboard
     Route::prefix('/dashboard')->group(function () {
@@ -95,7 +95,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
 
 
-});
+// });
 
 Route::prefix('/pengurusan_maklumat')->group(function () {
     Route::resources([
@@ -124,8 +124,8 @@ Route::prefix('/pengurusan_maklumat')->group(function () {
 // Route::resource('/penilaian_reka_bentuk_gpss/pemudah_cara_gpss', ProjekController::class);
 
 // trying creating own controller & function for every section
-Route::get('/senarai_projek_gpss', [ProjekController::class, 'senarai_projek_gpss']);
-Route::get('/pemudah_cara_gpss', [ProjekController::class, 'pemudah_cara_gpss']);
-Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
-Route::get('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk_gpss']);
+// Route::get('/senarai_projek_gpss', [ProjekController::class, 'senarai_projek_gpss']);
+// Route::get('/pemudah_cara_gpss', [ProjekController::class, 'pemudah_cara_gpss']);
+// Route::get('/penilaian_reka_bentuk', [ProjekController::class, 'penilaian_reka_bentuk']);
+// Route::get('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'pengesahan_penilaian_reka_bentuk_gpss']);
 // Route::post('/pengesahan_penilaian_reka_bentuk_gpss', [ProjekController::class, 'create']);
