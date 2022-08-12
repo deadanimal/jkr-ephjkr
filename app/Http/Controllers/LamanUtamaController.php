@@ -13,7 +13,7 @@ class LamanUtamaController extends Controller
      */
     public function index()
     {
-        return view('dashboard.laman_utama.index');
+        return view('modul.dashboard.laman_utama.index');
     }
 
     /**
