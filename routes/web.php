@@ -46,7 +46,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
 
     // Dashboard
     Route::prefix('/dashboard')->group(function () {
@@ -81,6 +81,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian']);
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian']);
     Route::post('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
+    
 
     // Penilaian Reka Bentuk Gpss
     Route::resource('/penilaian_reka_bentuk_gpss', PenilaianRekaBentukGpssController::class);
@@ -95,4 +96,4 @@ Route::middleware('auth')->group(function () {
     Route::post('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
 
 
-});
+// });
