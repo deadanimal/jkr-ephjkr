@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PengesahanPenggunaController extends Controller
@@ -13,7 +14,9 @@ class PengesahanPenggunaController extends Controller
      */
     public function index()
     {
-        return view('dashboard.pengesahan_pengguna.index');
+        return view('modul.dashboard.pengesahan_pengguna.index', [
+            'pengguna'=>User::all()
+        ]);
     }
 
     /**
@@ -45,7 +48,9 @@ class PengesahanPenggunaController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('modul.dashboard.pengesahan_pengguna.show', [
+            'pengguna' => User::find($id)
+        ]);
     }
 
     /**
@@ -68,7 +73,11 @@ class PengesahanPenggunaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $pengguna = User::find($id);
+        $pengguna->status_akaun = $request->status_akaun;
+        $pengguna->save();
+        alert()->success('Pengesahan pengguna telah berjaya', 'Berjaya');
+        return redirect('/dashboard/pengesahan_pengguna');
     }
 
     /**
