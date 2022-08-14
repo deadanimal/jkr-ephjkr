@@ -63,11 +63,17 @@
 <body>
     @include('sweet::alert')
     <style>
-        header {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 15px;
-            padding-right: 15px;
+        .jkr-header {
+            /* font-family: 'Montserrat'; */
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            text-align: center;
+
+            /* ORANGE */
+            color: #F4A258;
         }
 
         body {
@@ -81,7 +87,7 @@
             box-shadow: inset 0 0 5px rgba(173, 173, 173, 0.658);
         }
 
-        .btn-orange{
+        .btn-orange {
             color: white;
             background-color: #F4A258;
         }
@@ -132,26 +138,31 @@
 
     {{-- start header --}}
     <header>
-        <div class="row text-orange">
-            <div class="col-2">
-                <a href="#" class="btn btn-orange-header">LOGO</a>
+        <nav class="navbar navbar-expand p-3">
+
+            <div class="col-3 text-center" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                <img src="/assets/img/JATA_NEGARA_MALAYSIA.png" alt="Jata Negara"
+                    style="width: 82.45px; height: 64.3px;">
+                <img src="/assets/img/JKR_LOGO.png" alt="JKR" style="width: 81.46px; height: 54.93px;">
+                <img src="/assets/img/EPHJKR_LOGO.png" alt="EPHJKR" style="width: 95.73px; height: 87.31px;">
             </div>
-            <div class="col-2">
-                <a href="#" class="btn btn-orange-header">UTAMA</a>
+
+            <div class="col-1 text-end">
+                <a href="#" class="jkr-header">UTAMA</a>
             </div>
-            <div class="col-2">
-                <a href="#" class="btn btn-orange-header">MENGENAI KAMI</a>
+            <div class="col-2 text-end">
+                <a href="#" class="jkr-header">MENGENAI KAMI</a>
             </div>
-            <div class="col-2">
-                <a href="#" class="btn btn-orange-header">HUBUNGI KAMI</a>
+            <div class="col-2 text-end">
+                <a href="#" class="jkr-header">HUBUNGI KAMI</a>
             </div>
-            <div class="col-2">
-                <a href="#" class="btn btn-orange-header">SOALAN LAZIM</a>
+            <div class="col-2 text-end">
+                <a href="#" class="jkr-header">SOALAN LAZIM</a>
             </div>
-            <div class="col-2">
-                <a href="#" class="btn btn-orange-header">LOG MASUK</a>
+            <div class="col-2 text-end">
+                    <a href="/login" class="btn jkr-header" style="border-color: #F4A258;">LOG MASUK</a>
             </div>
-        </div>
+        </nav>
     </header>
     {{-- end header --}}
 
