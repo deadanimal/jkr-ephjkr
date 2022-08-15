@@ -36,7 +36,21 @@ class PemudahCaraController extends Controller
      */
     public function store(StorePemudahCaraRequest $request)
     {
-        //
+        $pemudahcara = new PemudahCara();
+
+        $pemudahcara->nama = $request->nama;
+        $pemudahcara->syarikat_cawangan = $request->syarikat_cawangan;
+        $pemudahcara->no_tel = $request->no_tel;
+        $pemudahcara->no_fax = $request->no_fax;
+        $pemudahcara->email = $request->email;
+        $pemudahcara->disiplin = $request->disiplin;
+        $pemudahcara->save();
+
+        return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara')
+
+
+
+
     }
 
     /**

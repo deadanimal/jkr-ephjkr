@@ -15,6 +15,7 @@ class ProjekController extends Controller
      */
     public function index()
     {
+    
         //
         // return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.index');
     }
@@ -41,6 +42,7 @@ class ProjekController extends Controller
     public function store(StoreProjekRequest $request)
     {
         //
+
     }
 
     /**

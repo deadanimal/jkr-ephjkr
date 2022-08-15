@@ -38,7 +38,18 @@ class PenilaianRekaBentukBangunanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $melantikpemudahcara = new PenilaianRekaBentukBangunan();
+
+        // $melantikpemudahcara->nama = $request->nama;
+        // $melantikpemudahcara->syarikat = $request->syarikat;
+        // $melantikpemudahcara->noTel = $request->noTel;
+        // $melantikpemudahcara->noFax = $request->noFax;
+        // $melantikpemudahcara->emel = $request->emel;
+        // $melantikpemudahcara->disiplin = $request->disiplin;
+        // $melantikpemudahcara->save();
+
+        // return redirect('/penilaian_reka_bentuk_bangunan');
+
     }
 
     /**
@@ -89,19 +100,39 @@ class PenilaianRekaBentukBangunanController extends Controller
     # bawah ni pemudah cara
     public function papar_projek()
     {
+        $projeks = Projek::all();
+
         // papar table projek with button melantik pemudah cara
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
+        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
+
+        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
+            'projeks'=>$projeks
+        ]);
     }
 
     public function pemudah_cara($id)
     {
         // papar form pemudah cara with id projek
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create');
+        $projek = Projek::find($id);
+        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
+            'projek'=>$projek
+        ]);
     }
 
     public function melantik_pemudah_cara(Request $request, $id)
     {
         // submit form melantik pemudah cara
+        $pemudah_cara = new PenilaianRekaBentukBangunan;
+
+        $pemudah_cara->nama = $request->nama;
+        $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
+        $pemudah_cara->no_tel = $request->no_tel;
+        $pemudah_cara->no_fax = $request->no_fax;
+        $pemudah_cara->email = $request->email;
+        $pemudah_cara->disiplin = $request->disiplin;
+        $pemudah_cara->save();
+
+        // // submit form melantik pemudah cara
         return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
 
     }
@@ -141,4 +172,18 @@ class PenilaianRekaBentukBangunanController extends Controller
         // simpan pengesahan penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
     }
+
+    public function semakan_rawak()
+    {
+        # code...
+    }
+    public function semakan_rawak_form($id)
+    {
+        # code...
+    }
+    public function simpan_semakan_rawak(Request $request, $id)
+    {
+        # code...
+    }
+    
 }

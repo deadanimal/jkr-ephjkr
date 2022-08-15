@@ -1,4 +1,5 @@
 @extends('layouts.base')
-testttt
-@section
+
+@section('content')
+test
 @endsection

@@ -36,7 +36,20 @@ class PemudahcarabangunanController extends Controller
      */
     public function store(StorePemudahcarabangunanRequest $request)
     {
-        //
+        // $pemudahcarabangunan = new PemudahCaraBangunan();
+
+        // $pemudahcarabangunan->nama = $request->nama;
+        // $pemudahcarabangunan->syarikat = $request->syarikat;
+        // $pemudahcarabangunan->noTel = $request->noTel;
+        // $pemudahcarabangunan->noFax = $request->noFax;
+        // $pemudahcarabangunan->emel = $request->emel;
+        // $pemudahcarabangunan->disiplin = $request->disiplin;
+        // $pemudahcarabangunan->save();
+
+        // alert()->success('Maklumat telah ditambah', 'Berjaya');
+
+        // submit form melantik pemudah cara
+        // return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
     }
 
     /**

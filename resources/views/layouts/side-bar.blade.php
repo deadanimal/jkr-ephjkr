@@ -252,9 +252,11 @@
                             <span class="px-3"><span class="fas fa-home"></span> Penilaian Reka Bentuk Bangunan</span>
                         </div>
                     </a>
+
                     <ul class="nav-item collapse {{ ((Request::is('penilaian_reka_bentuk_bangunan/*')) || (Request::is('penilaian_reka_bentuk_bangunan'))) ? 'show' : 'false' }} my-1"
                         id="penilaian_reka_bentuk_bangunan">
-                        {{-- Senarai Projek Bangunan --}}
+
+                        {{-- Paparan Senarai Projek Bangunan --}}
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan') ? 'active' : '' }} py-0"
                                 href="/penilaian_reka_bentuk_bangunan">
@@ -267,43 +269,43 @@
                         </li>
                         {{-- Melantik Pemudah Cara --}}
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create') ? 'active' : '' }} py-0"
+                            <a class="nav-link {{ Request::is('/penilaian_reka_bentuk_bangunan') ? 'active' : '' }} py-0"
                                 href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create') ? 'text-dark' : '' }}">Melantik
+                                        class="px-0 {{ Request::is('/penilaian_reka_bentuk_bangunan') ? 'text-dark' : '' }}">Melantik
                                         Pemudah Cara</span>
                                 </div>
                             </a>
                         </li>
-                        {{-- Penilaian Reka Bentuk --}}
+                        {{-- Penilaian Reka Bentuk (skor penilaian) --}}
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/skor_penilaian') ? 'active' : '' }} py-0"
-                                href="/penilaian_reka_bentuk_bangunan/skor_penilaian">
+                            <a class="nav-link {{ Request::is('/penilaian_reka_bentuk_bangunan/skor_penilaian/index') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/skor_penilaian/index">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/skor_penilaian') ? 'text-dark' : '' }}">Penilaian Reka Bentuk</span>
+                                        class="px-0 {{ Request::is('/penilaian_reka_bentuk_bangunan/skor_penilaian/index') ? 'text-dark' : '' }}">Penilaian Reka Bentuk</span>
                                 </div>
                             </a>
                         </li>
                         {{-- Pengesahan Penilaian Reka Bentuk --}}
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/pengesahan_penilaian') ? 'active' : '' }} py-0"
-                                href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian">
+                            <a class="nav-link {{ Request::is('/penilaian_reka_bentuk_bangunan/*') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/index">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pengesahan_penilaian') ? 'text-dark' : '' }}">Pengesahan Penilaian 
+                                        class="px-0 {{ Request::is('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/index') ? 'text-dark' : '' }}">Pengesahan Penilaian 
                                     Reka Bentuk</span>
                                 </div>
                             </a>
                         </li>
                         {{-- Semakan Rawak dan Jana Sijil --}}
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('semakan_rawak_jana_sijil/*') ? 'active' : '' }} py-0"
-                                href="#">
+                            <a class="nav-link {{ Request::is('/penilaian_reka_bentuk_bangunan/*') ? 'active' : '' }} py-0"
+                                href="/penilaian_reka_bentuk_bangunan/semakan_rawak/index">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/semakan_rawak_jana_sijil') ? 'text-dark' : '' }}">Semakan Rawak dan
+                                        class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/semakan_rawak/index') ? 'text-dark' : '' }}">Semakan Rawak dan
                                         Jana Sijil</span>
                                 </div>
                             </a>
