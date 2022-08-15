@@ -52,7 +52,7 @@
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
                     <td>
-                        <a href="/pengesahan_penilaian_reka_bentuk_gpss" type="button" class="btn btn-warning">DAFTAR</a>
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/{id}" type="button" class="btn btn-warning">PILIH</a>
                     </td>
                     </tr>                    
             </tbody>

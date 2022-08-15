@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Penilaianrekabentuk;
 
 class PenilaianRekaBentukGpssController extends Controller
 {
@@ -13,6 +14,9 @@ class PenilaianRekaBentukGpssController extends Controller
      */
     public function index()
     {
+        //get all the data
+        $penilaianrekabentuks  = Penilaianrekabentuk::all();
+
         // paparan senarai projek
         return view('modul.penilaian_reka_bentuk_gpss.index');
     }
@@ -25,7 +29,7 @@ class PenilaianRekaBentukGpssController extends Controller
     public function create()
     {
         //
-        return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.create');
+        return view('modul.penilaian_reka_bentuk_gpss.create');
 
     }
 
@@ -37,7 +41,23 @@ class PenilaianRekaBentukGpssController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validate
+
+       $request->validate([
+
+            'nama' => 'required',
+            'syarikat' => 'required',
+            'nomborTelefon' => 'required',
+            'nomborFax' => 'required',
+            'emel' => 'required|email',
+            'disiplin' => 'required',
+       ]);
+
+       Penilaianrekabentuk::create($request->all());
+
+
+        return redirect('/penilaian_reka_bentuk_gpss');
+
     }
 
     /**
@@ -49,6 +69,12 @@ class PenilaianRekaBentukGpssController extends Controller
     public function show($id)
     {
         //
+        //get all the data
+        $penilaianrekabentuks  = Penilaianrekabentuk::find($id);
+
+        // paparan senarai projek
+        return view('modul.penilaian_reka_bentuk_gpss.show');
+
     }
 
     /**
