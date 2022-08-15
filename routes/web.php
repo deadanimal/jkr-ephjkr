@@ -46,7 +46,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
 
     // Dashboard
     Route::prefix('/dashboard')->group(function () {
@@ -90,34 +90,6 @@ Route::middleware('auth')->group(function () {
     // submit semakan rawak
     Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
 
-<<<<<<< HEAD
-    // Penilaian Reka Bentuk Gpsss
-    Route::resource('/penilaian_reka_bentuk_gpss', PenilaianRekaBentukGpssController::class);
-    // Route::get('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara', [PenilaianRekaBentukGpssController::class, 'papar_projek']);
-    // Route::get('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}', [PenilaianRekaBentukGpssController::class, 'pemudah_cara']);
-    // Route::post('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}', [PenilaianRekaBentukGpssController::class, 'melantik_pemudah_cara']);
-    // Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian', [PenilaianRekaBentukGpssController::class, 'skor_penilaian']);
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'papar_skor_penilaian']);
-    // Route::post('/penilaian_reka_bentuk_gpss/simpan_skor/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor']);
-    // Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian']);
-    // Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'papar_pengesahan_penilaian']);
-    // Route::post('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
-
-
-// });
-
-Route::prefix('/pengurusan_maklumat')->group(function () {
-    Route::resources([
-        'profil' => ProfilController::class,
-        'pengguna' => PenggunaController::class,
-        'manual_dan_standard' => ManualDanStandardController::class,
-        'faq' => FaqController::class,
-        'audit_trail' => AuditTrailController::class,
-        'makluma_balas' => MaklumBalasController::class,
-        'hebahan' => HebahanController::class,
-        'pendaftaran_projek' => ProjekController::class,
-    ]);
-=======
     // Penilaian Reka Bentuk Gpss
     Route::get('/penilaian_reka_bentuk_gpss', [PenilaianRekaBentukGpssController::class, 'index']);
     // papar projek utk pemudahcara
@@ -142,7 +114,4 @@ Route::prefix('/pengurusan_maklumat')->group(function () {
     Route::put('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
 
 
->>>>>>> e26a619747dd5bf885a6e2340e37d7eadf9fbf5a
-});
-
-
+// });

@@ -1,9 +1,8 @@
 <?php
-
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers; 
+use App\Models\Projek;
 use Illuminate\Http\Request;
-use App\Models\Penilaianrekabentuk;
+use App\Models\PemudahCara;
 
 class PenilaianRekaBentukGpssController extends Controller
 {
@@ -14,13 +13,9 @@ class PenilaianRekaBentukGpssController extends Controller
      */
     public function index()
     {
-        //get all the data
-        $penilaianrekabentuks  = Penilaianrekabentuk::all();
-
         // paparan senarai projek
         return view('modul.penilaian_reka_bentuk_gpss.index');
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -29,10 +24,8 @@ class PenilaianRekaBentukGpssController extends Controller
     public function create()
     {
         //
-        return view('modul.penilaian_reka_bentuk_gpss.create');
-
+        // return view(‘modul.penilaian_reka_bentuk_gpss.pemudah_cara.create’);
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -41,25 +34,8 @@ class PenilaianRekaBentukGpssController extends Controller
      */
     public function store(Request $request)
     {
-        //validate
-
-       $request->validate([
-
-            'nama' => 'required',
-            'syarikat' => 'required',
-            'nomborTelefon' => 'required',
-            'nomborFax' => 'required',
-            'emel' => 'required|email',
-            'disiplin' => 'required',
-       ]);
-
-       Penilaianrekabentuk::create($request->all());
-
-
-        return redirect('/penilaian_reka_bentuk_gpss');
-
+        //
     }
-
     /**
      * Display the specified resource.
      *
@@ -69,14 +45,7 @@ class PenilaianRekaBentukGpssController extends Controller
     public function show($id)
     {
         //
-        //get all the data
-        $penilaianrekabentuks  = Penilaianrekabentuk::find($id);
-
-        // paparan senarai projek
-        return view('modul.penilaian_reka_bentuk_gpss.show');
-
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -87,7 +56,6 @@ class PenilaianRekaBentukGpssController extends Controller
     {
         //
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -99,7 +67,6 @@ class PenilaianRekaBentukGpssController extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
@@ -110,26 +77,35 @@ class PenilaianRekaBentukGpssController extends Controller
     {
         //
     }
-
     # bawah ni pemudah cara
     public function papar_projek()
     {
         // papar table projek with button melantik pemudah cara
-        return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index');
+        $projeks = Projek::all();
+        return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
+            'projeks'=> $projeks
+        ]);
     }
-
     public function pemudah_cara($id)
     {
         // papar form pemudah cara with id projek
+        // $projek = Projek::find($id);
         return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.create');
     }
-
     public function melantik_pemudah_cara(Request $request, $id)
     {
         // submit form melantik pemudah cara
+        $pemudah_cara = new PemudahCara;
+        $pemudah_cara->nama = $request->input('nama');
+        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
+        $pemudah_cara->no_tel = $request->input('no_tel');
+        $pemudah_cara->no_fax = $request->input('no_fax');
+        $pemudah_cara->email = $request->input('email');
+        $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->save();
+
         return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
     }
-
     # bawah ni utk skor penilaian
     public function skor_penilaian()
     {
@@ -138,31 +114,28 @@ class PenilaianRekaBentukGpssController extends Controller
     }
     public function papar_skor_penilaian($id)
     {
-        // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit');
+        // papar form skor penilaian with id projek
+        return view(‘modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit’);
     }
-
     public function simpan_skor(Request $request, $id)
     {
         // simpan skor penilaian
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
+        return redirect(‘/penilaian_reka_bentuk_gpss/skor_penilaian’);
     }
-
     #pengesahan penilaian
     public function pengesahan_penilaian()
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.index');
+        return view(‘modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.index’);
     }
     public function papar_pengesahan_penilaian($id)
     {
-        // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.edit');
+        // papar form pengesahan penilaian with id projek
+        return view(‘modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.edit’);
     }
-
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
         // simpan pengesahan penilaian
-        return redirect('/penilaian_reka_bentuk_gpss/pengesahan_penilaian');
+        return redirect(‘/penilaian_reka_bentuk_gpss/pengesahan_penilaian’);
     }
 }
