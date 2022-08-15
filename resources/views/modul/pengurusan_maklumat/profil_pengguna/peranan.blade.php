@@ -8,8 +8,11 @@
                     <li class="breadcrumb-item">
                         <a href="/pengurusan_maklumat/profil_pengguna" class="text-secondary">Paparan Profil</a>
                     </li>
+                    <li class="breadcrumb-item">
+                        <a href="/pengurusan_maklumat/profil_pengguna/{{$pengguna->id}}/edit" class="text-secondary">Kemaskini Profil</a>
+                    </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Kemaskini Profil
+                        Penukaran Peranan
                     </li>
                 </ol>
             </nav>
@@ -18,7 +21,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>Profil Pengguna</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>Penukaran Peranan</strong></h3>
         </div>
     </div>
 
@@ -26,7 +29,7 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/pengurusan_maklumat/profil_pengguna/{{$pengguna->id}}" method="post">
+            <form action="#" method="post">
                 @method('PUT')
                 @csrf
                 <div class="row mx-4">
@@ -43,46 +46,36 @@
                     <div class="col-7 mb-2">
                         <input class="form-control" name="email" value="{{ $pengguna->email }}" />
                     </div>
-    
+
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">No. Telefon Bimbit:</label>
+                        <label class="col-form-label">Nama Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="notelbimbitPengguna" value="{{ $pengguna->notelbimbitPengguna }}" />
-                    </div>
-    
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Syarikat:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="namaSyarikat" value="{{ $pengguna->namaSyarikat }}" />
-                    </div>
-    
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Cawangan:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="namaCawangan" value="{{ $pengguna->namaCawangan }}" />
-                    </div>
-    
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Alamat Syarikat:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="alamatSyarikat" value="{{ $pengguna->alamatSyarikat }}" />
+                        <input class="form-control" name="projek" value="" />
                     </div>
 
-                    <div class="col-10 text-end">
-                        <a href="/pengurusan_maklumat/profil_pengguna/{{$pengguna->id}}/penukaran_peranan" class="text-primary">Penukaran Peranan</a>
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Peranan Sekarang:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="role" value="" />
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Peranan Baru:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="new_role" value="" />
                     </div>
     
+    
                     <div class="col-3 mb-2">
-                        
+                        {{-- biar kosong --}}
                     </div>
                     <div class="col-7 mb-2">
                         <div class="row mt-4">
                             <div class="col-6">
-                                <a href="/pengurusan_maklumat/profil_pengguna" class="btn btn-outline-primary">Batal</a>
+                                <a href="/pengurusan_maklumat/profil_pengguna/{{$pengguna->id}}/edit" class="btn btn-outline-primary">Batal</a>
                             </div>
                             <div class="col-6 text-end">
                                 <button type="submit" class="btn btn-primary">Simpan Kemaskini</button>

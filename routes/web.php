@@ -68,6 +68,8 @@ Route::middleware('auth')->group(function () {
             'hebahan' => HebahanController::class,
             'pendaftaran_projek' => ProjekController::class,
         ]);
+
+        Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
     });
 
     // Penilaian Reka Bentuk Bangunan

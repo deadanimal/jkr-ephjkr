@@ -74,7 +74,11 @@ class ProfilController extends Controller
      */
     public function update(Request $request, $id)
     {
-        dd($request->all());
+        $pengguna = User::find($id);
+        $input = $request->all();
+        $pengguna->fill($input)->save();
+        alert()->success('Maklumat telah dikemaskini', 'Berjaya');
+        return redirect('/pengurusan_maklumat/profil_pengguna');
     }
 
     /**
@@ -86,5 +90,13 @@ class ProfilController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function penukaran_peranan($id)
+    {
+        $pengguna = User::find($id);
+        return view('modul.pengurusan_maklumat.profil_pengguna.peranan', [
+            'pengguna'=>$pengguna
+        ]);
     }
 }

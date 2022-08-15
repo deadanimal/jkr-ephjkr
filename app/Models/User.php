@@ -21,6 +21,20 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'namaCawangan',
+        'icPengguna',
+        'namaSyarikat',
+        'namaCawangan',
+        'alamatSyarikat',
+        'alamatCawangan',
+        'daerah',
+        'negeri',
+        'notelbimbitPengguna',
+        'notelPengguna',
+        'nofaxPengguna',
+        'email_verified_at',
+        'sijilKompeten',
+        'kelayakanAkademik',
     ];
 
     /**
