@@ -60,7 +60,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('/pengurusan_maklumat')->group(function () {
         Route::resources([
             'profil_pengguna' => ProfilController::class,
-            'pengguna' => PenggunaController::class,
+            'senarai_pengguna' => PenggunaController::class,
             'manual_dan_standard' => ManualDanStandardController::class,
             'faq' => FaqController::class,
             'audit_trail' => AuditTrailController::class,
@@ -68,6 +68,8 @@ Route::middleware('auth')->group(function () {
             'hebahan' => HebahanController::class,
             'pendaftaran_projek' => ProjekController::class,
         ]);
+
+        Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
     });
 
     // Penilaian Reka Bentuk Bangunan

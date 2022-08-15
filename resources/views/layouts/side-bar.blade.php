@@ -119,11 +119,11 @@
                     <ul class="nav-item collapse {{ Request::is('pengurusan_maklumat/*') ? 'show' : 'false' }} my-1"
                         id="pengurusan_maklumat">
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('pengurusan_maklumat/profil_pengguna') ? 'active' : '' }} py-0"
+                            <a class="nav-link {{ Request::is('pengurusan_maklumat/profil_pengguna') || Request::is('pengurusan_maklumat/profil_pengguna/*') ? 'active' : '' }} py-0"
                                 href="/pengurusan_maklumat/profil_pengguna">
                                 <div class="d-flex align-items-center nav-link-side">
                                     <span
-                                        class="px-0 {{ Request::is('pengurusan_maklumat/profil_pengguna') ? 'text-dark' : '' }}">Profil
+                                        class="px-0 {{ Request::is('pengurusan_maklumat/profil_pengguna') || Request::is('pengurusan_maklumat/profil_pengguna/*') ? 'text-dark' : '' }}">Profil
                                         Pengguna</span>
                                 </div>
                             </a>

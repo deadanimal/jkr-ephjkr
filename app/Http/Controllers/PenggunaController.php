@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class PenggunaController extends Controller
@@ -13,7 +14,9 @@ class PenggunaController extends Controller
      */
     public function index()
     {
-        //
+        return view('modul.pengurusan_maklumat.senarai_pengguna.index', [
+            'pengguna' => User::get()
+        ]);
     }
 
     /**
