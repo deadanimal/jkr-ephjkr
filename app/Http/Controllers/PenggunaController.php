@@ -15,7 +15,7 @@ class PenggunaController extends Controller
     public function index()
     {
         return view('modul.pengurusan_maklumat.senarai_pengguna.index', [
-            'pengguna' => User::all()
+            'pengguna' => User::get()
         ]);
     }
 
