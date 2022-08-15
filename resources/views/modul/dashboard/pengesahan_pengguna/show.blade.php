@@ -1,17 +1,4 @@
 @extends('layouts.base')
-<style>
-    .btn-final {
-        color: #797979;
-        background-color: transparent;
-        border-color: transparent;
-    }
-
-    .btn-final:hover {
-        color: white !important;
-        background-color: #EB5500;
-        border-color: #EB5500;
-    }
-</style>
 @section('content')
     <div class="row">
         <div class="col">
