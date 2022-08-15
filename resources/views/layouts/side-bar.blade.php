@@ -367,7 +367,7 @@
                             aria-controls="penilaian_reka_bentuk_gpss">
                             <div class="d-flex align-items-center nav-link-side px-0">
                                 <span class="px-3"><span class="fas fa-home"></span> Penilaian Reka Bentuk
-                                    Bangunan</span>
+                                    GPSS</span>
                             </div>
                         </a>
                         <ul class="nav-item collapse {{ Request::is('penilaian_reka_bentuk_gpss/*') || Request::is('penilaian_reka_bentuk_gpss') ? 'show' : 'false' }} my-1"

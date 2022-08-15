@@ -85,65 +85,75 @@
 <body>
 
     <style>
-        .text-primary{
+        .form-control {
+            border-color: #F4A258;
+            box-shadow: inset 2px 2px 5px 2px lightgrey;
+        }
+
+        .text-primary {
             color: #EB5500 !important;
         }
 
-        .bg-primary{
+        .bg-primary {
             background-color: #EB5500 !important;
             color: white;
         }
 
-        .text-green-jkr{
+        .text-green-jkr {
             color: #5B8E7D;
             font-weight: 700;
         }
 
-        .btn-green-jkr{
+        .text-dark-green-jkr {
+            color: #0F5E31;
+        }
+
+        .btn-green-jkr {
             color: white;
             background-color: #5B8E7D;
         }
 
-        .btn-green-jkr:hover{
+        .btn-green-jkr:hover {
             color: white;
             background-color: #335349;
         }
 
-        .btn-outline-green-jkr{
+        .btn-outline-green-jkr {
             color: #5B8E7D;
             background-color: white;
             border-color: #5B8E7D;
         }
 
-        .btn-outline-green-jkr:hover{
+        .btn-outline-green-jkr:hover {
             color: white;
             background-color: #335349;
         }
 
-        .btn-orange-jkr{
+        .btn-orange-jkr {
             color: white;
             background-color: #EB5500;
         }
 
-        .btn-orange-jkr:hover{
+        .btn-orange-jkr:hover {
             color: white;
             background-color: #be4803;
         }
 
-        .btn-outline-orange-jkr{
+        .btn-outline-orange-jkr {
             color: #EB5500;
             background-color: white;
             border-color: #EB5500;
         }
 
-        .btn-outline-orange-jkr:hover{
+        .btn-outline-orange-jkr:hover {
             color: white;
             background-color: #be4803;
         }
 
-        .br-10{
+        .br-10 {
             border-radius: 10px;
         }
+
         .preloader {
             position: fixed;
             top: 0;
@@ -285,14 +295,14 @@
         }
 
         .btn-outline-primary {
-            color: #009640;
-            border-color: #009640;
+            color: #F4A258;
+            border-color: #F4A258;
         }
 
         .btn-outline-primary:hover {
             color: #fff;
-            background-color: #0F5E31;
-            border-color: #0F5E31;
+            background-color: #F4A258;
+            border-color: #F4A258;
         }
 
         .nav-link-side {
@@ -485,6 +495,18 @@
 
             /* ORANGE */
             color: #F4A258;
+        }
+
+        .btn-final {
+            color: #797979;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .btn-final:hover {
+            color: white !important;
+            background-color: #EB5500;
+            border-color: #EB5500;
         }
     </style>
     <?php
