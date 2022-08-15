@@ -9,7 +9,7 @@ class Projek extends Model
 {
     use HasFactory;
 
-    public function status_projek()
+    public function status()
     {
         return $this->hasOne(StatusProjek::class);
     }

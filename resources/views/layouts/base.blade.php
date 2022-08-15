@@ -83,8 +83,76 @@
 </head>
 
 <body>
-    
+
     <style>
+        .form-control {
+            border-color: #F4A258;
+            box-shadow: inset 2px 2px 5px 2px lightgrey;
+        }
+
+        .text-primary {
+            color: #EB5500 !important;
+        }
+
+        .bg-primary {
+            background-color: #EB5500 !important;
+            color: white;
+        }
+
+        .text-green-jkr {
+            color: #5B8E7D;
+            font-weight: 700;
+        }
+
+        .text-dark-green-jkr {
+            color: #0F5E31;
+        }
+
+        .btn-green-jkr {
+            color: white;
+            background-color: #5B8E7D;
+        }
+
+        .btn-green-jkr:hover {
+            color: white;
+            background-color: #335349;
+        }
+
+        .btn-outline-green-jkr {
+            color: #5B8E7D;
+            background-color: white;
+            border-color: #5B8E7D;
+        }
+
+        .btn-outline-green-jkr:hover {
+            color: white;
+            background-color: #335349;
+        }
+
+        .btn-orange-jkr {
+            color: white;
+            background-color: #EB5500;
+        }
+
+        .btn-orange-jkr:hover {
+            color: white;
+            background-color: #be4803;
+        }
+
+        .btn-outline-orange-jkr {
+            color: #EB5500;
+            background-color: white;
+            border-color: #EB5500;
+        }
+
+        .btn-outline-orange-jkr:hover {
+            color: white;
+            background-color: #be4803;
+        }
+
+        .br-10 {
+            border-radius: 10px;
+        }
 
         .preloader {
             position: fixed;
@@ -140,7 +208,6 @@
                 transform: rotate(360deg);
             }
         }
-
     </style>
     @include('sweet::alert')
     <style>
@@ -148,7 +215,7 @@
             border-color: #009640;
         } */
 
-        .jkr-footer{
+        .jkr-footer {
             background-color: #5B8E7D;
         }
 
@@ -228,14 +295,14 @@
         }
 
         .btn-outline-primary {
-            color: #009640;
-            border-color: #009640;
+            color: #F4A258;
+            border-color: #F4A258;
         }
 
         .btn-outline-primary:hover {
             color: #fff;
-            background-color: #0F5E31;
-            border-color: #0F5E31;
+            background-color: #F4A258;
+            border-color: #F4A258;
         }
 
         .nav-link-side {
@@ -417,17 +484,30 @@
             color: var(--falcon-choices-item-selectable-highlighted-bg);
         }
 
-    .img {
-      width: 60px;
-      height: 60px;
-      border:10px solid #fff;
-      background: url(/JATA_NEGARA_MALAYSIA.png) no-repeat;
-      box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
-    }
- 
+        .jkr-header {
+            /* font-family: 'Montserrat'; */
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            text-align: center;
+
+            /* ORANGE */
+            color: #F4A258;
+        }
+
+        .btn-final {
+            color: #797979;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .btn-final:hover {
+            color: white !important;
+            background-color: #EB5500;
+            border-color: #EB5500;
+        }
     </style>
     <?php
     use Illuminate\Support\Facades\Auth;
@@ -440,34 +520,33 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-        <nav class="navbar navbar-expand p-3" style="box-shadow: 0px 2px 2px 1px lightgrey; background-color: white; z-index: 2;">
-        
-        
-            <div class="col-1">
-                {{-- <a href="">LOGO</a> --}}
-                <div class="column">
-                    <div class="img">
-                        <img src="JATA_NEGARA_MALAYSIA.png" alt="Jata Negara" width="60" height="60">
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand p-3"
+            style="box-shadow: 0px 2px 2px 1px lightgrey; background-color: white; z-index: 2;">
+
+            <div class="col-3 text-center" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
+                <img src="/assets/img/JATA_NEGARA_MALAYSIA.png" alt="Jata Negara"
+                    style="width: 82.45px; height: 64.3px;">
+                <img src="/assets/img/JKR_LOGO.png" alt="JKR" style="width: 81.46px; height: 54.93px;">
+                <img src="/assets/img/EPHJKR_LOGO.png" alt="EPHJKR" style="width: 95.73px; height: 87.31px;">
             </div>
-        
-            <div class="col-2 text-end">
-                <a href="#" style="color: #F4A258">UTAMA</a>
+
+            <div class="col-1 text-end">
+                <a href="#" class="jkr-header">UTAMA</a>
             </div>
             <div class="col-2 text-end">
-                <a href="#" style="color: #F4A258">MENGENAI KAMI</a>
+                <a href="#" class="jkr-header">MENGENAI KAMI</a>
             </div>
             <div class="col-2 text-end">
-                <a href="#" style="color: #F4A258">HUBUNGI KAMI</a>
+                <a href="#" class="jkr-header">HUBUNGI KAMI</a>
             </div>
             <div class="col-2 text-end">
-                <a href="#" style="color: #F4A258">SOALAN LAZIM</a>
+                <a href="#" class="jkr-header">SOALAN LAZIM</a>
             </div>
             <div class="col-2 text-end">
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
-                    <button type="submit" class="btn" style="color: #F4A258; border-color: #F4A258;">LOG KELUAR</button>
+                    <button type="submit" class="btn jkr-header" style="border-color: #F4A258;">LOG
+                        KELUAR</button>
                 </form>
             </div>
         </nav>
@@ -513,11 +592,13 @@
             <div class="row p-3 align-items-center">
                 <div class="col-10">
                     <div class="text-white" style="font-size: 10px;">
-                        Hakcipta Terpelihara © 2022 Kementerian Kerja Raya Malaysia Paparan Terbaik Menggunakan Internet Explorer 7.0 Atau Mozilla Firefox Dengan Resolusi Skrin 1280x800
+                        Hakcipta Terpelihara © 2022 Kementerian Kerja Raya Malaysia Paparan Terbaik Menggunakan Internet
+                        Explorer 7.0 Atau Mozilla Firefox Dengan Resolusi Skrin 1280x800
                     </div>
                 </div>
                 <div class="col-2 text-end text-white">
-                    <a href="#" class="text-white" style="font-size: 10px;">Dasar Privasi</a> | <a href="#" class="text-white" style="font-size: 10px;">Dasar Keselamatan</a>
+                    <a href="#" class="text-white" style="font-size: 10px;">Dasar Privasi</a> | <a
+                        href="#" class="text-white" style="font-size: 10px;">Dasar Keselamatan</a>
                 </div>
             </div>
         </footer>

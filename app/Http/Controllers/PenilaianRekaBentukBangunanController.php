@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\StorePenilaianRekaBentukBangunanRequest;
+use App\Http\Requests\UpdatePenilaianRekaBentukBangunanRequest;
+
 
 use Illuminate\Http\Request;
 
@@ -100,6 +103,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     {
         // submit form melantik pemudah cara
         return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
+
     }
 
     # bawah ni utk skor penilaian

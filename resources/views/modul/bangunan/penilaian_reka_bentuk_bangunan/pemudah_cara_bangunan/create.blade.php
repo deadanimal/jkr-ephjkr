@@ -16,14 +16,14 @@
                 <b>Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
-                <form action="/pemudah_cara_bangunan" method="post" enctype="multipart/form-data">
+                <form action="modul/bangunan/pemudah_cara_bangunan" method="post" enctype="multipart/form-data">
                     @csrf
 
                     <!--Nama-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Nama:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Nama"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="nama_pemudah_cara" placeholder="Nama"/>                        
                     </div>
                     </div>
 
@@ -31,7 +31,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Syarikat/Cawangan:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Syarikat"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="syarikat" placeholder="Syarikat"/>                        
                     </div>
                     </div>
 
@@ -39,7 +39,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Tel:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="number" autocapitalize="off" name="name" placeholder="No.Tel"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="noTel" placeholder="No.Tel"/>                        
                     </div>
                     </div>
 
@@ -47,7 +47,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Fax:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="number" autocapitalize="off" name="name" placeholder="No.Fax"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="noFax" placeholder="No.Fax"/>                        
                     </div>
                     </div>
 
@@ -55,7 +55,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">E-mel:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Emel"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="emel" placeholder="Emel"/>                        
                     </div>
                     </div>
 
@@ -63,7 +63,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Disiplin:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" placeholder="Disiplin"/>
+                        <input class="form-control" type="text" autocapitalize="off" name="disiplin" placeholder="Disiplin"/>
                     </div>
                     </div>
 
