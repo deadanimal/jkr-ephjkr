@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section
+@section('content')
 
 
     <table>
@@ -18,15 +18,19 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($pemudahcara as $key => $s)
+        @foreach ($projeks as $key => $p)
+        
             <tr>
                 {{-- <td>{{ $s->id }}</td> --}}
                 <td style="text-align: center; vertical-align: middle;">{{$key + 1}}</td>
-                <td style="text-align: center; vertical-align: middle;">{{ $s->nama }}</td>
-                <td style="text-align: center; vertical-align: middle;">{{ $s->syarikat_cawangan }}</td>
-                <td style="text-align: center; vertical-align: middle;">{{ $s->no_tel }}</td>
-                <td style="text-align: center; vertical-align: middle;">{{ $s->noFax}}</td>
-                <td style="text-align: center; vertical-align: middle;">{{ $s->emel}}</td>
-                <td style="text-align: center; vertical-align: middle;">{{ $s->disiplin}}</td>
-
+                <td style="text-align: center; vertical-align: middle;">{{ $p->$pemudah_cara->input('nama') }}</td>
+                <td style="text-align: center; vertical-align: middle;">{{ $p->$pemudah_cara->input('syarikat_cawangan') }}</td>
+                <td style="text-align: center; vertical-align: middle;">{{ $p->$pemudah_cara->input('no_tel') }}</td>
+                <td style="text-align: center; vertical-align: middle;">{{ $p->$pemudah_cara->input('no_fax')}}</td>
+                <td style="text-align: center; vertical-align: middle;">{{ $p->$pemudah_cara->input('email')}}</td>
+                <td style="text-align: center; vertical-align: middle;">{{ $p->$pemudah_cara->input('disiplin')}}</td>
+            </tr>
+        
+        @endforeach
+    </table>
 @endsection

@@ -22,7 +22,7 @@
                 <b class="maklumat-pemudah-cara">Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
-                <form action="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{{$projek->id}}" method="post" enctype="multipart/form-data">
+                <form action="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
                     @csrf
                     {{-- @method('PUT') --}}
 
@@ -30,7 +30,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Nama:</label>
                     {{-- <div class="col-md-6"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="nama" value="{{$projek->}}"/>                        
+                        <input class="kotak-nama" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara ?? ''}}"/>                        
                     {{-- </div> --}}
                     </div>
 
@@ -38,7 +38,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Syarikat/Cawangan:</label>
                     {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="syarikat_cawangan"/>                        
+                        <input class="kotak-nama" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{$pemudah_cara ?? ''}}"/>                        
                     {{-- </div> --}}
                     </div>
 
@@ -46,7 +46,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Tel:</label>
                     {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="number" autocapitalize="off" name="no_tel"/>                        
+                        <input class="kotak-nama" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>                        
                     {{-- </div> --}}
                     </div>
 
@@ -54,7 +54,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Fax:</label>
                     {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="number" autocapitalize="off" name="no_fax"/>                        
+                        <input class="kotak-nama" type="number" autocapitalize="off" name="no_fax" value="{{$pemudah_cara ?? ''}}"/>                        
                     {{-- </div> --}}
                     </div>
 
@@ -62,7 +62,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">E-mel:</label>
                     {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="email"/>                        
+                        <input class="kotak-nama" type="text" autocapitalize="off" name="email" value="{{$pemudah_cara ?? ''}}"/>                        
                     {{-- </div> --}}
                     </div>
 
@@ -70,7 +70,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Disiplin:</label>
                     {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="disiplin"/>
+                        <input class="kotak-nama" type="text" autocapitalize="off" name="disiplin" value="{{$pemudah_cara ?? ''}}"/>
                     {{-- </div> --}}
                     </div>
 

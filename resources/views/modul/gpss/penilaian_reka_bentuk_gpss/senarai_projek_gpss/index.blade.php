@@ -11,9 +11,9 @@
     <hr style="background-color: #EB5500;"></hr>
     
     {{-- body --}}
-    <div class="container mt-5">
+    <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-            <div class="card p-3  py-4">
+            
                 <div class="row g-3 mt-2">
                     <div class="col-md-3">
                         <label for="nama_projek">Nama Projek:</label>                      
@@ -25,7 +25,7 @@
                         <button class="btn btn-warning btn-block">Carian</button>                        
                     </div>                   
                 </div>
-            </div>         
+                     
         </div>       
     </div>
 

@@ -25,6 +25,8 @@ class PenilaianRekaBentukGpssController extends Controller
     public function create()
     {
         //
+        return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.create');
+
     }
 
     /**

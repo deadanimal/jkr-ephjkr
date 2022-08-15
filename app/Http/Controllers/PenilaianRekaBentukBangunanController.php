@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 use App\Http\Requests\StorePenilaianRekaBentukBangunanRequest;
 use App\Http\Requests\UpdatePenilaianRekaBentukBangunanRequest;
-
+use App\Models\Projek;
+use App\Models\PemudahCara;
 
 use Illuminate\Http\Request;
 
@@ -113,23 +114,21 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function pemudah_cara($id)
     {
         // papar form pemudah cara with id projek
-        $projek = Projek::find($id);
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
-            'projek'=>$projek
-        ]);
+        // $projek = Projek::find($id);
+        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create');
     }
 
     public function melantik_pemudah_cara(Request $request, $id)
     {
         // submit form melantik pemudah cara
-        $pemudah_cara = new PenilaianRekaBentukBangunan;
+        $pemudah_cara = new PemudahCara;
 
-        $pemudah_cara->nama = $request->nama;
-        $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
-        $pemudah_cara->no_tel = $request->no_tel;
-        $pemudah_cara->no_fax = $request->no_fax;
-        $pemudah_cara->email = $request->email;
-        $pemudah_cara->disiplin = $request->disiplin;
+        $pemudah_cara->nama = $request->input('nama');
+        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
+        $pemudah_cara->no_tel = $request->input('no_tel');
+        $pemudah_cara->no_fax = $request->input('no_fax');
+        $pemudah_cara->email = $request->input('email');
+        $pemudah_cara->disiplin = $request->input('disiplin');
         $pemudah_cara->save();
 
         // // submit form melantik pemudah cara

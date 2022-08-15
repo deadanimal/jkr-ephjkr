@@ -18,10 +18,10 @@
 </div>
     <div class="container-fluid">
         <!--Nama Projek-->
-        <div class="row">
+        <div class="mt-8 row">
             <div class="col-sm-2">
                 <label class="nama-projek" >Nama Projek:</label>
-            </div>
+        </div>
          
         <!--Kotak Nama (Carian)-->
     
@@ -42,11 +42,12 @@
                     {{-- <div class="card-body">
 
                     </div> --}}
+                    <div class="mt-5 row">
                     
                             <!--TO ENABLE SCROLLBAR AT TABLES-->
                             {{-- <div class="table-responsive scrollbar"> --}}
                             
-                                <table class="kotak kotak-oren" style="width:100%">
+                                <table class="content-table" style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th class="text-center">Bil</th>
@@ -59,7 +60,7 @@
                                         </thead>
                                     {{-- </table>  --}}
 
-                                    <table class="kotak" style="width:100%">
+                                    {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody>
                                         <!--LOOPING TABLES-->
                                         {{-- @foreach ($projek as $key => $p) --}}
@@ -70,22 +71,23 @@
                                                 <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
                                                 <td style="text-align: center; vertical-align: middle;">Mukah</td>
                                                 <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
-                                                {{-- <td style="text-align: center; vertical-align: middle;"><a href="/pendaftarankeselamatankebakaran/{{$pdkk->id}}/edit">Kemaskini</a></td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">
-                                                    <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
+                                                <td style="text-align: center; vertical-align: middle;">
+                                                    {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">
                                                     <a href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create">Daftar</a>
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    {{-- <a class="btn btn-primary" href="#" role="button">Link</a> --}}
-                                                {{-- </td>--}}
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
+                                                </td>
                                             </tr> 
                                         {{-- @endforeach --}}
                                         </tbody>
-                                    </table>
+                                    {{-- </table> --}}
                                 </table> 
                             </div>
+                        </div>
                         </div>
                     </div>
             </div>
