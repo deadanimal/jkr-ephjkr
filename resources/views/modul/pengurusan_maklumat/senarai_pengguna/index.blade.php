@@ -20,8 +20,13 @@
 
     <hr class="text-primary">
 
-
     <div class="row mt-3">
+        <div class="col text-end">
+            <a href="/pengurusan_maklumat/senarai_pengguna/create" class="btn btn-primary">Tambah</a>
+        </div>
+    </div>
+
+    <div class="row mt-2">
         <div class="col">
             <div class="card">
                 <div class="card-body">
@@ -30,9 +35,11 @@
                             <tr>
                                 <th class="sort">Bil.</th>
                                 <th class="sort">Nama Pengguna</th>
-                                <th class="sort">No. Kad Pengenalan</th>
-                                <th class="sort">e-Mel</th>
-                                <th></th>
+                                <th class="sort">Nama Syarikat</th>
+                                <th class="sort">Nama Cawangan</th>
+                                <th class="sort">Nama Negeri</th>
+                                <th class="sort">Nama Peranan</th>
+                                <th class="sort">Tindakan</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
@@ -40,11 +47,13 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $p->name }}</td>
-                                    <td>{{ $p->icPengguna }}</td>
-                                    <td>{{ $p->email }}</td>
+                                    <td>{{ $p->namaSyarikat }}</td>
+                                    <td>{{ $p->namaCawangan }}</td>
+                                    <td>{{ $p->negeri }}</td>
+                                    <td></td>
                                     <td>
-                                        <a href="/dashboard/pengesahan_pengguna/{{ $p->id }}"
-                                            class="btn btn-primary">Butiran</a>
+                                        <a href="/pengurusan_maklumat/senarai_pengguna/{{ $p->id }}/edit"
+                                            class="btn btn-sm btn-primary">Kemaskini</a>
                                     </td>
                                 </tr>
                             @endforeach

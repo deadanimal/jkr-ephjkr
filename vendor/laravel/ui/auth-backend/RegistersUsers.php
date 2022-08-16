@@ -48,7 +48,7 @@ trait RegistersUsers
         $user->password = Hash::make($request['password']);
         $user->katalaluan = $request->password;
         $user->save();
-
+        $user->assignRole('Pengguna');
         alert()->success('Pendaftaran telah berjaya, sila tunggu pengesahan dari pihak JKR', 'Berjaya');
         return redirect('/login');
 

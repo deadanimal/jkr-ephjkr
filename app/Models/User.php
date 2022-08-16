@@ -80,4 +80,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(ManualDanStandard::class);
     }
+
+    public function peranan_projek()
+    {
+        return $this->hasMany(PerananProjek::class);
+    }
 }
