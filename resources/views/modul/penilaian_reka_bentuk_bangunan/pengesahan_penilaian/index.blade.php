@@ -47,7 +47,7 @@
                             <!--TO ENABLE SCROLLBAR AT TABLES-->
                             {{-- <div class="table-responsive scrollbar"> --}}
                             
-                                <table class="content-table" style="width:100%">
+                                <table class="content-table" style="width:100%" border="1px solid">
                                         <thead>
                                             <tr>
                                                 <th class="text-center">Bil</th>

@@ -47,8 +47,8 @@
                             <!--TO ENABLE SCROLLBAR AT TABLES-->
                             {{-- <div class="table-responsive scrollbar"> --}}
                             
-                                <table class="content-table" style="width:100%">
-                                        <thead>
+                                <table class="table table-bordered line-table" style="width:100%">
+                                        <thead class="text-white bg-orange-jkr">
                                             <tr>
                                                 <th class="text-center">Bil</th>
                                                 <th class="text-center">ID Rujukan</th>

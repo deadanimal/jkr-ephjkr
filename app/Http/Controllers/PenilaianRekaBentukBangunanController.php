@@ -174,15 +174,18 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function semakan_rawak()
     {
-        # code...
+        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index');
+
     }
     public function semakan_rawak_form($id)
     {
-        # code...
+        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.edit');
+
     }
     public function simpan_semakan_rawak(Request $request, $id)
     {
-        # code...
+        return redirect('/penilaian_reka_bentuk_bangunan/semakan_rawak');
+
     }
     
 }

@@ -99,6 +99,10 @@
             color: white;
         }
 
+        .bg-orange-jkr{
+            background-color: #EB5500;
+        }
+
         .text-green-jkr {
             color: #5B8E7D;
             font-weight: 700;
@@ -219,6 +223,9 @@
             background-color: #5B8E7D;
         }
 
+        .hr-jkr{
+            border: 1px solid #EB5500;
+        }
         .nav-link-risda.active {
             background-color: #8DB368;
             color: white;
@@ -304,6 +311,32 @@
             background-color: #F4A258;
             border-color: #F4A258;
         }
+
+        .line-table {
+            border-color: #F4A258;
+        }
+
+        .line-corner-table-jkr{
+            border-radius: 7.86741px;
+        }
+
+        .btn-sasaran-jkr {
+            margin-right: 50px;
+        }
+
+        .btn-sah-jkr {
+            margin-right: 20px;
+        } 
+
+        .btn-white-sah {
+            border-color: #F4A258;
+            background-color: #fff;
+            color: #F4A258;
+            -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+            box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+        }
+
+    
 
         .nav-link-side {
             /* display: block; */
@@ -508,6 +541,25 @@
             background-color: #EB5500;
             border-color: #EB5500;
         }
+
+        .row-odd {
+            background-color: #F4A258;
+        }
+
+        .row-even {
+            background-color: #F4A258;
+        }
+
+        .star {
+            color:#FF0000;
+        }
+
+        .shadow-table-jkr{
+            background: #FFFFFF;
+            box-shadow: 0px 2.86088px 7.15219px 7.15219px rgba(0, 0, 0, 0.05);
+            border-radius: 7.15219px;
+        }
+
     </style>
     <?php
     use Illuminate\Support\Facades\Auth;
