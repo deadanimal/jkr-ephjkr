@@ -29,7 +29,7 @@
     <div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center">
         <table class="table table-bordered">
-            <thead style="background-color: #F0A420;">
+            <thead class="text-white bg-orange-jkr">
                 <tr>
                     <th scope="col">Bil.</th>
                     <th scope="col">ID Rujukan</th>

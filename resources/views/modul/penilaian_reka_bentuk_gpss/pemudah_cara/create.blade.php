@@ -10,7 +10,7 @@
 </div>
     <div class="container-fluid">
         <div class="card">
-            <div class="card-header" style="color: #EB5500">
+            <div class="card-header bg-oranje-jkr">
                 <b>Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
@@ -58,6 +58,11 @@
                         <input class="form-control" type="text" autocapitalize="off" name="disiplin" value="{{ $pemudah_cara ?? '' }}" />
                     </div>
                     </div>
+                    {{--Kategori--}}
+                    <div class="col-sm-10">
+                        <input class="form-control" type="hidden" name="kategori" value="gpss" />
+                    </div>
+                    
                     <!--Button Daftar-->
                     {{-- <button class=“btn btn-primary” type=“submit”>Daftar</button> --}}
                     <!--Button Daftar (TOOLTIPS)-->

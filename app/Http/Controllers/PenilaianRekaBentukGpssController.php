@@ -102,6 +102,7 @@ class PenilaianRekaBentukGpssController extends Controller
         $pemudah_cara->no_fax = $request->input('no_fax');
         $pemudah_cara->email = $request->input('email');
         $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->kategori = $request->kategori;
         $pemudah_cara->save();
 
         return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
@@ -115,27 +116,27 @@ class PenilaianRekaBentukGpssController extends Controller
     public function papar_skor_penilaian($id)
     {
         // papar form skor penilaian with id projek
-        return view(‘modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit’);
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit');
     }
     public function simpan_skor(Request $request, $id)
     {
         // simpan skor penilaian
-        return redirect(‘/penilaian_reka_bentuk_gpss/skor_penilaian’);
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
     }
     #pengesahan penilaian
     public function pengesahan_penilaian()
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view(‘modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.index’);
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.index');
     }
     public function papar_pengesahan_penilaian($id)
     {
         // papar form pengesahan penilaian with id projek
-        return view(‘modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.edit’);
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.edit');
     }
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
         // simpan pengesahan penilaian
-        return redirect(‘/penilaian_reka_bentuk_gpss/pengesahan_penilaian’);
+        return redirect('/penilaian_reka_bentuk_gpss/pengesahan_penilaian');
     }
 }

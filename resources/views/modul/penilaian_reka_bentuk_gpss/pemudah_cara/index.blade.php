@@ -34,7 +34,7 @@
             <div class="card-body">
                 <div class="row d-flex justify-content-center">
                     <table class="table datatable table-bordered">
-                        <thead style="background-color: #f0a420;">
+                        <thead class="text-white bg-orange-jkr">
                             <tr>
                                 <th scope="col">Bil.</th>
                                 <th scope="col">ID Rujukan</th>

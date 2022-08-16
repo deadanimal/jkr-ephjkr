@@ -1,80 +1,79 @@
 @extends('layouts.base')
 
 @section('content')
-
     {{-- header --}}
-    <div class="header" >
+    <div class="header">
         <h1 class="header-title" style="color: #EB5500">
             PENILAIAN REKA BENTUK GPSS
         </h1>
     </div>
-    <hr style="background-color: #EB5500;"></hr>
+    <hr style="background-color: #EB5500;">
     
+
     {{-- body --}}
-    <table class="table table-bordered">
-        <thead style="background-color: #f0a420;">
-          <tr style="height=20%">
-            <th scope="col">Kod</th>
-            <th scope="col" colspan="2">Perancangan & Pengurusan</th>
-            <th scope="col" colspan="2">Pembangunan Baru</th>
-            <th scope="col">Dokumen</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">TL1</th>
-            <td>Lorem ipsum dolor sit amet.</td>
-            <td>0</td>
-            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, porro?</td>
-          </tr>
-          <tr>
-            <th scope="row">TL2</th>
-            <td>Lorem ipsum dolor sit amet consectetur.</td>
-            <td>0</td>
-            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, explicabo at delectus laudantium ipsam perspiciatis!</td>
-          </tr>
-          <tr>
-            <th scope="row">TL3</th>
-            <td>Lorem ipsum dolor sit amet.</td>
-            <td>0</td>
-            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ullam deleniti. Atque?</td>
-          </tr>
-          
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="card p-3  py-4">
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <label for="nama_projek">Nama Projek:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-warning btn-block">Carian</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </tbody>
-      </table>
-
-
-
-
-    {{-- pagination --}}
-    <tfoot>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination ">
-              <li class="page-item">
-                {{-- <a class="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a> --}}
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li>
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-    </tfoot>
-   
-
-
-    
+    <div class="container-fluid mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="row d-flex justify-content-center">
+                    <table class="table datatable table-bordered">
+                        <thead class="text-white bg-orange-jkr">
+                            <tr>
+                                <th scope="col">Bil.</th>
+                                <th scope="col">ID Rujukan</th>
+                                <th scope="col">Nama Projek</th>
+                                <th scope="col">Alamat</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Tindakan</th>
+                            </tr>
+        
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td>SKL0202</td>
+                                <td>Hospital Seri Iskandar</td>
+                                <td>Mukah</td>
+                                <td>BERJAYA DIDAFTAR</td>
+                                <td>
+                                    <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/edit" type="button" class="btn btn-warning">PILIH</a>
+                                </td>
+                            </tr>
+                            {{-- @foreach ($projeks as $p)
+                                <tr>
+                                    <td>{{$loop->iteration}}</td>
+                                    <td>{{$p->id_ruj_skala}}</td>
+                                    <td>{{$p->namaProjek}}</td>
+                                    <td>{{$p->alamatProjek}}</td>
+                                    <td>{{$p->status->status_projek}}</td>
+                                    <td>
+                                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{{$p->id}}"
+                                            type="button" class="btn btn-warning">PILIH</a>
+                                    </td>
+                                </tr>
+                            @endforeach --}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 @endsection
