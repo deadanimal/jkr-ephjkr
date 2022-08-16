@@ -70,6 +70,7 @@ Route::middleware('auth')->group(function () {
         ]);
 
         Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
+        Route::post('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'update_peranan']);
     });
 
     // Penilaian Reka Bentuk Bangunan

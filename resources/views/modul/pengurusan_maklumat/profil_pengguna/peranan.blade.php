@@ -9,7 +9,8 @@
                         <a href="/pengurusan_maklumat/profil_pengguna" class="text-secondary">Paparan Profil</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="/pengurusan_maklumat/profil_pengguna/{{$pengguna->id}}/edit" class="text-secondary">Kemaskini Profil</a>
+                        <a href="/pengurusan_maklumat/profil_pengguna/{{ $pengguna->id }}/edit"
+                            class="text-secondary">Kemaskini Profil</a>
                     </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
                         Penukaran Peranan
@@ -37,45 +38,61 @@
                         <label class="col-form-label">Nama:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="name" value="{{ $pengguna->name }}" />
+                        <input class="form-control" name="name" value="{{ $pengguna->name }}" disabled />
                     </div>
-    
+
                     <div class="col-3 mb-2">
                         <label class="col-form-label">e-Mel Pengguna:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="email" value="{{ $pengguna->email }}" />
+                        <input class="form-control" name="email" value="{{ $pengguna->email }}" disabled />
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="projek" value="" />
+                        <select name="projek_id" class="form-select form-control" id="projek">
+                            <option value="" selected hidden>Sila Pilih</option>
+                            @foreach ($projek as $pr)
+                                <option value="{{ $pr->projek->id }}">{{ $pr->projek->namaProjek }}</option>
+                            @endforeach
+                        </select>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Peranan Sekarang:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="role" value="" />
+                        <input type="text" class="form-control" value="Tiada" disabled id="peranan_sekarang">
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Peranan Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="new_role" value="" />
+                        <select name="role" class="form-select form-control">
+                            @if ($pengguna->perananPengguna == null)
+                                <option value="" selected hidden>Sila Pilih</option>
+                            @else
+                                <option value="{{ $pengguna->perananPengguna }}" selected hidden>
+                                    {{ $pengguna->perananPengguna }}</option>
+                            @endif
+                            @foreach ($peranan as $pp)
+                                <option value="{{ $pp->name }}">{{ $pp->name }}</option>
+                            @endforeach
+                        </select>
                     </div>
-    
-    
+
+
                     <div class="col-3 mb-2">
                         {{-- biar kosong --}}
                     </div>
                     <div class="col-7 mb-2">
                         <div class="row mt-4">
                             <div class="col-6">
-                                <a href="/pengurusan_maklumat/profil_pengguna/{{$pengguna->id}}/edit" class="btn btn-outline-primary">Batal</a>
+                                <a href="/pengurusan_maklumat/profil_pengguna/{{ $pengguna->id }}/edit"
+                                    class="btn btn-outline-primary">Batal</a>
                             </div>
                             <div class="col-6 text-end">
                                 <button type="submit" class="btn btn-primary">Simpan Kemaskini</button>
@@ -86,4 +103,17 @@
             </form>
         </div>
     </div>
+
+    <script>
+        $('#projek').change(function() {
+            var projek_id = $('#projek').val();
+            var role = @json($projek->toArray());
+
+            role.forEach(e => {
+                if (projek_id == e.projek_id) {
+                    $('#peranan_sekarang').val(e.peranan.name);
+                }
+            });
+        });
+    </script>
 @endsection
