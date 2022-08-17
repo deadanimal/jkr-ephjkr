@@ -515,23 +515,22 @@
                                     </div>
                                 </a>
                             </li>
-                            {{-- Semakan Rawak dan Jana Sijil --}}
+                            {{-- Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('semakan_rawak_jana_sijil/*') ? 'active' : '' }} py-0"
-                                    href="#">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/jana_keputusan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_gpss/jana_keputusan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/semakan_rawak_jana_sijil') ? 'text-dark' : '' }}">Semakan
-                                            Rawak dan
-                                            Jana Sijil</span>
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/jana_keputusan') ? 'text-dark' : '' }}">Jana
+                                            Keputusan</span>
                                     </div>
                                 </a>
                             </li>
                             
-                            {{-- Papar dan Muat Turun Sijil Verifikasi Reka Bentuk --}}
+                            {{-- Papar dan Muat Turun Skor Kad Penilaian Reka Bentuk --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/sijil_verifikasi_gpss') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_gpss/skor_penilaian">
+                                    href="/penilaian_reka_bentuk_gpss/skor_penilaian/edit">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/sijil_verifikasi_gpss') ? 'text-dark' : '' }}">Papar
