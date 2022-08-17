@@ -309,6 +309,23 @@
             box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%), 0 0 0 0 rgb(76 143 233 / 50%);
         }
 
+        .btn-secondary {
+            color: #F4A258;
+            background-color: #fff;
+            border-color: #F4A258;
+            -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+            box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+        }
+
+        .btn-secondary:hover,
+        .navbar-vertical .btn-purchase:hover,
+        .tox .tox-menu__footer .tox-button:hover:last-child,
+        .tox .tox-dialog__footer .tox-button:hover:last-child {
+            color: #F4A258;
+            background-color: #fff;
+            border-color: #F4A258;
+        }
+
         .btn-outline-primary {
             color: #F4A258;
             border-color: #F4A258;

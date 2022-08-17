@@ -268,8 +268,8 @@
             <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}" method="post">
                 @csrf
                 @method('DELETE')
-                <div class="text-left">
-                    <button type="submit" class="btn-tolak">Tolak</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-secondary">Tolak</button>
                 </div>
             </form>
         </th>
@@ -278,8 +278,8 @@
             <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}" method="post">
                 @csrf
                 @method('POST')
-                <div class="text-right">
-                    <button type="submit" class="btn-sah">Sah</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Sah</button>
                 </div>
             </form>
         </th>

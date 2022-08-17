@@ -67,7 +67,7 @@
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
                                                     <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/edit" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Papar">PAPAR</a>
+                                                    data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 
                                         {{-- @endforeach --}}

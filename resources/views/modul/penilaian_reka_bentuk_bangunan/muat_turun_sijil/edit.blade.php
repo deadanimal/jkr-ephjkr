@@ -142,7 +142,7 @@
 
                 <tr align="center" class="text-black">
                     <th colspan="3"><button class="btn btn-primary btn-sasaran">Sasaran</button>
-                        <button class="btn-outline-primary">Disahkan</button></th>
+                        <button class="btn btn-secondary">Disahkan</button></th>
                 </tr>
 
                 <tr align="center" style="background-color:#EB5500">
@@ -198,8 +198,10 @@
         </table>
     </div>
 
-    {{-- BUTTON MUAT TURUN SIJIL --}}
-        <button class="btn btn-primary vertical-center" style="width: 20%">Muat Turun</button>
+        <!--BUTTON MUAT TURUN SIJIL-->
+        <div class="mb-3 text-center">
+            <button class="btn btn-primary">Muat Turun</button>
+        </div>
 </div>
 
 

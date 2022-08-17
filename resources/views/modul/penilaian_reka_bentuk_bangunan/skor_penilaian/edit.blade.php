@@ -187,7 +187,7 @@
 
                 <tr align="center" class="text-black">
                     <th colspan="3"><button class="btn btn-primary btn-sasaran">Sasaran</button>
-                        <button class="btn-outline-primary">Disahkan</button></th>
+                        <button class="btn btn-secondary">Disahkan</button></th>
                 </tr>
 
                 <tr align="center" style="background-color:#EB5500">
@@ -246,13 +246,13 @@
 </div>
 
     <!--pdf form Muat Naik Sijil -->
-    <div class="mb-3">
+    <div class="mb-3 text-center">
     <input type="file" id="real-file" hidden="hidden" />
     <button type="button" id="custom-button">MUAT NAIK SIJIL</button>
     </div>
     
     <!--Button Jana Sijil-->
-    <div class="mb-3">
+    <div class="mb-3 text-center">
     <button class="btn btn-primary">Jana</button>
     </div>
             
