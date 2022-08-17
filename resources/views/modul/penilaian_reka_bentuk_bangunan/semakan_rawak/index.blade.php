@@ -7,12 +7,12 @@
 @section('content')
 <!--Title: Header-->
 <div class="header">
-        <b class="paparan-senarai-projek">Paparan Senarai Projek</b>
+        <b class="text-dark-green-jkr">Semakan Rawak dan Jana Sijil</b>
 
     <h1 class="header-title">
         PENILAIAN REKA BENTUK BANGUNAN
     </h1>
-    <hr class="line-6">
+    <hr class="hr-jkr">
     
 
 </div>
@@ -26,13 +26,13 @@
         <!--Kotak Nama (Carian)-->
     
             <div class="col-sm-4">
-                <input type="search" class="kotak-nama" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
             </div>
        
 
         <!--Button Carian-->
             <div class="col-sm-3">
-                <button type="button" class="btn-carian carian">Carian</button>
+                <button type="button" class="btn btn-primary">Carian</button>
             </div>                
         </div>
 
@@ -78,8 +78,8 @@
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/edit" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Papar Skor Penilaian">Papar</a>
                                                 </td>
                                             </tr> 
                                         {{-- @endforeach --}}
