@@ -4,52 +4,53 @@
 
 
 @section('content')
-<!--Title: Header-->
+
 <div class="header">
         <b class="paparan-senarai-projek">Semakan Rawak dan Jana Sijil</b>
 
-    <h1 class="header-title">
-        PENILAIAN REKA BENTUK BANGUNAN
-    </h1>
-    <hr class="line-6">
+            <h1 class="header-title">
+                PENILAIAN REKA BENTUK BANGUNAN
+            </h1>
+            <hr class="line-6">
 
 <div class="container-fluid">
     <div class="card-body">
-        <form action="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
+        <form action="/penilaian_reka_bentuk_bangunan/skor_penilaian/{id}" method="post" enctype="multipart/form-data">
             @csrf
             {{-- @method('PUT') --}}
 
             <!--Nama Projek-->
-            <div class="mb-3">
+            <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Nama Projek:</label>
-            {{-- <div class="col-md-6"> --}}
-                <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara ?? ''}}"/>                        
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                    </div>                     
             </div>
-            {{-- </div> --}}
 
             <!--ID Rujukan Skala-->
-            <div class="mb-3 row">
+            <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">ID Rujukan Skala:</label>
-            {{-- <div class="col-sm-10"> --}}
-                <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{$pemudah_cara ?? ''}}"/>                        
-            {{-- </div> --}}
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" value="{{$pemudah_cara ?? ''}}"/>  
+                    </div>                      
             </div>
 
-            <!--Alamat-->
-            <div class="mb-3 row">
+            <!--No Telefon-->
+            <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">No. Tel:</label>
-            {{-- <div class="col-sm-10"> --}}
-                <input class="form-control" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>                        
-            {{-- </div> --}}
+                    <div class="col-sm-5">
+                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>   
+                    </div>                         
             </div>
 
             <!--Kos Projek Semasa-->
-            <div class="mb-3 row">
+            <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Kos Projek Semasa:</label>
-            {{-- <div class="col-sm-10"> --}}
-                <input class="form-control" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>                        
-            {{-- </div> --}}
+                    <div class="col-sm-5">
+                        <input class="form-control" type="number" autocapitalize="off" name="kosProjek" value="{{$pemudah_cara ?? ''}}"/>                        
+                    </div>
             </div>
+        </div>
 
         <div class="row mx-3">
             <table class="table table-bordered line-table shadow-table-jkr line-corner-table-jkr">
@@ -177,9 +178,9 @@
                 </table>
             
 
-    <div class="row mx-3">
-        <table class="table table-bordered line-table shadow-table-jkr">
-            <thead class="text-white line-table">
+        <div class="row mx-3">
+            <table class="table table-bordered line-table shadow-table-jkr">
+                <thead class="text-white line-table">
                 <tr align="center" style="background-color:#EB5500">
                     <th colspan="3">KEPUTUSAN PENARAFAN HIJAU PERINGKAT REKA BENTUK (PRB)</th>
                 </tr>
@@ -241,16 +242,16 @@
             </thead>
         </table>
 
-
-    </div>
+    {{-- </div> --}}
 </div>
 
-    {{-- pdf form Muat Naik Sijil --}}
+    <!--pdf form Muat Naik Sijil -->
     <div class="mb-3">
     <input type="file" id="real-file" hidden="hidden" />
     <button type="button" id="custom-button">MUAT NAIK SIJIL</button>
     </div>
     
+    <!--Button Jana Sijil-->
     <div class="mb-3">
     <button class="btn btn-primary">Jana</button>
     </div>

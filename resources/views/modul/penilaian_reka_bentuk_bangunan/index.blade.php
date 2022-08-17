@@ -3,9 +3,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="cssfile/style.css">
 
-<!-- Styles -->
+
 @section('content')
-<!--Title: Header-->
+
 <div class="header">
         <b class="paparan-senarai-projek">Paparan Senarai Projek</b>
 
@@ -17,36 +17,20 @@
 
 </div>
     <div class="container-fluid">
-        <!--Nama Projek-->
-        <div class="mt-8 row">
-            <div class="col-sm-2">
-                <label class="nama-projek" >Nama Projek:</label>
-        </div>
-         
-        <!--Kotak Nama (Carian)-->
-    
-            <div class="col-sm-4">
-                <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
-            </div>
-       
-
-        <!--Button Carian-->
-            <div class="col-sm-3">
-                <button type="button" class="btn btn-primary">Carian</button>
-            </div>                
+        <!--Carian Nama Projek-->
+        <div class="mt-8 form-group row">
+                <label class="col-sm-2 col-form-label">Nama Projek:</label>
+                    <div class="col-sm-5">
+                        <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                    </div>
+                        <div class="col-sm-5">
+                            <button type="button" class="btn btn-primary">Carian</button>
+                        </div>
         </div>
 
-          
         <div class="col-12">
             <div class="card-header">
-                    {{-- <div class="card-body">
-
-                    </div> --}}
                     <div class="mt-5 row">
-                    
-                            <!--TO ENABLE SCROLLBAR AT TABLES-->
-                            {{-- <div class="table-responsive scrollbar"> --}}
-                            
                                 <table class="table table-bordered line-table" style="width:100%">
                                         <thead class="text-white bg-orange-jkr">
                                             <tr>

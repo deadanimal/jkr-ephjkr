@@ -1,20 +1,19 @@
 @extends('layouts.base')
-
 <link rel="stylesheet" href="/cssfile/pemudah_cara_style.css">
 
 @section('content')
-<!--Title: Header-->
+
 <div class="header">
     <div class="col-sm-6">
-    Melantik Pemudah Cara 
-    <b style="color: #0F5E31;">> Daftar Pemudah Cara</b>
+        Melantik Pemudah Cara 
+            <b style="color: #0F5E31;">> Daftar Pemudah Cara</b>
     </div>
 
-    <h1 class="header-title" style="color: #EB5500">
-        PENILAIAN REKA BENTUK BANGUNAN
-    </h1>
-    {{-- horizontal line --}}
-    <hr class="line-6">
+        <h1 class="header-title" style="color: #EB5500">
+            PENILAIAN REKA BENTUK BANGUNAN
+        </h1>
+        <!--horizontal line-->
+        <hr class="line-6">
 </div>
     <div class="container-fluid">
         
@@ -27,72 +26,64 @@
                     {{-- @method('PUT') --}}
 
                     <!--Nama-->
-                    <div class="mb-3 row">
+                    <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Nama:</label>
-                    {{-- <div class="col-md-6"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara ?? ''}}"/>                        
-                    {{-- </div> --}}
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara ?? ''}}"/>                        
+                            </div>
                     </div>
 
                     <!--Syarikat/Cawangan-->
-                    <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Syarikat/Cawangan:</label>
-                    {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{$pemudah_cara ?? ''}}"/>                        
-                    {{-- </div> --}}
+                    <div class="mb-3 form-group row">
+                        <label class="col-sm-2 col-form-label">Syarikat:</label>
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{$pemudah_cara ?? ''}}"/>                        
+                            </div>
                     </div>
 
                     <!--No. Telefon-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Tel:</label>
-                    {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>                        
-                    {{-- </div> --}}
+                            <div class="col-sm-7">
+                                <input class="form-control" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>                        
+                            </div>
                     </div>
 
                     <!--No. Fax-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Fax:</label>
-                    {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="number" autocapitalize="off" name="no_fax" value="{{$pemudah_cara ?? ''}}"/>                        
-                    {{-- </div> --}}
+                            <div class="col-sm-7">
+                                <input class="form-control" type="number" autocapitalize="off" name="no_fax" value="{{$pemudah_cara ?? ''}}"/>                        
+                            </div>
                     </div>
 
                     <!--Emel-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">E-mel:</label>
-                    {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="email" value="{{$pemudah_cara ?? ''}}"/>                        
-                    {{-- </div> --}}
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" autocapitalize="off" name="email" value="{{$pemudah_cara ?? ''}}"/>                        
+                            </div>
                     </div>
 
                     <!--Disiplin-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Disiplin:</label>
-                    {{-- <div class="col-sm-10"> --}}
-                        <input class="kotak-nama" type="text" autocapitalize="off" name="disiplin" value="{{$pemudah_cara ?? ''}}"/>
-                    {{-- </div> --}}
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" autocapitalize="off" name="disiplin" value="{{$pemudah_cara ?? ''}}"/>
+                            </div>
                     </div>
 
-                    {{--Kategori--}}
-                    <div class="col-sm-10">
+                    <!--Kategori-->
                         <input class="form-control" type="hidden" name="kategori" value="bangunan" />
-                    </div>
 
-                    <!--Button Daftar (TOOLTIPS)-->
+                    <!--Button Daftar Pemudah Cara (TOOLTIPS)-->
                     <div class="text-center">
                         {{-- <a href="#" class="btn btn-primary" type="submit">Daftar</a> --}}
                         <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                         title="Daftar Pemudah Cara" type="submit">Daftar</button>
                     </div>
-
-                    
-
-                    {{-- <button class="btn-daftar">Test</button> --}}
-
-                    
                 </form>
-            </div>
+            </div> <!--card-body-->
     </div> <!--Container Fluid-->
 
             <!--JS-->

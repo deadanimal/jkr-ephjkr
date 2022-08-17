@@ -89,7 +89,9 @@ Route::middleware('auth')->group(function () {
 
     // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 2
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_2']);
-    Route::post('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_2']);
+    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_2']);
+    Route::post('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian_halaman_2']);
+
     // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 3
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_3', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_3']);
     Route::post('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_3/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_3']);

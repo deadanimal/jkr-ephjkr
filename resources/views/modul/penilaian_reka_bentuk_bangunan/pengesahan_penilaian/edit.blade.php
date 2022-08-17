@@ -265,7 +265,7 @@
 </body>
 
         <th>
-            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}" method="post">
+            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}" method="post">
                 @csrf
                 @method('DELETE')
                 <div class="text-left">
@@ -275,7 +275,7 @@
         </th>
 
         <th>
-            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}" method="post">
+            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}" method="post">
                 @csrf
                 @method('POST')
                 <div class="text-right">
@@ -284,22 +284,11 @@
             </form>
         </th>
 
-
-{{-- <nav aria-label="...">
-    <ul class="pagination pagination-sm">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1">1</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-    </ul>
-  </nav> --}}
-
   <nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
       <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/edit">1</a></li>
-      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p2">2</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/p2">2</a></li>
       <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p3">3</a></li>
       <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p4">4</a></li>
       <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p5">5</a></li>

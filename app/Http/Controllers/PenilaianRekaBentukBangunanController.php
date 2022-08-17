@@ -178,12 +178,19 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function pengesahan_penilaian_halaman_2()
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p2');
     }
     public function papar_pengesahan_penilaian_halaman_2($id)
     {
         // papar form pengesahan penilaian with id projek 
         return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p2');
+    }
+
+    public function simpan_pengesahan_penilaian_halaman_2(Request $request, $id)
+    {
+        // simpan pengesahan penilaian
+        // return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p3');
     }
 
     public function pengesahan_penilaian_halaman_3()

@@ -17,24 +17,16 @@
 
 </div>
     <div class="container-fluid">
-        <!--Nama Projek-->
-        <div class="mt-8 row">
-            <div class="col-sm-2">
-                <label class="nama-projek" >Nama Projek:</label>
-        </div>
-         
-        <!--Kotak Nama (Carian)-->
-    
-            <div class="col-sm-4">
-                <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
-            </div>
-       
-
-        <!--Button Carian-->
-            <div class="col-sm-3">
-                <button type="button" class="btn btn-primary">Carian</button>
-            </div>                
-        </div>
+        <!--Carian Nama Projek-->
+        <div class="mt-8 form-group row">
+            <label class="col-sm-2 col-form-label">Nama Projek:</label>
+                <div class="col-sm-5">
+                    <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                </div>
+                    <div class="col-sm-5">
+                        <button type="button" class="btn btn-primary">Carian</button>
+                    </div>
+    </div>
 
           
         <div class="col-12">
