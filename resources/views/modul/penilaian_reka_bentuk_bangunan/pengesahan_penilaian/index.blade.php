@@ -26,13 +26,13 @@
         <!--Kotak Nama (Carian)-->
     
             <div class="col-sm-4">
-                <input type="search" class="kotak-nama" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
             </div>
        
 
         <!--Button Carian-->
             <div class="col-sm-3">
-                <button type="button" class="btn-carian carian">Carian</button>
+                <button type="button" class="btn btn-primary">Carian</button>
             </div>                
         </div>
 
@@ -47,8 +47,8 @@
                             <!--TO ENABLE SCROLLBAR AT TABLES-->
                             {{-- <div class="table-responsive scrollbar"> --}}
                             
-                                <table class="content-table" style="width:100%" border="1px solid">
-                                        <thead>
+                                <table class="table table-bordered line-table" style="width:100%" border="1px solid">
+                                        <thead class="text-white bg-orange-jkr">
                                             <tr>
                                                 <th class="text-center">Bil</th>
                                                 <th class="text-center">ID Rujukan</th>
@@ -64,7 +64,7 @@
                                     <tbody>
                                         <!--LOOPING TABLES-->
                                         {{-- @foreach ($projek as $key => $p) --}}
-                                            <tr>
+                                            <tr class="text-black">
                                                 {{-- <td>{{ $pdkk->id }}</td> --}}
                                                 <td style="text-align: center; vertical-align: middle;">1</td>
                                                 <td style="text-align: center; vertical-align: middle;">SKL0202</td>

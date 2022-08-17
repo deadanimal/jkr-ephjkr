@@ -3,19 +3,25 @@
 
 @section('content')
 <body>
-    <div class="scroll">
+    {{-- <div class="scroll"> --}}
     <!--TO ENABLE SCROLLBAR AT TABLES-->
     <div class="table-responsive scrollbar">
-        <table border="1px">
-            <thead>
+        <table class="table table-bordered line-table">
+            <thead class="text-white">
                 <tr align="center" style="background-color:#EB5500">
-                    <th style="width:50%">Kod</th>
-                    <th colspan="2" style="width:50%">Perancangan & Pengurusan Tapak Lestari</th>
-                    <th colspan="7" style="width:50%">Pembangunan Baru</th>
-                    <th rowspan="3" style="width:50%">Markah</th>
-                    <th colspan="2" style="width:50%">Dokumen</th>
+                    <th>Kod</th>
+                    <th colspan="2">Perancangan & Pengurusan Tapak Lestari</th>
+                    <th colspan="7">Pembangunan Baru</th>
+                    <th colspan="2">Markah</th>
+                    <th colspan="2">Dokumen</th>
                 </tr>
+
+                <tr align="center" style="background-color:#EB5500">
+                    <th colspan="15">Markah</th>
+                </tr>
+            
             </thead>
+            <thead class="text-white">
                 <tr align="center" style="background-color:#EB5500">
                     <th>TL</th>
                     <th>Kriteria</th>
@@ -27,9 +33,10 @@
                     <th>MS</th>
                     <th>MV</th>
                     <th>ML</th>
-                    <th>Reka Bentuk (Peringkat 2)</th>
+                    <th colspan="4">Reka Bentuk (Peringkat 2)</th>
 
                 </tr>
+            </thead>
 
                 <tr align="center">
                     <th>TL2</th>
@@ -152,7 +159,7 @@
         
         </table>
     </div>
-</div>
+{{-- </div> --}}
 </body>
 
         <th>
