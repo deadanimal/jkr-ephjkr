@@ -129,6 +129,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         $pemudah_cara->no_fax = $request->input('no_fax');
         $pemudah_cara->email = $request->input('email');
         $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->kategori = $request->kategori;
         $pemudah_cara->save();
 
         // // submit form melantik pemudah cara
@@ -172,6 +173,77 @@ class PenilaianRekaBentukBangunanController extends Controller
         return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
     }
 
+     #Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 2
+
+    public function pengesahan_penilaian_halaman_2()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+    }
+    public function papar_pengesahan_penilaian_halaman_2($id)
+    {
+        // papar form pengesahan penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p2');
+    }
+
+    public function pengesahan_penilaian_halaman_3()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+    }
+    public function papar_pengesahan_penilaian_halaman_3($id)
+    {
+        // papar form pengesahan penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p3');
+    }
+
+    public function pengesahan_penilaian_halaman_4()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+    }
+    public function papar_pengesahan_penilaian_halaman_4($id)
+    {
+        // papar form pengesahan penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p4');
+    }
+
+    public function pengesahan_penilaian_halaman_5()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+    }
+    public function papar_pengesahan_penilaian_halaman_5($id)
+    {
+        // papar form pengesahan penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p5');
+    } 
+
+    public function pengesahan_penilaian_halaman_6()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+    }
+    public function papar_pengesahan_penilaian_halaman_6($id)
+    {
+        // papar form pengesahan penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p6');
+    }
+
+    public function pengesahan_penilaian_halaman_7()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index');
+    }
+    public function papar_pengesahan_penilaian_halaman_7($id)
+    {
+        // papar form pengesahan penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p7');
+    }
+
+
+    // Semakan Rawak Penilaian Reka Bentuk Bangunan
+
     public function semakan_rawak()
     {
         return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index');
@@ -185,6 +257,31 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function simpan_semakan_rawak(Request $request, $id)
     {
         return redirect('/penilaian_reka_bentuk_bangunan/semakan_rawak');
+
+    }
+
+    // Muat Turun Sijil Penilaian Reka Bentuk Bangunan
+
+    public function muat_turun_sijil()
+    {
+        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.index');
+
+    }
+    public function muat_turun_sijil_form($id)
+    {
+
+        //letak code upload file
+        // if($request->hasFile('print_sijil')){
+        //     $apaapa = $request->file('print_sijil')->store('print_sijil');
+        //     $apapa -> print_naziran = $apapapa;
+        // }
+        
+        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.edit');
+
+    }
+    public function simpan_muat_turun_sijil(Request $request, $id)
+    {
+        return redirect('/penilaian_reka_bentuk_bangunan/muat_turun_sijil');
 
     }
     

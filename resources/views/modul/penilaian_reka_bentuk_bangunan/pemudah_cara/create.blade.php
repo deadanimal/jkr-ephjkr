@@ -74,6 +74,11 @@
                     {{-- </div> --}}
                     </div>
 
+                    {{--Kategori--}}
+                    <div class="col-sm-10">
+                        <input class="form-control" type="hidden" name="kategori" value="bangunan" />
+                    </div>
+
                     <!--Button Daftar (TOOLTIPS)-->
                     <div class="text-center">
                         {{-- <a href="#" class="btn btn-primary" type="submit">Daftar</a> --}}
