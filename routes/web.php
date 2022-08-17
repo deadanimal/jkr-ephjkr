@@ -46,7 +46,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Route::middleware('auth')->group(function () {
+Route::middleware('auth')->group(function () {
 
     // Dashboard
     Route::prefix('/dashboard')->group(function () {
@@ -60,7 +60,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::prefix('/pengurusan_maklumat')->group(function () {
         Route::resources([
             'profil_pengguna' => ProfilController::class,
-            'pengguna' => PenggunaController::class,
+            'senarai_pengguna' => PenggunaController::class,
             'manual_dan_standard' => ManualDanStandardController::class,
             'faq' => FaqController::class,
             'audit_trail' => AuditTrailController::class,
@@ -68,6 +68,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
             'hebahan' => HebahanController::class,
             'pendaftaran_projek' => ProjekController::class,
         ]);
+
+        Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
+        Route::post('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'update_peranan']);
     });
 
     // Penilaian Reka Bentuk Bangunan
@@ -113,5 +116,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     // action pengesahan
     Route::put('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
 
-
-// });
+});

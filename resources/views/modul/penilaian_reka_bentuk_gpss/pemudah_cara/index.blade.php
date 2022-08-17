@@ -34,7 +34,7 @@
             <div class="card-body">
                 <div class="row d-flex justify-content-center">
                     <table class="table datatable table-bordered">
-                        <thead style="background-color: #f0a420;">
+                        <thead class="text-white bg-orange-jkr">
                             <tr>
                                 <th scope="col">Bil.</th>
                                 <th scope="col">ID Rujukan</th>
@@ -46,6 +46,16 @@
         
                         </thead>
                         <tbody>
+                            <tr>
+                                <th scope="row">1.</th>
+                                <td>SKL0202</td>
+                                <td>Hospital Seri Iskandar</td>
+                                <td>Mukah</td>
+                                <td>BERJAYA DIDAFTAR</td>
+                                <td>
+                                    <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" type="button" class="btn btn-warning">DAFTAR</a>
+                                </td>
+                            </tr>
                             @foreach ($projeks as $p)
                                 <tr>
                                     <td>{{$loop->iteration}}</td>

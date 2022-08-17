@@ -71,6 +71,10 @@
                     <div class="col-7 mb-2">
                         <input class="form-control" name="alamatSyarikat" value="{{ $pengguna->alamatSyarikat }}" />
                     </div>
+
+                    <div class="col-10 text-end">
+                        <a href="/pengurusan_maklumat/profil_pengguna/{{$pengguna->id}}/penukaran_peranan" class="text-primary">Penukaran Peranan</a>
+                    </div>
     
                     <div class="col-3 mb-2">
                         
