@@ -18,14 +18,14 @@
                 <b>Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
-                <form action="/pemudah_cara" method="post" enctype="multipart/form-data">
+                <form action="/penilaian_reka_bentuk_gpss" method="POST" enctype="multipart/form-data">
                     @csrf
 
                     <!--Nama-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Nama:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name" />                        
+                        <input class="form-control" type="text" autocapitalize="off" name="nama" id="nama" />                        
                     </div>
                     </div>
 
@@ -33,7 +33,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Syarikat:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="syarikat"/>                        
                     </div>
                     </div>
 
@@ -41,7 +41,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Tel:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="number" autocapitalize="off" name="name"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="nomborTelefon"/>                        
                     </div>
                     </div>
 
@@ -49,7 +49,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Fax:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="number" autocapitalize="off" name="name"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="nomborFax"/>                        
                     </div>
                     </div>
 
@@ -57,7 +57,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">E-mel:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="emel"/>                        
                     </div>
                     </div>
 
@@ -65,7 +65,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Disiplin:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="name"/>
+                        <input class="form-control" type="text" autocapitalize="off" name="disiplin"/>
                     </div>
                     </div>
 
@@ -74,8 +74,10 @@
 
                     <!--Button Daftar (TOOLTIPS)-->
                     <div class="text-center">
-                        <button class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" 
-                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                        <a href="/penilaian_reka_bentuk_gpss" type="submit" class="btn btn-warning">Daftar</a>
+
+                        {{-- <button class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" 
+                        title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
                     </div>
 
                     

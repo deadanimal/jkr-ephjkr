@@ -150,6 +150,14 @@
             background-color: #be4803;
         }
 
+        .bg-orange-jkr{
+            background-color: #EB5500;
+        }
+
+        .line-table{
+            border-color: #F4A258;
+        }
+
         .br-10 {
             border-radius: 10px;
         }
