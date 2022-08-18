@@ -6,257 +6,299 @@
 @section('content')
 
 <div class="header">
-        <b class="paparan-senarai-projek">Semakan Rawak dan Jana Sijil</b>
+        <b class="paparan-senarai-projek">> Penilaian</b>
 
-            <h1 class="header-title">
+            {{-- <h1 class="header-title">
                 PENILAIAN REKA BENTUK BANGUNAN
-            </h1>
+            </h1> --}}
             <hr class="line-6">
 
 <div class="container-fluid">
     <div class="card-body">
-        <form action="/penilaian_reka_bentuk_bangunan/skor_penilaian/{id}" method="post" enctype="multipart/form-data">
-            @csrf
-            {{-- @method('PUT') --}}
+        <div class="table-responsive scrollbar">
+            <form action="/penilaian_reka_bentuk_bangunan/skor_penilaian/{id}" method="post" enctype="multipart/form-data">
+                @csrf
+                {{-- @method('PUT') --}}
 
-            <!--Nama Projek-->
-            <div class="mb-3 form-group row">
-                <label class="col-sm-2 col-form-label">Nama Projek:</label>
-                    <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
-                    </div>                     
-            </div>
-
-            <!--ID Rujukan Skala-->
-            <div class="mb-3 form-group row">
-                <label class="col-sm-2 col-form-label">ID Rujukan Skala:</label>
-                    <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" value="{{$pemudah_cara ?? ''}}"/>  
-                    </div>                      
-            </div>
-
-            <!--No Telefon-->
-            <div class="mb-3 form-group row">
-                <label class="col-sm-2 col-form-label">No. Tel:</label>
-                    <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>   
-                    </div>                         
-            </div>
-
-            <!--Kos Projek Semasa-->
-            <div class="mb-3 form-group row">
-                <label class="col-sm-2 col-form-label">Kos Projek Semasa:</label>
-                    <div class="col-sm-5">
-                        <input class="form-control" type="number" autocapitalize="off" name="kosProjek" value="{{$pemudah_cara ?? ''}}"/>                        
-                    </div>
-            </div>
-        </div>
-
-        <div class="row mx-3">
-            <table class="table table-bordered line-table shadow-table-jkr line-corner-table-jkr">
-                <thead class="text-white line-table">
-                    <tr align="center" style="background-color:#EB5500">
-                        <th colspan="3">Jenis Pembangunan</th>
-                        <th colspan="8">Pembangunan Baru</th>
-                    </tr>
-                
-                    <tr align="center" style="background-color:#EB5500">
-                        {{-- <th></th> --}}
-                        <th colspan="3">Peratusan Mengikut Kriteria</th>
-                        <th>MM</th>
-                        <th>MS</th>
-                        <th>MR</th>
-                        <th>MMV</th>
-                        <th>MS</th>
-                        <th>MV</th>
-                        <th>ML</th>
-                    </thead>
-                    </tr>
-
-                    <tr align="center" class="text-black" >
-                        <th>TL</th>
-                        <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
-                        <th>26</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>24</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
-
-                    </tr>
-                    <tr align="center" class="text-black" >
-                        <th>KT</th>
-                        <th colspan="2">Pengurusan Kecekapan Tenaga</th>
-                        <th>26</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>24</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
-
-                    </tr>
-
-                    <tr align="center" class="text-black" >
-                        <th>SB</th>
-                        <th colspan="2">Pengurusan Sumber dan Bahan</th>
-                        <th>26</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>24</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
-
-                    </tr>
-
-                    <tr align="center" class="text-black" >
-                        <th>PA</th>
-                        <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
-                        <th>26</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>24</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
-
-                    </tr>
-
-                    <tr align="center" class="text-black" >
-                        <th>PD</th>
-                        <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
-                        <th>26</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>24</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
+                <table class="table table-bordered line-table">
+                    <thead class="text-white">
+                        <tr align="center" style="background-color:#EB5500">
+                            <th rowspan="3">Kod</th>
+                            <th rowspan="3">Kriteria</th>
+                            <th rowspan="3">Kategori bangunan</th>
+                            <th colspan="7">Pembangunan Baru</th>
+                            {{-- <th>Markah</th> --}}
+                            <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+                            <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
+                        </tr>
+        
+                        <tr align="center" style="background-color:#EB5500">
+                            <th colspan="7">Markah</th>
+                        </tr>
                     
-                    </tr>
-
-                    <tr align="center" class="text-black" >
-                        <th>FL</th>
-                        <th colspan="2">Pengurusan Fasiliti Lestari</th>
-                        <th>26</th>
+                        <tr align="center" style="background-color:#EB5500">
+                            {{-- <th>TL</th> --}}
+                            {{-- <th>Kriteria</th> --}}
+                            {{-- <th>Kategori Bangunan</th> --}}
+                            <th>MM</th>
+                            <th>MS</th>
+                            <th>MR</th>
+                            <th>MMV</th>
+                            <th>MS</th>
+                            <th>MV</th>
+                            <th>ML</th>
+                            <th colspan="2">Rekabentuk (Peringkat 2)</th>
+                            <th>Verifikasi (Peringkat 3)</th>
+        
+                        </tr>
+        
+                        <tr style="background-color:#EB5500">
+                            <th>TL</th>
+                            <th colspan="15">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
+                        </tr>
+                    </thead>
+        
+                    <tr align="center">
+                        <th>TL1</th>
+                        <th>Perancangan Tapak</th>
+                        <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>                        
+                        </th>
+                        <th>1</th>
+                        <th></th>
+                        <th></th>
                         <th>0</th>
-                        <th>0</th>
-                        <th>24</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
-
-                    </tr>
-
-                    <tr align="center" class="text-black" >
-                        <th>IN</th>
-                        <th colspan="2">Inovasi dalam Reka Bentuk</th>
-                        <th>26</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>24</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
-                
-                    </tr>
-
-                    <tr align="center" class="text-black" >
-                        <th colspan="3">JUMLAH</th>
-                        <th>101</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>103</th>
-                        <th>0</th>
-                        <th>0</th>
-                        <th>0</th>
-                
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th colspan="4">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</th>
+                        <th>Tidak Berkenaan</th>
+        
                     </tr>
         
-                </table>
-            
+                        <tr align="center">
+                            <th>TL2</th>
+                            <th>Sistem Pengurusan Alam Sekitar (SPAS)</th>
+                            <th>A</th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4"><span>&#183; Sijil ISO 14001</span><br>
+                                <span>&#183; Senarai kuantiti (BQ) kerja-kerja perlindungan alam sekitar</span>
+                            </th>
+                            <th>
+                                <span>&#183; Laporan Pelan Pengurusan Alam Sekitar</span><br>
+                                <span>&#183; Borang SPAS (Peringkat pembinaan)</span>
+                            </th>
+        
+                        </tr>
+                        <tr align="center">
+                            <th rowspan="2">TL3</th>
+                            <th>i. Pemotongan dan Penambakan tanah</th>
+                            <th rowspan="2">A</th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                                <span>&#183; Laporan rekabentuk tanah</span><br>
+                                <span>&#183; Lukisan pelan tanah</span><br>
+                                <span>&#183; Laporan geoteknikal (jika perlu)</span>
+                            </th>
+                            <th>
+                                <span>&#183; Laporan kuantiti tanah yang diimport atau eksport</span><br>
+                                <span>&#183; Bukti bergambar</span><br>
+                                <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO 
+                                    atau setaraf
+                                </span>
+                            </th>
+                            
+        
+                        </tr>
+        
+                        <tr align="center">
+                            <th>ii. Mengekalkan Topografi Tanah</th>
+                            {{-- <th>A</th> --}}
+                            <th>2</th>
+                            <th></th>
+                            <th></th>
+                            <th>2</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                                <span>&#183; Pelan Topografi</span><br>
+                                <span>&#183; Laporan geoteknikal</span><br>
+                                <span>&#183; Laporan rekabentuk tanah</span><br>
+                                <span>&#183; Lukisan pelan kerja tanah</span><br>
+                                <span>&#183; Pelan kawalan hakisan kelodak (ESCP)</span>
+        
+                            </th>
+                            <th>
+                                <span>&#183; Bukti bergambar</span><br>
+                                <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
+                                <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
+                            </th>
+                        </tr>
+        
+                        <tr align="center">
+                            <th>TL4</th>
+                            <th>Pelan Kawalan Hakisan & Kelodak (ESCP)</th>
+                            <th>A</th>
+                            <th>1</th>
+                            <th></th>
+                            <th></th>
+                            <th>1</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                                <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
+                            </th>
+                            <th>
+                                <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
+                            </th>
+        
+                        </tr>
+        
+                        <tr align="center">
+                            <th>TL5</th>
+                            <th>Pemuliharaan dan Pemeliharaan Cerun</th>
+                            <th>A</th>
+                            <th>1</th>
+                            <th></th>
+                            <th></th>
+                            <th>0</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                                <span>&#183; Laporan penyenggaraan cerun</span><br>
+                            </th>
+                            <th>
+                                <span>Tidak Berkenaan</span><br>
+                            </th>
+        
+                        </tr>
 
-        <div class="row mx-3">
-            <table class="table table-bordered line-table shadow-table-jkr">
-                <thead class="text-white line-table">
-                <tr align="center" style="background-color:#EB5500">
-                    <th colspan="3">KEPUTUSAN PENARAFAN HIJAU PERINGKAT REKA BENTUK (PRB)</th>
-                </tr>
-
-                <tr align="center" class="text-black">
-                    <th colspan="3"><button class="btn btn-primary btn-sasaran">Sasaran</button>
-                        <button class="btn btn-secondary">Disahkan</button></th>
-                </tr>
-
-                <tr align="center" style="background-color:#EB5500">
-                    <th colspan="3">MARKAH PENILAIAN</th>
-                </tr>
-
-                <tr align="center" class="text-black" >
-                    <th colspan="2">Jumlah Markah</th>
-                    <th colspan="2">0</th>
-                </tr>
-
-                <tr align="center" class="text-black" >
-                    <th colspan="2">Peratusan</th>
-                    <th colspan="2">0</th>
-                </tr>
-
-                <tr align="center" class="text-black" >
-                    <th colspan="2">Penarafan PH</th>
-                    <th colspan="2">1 <span class="star">&starf;</span></th>
-                </tr>
-
-                <tr align="center" style="background-color:#EB5500" >
-                    <th colspan="2">Petunjuk Penarafan</th>
-                    <th>Sijil Penarafan</th>
-                </tr>
-
-                <tr align="center" class="text-black" >
-                    <th><span class="star">&starf; &starf; &starf; &starf; &starf;</span></th>
-                    <th>80 - 100</th>
-                    <th>Kecemerlangan Global</th>
-                </tr>
-                <tr align="center" class="text-black" >
-                    <th><span class="star">&starf; &starf; &starf; &starf;</span></th>
-                    <th>65 - 79</th>
-                    <th>Kecemerlangan Nasional</th>
-                </tr>
-                <tr align="center" class="text-black" >
-                    <th><span class="star">&starf; &starf; &starf;</span></th>
-                    <th>45 - 64</th>
-                    <th>Amalan Pengurusan Terbaik</th>
-                </tr>
-                <tr align="center" class="text-black" >
-                    <th><span class="star">&starf; &starf;</span></th>
-                    <th>30 - 44</th>
-                    <th>Potensi Pengiktirafan</th>
-                </tr>
-                <tr align="center" class="text-black" >
-                    <th><span class="star">&starf;</span></th>
-                    <th>< 29</th>
-                    <th>Sijil Penyertaan</th>
-                </tr>
-            </thead>
-        </table>
-
-    {{-- </div> --}}
-</div>
-
-    <!--pdf form Muat Naik Sijil -->
-    <div class="mb-3 text-center">
-    <input type="file" id="real-file" hidden="hidden" />
-    <button type="button" id="custom-button">MUAT NAIK SIJIL</button>
-    </div>
-    
-    <!--Button Jana Sijil-->
-    <div class="mb-3 text-center">
-    <button class="btn btn-primary">Jana</button>
-    </div>
-            
+                        <tr align="center">
+                            <th>TL6</th>
+                            <th>Pengurusan Air Larian Hujan</th>
+                            <th>A</th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                                <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
+                                <span>&#183; Pelan sistem perparitan berdasarkan MSMA</span><br>
+                            </th>
+                            <th>
+                                <span> &#40;a&#41; Baru</span><br>
+                                <span>&#183; Laporan sistem perparitan</span><br>
+                                <span>&#183; Bukti bergambar</span><br>
+                                <span> &#40;b&#41; Sedia ada</span><br>
+                                <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
+                                <span>&#183; Bukti bergambar</span><br>
+        
+                            </th>
+        
+                        </tr>
+        
+                        <tr align="center">
+                            <th>TL8</th>
+                            <th>Landskap strategik</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+        
+                        </tr>
+        
+                        <tr align="center">
+                            <th>TL8.1</th>
+                            <th>Memelihara dan menyenggara pokok yang matang</th>
+                            <th>A</th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                                <span>&#183; Inventori pokok</span><br>
+                                <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
+                                <span>&#183; Pelan penanaman pokok</span><br>
+                            </th>
+                            <th>
+                                <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
+                                <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
+                            </th>
+        
+                        </tr>
+        
+                        <tr align="center">
+                            <th>TL8.1</th>
+                            <th>Memelihara dan menyenggara pokok yang matang</th>
+                            <th>A</th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th>3</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                                <span>&#183; Inventori pokok</span><br>
+                                <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
+                                <span>&#183; Pelan penanaman pokok</span><br>
+                            </th>
+                            <th>
+                                <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
+                                <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
+                            </th>
+        
+                        </tr>
                 
+                </table>
+                <!--Button Simpan (TOOLTIPS)-->
+                <div class="text-center">
+                    {{-- <a href="#" class="btn btn-primary" type="submit">Daftar</a> --}}
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
+                    title="Simpan" type="submit">Simpan</button>
+                </div>
+
+            </form>
+            </div>
+        </div>
+        
+        
+</div>
+            
+            
+        <!--JS-->
+            <!--JS BUTTON TOOLTIPS-->
+            <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            </script>         
 
 
 
