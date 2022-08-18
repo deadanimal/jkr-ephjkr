@@ -36,6 +36,7 @@
                     <th scope="col">Nama Projek</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
+                    <th scope="col">Tindakan</th>
                     {{-- <th scope="col">Tindakan</th> --}}
                 </tr>
             </thead>
@@ -46,9 +47,9 @@
                     <td>Hospital Seri Iskandar</td>
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
-                    {{-- <td>
-                        <a href="/pengesahan_penilaian_reka_bentuk_gpss" type="button" class="btn btn-warning">DAFTAR</a>
-                    </td> --}}
+                    <td>
+                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" type="button" class="btn btn-warning">DAFTAR</a>
+                    </td>
                 </tr>
             </tbody>
             </table>

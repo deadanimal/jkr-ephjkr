@@ -116,7 +116,7 @@ class PenilaianRekaBentukGpssController extends Controller
     public function papar_skor_penilaian($id)
     {
         // papar form skor penilaian with id projek
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit');
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit')->paginate();
     }
     public function simpan_skor(Request $request, $id)
     {
