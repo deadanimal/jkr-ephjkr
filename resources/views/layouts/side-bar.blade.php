@@ -322,11 +322,11 @@
                 
                             {{-- BANGUNAN Papar dan Muat Turun Sijil Verifikasi Reka Bentuk --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/sijil_verifikasi_bangunan') ? 'active' : '' }} py-0"
-                                    href="#">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/muat_turun_sijil') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_bangunan/muat_turun_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/sijil_verifikasi_bangunan') ? 'text-dark' : '' }}">Papar
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/muat_turun_sijil') ? 'text-dark' : '' }}">Papar
                                             dan Muat Turun Sijil
                                             Verifikasi Penilaian Reka Bentuk</span>
                                     </div>

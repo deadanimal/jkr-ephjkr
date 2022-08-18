@@ -30,7 +30,7 @@ trait RegistersUsers
      */
     public function register(Request $request)
     {
-        $this->validator($request->all())->validate();
+        // $this->validator($request->all())->validate();
 
         // event(new Registered($user = $this->create($request->all())));
         $user = new User;
@@ -48,7 +48,7 @@ trait RegistersUsers
         $user->password = Hash::make($request['password']);
         $user->katalaluan = $request->password;
         $user->save();
-        $user->assignRole('Pengguna');
+        // $user->assignRole('Pengguna');
         alert()->success('Pendaftaran telah berjaya, sila tunggu pengesahan dari pihak JKR', 'Berjaya');
         return redirect('/login');
 

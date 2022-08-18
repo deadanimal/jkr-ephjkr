@@ -3,19 +3,24 @@
 
 @section('content')
 <body>
-    <div class="scroll">
+   
     <!--TO ENABLE SCROLLBAR AT TABLES-->
     <div class="table-responsive scrollbar">
-        <table border="1px">
-            <thead>
+        <table class="table table-bordered line-table">
+            <thead class="text-white">
                 <tr align="center" style="background-color:#EB5500">
-                    <th style="width:50%">Kod</th>
-                    <th colspan="2" style="width:50%">Perancangan & Pengurusan Tapak Lestari</th>
-                    <th colspan="7" style="width:50%">Pembangunan Baru</th>
-                    <th rowspan="3" style="width:50%">Markah</th>
-                    <th colspan="2" style="width:50%">Dokumen</th>
+                    <th>Kod</th>
+                    <th>Kriteria</th>
+                    <th>Pembangunan Baru</th>
+                    <th>Markah</th>
+                    <th>Dokumen Pembuktian</th>
+                    <th>Ulasan/Maklumbalas Penilai</th>
                 </tr>
-            </thead>
+
+                <tr align="center" style="background-color:#EB5500">
+                    <th colspan="15">Markah</th>
+                </tr>
+            
                 <tr align="center" style="background-color:#EB5500">
                     <th>TL</th>
                     <th>Kriteria</th>
@@ -27,81 +32,142 @@
                     <th>MS</th>
                     <th>MV</th>
                     <th>ML</th>
-                    <th>Reka Bentuk (Peringkat 2)</th>
+                    <th colspan="4">Reka Bentuk (Peringkat 2)</th>
+                    <th>Verifikasi (Peringkat 3)</th>
 
                 </tr>
+
+                <tr style="background-color:#EB5500">
+                    <th>TL</th>
+                    <th colspan="13">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
+                </tr>
+            </thead>
+
+            <tr align="center">
+                <th>TL1</th>
+                <th>Perancangan Tapak</th>
+                <th>A</th>
+                <th>1</th>
+                <th></th>
+                <th></th>
+                <th>0</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th colspan="4">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</th>
+                <th>Tidak Berkenaan</th>
+
+            </tr>
 
                 <tr align="center">
                     <th>TL2</th>
-                    <th>Sistem Pengurusan Alam Sekitar</th>
+                    <th>Sistem Pengurusan Alam Sekitar (SPAS)</th>
                     <th>A</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4"><span>&#183; Sijil ISO 14001</span><br>
+                        <span>&#183; Senarai kuantiti (BQ) kerja-kerja perlindungan alam sekitar</span>
+                    </th>
+                    <th>
+                        <span>&#183; Laporan Pelan Pengurusan Alam Sekitar</span><br>
+                        <span>&#183; Borang SPAS (Peringkat pembinaan)</span>
+                    </th>
 
                 </tr>
                 <tr align="center">
-                    <th>TL3</th>
-                    <th>Sistem Pengurusan Alam Sekitar</th>
-                    <th>A</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th rowspan="2">TL3</th>
+                    <th>i. Pemotongan dan Penambakan tanah</th>
+                    <th rowspan="2">A</th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4">
+                        <span>&#183; Laporan rekabentuk tanah</span><br>
+                        <span>&#183; Lukisan pelan tanah</span><br>
+                        <span>&#183; Laporan geoteknikal (jika perlu)</span>
+                    </th>
+                    <th>
+                        <span>&#183; Laporan kuantiti tanah yang diimport atau eksport</span><br>
+                        <span>&#183; Bukti bergambar</span><br>
+                        <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO 
+                            atau setaraf
+                        </span>
+                    </th>
+                    
 
                 </tr>
 
                 <tr align="center">
-                    <th>TL3</th>
-                    <th>Sistem Pengurusan Alam Sekitar</th>
-                    <th>A</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th>ii. Mengekalkan Topografi Tanah</th>
+                    {{-- <th>A</th> --}}
+                    <th>2</th>
+                    <th></th>
+                    <th></th>
+                    <th>2</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4">
+                        <span>&#183; Pelan Topografi</span><br>
+                        <span>&#183; Laporan geoteknikal</span><br>
+                        <span>&#183; Laporan rekabentuk tanah</span><br>
+                        <span>&#183; Lukisan pelan kerja tanah</span><br>
+                        <span>&#183; Pelan kawalan hakisan kelodak (ESCP)</span>
 
+                    </th>
+                    <th>
+                        <span>&#183; Bukti bergambar</span><br>
+                        <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
+                        <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
+                    </th>
                 </tr>
 
                 <tr align="center">
                     <th>TL4</th>
                     <th>Pelan Kawalan Hakisan & Kelodak (ESCP)</th>
                     <th>A</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th>1</th>
+                    <th></th>
+                    <th></th>
+                    <th>1</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4">
+                        <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
+                    </th>
+                    <th>
+                        <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
+                    </th>
 
                 </tr>
 
                 <tr align="center">
                     <th>TL5</th>
-                    <th>Pemuliharaan & Pemeliharaan Cerun</th>
+                    <th>Pemuliharaan dan Pemeliharaan Cerun</th>
                     <th>A</th>
+                    <th>1</th>
+                    <th></th>
+                    <th></th>
                     <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4">
+                        <span>&#183; Laporan penyenggaraan cerun</span><br>
+                    </th>
+                    <th>
+                        <span>Tidak Berkenaan</span><br>
+                    </th>
 
                 </tr>
 
@@ -109,90 +175,126 @@
                     <th>TL6</th>
                     <th>Pengurusan Air Larian Hujan</th>
                     <th>A</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4">
+                        <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
+                        <span>&#183; Pelan sistem perparitan berdasarkan MSMA</span><br>
+                    </th>
+                    <th>
+                        <span> &#40;a&#41; Baru</span><br>
+                        <span>&#183; Laporan sistem perparitan</span><br>
+                        <span>&#183; Bukti bergambar</span><br>
+                        <span> &#40;b&#41; Sedia ada</span><br>
+                        <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
+                        <span>&#183; Bukti bergambar</span><br>
+
+                    </th>
 
                 </tr>
 
                 <tr align="center">
                     <th>TL8</th>
-                    <th>Sistem Pengurusan Alam Sekitar</th>
-                    <th>A</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th>Landskap strategik</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
 
                 </tr>
 
                 <tr align="center">
                     <th>TL8.1</th>
-                    <th>Memelihara & Memulihara Pokok yang Matang</th>
+                    <th>Memelihara dan menyenggara pokok yang matang</th>
                     <th>A</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>24</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>0</th>
-                    <th>Lorem Ipsum</th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4">
+                        <span>&#183; Inventori pokok</span><br>
+                        <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
+                        <span>&#183; Pelan penanaman pokok</span><br>
+                    </th>
+                    <th>
+                        <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
+                        <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
+                    </th>
+
+                </tr>
+
+                <tr align="center">
+                    <th>TL8.1</th>
+                    <th>Memelihara dan menyenggara pokok yang matang</th>
+                    <th>A</th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th>3</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th colspan="4">
+                        <span>&#183; Inventori pokok</span><br>
+                        <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
+                        <span>&#183; Pelan penanaman pokok</span><br>
+                    </th>
+                    <th>
+                        <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
+                        <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
+                    </th>
 
                 </tr>
         
         </table>
     </div>
-</div>
+
 </body>
 
         <th>
-            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}" method="post">
+            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}" method="post">
                 @csrf
                 @method('DELETE')
-                <div class="text-left">
-                    <button type="submit" class="btn-tolak">Tolak</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-secondary">Tolak</button>
                 </div>
             </form>
         </th>
 
         <th>
-            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}" method="post">
+            <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}" method="post">
                 @csrf
                 @method('POST')
-                <div class="text-right">
-                    <button type="submit" class="btn-sah">Sah</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Sah</button>
                 </div>
             </form>
         </th>
-
-
-{{-- <nav aria-label="...">
-    <ul class="pagination pagination-sm">
-      <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1">1</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-    </ul>
-  </nav> --}}
 
   <nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/edit">1</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/p2">2</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p3">3</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p4">4</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p5">5</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p6">6</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p7">7</a></li>
+
     </ul>
   </nav>
 
