@@ -16,6 +16,8 @@ class MaklumBalasController extends Controller
     public function index()
     {
         //
+        $maklum_balas = MaklumBalas::all();
+        return view('modul.pengurusan_maklumat.maklum_balas.index', compact('maklum_balas'));
     }
 
     /**

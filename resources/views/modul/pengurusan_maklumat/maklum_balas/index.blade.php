@@ -6,7 +6,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        FAQ
+                        Maklum Balas
                     </li>
                 </ol>
             </nav>
@@ -14,7 +14,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>FAQ</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>MAKLUM BALAS</strong></h3>
         </div>
     </div>
 
@@ -22,7 +22,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/faq/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/maklum_balas/create" class="btn btn-primary">Isi borang</a>
         </div>
     </div>
 
@@ -34,28 +34,28 @@
                         <thead class="bg-primary">
                             <tr>
                                 <th class="sort">Bil.</th>
-                                <th class="sort">Tajuk FAQ</th>
-                                <th class="sort">Soalan</th>
-                                <th class="sort">Jawapan</th>
+                                <th class="sort">Maklum Balas</th>
+                                <th class="sort">Kategori</th>
+                                <th class="sort">Status</th>
                                 <th class="sort">Tindakan</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($faq as $f)
+                            @foreach ($maklum_balas as $mb)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $f->namaFAQ }}</td>
-                                    <td>{{ $f->soalanFAQ }}</td>
-                                    <td>{{ $f->JawapanFAQ }}</td>
+                                    <td>{{ $mb->subjek }}</td>
+                                    <td>{{ $mb->kategori }}</td>
+                                    <td>{{ $mb->statusMaklumbalas }}</td>
                                     
                                     <td>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/faq/{{ $f->id }}/edit"
+                                                <a href="/pengurusan_maklumat/maklum_balas/{{ $f->id }}/edit"
                                                     class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                             </div>
                                             <div class="col-auto">
-                                                <form action="/pengurusan_maklumat/faq/{{ $f->id }}" method="post">
+                                                <form action="/pengurusan_maklumat/maklum_balas/{{ $f->id }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
@@ -72,3 +72,4 @@
         </div>
     </div>
 @endsection
+

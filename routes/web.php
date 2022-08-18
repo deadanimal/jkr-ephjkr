@@ -65,7 +65,7 @@ Route::middleware('auth')->group(function () {
             'manual_dan_standard' => ManualDanStandardController::class,
             'faq' => FaqController::class,
             'audit_trail' => AuditTrailController::class,
-            'makluma_balas' => MaklumBalasController::class,
+            'maklum_balas' => MaklumBalasController::class,
             'hebahan' => HebahanController::class,
             'pendaftaran_projek' => ProjekController::class,
         ]);
