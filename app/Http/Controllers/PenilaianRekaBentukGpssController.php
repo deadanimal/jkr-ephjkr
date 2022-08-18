@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 use App\Models\Projek;
 use Illuminate\Http\Request;
 use App\Models\PemudahCara;
+use App\Models\KriteriaGpssBangunan;
 
 class PenilaianRekaBentukGpssController extends Controller
 {
@@ -79,13 +80,13 @@ class PenilaianRekaBentukGpssController extends Controller
     }
     # bawah ni pemudah cara
     public function papar_projek()
-    {
-        // papar table projek with button melantik pemudah cara
-        $projeks = Projek::all();
-        return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
-            'projeks'=> $projeks
-        ]);
-    }
+     {
+         // papar table projek with button melantik pemudah cara
+         $projeks = Projek::all();
+         return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
+             'projeks'=> $projeks
+         ]);
+     }
     public function pemudah_cara($id)
     {
         // papar form pemudah cara with id projek
@@ -110,19 +111,52 @@ class PenilaianRekaBentukGpssController extends Controller
     # bawah ni utk skor penilaian
     public function skor_penilaian()
     {
-        // papar mcm index tapi ada button utk skor
+        // papar mcm index tapi ada button utk skor penilaian
         return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.index');
     }
     public function papar_skor_penilaian($id)
     {
         // papar form skor penilaian with id projek
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit')->paginate();
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit');
     }
     public function simpan_skor(Request $request, $id)
     {
         // simpan skor penilaian
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
+
+        return redirect('//penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
     }
+
+    public function skor_penilaian_arkitek()
+    {
+        // papar mcm index tapi ada button utk skor penilaian
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek.index');
+    }
+
+    public function simpan_skor_penilaian_arkitek(Request $request, $id)
+    {
+        // simpan skor penilaian
+        $gpss_bangunan = new KriteriaGpssBangunan;
+        $gpss_bangunan->markahAwR = $request->input('markahAwR');
+        $gpss_bangunan->markahAwW = $request->input('markahAwW');
+        $gpss_bangunan->markahAwD = $request->input('markahAwD');
+        $gpss_bangunan->markahAwF = $request->input('markahAwF');
+        $gpss_bangunan->markahAwS = $request->input('markahAwS');
+        $gpss_bangunan->markahAwWs = $request->input('markahAwWs');
+        $gpss_bangunan->save();
+
+        return redirect('//penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
+    }
+
+
+
+
+
+
+
+
+
+
+
     #pengesahan penilaian
     public function pengesahan_penilaian()
     {

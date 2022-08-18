@@ -4,7 +4,7 @@
     {{-- header --}}
     <div class="header" >
         <h1 class="header-title" style="color: #EB5500">
-            PENILAIAN REKA BENTUK GPSS
+            PENILAIAN REKA BENTUK GPSS - paparan senarai projek
         </h1>
     </div>
     <hr style="background-color: #EB5500;"></hr>
@@ -48,7 +48,7 @@
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
                     <td>
-                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" type="button" class="btn btn-warning">DAFTAR</a>
+                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="button" class="btn btn-warning">DAFTAR</a>
                     </td>
                 </tr>
             </tbody>

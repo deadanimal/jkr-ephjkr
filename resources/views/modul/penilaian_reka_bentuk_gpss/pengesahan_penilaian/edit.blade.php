@@ -149,7 +149,7 @@
             </a> --}}
             </li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_gpss/skor_penilaian/edit">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li>
             <a class="page-link" href="#" aria-label="Previous">

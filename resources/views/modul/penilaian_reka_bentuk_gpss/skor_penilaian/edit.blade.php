@@ -1,205 +1,167 @@
 @extends('layouts.base')
 
+<link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
+
 @section('content')
 
-    {{-- header --}}
-    <div class="header" >
-        <h1 class="header-title" style="color: #EB5500">
-            PENILAIAN REKA BENTUK GPSS
-        </h1>
+ {{-- header --}}
+ <div class="header" >
+    <h1 class="header-title" style="color: #EB5500">
+        PENILAIAN REKA BENTUK GPSS
+    </h1>
+</div>
+<hr style="background-color: #EB5500;">
+
+<div class="row3 mx-4">
+    <div class="col">
+      <table class="table table-bordered line-table text-center" style="width: 100%">
+        <thead class="text-white bg-orange-jkr">
+          <tr>
+
+            
+            <th >Kod</th>
+            <th colspan="8">Perancangan & Pengurusan Tapak Lestari</th>
+            <th colspan="12">Pembangunan Baru</th>
+            <th >Dokumen</th>
+            
+            
+            
+          </tr>
+          <tr>
+            <th scope="row">TL</th>
+            <th scope="col" colspan="4">Kriteria</th>
+            <th colspan="4">Kategori Bangunan</th>
+            <th >MM</th>
+            <th >MS</th>
+            <th >MR</th>
+            <th >MMV</th>
+            <th >MS</th>
+            <th >MV</th>
+            <th >ML</th>
+            <th colspan="6">Reka Bentuk (Peringkat 2)</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>TL1</th>
+            <th colspan="4" >Perancangan Tapak</th>
+            <th colspan="4">A</th>
+            <th>0</th>            
+            <th>0</th>            
+            <th>24</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+          </tr>
+          <tr>
+            <th>TL2</th>
+            <th colspan="4" >Sistem Pengurusan Alam Sekitar</th>
+            <th colspan="4">A</th>
+            <th>0</th>            
+            <th>0</th>            
+            <th>24</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+          </tr>
+          <tr>
+            <th>TL3</th>
+            <th colspan="4" >Pemotongan & Penambahan Markah</th>
+            <th colspan="4">A</th>
+            <th>0</th>            
+            <th>0</th>            
+            <th>24</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+          </tr>
+          <tr>
+            <th>TL4</th>
+            <th colspan="4" >Pelan Kawalan Hakisan & Kelodak(ESCP)</th>
+            <th colspan="4">A</th>
+            <th>0</th>            
+            <th>0</th>            
+            <th>24</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+          </tr>
+          <tr>
+            <th>TL5</th>
+            <th colspan="4" >Pemuliharaan & Pemeliharaan Cerun</th>
+            <th colspan="4">A</th>
+            <th>0</th>            
+            <th>0</th>            
+            <th>24</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+          </tr>
+          <tr>
+            <th>TL6</th>
+            <th colspan="4" >Pengurusan Air Larian Hujan</th>
+            <th colspan="4">A</th>
+            <th>0</th>            
+            <th>0</th>            
+            <th>24</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>            
+            <th>0</th>
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+          </tr>
+          
+          
+          
+          
+        </tbody>
+      </table>
+
+     
     </div>
-    <hr style="background-color: #EB5500;">
-    
-    {{-- body --}}
-    <div class="row3 mx-8">
-      <div class="col">
-        <table class="table table-bordered line-table text-center" style="width: 100%">
-          <thead class="text-white bg-orange-jkr">
-            <tr>
-  
-              
-              <th colspan="4">Jenis Pembangunan</th>
-              <th colspan="10">Pembangunan Baru</th>
-              
-            </tr>
-            <tr>
-              <th></th>
-              <th scope="col" colspan="3">Peratusan Mengikut Kriteria</th>
-              <th >MM</th>
-              <th >MS</th>
-              <th >MR</th>
-              <th >MMV</th>
-              <th >MS</th>
-              <th >MV</th>
-              <th >ML</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">TL</th>
-              <td colspan="3" >Perancangan dan Pengurusan Tapak Lestari</td>
-              <td>26</td>
-              <td>0</td>
-              <td>0</td>
-              <td>24</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <th scope="row">KT</th>
-              <td colspan="3" >Pengurusan Kecekapan Tenaga</td>
-              <td>26</td>
-              <td>0</td>
-              <td>0</td>
-              <td>24</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <th scope="row">SB</th>
-              <td colspan="3" >Pengurusan Sumber dan Bahan</td>
-              <td>26</td>
-              <td>0</td>
-              <td>0</td>
-              <td>24</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <th scope="row">PA</th>
-              <td colspan="3" >Pengurusan Kecekapan Penggunaan Air</td>
-              <td>26</td>
-              <td>0</td>
-              <td>0</td>
-              <td>24</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <th scope="row">PD</th>
-              <td colspan="3" >Pengurusan Kualiti Persekitaran Dalaman</td>
-              <td>26</td>
-              <td>0</td>
-              <td>0</td>
-              <td>24</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <th scope="row">FL</th>
-              <td colspan="3" >Pengurusan Fasiliti Lestari</td>
-              <td>26</td>
-              <td>0</td>
-              <td>0</td>
-              <td>24</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <th scope="row">IN</th>
-              <td colspan="3" >Inovasi dalam Reka Bentuk</td>
-              <td>26</td>
-              <td>0</td>
-              <td>0</td>
-              <td>24</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              
-              <td colspan="4" >JUMLAH</td>
-              <td>101</td>
-              <td>0</td>
-              <td>0</td>
-              <td>103</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
-  
-        <div class="row3 ">
-          <table class="table table-bordered text-center " style="width: 100%">
-            <thead class="text-white line-table">
-              <tr class="bg-orange-jkr">
-                <th colspan="12">KEPUTUSAN PENARAFAN HIJAU PERINGKAT REKA BENTUK (PRB)</th>
-              </tr>
-              <tr>
-                <td style="align-content: center" colspan="12">
-                  <button class="btn btn-warning">Sasaran</button>
-                  <button>Disahkan</button>
-                </td>
-              </tr>
-              <tr class="text-white bg-orange-jkr">
-                <th colspan="12">MARKAH PENILAIAN</th>
-              </tr>
-              <tr  class="text-black">
-                <th colspan="6">Jumlah Markah</th>
-                <th >0</th>
-              </tr>
-              <tr class="text-black">
-                <th colspan="6">Peratusan</th>
-                <td colspan="3">0</td>
-              </tr>
-              <tr class="text-black">
-                <th colspan="6">Penarafan PH</th>
-                <td colspan="3">1 <span class="text-danger">&#9733</span></td>
-              </tr>
-              <tr class="bg-orange-jkr">
-                <th colspan="6">Petunjuk Penarafan</th>
-                <th>Sijil Penarafan</th>
-              </tr>
-              <tr class="text-black">
-                <th colspan="2"><span class="text-danger">&#9733;&#9733;&#9733;&#9733;&#9733;</span></th>
-                <th colspan="3">80-100</th>
-                <th colspan="6">Kecemerlangan Global</th>
-              </tr>
-              <tr class="text-black">
-                <th colspan="2"><span class="text-danger">&#9733;&#9733;&#9733;&#9733;</span></th>
-                <th colspan="3">65-79</th>
-                <th colspan="6">Kecemerlangan Nasional</th>
-              </tr>
-              <tr class="text-black">
-                <th colspan="2"><span class="text-danger">&#9733;&#9733;&#9733;</span></th>
-                <th colspan="3">45-64</th>
-                <th colspan="6">Amalan Pengurusan Terbaik</th>
-              </tr>
-              <tr class="text-black">
-                <th colspan="2"><span class="text-danger">&#9733;&#9733;</span></th>
-                <th colspan="3">30-44</th>
-                <th colspan="6">Potensi Pengiktirafan</th>
-              </tr>
-              <tr class="text-black">
-                <th colspan="2"><span class="text-danger">&#9733;</span></th>
-                <th colspan="3">< 29</th>
-                <th colspan="6">Sijil Penyertaan</th>
-              </tr>
-            </thead>
-          </table>
-        </div>
-      </div>
-    </div>
-    
+  </div>
 
-    
-        
+        {{-- pagination --}}
+<tfoot>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination ">
+            <li class="page-item">
+            {{-- <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a> --}}
+            </li>
+            <li class="page-item"><a class="page-link" href="">1</a></li>
+            <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li>
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+            </li>
+            <li>
+                <button>Tolak</button>
+                <button>Sah</button>
+            </li>
+        </ul>
+        </nav>
 
-    
-
-
-
-
-    
-   
-
+</tfoot>
 
     
 @endsection
