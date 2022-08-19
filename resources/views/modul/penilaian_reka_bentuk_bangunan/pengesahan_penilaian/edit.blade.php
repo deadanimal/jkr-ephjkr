@@ -3,28 +3,30 @@
 
 @section('content')
 <body>
-   
+      <!--MarkahTL-->
+
     <!--TO ENABLE SCROLLBAR AT TABLES-->
     <div class="table-responsive scrollbar">
         <table class="table table-bordered line-table">
             <thead class="text-white">
                 <tr align="center" style="background-color:#EB5500">
-                    <th>Kod</th>
-                    <th>Kriteria</th>
-                    <th>Pembangunan Baru</th>
-                    <th>Markah</th>
-                    <th>Dokumen Pembuktian</th>
-                    <th>Ulasan/Maklumbalas Penilai</th>
+                    <th rowspan="3">Kod</th>
+                    <th rowspan="3">Kriteria</th>
+                    <th rowspan="3">Kategori bangunan</th>
+                    <th colspan="7">Pembangunan Baru</th>
+                    {{-- <th>Markah</th> --}}
+                    <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+                    <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
                 </tr>
 
                 <tr align="center" style="background-color:#EB5500">
-                    <th colspan="15">Markah</th>
+                    <th colspan="7">Markah</th>
                 </tr>
             
                 <tr align="center" style="background-color:#EB5500">
-                    <th>TL</th>
-                    <th>Kriteria</th>
-                    <th>Kategori Bangunan</th>
+                    {{-- <th>TL</th> --}}
+                    {{-- <th>Kriteria</th> --}}
+                    {{-- <th>Kategori Bangunan</th> --}}
                     <th>MM</th>
                     <th>MS</th>
                     <th>MR</th>
@@ -32,14 +34,14 @@
                     <th>MS</th>
                     <th>MV</th>
                     <th>ML</th>
-                    <th colspan="4">Reka Bentuk (Peringkat 2)</th>
+                    <th colspan="2">Rekabentuk (Peringkat 2)</th>
                     <th>Verifikasi (Peringkat 3)</th>
 
                 </tr>
 
                 <tr style="background-color:#EB5500">
                     <th>TL</th>
-                    <th colspan="13">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
+                    <th colspan="15">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
                 </tr>
             </thead>
 
@@ -289,11 +291,11 @@
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
       <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/edit">1</a></li>
       <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/p2">2</a></li>
-      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p3">3</a></li>
-      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p4">4</a></li>
-      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p5">5</a></li>
-      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p6">6</a></li>
-      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/p7">7</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_3/p3">3</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_4/p4">4</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_5/p5">5</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_6/p6">6</a></li>
+      <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_7/p7">7</a></li>
 
     </ul>
   </nav>
