@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreFaqRequest;
 use App\Http\Requests\UpdateFaqRequest;
 use App\Models\Faq;
+use Illuminate\Support\Facades\Auth;
 
 class FaqController extends Controller
 {
@@ -16,6 +17,9 @@ class FaqController extends Controller
     public function index()
     {
         //
+        return view('modul.pengurusan_maklumat.faq.index', [
+            'faq' => Faq::all()
+        ]);
     }
 
     /**
@@ -26,6 +30,7 @@ class FaqController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.faq.create');
     }
 
     /**
@@ -37,6 +42,14 @@ class FaqController extends Controller
     public function store(StoreFaqRequest $request)
     {
         //
+        $f = new Faq;
+        $f->namaFAQ = $request->namaFAQ;
+        $f->soalanFAQ = $request->soalanFAQ;
+        $f->JawapanFAQ = $request->JawapanFAQ;
+        $f->user_id = Auth::id();
+        $f->save();
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/faq');
     }
 
     /**
@@ -58,7 +71,10 @@ class FaqController extends Controller
      */
     public function edit(Faq $faq)
     {
-        //
+        $faq = Faq::all();
+        return view('modul.pengurusan_maklumat.faq.edit', [
+            'f' => $faq
+        ]);
     }
 
     /**
@@ -71,6 +87,29 @@ class FaqController extends Controller
     public function update(UpdateFaqRequest $request, Faq $faq)
     {
         //
+        $f = $faq;
+        $f->namaFAQ = $request->namaFAQ;
+        $f->soalanFAQ = $request->solanFAQ;
+        $f->JawapanFAQ = $request->JawapanFAQ;
+        $f->save();
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/faq');
+        // if ($request->failManual != null) {
+        //     $dokumen_sokongan = time() . '_' . Auth::id() . '.' . $request->failManual->extension();
+        //     $request->failManual->move(public_path('dokumen_sokongan/manual_dan_standard'), $dokumen_sokongan);
+        //     $f->failManual = 'dokumen_sokongan/manual_dan_standard/' . $dokumen_sokongan;
+        //     $f->user_id = Auth::id();
+        
+        
+        //
+        // $f = Faq;
+        // $f->namaFAQ = $request->namaFAQ;
+        // $f->soalanFAQ = $request->soalanFAQ;
+        // $f->JawapanFAQ = $request->JawapanFAQ;
+        // $f->user_id = Auth::id();
+        // $f->save();
+        // alert()->success('Maklumat telah disimpan', 'Berjaya');
+        // return redirect('/pengurusan_maklumat/faq');
     }
 
     /**
@@ -84,3 +123,4 @@ class FaqController extends Controller
         //
     }
 }
+

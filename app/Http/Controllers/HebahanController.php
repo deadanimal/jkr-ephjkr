@@ -16,6 +16,9 @@ class HebahanController extends Controller
     public function index()
     {
         //
+        //
+        $hebahan = Hebahan::all();
+        return view('modul.pengurusan_maklumat.hebahan.index', compact('hebahan'));
     }
 
     /**
@@ -26,6 +29,7 @@ class HebahanController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.hebahan.create');
     }
 
     /**
