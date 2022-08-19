@@ -82,6 +82,12 @@ Route::middleware('auth')->group(function () {
     Route::post('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}', [PenilaianRekaBentukBangunanController::class, 'melantik_pemudah_cara']);
     Route::get('/penilaian_reka_bentuk_bangunan/skor_penilaian', [PenilaianRekaBentukBangunanController::class, 'skor_penilaian']);
     Route::get('/penilaian_reka_bentuk_bangunan/skor_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian']);
+    Route::get('/penilaian_reka_bentuk_bangunan/papar_skor_penilaian_markahKT/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian_markahKT']);
+    Route::get('/penilaian_reka_bentuk_bangunan/papar_skor_penilaian_markahSB/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian_markahSB']);
+    Route::get('/penilaian_reka_bentuk_bangunan/papar_skor_penilaian_markahPA/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian_markahPA']);
+    Route::get('/penilaian_reka_bentuk_bangunan/papar_skor_penilaian_markahPD/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian_markahPD']);
+    Route::get('/penilaian_reka_bentuk_bangunan/papar_skor_penilaian_markahIN/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian_markahIN']);
+
     Route::post('/penilaian_reka_bentuk_bangunan/simpan_skor/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_skor']);
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian']);
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian']);
