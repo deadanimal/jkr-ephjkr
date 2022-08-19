@@ -26,6 +26,7 @@
         </div>
     </div>
 
+
     <div class="row mt-2">
         <div class="col">
             <div class="card">
@@ -44,18 +45,18 @@
                             @foreach ($maklum_balas as $mb)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $mb->subjek }}</td>
-                                    <td>{{ $mb->kategori }}</td>
                                     <td>{{ $mb->statusMaklumbalas }}</td>
+                                    <td>{{ $mb->kategori }}</td>
+                                    <td>{{ $mb->nama }}</td>
                                     
                                     <td>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/maklum_balas/{{ $f->id }}/edit"
+                                                <a href="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}/edit"
                                                     class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                             </div>
                                             <div class="col-auto">
-                                                <form action="/pengurusan_maklumat/maklum_balas/{{ $f->id }}" method="post">
+                                                <form action="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>

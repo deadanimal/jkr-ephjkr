@@ -71,7 +71,7 @@ class FaqController extends Controller
      */
     public function edit(Faq $faq)
     {
-        $faq = Faq::all();
+        
         return view('modul.pengurusan_maklumat.faq.edit', [
             'f' => $faq
         ]);
@@ -91,25 +91,11 @@ class FaqController extends Controller
         $f->namaFAQ = $request->namaFAQ;
         $f->soalanFAQ = $request->solanFAQ;
         $f->JawapanFAQ = $request->JawapanFAQ;
+        $f->user_id = Auth::id();
         $f->save();
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/faq');
-        // if ($request->failManual != null) {
-        //     $dokumen_sokongan = time() . '_' . Auth::id() . '.' . $request->failManual->extension();
-        //     $request->failManual->move(public_path('dokumen_sokongan/manual_dan_standard'), $dokumen_sokongan);
-        //     $f->failManual = 'dokumen_sokongan/manual_dan_standard/' . $dokumen_sokongan;
-        //     $f->user_id = Auth::id();
-        
-        
-        //
-        // $f = Faq;
-        // $f->namaFAQ = $request->namaFAQ;
-        // $f->soalanFAQ = $request->soalanFAQ;
-        // $f->JawapanFAQ = $request->JawapanFAQ;
-        // $f->user_id = Auth::id();
-        // $f->save();
-        // alert()->success('Maklumat telah disimpan', 'Berjaya');
-        // return redirect('/pengurusan_maklumat/faq');
+
     }
 
     /**
@@ -121,6 +107,9 @@ class FaqController extends Controller
     public function destroy(Faq $faq)
     {
         //
+        $faq->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/faq');
     }
 }
 

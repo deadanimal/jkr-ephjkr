@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMaklumBalasRequest;
 use App\Http\Requests\UpdateMaklumBalasRequest;
 use App\Models\MaklumBalas;
+use Illuminate\Support\Facades\Auth;
 
 class MaklumBalasController extends Controller
 {
@@ -16,8 +17,9 @@ class MaklumBalasController extends Controller
     public function index()
     {
         //
-        $maklum_balas = MaklumBalas::all();
-        return view('modul.pengurusan_maklumat.maklum_balas.index', compact('maklum_balas'));
+        return view('modul.pengurusan_maklumat.maklum_balas.index', [
+            'maklum_balas' => MaklumBalas::all()
+        ]);
     }
 
     /**
@@ -28,6 +30,7 @@ class MaklumBalasController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.maklum_balas.create');
     }
 
     /**
@@ -39,6 +42,17 @@ class MaklumBalasController extends Controller
     public function store(StoreMaklumBalasRequest $request)
     {
         //
+        $mb = new MaklumBalas;
+        $mb->nama = $request->nama;
+        $mb->email= $request->email;
+        $mb->subjek = $request->subjek;
+        $mb->kategori = $request->kategori;
+        $mb->tarikhStatus = $request->tarikhStatus;
+        $mb->statusMaklumbalas = $request->statusMaklumbalas;
+        $mb->user_id = Auth::id();
+        $mb->save();
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/maklum_balas');
     }
 
     /**
@@ -50,6 +64,9 @@ class MaklumBalasController extends Controller
     public function show(MaklumBalas $maklumBalas)
     {
         //
+        return view('modul.pengurusan_maklumat.maklum_balas.show', [
+            'maklum_balas' => MaklumBalas::all()
+        ]);
     }
 
     /**
@@ -61,6 +78,9 @@ class MaklumBalasController extends Controller
     public function edit(MaklumBalas $maklumBalas)
     {
         //
+        return view('modul.pengurusan_maklumat.maklum_balas.edit', [
+            'mb' => $maklumBalas
+        ]);
     }
 
     /**
@@ -84,5 +104,8 @@ class MaklumBalasController extends Controller
     public function destroy(MaklumBalas $maklumBalas)
     {
         //
+        $maklumBalas->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/maklum_balas');
     }
 }
