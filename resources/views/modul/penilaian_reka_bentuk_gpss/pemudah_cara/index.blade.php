@@ -1,79 +1,90 @@
 @extends('layouts.base')
 
 @section('content')
-    {{-- header --}}
-    <div class="header">
-        <h1 class="header-title" style="color: #EB5500">
-            PENILAIAN REKA BENTUK GPSS
-        </h1>
-    </div>
-    <hr style="background-color: #EB5500;">
-    </hr>
-
-    {{-- body --}}
-    <div class="container mt-5">
-        <div class="row d-flex justify-content-center">
-            <div class="card p-3  py-4">
-                <div class="row g-3 mt-2">
-                    <div class="col-md-3">
-                        <label for="nama_projek">Nama Projek:</label>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-warning btn-block">Carian</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid mt-5">
+    <!--header-->
+<div class="header">
+    <h1 class="header-title" style="color: #EB5500">
+        PENILAIAN REKA BENTUK GPSS
+    </h1>
+    <hr style="color: #EB5500"></hr>
+</div>
+    <div class="container-fluid">
         <div class="card">
-            <div class="card-body">
-                <div class="row d-flex justify-content-center">
-                    <table class="table datatable table-bordered">
-                        <thead class="text-white bg-orange-jkr">
-                            <tr>
-                                <th scope="col">Bil.</th>
-                                <th scope="col">ID Rujukan</th>
-                                <th scope="col">Nama Projek</th>
-                                <th scope="col">Alamat</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Tindakan</th>
-                            </tr>
-        
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1.</th>
-                                <td>SKL0202</td>
-                                <td>Hospital Seri Iskandar</td>
-                                <td>Mukah</td>
-                                <td>BERJAYA DIDAFTAR</td>
-                                <td>
-                                    <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" type="button" class="btn btn-warning">DAFTAR</a>
-                                </td>
-                            </tr>
-                            @foreach ($projeks as $p)
-                                <tr>
-                                    <td>{{$loop->iteration}}</td>
-                                    <td>{{$p->id_ruj_skala}}</td>
-                                    <td>{{$p->namaProjek}}</td>
-                                    <td>{{$p->alamatProjek}}</td>
-                                    <td>{{$p->status->status_projek}}</td>
-                                    <td>
-                                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{{$p->id}}"
-                                            type="button" class="btn btn-warning">DAFTAR</a>
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
+            <div class="card-header bg-oranje-jkr">
+                <b>Maklumat Pemudah Cara</b>
             </div>
-        </div>
-        
+            <div class="card-body">
+                <form action= "/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <!--Nama-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Nama:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{ $pemudah_cara ?? '' }}" />
+                    </div>
+                    </div>
+                    <!--Syarikat/Cawangan-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Syarikat:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{ $pemudah_cara ?? '' }}" />
+                    </div>
+                    </div>
+                    <!--No. Telefon-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">No. Tel:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{ $pemudah_cara ?? '' }}" />
+                    </div>
+                    </div>
+                    <!--No. Fax-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">No. Fax:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="no_fax" value="{{ $pemudah_cara ?? '' }}" />
+                    </div>
+                    </div>
+                    <!--Emel-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">E-mel:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="email" value="{{ $pemudah_cara ?? '' }}" />
+                    </div>
+                    </div>
+                    <!--Disiplin-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Disiplin:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="disiplin" value="{{ $pemudah_cara ?? '' }}" />
+                    </div>
+                    </div>
+                    {{--Kategori--}}
+                    <div class="col-sm-10">
+                        <input class="form-control" type="hidden" name="kategori" value="gpss" />
+                    </div>
+                    
+                    <!--Button Daftar-->
+                    {{-- <button class=“btn btn-primary” type=“submit”>Daftar</button> --}}
+                    <!--Button Daftar (TOOLTIPS)-->
+                    <div class="text-center">
+                        <button class="btn btn-warning" data-toggle="tooltip" data-placement="bottom"
+                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                    </div>
+                </form>
+            </div>
+        </div> <!--Card-->
     </div>
+    
+    
+    <!--Container Fluid-->
+            <!--JS-->
+            <!--JS BUTTON TOOLTIPS-->
+            <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            </script>
+
 @endsection
+
