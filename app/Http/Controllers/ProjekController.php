@@ -17,6 +17,9 @@ class ProjekController extends Controller
     {
     
         //
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.index', [
+            'pendaftaran_projek' => Projek::all()
+        ]);
         // return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.index');
     }
 
@@ -27,6 +30,7 @@ class ProjekController extends Controller
      */
     public function create()
     {
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.create');
         //return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.create');
         // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.pemudah_cara_bangunan.create');
         // return view('modul.bangunan.penilaian_reka_bentuk_bangunan.jana_sijil.create');
@@ -54,6 +58,9 @@ class ProjekController extends Controller
     public function show(Projek $projek)
     {
         //
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.show', [
+            'pendaftaran_projek' => Projek::all()
+        ]);
     }
 
     /**
