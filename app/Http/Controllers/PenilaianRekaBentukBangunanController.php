@@ -141,8 +141,12 @@ class PenilaianRekaBentukBangunanController extends Controller
     # bawah ni utk skor penilaian
     public function skor_penilaian()
     {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+
         // papar mcm index tapi ada button utk skor
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index');
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
     public function papar_skor_penilaian($id)
     {
@@ -150,18 +154,57 @@ class PenilaianRekaBentukBangunanController extends Controller
         return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.edit');
     }
 
+    public function papar_skor_penilaian_markahKT($id)
+    {
+        // papar form skor penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahKT');
+    }
+
+    public function papar_skor_penilaian_markahSB($id)
+    {
+        // papar form skor penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahSB');
+    }
+
+    public function papar_skor_penilaian_markahPA($id)
+    {
+        // papar form skor penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahPA');
+    }
+
+    public function papar_skor_penilaian_markahPD($id)
+    {
+        // papar form skor penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahPD');
+    }
+
+    public function papar_skor_penilaian_markahIN($id)
+    {
+        // papar form skor penilaian with id projek 
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahIN');
+    }
+
     public function simpan_skor(Request $request, $id)
     {
+        $markah_TL_total = $request->markahTL1 + $request->markahTL2;
+        $markah_KT_total = $request->markahKT1 + $request->markahKT2;
+        $markah_SB_total = $request->markahSB1 + $request->markahSB2;
+        $markah_PA_total = $request->markahPA1 + $request->markahPA2;
+        $markah_PD_total = $request->markahPD1 + $request->markahPD2;
+        $markah_FL_total = $request->markahFL1 + $request->markahFL2;
+        $markah_IN_total = $request->markahIN1 + $request->markahIN2;
+
+
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan;
 
-        $kriteria_phjkr_bangunan = $request->input('jenisKategori');
-        $kriteria_phjkr_bangunan->markahTL = $request->input('markahTL');
-        $kriteria_phjkr_bangunan->markahKT = $request->input('markahKT');
-        $kriteria_phjkr_bangunan->markahSB = $request->input('markahSB');
-        $kriteria_phjkr_bangunan->markahPD = $request->input('markahPD');
-        $kriteria_phjkr_bangunan->markahFL = $request->input('markahFL');
-        $kriteria_phjkr_bangunan->markahIN = $request->input('markahIN');
-        $kriteria_phjkr_bangunan->markahPA = $request->input('markahPA');
+        $kriteria_phjkr_bangunan->jenisKategori = $request->input('jenisKategori');
+        $kriteria_phjkr_bangunan->markahTL = $markah_TL_total;
+        $kriteria_phjkr_bangunan->markahKT = $markah_KT_total;
+        $kriteria_phjkr_bangunan->markahSB = $markah_SB_total;
+        $kriteria_phjkr_bangunan->markahPA = $markah_PA_total;
+        $kriteria_phjkr_bangunan->markahPD = $markah_PD_total;
+        $kriteria_phjkr_bangunan->markahFL = $markah_FL_total;
+        $kriteria_phjkr_bangunan->markahIN = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
 
         // simpan skor penilaian

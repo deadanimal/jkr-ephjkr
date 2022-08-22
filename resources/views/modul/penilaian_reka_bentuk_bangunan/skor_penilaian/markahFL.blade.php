@@ -5,6 +5,8 @@
 
 @section('content')
 
+<!--MarkahFL-->
+
 <div class="header">
         <b class="paparan-senarai-projek">> Penilaian</b>
 
@@ -53,13 +55,13 @@
                         </tr>
         
                         <tr style="background-color:#EB5500">
-                            <th>TL</th>
-                            <th colspan="28">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
+                            <th>KT</th>
+                            <th colspan="28">PENGURUSAN KECEKAPAN TENAGA DAN PENGGUNAAN TENAGA BOLEH BAHARU</th>
                         </tr>
                     </thead>
         
                     <tr align="center">
-                        <th>TL1</th>
+                        <th>KT1</th>
                         <th>Perancangan Tapak</th>
                         <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>                        
                         </th>
@@ -76,7 +78,7 @@
                     </tr>
         
                         <tr align="center">
-                            <th>TL2</th>
+                            <th>KT2</th>
                             <th>Sistem Pengurusan Alam Sekitar (SPAS)</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -96,61 +98,8 @@
         
                         </tr>
 
-                        <!--TL3-->
                         <tr align="center">
-                            <th rowspan="2">TL3</th>
-                            <th>i. Pemotongan dan Penambakan tanah</th>
-                            <th rowspan="2"><input class="form-control sum" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
-                                <span>&#183; Laporan rekabentuk tanah</span><br>
-                                <span>&#183; Lukisan pelan tanah</span><br>
-                                <span>&#183; Laporan geoteknikal (jika perlu)</span>
-                            </th>
-                            <th>
-                                <span>&#183; Laporan kuantiti tanah yang diimport atau eksport</span><br>
-                                <span>&#183; Bukti bergambar</span><br>
-                                <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO 
-                                    atau setaraf
-                                </span>
-                            </th>
-                            
-        
-                        </tr>
-        
-                        <tr align="center">
-                            <th>ii. Mengekalkan Topografi Tanah</th>
-                            {{-- <th>A</th> --}}
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
-                                <span>&#183; Pelan Topografi</span><br>
-                                <span>&#183; Laporan geoteknikal</span><br>
-                                <span>&#183; Laporan rekabentuk tanah</span><br>
-                                <span>&#183; Lukisan pelan kerja tanah</span><br>
-                                <span>&#183; Pelan kawalan hakisan kelodak (ESCP)</span>
-        
-                            </th>
-                            <th>
-                                <span>&#183; Bukti bergambar</span><br>
-                                <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
-                                <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
-                            </th>
-                        </tr>
-        
-                        <tr align="center">
-                            <th>TL4</th>
+                            <th>KT2.1</th>
                             <th>Pelan Kawalan Hakisan & Kelodak (ESCP)</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -170,7 +119,7 @@
                         </tr>
         
                         <tr align="center">
-                            <th>TL5</th>
+                            <th>KT2.2</th>
                             <th>Pemuliharaan dan Pemeliharaan Cerun</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -190,7 +139,7 @@
                         </tr>
 
                         <tr align="center">
-                            <th>TL6</th>
+                            <th>KT3</th>
                             <th>Pengurusan Air Larian Hujan</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -217,7 +166,7 @@
                         </tr>
         
                         <tr align="center">
-                            <th>TL8</th>
+                            <th>KT3.1</th>
                             <th>Landskap strategik</th>
                             <th></th>
                             <th colspan="2"></th>
@@ -232,7 +181,7 @@
                         </tr>
         
                         <tr align="center">
-                            <th>TL8.1</th>
+                            <th>KT3.2</th>
                             <th>Memelihara dan menyenggara pokok yang matang</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -255,7 +204,7 @@
                         </tr>
         
                         <tr align="center">
-                            <th>TL8.2</th>
+                            <th>KT4</th>
                             <th>Menyediakan kawasan hijau</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -278,7 +227,7 @@
                         </tr>
 
                         <tr align="center">
-                            <th>TL8.3</th>
+                            <th>KT5</th>
                             <th>Menyedia dan menyenggara penanaman pokok teduhan</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -302,7 +251,7 @@
                         </tr>
 
                         <tr align="center">
-                            <th>TL8.4</th>
+                            <th>KT5.2</th>
                             <th>Pemilihan bahan binaan siarkaki (walkway) yang mempunyai daya pantulan
                                 haba yang tinggi
                             </th>
@@ -325,7 +274,7 @@
                         </tr>
 
                         <tr align="center">
-                            <th>TL8.5</th>
+                            <th>KT8</th>
                             <th>Menyedia dan menyenggara sistem turapan berumput</th>
                             <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
                             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
@@ -349,7 +298,7 @@
                         </tr>
 
                         <tr align="center">
-                            <th>TL9</th>
+                            <th>KT11</th>
                             <th>Bumbung Hijau & Dinding Hijau</th>
                             <th></th>
                             <th colspan="2"></th>
@@ -365,65 +314,11 @@
                         </tr>
 
                         <tr align="center">
-                            <th>TL9.1</th>
-                            <th>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
-                            </th>
-                            <th><input class="form-control sum" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
-                                <span>&#183; Katalog berserta jadual SRI bumbung</span><br>
-                                <span>&#183; Pengiraan keluasan bumbung</span><br>
-                            </th>
-                            <th>
-                                <span>&#183; Method statement yang telah disahkan oleh
-                                    pegawai penguasa (SO)</span><br>
-                                <span>&#183; Bukti bergambar</span><br>
-                                <span>&#183; Lukisan siap bina</span><br>
-
-                            </th>
-        
-                        </tr>
-
-                        <tr align="center">
-                            <th>TL9.2</th>
-                            <th>Menggalakkan rekabentuk bumbung/dinding hijau
-                            </th>
-                            <th><input class="form-control sum" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"</th>
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
-                                <span>&#183; Pelan konsep rekabentuk</span><br>
-                                <span>&#183; Jadual keluasan kawasan bumbung</span><br>
-                                <span>&#183; Lukisan butiran dan jadual penanaman</span><br>
-                                <span>&#183; Pengiraan</span><br>
-
-                            </th>
-                            <th>
-                                <span>&#183; Bukti bergambar</span><br>
-                                <span>&#183; Lukisan siap bina</span><br>
-                                <span>&#183; Rekod Senggaraan</span><br>
-
-                            </th>
-        
-                        </tr>
-
-                        <tr align="center">
-                            <th colspan="3">Jumlah markah TL</th>
-                            <th colspan="2"><input class="form-control" id="total_amount_mmr" type="text" autocapitalize="off" name="markahTL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                            <th colspan="3">Jumlah markah KT</th>
+                            <th colspan="2"><input class="form-control" id="total_amount_mmr" type="text" autocapitalize="off" name="markahKT1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                             <th colspan="2">0</th>
                             <th colspan="2">0</th>
-                            <th colspan="2"><input class="form-control" id="total_amount_mmv" type="text" autocapitalize="off" name="markahTL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                            <th colspan="2"><input class="form-control" id="total_amount_mmv" type="text" autocapitalize="off" name="markahKT2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                             <th colspan="2">0</th>
                             <th colspan="2">0</th>
                             <th colspan="2">0</th>
