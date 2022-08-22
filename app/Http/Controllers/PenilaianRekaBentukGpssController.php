@@ -137,14 +137,30 @@ class PenilaianRekaBentukGpssController extends Controller
         // simpan skor penilaian
         $gpss_bangunan = new KriteriaGpssBangunan;
         $gpss_bangunan->markahAwR = $request->input('markahAwR');
-        $gpss_bangunan->markahAwW = $request->input('markahAwW');
-        $gpss_bangunan->markahAwD = $request->input('markahAwD');
-        $gpss_bangunan->markahAwF = $request->input('markahAwF');
-        $gpss_bangunan->markahAwS = $request->input('markahAwS');
-        $gpss_bangunan->markahAwWs = $request->input('markahAwWs');
+        // $gpss_bangunan->markahAwW = $request->input('markahAwW');
+        // $gpss_bangunan->markahAwD = $request->input('markahAwD');
+        // $gpss_bangunan->markahAwF = $request->input('markahAwF');
+        // $gpss_bangunan->markahAwS = $request->input('markahAwS');
+        // $gpss_bangunan->markahAwWs = $request->input('markahAwWs');
         $gpss_bangunan->save();
 
-        return redirect('//penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek2');
+    }
+
+    public function skor_penilaian_arkitek2()
+    {
+        // papar mcm index tapi ada button utk skor penilaian
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek2.index');
+    }
+
+    public function simpan_skor_penilaian_arkitek2(Request $request, $id)
+    {
+        // simpan skor penilaian
+        $gpss_bangunan = new KriteriaGpssBangunan;
+        $gpss_bangunan->markahAwW = $request->input('markahAwW');
+        $gpss_bangunan->save();
+
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek2');
     }
 
 

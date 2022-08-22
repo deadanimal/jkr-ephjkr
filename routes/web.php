@@ -156,6 +156,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek']);
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek']);
 
+    //arkitek form (second page)
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek2', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek2']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek2']);
 
 
 

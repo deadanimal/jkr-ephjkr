@@ -16,11 +16,9 @@
     <div class="col">
       <table class="table table-bordered line-table text-center" style="width: 100%">
         <thead class="text-white bg-orange-jkr">
-          <tr>          
-            <th colspan="8">Green Product Scoring Sheet</th>
-          </tr>
+          
           <tr>
-            <th colspan="8">List of products for architectural works - Roof</th>
+            <th colspan="8">List of products for architectural works - Window</th>
           </tr>
           <tr>
             <th>No.</th>
@@ -37,8 +35,8 @@
           
           <tr class="text-center">
             <td rowspan="4" >1</td>
-            <td rowspan="4">Roof tiles</td>
-            <td >Clay</td>
+            <td rowspan="4">Frames</td>
+            <td >Aluminium</td>
             <td >2</td>
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="clay_tiles" id="clay_tiles">
@@ -50,7 +48,7 @@
           </tr>
 
           <tr>
-            <td >Concrete tiles</td>
+            <td >Mild steel</td>
             <td >2</td>
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="concrete_tiles" id="concrete_tiles">
@@ -64,7 +62,7 @@
 
           <tr>
             
-            <td >Metal roofing</td>
+            <td >Timber</td>
             <td >2</td>
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="metal_roofing" id="metal_roofing">
@@ -76,7 +74,7 @@
           </tr>
 
           <tr>
-            <td >Shingles</td>
+            <td >UPVC</td>
             <td >2</td>
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="shingles" id="shingles">
@@ -89,8 +87,8 @@
           
           <tr>
             <td rowspan="5">2</td>
-            <td rowspan="5">Insulation</td>
-            <td >Rockwool</td>
+            <td rowspan="5">Sub component (panel)</td>
+            <td >Glass</td>
             <td >2</td>
             <td> 
               <input onblur="findTotal()" type="number" class="arkitek" name="rockwool" id="rockwool">
@@ -101,7 +99,7 @@
           </tr>
 
           <tr>
-            <td >Glasswool</td>
+            <td >Timber</td>
             <td >2</td>
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="concrete_tiles" id="concrete_tiles">
@@ -114,7 +112,7 @@
           </tr>
 
           <tr>
-            <td >Foam</td>
+            <td >Aluminium</td>
             <td >2</td>
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="concrete_tiles" id="concrete_tiles">
@@ -127,7 +125,7 @@
           </tr>
 
           <tr>
-            <td >Aluminium Foil</td>
+            <td >Steel</td>
             <td >2</td>
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="concrete_tiles" id="concrete_tiles">
@@ -159,7 +157,7 @@
     </div>
   </div>
 
-  <p><strong>Sum of AwR <span class="required"></span></strong><br />
+  <p><strong>Sum of AwW <span class="required"></span></strong><br />
     <input type="text" name="totalordercost" id="totalordercost" /></p>
 
         {{-- pagination --}}
