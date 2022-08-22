@@ -41,28 +41,30 @@
                 </tr>
             </thead>
 
+            <tbody>
             <tr align="center">
-                <th>KT1</th>
-                <th>Rekabentuk bumbung</th>
-                <th>A</th>
-                <th>2</th>
-                <th></th>
-                <th></th>
-                <th>2</th>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th colspan="4">
+                <td>KT1</td>
+                <td>Rekabentuk bumbung</td>
+                <td name="">{{ $kriteria_phjkr_bangunan ?? '' }}</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="4">
                     <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
                     <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
-                </th>
-                <th>
+                </td>
+                <td>
                     <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
                     <span>&#183; Lukisan siap bina</span><br>
                     <span>&#183; Bukti bergambar</span><br>
-                </th>
+                </td>
 
             </tr>
+            </tbody>
 
                 <tr align="center">
                     <th>KT2</th>

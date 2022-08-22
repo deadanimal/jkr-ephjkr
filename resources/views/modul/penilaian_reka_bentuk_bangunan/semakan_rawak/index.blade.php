@@ -56,7 +56,7 @@
                                     <tbody>
                                         <!--LOOPING TABLES-->
                                         {{-- @foreach ($projek as $key => $p) --}}
-                                            <tr>
+                                            <tr class="text-black">
                                                 {{-- <td>{{ $pdkk->id }}</td> --}}
                                                 <td style="text-align: center; vertical-align: middle;">1</td>
                                                 <td style="text-align: center; vertical-align: middle;">SKL0202</td>
@@ -70,7 +70,7 @@
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/edit" role="button"
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/semakan_rawak/edit" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar Skor Penilaian">Papar</a>
                                                 </td>
                                             </tr> 

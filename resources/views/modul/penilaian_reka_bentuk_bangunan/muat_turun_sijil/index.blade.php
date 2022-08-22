@@ -59,7 +59,7 @@
                                 <tbody>
                                     <!--LOOPING TABLES-->
                                     {{-- @foreach ($projek as $key => $p) --}}
-                                        <tr>
+                                        <tr class="text-black">
                                             {{-- <td>{{ $pdkk->id }}</td> --}}
                                             <td style="text-align: center; vertical-align: middle;">1</td>
                                             <td style="text-align: center; vertical-align: middle;">SKL0202</td>
