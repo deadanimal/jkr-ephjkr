@@ -12,7 +12,7 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProjekController;
 use App\Http\Controllers\PenilaianRekaBentukBangunanController;
 use App\Http\Controllers\PenilaianRekaBentukGpssController;
-// use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
+use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -93,28 +93,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian']);
     Route::put('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
 
-    // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 2
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_2']);
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_2']);
-    Route::post('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_2/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian_halaman_2']);
-
-    // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 3
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_3', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_3']);
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_3/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_3']);
-    // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 4
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_4', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_4']);
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_4/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_4']);
-    // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 5
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_5', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_5']);
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_5/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_5']);
-    // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 6
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_6', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_6']);
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_6/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_6']);
-    // Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 7
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_7', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian_halaman_7']);
-    Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian_halaman_7/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian_halaman_7']);
-
-
     // Semakan Rawak Penilaian Reka Bentuk Bangunan
 
     // papar semakan rawak
@@ -162,16 +140,19 @@ Route::middleware('auth')->group(function () {
 
     // Verifikasi Permarkahan Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);
-    // Route::get('/verifikasi_permarkahan_bangunan', [VerifikasiPermarkahanBangunanController, 'index']);
+    Route::get('/verifikasi_permarkahan_bangunan', [VerifikasiPermarkahanBangunanController::class, 'index']);
     // Route::get('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara', [PenilaianRekaBentukBangunanController::class, 'papar_projek']);
     // Route::get('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}', [PenilaianRekaBentukBangunanController::class, 'pemudah_cara']);
     // Route::post('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}', [PenilaianRekaBentukBangunanController::class, 'melantik_pemudah_cara']);
     // Route::get('/penilaian_reka_bentuk_bangunan/skor_penilaian', [PenilaianRekaBentukBangunanController::class, 'skor_penilaian']);
     // Route::get('/penilaian_reka_bentuk_bangunan/skor_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian']);
     // Route::post('/penilaian_reka_bentuk_bangunan/simpan_skor/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_skor']);
-    // Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian']);
-    // Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian']);
+    Route::get('/verifikasi_permarkahan_bangunan/pengesahan_penilaian', [VerifikasiPermarkahanBangunanController::class, 'pengesahan_penilaian']);
+    Route::get('/verifikasi_permarkahan_bangunan/pengesahan_penilaian/{id}', [VerifikasiPermarkahanBangunanController::class, 'papar_pengesahan_penilaian']);
     // Route::put('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
+     Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak']);
+     Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak/{id}', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak_form']);
+    //  Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
 
 
 });

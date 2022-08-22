@@ -193,6 +193,10 @@ class PenilaianRekaBentukBangunanController extends Controller
         $markah_PD_total = $request->markahPD1 + $request->markahPD2;
         $markah_FL_total = $request->markahFL1 + $request->markahFL2;
         $markah_IN_total = $request->markahIN1 + $request->markahIN2;
+        $markah_total_MMR = $request->markahTL1 + $request->markahKT1 + $request->markahSB1
+                            + $request->markahPA1 + $request->markahPD1 + $request->markahFL1 + $request->markahIN1;
+        $markah_total_MMV = $request->markahTL2 + $request->markahKT2 + $request->markahSB2
+                            + $request->markahPA2 + $request->markahPD2 + $request->markahFL2 + $request->markahIN2;
 
 
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan;
@@ -225,115 +229,20 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
+        $dokumen_sokongan = new Projek;
+
+        if($request->hasFile('dokumenSokongan'))
+        {
+            $dokumen_sokongan = $request->file('dokumenSokongan')->store('dokumenSokongan');
+            // $dokumen_sokongan->dokumenSokongan = $dokumen_sokongan;
+        }
+
+            $dokumen_sokongan->dokumenSokongan = $request->input('dokumenSokongan'); 
+            $dokumen_sokongan->save();
+
         // simpan pengesahan penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
     }
-
-     #Pengesahan Penilaian Reka Bentuk Bangunan-Halaman 2
-
-    public function pengesahan_penilaian_halaman_2()
-    {
-        // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p2');
-    }
-    public function papar_pengesahan_penilaian_halaman_2($id)
-    {
-        // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p2');
-    }
-
-    public function simpan_pengesahan_penilaian_halaman_2(Request $request, $id)
-    {
-        // simpan pengesahan penilaian
-        // return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p3');
-    }
-
-    public function pengesahan_penilaian_halaman_3()
-    {
-        // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p3');
-    }
-    public function papar_pengesahan_penilaian_halaman_3($id)
-    {
-        // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p3');
-    }
-    public function simpan_pengesahan_penilaian_halaman_3(Request $request, $id)
-    {
-        // simpan pengesahan penilaian
-        // return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p4');
-    }
-
-    public function pengesahan_penilaian_halaman_4()
-    {
-        // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p4');
-    }
-    public function papar_pengesahan_penilaian_halaman_4($id)
-    {
-        // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p4');
-    }
-    public function simpan_pengesahan_penilaian_halaman_4(Request $request, $id)
-    {
-        // simpan pengesahan penilaian
-        // return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p5');
-    }
-
-    public function pengesahan_penilaian_halaman_5()
-    {
-        // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p5');
-    }
-    public function papar_pengesahan_penilaian_halaman_5($id)
-    {
-        // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p5');
-    } 
-    public function simpan_pengesahan_penilaian_halaman_5(Request $request, $id)
-    {
-        // simpan pengesahan penilaian
-        // return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p6');
-    }
-
-    public function pengesahan_penilaian_halaman_6()
-    {
-        // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p6');
-    }
-    public function papar_pengesahan_penilaian_halaman_6($id)
-    {
-        // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p6');
-    }
-    public function simpan_pengesahan_penilaian_halaman_6(Request $request, $id)
-    {
-        // simpan pengesahan penilaian
-        // return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p7');
-    }
-
-    public function pengesahan_penilaian_halaman_7()
-    {
-        // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p7');
-    }
-    public function papar_pengesahan_penilaian_halaman_7($id)
-    {
-        // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p7');
-    }
-    public function simpan_pengesahan_penilaian_halaman_7(Request $request, $id)
-    {
-        // simpan pengesahan penilaian
-        // return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.p7');
-    }
-
 
     // Semakan Rawak Penilaian Reka Bentuk Bangunan
 

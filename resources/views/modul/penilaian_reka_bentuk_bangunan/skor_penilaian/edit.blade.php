@@ -120,9 +120,9 @@
 
                         <!--TL3-->
                         <tr align="center">
-                            <th rowspan="2">TL3</th>
-                            <th>i. Pemotongan dan Penambakan tanah</th>
-                            <th rowspan="2">
+                            <td rowspan="2">TL3</td>
+                            <td>i. Pemotongan dan Penambakan tanah</td>
+                            <td rowspan="2">
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -130,60 +130,60 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Laporan rekabentuk tanah</span><br>
                                 <span>&#183; Lukisan pelan tanah</span><br>
                                 <span>&#183; Laporan geoteknikal (jika perlu)</span>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span>&#183; Laporan kuantiti tanah yang diimport atau eksport</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                                 <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO 
                                     atau setaraf
                                 </span>
-                            </th>
+                            </td>
                             
         
                         </tr>
         
                         <tr align="center">
-                            <th>ii. Mengekalkan Topografi Tanah</th>
+                            <td>ii. Mengekalkan Topografi Tanah</td>
                             {{-- <th>A</th> --}}
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Pelan Topografi</span><br>
                                 <span>&#183; Laporan geoteknikal</span><br>
                                 <span>&#183; Laporan rekabentuk tanah</span><br>
                                 <span>&#183; Lukisan pelan kerja tanah</span><br>
                                 <span>&#183; Pelan kawalan hakisan kelodak (ESCP)</span>
         
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span>&#183; Bukti bergambar</span><br>
                                 <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
                                 <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
-                            </th>
+                            </td>
                         </tr>
         
                         <!--TL4-->
                         <tr align="center">
-                            <th>TL4</th>
-                            <th>Pelan Kawalan Hakisan & Kelodak (ESCP)</th>
-                            <th>
+                            <td>TL4</td>
+                            <td>Pelan Kawalan Hakisan & Kelodak (ESCP)</td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -191,28 +191,28 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
-                            </th>
+                            </td>
         
                         </tr>
         
                         <!--TL5-->
                         <tr align="center">
-                            <th>TL5</th>
-                            <th>Pemuliharaan dan Pemeliharaan Cerun</th>
-                            <th>
+                            <td>TL5</td>
+                            <td>Pemuliharaan dan Pemeliharaan Cerun</td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -220,28 +220,28 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Laporan penyenggaraan cerun</span><br>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span>Tidak Berkenaan</span><br>
-                            </th>
+                            </td>
         
                         </tr>
 
                         <!--TL6-->
                         <tr align="center">
-                            <th>TL6</th>
-                            <th>Pengurusan Air Larian Hujan</th>
-                            <th>
+                            <td>TL6</td>
+                            <td>Pengurusan Air Larian Hujan</td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -249,19 +249,19 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
                                 <span>&#183; Pelan sistem perparitan berdasarkan MSMA</span><br>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span> &#40;a&#41; Baru</span><br>
                                 <span>&#183; Laporan sistem perparitan</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
@@ -269,31 +269,31 @@
                                 <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
         
-                            </th>
+                            </td>
         
                         </tr>
         
                         <!--TL8-->
                         <tr align="center">
-                            <th>TL8</th>
-                            <th>Landskap strategik</th>
-                            <th></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="3"></th>
+                            <td>TL8</td>
+                            <td>Landskap strategik</td>
+                            <td></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="3"></td>
         
                         </tr>
         
                         <!--TL8.1-->
                         <tr align="center">
-                            <th>TL8.1</th>
-                            <th>Memelihara dan menyenggara pokok yang matang</th>
-                            <th>
+                            <td>TL8.1</td>
+                            <td>Memelihara dan menyenggara pokok yang matang</td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -301,31 +301,31 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Inventori pokok</span><br>
                                 <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
                                 <span>&#183; Pelan penanaman pokok</span><br>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
                                 <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
-                            </th>
+                            </td>
         
                         </tr>
         
                         <!--TL8.2-->
                         <tr align="center">
-                            <th>TL8.2</th>
-                            <th>Menyediakan kawasan hijau</th>
-                            <th>
+                            <td>TL8.2</td>
+                            <td>Menyediakan kawasan hijau</td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -333,31 +333,31 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>Laporan cadangan menunjukkan:</span><br>
                                 <span>&#183; 30% kawasan hijau (disahkan oleh arkitek atau jururancang bertauliah)</span><br>
                                 <span>&#183; Pokok, pokok renek, tumbuhan penutup bumi, rumput</span><br>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span> &#40;a&#41; Pelan tapak siap bina yang telah disahkan oleh Arkitek Bertauliah</span><br>
                                 Nyatakan sekiranya ada perubahan
-                            </th>
+                            </td>
         
                         </tr>
 
                         <!--TL8.3-->
                         <tr align="center">
-                            <th>TL8.3</th>
-                            <th>Menyedia dan menyenggara penanaman pokok teduhan</th>
-                            <th>
+                            <td>TL8.3</td>
+                            <td>Menyedia dan menyenggara penanaman pokok teduhan</td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -365,34 +365,34 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Penyediaan pelan landskap</span><br>
                                 <span>&#183; Jadual spesis pokok</span><br>
                                 <span>&#183; Anggaran bayang-bayang pokok atau struktur selain bangunan</span><br>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span> &#183; Pelan landskap siap bina</span><br>
                                 <span> &#183; Inventori pokok</span><br>
                                 <span> &#183; Bukti bergambar</span><br>
-                            </th>
+                            </td>
         
                         </tr>
 
                         <!--TL8.4-->
                         <tr align="center">
-                            <th>TL8.4</th>
-                            <th>Pemilihan bahan binaan siarkaki (walkway) yang mempunyai daya pantulan
+                            <td>TL8.4</td>
+                            <td>Pemilihan bahan binaan siarkaki (walkway) yang mempunyai daya pantulan
                                 haba yang tinggi
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -400,29 +400,29 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Lukisan terperinci dengan spesifikasi</span><br>
                                 <span>&#183; Katalog berserta jadual SRI bahan siarkaki</span><br>
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span> &#183; Bukti bergambar</span><br>
-                            </th>
+                            </td>
         
                         </tr>
 
                         <!--TL8.5-->
                         <tr align="center">
-                            <th>TL8.5</th>
-                            <th>Menyedia dan menyenggara sistem turapan berumput</th>
-                            <th>
+                            <td>TL8.5</td>
+                            <td>Menyedia dan menyenggara sistem turapan berumput</td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -430,50 +430,50 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Lukisan butiran dan spesifikasi sistem turapan</span><br>
                                 <span>&#183; Lukisan susun atur tapak pembangunan</span><br>
                                 <span>&#183; Pengiraan luas zon turapan</span><br>
 
-                            </th>
-                            <th>
+                            </td>
+                            <td>
                                 <span> &#183; Lukisan siap bina</span><br>
                                 <span> &#183; Bukti bergambar</span><br>
-                            </th>
+                            </td>
         
                         </tr>
 
                         <!--TL9-->
                         <tr align="center">
-                            <th>TL9</th>
-                            <th>Bumbung Hijau & Dinding Hijau</th>
-                            <th></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="3"></th>
-                            <th colspan="3"></th>
+                            <td>TL9</td>
+                            <td>Bumbung Hijau & Dinding Hijau</td>
+                            <td></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="3"></td>
+                            <td colspan="3"></td>
         
                         </tr>
 
                         <!--TL9.1-->
                         <tr align="center">
-                            <th>TL9.1</th>
-                            <th>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
-                            </th>
-                            <th>
+                            <td>TL9.1</td>
+                            <td>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
+                            </td>
+                            <td>
                                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
@@ -481,25 +481,25 @@
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select>                                 
-                            </th>                            
-                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="2"></th>
-                            <th colspan="4">
+                            </td>                            
+                            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="2"></td>
+                            <td colspan="4">
                                 <span>&#183; Katalog berserta jadual SRI bumbung</span><br>
                                 <span>&#183; Pengiraan keluasan bumbung</span><br>
-                            </th>
-                            <th>
+                            <td>
+                            <td>
                                 <span>&#183; Method statement yang telah disahkan oleh
                                     pegawai penguasa (SO)</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                                 <span>&#183; Lukisan siap bina</span><br>
 
-                            </th>
+                            </td>
         
                         </tr>
 
@@ -552,6 +552,7 @@
                             <td colspan="4"></td>
                             <td colspan="3"></td>
                         </tr> 
+                </table>
                         
                         
 <!--MarkahKT-->
@@ -593,7 +594,7 @@
         </tr>
     </thead>
 
-    <!--TL1-->
+    <!--KT1-->
     <tr align="center">
         <td>KT1</td>
         <td>Rekabentuk bumbung</td>
@@ -608,10 +609,10 @@
             </select>                         
         </td>
 
-        <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
+        <td colspan="2"><input onblur="findTotalMMR_KT()" class="form-control sum_mmr_kt" type="number" autocapitalize="off"/></td>
         <td colspan="2"></td>
         <td colspan="2"></td>
-        <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
+        <td colspan="2"><input onblur="findTotalMMV_KT()" class="form-control sum_mmv_kt" type="number" autocapitalize="off"/></td>
         <td colspan="2"></td>
         <td colspan="2"></td>
         <td colspan="2"></td>
@@ -627,7 +628,7 @@
 
     </tr>
 
-        <!--TL2-->
+        <!--KT2-->
         <tr align="center">
             <td>KT2</td>
             <td>Orientasi bangunan</td>
@@ -684,10 +685,10 @@
 
         </tr>
 
-        <!--TL4-->
+        <!--KT2.2-->
         <tr align="center">
-            <th>TL4</th>
-            <th>Pelan Kawalan Hakisan & Kelodak (ESCP)</th>
+            <th>KT2.2</th>
+            <th>Meminimumkan bukaan pada fasad yang menghadap timur dan barat</th>
             <th>
                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                     <option hidden selected="">Sila Pilih</option>
@@ -695,37 +696,8 @@
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
-                </select>                                 
-            </th>                            
-            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="4">
-                <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
+                </select>                
             </th>
-            <th>
-                <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
-            </th>
-
-        </tr>
-
-        <!--TL5-->
-        <tr align="center">
-            <th>TL5</th>
-            <th>Pemuliharaan dan Pemeliharaan Cerun</th>
-            <th>
-                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                    <option hidden selected="">Sila Pilih</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select>                                 
-            </th>                            
             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
@@ -742,46 +714,10 @@
 
         </tr>
 
-        <!--TL6-->
+        <!--KT3-->
         <tr align="center">
-            <th>TL6</th>
-            <th>Pengurusan Air Larian Hujan</th>
-            <th>
-                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                    <option hidden selected="">Sila Pilih</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select>                                 
-            </th>                            
-            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="4">
-                <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
-                <span>&#183; Pelan sistem perparitan berdasarkan MSMA</span><br>
-            </th>
-            <th>
-                <span> &#40;a&#41; Baru</span><br>
-                <span>&#183; Laporan sistem perparitan</span><br>
-                <span>&#183; Bukti bergambar</span><br>
-                <span> &#40;b&#41; Sedia ada</span><br>
-                <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
-                <span>&#183; Bukti bergambar</span><br>
-
-            </th>
-
-        </tr>
-
-        <!--TL8-->
-        <tr align="center">
-            <th>TL8</th>
-            <th>Landskap strategik</th>
+            <th>KT3</th>
+            <th>Rekabentuk fasad</th>
             <th></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
@@ -790,13 +726,39 @@
             <th colspan="2"></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
+            <th colspan="4"></th>
+            <th></th>
+        </tr>
+
+        <!--KT3.1-->
+        <tr align="center">
+            <th>KT3.1</th>
+            <th>Dinding luar bangunan</th>
+            <th>
+                <select class="form-select" aria-label="Default select example" name="jenisKategori">
+                    <option hidden selected="">Sila Pilih</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select> 
+            </th>
+            <th colspan="2"></th>
+            <th colspan="2"></th>
+            <th colspan="2"></th>
+            <th colspan="2"></th>
+            <th colspan="2"></th>
+            <th colspan="2"></th>
+            <th colspan="2">
+                <span>&#183; Katalog</span><br>
+            </th>
             <th colspan="3"></th>
 
         </tr>
 
-        <!--TL8.1-->
+        <!--KT3.2-->
         <tr align="center">
-            <th>TL8.1</th>
+            <th>KT3.2</th>
             <th>Memelihara dan menyenggara pokok yang matang</th>
             <th>
                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
@@ -805,8 +767,8 @@
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
-                </select>                                 
-            </th>                            
+                </select>                
+            </th>
             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
@@ -826,9 +788,9 @@
 
         </tr>
 
-        <!--TL8.2-->
+        <!--KT4-->
         <tr align="center">
-            <th>TL8.2</th>
+            <th>KT4</th>
             <th>Menyediakan kawasan hijau</th>
             <th>
                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
@@ -837,8 +799,8 @@
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
-                </select>                                 
-            </th>                            
+                </select>                
+            </th>
             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
@@ -858,9 +820,9 @@
 
         </tr>
 
-        <!--TL8.3-->
+        <!--KT5-->
         <tr align="center">
-            <th>TL8.3</th>
+            <th>KT5</th>
             <th>Menyedia dan menyenggara penanaman pokok teduhan</th>
             <th>
                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
@@ -869,8 +831,9 @@
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
-                </select>                                 
-            </th>                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
+                </select>                
+            </th>
+            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
             <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
@@ -890,9 +853,9 @@
 
         </tr>
 
-        <!--TL8.4-->
+        <!--KT5.2-->
         <tr align="center">
-            <th>TL8.4</th>
+            <th>KT5.2</th>
             <th>Pemilihan bahan binaan siarkaki (walkway) yang mempunyai daya pantulan
                 haba yang tinggi
             </th>
@@ -903,8 +866,9 @@
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
-                </select>                                 
-            </th>                            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
+                </select>                
+            </th>
+            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
             <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
@@ -921,9 +885,9 @@
 
         </tr>
 
-        <!--TL8.5-->
+        <!--KT8-->
         <tr align="center">
-            <th>TL8.5</th>
+            <th>KT8</th>
             <th>Menyedia dan menyenggara sistem turapan berumput</th>
             <th>
                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
@@ -932,8 +896,8 @@
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
-                </select>                                 
-            </th>                            
+                </select>                
+            </th>
             <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
             <th colspan="2"></th>
             <th colspan="2"></th>
@@ -954,9 +918,9 @@
 
         </tr>
 
-        <!--TL9-->
+        <!--KT11-->
         <tr align="center">
-            <th>TL9</th>
+            <th>KT11</th>
             <th>Bumbung Hijau & Dinding Hijau</th>
             <th></th>
             <th colspan="2"></th>
@@ -971,11 +935,61 @@
 
         </tr>
 
-        <!--TL9.1-->
+        <!--JUMLAH MARKAHKT-->
         <tr align="center">
-            <th>TL9.1</th>
-            <th>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
-            </th>
+            <th colspan="3">Jumlah markah KT</th>
+            <th colspan="2"><input class="form-control" id="total_amount_mmr_kt" type="text" autocapitalize="off" name="markahKT1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+            <th colspan="2">0</th>
+            <th colspan="2">0</th>
+            <th colspan="2"><input class="form-control" id="total_amount_mmv_kt" type="text" autocapitalize="off" name="markahKT2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+            <th colspan="2">0</th>
+            <th colspan="2">0</th>
+            <th colspan="2">0</th>
+            <th colspan="4"></th>
+            <th colspan="3"></th>
+        </tr> 
+        
+</table>
+
+<!--MarkahSB-->
+<table id="example" class="table table-bordered line-table display">
+
+        <thead class="text-white">
+            <tr align="center" style="background-color:#EB5500">
+                <th rowspan="3">Kod</th>
+                <th rowspan="3">Kriteria</th>
+                <th rowspan="3">Kategori bangunan</th>
+                <th colspan="7">Pembangunan Baru</th>
+                <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+                <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
+            </tr>
+
+            <tr align="center" style="background-color:#EB5500">
+                <th colspan="7">Markah</th>
+            </tr>
+
+            <tr align="center" style="background-color:#EB5500">
+                <th>MM</th>
+                <th>MS</th>
+                <th>MR</th>
+                <th>MMV</th>
+                <th>MS</th>
+                <th>MV</th>
+                <th>ML</th>
+                <th colspan="2">Rekabentuk (Peringkat 2)</th>
+                <th>Verifikasi (Peringkat 3)</th>
+
+            </tr>
+
+            <tr style="background-color:#EB5500">
+                <th>SB</th>
+                <th colspan="15">PENGURUSAN SUMBER DAN BAHAN</th>
+            </tr>
+        </thead>
+
+        <tr align="center">
+            <th>SB1</th>
+            <th>Sistem Binaan Berindustri (IBS)</th>
             <th>
                 <select class="form-select" aria-label="Default select example" name="jenisKategori">
                     <option hidden selected="">Sila Pilih</option>
@@ -983,82 +997,822 @@
                     <option value="B">B</option>
                     <option value="C">C</option>
                     <option value="D">D</option>
-                </select>                                 
-            </th>                            
-            <th colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
-            <th colspan="2"></th>
+                </select>    
+            </th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
             <th colspan="4">
-                <span>&#183; Katalog berserta jadual SRI bumbung</span><br>
-                <span>&#183; Pengiraan keluasan bumbung</span><br>
+                <span>&#183; Cadangan sistem IBS oleh pembekal IBS berdaftar</span><br>
+                <span>&#183; Laporan Pengiraan Skor IBS</span><br>
             </th>
             <th>
-                <span>&#183; Method statement yang telah disahkan oleh
-                    pegawai penguasa (SO)</span><br>
-                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Lukisan pembinaan IBS</span><br>
                 <span>&#183; Lukisan siap bina</span><br>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>SB2</th>
+            <th>Produk hijau</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+                <span>&#183; Sijil Pengesahan produk hijau</span><br>
+                <span>&#183; spesifikasi produk</span><br>
+                <span>&#183; Senarai permarkahan produk hijau berdasarkan GPSS</span><br>                    
+            </th>
+            <th>
+                <span>&#183; Brosur pembekal</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Borang pengiraan skor GPSS</span><br>
 
             </th>
 
         </tr>
 
         <tr align="center">
-            <td>TL9.2</td>
-            <td>Menggalakkan rekabentuk bumbung/dinding hijau
-            </td>
-            <td>
-                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                    <option hidden selected="">Sila Pilih</option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select>                                 
-            </td>
-            <td colspan="2"><input onblur="findTotalMMR()" class="form-control sum_mmr" type="number" autocapitalize="off"/></td>
-            <td colspan="2"></td>
-            <td colspan="2"></td>
-            <td colspan="2"><input onblur="findTotalMMV()" class="form-control sum_mmv" type="number" autocapitalize="off"/></td>
-            <td colspan="2"></td>
-            <td colspan="2"></td>
-            <td colspan="2"></td>
-            <td colspan="4">
-                <span>&#183; Pelan konsep rekabentuk</span><br>
-                <span>&#183; Jadual keluasan kawasan bumbung</span><br>
-                <span>&#183; Lukisan butiran dan jadual penanaman</span><br>
-                <span>&#183; Pengiraan</span><br>
-
-            </td>
-            <td>
+            <th>SB3</th>
+            <th>Pengurusan sisa semasa pembinaan</th>
+            <th>A</th>
+            <th>4</th>
+            <th></th>
+            <th></th>
+            <th>4</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+                <span>&#183; Pelan pengurusan sisa yang meliputi Buangan Terjadual
+                    dan Sisa Bahan Binaan</span><br>
+                <span>&#183; Lukisan yang menunjukkan ruang pengurusan sisa</span><br>
+                <span>&#183; Pelan tapak dengan kawasan simpanan sementara</span><br>
+            </th>
+            <th>
+                <span>&#183; Dokumen bukti proses penyimpanan</span><br>
+                <span>&#183; Dokumen bukti proses penghantaran ke tapak pelupusan</span><br>
+                <span>&#183; Dokumen bukti proses pelupusan sisa berjadual seperti resit
+                    dan borang semasa audit dijalankan
+                </span><br>
                 <span>&#183; Bukti bergambar</span><br>
-                <span>&#183; Lukisan siap bina</span><br>
-                <span>&#183; Rekod Senggaraan</span><br>
-
-            </td>
+                <span>&#183; Pengiraan kitar semula (jika ada)</span><br>
+            </th>
+            
 
         </tr>
 
-        <!--JUMLAH MARKAHTL-->
         <tr align="center">
-            <th colspan="3">Jumlah markah TL</th>
-            <td colspan="2"><input class="form-control" id="total_amount_mmr" type="text" autocapitalize="off" name="markahTL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
-            <td colspan="2">0</td>
-            <td colspan="2">0</td>
-            <td colspan="2"><input class="form-control" id="total_amount_mmv" type="text" autocapitalize="off" name="markahTL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
-            <td colspan="2">0</td>
-            <td colspan="2">0</td>
-            <td colspan="2">0</td>
-            <td colspan="4"></td>
-            <td colspan="3"></td>
+            <th>SB4</th>
+            <th>3r-Semasa Operasi</th>
+            <th>A</th>
+            <th>4</th>
+            <th></th>
+            <th></th>
+            <th>4</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+                <span>&#183; Pelan pengurusan sisa domestik</span><br>
+                <span>&#183; Pelan kedudukan tong 3Rdi semua aras bangunan</span><br>
+                <span>&#183; Lokasi kebuk sampah</span><br>                    
+            </th>
+            <th>
+                <span>&#183; Pematuhan pelan pengurusan sisa domestik</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+            </th>
+            <tr align="center">
+                <th colspan="3">Jumlah markah SB</th>
+                <th>20</th>
+                <th>0</th>
+                <th>0</th>
+                <th>20</th>
+                <th>0</th>
+                <th>0</th>
+                <th>0</th>
+                <th colspan="4"></th>
+                <th colspan="3"></th>
+            </tr>  
+</table>
+
+<!--MarkahPA-->
+<table id="example" class="table table-bordered line-table display">
+    <thead class="text-white">
+        <tr align="center" style="background-color:#EB5500">
+            <th rowspan="3">Kod</th>
+            <th rowspan="3">Kriteria</th>
+            <th rowspan="3">Kategori bangunan</th>
+            <th colspan="7">Pembangunan Baru</th>
+            <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+            <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
+        </tr>
+
+        <tr align="center" style="background-color:#EB5500">
+            <th colspan="7">Markah</th>
+        </tr>
+    
+        <tr align="center" style="background-color:#EB5500">
+            <th>MM</th>
+            <th>MS</th>
+            <th>MR</th>
+            <th>MMV</th>
+            <th>MS</th>
+            <th>MV</th>
+            <th>ML</th>
+            <th colspan="2">Rekabentuk (Peringkat 2)</th>
+            <th>Verifikasi (Peringkat 3)</th>
+
+        </tr>
+
+        <tr style="background-color:#EB5500">
+            <th>PA</th>
+            <th colspan="15">PENGURUSAN KECEKAPAN PENGGUNAAN AIR</th>
+        </tr>
+    </thead>
+
+        <tr align="center">
+            <th>PA1</th>
+            <th>Produk Kecekapan Air</th>
+            <th>A</th>
+            <th>3</th>
+            <th></th>
+            <th></th>
+            <th>3</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+                            <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
+                            <span>&#183; Pengiraan penjimatan</span><br>
+            </th>
+            <th>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Pensijilan WELPS</span><br>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>PA2</th>
+            <th>Penjimatan Penggunaan Air Dalam Bangunan</th>
+            <th>A</th>
+            <th>2</th>
+            <th></th>
+            <th></th>
+            <th>2</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+                            <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
+                            <span>&#183; Pengiraan</span><br>
+            </th>
+            <th>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Pensijilan WELPS</span><br>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th rowspan="2">PA3</th>
+            <th>i. SPAH</th>
+            <th>A</th>
+            <th>2</th>
+            <th></th>
+            <th></th>
+            <th>2</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+                            <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
+                            <span>&#183; Pengiraan</span><br>
+            </th>
+            <th>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Pensijilan WELPS</span><br>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            {{-- <th rowspan="2">PA3</th> --}}
+            <th>ii. Kitar Semula Air Sisa</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+                            <span>&#183; Laporan rekabentuk dan pengiraan SPAH atau
+                                sistem kitar semula air sisa</span><br>
+                            <span>&#183; Lukisan SPAH atau lukisan sistem kitar semula air sisa</span><br>
+                            <span>&#183; Bil air domestik</span><br>
+            </th>
+            <th>
+                <span>&#183; Laporan pengujian sistem</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+            </th>
+
+        </tr>
+
+        <!-- Jumlah MarkahPA-->
+        <tr align="center">
+            <th colspan="3">Jumlah markah PA</th>
+            <th>26</th>
+            <th>0</th>
+            <th>0</th>
+            <th>24</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th colspan="4"></th>
+            <th colspan="3"></th>
         </tr> 
 
+</table>
 
-                
-                </table>
+<!--MarkahPD-->
+<table id="example" class="table table-bordered line-table display">
+    <thead class="text-white">
+        <tr align="center" style="background-color:#EB5500">
+            <th rowspan="3">Kod</th>
+            <th rowspan="3">Kriteria</th>
+            <th rowspan="3">Kategori bangunan</th>
+            <th colspan="7">Pembangunan Baru</th>
+            <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+            <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
+        </tr>
+
+        <tr align="center" style="background-color:#EB5500">
+            <th colspan="7">Markah</th>
+        </tr>
+
+        <tr align="center" style="background-color:#EB5500">
+            <th>MM</th>
+            <th>MS</th>
+            <th>MR</th>
+            <th>MMV</th>
+            <th>MS</th>
+            <th>MV</th>
+            <th>ML</th>
+            <th colspan="2">Rekabentuk (Peringkat 2)</th>
+            <th>Verifikasi (Peringkat 3)</th>
+
+        </tr>
+
+        <tr style="background-color:#EB5500">
+            <th>PD</th>
+            <th colspan="15">PENGURUSAN KUALITI PERSEKITARAN DALAMAN</th>
+        </tr>
+    </thead>
+
+    <tr align="center">
+        <th>PD2</th>
+        <th>Perancangan ruang</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4"></th>
+        <th></th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD2.4</th>
+        <th>Ketinggian siling yang efektif</th>
+        <th>A</th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+                        <span>&#183; Lukisan keratan bangunan yang menunjukkan
+                            ukuran (lantai ke siling)</span><br>
+        </th>
+        <th>
+            <span>&#183; Lukisan siap bina</span><br>
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD2.5</th>
+        <th>Warna cerah di permukaan dinding dan siling</th>
+        <th>A</th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+                        <span>&#183; Katalog dan sampel menunjukkan warna yang dicadangkan</span><br>
+        </th>
+        <th>
+            <span>&#183; Bukti bergambar bagi mengesahkan skima warna yang digunakan</span><br>
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD3</th>
+        <th>Kualiti Visual</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+        </th>
+        <th>
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD3.1</th>
+        <th>Faktor Pencahayaan Siang (DF)</th>
+        <th>A</th>
+        <th>2</th>
+        <th></th>
+        <th></th>
+        <th>2</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+                        <span>&#183; Lukisan tampak dan jadual tingkap</span><br>
+                        <span>&#183; Pengiraan keluasan lantai yang menunjukkan
+                            30% daripada NLA yang menunjukkan nilai DF 1.0% - 3.5%</span><br>
+                        <span>&#183; Laporan simulasi (jika ada)</span><br>
+        </th>
+        <th>
+            <span>&#183; Lukisan siap bina</span><br>
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD3.2</th>
+        <th>Menggunakan rak cahaya (light shelves)</th>
+        <th>A</th>
+        <th>2</th>
+        <th></th>
+        <th></th>
+        <th>2</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+                        <span>&#183; Rekabentuk rak cahaya</span><br>
+                        <span>&#183; Lukisan terperinci</span><br>
+                        <span>&#183; Laporan simulasi, jika ada</span><br>
+        </th>
+        <th>
+            <span>&#183; Lukisan pemasangan</span><br>
+            <span>&#183; Lukisan siap bina</span><br>
+            <span>&#183; Bukti bergambar</span><br>
+
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD3.3</th>
+        <th>Kawalan Tahap Kesilauan</th>
+        <th>A</th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+                        <span>&#183; Katalog dan sampel menunjukkan bidai yang dicadangkan</span><br>
+        </th>
+        <th>
+            <span>&#183; Lukisan siap bina dan bukti bergambar
+                bagi mengesahkan bidai yang digunakan</span><br>
+            <span>&#183; Laporan prestasi pencahayaan (jika ada)</span><br>
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD3.4</th>
+        <th>Akses visual kepada pandangan di luar</th>
+        <th>A</th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th>1</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+                        <span>&#183; Pelan susuratur</span><br>
+                        <span>&#183; Rekabentuk awalan yang menunjukkan
+                            pembahagian ruang yang bebas halangan binaan kekal</span><br>
+                        <span>&#183; Lukisan terperinci dinding sesekat berserta spesifikasi</span><br>
+        </th>
+        <th>
+            <span>&#183; Katalog dan sample bahan yang diluluskan oleh S.O.</span><br>
+            <span>&#183; Lukisan Siap Bina</span><br>
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD8</th>
+        <th>Kualiti Udara Dalaman (IAQ)</th>
+        <th>A</th>
+        <th>3</th>
+        <th></th>
+        <th></th>
+        <th>3</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+                        <span>&#183; Katalog dan sijil pengesahan penarafan eco-label bahan</span><br>
+                        <span>&#183; Spesifikasi teknikal pembekal</span><br>
+        </th>
+        <th>
+            <span>&#183; Katalog dan kaedah pemasangan (method statement) yang telah
+                disahkan oleh Pegawai yang kompeten</span><br>
+            <span>&#183; Gambar semasa kerja pemasangan</span><br>
+            <span>&#183; Lukisan siap bina</span><br>
+        </th>
+
+    </tr>
+
+    <tr align="center">
+        <th>PD10</th>
+        <th>Kaji Selidik Keselesaan Penghuni</th>
+        <th>A</th>
+        <th>0</th>
+        <th></th>
+        <th></th>
+        <th>2</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4"> 
+            <span>&#183; Tidak berkaitan (TB)</span></th>
+        <th>
+            <span>&#183; Laporan maklumbalas kaji selidik</span><br>
+        </th>
+
+    </tr>
+
+    <!-- Jumlah MarkahPD-->
+    <tr align="center">
+        <th colspan="3">Jumlah markah PA</th>
+        <th>11</th>
+        <th>0</th>
+        <th>0</th>
+        <th>13</th>
+        <th>0</th>
+        <th>0</th>
+        <th>0</th>
+        <th colspan="4"></th>
+        <th colspan="3"></th>
+    </tr>   
+</table>
+
+<!--MarkahFL-->
+<table id="example" class="table table-bordered line-table display">
+
+</table>
+
+<!--MarkahIN-->
+<table id="example" class="table table-bordered line-table display">
+    <thead class="text-white">
+        <tr align="center" style="background-color:#EB5500">
+            <th rowspan="3">Kod</th>
+            <th rowspan="3">Kriteria</th>
+            <th rowspan="3">Kategori bangunan</th>
+            <th colspan="7">Pembangunan Baru</th>
+            <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+            <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
+        </tr>
+
+        <tr align="center" style="background-color:#EB5500">
+            <th colspan="7">Markah</th>
+        </tr>
+    
+        <tr align="center" style="background-color:#EB5500">
+            <th>MM</th>
+            <th>MS</th>
+            <th>MR</th>
+            <th>MMV</th>
+            <th>MS</th>
+            <th>MV</th>
+            <th>ML</th>
+            <th colspan="2">Rekabentuk (Peringkat 2)</th>
+            <th>Verifikasi (Peringkat 3)</th>
+
+        </tr>
+
+        <tr style="background-color:#EB5500">
+            <th>FL</th>
+            <th colspan="15">PENGURUSAN FASILITI LESTARI</th>
+        </tr>
+    </thead>
+
+        <tr align="center">
+            <th>FL1</th>
+            <th>Penarafan sedia ada</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4"></th>
+            <th></th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL2</th>
+            <th>Pengurusan fasiliti bangunan</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL2.1</th>
+            <th>Pengurusan data dan ruang</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL2.2</th>
+            <th>Pengurusan sistem penyenggaraan</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL2.3</th>
+            <th>Prestasi penggurusan</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL3</th>
+            <th>Penyenggaraan lestari</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th></th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL3.1</th>
+            <th>Ruang pejabat untuk pasukan penyenggaraan</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL3.2</th>
+            <th>Kontraktor pengurusan fasiliti (FM)</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th></th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL3.3</th>
+            <th>Pelan Pengurusan Fasiliti (FM)</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4">
+            </th>
+            <th>
+            </th>
+
+        </tr>
+
+        <tr align="center">
+            <th>FL3.4</th>
+            <th>Manual Operasi dan Penyenggaraan Bangunan</th>
+            <th>A</th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th>5</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="4"> 
+            Lorem ipsum</th>
+            <th>
+                loren ipsum<br>
+            </th>
+
+        </tr>
+
+        <!-- Jumlah MarkahFL-->
+        <tr align="center">
+            <th colspan="3">Jumlah markah PA</th>
+            <th>11</th>
+            <th>0</th>
+            <th>0</th>
+            <th>13</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th colspan="4"></th>
+            <th colspan="3"></th>
+        </tr>  
+</table>
+
+<!--MarkahIN-->
+<table id="example" class="table table-bordered line-table display">
+    <thead class="text-white">
+        <tr align="center" style="background-color:#EB5500">
+            <th rowspan="3">Kod</th>
+            <th rowspan="3">Kriteria</th>
+            <th rowspan="3">Kategori bangunan</th>
+            <th colspan="7">Pembangunan Baru</th>
+            <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+            <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
+        </tr>
+
+        <tr align="center" style="background-color:#EB5500">
+            <th colspan="7">Markah</th>
+        </tr>
+    
+        <tr align="center" style="background-color:#EB5500">
+            <th>MM</th>
+            <th>MS</th>
+            <th>MR</th>
+            <th>MMV</th>
+            <th>MS</th>
+            <th>MV</th>
+            <th>ML</th>
+            <th colspan="2">Rekabentuk (Peringkat 2)</th>
+            <th>Verifikasi (Peringkat 3)</th>
+
+        </tr>
+
+        <tr style="background-color:#EB5500">
+            <th>IN</th>
+            <th colspan="15">INOVASI DALAM REKABENTUK</th>
+        </tr>
+    </thead>
+
+    <tr align="center">
+        <th>IN1</th>
+        <th>Reka Bentuk Inovasi</th>
+        <th>A</th>
+        <th>6</th>
+        <th></th>
+        <th></th>
+        <th>6</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">
+          <span>&#183; Laporan cadangan inovasi</span><br>
+          <span>&#183; Laporan kajian Return of Investment</span><br>
+        </th>
+        <th>
+          <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+          <span>&#183; Laporan prestasi inovasi</span><br>
+        </th>
+
+    </tr>
+
+        <!-- Jumlah MarkahIN-->
+        <tr align="center">
+            <th colspan="3">Jumlah markah IN</th>
+            <th>6</th>
+            <th>0</th>
+            <th>0</th>
+            <th>6</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th colspan="4"></th>
+            <th colspan="3"></th>
+        </tr> 
+</table>
                 <!--Button Simpan (TOOLTIPS)-->
                 <div class="text-center">
                     <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
@@ -1107,6 +1861,174 @@
                     tot1 += parseFloat(arr[i].value);
                 }
                 document.getElementById('total_amount_mmv').value = tot1;
+            }
+
+            </script>
+
+            <!--MarkahKT for MMR-->
+            <script>
+                function findTotalMMR_KT() {
+                var arr = document.getElementsByClassName('sum_mmr_kt');
+                var tot2 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot2 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmr_kt').value = tot2;
+            }
+
+            </script>
+
+            <!--MarkahKT for MMV-->
+            <script>
+                function findTotalMMV_KT() {
+                var arr = document.getElementsByClassName('sum_mmv_kt');
+                var tot3 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot3 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmv_kt').value = tot3;
+            }
+
+            </script>
+
+            <!--MarkahSB for MMR-->
+            <script>
+                function findTotalMMR_SB() {
+                var arr = document.getElementsByClassName('sum_mmr_sb');
+                var tot4 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot4 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmr_sb').value = tot4;
+            }
+
+            </script>
+
+            <!--MarkahSB for MMV-->
+            <script>
+                function findTotalMMV_SB() {
+                var arr = document.getElementsByClassName('sum_mmv_sb');
+                var tot5 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot5 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmv_sb').value = tot5;
+            }
+
+            </script>
+
+            <!--MarkahPA for MMR-->
+            <script>
+                function findTotalMMR_SB() {
+                var arr = document.getElementsByClassName('sum_mmr_pa');
+                var tot6 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot6 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmr_pa').value = tot6;
+            }
+
+            </script>
+
+            <!--MarkahPA for MMV-->
+            <script>
+                function findTotalMMV_PA() {
+                var arr = document.getElementsByClassName('sum_mmv_pa');
+                var tot7 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot7 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmv_pa').value = tot7;
+            }
+
+            </script>
+
+            <!--MarkahPD for MMR-->
+            <script>
+                function findTotalMMR_PD() {
+                var arr = document.getElementsByClassName('sum_mmr_pd');
+                var tot8 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot8 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmr_pd').value = tot8;
+            }
+
+            </script>
+
+            <!--MarkahPD for MMV-->
+            <script>
+                function findTotalMMV_PD() {
+                var arr = document.getElementsByClassName('sum_mmv_pd');
+                var tot9 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot9 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmv_pd').value = tot9;
+            }
+
+            </script>
+
+            <!--MarkahFL for MMR-->
+            <script>
+                function findTotalMMR_FL() {
+                var arr = document.getElementsByClassName('sum_mmr_fl');
+                var tot10 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot10 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmr_fl').value = tot10;
+            }
+
+            </script>
+
+            <!--MarkahFL for MMV-->
+            <script>
+                function findTotalMMV_FL() {
+                var arr = document.getElementsByClassName('sum_mmv_fl');
+                var tot11 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot11 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmv_fl').value = tot11;
+            }
+
+            </script>
+
+            <!--MarkahIN for MMR-->
+            <script>
+                function findTotalMMR_IN() {
+                var arr = document.getElementsByClassName('sum_mmr_in');
+                var tot12 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot12 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmr_in').value = tot12;
+            }
+
+            </script>
+
+            <!--MarkahIN for MMV-->
+            <script>
+                function findTotalMMV_IN() {
+                var arr = document.getElementsByClassName('sum_mmv_in');
+                var tot13 = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot13 += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_mmv_in').value = tot13;
             }
 
             </script>
