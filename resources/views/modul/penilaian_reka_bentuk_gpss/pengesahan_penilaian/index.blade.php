@@ -1,7 +1,5 @@
 @extends('layouts.base')
 
-
-
 @section('content')
     {{-- header --}}
     <div class="header" >
@@ -50,7 +48,7 @@
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
                     <td>
-                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/edit" type="button" class="btn btn-warning">PAPAR</a>
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/edit" type="button" class="btn btn-warning">PAPAR</a>
                     </td>
                 </tr>
             </tbody>

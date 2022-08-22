@@ -2,12 +2,14 @@
 
 @section('content')
     {{-- header --}}
-    <div class="header">
-        <h1 class="header-title" style="color: #EB5500">
-            PENILAIAN REKA BENTUK GPSS
-        </h1>
+    <div class="row">
+        <div class="col">
+            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK GPSS</strong></h3>
+        </div>
     </div>
-    <hr style="background-color: #EB5500;">
+
+    <hr class="text-primary mb-3">
+
     
 
     {{-- body --}}

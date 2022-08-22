@@ -5,14 +5,15 @@
 @section('content')
 
  {{-- header --}}
- <div class="header" >
-    <h1 class="header-title" style="color: #EB5500">
-        PENILAIAN REKA BENTUK GPSS
-    </h1>
+<div class="row">
+  <div class="col">
+      <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK GPSS</strong></h3>
+  </div>
 </div>
-<hr style="background-color: #EB5500;">
 
-<div class="row3 mx-4">
+<hr class="text-primary mb-3">
+
+<div class="row3 mx-4 table-responsive scrollbar">
     <div class="col">
       <table class="table table-bordered line-table text-center" style="width: 100%">
         <thead class="text-white bg-orange-jkr">
@@ -22,7 +23,9 @@
             <th >Kod</th>
             <th colspan="8">Perancangan & Pengurusan Tapak Lestari</th>
             <th colspan="12">Pembangunan Baru</th>
-            <th >Dokumen</th>
+            <th colspan="12">Dokumen Pembuktian</th>
+            <th rowspan="3">Ulasan / Maklum Balas Penilai</th>
+            <th rowspan="3">Muat Naik Dokumen Sokongan</th>
             
             
             
@@ -39,6 +42,7 @@
             <th >MV</th>
             <th >ML</th>
             <th colspan="6">Reka Bentuk (Peringkat 2)</th>
+            <th colspan="6">Verifikasi (Peringkat 3)</th>
             
           </tr>
         </thead>
@@ -55,6 +59,9 @@
             <th>0</th>            
             <th>0</th>
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
+            <th>pdf</th>             
           </tr>
           <tr>
             <th>TL2</th>
@@ -68,6 +75,9 @@
             <th>0</th>            
             <th>0</th>
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th> 
+            <th>pdf</th>            
           </tr>
           <tr>
             <th>TL3</th>
@@ -81,6 +91,9 @@
             <th>0</th>            
             <th>0</th>
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
+            <th>pdf</th>             
           </tr>
           <tr>
             <th>TL4</th>
@@ -94,6 +107,9 @@
             <th>0</th>            
             <th>0</th>
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
+            <th>pdf</th>             
           </tr>
           <tr>
             <th>TL5</th>
@@ -107,6 +123,9 @@
             <th>0</th>            
             <th>0</th>
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
+            <th>pdf</th>             
           </tr>
           <tr>
             <th>TL6</th>
@@ -120,6 +139,9 @@
             <th>0</th>            
             <th>0</th>
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
+            <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
+            <th>pdf</th>             
           </tr>
           
           
@@ -143,7 +165,7 @@
             </li>
             <li class="page-item"><a class="page-link" href="">1</a></li>
             <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek">2</a></li>
-            <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek2">3</a></li>
+            <li class="page-item"><a class="page-link" href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2">3</a></li>
             <li>
             <a class="page-link" href="#" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
