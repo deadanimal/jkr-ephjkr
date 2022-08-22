@@ -40,7 +40,7 @@
                         <label class="col-form-label">Muat Naik Dokumen Sokongan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="failManual" type="file"/>
+                        <input class="form-control" name="jenisHebahan" type="file"/>
                     </div>
     
                     <div class="col-3 mb-2">
