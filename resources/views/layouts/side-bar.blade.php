@@ -142,8 +142,8 @@
                             <ul class="nav-item collapse {{ Request::is('pengurusan_maklumat/selenggara/*') ? 'show' : 'false' }} my-1"
                                 id="selenggara">
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/nama_peranan') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/nama_peranan">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/selenggara_peranan') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/selenggara_peranan">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Selenggara Nama Peranan</span>
                                         </div>

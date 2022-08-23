@@ -47,17 +47,75 @@
                                     <td>{{ $mb->nama }}</td>
                                     
                                     <td>
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}/edit"
-                                                    class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                        <div class="col-auto mb-2 px-0"
+                                            style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
+                                            @if ($mb->tarikhStatus == 'Dalam Proses')
+                                                <button class="btn btn-orange-jkr" type="button">DALAM PROSES</button>
+                                            @else
+                                                <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                    data-bs-target="#dalamproses">DALAM PROSES</button>
+                                            @endif
+                                            |
+                                            @if ($mb->tarikhStatus == 'Disemak')
+                                                <button class="btn btn-orange-jkr" type="button">DISEMAK</button>
+                                            @else
+                                                <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                    data-bs-target="#disemak">DISEMAK</button>
+                                            @endif
+
+                                        </div>
+
+                                        {{-- lulus modal --}}
+                                        <div class="modal fade" id="dalamproses" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
+                                                <div class="modal-content position-relative">
+                                                    <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+                                                        {{-- <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button> --}}
+                                                    </div>
+                                                    <div class="modal-body p-0">
+
+                                                        <div class="p-4 text-center">
+                                                            <h5 class="h5 text-green-jkr">Maklum Balas Pengguna ini dalam Proses?</h5>
+                                                            <form action="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}"
+                                                                method="post">
+                                                                @method('PUT')
+                                                                @csrf
+                                                                <input type="hidden" name="tarikhStatus" value="Dalam Proses">
+                                                                <button class="btn btn-outline-green-jkr mt-3" type="button"
+                                                                    data-bs-dismiss="modal">DALAM PROSES</button>
+                                                                <button class="btn btn-green-jkr mt-3" type="submit">DISEMAK</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-auto">
-                                                <form action="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}" method="post">
-                                                    @method('DELETE')
-                                                    @csrf
-                                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
-                                                </form>
+                                        </div>
+
+                                        {{-- tolak modal --}}
+                                        <div class="modal fade" id="tolak" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
+                                                <div class="modal-content position-relative">
+                                                    <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+                                                        {{-- <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button> --}}
+                                                    </div>
+                                                    <div class="modal-body p-0">
+
+                                                        <div class="p-4 text-center">
+                                                            <h5 class="h5 text-green-jkr">Adakah anda pasti ingin Sudah Menyemak Maklum Balas ini?</h5>
+                                                            <form action="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}"
+                                                                method="post">
+                                                                @method('PUT')
+                                                                @csrf
+                                                                <input type="hidden" name="status_akaun" value="Tolak">
+                                                                <button class="btn btn-outline-green-jkr mt-3" type="button"
+                                                                    data-bs-dismiss="modal">Tidak</button>
+                                                                <button class="btn btn-green-jkr mt-3" type="submit">Ya</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>

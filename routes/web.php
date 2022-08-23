@@ -12,6 +12,7 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProjekController;
 use App\Http\Controllers\PenilaianRekaBentukBangunanController;
 use App\Http\Controllers\PenilaianRekaBentukGpssController;
+use App\Http\Controllers\SelenggaraPerananController;
 use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -73,6 +74,8 @@ Route::middleware('auth')->group(function () {
         Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
         Route::post('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'update_peranan']);
     });
+
+    Route::resource('/pengurusan_maklumat/selenggara/selenggara_peranan', SelenggaraPerananController::class);
 
     // Penilaian Reka Bentuk Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);
