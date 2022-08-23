@@ -27,7 +27,7 @@ class SelenggaraPerananController extends Controller
      */
     public function create()
     {
-        return view('jnefjnkfewnkf');
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.create');
     }
 
     /**
