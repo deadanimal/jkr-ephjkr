@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Spatie\Permission\Models\Role;
 
-class SelenggaraPerananController extends Controller
+class SelenggaraStatusController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +13,8 @@ class SelenggaraPerananController extends Controller
      */
     public function index()
     {
-        $peranan = Role::all();
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.index', [
-            'peranan'=>$peranan
-        ]);
+        //
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_status.index');
     }
 
     /**
@@ -27,7 +24,8 @@ class SelenggaraPerananController extends Controller
      */
     public function create()
     {
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.create');
+        //
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_status.create');
     }
 
     /**
@@ -38,8 +36,7 @@ class SelenggaraPerananController extends Controller
      */
     public function store(Request $request)
     {
-        Role::create(['name' => $request->nama]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_peranan');
+        //
     }
 
     /**
@@ -62,10 +59,6 @@ class SelenggaraPerananController extends Controller
     public function edit($id)
     {
         //
-        $peranan = Role::all();
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.edit', [
-            'peranan' => $peranan
-        ]);
     }
 
     /**
@@ -78,9 +71,6 @@ class SelenggaraPerananController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $peranan = Role::find($id);
-        Role::create(['name' => $request->nama]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_peranan');
     }
 
     /**
@@ -89,11 +79,10 @@ class SelenggaraPerananController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(SelenggaraStatusController $selenggara_status)
     {
         //
-        $peranan = Role::find($id);
-        $peranan->delete();
+        $selenggara_status->delete();
         alert()->success('Maklumat telah dihapuskan', 'Berjaya');
         return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
     }

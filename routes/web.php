@@ -13,6 +13,11 @@ use App\Http\Controllers\ProjekController;
 use App\Http\Controllers\PenilaianRekaBentukBangunanController;
 use App\Http\Controllers\PenilaianRekaBentukGpssController;
 use App\Http\Controllers\SelenggaraPerananController;
+use App\Http\Controllers\SelenggaraStatusController;
+use App\Http\Controllers\SelenggaraHebahanController;
+use App\Http\Controllers\StatusMaklumBalasController;
+use App\Http\Controllers\KriteriaPenilaianController;
+use App\Http\Controllers\LogAuditController;
 use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -27,6 +32,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
 
 Route::get('/', function () {
     return view('auth.login');
@@ -74,8 +81,14 @@ Route::middleware('auth')->group(function () {
         Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
         Route::post('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'update_peranan']);
     });
-
+    
+    //selenggara
     Route::resource('/pengurusan_maklumat/selenggara/selenggara_peranan', SelenggaraPerananController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/selenggara_status', SelenggaraStatusController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/selenggara_hebahan', SelenggaraHebahanController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/status_maklum_balas', StatusMaklumBalasController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', KriteriaPenilaianController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/log_audit', LogAuditController::class);
 
     // Penilaian Reka Bentuk Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);

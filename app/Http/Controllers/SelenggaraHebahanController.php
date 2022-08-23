@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Spatie\Permission\Models\Role;
 
-class SelenggaraPerananController extends Controller
+class SelenggaraHebahanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +13,7 @@ class SelenggaraPerananController extends Controller
      */
     public function index()
     {
-        $peranan = Role::all();
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.index', [
-            'peranan'=>$peranan
-        ]);
+        //
     }
 
     /**
@@ -27,7 +23,7 @@ class SelenggaraPerananController extends Controller
      */
     public function create()
     {
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.create');
+        //
     }
 
     /**
@@ -38,8 +34,7 @@ class SelenggaraPerananController extends Controller
      */
     public function store(Request $request)
     {
-        Role::create(['name' => $request->nama]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_peranan');
+        //
     }
 
     /**
@@ -62,10 +57,6 @@ class SelenggaraPerananController extends Controller
     public function edit($id)
     {
         //
-        $peranan = Role::all();
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.edit', [
-            'peranan' => $peranan
-        ]);
     }
 
     /**
@@ -78,9 +69,6 @@ class SelenggaraPerananController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $peranan = Role::find($id);
-        Role::create(['name' => $request->nama]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_peranan');
     }
 
     /**
@@ -92,9 +80,5 @@ class SelenggaraPerananController extends Controller
     public function destroy($id)
     {
         //
-        $peranan = Role::find($id);
-        $peranan->delete();
-        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
-        return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
     }
 }
