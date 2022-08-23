@@ -1,28 +1,23 @@
 @extends('layouts.base')
-<!--from DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="/cssfile/style.css">
 
+
 @section('content')
-<!--Title: Header-->
+<!--Pengesahan Penilaian Verifikasi Bangunan-->
+
 <div class="header">
-    <div class="col-sm-6">
-        Penilaian Reka Bentuk Bangunan 
-        <b style="color: #0F5E31;">> Papar dan Muat Turun Sijil</b>
-        </div>
-    {{-- <b class="text-dark-green-jkr">Semakan Rawak dan Jana Sijil</b> --}}
+    <b class="text-dark-green-jkr">Pengesahan Penilaian</b>
 
 <h1 class="header-title">
-    PENILAIAN REKA BENTUK BANGUNAN
+    VERIFIKASI PERMARKAHAN BANGUNAN
 </h1>
-<hr class="hr-jkr">
+<hr class="line-6">
 
-
-</div>
 <div class="container-fluid">
     <!--Carian Nama Projek-->
     <div class="mt-8 form-group row">
-        <label class="col-sm-2 col-form-label">Nama Projek:</label>
+        <label class="col-sm-2 col-form-label text-black">Nama Projek:</label>
             <div class="col-sm-5">
                 <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
             </div>
@@ -34,15 +29,12 @@
       
     <div class="col-12">
         <div class="card-header">
-                {{-- <div class="card-body">
-
-                </div> --}}
                 <div class="mt-5 row">
                 
                         <!--TO ENABLE SCROLLBAR AT TABLES-->
                         {{-- <div class="table-responsive scrollbar"> --}}
                         
-                            <table class="table table-bordered line-table" style="width:100%">
+                            <table class="table table-bordered line-table" style="width:100%" border="1px solid">
                                     <thead class="text-white bg-orange-jkr">
                                         <tr>
                                             <th class="text-center">Bil</th>
@@ -73,8 +65,8 @@
                                             </button> --}}
                                                 {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                 title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/muat_turun_sijil/edit" role="button"
-                                                data-toggle="tooltip" data-placement="bottom" title="Papar Skor Penilaian">Papar</a>
+                                                <a class="btn btn-primary" href="/verifikasi_permarkahan_bangunan/pengesahan_penilaian/edit" role="button"
+                                                data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                             </td>
                                         </tr> 
                                     {{-- @endforeach --}}
@@ -88,4 +80,9 @@
         </div>
     </div>
 </div>
+
+
+
+<!--JavaScript-->
+
 @endsection

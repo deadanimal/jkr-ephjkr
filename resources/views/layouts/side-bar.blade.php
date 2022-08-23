@@ -59,7 +59,7 @@
                         <img src="/assets/img/icons/user-icon.png" class="bg-primary p-3" alt="" style="border-radius: 10px;">
                     </div>
                     <div class="col-8">
-                        {{-- <p class="info-sidebar mb-0">Nama: {{ Auth::user()->name }}</p> --}}
+                        <p class="info-sidebar mb-0">Nama: {{ Auth::user()->name }}</p>
                         <p class="info-sidebar mb-0">No. Kakitangan: </p>
                         <p class="info-sidebar mb-0">Peranan: </p>
                     </div>
@@ -336,35 +336,35 @@
                         </ul>
 
                         {{--BANGUNAN (Verifikasi Permarkahan Bangunan)--}}
-                        <a class="nav-link py-0 dropdown-indicator {{ Request::is('verifikasi_bangunan/*') ? 'active-main' : '' }}"
-                            href="#verifikasi_bangunan" role="button" data-bs-toggle="collapse"
-                            aria-expanded="{{ Request::is('verifikasi_bangunan') ? 'true' : 'false' }}"
-                            aria-controls="verifikasi_bangunan">
+                        <a class="nav-link py-0 dropdown-indicator {{ Request::is('verifikasi_permarkahan_bangunan/*') ? 'active-main' : '' }}"
+                            href="#verifikasi_permarkahan_bangunan" role="button" data-bs-toggle="collapse"
+                            aria-expanded="{{ Request::is('verifikasi_permarkahan_bangunan') ? 'true' : 'false' }}"
+                            aria-controls="verifikasi_permarkahan_bangunan">
                             <div class="d-flex align-items-center nav-link-side px-0">
                                 <span class="px-3"><span class="fas fa-home"></span> Verifikasi Permarkahan
                                     Bangunan</span>
                             </div>
                         </a>
-                        <ul class="nav-item collapse {{ Request::is('verifikasi_bangunan/*') || Request::is('penilaian_reka_bentuk_bangunan') ? 'show' : 'false' }} my-1"
-                            id="verifikasi_bangunan">
+                        <ul class="nav-item collapse {{ Request::is('verifikasi_permarkahan_bangunan/*') || Request::is('verifikasi_permarkahan_bangunan') ? 'show' : 'false' }} my-1"
+                            id="verifikasi_permarkahan_bangunan">
                             {{-- BANGUNAN (Verifikasi) Paparan Senarai Projek Bangunan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan') ? 'text-dark' : '' }}">Paparan
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan') ? 'text-dark' : '' }}">Paparan
                                             Senarai Projek</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- BANGUNAN (Verifikasi) Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pemudah_cara') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pemudah_cara">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan/') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
@@ -372,11 +372,11 @@
 
                             {{-- BANGUNAN (Verifikasi) Penilaian Verifikasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/penilaian_verifikasi') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/penilaian_verifikasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan') ? 'text-dark' : '' }}">Penilaian 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/penilaian_verifikasi') ? 'text-dark' : '' }}">Penilaian 
                                             Verifikasi</span>
                                     </div>
                                 </a>
@@ -384,22 +384,22 @@
 
                             {{-- BANGUNAN (Verifikasi) Pengesahan Penilaian Verifikasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_penilaian') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pengesahan_penilaian">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan') ? 'text-dark' : '' }}">Pengesahan
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_penilaian') ? 'text-dark' : '' }}">Pengesahan
                                             Penilaian Verifikasi</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- BANGUNAN (Verifikasi) Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
                                             Keputusan
                                             </span>
                                     </div>
@@ -407,11 +407,11 @@
                             </li>
                             {{-- BANGUNAN (Verifikasi) Papar dan Muat Turun Sijil Penilaian Verfikasi Pemarkahan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan/semakan_rawak') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan/semakan_rawak">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/semakan_rawak') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/semakan_rawak">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil
                                             Penilaian Verfikasi Pemarkahan</span>
                                     </div>
                                 </a>
@@ -419,11 +419,11 @@
                         
                             {{-- BANGUNAN (Verifikasi) Pengesahan Rayuan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan/pengesahan_rayuan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan/pengesahan_rayuan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pengesahan_rayuan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan/pengesahan_rayuan') ? 'text-dark' : '' }}">Pengesahan 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'text-dark' : '' }}">Pengesahan 
                                             Rayuan
                                             </span>
                                     </div>
@@ -432,11 +432,11 @@
 
                             {{-- BANGUNAN (Verifikasi) Semakan Rawak dan Jana Sijil --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan/sijil_verifikasi') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan/sijil_verifikasi">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/letaklahviewblade">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan/sijil_verifikasi') ? 'text-dark' : '' }}">Semakan Rawak 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'text-dark' : '' }}">Semakan Rawak 
                                             dan Jana Sijil
                                             </span>
                                     </div>
@@ -445,11 +445,11 @@
 
                             {{-- BANGUNAN (Verifikasi) Muat Turun Sijil Validasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_bangunan/sijil_validasi') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_bangunan/sijil_validasi">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/letaklahviewblade">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_bangunan/sijil_validasi') ? 'text-dark' : '' }}">Muat Turun 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'text-dark' : '' }}">Muat Turun 
                                             Sijil Validasi
                                             </span>
                                     </div>
