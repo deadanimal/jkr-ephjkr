@@ -16,7 +16,7 @@ class VerifikasiPermarkahanBangunanController extends Controller
     public function index()
     {
         //paparan senarai projek
-        return view('modul.verifikasi_bangunan.index');
+        return view('modul.verifikasi_permarkahan_bangunan.index');
     }
 
     /**
@@ -84,6 +84,35 @@ class VerifikasiPermarkahanBangunanController extends Controller
     {
         //
     }
+
+    #pengesahan penilaian verifikasi bangunan
+    public function pengesahan_penilaian()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.index');
+    }
+
+    public function papar_pengesahan_penilaian($id)
+    {
+        // papar form pengesahan penilaian with id projek 
+        return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.edit');
+    }
+
+    #semakan rawak verifikasi permarkahan bangunan
+    public function semakan_rawak()
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.index');
+
+    }
+    public function semakan_rawak_form($id)
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.edit');
+
+    }
+
+
+    
+
 
     
 }

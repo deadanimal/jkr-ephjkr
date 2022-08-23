@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="header">
-        <b class="paparan-senarai-projek">Paparan Senarai Projek</b>
+        <b class="text-dark-green-jkr">Paparan Senarai Projek</b>
 
     <h1 class="header-title">
         PENILAIAN REKA BENTUK BANGUNAN

@@ -128,7 +128,7 @@ class PenilaianRekaBentukGpssController extends Controller
 
     public function skor_penilaian_arkitek()
     {
-        // papar mcm index tapi ada button utk skor penilaian
+        // papar 1st page GPSS architectural works
         return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek.index');
     }
 
@@ -144,31 +144,24 @@ class PenilaianRekaBentukGpssController extends Controller
         // $gpss_bangunan->markahAwWs = $request->input('markahAwWs');
         $gpss_bangunan->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek2');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page2');
     }
 
-    public function skor_penilaian_arkitek2()
+    public function skor_penilaian_arkitek_page2()
     {
-        // papar mcm index tapi ada button utk skor penilaian
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek2.index');
+        // papar 2nd page GPSS architectural works
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek_page2.index');
     }
 
-    public function simpan_skor_penilaian_arkitek2(Request $request, $id)
+    public function simpan_skor_penilaian_arkitek_page2(Request $request, $id)
     {
         // simpan skor penilaian
         $gpss_bangunan = new KriteriaGpssBangunan;
         $gpss_bangunan->markahAwW = $request->input('markahAwW');
         $gpss_bangunan->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek2');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page3');
     }
-
-
-
-
-
-
-
 
 
 
@@ -188,5 +181,22 @@ class PenilaianRekaBentukGpssController extends Controller
     {
         // simpan pengesahan penilaian
         return redirect('/penilaian_reka_bentuk_gpss/pengesahan_penilaian');
+    }
+
+    #jana keputusan
+    public function jana_keputusan()
+    {
+        // index jana keputusan
+        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index');
+    }
+    public function papar_jana_keputusan($id)
+    {
+        //  form kana keputusan
+        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.create');
+    }
+    public function simpan_jana_keputusan(Request $request, $id)
+    {
+        // simpan jana keputusan
+        return redirect('/penilaian_reka_bentuk_gpss/jana_keputusan');
     }
 }
