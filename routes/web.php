@@ -155,14 +155,9 @@ Route::middleware('auth')->group(function () {
     // arkitek form
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek']);
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek']);
-
     //arkitek form (second page)
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek2', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek2']);
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek2']);
-
-
-
-
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page2']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page2']);
 
 
     // papar projek utk pengesahan
@@ -171,6 +166,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'papar_pengesahan_penilaian']);
     // action pengesahan
     Route::put('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
+
+    // jana keputusan
+    Route::get('/penilaian_reka_bentuk_gpss/jana_keputusan', [PenilaianRekaBentukGpssController::class, 'jana_keputusan']);
+    // papar form pengesahan
+    Route::get('/penilaian_reka_bentuk_gpss/jana_keputusan/{id}', [PenilaianRekaBentukGpssController::class, 'papar_jana_keputusan']);
+    // action pengesahan
+    Route::put('/penilaian_reka_bentuk_gpss/jana_keputusan/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_jana_keputusan']);
 
 
     // Verifikasi Permarkahan Bangunan
