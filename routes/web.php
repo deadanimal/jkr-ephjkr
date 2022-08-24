@@ -19,6 +19,7 @@ use App\Http\Controllers\StatusMaklumBalasController;
 use App\Http\Controllers\KriteriaPenilaianController;
 use App\Http\Controllers\LogAuditController;
 use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
+use App\Http\Controllers\VerifikasiPermarkahanJalanController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -183,6 +184,12 @@ Route::middleware('auth')->group(function () {
      Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak']);
      Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak/{id}', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak_form']);
     //  Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
+
+    // Verifikasi Permarkahan Jalan resource
+    // Route::resource('/verifikasi_permarkahan_jalan', VerifikasiPermarkahanJalanController::class);
+    // verifikasi permarkahan jalan custom action 
+    Route::get('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'index']);
+    Route::get('/verifikasi_permarkahan_jalan/melantik_penilai_jalan', [VerifikasiPermarkahanJalanController::class, 'melantik_penilai_jalan']);
 
 
 });

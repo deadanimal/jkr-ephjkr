@@ -795,6 +795,221 @@
                             </li>
                             <hr class="navbar-vertical-divider mx-3">
                         </ul>
+                        
+                        {{--  --}}
+                        {{-- jalan --}}
+                        {{--JALAN (Verifikasi Permarkahan Jalan)--}}
+                        <a class="nav-link py-0 dropdown-indicator {{ Request::is('verifikasi_permarkahan_jalan/*') ? 'active-main' : '' }}"
+                            href="#verifikasi_permarkahan_jalan" role="button" data-bs-toggle="collapse"
+                            aria-expanded="{{ Request::is('verifikasi_permarkahan_jalan') ? 'true' : 'false' }}"
+                            aria-controls="verifikasi_permarkahan_jalan">
+                            <div class="d-flex align-items-center nav-link-side px-0">
+                                <span class="px-3"><span class="fas fa-home"></span> Verifikasi Permarkahan
+                                    Jalan</span>
+                            </div>
+                        </a>
+                        <ul class="nav-item collapse {{ Request::is('verifikasi_permarkahan_jalan/*') || Request::is('verifikasi_permarkahan_jalan') ? 'show' : 'false' }} my-1"
+                            id="verifikasi_permarkahan_jalan">
+                            {{-- JALAN (Verifikasi) Paparan Senarai Projek jalan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Paparan
+                                            Senarai Projek</span>
+                                    </div>
+                                </a>
+                            </li>
+                            {{-- JALAN (Verifikasi) Melantik Pemudah Cara --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/pemudah_cara">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
+                                            Pemudah Cara</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Mengisi Skor Kad dan Muat Naik Dokumen Sokongan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/melantik_skor_kad') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/melantik_skor_kad">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/melantik_skor_kad') ? 'text-dark' : '' }}">Mengisi Skor Kad dan
+                                            Muat Naik Dokumen Sokongan</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Melantik Penilai jalan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'text-dark' : '' }}">Melantik
+                                            Penilai Jalan</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Penilaian Verifikasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/penilaian_verifikasi') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/penilaian_verifikasi">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/penilaian_verifikasi') ? 'text-dark' : '' }}">Verifikasi 
+                                            Permarkahan</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN(Verifikasi) Pengesahan Penilaian Verifikasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_penilaian') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pengesahan_penilaian">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_penilaian') ? 'text-dark' : '' }}">Pengesahan
+                                            Penilaian Verifikasi</span>
+                                    </div>
+                                </a>
+                            </li>
+                            {{-- JALAN (Verifikasi) Jana Keputusan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
+                                            Keputusan
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Papar Skor Kad --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Papar Skor 
+                                            Kad
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Permohonan Rayuan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Permohonan 
+                                            Rayuan
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Pengesahan Rayuan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Pengesahan 
+                                            Rayuan
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Jana Sijil --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
+                                            Sijil
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Muat Turun Sijil --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Muat Turun 
+                                            Sijil
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) Papar dan Muat Turun Sijil Penilaian Verfikasi Pemarkahan --}}
+                            {{-- <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/semakan_rawak') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/semakan_rawak">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil
+                                            Penilaian Verfikasi Pemarkahan</span>
+                                    </div>
+                                </a>
+                            </li> --}}
+                        
+                            {{-- JALAN (Verifikasi) Pengesahan Rayuan --}}
+                            {{-- <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pengesahan_rayuan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'text-dark' : '' }}">Pengesahan 
+                                            Rayuan
+                                            </span>
+                                    </div>
+                                </a>
+                            </li> --}}
+
+                            {{-- JALAN (Verifikasi) Semakan Rawak dan Jana Sijil --}}
+                            {{-- <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/letaklahviewblade">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'text-dark' : '' }}">Semakan Rawak 
+                                            dan Jana Sijil
+                                            </span>
+                                    </div>
+                                </a>
+                            </li> --}}
+
+                            {{-- JALAN (Verifikasi) Muat Turun Sijil Validasi --}}
+                            {{-- <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/letaklahviewblade">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/letaklahviewblade') ? 'text-dark' : '' }}">Muat Turun 
+                                            Sijil Validasi
+                                            </span>
+                                    </div>
+                                </a>
+                            </li> --}}
+                            <hr class="navbar-vertical-divider mx-3">
+                        </ul>
 
 
 
