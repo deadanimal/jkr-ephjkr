@@ -7,7 +7,7 @@
             PENILAIAN REKA BENTUK GPSS
         </h1>
     </div>
-    <hr style="background-color: #EB5500;"></hr>
+    <hr style="background-color: #EB5500;">
     {{-- body --}}
     <div class="container mt-5">
     <div class="row d-flex justify-content-center">

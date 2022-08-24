@@ -199,4 +199,11 @@ class PenilaianRekaBentukGpssController extends Controller
         // simpan jana keputusan
         return redirect('/penilaian_reka_bentuk_gpss/jana_keputusan');
     }
+
+    #papar sijil
+    public function papar_sijil()
+    {
+        // index jana keputusan
+        return view('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
+    }
 }
