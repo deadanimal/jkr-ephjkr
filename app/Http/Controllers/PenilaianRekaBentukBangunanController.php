@@ -40,18 +40,7 @@ class PenilaianRekaBentukBangunanController extends Controller
      */
     public function store(Request $request)
     {
-        // $melantikpemudahcara = new PenilaianRekaBentukBangunan();
-
-        // $melantikpemudahcara->nama = $request->nama;
-        // $melantikpemudahcara->syarikat = $request->syarikat;
-        // $melantikpemudahcara->noTel = $request->noTel;
-        // $melantikpemudahcara->noFax = $request->noFax;
-        // $melantikpemudahcara->emel = $request->emel;
-        // $melantikpemudahcara->disiplin = $request->disiplin;
-        // $melantikpemudahcara->save();
-
-        // return redirect('/penilaian_reka_bentuk_bangunan');
-
+        //
     }
 
     /**
@@ -154,36 +143,6 @@ class PenilaianRekaBentukBangunanController extends Controller
         return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.edit');
     }
 
-    public function papar_skor_penilaian_markahKT($id)
-    {
-        // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahKT');
-    }
-
-    public function papar_skor_penilaian_markahSB($id)
-    {
-        // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahSB');
-    }
-
-    public function papar_skor_penilaian_markahPA($id)
-    {
-        // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahPA');
-    }
-
-    public function papar_skor_penilaian_markahPD($id)
-    {
-        // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahPD');
-    }
-
-    public function papar_skor_penilaian_markahIN($id)
-    {
-        // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.markahIN');
-    }
-
     public function simpan_skor(Request $request, $id)
     {
         $markah_TL_total = $request->markahTL1 + $request->markahTL2;
@@ -211,8 +170,35 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan->markahIN = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
 
+        // $dokumen = new Projek;
+
+        // if($request->hasFile('dokumenSokongan')){
+        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
+        //     //  $dokumen->input('dokumenSokongan') = $dokumen;
+        // }
+
+        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
+        // $dokumen->save();
+
         // simpan skor penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
+    }
+
+    // Dokumen Sokongan
+    public function dokumen_sokongan(Request $request, $id)
+    {
+        // $dokumen = new Projek;
+
+        // if($request->hasFile('dokumenSokongan')){
+        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
+        //     //  $dokumen->input('dokumenSokongan') = $dokumen;
+        // }
+
+        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
+        // $dokumen->save();
+
+        return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
+
     }
 
     #pengesahan penilaian
@@ -229,17 +215,6 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
-        $dokumen_sokongan = new Projek;
-
-        if($request->hasFile('dokumenSokongan'))
-        {
-            $dokumen_sokongan = $request->file('dokumenSokongan')->store('dokumenSokongan');
-            // $dokumen_sokongan->dokumenSokongan = $dokumen_sokongan;
-        }
-
-            $dokumen_sokongan->dokumenSokongan = $request->input('dokumenSokongan'); 
-            $dokumen_sokongan->save();
-
         // simpan pengesahan penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
     }
@@ -258,6 +233,16 @@ class PenilaianRekaBentukBangunanController extends Controller
     }
     public function simpan_semakan_rawak(Request $request, $id)
     {
+        // $dokumen = new Projek;
+
+        // if($request->hasFile('dokumenSokongan')){
+        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
+        //     $dokumen->input('dokumenSokongan') = $dokumen;
+        // }
+
+        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
+        // $dokumen->save();
+
         return redirect('/penilaian_reka_bentuk_bangunan/semakan_rawak');
 
     }
@@ -275,7 +260,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         //letak code upload file
         // if($request->hasFile('print_sijil')){
         //     $apaapa = $request->file('print_sijil')->store('print_sijil');
-        //     $apapa -> print_naziran = $apapapa;
+        //     $apapa -> print_naziran = $apa-apa;
         // }
         
         return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.edit');

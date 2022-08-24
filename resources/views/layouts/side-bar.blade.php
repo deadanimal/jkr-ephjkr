@@ -151,8 +151,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/status_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/status_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/selenggara_status') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/selenggara_status">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Selenggara Status Projek</span>
                                         </div>
@@ -160,8 +160,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/jenis_hebahan') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/jenis_hebahan">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/selenggara_hebahan') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/selenggara_hebahan">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Selenggara Jenis Hebahan</span>
                                         </div>

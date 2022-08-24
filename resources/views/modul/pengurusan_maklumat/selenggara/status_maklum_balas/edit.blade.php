@@ -9,10 +9,10 @@
                         <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Selenggara</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Selenggara Nama Peranan</a>
+                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Selenggara Status Maklum Balas</a>
                     </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Kemaskini Nama Peranan
+                        Kemaskini Status Maklum Balas
                     </li>
                 </ol>
             </nav>
@@ -21,7 +21,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>SELENGGARA NAMA PERANAN</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>SELENGGARA STATUS MAKLUM BALAS</strong></h3>
         </div>
     </div>
 
@@ -29,21 +29,21 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/pengurusan_maklumat/selenggara/selenggara_peranan" method="post" enctype="multipart/form-data">
+            <form action="/pengurusan_maklumat/selenggara/status_maklum_balas" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Peranan Sekarang:</label>
+                        <label class="col-form-label">Maklum Balas Sekarang:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="nama" type="text"/>
+                        <input class="form-control" name="status_maklum_balas" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Peranan Baru:</label>
+                        <label class="col-form-label">Maklum Balas Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="nama" type="text"/>
+                        <input class="form-control" name="status_maklum_balas" type="text"/>
                     </div>
                     
     
@@ -56,7 +56,7 @@
                                 <a href="/pengurusan_maklumat/senarai_pengguna" class="btn btn-outline-primary">Batal</a>
                             </div>
                             <div class="col-6 text-end">
-                                <button type="submit" class="btn btn-primary">Simpan Peranan</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
                             </div>
                         </div>
                     </div>
