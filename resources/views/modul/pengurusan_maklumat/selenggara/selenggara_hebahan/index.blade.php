@@ -9,7 +9,7 @@
                         <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Selenggara</a>
                     </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Selenggara Nama Peranan
+                        Selenggara Jenis Hebahan
                     </li>
                 </ol>
             </nav>
@@ -17,7 +17,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>SELENGGARA</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>SELENGGARA JENIS HEBAHAN</strong></h3>
         </div>
     </div>
 
@@ -25,7 +25,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/selenggara/selenggara_peranan/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/selenggara/selenggara_hebahan/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
 
@@ -37,24 +37,24 @@
                         <thead class="bg-primary">
                             <tr>
                                 <th class="sort">Bil.</th>
-                                <th class="sort">Nama Peranan</th>
+                                <th class="sort">Nama Jenis Hebahan</th>
                                 <th class="sort">Tindakan</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($peranan as $sp)
+                            @foreach ($selenggara_hebahan as $sh)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $sp->nama }}</td>
+                                    <td>{{ $sh->hebahan }}</td>
                                     
                                     <td>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/selenggara/selenggara_peranan/{{ $sp->id }}/edit"
+                                                <a href="/pengurusan_maklumat/selenggara/selenggara_hebahan/{{ $sh->id }}/edit"
                                                     class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                             </div>
                                             <div class="col-auto">
-                                                <form action="/pengurusan_maklumat/selenggara/selenggara_peranan/{{ $sp->id }}" method="post">
+                                                <form action="/pengurusan_maklumat/selenggara/selenggara_hebahan/{{ $sh->id }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
