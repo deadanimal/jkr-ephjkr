@@ -10,7 +10,7 @@
         PENILAIAN REKA BENTUK GPSS
     </h1>
     
-    <hr style="color: #EB5500"></hr>
+    <hr style="color: #EB5500">
 </div>
     <div class="container-fluid">
         <div class="card">

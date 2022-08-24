@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PenilaianRekabentukJalanController extends Controller
+class PenilaianRekaBentukJalanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,6 +14,7 @@ class PenilaianRekabentukJalanController extends Controller
     public function index()
     {
         //
+        return view('modul.penilaian_reka_bentuk_jalan.papar.index');
     }
 
     /**
@@ -81,4 +82,10 @@ class PenilaianRekabentukJalanController extends Controller
     {
         //
     }
+
+    public function pemudah_cara_jalan() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.pemudah_cara_jalan.create');
+    }
 }
+
