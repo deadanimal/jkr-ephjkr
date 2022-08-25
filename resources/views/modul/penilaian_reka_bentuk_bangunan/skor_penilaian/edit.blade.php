@@ -91,7 +91,7 @@
                             {{-- <th>Markah</th> --}}
                             <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
                             <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
-                            {{-- <th rowspan="3" colspan="3">Muat Naik Dokumen Sokongan</th> --}}
+                            <th rowspan="3" colspan="3">Muat Naik Dokumen Sokongan</th>
 
                         </tr>
         
@@ -145,8 +145,15 @@
                         <td colspan="2"></td>
                         <td colspan="4">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
                         <td>Tidak Berkenaan</td>
-                        {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+                        <td>
+                        <form class="form">
+                            <label for="form__input" class="form__label">
+                                <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                <span id="custom-text">No file chosen, yet.</span>
+                            </label>
+                        </form>
+                        </td>
         
                     </tr>
         
@@ -177,8 +184,16 @@
                                 <span>&#183; Laporan Pelan Pengurusan Alam Sekitar</span><br>
                                 <span>&#183; Borang SPAS (Peringkat pembinaan)</span>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-                        </tr>
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>                        
+                            </tr>
 
                         <!--TL3-->
                         <tr align="center">
@@ -212,8 +227,16 @@
                                     atau setaraf
                                 </span>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-                        </tr>
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>                        
+                            </tr>
         
                         <tr align="center">
                             <td>ii. Mengekalkan Topografi Tanah</td>
@@ -238,8 +261,15 @@
                                 <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
                                 <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>
                         </tr>
         
                         <!--TL4-->
@@ -268,8 +298,16 @@
                             <td>
                                 <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-                        </tr>
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>                        
+                            </tr>
         
                         <!--TL5-->
                         <tr align="center">
@@ -297,8 +335,16 @@
                             <td>
                                 <span>Tidak Berkenaan</span><br>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-                        </tr>
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>                        
+                            </tr>
 
                         <!--TL6-->
                         <tr align="center">
@@ -332,7 +378,15 @@
                                 <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>
                         </tr>
         
                         <!--TL8-->
@@ -380,9 +434,15 @@
                                 <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
                                 <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
                             </td>
-                            {{-- <td colspan="2">
-                                <input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}">
-                            </td> --}}
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                            </td>
         
                         </tr>
         
@@ -415,8 +475,15 @@
                                 <span> &#40;a&#41; Pelan tapak siap bina yang telah disahkan oleh Arkitek Bertauliah</span><br>
                                 Nyatakan sekiranya ada perubahan
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                            </td>
                         </tr>
 
                         <!--TL8.3-->
@@ -449,8 +516,15 @@
                                 <span> &#183; Inventori pokok</span><br>
                                 <span> &#183; Bukti bergambar</span><br>
                             </td>
-                            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                            </td>
                         </tr>
 
                         <!--TL8.4-->
@@ -482,8 +556,15 @@
                             <td>
                                 <span> &#183; Bukti bergambar</span><br>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                            </td>
                         </tr>
 
                         <!--TL8.5-->
@@ -516,8 +597,15 @@
                                 <span> &#183; Lukisan siap bina</span><br>
                                 <span> &#183; Bukti bergambar</span><br>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                            </td>
                         </tr>
 
                         <!--TL9-->
@@ -568,8 +656,15 @@
                                 <span>&#183; Bukti bergambar</span><br>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-        
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                            </td>
                         </tr>
 
                         <tr align="center">
@@ -605,8 +700,16 @@
                                 <span>&#183; Rekod Senggaraan</span><br>
 
                             </td>
-                            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+                            <td>
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                
+                            </td>
         
                         </tr>
 
@@ -637,7 +740,7 @@
             {{-- <th>Markah</th> --}}
             <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
             <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
-            {{-- <th rowspan="3" colspan="3">Muat Naik Dokumen Sokongan</th> --}}
+            <th rowspan="3" colspan="3">Muat Naik Dokumen Sokongan</th>
 
         </tr>
 
@@ -698,8 +801,15 @@
             <span>&#183; Lukisan siap bina</span><br>
             <span>&#183; Bukti bergambar</span><br>
         </td>
-        {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -756,8 +866,15 @@
             <td>
                 <span>&#183; Bukti bergambar</span><br>
             </td>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
             
 
         </tr>
@@ -788,8 +905,15 @@
             <th>
                 <span>Tidak Berkenaan</span><br>
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -807,8 +931,15 @@
             <th colspan="2"></th>
             <th colspan="4"></th>
             <th></th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
         </tr>
 
         <!--KT3.1-->
@@ -839,8 +970,15 @@
                 <span>&#183; Katalog bahan yang diluluskan untuk pembinaan</span><br>
                 <span>&#183; Pengiraan U-Value yang disahkan</span><br>
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -927,10 +1065,9 @@
             <th colspan="2"></th>
             <th colspan="2"></th>
             <th colspan="4"></th>
-            <th colspan="4"></th>
+            <th colspan="3"></th>
             <th></th>
-            {{-- <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            
 
         </tr>
 
@@ -962,8 +1099,15 @@
                 <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
                 <span> &#183; Bukti bergambar</span><br>
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -995,8 +1139,15 @@
                 <span> &#183; Salinan lukisan siap bina dan laporan uji terima yang mematuhi kehendak rekabentuk</span><br>
                 <span> &#183; Pengiraan penjanaan tenaga boleh baharu berbanding jumlah penggunaan tenaga tahunan bangunan</span><br>
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -1026,8 +1177,15 @@
             <th>
                 <span>&#183; Dokumen lengkap pengujian dan pentauliahan yang telah disahkan</span><br>
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -1058,7 +1216,7 @@
                 <th colspan="7">Pembangunan Baru</th>
                 <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
                 <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
-                {{-- <th rowspan="3" colspan="3">Muat Naik Dokumen Sokongan</th> --}}
+                <th rowspan="3" colspan="3">Muat Naik Dokumen Sokongan</th>
 
             </tr>
 
@@ -1113,8 +1271,15 @@
                 <span>&#183; Lukisan pembinaan IBS</span><br>
                 <span>&#183; Lukisan siap bina</span><br>
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -1149,8 +1314,15 @@
                 <span>&#183; Borang pengiraan skor GPSS</span><br>
 
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -1189,10 +1361,16 @@
                 <span>&#183; Bukti bergambar</span><br>
                 <span>&#183; Pengiraan kitar semula (jika ada)</span><br>
             </th>
-            {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
             
-
         </tr>
 
         <!--SB4-->
@@ -1224,7 +1402,15 @@
                 <span>&#183; Pematuhan pelan pengurusan sisa domestik</span><br>
                 <span>&#183; Bukti bergambar</span><br>
             </th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
             <tr>
 
             <tr align="center">
@@ -1305,8 +1491,15 @@
                 <span>&#183; Bukti bergambar</span><br>
                 <span>&#183; Pensijilan WELPS</span><br>
             </th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -1338,8 +1531,15 @@
                 <span>&#183; Bukti bergambar</span><br>
                 <span>&#183; Pensijilan WELPS</span><br>
             </th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+                </td>
 
         </tr>
 
@@ -1371,8 +1571,15 @@
                 <span>&#183; Bukti bergambar</span><br>
                 <span>&#183; Pensijilan WELPS</span><br>
             </th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -1406,8 +1613,15 @@
                 <span>&#183; Bukti bergambar</span><br>
                 <span>&#183; Lukisan siap bina</span><br>
             </th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td>
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -1485,8 +1699,15 @@
         <th></th>
         <th colspan="4"></th>
         <th></th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1517,8 +1738,15 @@
         <th>
             <span>&#183; Lukisan siap bina</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1548,8 +1776,15 @@
         <th>
             <span>&#183; Bukti bergambar bagi mengesahkan skima warna yang digunakan</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1576,8 +1811,15 @@
         <th colspan="4">
         </th>
         <th></th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1609,8 +1851,15 @@
         <th>
             <span>&#183; Lukisan siap bina</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1645,8 +1894,15 @@
             <span>&#183; Bukti bergambar</span><br>
 
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1678,8 +1934,15 @@
                 bagi mengesahkan bidai yang digunakan</span><br>
             <span>&#183; Laporan prestasi pencahayaan (jika ada)</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1713,8 +1976,15 @@
             <span>&#183; Katalog dan sample bahan yang diluluskan oleh S.O.</span><br>
             <span>&#183; Lukisan Siap Bina</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1748,8 +2018,15 @@
             <span>&#183; Gambar semasa kerja pemasangan</span><br>
             <span>&#183; Lukisan siap bina</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1778,8 +2055,15 @@
         <th>
             <span>&#183; Laporan maklumbalas kaji selidik</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td>
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -1857,8 +2141,15 @@
             <th></th>
             <th colspan="4"></th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -1885,8 +2176,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -1913,8 +2211,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -1941,8 +2246,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -1969,8 +2281,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -1997,8 +2316,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -2025,8 +2351,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -2053,8 +2386,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -2081,8 +2421,15 @@
             <th colspan="4">
             </th>
             <th></th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -2111,8 +2458,15 @@
             <th>
                 loren ipsum<br>
             </th>
-            <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+            <td colspan="2">
+                <form class="form">
+                    <label for="form__input" class="form__label">
+                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                        <span id="custom-text">No file chosen, yet.</span>
+                    </label>
+                </form>
+            </td>
 
         </tr>
 
@@ -2200,8 +2554,15 @@
           <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
           <span>&#183; Laporan prestasi inovasi</span><br>
         </th>
-        <td colspan="2"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td>
-
+        <td colspan="2">
+            <form class="form">
+                <label for="form__input" class="form__label">
+                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                    <span id="custom-text">No file chosen, yet.</span>
+                </label>
+            </form>
+        </td>
 
     </tr>
 
@@ -2226,19 +2587,19 @@
         </div> <!--Scrollbar-->
 
                 <!--Muat Naik Dokumen Sokongan-->
-                <div class="mb-3 text-center">
+                {{-- <div class="mb-3 text-center"> --}}
                     {{-- <label for="formFile" class="form-label">Default file input example</label>
                     <input class="form-control" type="file" id="formFile"> --}}
                     {{-- <label class="form-label" for="customFile">MUAT NAIK DOKUMEN SOKONGAN</label>
                     <input type="file" class="form-control" id="customFile" name="dokumenSokongan" value="{{$dokumen ?? ''}}"/> --}}
-                    <div class="outer-border row mx-3 mt-3">
+                    {{-- <div class="outer-border row mx-3 mt-3">
                         <div class="drag-area">
                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                    <img src="/assets/img/Group7164.png" alt="" >
+                                    <img src="/assets/img/Group7164.png" alt="" > --}}
                                 {{-- </div> --}}
-                                <header>Muat Naik Fail Anda</header>  
+                                {{-- <header>Muat Naik Fail Anda</header>  
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
 
