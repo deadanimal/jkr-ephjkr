@@ -45,7 +45,7 @@
                             @foreach ($peranan as $sp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $sp->nama }}</td>
+                                    <td>{{ $sp->name }}</td>
                                     
                                     <td>
                                         <div class="row">

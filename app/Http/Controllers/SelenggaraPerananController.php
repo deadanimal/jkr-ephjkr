@@ -14,6 +14,8 @@ class SelenggaraPerananController extends Controller
      */
     public function index()
     {
+        // $nama = Role::select('nama')->get();
+        // return view ('modul.pengurusan_maklumat.selenggara.selenggara_peranan.index', compact('nama'));
         $peranan = Role::all();
         return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.index', [
             'peranan'=>$peranan
@@ -39,7 +41,7 @@ class SelenggaraPerananController extends Controller
     public function store(Request $request)
     {
         Role::create(['name' => $request->nama]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_peranan');
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
     }
 
     /**

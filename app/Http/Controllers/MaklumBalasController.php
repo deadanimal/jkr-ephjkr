@@ -6,6 +6,7 @@ use App\Http\Requests\StoreMaklumBalasRequest;
 use App\Http\Requests\UpdateMaklumBalasRequest;
 use App\Models\MaklumBalas;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 class MaklumBalasController extends Controller
 {
@@ -75,11 +76,12 @@ class MaklumBalasController extends Controller
      * @param  \App\Models\MaklumBalas  $maklumBalas
      * @return \Illuminate\Http\Response
      */
-    public function edit(MaklumBalas $maklumBalas)
+    public function edit($id)
     {
-        //
+        $maklumBalas = MaklumBalas::find($id);
+        
         return view('modul.pengurusan_maklumat.maklum_balas.edit', [
-            'mb' => $maklumBalas
+            'maklumBalas' => $maklumBalas
         ]);
     }
 
@@ -90,9 +92,13 @@ class MaklumBalasController extends Controller
      * @param  \App\Models\MaklumBalas  $maklumBalas
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMaklumBalasRequest $request, MaklumBalas $maklumBalas)
+    public function update(Request $request, $id)
     {
-        //
+        $maklumBalas = MaklumBalas::find($id);
+        $maklumBalas->update([
+            'statusMaklumbalas'=>$request->statusMaklumbalas,
+        ]);
+        return redirect('/pengurusan_maklumat/maklum_balas');
     }
 
     /**
@@ -101,9 +107,10 @@ class MaklumBalasController extends Controller
      * @param  \App\Models\MaklumBalas  $maklumBalas
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MaklumBalas $maklumBalas)
+    public function destroy($id)
     {
         //
+        $maklumBalas = MaklumBalas::find($id);
         $maklumBalas->delete();
         alert()->success('Maklumat telah dihapuskan', 'Berjaya');
         return redirect('/pengurusan_maklumat/maklum_balas');

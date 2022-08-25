@@ -61,7 +61,7 @@
                         <label class="col-form-label">Keterangan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="statusMaklumbalas" type="text"/>
+                        <input class="form-control" name="/" type="text"/>
                     </div>
 
                     

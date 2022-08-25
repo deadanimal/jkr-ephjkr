@@ -239,7 +239,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
                                 href="/pengurusan_maklumat/pendaftaran_projek">
                                 <div class="d-flex align-items-center nav-link-side">
@@ -248,6 +248,75 @@
                                         Projek</span>
                                 </div>
                             </a>
+                        </li> --}}
+                        {{-- test --}}
+                        <li class="nav-item">
+                            <a class="nav-link py-0 dropdown-indicator" href="#pendaftaran_projek" role="button"
+                                data-bs-toggle="collapse"
+                                aria-expanded="{{ Request::is('pengurusan_maklumat/pendaftaran_projek/*') ? 'true' : 'false' }}"
+                                aria-controls="pendaftaran_projek">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span class="px-0">Pendaftaran Projek</span>
+                                </div>
+                            </a>
+                        
+                            <ul class="nav-item collapse {{ Request::is('pengurusan_maklumat/pendaftaran_projek/*') ? 'show' : 'false' }} my-1"
+                                id="pendaftaran_projek">
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
+                                        <div class="d-flex align-items-center nav-link-side">
+                                            <span class="px-0">Papar Senarai Projek</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/selenggara_status">
+                                        <div class="d-flex align-items-center nav-link-side">
+                                            <span class="px-0">Pendaftaran Projek</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/selenggara_hebahan') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/selenggara_hebahan">
+                                        <div class="d-flex align-items-center nav-link-side">
+                                            <span class="px-0">Pemilihan Ahli Pasukan dan Peranan</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/status_maklum_balas') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/status_maklum_balas">
+                                        <div class="d-flex align-items-center nav-link-side">
+                                            <span class="px-0">Pengesahan Pendaftaran Projek</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/kriteria_penilaian') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/kriteria_penilaian">
+                                        <div class="d-flex align-items-center nav-link-side">
+                                            <span class="px-0">Papar dan Muat Turun Matlumat Projek</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/log_audit') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/selenggara/log_audit">
+                                        <div class="d-flex align-items-center nav-link-side">
+                                            <span class="px-0">Permohonan Gugur Projek</span>
+                                        </div>
+                                    </a>
+
+                                </li>
+                            </ul>
                         </li>
                     </ul>
 

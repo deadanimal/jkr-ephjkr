@@ -42,8 +42,9 @@
                             @foreach ($maklum_balas as $mb)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $mb->statusMaklumbalas }}</td>
+                                    <td>{{ $mb->subjek }}</td>
                                     <td>{{ $mb->kategori }}</td>
+                                    <td>{{ $mb->statusMaklumbalas }}</td>
                                     
                                     
                                 </tr>

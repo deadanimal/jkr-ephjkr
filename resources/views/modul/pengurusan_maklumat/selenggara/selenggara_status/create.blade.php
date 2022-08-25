@@ -36,7 +36,7 @@
                         <label class="col-form-label">Status Projek Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="status" type="text"/>
+                        <input class="form-control" name="statusProjek" type="text"/>
                     </div>
                     
     

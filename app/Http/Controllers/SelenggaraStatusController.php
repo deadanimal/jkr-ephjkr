@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SelenggaraStatus;
+use App\Models\StatusProjek;
 use Illuminate\Http\Request;
+
 
 class SelenggaraStatusController extends Controller
 {
@@ -14,7 +17,10 @@ class SelenggaraStatusController extends Controller
     public function index()
     {
         //
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_status.index');
+        $selenggara_status = StatusProjek::all();
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_status.index', [
+            'selenggara_status'=>$selenggara_status
+        ]);
     }
 
     /**
@@ -36,7 +42,15 @@ class SelenggaraStatusController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->statusProjek);
+        // $status = SelenggaraStatus::create($request->statusProjek);
+
+        $status = new SelenggaraStatus();
+        $status->statusProjek = $request->statusProjek;
+
+        $status->save();
+
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_status');
     }
 
     /**
