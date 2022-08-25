@@ -316,6 +316,15 @@
             -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
             box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
         }
+        .btn-primary-sah {
+
+            color: #fff;
+            background-color: #F4A258;
+            border-color: #F4A258;
+
+            box-shadow: 0px 4px 4px rgba(244, 162, 88, 0.3);
+            border-radius: 7px;
+        }
 
         .btn-secondary:hover,
         .navbar-vertical .btn-purchase:hover,

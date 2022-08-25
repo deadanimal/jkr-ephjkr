@@ -1,5 +1,6 @@
 @extends('layouts.base')
 <link rel="stylesheet" href="/cssfile/style.css">
+<link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
 
 @section('content')
 <div class="header">
@@ -152,7 +153,8 @@
                             <th colspan="3">
                                 {{-- <button class="btn btn-primary btn-sasaran">Sasaran</button> --}}
                                 <a class="button btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/edit">Sasaran</a>
-                                <button type="submit" class="btn btn-secondary">Disahkan</button></th>
+                                <button type="submit" class="btn btn-secondary">Disahkan</button>
+                            </th>
                         </tr>
 
                         <tr align="center" style="background-color:#EB5500">
@@ -213,15 +215,26 @@
             </div>
 
                  <!--Muat Naik Dokumen Sokongan-->
-                 <div class="mb-3 row text-center">
+                 {{-- <div class="mb-3 row text-center">
                     <label class="form-label" for="customFile">MUAT NAIK DOKUMEN SOKONGAN</label>
                     <input type="file" class="form-control" id="customFile" name="dokumenSokongan" value="{{$dokumen ?? ''}}"/>
+                </div> --}}
+                
+                <div class="outer-border row mx-3 mt-3">
+                            <div class="drag-area">
+                                <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/Group7164.png" alt="" >
+                                    {{-- </div> --}}
+                                    <header>Muat Naik Fail Anda</header>  
+                            </div>
                 </div>
 
                 <!--Button Simpan (TOOLTIPS)-->
-                <div class="text-center">
-                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                    title="Simpan" type="submit">Jana</button>
+                <div class="row mx-3 mt-3">
+                    <div class="text-center">
+                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Jana</button>
+                    </div>
                 </div>
 
         </form> <!--Form Sasaran/Disahkan--> 

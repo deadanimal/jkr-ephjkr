@@ -339,5 +339,21 @@ hr.line-6 {
         white-space:nowrap;
 }
 
+/* Testing Muat Naik Fail */
+.form {
+  position: relative;
+}
+
+.form__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form__label {
+  cursor: pointer;
+}
+
+
+
 
 

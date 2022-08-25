@@ -170,36 +170,37 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan->markahIN = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
 
-        // $dokumen = new Projek;
+        $dokumen = new Projek();
+        
 
-        // if($request->hasFile('dokumenSokongan')){
-        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
-        //     //  $dokumen->input('dokumenSokongan') = $dokumen;
-        // }
+        if($request->hasFile('dokumenSokongan')){
+            $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
+            // $dokumen->dokumenSokongan = $dokumen;
+        }
 
-        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
-        // $dokumen->save();
+        $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
+        $dokumen->save();
 
         // simpan skor penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
     }
 
     // Dokumen Sokongan
-    public function dokumen_sokongan(Request $request, $id)
-    {
-        // $dokumen = new Projek;
+    // public function dokumen_sokongan(Request $request, $id)
+    // {
+    //     // $dokumen = new Projek;
 
-        // if($request->hasFile('dokumenSokongan')){
-        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
-        //     //  $dokumen->input('dokumenSokongan') = $dokumen;
-        // }
+    //     // if($request->hasFile('dokumenSokongan')){
+    //     //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
+    //     //     //  $dokumen->input('dokumenSokongan') = $dokumen;
+    //     // }
 
-        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
-        // $dokumen->save();
+    //     // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
+    //     // $dokumen->save();
 
-        return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
+    //     return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
 
-    }
+    // }
 
     #pengesahan penilaian
     public function pengesahan_penilaian()
