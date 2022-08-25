@@ -104,6 +104,8 @@ class PenilaianRekaBentukGpssController extends Controller
         $pemudah_cara->email = $request->input('email');
         $pemudah_cara->disiplin = $request->input('disiplin');
         $pemudah_cara->kategori = $request->kategori;
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+
         $pemudah_cara->save();
 
         return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');

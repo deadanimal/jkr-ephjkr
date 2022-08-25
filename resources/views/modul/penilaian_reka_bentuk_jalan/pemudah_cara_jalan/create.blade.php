@@ -10,7 +10,7 @@
                         <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" class="text-secondary">Melantik Pemudah Cara</a>
                     </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Daftar Pemudah Cara
+                        Tambah Pemudah Cara
                     </li>
                 </ol>
             </nav>
@@ -25,6 +25,12 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col">
+            <h4 class="mb-0 text-primary"><strong>Lantikan Pemudah Cara</strong></h4>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="card">
             <div class="card-header bg-oranje-jkr">
@@ -35,7 +41,7 @@
                     @csrf
                     <!--Nama-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Nama:</label>
+                        <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-10">
                         <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{ $pemudah_cara ?? '' }}" />
                     </div>
@@ -49,14 +55,14 @@
                     </div>
                     <!--No. Telefon-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">No. Tel:</label>
+                        <label class="col-sm-2 col-form-label">Nama Pemudah Cara Jalan:</label>
                     <div class="col-sm-10">
                         <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{ $pemudah_cara ?? '' }}" />
                     </div>
                     </div>
                     <!--No. Fax-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">No. Fax:</label>
+                        <label class="col-sm-2 col-form-label">No. Tel:</label>
                     <div class="col-sm-10">
                         <input class="form-control" type="text" autocapitalize="off" name="no_fax" value="{{ $pemudah_cara ?? '' }}" />
                     </div>
@@ -68,17 +74,14 @@
                         <input class="form-control" type="text" autocapitalize="off" name="email" value="{{ $pemudah_cara ?? '' }}" />
                     </div>
                     </div>
-                    <!--Disiplin-->
+                    <!--No. Fax-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Disiplin:</label>
+                        <label class="col-sm-2 col-form-label">No. Fax:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="disiplin" value="{{ $pemudah_cara ?? '' }}" />
+                        <input class="form-control" type="text" autocapitalize="off" name="no_fax" value="{{ $pemudah_cara ?? '' }}" />
                     </div>
                     </div>
-                    {{--Kategori--}}
-                    <div class="col-sm-10">
-                        <input class="form-control" type="hidden" name="kategori" value="gpss" />
-                    </div>
+                    
                     
                     <!--Button Daftar-->
                     {{-- <button class=“btn btn-primary” type=“submit”>Daftar</button> --}}

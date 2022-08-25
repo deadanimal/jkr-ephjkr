@@ -87,5 +87,23 @@ class PenilaianRekaBentukJalanController extends Controller
     {
         return view('modul.penilaian_reka_bentuk_jalan.pemudah_cara_jalan.create');
     }
+
+    public function melantik_pemudah_cara_jalan(Request $request, $id)
+    {
+        // submit form melantik pemudah cara
+        $pemudah_cara = new PemudahCara;
+        $pemudah_cara->nama = $request->input('nama');
+        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
+        $pemudah_cara->no_tel = $request->input('no_tel');
+        $pemudah_cara->no_fax = $request->input('no_fax');
+        $pemudah_cara->email = $request->input('email');
+        $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->kategori = $request->kategori;
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+
+        $pemudah_cara->save();
+
+        return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
+    }
 }
 
