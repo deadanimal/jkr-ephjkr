@@ -694,44 +694,44 @@
 
                             {{-- Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/melantik_pemudah_cara') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/melantik_pemudah_cara">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/isi_skor_kad') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/isi_skor_kad">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/melantik_pemudah_cara') ? 'text-dark' : '' }}">Mengisi
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/isi_skor_kad') ? 'text-dark' : '' }}">Mengisi
                                             Skor Kad dan Muat Naik Dokumen Sokongan</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- Penilaian Reka Bentuk --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/skor_penilaian') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/skor_penilaian">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/penilai_jalan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/penilai_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/skor_penilaian') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/penilai_jalan') ? 'text-dark' : '' }}">Melantik
                                             Penilai Jalan</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- Pengesahan Penilaian Reka Bentuk --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/pengesahan_penilaian') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/pengesahan_penilaian">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/penilai_reka_bentuk') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/penilai_reka_bentuk">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/pengesahan_penilaian') ? 'text-dark' : '' }}">Penilai
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/penilai_reka_bentuk') ? 'text-dark' : '' }}">Penilai
                                             Reka Bentuk</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/pengesahan_penilaian_jalan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/pengesahan_penilaian_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'text-dark' : '' }}">Pengesahan
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/pengesahan_penilaian_jalan') ? 'text-dark' : '' }}">Pengesahan
                                             Penilaian</span>
                                     </div>
                                 </a>
@@ -739,11 +739,11 @@
 
                             {{-- Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan_jalan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/jana_keputusan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'text-dark' : '' }}">Jana
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan_jalan') ? 'text-dark' : '' }}">Jana
                                             Keputusan</span>
                                     </div>
                                 </a>

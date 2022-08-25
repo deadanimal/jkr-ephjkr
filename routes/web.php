@@ -12,6 +12,7 @@ use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\ProjekController;
 use App\Http\Controllers\PenilaianRekaBentukBangunanController;
 use App\Http\Controllers\PenilaianRekaBentukGpssController;
+use App\Http\Controllers\PenilaianRekaBentukJalanController;
 use App\Http\Controllers\SelenggaraPerananController;
 use App\Http\Controllers\SelenggaraStatusController;
 use App\Http\Controllers\SelenggaraHebahanController;
@@ -184,6 +185,25 @@ Route::middleware('auth')->group(function () {
      Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak']);
      Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak/{id}', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak_form']);
     //  Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
+
+    // Penilaian Reka Bentuk Jalan
+    // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukJalanController::class);
+    Route::get('/penilaian_reka_bentuk_jalan', [PenilaianRekaBentukJalanController::class, 'index']);
+    Route::get('/penilaian_reka_bentuk_jalan/pemudah_cara_jalan', [PenilaianRekaBentukJalanController::class, 'pemudah_cara_jalan']);
+    Route::get('/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{id}', [PenilaianRekaBentukJalanController::class, 'melantik_pemudah_cara_jalan']);
+    Route::get('/penilaian_reka_bentuk_jalan/isi_skor_kad', [PenilaianRekaBentukJalanController::class, 'isi_skor_kad']);
+    //store() and edit() later
+    Route::get('/penilaian_reka_bentuk_jalan/penilai_jalan', [PenilaianRekaBentukJalanController::class, 'penilai_jalan']);
+    Route::get('/penilaian_reka_bentuk_jalan/penilai_reka_bentuk', [PenilaianRekaBentukJalanController::class, 'penilai_reka_bentuk']);
+    //penilai_reka_bentuk edit() method
+    Route::get('/penilaian_reka_bentuk_jalan/pengesahan_penilaian_jalan', [PenilaianRekaBentukJalanController::class, 'pengesahan_penilaian_jalan']);
+    Route::get('/penilaian_reka_bentuk_jalan/jana_keputusan_jalan', [PenilaianRekaBentukJalanController::class, 'jana_keputusan_jalan']);
+
+    Route::get('/penilaian_reka_bentuk_jalan/skor_penilaian/{id}', [PenilaianRekaBentukJalanController::class, 'papar_skor_penilaian']);
+    Route::post('/penilaian_reka_bentuk_jalan/simpan_skor/{id}', [PenilaianRekaBentukJalanController::class, 'simpan_skor']);
+    Route::get('/penilaian_reka_bentuk_jalan/pengesahan_penilaian/{id}', [PenilaianRekaBentukJalanController::class, 'papar_pengesahan_penilaian']);
+    Route::put('/penilaian_reka_bentuk_jalan/pengesahan_penilaian/{id}', [PenilaianRekaBentukJalanController::class, 'simpan_pengesahan_penilaian']);
+    // Route::post('/penilaian_reka_bentuk_bangunan/simpan_skor/{id}', [PenilaianRekaBentukBangunanController::class, 'dokumen_sokongan']);
 
     // Verifikasi Permarkahan Jalan resource
     // Route::resource('/verifikasi_permarkahan_jalan', VerifikasiPermarkahanJalanController::class);

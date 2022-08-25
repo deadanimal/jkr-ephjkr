@@ -105,5 +105,34 @@ class PenilaianRekaBentukJalanController extends Controller
 
         return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
     }
+
+    public function isi_skor_kad() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad.index');
+    }
+
+    //store() and edit() method later
+
+    public function penilai_jalan() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.penilai_jalan.index');
+    }
+
+    public function penilai_reka_bentuk() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.penilai_reka_bentuk.index');
+    }
+
+    public function pengesahan_penilaian_jalan() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.pengesahan_penilaian_jalan.index');
+    }
+
+    public function jana_keputusan_jalan() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.jana_keputusan_jalan.index');
+    }
+
+    
 }
 
