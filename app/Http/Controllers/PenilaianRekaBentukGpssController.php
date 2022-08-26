@@ -165,6 +165,38 @@ class PenilaianRekaBentukGpssController extends Controller
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page3');
     }
 
+    public function skor_penilaian_arkitek_page3()
+    {
+        // papar 2nd page GPSS architectural works
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek_page3.index');
+    }
+
+    public function simpan_skor_penilaian_arkitek_page3(Request $request, $id)
+    {
+        // simpan skor penilaian
+        $gpss_bangunan = new KriteriaGpssBangunan;
+        $gpss_bangunan->markahAwW = $request->input('markahAwF');
+        $gpss_bangunan->save();
+
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page3');
+    }
+
+    public function skor_penilaian_arkitek_page4()
+    {
+        // papar 2nd page GPSS architectural works
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek_page4.index');
+    }
+
+    public function simpan_skor_penilaian_arkitek_page4(Request $request, $id)
+    {
+        // simpan skor penilaian
+        $gpss_bangunan = new KriteriaGpssBangunan;
+        $gpss_bangunan->markahAwW = $request->input('markahAwS');
+        $gpss_bangunan->save();
+
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page4');
+    }
+
 
 
 
