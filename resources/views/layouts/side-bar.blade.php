@@ -273,7 +273,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/selenggara_status">
+                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pendaftaran Projek</span>
                                         </div>
@@ -281,8 +281,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/selenggara_hebahan') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/selenggara_hebahan">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pemilihan Ahli Pasukan dan Peranan</span>
                                         </div>
@@ -290,8 +290,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/status_maklum_balas') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/status_maklum_balas">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pengesahan Pendaftaran Projek</span>
                                         </div>
@@ -299,8 +299,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/kriteria_penilaian') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/kriteria_penilaian">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Papar dan Muat Turun Matlumat Projek</span>
                                         </div>
@@ -308,8 +308,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/log_audit') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/log_audit">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Permohonan Gugur Projek</span>
                                         </div>
@@ -940,11 +940,11 @@
 
                             {{-- JALAN (Verifikasi) Penilaian Verifikasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/penilaian_verifikasi') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/penilaian_verifikasi">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/penilaian_verifikasi') ? 'text-dark' : '' }}">Verifikasi 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Verifikasi 
                                             Permarkahan</span>
                                     </div>
                                 </a>
@@ -952,22 +952,22 @@
 
                             {{-- JALAN(Verifikasi) Pengesahan Penilaian Verifikasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_penilaian') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/pengesahan_penilaian">
+                                <a class="nav-link {{ Request::is('vverifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_penilaian') ? 'text-dark' : '' }}">Pengesahan
+                                            class="px-0 {{ Request::is('vverifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Pengesahan
                                             Penilaian Verifikasi</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- JALAN (Verifikasi) Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Jana 
                                             Keputusan
                                             </span>
                                     </div>
@@ -976,11 +976,11 @@
 
                             {{-- JALAN (Verifikasi) Papar Skor Kad --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Papar Skor 
+                                            class="px-0 {{ Request::is('vverifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Papar Skor 
                                             Kad
                                             </span>
                                     </div>
@@ -989,11 +989,11 @@
 
                             {{-- JALAN (Verifikasi) Permohonan Rayuan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Permohonan 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Permohonan 
                                             Rayuan
                                             </span>
                                     </div>
@@ -1002,11 +1002,11 @@
 
                             {{-- JALAN (Verifikasi) Pengesahan Rayuan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Pengesahan 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Pengesahan 
                                             Rayuan
                                             </span>
                                     </div>
@@ -1015,11 +1015,11 @@
 
                             {{-- JALAN (Verifikasi) Jana Sijil --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Jana 
                                             Sijil
                                             </span>
                                     </div>
@@ -1028,11 +1028,11 @@
 
                             {{-- JALAN (Verifikasi) Muat Turun Sijil --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Muat Turun 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Muat Turun 
                                             Sijil
                                             </span>
                                     </div>

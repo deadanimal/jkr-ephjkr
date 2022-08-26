@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Projek;
 use Illuminate\Http\Request;
 
 class VerifikasiPermarkahanJalanController extends Controller
@@ -14,7 +15,10 @@ class VerifikasiPermarkahanJalanController extends Controller
     public function index()
     {
         //
-        return view('modul.verifikasi_permarkahan_jalan.papar_senarai_projek.index');
+        $senarai_projek = Projek::all();
+        return view('modul.verifikasi_permarkahan_jalan.papar_senarai_projek.index', [
+            'senarai_projek'=>$senarai_projek
+        ]);
     }
 
     /**
@@ -25,6 +29,7 @@ class VerifikasiPermarkahanJalanController extends Controller
     public function create()
     {
         //
+        return view('modul.verifikasi_permarkahan_jalan.papar_senarai_projek.index');
     }
 
     /**

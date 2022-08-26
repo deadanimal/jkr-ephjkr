@@ -45,7 +45,7 @@
                             @foreach ($status_maklum_balas as $sm)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $sm->status_maklum_balas }}</td>
+                                    <td>{{ $sm->statusMaklumbalas }}</td>
                                     
                                     <td>
                                         <div class="row">

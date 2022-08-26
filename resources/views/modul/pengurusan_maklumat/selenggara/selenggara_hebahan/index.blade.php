@@ -45,7 +45,7 @@
                             @foreach ($selenggara_hebahan as $sh)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $sh->hebahan }}</td>
+                                    <td>{{ $sh->tajukHebahan }}</td>
                                     
                                     <td>
                                         <div class="row">
