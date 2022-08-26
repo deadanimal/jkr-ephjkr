@@ -14,6 +14,7 @@ class VerifikasiPermarkahanGpssController extends Controller
     public function index()
     {
         //
+        return view('modul.verifikasi_permarkahan_gpss.papar_verifikasi_gpss.index');
     }
 
     /**
@@ -80,5 +81,10 @@ class VerifikasiPermarkahanGpssController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function pemudah_cara() 
+    {
+        return view('modul.verifikasi_permarkahan_gpss.pemudah_cara.create');
     }
 }

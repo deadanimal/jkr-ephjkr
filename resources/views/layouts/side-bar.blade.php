@@ -555,22 +555,22 @@
                             id="penilaian_verifikasi_gpss">
                             {{-- Senarai Projek GPSS --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_verifikasi_gpss') ? 'active' : '' }} py-0"
-                                    href="/penilaian_verifikasi_gpss">
+                                <a class="nav-link {{ Request::is('papar_verifikasi_gpss') ? 'active' : '' }} py-0"
+                                    href="/papar_verifikasi_gpss">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_verifikasi_gpss') ? 'text-dark' : '' }}">Paparan
+                                            class="px-0 {{ Request::is('papar_verifikasi_gpss') ? 'text-dark' : '' }}">Paparan
                                             Senarai Projek</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- Melantik Penilai GPSS --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_verifikasi_gpss/melantik_penilai_gpss') ? 'active' : '' }} py-0"
-                                    href="/penilaian_verifikasi_gpss/melantik_penilai_gpss">
+                                <a class="nav-link {{ Request::is('/verifikasi_permarkahan_gpss/pemudah_cara/create') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_gpss/pemudah_cara/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_verifikasi_gpss/melantik_penilai_gpss') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_gpss/pemudah_cara/create') ? 'text-dark' : '' }}">Melantik
                                             Penilai GPSS</span>
                                     </div>
                                 </a>
