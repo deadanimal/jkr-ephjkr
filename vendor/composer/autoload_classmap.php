@@ -122,6 +122,7 @@ return array(
     'App\\Models\\PerananProjek' => $baseDir . '/app/Models/PerananProjek.php',
     'App\\Models\\Peringkat' => $baseDir . '/app/Models/Peringkat.php',
     'App\\Models\\Projek' => $baseDir . '/app/Models/Projek.php',
+    'App\\Models\\SelenggaraStatus' => $baseDir . '/app/Models/SelenggaraStatus.php',
     'App\\Models\\Semakanrawakjanasijil' => $baseDir . '/app/Models/Semakanrawakjanasijil.php',
     'App\\Models\\Senaraiprojekbangunan' => $baseDir . '/app/Models/Senaraiprojekbangunan.php',
     'App\\Models\\Sijil' => $baseDir . '/app/Models/Sijil.php',
