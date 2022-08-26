@@ -10,8 +10,6 @@
 
     <hr class="text-primary mb-3">
 
-    
-
     {{-- body --}}
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">

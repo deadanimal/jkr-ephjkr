@@ -285,3 +285,50 @@ hr.line-6 {
         font-weight: bold;
         color: #F4A258;
       }
+
+      /* Muat Fail */
+      .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .drag-area {
+        border: 1.23px dashed #8B9EB0;
+        height: 150px;
+        width: 100px;
+        border-radius: 11.07px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ECF1F6;
+      }
+
+      .drag-area header{
+        font-size: 12.3022px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+      }
+
+      .outer-border {
+        border: 1.23px solid #F4A258;
+        height: 200px;
+        width: 900px;
+        border-radius: 11.07px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .drag-area_label {
+        height: 150px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }

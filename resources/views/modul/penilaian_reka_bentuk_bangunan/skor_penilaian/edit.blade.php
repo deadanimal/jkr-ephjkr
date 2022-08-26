@@ -5,6 +5,61 @@
 <link rel="stylesheet" href="/cssfile/skor_penilaian.css">
 <link rel="stylesheet" href="/cssfile/style.css">
 
+<!--Style-->
+<style>
+    /* Muat Naik Fail */
+    .body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .drag-area {
+        border: 1.23px dashed #8B9EB0;
+        height: 150px;
+        width: 100px;
+        border-radius: 11.07px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ECF1F6;
+      }
+
+      .drag-area header{
+        font-size: 12.3022px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+      }
+
+      .outer-border {
+        border: 1.23px solid #F4A258;
+        height: 200px;
+        width: 900px;
+        border-radius: 11.07px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .drag-area_label {
+        height: 150px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .form__input {
+        /* position: absolute; */
+        visibility: hidden;
+        }
+</style>
+
 
 @section('content')
 
@@ -2172,8 +2227,19 @@
 
                 <!--Muat Naik Dokumen Sokongan-->
                 <div class="mb-3 text-center">
-                    <label class="form-label" for="customFile">MUAT NAIK DOKUMEN SOKONGAN</label>
-                    <input type="file" class="form-control" id="customFile" name="dokumenSokongan" value="{{$dokumen ?? ''}}"/>
+                    {{-- <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile"> --}}
+                    {{-- <label class="form-label" for="customFile">MUAT NAIK DOKUMEN SOKONGAN</label>
+                    <input type="file" class="form-control" id="customFile" name="dokumenSokongan" value="{{$dokumen ?? ''}}"/> --}}
+                    <div class="outer-border row mx-3 mt-3">
+                        <div class="drag-area">
+                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                    <img src="/assets/img/Group7164.png" alt="" >
+                                {{-- </div> --}}
+                                <header>Muat Naik Fail Anda</header>  
+                        </div>
+                    </div>
+
                 </div>
 
 
