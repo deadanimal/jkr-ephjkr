@@ -214,28 +214,28 @@
                 </table> <!--Table Keputusan Penarafan Hijau Peringkat Reka Bentuk(PRB)-->
             </div>
 
-                 <!--Muat Naik Dokumen Sokongan-->
+                 <!--Muat Naik Dokumen Sokongan (No need)-->
                  {{-- <div class="mb-3 row text-center">
                     <label class="form-label" for="customFile">MUAT NAIK DOKUMEN SOKONGAN</label>
                     <input type="file" class="form-control" id="customFile" name="dokumenSokongan" value="{{$dokumen ?? ''}}"/>
                 </div> --}}
                 
-                <div class="outer-border row mx-3 mt-3">
+                {{-- <div class="outer-border row mx-3 mt-3">
                             <div class="drag-area">
                                 <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                        <img src="/assets/img/Group7164.png" alt="" >
+                                        <img src="/assets/img/Group7164.png" alt="" > --}}
                                     {{-- </div> --}}
-                                    <header>Muat Naik Fail Anda</header>  
+                                    {{-- <header>Muat Naik Fail Anda</header>  
                             </div>
-                </div>
+                </div> --}}
 
                 <!--Button Simpan (TOOLTIPS)-->
-                <div class="row mx-3 mt-3">
+                {{-- <div class="row mx-3 mt-3">
                     <div class="text-center">
                         <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Jana</button>
                     </div>
-                </div>
+                </div> --}}
 
         </form> <!--Form Sasaran/Disahkan--> 
     </div> <!--Card Body-->

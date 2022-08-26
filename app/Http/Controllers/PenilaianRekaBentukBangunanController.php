@@ -103,9 +103,13 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function pemudah_cara($id)
     {
+        $pemudah_cara = new PemudahCara;
+
         // papar form pemudah cara with id projek
         // $projek = Projek::find($id);
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create');
+        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
+            'pemudah_cara'=>$pemudah_cara
+        ]);
     }
 
     public function melantik_pemudah_cara(Request $request, $id)
@@ -131,7 +135,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function skor_penilaian()
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
-
+    
         // papar mcm index tapi ada button utk skor
         return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',[
             'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
@@ -170,16 +174,16 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan->markahIN = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
 
-        $dokumen = new Projek();
+        // $dokumen = new Projek();
         
 
-        if($request->hasFile('dokumenSokongan')){
-            $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
-            // $dokumen->dokumenSokongan = $dokumen;
-        }
+        // if($request->hasFile('dokumenSokongan')){
+        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
+        //     // $dokumen->dokumenSokongan = $dokumen;
+        // }
 
-        $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
-        $dokumen->save();
+        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
+        // $dokumen->save();
 
         // simpan skor penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
@@ -210,8 +214,11 @@ class PenilaianRekaBentukBangunanController extends Controller
     }
     public function papar_pengesahan_penilaian($id)
     {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
         // papar form pengesahan penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.edit');
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.edit',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function simpan_pengesahan_penilaian(Request $request, $id)

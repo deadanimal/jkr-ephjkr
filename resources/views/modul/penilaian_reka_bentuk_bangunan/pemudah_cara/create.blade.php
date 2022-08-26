@@ -29,7 +29,7 @@
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Nama:</label>
                             <div class="col-sm-7">
-                                <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara ?? ''}}"/>                        
+                                <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara->nama}}"/>                        
                             </div>
                     </div>
 
@@ -37,7 +37,7 @@
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Syarikat:</label>
                             <div class="col-sm-7">
-                                <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{$pemudah_cara ?? ''}}"/>                        
+                                <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{$pemudah_cara->syarikat_cawangan}}"/>                        
                             </div>
                     </div>
 
@@ -45,7 +45,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Tel:</label>
                             <div class="col-sm-7">
-                                <input class="form-control" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>                        
+                                <input class="form-control" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara->no_tel}}"/>                        
                             </div>
                     </div>
 
@@ -53,7 +53,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Fax:</label>
                             <div class="col-sm-7">
-                                <input class="form-control" type="number" autocapitalize="off" name="no_fax" value="{{$pemudah_cara ?? ''}}"/>                        
+                                <input class="form-control" type="number" autocapitalize="off" name="no_fax" value="{{$pemudah_cara->no_fax}}"/>                        
                             </div>
                     </div>
 
@@ -61,7 +61,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">E-mel:</label>
                             <div class="col-sm-7">
-                                <input class="form-control" type="text" autocapitalize="off" name="email" value="{{$pemudah_cara ?? ''}}"/>                        
+                                <input class="form-control" type="text" autocapitalize="off" name="email" value="{{$pemudah_cara->email}}"/>                        
                             </div>
                     </div>
 
@@ -69,7 +69,7 @@
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Disiplin:</label>
                             <div class="col-sm-7">
-                                <input class="form-control" type="text" autocapitalize="off" name="disiplin" value="{{$pemudah_cara ?? ''}}"/>
+                                <input class="form-control" type="text" autocapitalize="off" name="disiplin" value="{{$pemudah_cara->disiplin}}"/>
                             </div>
                     </div>
 
