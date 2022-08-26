@@ -6,21 +6,23 @@ th {
     border-top: 1px solid #F4A258;
     border-bottom: 1px solid #F4A258;
     border-right: 1px solid #F4A258;
-    background-color: #EB5500;
-    color: #000;
+    color: #fff;
     text-align: center;
     border-left: 1px solid #F4A258;
-    
-
-
   }
 
+thead {
+    background-color: #EB5500;
+}
+
+
+
     
-  {{-- /* th:first-child {
+   /* th:first-child {
     border-left: 1px solid #F4A258;
     text-align: center;
 
-  } */ --}}
+  } */ 
 </style>
 
 
@@ -31,10 +33,10 @@ th {
 <table class="table table-bordered line-table display" style="width:100%">
     <thead>
         <tr class="pg-1">
-            <th rowspan="3" style="border-color: #F4A258">Kod</th>
-            <th rowspan="3" style="border-color: #F4A258">Kriteria</th>
-            <th rowspan="3" style="border-color: #F4A258">Kategori Bangunan</th>
-            <th colspan="7" >Pembangunan Baru</th>
+            <th rowspan="3">Kod</th>
+            <th rowspan="3">Kriteria</th>
+            <th rowspan="3">Kategori Bangunan</th>
+            <th colspan="7">Pembangunan Baru</th>
             <th rowspan="2" colspan="2">Dokumen Pembuktian</th>
             <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
         </tr>
@@ -61,12 +63,13 @@ th {
        
     <tbody>
         <tr class="pg-1">
-            @foreach ($kriteria_phjkr_bangunan as $k)
+            {{-- @foreach ($kriteria_phjkr_bangunan as $k) --}}
                 
             
             <td>TL1</td>
             <td>Perancangan Tapak</td>
-            <td>{{$k->jenisKategori}}</td>
+            <td></td>
+            {{-- <td>{{$k->jenisKategori}}</td> --}}
             <td>1</td>
             <td></td>
             <td></td>
@@ -78,12 +81,13 @@ th {
             <td>Tidak Berkenaan</td>
             <td></td>
 
-            @endforeach
+            {{-- @endforeach --}}
         </tr>
         <tr class="pg-1">
             <td>TL2</td>
             <td>Sistem Pengurusan Alam Sekitar (SPAS)</td>
-            <td>{{$k->jenisKategori}}</td>
+            <td></td>
+            {{-- <td>{{$k->jenisKategori}}</td> --}}
             <td>3</td>
             <td></td>
             <td></td>
@@ -408,18 +412,18 @@ th {
                             <td></td>
 
         </tr>   
-        <!--JUMLAH MARKAHKT-->
+        <!--JUMLAH MARKAHTL-->
         <tr class="pg-1">
-            <th colspan="3">Jumlah markah KT</th>
-            <th colspan="2">1</th>
-            <th colspan="2">0</th>
-            <th colspan="2">0</th>
-            <th colspan="2"></th>
-            <th colspan="2">0</th>
-            <th colspan="2">0</th>
-            <th colspan="2">0</th>
-            <th colspan="4"></th>
-            <th colspan="3"></th>
+            <td colspan="3">Jumlah markah TL</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+            <td></td>
         </tr> 
     </tbody>
 
@@ -455,6 +459,274 @@ th {
         </tr>
     </thead>
 
+    <tr class="pg-2">
+        <td>KT1</td>
+        <td>Rekabentuk bumbung</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
+            <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
+        </td>
+        <td>
+            <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
+            <span>&#183; Lukisan siap bina</span><br>
+            <span>&#183; Bukti bergambar</span><br>
+        </td> 
+        <td></td>
+    </tr> 
+
+    <tr class="pg-2">
+        <td>KT2</td>
+            <td>Orientasi bangunan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
+                <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
+            </td>
+            <td>
+                <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+    
+    <tr class="pg-2">
+        <td>KT2.1</td>
+            <td>Fasad Utama bangunan yang menghadap orientasi utara-selatan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Pelan tapak berserta penunjuk arah utara
+                    menunjukkan pelan bangunan dengan meletakkan sun-path diagram</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+            </td>
+            <td>
+                <span>&#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+    
+    <tr class="pg-2">
+        <td>KT2.2</td>
+            <td>Meminimumkan bukaan pada fasad yang menghadap timur dan barat</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan penyenggaraan cerun</span><br>
+            </td>
+            <td>
+                <span>Tidak Berkenaan</span><br>
+            </td> 
+            <td></td>
+    </tr>
+    
+    <tr class="pg-2">
+        <td>KT3</td>
+            <td>Rekabentuk fasad</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
+                <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
+            </td>
+            <td>
+                <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-2">
+        <td>KT3.1</td>
+            <td>Dinding luar bangunan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
+                <span>&#183; Pengiraan U-Value bagi rekabentuk dinding</span><br>
+            </td>
+            <td>
+                <span>&#183; Katalog bahan yang diluluskan untuk pembinaan</span><br>
+                <span>&#183; Pengiraan U-Value yang disahkan</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-2">
+        <td>KT3.2</td>
+            <td>Pengadang Suria Luaran</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog bahan</span><br>
+            </td>
+            <td>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-2">
+        <td>KT4</td>
+            <td>OTTV & RTTV</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
+            </td>
+            <td>
+                <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-2">
+        <td>KT5</td>
+            <td>Kecekapan pencahayaan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
+                <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
+            </td>
+            <td>
+                <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-2">
+        <td>KT5.2</td>
+            <td>Kawalan Pencahayaan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
+                <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
+            </td>
+            <td>
+                <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
+                <span> &#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-2">
+        <td>KT8</td>
+            <td>Tenaga Boleh Baharu (TBB)</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Mengemukakan lukisan rekabentuk sistem dan simulasi pengiraan
+                    bagi anggaran tenaga baharu yang boleh dihasilkan oleh sistem tersebut</span><br>
+            </td>
+            <td>
+                <span> &#183; Salinan lukisan siap bina dan laporan uji terima yang mematuhi kehendak rekabentuk</span><br>
+                <span> &#183; Pengiraan penjanaan tenaga boleh baharu berbanding jumlah penggunaan tenaga tahunan bangunan</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-2">
+        <td>KT11</td>
+            <td>Pengujian dan pentauliahan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Pelan pengujian dan pentauliahan</span><br>
+            </td>
+            <td>
+                <span>&#183; Dokumen lengkap pengujian dan pentauliahan yang telah disahkan</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--JUMLAH MARKAHKT-->
+    <tr class="pg-2">
+        <td colspan="3">Jumlah markah KT</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+    </tr> 
+</tbody>
+
+
+
+
+
 <!---------------------------------------MARKAHSB---------------------------------->
     <thead>
         <tr class="pg-3">
@@ -485,6 +757,114 @@ th {
             <th colspan="20">PENGURUSAN SUMBER DAN BAHAN</th>
         </tr>
     </thead>
+
+    <tr class="pg-3">
+        <td>SB1</td>
+            <td>Sistem Binaan Berindustri (IBS)</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Cadangan sistem IBS oleh pembekal IBS berdaftar</span><br>
+                <span>&#183; Laporan Pengiraan Skor IBS</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan pembinaan IBS</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-3">
+        <td>SB2</td>
+            <td>Produk hijau</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Sijil Pengesahan produk hijau</span><br>
+                <span>&#183; spesifikasi produk</span><br>
+                <span>&#183; Senarai permarkahan produk hijau berdasarkan GPSS</span><br>                    
+            </td>
+            <td>
+                <span>&#183; Brosur pembekal</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Borang pengiraan skor GPSS</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-3">
+        <td>SB3</td>
+            <td>Pengurusan sisa semasa pembinaan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Pelan pengurusan sisa yang meliputi Buangan Terjadual
+                    dan Sisa Bahan Binaan</span><br>
+                <span>&#183; Lukisan yang menunjukkan ruang pengurusan sisa</span><br>
+                <span>&#183; Pelan tapak dengan kawasan simpanan sementara</span><br>
+            </td>
+            <td>
+                <span>&#183; Dokumen bukti proses penyimpanan</span><br>
+                <span>&#183; Dokumen bukti proses penghantaran ke tapak pelupusan</span><br>
+                <span>&#183; Dokumen bukti proses pelupusan sisa berjadual seperti resit
+                    dan borang semasa audit dijalankan
+                </span><br>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Pengiraan kitar semula (jika ada)</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-3">
+        <td>SB4</td>
+            <td>3r-Semasa Operasi</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Pelan pengurusan sisa domestik</span><br>
+                <span>&#183; Pelan kedudukan tong 3Rdi semua aras bangunan</span><br>
+                <span>&#183; Lokasi kebuk sampah</span><br>                    
+            </td>
+            <td>
+                <span>&#183; Pematuhan pelan pengurusan sisa domestik</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--JUMLAH MARKAHSB-->
+    <tr class="pg-3">
+        <td colspan="3">Jumlah markah SB</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+    </tr> 
 
 
 <!---------------------------------------MARKAHPA---------------------------------->
@@ -518,6 +898,112 @@ th {
     </tr>
 </thead>
 
+    <tr class="pg-4">
+        <td>PA1</td>
+            <td>Produk Kecekapan Air</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
+                <span>&#183; Pengiraan penjimatan</span><br>
+            </td>
+            <td>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Pensijilan WELPS</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-4">
+        <td>PA2</td>
+            <td>Penjimatan Penggunaan Air Dalam Bangunan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
+                <span>&#183; Pengiraan</span><br>
+            </td>
+            <td>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Pensijilan WELPS</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-4">
+        <td rowspan="2">PA3</td>
+            <td>Rekabentuk bumbung</td>
+            <td>i. SPAH</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
+                <span>&#183; Pengiraan</span><br>
+            </td>
+            <td>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Pensijilan WELPS</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-4">
+        {{-- <td>PA3</td> --}}
+            <td>ii. Kitar Semula Air Sisa</td>
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan rekabentuk dan pengiraan SPAH atau
+                    sistem kitar semula air sisa</span><br>
+                <span>&#183; Lukisan SPAH atau lukisan sistem kitar semula air sisa</span><br>
+                <span>&#183; Bil air domestik</span><br>
+            </td>
+            <td>
+                <span>&#183; Laporan pengujian sistem</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--JUMLAH MARKAHPA-->
+    <tr class="pg-4">
+        <td colspan="3">Jumlah markah PA</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+    </tr> 
+
+
+
+
+
+
 <!---------------------------------------MARKAHPD---------------------------------->
 <thead>
     <tr class="pg-5">
@@ -548,6 +1034,229 @@ th {
         <th colspan="20">PENGURUSAN KUALITI PERSEKITARAN DALAMAN</th>
     </tr>
 </thead>
+
+    <tr class="pg-5">
+        <td>PD2</td>
+            <td>Perancangan ruang</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
+                <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
+            </td>
+            <td>
+                <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD2.4</td>
+            <td>Ketinggian siling yang efektif</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Lukisan keratan bangunan yang menunjukkan
+                    ukuran (lantai ke siling)</span><br>            
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina</span><br>            
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD2.5</td>
+            <td>Warna cerah di permukaan dinding dan siling</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog dan sampel menunjukkan warna yang dicadangkan</span><br>
+            </td>
+            <td>
+                <span>&#183; Bukti bergambar bagi mengesahkan skima warna yang digunakan</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD3</td>
+            <td>Kualiti Visual</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+            </td>
+            <td>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD3.1</td>
+            <td>Faktor Pencahayaan Siang (DF)</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Lukisan tampak dan jadual tingkap</span><br>
+                <span>&#183; Pengiraan keluasan lantai yang menunjukkan
+                    30% daripada NLA yang menunjukkan nilai DF 1.0% - 3.5%</span><br>
+                <span>&#183; Laporan simulasi (jika ada)</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD3.2</td>
+            <td>Menggunakan rak cahaya (light shelves)</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Rekabentuk rak cahaya</span><br>
+                <span>&#183; Lukisan terperinci</span><br>
+                <span>&#183; Laporan simulasi, jika ada</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan pemasangan</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+                <span>&#183; Bukti bergambar</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD3.3</td>
+            <td>Kawalan Tahap Kesilauan</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog dan sampel menunjukkan bidai yang dicadangkan</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar
+                    bagi mengesahkan bidai yang digunakan</span><br>
+                <span>&#183; Laporan prestasi pencahayaan (jika ada)</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD3.4</td>
+            <td>Akses visual kepada pandangan di luar</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Pelan susuratur</span><br>
+                <span>&#183; Rekabentuk awalan yang menunjukkan
+                            pembahagian ruang yang bebas halangan binaan kekal</span><br>
+                <span>&#183; Lukisan terperinci dinding sesekat berserta spesifikasi</span><br>
+            </td>
+            <td>
+                <span>&#183; Katalog dan sample bahan yang diluluskan oleh S.O.</span><br>
+                <span>&#183; Lukisan Siap Bina</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD8</td>
+            <td>Kualiti Udara Dalaman (IAQ)</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Katalog dan sijil pengesahan penarafan eco-label bahan</span><br>
+                <span>&#183; Spesifikasi teknikal pembekal</span><br>
+            </td>
+            <td>
+                <span>&#183; Katalog dan kaedah pemasangan (method statement) yang telah
+                    disahkan oleh Pegawai yang kompeten</span><br>
+                <span>&#183; Gambar semasa kerja pemasangan</span><br>
+                <span>&#183; Lukisan siap bina</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <tr class="pg-5">
+        <td>PD10</td>
+            <td>Kaji Selidik Keselesaan Penghuni</td>
+            <td>A</td> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Tidak berkaitan (TB)</span></th>
+            </td>
+            <td>
+                <span>&#183; Laporan maklumbalas kaji selidik</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--JUMLAH MARKAHPD-->
+    <tr class="pg-5">
+        <td colspan="3">Jumlah markah PD</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+    </tr> 
 
 <!---------------------------------------MARKAHIN---------------------------------->
 <thead>
@@ -580,6 +1289,41 @@ th {
     </tr>
 </thead>
 
+<tr class="pg-6">
+    <td>IN1</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+ <!--JUMLAH MARKAHIN-->
+ <tr class="pg-6">
+    <td colspan="3">Jumlah markah IN</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+</tr> 
+
 <!---------------------------------------MARKAHFL---------------------------------->
 <thead>
     <tr class="pg-7">
@@ -610,6 +1354,232 @@ th {
         <th colspan="20">INOVASI DALAM REKABENTUK</th>
     </tr>
 </thead>
+
+<tr class="pg-7">
+    <td>FL1</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL2</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL2.1</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL2.2</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL2.3</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL3</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL3.1</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL3.2</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL3.3</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<tr class="pg-7">
+    <td>FL3.4</td>
+        <td>Reka Bentuk Inovasi</td>
+        <td>A</td> 
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><td>
+        <td></td>
+        <td></td>
+        <td>
+            <span>&#183; Laporan cadangan inovasi</span><br>
+            <span>&#183; Laporan kajian Return of Investment</span><br>
+        </td>
+        <td>
+            <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+            <span>&#183; Laporan prestasi inovasi</span><br>
+        </td> 
+        <td></td>
+</tr>
+
+<!--JUMLAH MARKAHFL-->
+<tr class="pg-7">
+    <td colspan="3">Jumlah markah FL</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td></td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+</tr> 
+
+
 
 
 </table>

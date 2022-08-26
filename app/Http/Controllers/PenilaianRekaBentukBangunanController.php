@@ -18,8 +18,11 @@ class PenilaianRekaBentukBangunanController extends Controller
      */
     public function index()
     {
+        $projeks = Projek::all();
         // paparan senarai projek
-        return view('modul.penilaian_reka_bentuk_bangunan.index');
+        return view('modul.penilaian_reka_bentuk_bangunan.index',[
+            'projeks'=>$projeks
+        ]);
     }
 
     /**
@@ -100,6 +103,8 @@ class PenilaianRekaBentukBangunanController extends Controller
             'projeks'=>$projeks
         ]);
     }
+
+    
 
     public function pemudah_cara($id)
     {

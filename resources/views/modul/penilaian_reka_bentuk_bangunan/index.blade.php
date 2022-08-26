@@ -1,7 +1,6 @@
 @extends('layouts.base')
 <!--from DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="cssfile/style.css">
 
 
 @section('content')
@@ -9,10 +8,10 @@
 <div class="header">
         <b class="text-dark-green-jkr">Paparan Senarai Projek</b>
 
-    <h1 class="header-title">
+    <h1 class="jkr-header-title">
         PENILAIAN REKA BENTUK BANGUNAN
     </h1>
-    <hr class="line-6">
+    <hr class="line-horizontal-jkr">
     
 
 </div>
