@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hebahan;
 use Illuminate\Http\Request;
 
 class SelenggaraHebahanController extends Controller
@@ -14,6 +15,10 @@ class SelenggaraHebahanController extends Controller
     public function index()
     {
         //
+        $selenggara_hebahan = Hebahan::all();
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_hebahan.index', [
+            'selenggara_hebahan'=>$selenggara_hebahan
+        ]);
     }
 
     /**
@@ -24,6 +29,7 @@ class SelenggaraHebahanController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_hebahan.create');
     }
 
     /**

@@ -44,12 +44,12 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($selenggara_status as $ss)
+                            @foreach ($selenggara_log as $ss)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $ss->icPengguna }}</td>
                                     <td>{{ $ss->Tarikh }}</td>
-                                    <td>{{ $ss->Proses }}</td>
+                                    <td>{{ $ss->ProsesAktiviti }}</td>
                                     
                                     {{-- <td>
                                         <div class="row">

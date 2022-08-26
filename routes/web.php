@@ -186,9 +186,10 @@ Route::middleware('auth')->group(function () {
     //  Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
 
     // Verifikasi Permarkahan Jalan resource
-    // Route::resource('/verifikasi_permarkahan_jalan', VerifikasiPermarkahanJalanController::class);
+    Route::resource('/verifikasi_permarkahan_jalan', VerifikasiPermarkahanJalanController::class);
     // verifikasi permarkahan jalan custom action 
-    Route::get('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'index']);
+    //Route::get('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'index']);
+    //Route::post('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'create']);
     Route::get('/verifikasi_permarkahan_jalan/melantik_penilai_jalan', [VerifikasiPermarkahanJalanController::class, 'melantik_penilai_jalan']);
 
 

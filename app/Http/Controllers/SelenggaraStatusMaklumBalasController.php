@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MaklumBalas;
 use Illuminate\Http\Request;
 
 class SelenggaraStatusMaklumBalasController extends Controller
@@ -14,6 +15,10 @@ class SelenggaraStatusMaklumBalasController extends Controller
     public function index()
     {
         //
+        $status_maklum_balas = MaklumBalas::all();
+        return view('modul.pengurusan_maklumat.selenggara.status_maklum_balas.index', [
+            'status_maklum_balas'=>$status_maklum_balas
+        ]);
     }
 
     /**
@@ -24,6 +29,7 @@ class SelenggaraStatusMaklumBalasController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.selenggara.status_maklum_balas.create');
     }
 
     /**

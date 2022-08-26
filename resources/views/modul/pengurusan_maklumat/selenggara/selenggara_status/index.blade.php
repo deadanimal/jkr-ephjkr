@@ -45,7 +45,7 @@
                             @foreach ($selenggara_status as $ss)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $ss->status }}</td>
+                                    <td>{{ $ss->statusProjek }}</td>
                                     
                                     <td>
                                         <div class="row">

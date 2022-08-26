@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\KriteriaPhjkrJalan;
 use Illuminate\Http\Request;
 
 class SelenggaraKriteriaPenilaianController extends Controller
@@ -14,6 +15,10 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function index()
     {
         //
+        $selenggara_kriteria = KriteriaPhjkrJalan::all();
+        return view('modul.pengurusan_maklumat.selenggara.kriteria_penilaian.index', [
+            'selenggara_hebahan'=>$selenggara_kriteria
+        ]);
     }
 
     /**

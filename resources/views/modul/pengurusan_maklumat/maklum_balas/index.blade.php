@@ -26,6 +26,12 @@
         </div>
     </div>
 
+    <div class="row mt-3">
+        <div class="col text-end">
+            <a href="/pengurusan_maklumat/maklum_balas/show" class="btn btn-primary">papar</a>
+        </div>
+    </div>
+
 
     <div class="row mt-2">
         <div class="col">
@@ -45,9 +51,9 @@
                             @foreach ($maklum_balas as $mb)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $mb->statusMaklumbalas }}</td>
+                                    <td>{{ $mb->subjek }}</td>
                                     <td>{{ $mb->kategori }}</td>
-                                    <td>{{ $mb->nama }}</td>
+                                    <td>{{ $mb->statusMaklumbalas }}</td>
                                     
                                     <td>
                                         <div class="row">

@@ -1,4 +1,4 @@
-@extends('layouts.base')
+ @extends('layouts.base')
 @section('content')
     <div class="row mb-3">
         <div class="col">
@@ -34,45 +34,132 @@
                                 <th class="sort">Bil.</th>
                                 <th class="sort">Maklum Balas</th>
                                 <th class="sort">Kategori</th>
-                                <th class="sort">Status</th>
                                 <th class="sort">Tindakan</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($maklum_balas as $mb)
-                                <tr>
-                                    <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $mb->statusMaklumbalas }}</td>
-                                    <td>{{ $mb->kategori }}</td>
-                                    <td>{{ $mb->nama }}</td>
-                                    
-                                    <td>
-                                        <div class="col-auto mb-2 px-0"
-                                            style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
-                                            @if ($mb->tarikhStatus == 'Dalam Proses')
-                                                <button class="btn btn-orange-jkr" type="button">DALAM PROSES</button>
-                                            @else
-                                                <button class="btn btn-final" type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#dalamproses">DALAM PROSES</button>
-                                            @endif
-                                            |
-                                            @if ($mb->tarikhStatus == 'Disemak')
-                                                <button class="btn btn-orange-jkr" type="button">DISEMAK</button>
-                                            @else
-                                                <button class="btn btn-final" type="button" data-bs-toggle="modal"
-                                                    data-bs-target="#disemak">DISEMAK</button>
-                                            @endif
+                            <td>
+                                1.
+                            </td>
+                            <td>
+                                {{$maklumBalas->nama}}
+                            </td>
+                            <td>
+                                {{$maklumBalas->kategori}}
+                            </td>
+                            <td>
+                                <div
+                                    class="col-auto mb-2 px-0"
+                                        style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
+                                        @if ($maklumBalas->statusMaklumbalas == 'Dalam Proses')
+                                            <button class="btn btn-orange-jkr" type="button">DALAM PROSES</button>
+                                        @else
+                                            <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#dalamproses">DALAM PROSES</button>
+                                        @endif
+                                            
+                                        @if ($maklumBalas->statusMaklumbalas == 'Disemak')
+                                            <button class="btn btn-orange-jkr" type="button">DISEMAK</button>
+                                        @else
+                                            <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                data-bs-target="#disemak">DISEMAK</button>
+                                        @endif
 
-                                        </div>
-
-                                        {{-- lulus modal --}}
-                                        <div class="modal fade" id="dalamproses" tabindex="-1" role="dialog" aria-hidden="true">
+                                </div>
+                                {{-- lulus modal --}}
+                                         <div class="modal fade" id="dalamproses" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
                                                 <div class="modal-content position-relative">
                                                     <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
                                                         {{-- <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base"
                                                             data-bs-dismiss="modal" aria-label="Close"></button> --}}
                                                     </div>
+                                                    <div class="modal-body p-0">
+
+                                                        <div class="p-4 text-center">
+                                                            <h5 class="h5 text-green-jkr">Maklum Balas Pengguna ini mahu diproses?</h5>
+                                                            <form action="/pengurusan_maklumat/maklum_balas/{{ $maklumBalas->id }}"
+                                                                method="post">
+                                                                @method('PUT')
+                                                                @csrf
+                                                                <input type="hidden" name="statusMaklumbalas" value="Dalam Proses">
+                                                                <button class="btn btn-outline-green-jkr mt-3" type="button"
+                                                                    data-bs-dismiss="modal">TIDAK</button>
+                                                                <button class="btn btn-green-jkr mt-3" type="submit">YA</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+
+                                        {{-- tolak modal --}}
+                                         <div class="modal fade" id="disemak" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
+                                                <div class="modal-content position-relative">
+                                                    <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+                                                        {{-- <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button> --}}
+                                                    </div>
+                                                    <div class="modal-body p-0">
+
+                                                        <div class="p-4 text-center">
+                                                            <h5 class="h5 text-green-jkr">Adakah anda pasti Menyemak Maklum Balas ini?</h5>
+                                                            <form action="/pengurusan_maklumat/maklum_balas/{{ $maklumBalas->id }}"
+                                                                method="post">
+                                                                @method('PUT')
+                                                                @csrf
+                                                                <input type="hidden" name="statusMaklumbalas" value="Disemak">
+                                                                <button class="btn btn-outline-green-jkr mt-3" type="button"
+                                                                    data-bs-dismiss="modal">TIDAK</button>
+                                                                <button class="btn btn-green-jkr mt-3" type="submit">Ya</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
+                            </td>
+                        </tbody> 
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+@endsection
+
+                                    {{-- <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $mb->nama }}</td>
+                                    <td>{{ $mb->kategori }}</td> 
+                                    <td>
+                                        <div class="col-auto mb-2 px-0"
+                                            style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
+                                            @if ($mb->statusMaklumbalas == 'Dalam Proses')
+                                                <button class="btn btn-orange-jkr" type="button">DALAM PROSES</button>
+                                            @else
+                                                <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                    data-bs-target="#dalamproses">DALAM PROSES</button>
+                                            @endif
+                                            |
+                                            @if ($mb->statusMaklumbalas == 'Disemak')
+                                                <button class="btn btn-orange-jkr" type="button">DISEMAK</button>
+                                            @else
+                                                <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                    data-bs-target="#disemak">DISEMAK</button>
+                                            @endif
+
+                                        </div> --}}
+
+                                        {{-- lulus modal --}}
+                                        {{-- <div class="modal fade" id="dalamproses" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
+                                                <div class="modal-content position-relative">
+                                                    <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1"> ------------}}
+                                                        {{-- <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button> --}}
+                                                    {{-- </div>
                                                     <div class="modal-body p-0">
 
                                                         <div class="p-4 text-center">
@@ -90,16 +177,16 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -------------}}
 
                                         {{-- tolak modal --}}
-                                        <div class="modal fade" id="tolak" tabindex="-1" role="dialog" aria-hidden="true">
+                                        {{-- <div class="modal fade" id="tolak" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
                                                 <div class="modal-content position-relative">
-                                                    <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
+                                                    <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1"> -----------}}
                                                         {{-- <button class="btn-close btn btn-sm btn-circle d-flex flex-center transition-base"
                                                             data-bs-dismiss="modal" aria-label="Close"></button> --}}
-                                                    </div>
+                                                    {{-- </div>
                                                     <div class="modal-body p-0">
 
                                                         <div class="p-4 text-center">
@@ -117,14 +204,16 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </td>
+                                         </div> --}}
+                                    {{-- </td>
                                 </tr>
                             @endforeach
-                        </tbody>
+                        </tbody> 
                     </table>
                 </div>
             </div>
         </div>
     </div>
-@endsection
+
+
+@endsection  --}}

@@ -6,10 +6,10 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Maklum Balas</a>
+                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Melantik Pemudah Cara</a>
                     </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Tambah Maklum Balas Baru
+                        Tambah Pemudah Cara
                     </li>
                 </ol>
             </nav>
@@ -18,7 +18,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>MAKLUM BALAS</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>VERIFIKASI PEMUDAH CARA</strong></h3>
         </div>
     </div>
 
@@ -26,42 +26,49 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/pengurusan_maklumat/maklum_balas" method="post" enctype="multipart/form-data">
+            <form action="/verifikasi_permarkahan_jalan/papar_senarai_projek" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama:</label>
+                        <label class="col-form-label">Nama Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="nama" type="text"/>
+                        <input class="form-control" name="namaFAQ" type="text"/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Syarikat/Cawangan:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="soalanFAQ" type="text"/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Nama Pemudah Cara Jalan:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">No. Tel:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">E-mel:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="email" type="text"/>
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Subjek:</label>
+                        <label class="col-form-label">No. Fax:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="subjek" type="text"/>
-                    </div>
-
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Kategori:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="kategori" type="text"/>
-                    </div>
-
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Keterangan:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="/" type="text"/>
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
                     </div>
 
                     
@@ -72,7 +79,7 @@
                     <div class="col-7 mb-2">
                         <div class="row mt-4">
                             <div class="col-6">
-                                <a href="/pengurusan_maklumat/senarai_pengguna" class="btn btn-outline-primary">Batal</a>
+                                <a href="/verifikasi_permarkahan_jalan/papar_senarai_projek" class="btn btn-outline-primary">Batal</a>
                             </div>
                             <div class="col-6 text-end">
                                 <button type="submit" class="btn btn-primary">Tambah</button>
