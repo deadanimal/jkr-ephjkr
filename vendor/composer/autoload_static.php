@@ -682,6 +682,7 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
         'App\\Models\\PerananProjek' => __DIR__ . '/../..' . '/app/Models/PerananProjek.php',
         'App\\Models\\Peringkat' => __DIR__ . '/../..' . '/app/Models/Peringkat.php',
         'App\\Models\\Projek' => __DIR__ . '/../..' . '/app/Models/Projek.php',
+        'App\\Models\\SelenggaraStatus' => __DIR__ . '/../..' . '/app/Models/SelenggaraStatus.php',
         'App\\Models\\Semakanrawakjanasijil' => __DIR__ . '/../..' . '/app/Models/Semakanrawakjanasijil.php',
         'App\\Models\\Senaraiprojekbangunan' => __DIR__ . '/../..' . '/app/Models/Senaraiprojekbangunan.php',
         'App\\Models\\Sijil' => __DIR__ . '/../..' . '/app/Models/Sijil.php',
