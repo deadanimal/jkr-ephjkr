@@ -30,6 +30,7 @@
     <div class="row mt-4 mb-3">
         <div class="col">
             <form action="/pengurusan_maklumat/selenggara/status_maklum_balas" method="post" enctype="multipart/form-data">
+                
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
@@ -43,7 +44,7 @@
                         <label class="col-form-label">Maklum Balas Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="status_maklum_balas" type="text"/>
+                        <input class="form-control" name="statusMaklumbalas" type="text"/>
                     </div>
                     
     

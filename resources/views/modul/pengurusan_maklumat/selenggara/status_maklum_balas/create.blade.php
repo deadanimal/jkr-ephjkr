@@ -36,7 +36,7 @@
                         <label class="col-form-label">Maklum Balas Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="status_maklum_balas" type="text"/>
+                        <input class="form-control" name="statusMaklumbalas" type="text"/>
                     </div>
                     
     

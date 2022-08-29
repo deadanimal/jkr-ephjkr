@@ -36,14 +36,14 @@
                         <label class="col-form-label">Jenis Hebahan Sekarang:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="hebahan" type="text"/>
+                        <input class="form-control" name="tajukHebahan" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Jenis Hebahan baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="hebahan" type="text"/>
+                        <input class="form-control" name="tajukHebahan" type="text"/>
                     </div>
                     
     

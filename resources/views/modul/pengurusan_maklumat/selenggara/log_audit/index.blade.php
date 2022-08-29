@@ -25,7 +25,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/selenggara/selenggara_status/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/selenggara/selenggara_log/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
 
@@ -49,7 +49,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $ss->icPengguna }}</td>
                                     <td>{{ $ss->Tarikh }}</td>
-                                    <td>{{ $ss->ProsesAktiviti }}</td>
+                                    <td>{{ $ss->prosesAktiviti }}</td>
                                     
                                     {{-- <td>
                                         <div class="row">
