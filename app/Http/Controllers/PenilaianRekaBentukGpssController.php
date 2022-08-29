@@ -4,6 +4,7 @@ use App\Models\Projek;
 use Illuminate\Http\Request;
 use App\Models\PemudahCara;
 use App\Models\KriteriaGpssBangunan;
+use Barryvdh\DomPDF\PDF;
 
 class PenilaianRekaBentukGpssController extends Controller
 {
@@ -235,9 +236,22 @@ class PenilaianRekaBentukGpssController extends Controller
     }
 
     #papar sijil
+    public function paparan_sijil()
+    {
+        // index jana keputusan
+        return view('modul.penilaian_reka_bentuk_gpss.paparan_sijil.index');
+    }
+    
     public function papar_sijil()
     {
         // index jana keputusan
         return view('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
+    }
+
+    public function createPDF(){
+
+        $pdf = PDF::loadView('/modul/penilaian_reka_bentuk_gpss/paparsijil');
+        return $pdf->download('sijil.pdf');
+ 
     }
 }

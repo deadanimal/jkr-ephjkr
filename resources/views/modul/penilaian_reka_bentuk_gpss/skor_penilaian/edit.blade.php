@@ -61,7 +61,9 @@
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
-            <th>pdf</th>             
+            <th>
+              <input type="file">
+            </th>             
           </tr>
           <tr>
             <th>TL2</th>
@@ -77,7 +79,7 @@
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th> 
-            <th>pdf</th>            
+            <th><input type="file"></th>            
           </tr>
           <tr>
             <th>TL3</th>
@@ -93,7 +95,7 @@
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
-            <th>pdf</th>             
+            <th><input type="file"></th>             
           </tr>
           <tr>
             <th>TL4</th>
@@ -109,7 +111,7 @@
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
-            <th>pdf</th>             
+            <th><input type="file"></th>             
           </tr>
           <tr>
             <th>TL5</th>
@@ -125,7 +127,7 @@
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
-            <th>pdf</th>             
+            <th><input type="file"></th>             
           </tr>
           <tr>
             <th>TL6</th>
@@ -141,7 +143,7 @@
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>             
             <th colspan="6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fuga.</th>
-            <th>pdf</th>             
+            <th><input type="file"></th>             
           </tr>
           
           
