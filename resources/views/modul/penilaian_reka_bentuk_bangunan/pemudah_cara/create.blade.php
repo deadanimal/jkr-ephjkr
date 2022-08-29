@@ -33,6 +33,15 @@
                             </div>
                     </div>
 
+                    <!--Nama Projek-->
+                    <div class="mb-3 form-group row">
+                        <label class="col-sm-2 col-form-label">Nama Projek:</label>
+                            <div class="col-sm-7">
+                                
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$projeks->namaProjek}}" disabled/>                    
+                            </div>
+                    </div>
+
                     <!--Syarikat/Cawangan-->
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Syarikat:</label>

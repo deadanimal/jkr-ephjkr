@@ -1,18 +1,26 @@
 @extends('layouts.base')
 <!--from DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="cssfile/style.css">
 
+<style>
+    table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0px 2.86088px 7.15219px 7.15219px rgba(0, 0, 0, 0.05);
+    border-color: #F4A258;
+    }
+</style>
 
 @section('content')
 
 <div class="header">
         <b class="text-dark-green-jkr">Paparan Senarai Projek</b>
 
-    <h1 class="header-title">
+    <h1 class="jkr-header-title">
         PENILAIAN REKA BENTUK BANGUNAN
     </h1>
-    <hr class="line-6">
+    <hr class="line-horizontal-jkr">
     
 
 </div>
@@ -21,7 +29,7 @@
         <div class="mt-8 form-group row">
                 <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-5">
-                        <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                        <input type="search" onkeyup="myFunction()" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
                     </div>
                         <div class="col-sm-5">
                             <button type="button" class="btn btn-primary">Carian</button>
@@ -47,26 +55,38 @@
                                     {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody>
                                         <!--LOOPING TABLES-->
-                                        {{-- @foreach ($projek as $key => $p) --}}
+                                        @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
+                                                <td>{{ $p->id }}</td>
+                                                {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->id_ruj_skala}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
+                                                </td>
+
                                                 {{-- <td>{{ $pdkk->id }}</td> --}}
-                                                <td style="text-align: center; vertical-align: middle;">1</td>
+                                                {{-- <td style="text-align: center; vertical-align: middle;">1</td>
                                                 <td style="text-align: center; vertical-align: middle;">SKL0202</td>
                                                 <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
                                                 <td style="text-align: center; vertical-align: middle;">Mukah</td>
                                                 <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
-                                                <td style="text-align: center; vertical-align: middle;">
+                                                <td style="text-align: center; vertical-align: middle;"> --}}
                                                     {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">
                                                     <a href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create">Daftar</a>
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
+                                                    {{-- <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
                                                 </td>
-                                            </tr> 
-                                        {{-- @endforeach --}}
+                                            </tr>  --}}
+
+                                        @endforeach
                                         </tbody>
                                     {{-- </table> --}}
                                 </table> 
@@ -77,4 +97,28 @@
             </div>
         </div>
     </div>
+
+
+<!---------JavaScript--------------->
+    {{-- <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName('li');
+        
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script> --}}
 @endsection

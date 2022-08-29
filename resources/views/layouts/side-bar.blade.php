@@ -321,6 +321,8 @@
                     </ul>
 
                         {{-- BANGUNAN penilaian reka bentuk bangunan --}}
+                        {{-- @if(Auth::user()->hasRole('Ketua Pasukan')) --}}
+
                         <a class="nav-link py-0 dropdown-indicator {{ Request::is('penilaian_reka_bentuk_bangunan/*') ? 'active-main' : '' }}"
                             href="#penilaian_reka_bentuk_bangunan" role="button" data-bs-toggle="collapse"
                             aria-expanded="{{ Request::is('penilaian_reka_bentuk_bangunan') ? 'true' : 'false' }}"
@@ -343,6 +345,8 @@
                                     </div>
                                 </a>
                             </li>
+                        {{-- @endif <!--Role--> --}}
+
                             {{-- BANGUNAN Melantik Pemudah Cara --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/melantik_pemudah_cara') ? 'active' : '' }} py-0"
@@ -404,7 +408,7 @@
                             <hr class="navbar-vertical-divider mx-3">
                         </ul>
 
-                        {{--BANGUNAN (Verifikasi Permarkahan Bangunan)--}}
+                        <!--BANGUNAN (Verifikasi Permarkahan Bangunan)-->
                         <a class="nav-link py-0 dropdown-indicator {{ Request::is('verifikasi_permarkahan_bangunan/*') ? 'active-main' : '' }}"
                             href="#verifikasi_permarkahan_bangunan" role="button" data-bs-toggle="collapse"
                             aria-expanded="{{ Request::is('verifikasi_permarkahan_bangunan') ? 'true' : 'false' }}"
@@ -526,6 +530,145 @@
                             </li>
                             <hr class="navbar-vertical-divider mx-3">
                         </ul>
+
+                        {{--BANGUNAN (Validasi Permarkahan Bangunan)--}}
+                        <a class="nav-link py-0 dropdown-indicator {{ Request::is('validasi_permarkahan_bangunan/*') ? 'active-main' : '' }}"
+                            href="#validasi_permarkahan_bangunan" role="button" data-bs-toggle="collapse"
+                            aria-expanded="{{ Request::is('validasi_permarkahan_bangunan') ? 'true' : 'false' }}"
+                            aria-controls="validasi_permarkahan_bangunan">
+                            <div class="d-flex align-items-center nav-link-side px-0">
+                                <span class="px-3"><span class="fas fa-home"></span> Validasi Permarkahan
+                                    Bangunan</span>
+                            </div>
+                        </a>
+                        <ul class="nav-item collapse {{ Request::is('validasi_permarkahan_bangunan/*') || Request::is('validasi_permarkahan_bangunan') ? 'show' : 'false' }} my-1"
+                            id="verifikasi_permarkahan_bangunan">
+                            
+                            {{-- BANGUNAN (Validasi) Melantik Pasukan Validasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/pasukan_validasi') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pemudah_cara">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/pasukan_validasi') ? 'text-dark' : '' }}">Melantik
+                                            Pasukan Validasi</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- BANGUNAN (Validasi) Penilaian Validasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/penilaian_validasi') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/penilaian_validasi">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/penilaian_validasi') ? 'text-dark' : '' }}">Penilaian 
+                                            Validasi</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- BANGUNAN (Validasi) Borang Validasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/borang_validasi') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/borang_validasi">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/borang_validasi') ? 'text-dark' : '' }}">Penilaian 
+                                            Validasi</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- BANGUNAN (Validasi) Pengesahan Penilaian Validasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/pengesahan_penilaian') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/pengesahan_penilaian">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/pengesahan_penilaian') ? 'text-dark' : '' }}">Pengesahan
+                                            Penilaian Validasi</span>
+                                    </div>
+                                </a>
+                            </li>
+                            {{-- BANGUNAN (Validasi) Jana Keputusan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/jana_keputusan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
+                                            Keputusan
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+                            {{-- BANGUNAN (Validasi) Papar dan Muat Turun Skor --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/semakan_rawak') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/semakan_rawak">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil
+                                            Penilaian Verfikasi Pemarkahan</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- BANGUNAN (Validasi) Permohonan Rayuan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/permohonan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/permohonan_rayuan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/permohonan_rayuan') ? 'text-dark' : '' }}">Permohonan
+                                            Rayuan
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+                        
+                            {{-- BANGUNAN (Validasi) Pengesahan Rayuan --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pengesahan_rayuan">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'text-dark' : '' }}">Pengesahan 
+                                            Rayuan
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- BANGUNAN (Validasi) Jana Sijil --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/jana_sijil') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/jana_sijil">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/jana_sijil') ? 'text-dark' : '' }}">Semakan Rawak 
+                                            dan Jana Sijil
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- BANGUNAN (Validasi) Muat Turun Sijil Validasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/sijil_validasi') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/sijil_validasi">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/sijil_validasi') ? 'text-dark' : '' }}">Muat Turun 
+                                            Sijil Validasi
+                                            </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <hr class="navbar-vertical-divider mx-3">
+                        </ul>
+
 
                         {{-- penilaian reka bentuk GPSS --}}
                         <a class="nav-link py-0 dropdown-indicator {{ Request::is('penilaian_reka_bentuk_gpss/*') ? 'active-main' : '' }}"

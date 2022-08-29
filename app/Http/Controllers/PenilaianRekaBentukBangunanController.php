@@ -18,8 +18,13 @@ class PenilaianRekaBentukBangunanController extends Controller
      */
     public function index()
     {
+        $projeks = Projek::all();
         // paparan senarai projek
-        return view('modul.penilaian_reka_bentuk_bangunan.index');
+
+
+        return view('modul.penilaian_reka_bentuk_bangunan.index',[
+            'projeks'=>$projeks
+        ]);
     }
 
     /**
@@ -101,21 +106,28 @@ class PenilaianRekaBentukBangunanController extends Controller
         ]);
     }
 
+    
+
     public function pemudah_cara($id)
     {
         $pemudah_cara = new PemudahCara;
+        $projeks = new Projek;
 
         // papar form pemudah cara with id projek
         // $projek = Projek::find($id);
+        
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
-            'pemudah_cara'=>$pemudah_cara
+            'pemudah_cara'=>$pemudah_cara,
+            'projeks'=> $projeks
         ]);
+        
     }
 
     public function melantik_pemudah_cara(Request $request, $id)
     {
         // submit form melantik pemudah cara
         $pemudah_cara = new PemudahCara;
+        $projeks = new Projek;
 
         $pemudah_cara->nama = $request->input('nama');
         $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
@@ -125,6 +137,9 @@ class PenilaianRekaBentukBangunanController extends Controller
         $pemudah_cara->disiplin = $request->input('disiplin');
         $pemudah_cara->kategori = $request->kategori;
         $pemudah_cara->save();
+
+        $projeks->namaProjek = $request->input('namaProjek');
+        $projeks->save();
 
         // // submit form melantik pemudah cara
         return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
@@ -143,8 +158,12 @@ class PenilaianRekaBentukBangunanController extends Controller
     }
     public function papar_skor_penilaian($id)
     {
+        $projeks = new Projek;
+
         // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.edit');
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.edit',[
+            'projeks'=> $projeks
+        ]);
     }
 
     public function simpan_skor(Request $request, $id)
@@ -174,16 +193,16 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan->markahIN = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
 
-        // $dokumen = new Projek();
+        $projeks = new Projek;
         
 
-        // if($request->hasFile('dokumenSokongan')){
-        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
-        //     // $dokumen->dokumenSokongan = $dokumen;
-        // }
+        if($request->hasFile('dokumenSokongan')){
+            $projeks = $request->file('dokumenSokongan')->store('dokumenSokongan');
+            // $projeks->dokumenSokongan = $projeks;
+        }
 
-        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
-        // $dokumen->save();
+        $projeks->dokumenSokongan = $request->input('dokumenSokongan');
+        $projeks->save();
 
         // simpan skor penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');

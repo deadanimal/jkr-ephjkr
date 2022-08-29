@@ -162,6 +162,10 @@
             border-color: #F4A258;
         }
 
+        .line-horizontal-jkr {
+            border: 1px solid #EB5500;
+        }
+
         .br-10 {
             border-radius: 10px;
         }
@@ -562,6 +566,19 @@
 
             /* ORANGE */
             color: #F4A258;
+        }
+
+        .jkr-header-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+
+            /* Red orange */
+
+            color: #EB5500;
         }
 
         .btn-final {

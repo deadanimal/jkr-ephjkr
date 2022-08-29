@@ -2,9 +2,9 @@
 
 @section('content')
 <div class="container-fluid">
-    <div class="card-body">
-        <form action="/penilaian_reka_bentuk_bangunan/muat_turun_sijil/{id}" method="post" enctype="multipart/form-data">
-            @csrf
+    <div class="card-body" id="skorkadpenilaian">
+        {{-- <form action="/penilaian_reka_bentuk_bangunan/muat_turun_sijil/{id}" method="post" enctype="multipart/form-data">
+            @csrf --}}
             {{-- @method('PUT') --}}
 
                 <div class="row mx-3">
@@ -198,11 +198,51 @@
 
                 <!--BUTTON MUAT TURUN SIJIL-->
                 <div class="mb-3 text-center">
-                    <button class="btn btn-primary">Muat Turun</button>
+                    <button class="btn btn-primary" id="download">Muat Turun</button>
                 </div>
-        </form> <!--Form-->
+        {{-- </form> <!--Form--> --}}
     </div> <!--Card Body-->
 </div> <!--Container Fluid-->
 
+<!----JavaScript---->
+<!--Web Page to pdf-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+<!--Download Web Page to PDF without margin-->
+{{-- <script>
+window.onload = function(){
+    document.getElementById("download")
+    .addEventListener("click",()=>{
+        const skorkadpenilaian = this.document.getElementById("skorkadpenilaian");
+        console.log(skorkadpenilaian); 
+        console.log(window);
+        html2pdf().from(skorkadpenilaian).save(); 
+    })
+    
+}
+</script> --}}
+
+
+<!--Download Web Page to PDF with margin-->
+<script>
+    window.onload = function(){
+        document.getElementById("download")
+        .addEventListener("click",()=>{
+            const skorkadpenilaian = this.document.getElementById("skorkadpenilaian");
+            console.log(skorkadpenilaian); 
+            console.log(window);
+            
+            var opt = {
+                margin:       0.5,
+                filename:     'myfile.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2 },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().from(skorkadpenilaian).set(opt).save(); 
+        })
+        
+    }
+    </script>
 
 @endsection

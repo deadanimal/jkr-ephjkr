@@ -202,6 +202,8 @@ Route::middleware('auth')->group(function () {
      Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak/{id}', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak_form']);
     //  Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
 
+    //Validasi Permarkahan Bangunan
+    
     // Penilaian Reka Bentuk Jalan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukJalanController::class);
     Route::get('/penilaian_reka_bentuk_jalan', [PenilaianRekaBentukJalanController::class, 'index']);
@@ -227,6 +229,7 @@ Route::middleware('auth')->group(function () {
     //Route::post('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'create']);
     Route::get('/verifikasi_permarkahan_jalan/melantik_penilai_jalan', [VerifikasiPermarkahanJalanController::class, 'melantik_penilai_jalan']);
     Route::post('/verifikasi_permarkahan_jalan/senarai_projek_create', [VerifikasiPermarkahanJalanController::class, 'senarai_projek_create']);
+
 
 
 });
