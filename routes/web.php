@@ -151,5 +151,7 @@ Route::middleware('auth')->group(function () {
      Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak/{id}', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak_form']);
     //  Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
 
+    //Validasi Permarkahan Bangunan
+
 
 });

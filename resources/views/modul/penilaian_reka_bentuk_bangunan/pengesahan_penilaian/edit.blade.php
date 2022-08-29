@@ -15,6 +15,16 @@ thead {
     background-color: #EB5500;
 }
 
+/* .scrollbar {
+
+    scrollbar-color: auto;
+  
+      height: 150px;
+      width: 200px;
+      overflow-y: scroll;
+      background-color: lightgreen;
+} */
+
 
 
     
@@ -1582,10 +1592,14 @@ thead {
 
 
 
-</table>
+        </table>
 
-</div>
+    </div>
 
+        <div class="mt-3 text-center">
+            <button type="submit" class="btn btn-secondary">Tolak</button>
+            <button type="submit" class="btn btn-primary">Sah</button>
+        </div>
 
 </div>
 <div class="container mt-10">
