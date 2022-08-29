@@ -206,7 +206,8 @@
 
                 <!--BUTTON MUAT TURUN SIJIL-->
                 <div class="mb-3 text-center">
-                    <button class="btn btn-primary">Muat Turun</button>
+                    {{-- <button class="btn btn-primary">Muat Turun</button> --}}
+                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_gpss/papar_sijil">Muat Turun</a>
                 </div>
         </form> <!--Form-->
     </div> <!--Card Body-->

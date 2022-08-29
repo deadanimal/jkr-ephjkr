@@ -599,7 +599,7 @@
                             {{-- Papar dan Muat Turun Skor Kad Penilaian Reka Bentuk --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/sijil_verifikasi_gpss') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_gpss/papar_sijil">
+                                    href="/penilaian_reka_bentuk_gpss/paparan_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/sijil_verifikasi_gpss') ? 'text-dark' : '' }}">Papar
