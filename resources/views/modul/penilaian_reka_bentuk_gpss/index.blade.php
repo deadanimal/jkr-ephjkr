@@ -61,7 +61,7 @@
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
                     <td>
-                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="button" class="btn btn-warning">DAFTAR</a>
+                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="button" class="btn btn-warning" data-placement="bottom" >DAFTAR</a>
                     </td>
                 </tr>
             </tbody>
