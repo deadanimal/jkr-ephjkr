@@ -16,6 +16,7 @@ class SelenggaraStatusMaklumBalasController extends Controller
     {
         //
         $status_maklum_balas = MaklumBalas::all();
+        // dd($status_maklum_balas);
         return view('modul.pengurusan_maklumat.selenggara.status_maklum_balas.index', [
             'status_maklum_balas'=>$status_maklum_balas
         ]);
@@ -41,6 +42,12 @@ class SelenggaraStatusMaklumBalasController extends Controller
     public function store(Request $request)
     {
         //
+        $status_maklum_balas = new MaklumBalas();
+        $status_maklum_balas->statusMaklumbalas = $request->statusMaklumbalas;
+
+        $status_maklum_balas->save();
+
+        return redirect('/pengurusan_maklumat/selenggara/status_maklum_balas');
     }
 
     /**
@@ -63,6 +70,7 @@ class SelenggaraStatusMaklumBalasController extends Controller
     public function edit($id)
     {
         //
+        return view('modul.pengurusan_maklumat.selenggara.status_maklum_balas.edit');
     }
 
     /**
@@ -86,5 +94,9 @@ class SelenggaraStatusMaklumBalasController extends Controller
     public function destroy($id)
     {
         //
+        $status_maklum_balas = MaklumBalas::find($id);
+        $status_maklum_balas->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/selenggara/status_maklum_balas');
     }
 }

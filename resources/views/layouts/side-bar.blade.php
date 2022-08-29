@@ -263,8 +263,8 @@
                             <ul class="nav-item collapse {{ Request::is('pengurusan_maklumat/pendaftaran_projek/*') ? 'show' : 'false' }} my-1"
                                 id="pendaftaran_projek">
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Papar Senarai Projek</span>
                                         </div>

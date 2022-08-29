@@ -36,7 +36,7 @@
                         <label class="col-form-label">Jenis Hebahan Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="hebahan" type="text"/>
+                        <input class="form-control" name="tajukHebahan" type="text"/>
                     </div>
                     
     

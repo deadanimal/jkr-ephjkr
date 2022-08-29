@@ -73,6 +73,7 @@ class SelenggaraStatusController extends Controller
     public function edit($id)
     {
         //
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_status.edit');
     }
 
     /**
@@ -85,6 +86,9 @@ class SelenggaraStatusController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $selenggara_status = StatusProjek::find($id);
+        StatusProjek::create(['statusProjek' => $request->statusProjek]);
+        return redirect('/pengurusan_maklumat/selenggara/selanggara_status');
     }
 
     /**
@@ -93,11 +97,12 @@ class SelenggaraStatusController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SelenggaraStatusController $selenggara_status)
+    public function destroy($id)
     {
         //
+        $selenggara_status = StatusProjek::find($id);
         $selenggara_status->delete();
         alert()->success('Maklumat telah dihapuskan', 'Berjaya');
-        return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_status');
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Projek;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class VerifikasiPermarkahanJalanController extends Controller
@@ -29,7 +30,7 @@ class VerifikasiPermarkahanJalanController extends Controller
     public function create()
     {
         //
-        return view('modul.verifikasi_permarkahan_jalan.papar_senarai_projek.index');
+        
     }
 
     /**
@@ -41,6 +42,7 @@ class VerifikasiPermarkahanJalanController extends Controller
     public function store(Request $request)
     {
         //
+        
     }
 
     /**
@@ -93,5 +95,11 @@ class VerifikasiPermarkahanJalanController extends Controller
     {
         // papar mcm index tapi ada button utk pengesahan
         return view('modul.verifikasi_permarkahan_jalan.melantik_penilai_jalan.index');
+    }
+
+    public function senarai_projek_create()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.verifikasi_permarkahan_jalan.papar_senarai_projek.create');
     }
 }

@@ -41,6 +41,17 @@ class SelenggaraHebahanController extends Controller
     public function store(Request $request)
     {
         //
+        // SelenggaraHebahanController::create(['tajukHebahan' => $request->tajukHebahan]);
+        // return redirect('/pengurusan_maklumat/selenggara/selenggara_hebahan');
+        
+        $selenggara_hebahan = new Hebahan;
+        $selenggara_hebahan->tajukHebahan = $request->tajukHebahan;
+        
+        
+        $selenggara_hebahan->save();
+        
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_hebahan');
     }
 
     /**
@@ -63,6 +74,7 @@ class SelenggaraHebahanController extends Controller
     public function edit($id)
     {
         //
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_hebahan.edit');
     }
 
     /**
@@ -75,6 +87,9 @@ class SelenggaraHebahanController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $selenggara_hebahan = Hebahan::find($id);
+        Hebahan::create(['tajukHebahan' => $request->tajukHebahan]);
+        return redirect('/pengurusan_maklumat/selenggara/selanggara_hebahan');
     }
 
     /**
@@ -86,5 +101,9 @@ class SelenggaraHebahanController extends Controller
     public function destroy($id)
     {
         //
+        $selenggara_hebahan = Hebahan::find($id);
+        $selenggara_hebahan->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_hebahan');
     }
 }

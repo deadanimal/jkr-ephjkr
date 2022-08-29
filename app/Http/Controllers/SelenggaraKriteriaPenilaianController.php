@@ -17,7 +17,7 @@ class SelenggaraKriteriaPenilaianController extends Controller
         //
         $selenggara_kriteria = KriteriaPhjkrJalan::all();
         return view('modul.pengurusan_maklumat.selenggara.kriteria_penilaian.index', [
-            'selenggara_hebahan'=>$selenggara_kriteria
+            'selenggara_kriteria'=>$selenggara_kriteria
         ]);
     }
 
@@ -29,6 +29,7 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.selenggara.kriteria_penilaian.create');
     }
 
     /**

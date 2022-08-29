@@ -31,6 +31,13 @@
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Projek:</label>
+                        <select class="form-select js-choice" id="projek" name="projek"
+                            data-options='{"removeItemButton":true,"placeholder":true}'>
+                            <option value="">Sila pilih</option>
+                            @foreach ($projek as $projek)
+                                <option value="{{ $projek->namaProjek }}">{{ $projek->namaProjek }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="namaFAQ" type="text"/>
@@ -38,6 +45,13 @@
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Syarikat/Cawangan:</label>
+                        <select class="form-select js-choice" id="projek" name="projek"
+                            data-options='{"removeItemButton":true,"placeholder":true}'>
+                            <option value="">Sila pilih</option>
+                            @foreach ($user as $user)
+                                <option value="{{ $user->namaSyarikat }}">{{ $user->namaSyarikat }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="soalanFAQ" type="text"/>
