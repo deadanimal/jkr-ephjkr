@@ -47,9 +47,9 @@
                             @foreach ($faq as $f)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $f->namaFAQ }}</td>
-                                    <td>{{ $f->soalanFAQ }}</td>
-                                    <td>{{ $f->JawapanFAQ }}</td>
+                                    <td>{{ $f->namaProjek }}</td>
+                                    <td>{{ $f->jenisKategori }}</td>
+                                    <td>{{ $f->Kategori }}</td>
                                     
                                     <td>
                                         <div class="row">
