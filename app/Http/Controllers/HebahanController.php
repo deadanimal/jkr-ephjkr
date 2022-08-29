@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreHebahanRequest;
 use App\Http\Requests\UpdateHebahanRequest;
 use App\Models\Hebahan;
+use Illuminate\Support\Facades\Auth;
 
 class HebahanController extends Controller
 {
@@ -16,6 +17,10 @@ class HebahanController extends Controller
     public function index()
     {
         //
+        //
+        return view('modul.pengurusan_maklumat.hebahan.index', [
+            'hebahan' => Hebahan::all()
+        ]);
     }
 
     /**
@@ -26,6 +31,7 @@ class HebahanController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.hebahan.create');
     }
 
     /**
@@ -37,6 +43,13 @@ class HebahanController extends Controller
     public function store(StoreHebahanRequest $request)
     {
         //
+        $h = new Hebahan;
+        $h->tajukHebahan = $request->tajukHebahan;
+        $h->jenisHebahan = $request->jenisHebahan;
+        $h->user_id = Auth::id();
+        $h->save();
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/hebahan');
     }
 
     /**
@@ -59,6 +72,9 @@ class HebahanController extends Controller
     public function edit(Hebahan $hebahan)
     {
         //
+        return view('modul.pengurusan_maklumat.hebahan.edit', [
+            'h' => $hebahan
+        ]);
     }
 
     /**
@@ -71,6 +87,13 @@ class HebahanController extends Controller
     public function update(UpdateHebahanRequest $request, Hebahan $hebahan)
     {
         //
+        $h = $hebahan;
+        $h->tajukHebahan = $request->tajukHebahan;
+        $h->jenisHebahan = $request->jenisHebahan;
+        $h->user_id = Auth::id();
+        $h->save();
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/hebahan');
     }
 
     /**
@@ -82,5 +105,8 @@ class HebahanController extends Controller
     public function destroy(Hebahan $hebahan)
     {
         //
+        $hebahan->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/hebahan');
     }
 }

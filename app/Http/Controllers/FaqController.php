@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreFaqRequest;
 use App\Http\Requests\UpdateFaqRequest;
 use App\Models\Faq;
+use Illuminate\Support\Facades\Auth;
 
 class FaqController extends Controller
 {
@@ -16,6 +17,9 @@ class FaqController extends Controller
     public function index()
     {
         //
+        return view('modul.pengurusan_maklumat.faq.index', [
+            'faq' => Faq::all()
+        ]);
     }
 
     /**
@@ -26,6 +30,7 @@ class FaqController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.faq.create');
     }
 
     /**
@@ -37,6 +42,14 @@ class FaqController extends Controller
     public function store(StoreFaqRequest $request)
     {
         //
+        $f = new Faq;
+        $f->namaFAQ = $request->namaFAQ;
+        $f->soalanFAQ = $request->soalanFAQ;
+        $f->JawapanFAQ = $request->JawapanFAQ;
+        $f->user_id = Auth::id();
+        $f->save();
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/faq');
     }
 
     /**
@@ -58,7 +71,10 @@ class FaqController extends Controller
      */
     public function edit(Faq $faq)
     {
-        //
+        
+        return view('modul.pengurusan_maklumat.faq.edit', [
+            'f' => $faq
+        ]);
     }
 
     /**
@@ -71,6 +87,15 @@ class FaqController extends Controller
     public function update(UpdateFaqRequest $request, Faq $faq)
     {
         //
+        $f = $faq;
+        $f->namaFAQ = $request->namaFAQ;
+        $f->soalanFAQ = $request->solanFAQ;
+        $f->JawapanFAQ = $request->JawapanFAQ;
+        $f->user_id = Auth::id();
+        $f->save();
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/faq');
+
     }
 
     /**
@@ -82,5 +107,9 @@ class FaqController extends Controller
     public function destroy(Faq $faq)
     {
         //
+        $faq->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/faq');
     }
 }
+
