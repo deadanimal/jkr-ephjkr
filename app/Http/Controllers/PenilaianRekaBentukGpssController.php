@@ -126,7 +126,7 @@ class PenilaianRekaBentukGpssController extends Controller
     {
         // simpan skor penilaian
 
-        return redirect('//penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
+        return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
     }
 
     public function skor_penilaian_arkitek()
@@ -250,8 +250,10 @@ class PenilaianRekaBentukGpssController extends Controller
 
     public function createPDF(){
 
-        $pdf = PDF::loadView('/modul/penilaian_reka_bentuk_gpss/paparsijil');
+        $details =['title' => 'test'];
+        $pdf = PDF::loadView('modul.penilaian_reka_bentuk_gpss.papar_sijil.index',$details);
         return $pdf->download('sijil.pdf');
  
     }
+
 }
