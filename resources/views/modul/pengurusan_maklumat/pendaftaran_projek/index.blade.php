@@ -57,6 +57,7 @@
                                     <td>{{ $pp->namaProjek }}</td>
                                     <td>{{ $pp->alamatProjek }}</td>
                                     <td>{{ $pp->statusProjek }}</td>
+                                    {{-- <td>{{ $pp->status->statusProjek }}</td> --}}
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
                                     
                                     
