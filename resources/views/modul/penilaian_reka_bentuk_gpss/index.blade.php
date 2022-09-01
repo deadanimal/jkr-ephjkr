@@ -60,7 +60,7 @@
                     <td>Hospital Seri Iskandar</td>
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
-                    <td style="text-align: center"><a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="submit" class="btn btn-warning margin-auto">DAFTAR</a></td>
+                    <td style="text-align: center"><a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="submit" class="btn btn-warning margin-auto">DAFTAR</a></td>
                     
                 </tr>
             </tbody>

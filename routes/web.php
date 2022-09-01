@@ -131,25 +131,23 @@ Route::middleware('auth')->group(function () {
 
     
 
-    // Penilaian Reka Bentuk Gpss
+    // Penilaian Reka Bentuk Gpss - papar projek
     Route::get('/penilaian_reka_bentuk_gpss', [PenilaianRekaBentukGpssController::class, 'index']);
-    // papar projek utk pemudahcara
-    Route::get('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara', [PenilaianRekaBentukGpssController::class, 'papar_projek']);
     // papar form pemudah cara
-    Route::get('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}', [PenilaianRekaBentukGpssController::class, 'pemudah_cara']);
+    Route::get('/penilaian_reka_bentuk_gpss/pemudah_cara/create', [PenilaianRekaBentukGpssController::class, 'pemudah_cara']);
     //action form pemudah cara
     Route::post('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}', [PenilaianRekaBentukGpssController::class, 'melantik_pemudah_cara']);
 
-    // papar projek utk skor penilaian
+    // papar projek utk skor penilaian, this should be for Sekretariat view
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian', [PenilaianRekaBentukGpssController::class, 'skor_penilaian']);
-    // papar form rating
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'papar_skor_penilaian']);
-    // action form rating
-    Route::post('/penilaian_reka_bentuk_gpss/simpan_skor/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor']);
+    // // papar form rating
+    // Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'papar_skor_penilaian']);
+    // // action form rating
+    // Route::post('/penilaian_reka_bentuk_gpss/simpan_skor/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor']);
 
     // arkitek form
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek']);
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek']);
+    Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek']);
     //arkitek form (second page)
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page2']);
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page2']);

@@ -15,8 +15,11 @@ class PenilaianRekaBentukGpssController extends Controller
      */
     public function index()
     {
-        // paparan senarai projek
-        return view('modul.penilaian_reka_bentuk_gpss.index');
+        // paparan senarai projek untuk Ketua Pasukan/Penolong, dummy data, should be from pendaftaran projek
+        // $projeks = Projek::all();
+        return view('modul.penilaian_reka_bentuk_gpss.index',[
+            // 'projeks'=> $projeks,
+        ]);
     }
     /**
      * Show the form for creating a new resource.
@@ -80,17 +83,20 @@ class PenilaianRekaBentukGpssController extends Controller
         //
     }
     # bawah ni pemudah cara
-    public function papar_projek()
-     {
-         // papar table projek with button melantik pemudah cara
-         $projeks = Projek::all();
-         return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
-             'projeks'=> $projeks
-         ]);
-     }
-    public function pemudah_cara($id)
+    // public function papar_projek()
+    //  {
+    //    //papar table projek with button melantik pemudah cara
+    //    //should be isi form pemudahcara - create()
+         
+    //      return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
+    //         'projeks'=> $projeks
+    //      ]);
+    //  }
+    public function pemudah_cara()
     {
         // papar form pemudah cara with id projek
+
+        //should
         // $projek = Projek::find($id);
         return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.create');
     }
@@ -109,37 +115,69 @@ class PenilaianRekaBentukGpssController extends Controller
 
         $pemudah_cara->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
+        return redirect('/penilaian_reka_bentuk_gpss');
     }
-    # bawah ni utk skor penilaian
+    # bawah ni utk skor penilaian - Pemudah Cara
     public function skor_penilaian()
     {
         // papar mcm index tapi ada button utk skor penilaian
+        // pemudah cara view, akan memasukkan markah penilaian dan memuat naik dokumen
+        // below view should be in paparan senarai projek, sementara
         return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.index');
     }
-    public function papar_skor_penilaian($id)
-    {
-        // papar form skor penilaian with id projek
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit');
-    }
-    public function simpan_skor(Request $request, $id)
-    {
-        // simpan skor penilaian
+    // public function papar_skor_penilaian($id)
+    // {
+    //     // papar form skor penilaian with id projek
+    //     // this one should be for sekretariat
+    //     return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.edit');
+    // }
+    // public function simpan_skor(Request $request, $id)
+    // {
+    //     // simpan skor penilaian
 
-        return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
-    }
+    //     return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
+    // }
 
     public function skor_penilaian_arkitek()
     {
-        // papar 1st page GPSS architectural works
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek.index');
+        // 1st form(create) page GPSS architectural works for Pemudah Cara
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek.create');
     }
 
     public function simpan_skor_penilaian_arkitek(Request $request, $id)
     {
         // simpan skor penilaian
         $gpss_bangunan = new KriteriaGpssBangunan;
-        $gpss_bangunan->markahAwR = $request->input('markahAwR');
+        $gpss_bangunan->AwRoofRoofTilesClayTiles = $request->input('AwRoofRoofTilesClayTiles');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofTilesConcreteTiles');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofTilesMetalRoofing');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofTilesShingles');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationRockwool');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationGlasswool');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationFoam');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationAlumFoil');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationUndersheeting');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofEavesMetal');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofEavesFiberCement');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofEavesPlasterboard');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsMetal');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsFiberCement');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsPlasterboard');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsTimber');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterUpvc');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterGallron');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterAluminium');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterStainSteel');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesUpvc');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesGallron');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesAluminium');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesStainSteel');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofCellingPlasterboards');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofCellingFibreCement');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofCellingMetalStrip');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofTrussTimber');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofTrussMetal');
+        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofTrussTimber');
         // $gpss_bangunan->markahAwW = $request->input('markahAwW');
         // $gpss_bangunan->markahAwD = $request->input('markahAwD');
         // $gpss_bangunan->markahAwF = $request->input('markahAwF');
