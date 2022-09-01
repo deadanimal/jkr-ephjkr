@@ -206,6 +206,7 @@ Route::middleware('auth')->group(function () {
 
     //Validasi Permarkahan Bangunan
     
+    
     // Penilaian Reka Bentuk Jalan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukJalanController::class);
     Route::get('/penilaian_reka_bentuk_jalan', [PenilaianRekaBentukJalanController::class, 'index']);

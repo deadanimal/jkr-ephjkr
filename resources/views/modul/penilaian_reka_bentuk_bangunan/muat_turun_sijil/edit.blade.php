@@ -197,9 +197,24 @@
     
 
                 <!--BUTTON MUAT TURUN SIJIL-->
-                <div class="mb-3 text-center">
-                    <button class="btn btn-primary" id="download">Muat Turun</button>
-                </div>
+                <div class="dropdown text-center">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Muat Turun
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" id="download">Skor Kad Penilaian</a></li>
+                      <li><a class="dropdown-item" id="embedded_sijil">Sijil Verifikasi Penilaian Reka Bentuk Bangunan </a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+
+
+                {{-- <div class="mb-3 text-center">
+                    <button class="btn btn-primary dropdown-toggle" id="download">Muat Turun</button>
+                </div> --}}
+
+
+
         {{-- </form> <!--Form--> --}}
     </div> <!--Card Body-->
 </div> <!--Container Fluid-->
