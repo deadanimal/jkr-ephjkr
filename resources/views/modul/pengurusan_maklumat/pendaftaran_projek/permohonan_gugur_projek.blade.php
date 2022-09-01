@@ -9,7 +9,7 @@
                     <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Pendaftaran Projek</a>
                 </li>
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Papar Senarai Projek
+                    Papar Permohonan Gugur Projek
                 </li>
             </ol>
         </nav>
@@ -30,12 +30,6 @@
         </div>
     </div>
 
-    <div class="row mt-3">
-        <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/show" class="btn btn-primary">Papar</a>
-        </div>
-    </div>
-
     <div class="row mt-2">
         <div class="col">
             <div class="card">
@@ -48,6 +42,7 @@
                                 <th class="sort">Alamat Projek</th>
                                 <th class="sort">Status Projek</th>
                                 <th class="sort">Jenis Kategori</th>
+                                <th class="sort">Tindakan</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
@@ -57,10 +52,12 @@
                                     <td>{{ $pp->namaProjek }}</td>
                                     <td>{{ $pp->alamatProjek }}</td>
                                     <td>{{ $pp->statusProjek }}</td>
-                                    {{-- <td>{{ $pp->status->statusProjek }}</td> --}}
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
-                                    
-                                    
+                                    <td>
+                                        <div class="col text-end">
+                                            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>
+                                        </div> 
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

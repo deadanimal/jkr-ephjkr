@@ -272,8 +272,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pendaftaran Projek</span>
                                         </div>
@@ -281,8 +281,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pemilihan Ahli Pasukan dan Peranan</span>
                                         </div>
@@ -290,8 +290,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pengesahan Pendaftaran Projek</span>
                                         </div>
@@ -299,8 +299,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Papar dan Muat Turun Matlumat Projek</span>
                                         </div>
@@ -308,8 +308,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/senarai_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek/senarai_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Permohonan Gugur Projek</span>
                                         </div>

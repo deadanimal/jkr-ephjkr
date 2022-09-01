@@ -36,7 +36,7 @@
                         <label class="col-form-label">ID Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="id" type="text"/>
+                        <input class="form-control" name="id_ruj_skala" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
@@ -106,7 +106,7 @@
                         <label class="col-form-label">ID Status Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="jumlahblokBangunan" type="text"/>
+                        <input class="form-control" name="statusProjek" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
@@ -120,7 +120,7 @@
                         <label class="col-form-label">Tarikh Jangka Siap Pembinaan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="tarikhJangkaSiapPembinaan" type="text"/>
+                        <input class="form-control" name="tarikhJangkaSiapPembinaan" type="date"/>
                     </div>
 
                     <div class="col-3 mb-2">
@@ -162,7 +162,7 @@
                         <label class="col-form-label">Peranan Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="jumlahblokBangunan" type="text"/>
+                        <input class="form-control" name="" type="text"/>
                     </div>
 
                     
