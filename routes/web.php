@@ -17,9 +17,9 @@ use App\Http\Controllers\SelenggaraPerananController;
 use App\Http\Controllers\SelenggaraStatusController;
 use App\Http\Controllers\SelenggaraHebahanController;
 use App\Http\Controllers\StatusMaklumBalasController;
-use App\Http\Controllers\KriteriaPenilaianController;
+use App\Http\Controllers\SelenggaraKriteriaPenilaianController;
 use App\Http\Controllers\SelenggaraStatusMaklumBalasController;
-use App\Http\Controllers\LogAuditController;
+// use App\Http\Controllers\LogAuditController;
 use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
 use App\Http\Controllers\VerifikasiPermarkahanJalanController;
 use App\Http\Controllers\VerifikasiPermarkahanGpssController;
@@ -91,8 +91,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('/pengurusan_maklumat/selenggara/selenggara_status', SelenggaraStatusController::class);
     Route::resource('/pengurusan_maklumat/selenggara/selenggara_hebahan', SelenggaraHebahanController::class);
     Route::resource('/pengurusan_maklumat/selenggara/status_maklum_balas', SelenggaraStatusMaklumBalasController::class);
-    Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', KriteriaPenilaianController::class);
-    Route::resource('/pengurusan_maklumat/selenggara/log_audit', LogAuditController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', SelenggaraKriteriaPenilaianController::class);
+    // Route::resource('/pengurusan_maklumat/selenggara/log_audit', LogAuditController::class);
 
     // Penilaian Reka Bentuk Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);
