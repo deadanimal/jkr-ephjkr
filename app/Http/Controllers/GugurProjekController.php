@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Projek;
-use App\Models\SelenggaraKriteriaPenilaian;
 use Illuminate\Http\Request;
 
-class SelenggaraKriteriaPenilaianController extends Controller
+class GugurProjekController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +15,9 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function index()
     {
         //
-        $kriteria_penilaian = SelenggaraKriteriaPenilaian::all();
-        return view('modul.pengurusan_maklumat.selenggara.kriteria_penilaian.index', [
-            'kriteria_penilaian'=>$kriteria_penilaian
+        $gugur_projek = Projek::all();
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
+            'gugur_projek'=>$gugur_projek
         ]);
     }
 
@@ -30,7 +29,6 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function create()
     {
         //
-        return view('modul.pengurusan_maklumat.selenggara.kriteria_penilaian.create');
     }
 
     /**
@@ -42,8 +40,6 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function store(Request $request)
     {
         //
-        Projek::create(['namaProjek' => $request->namaProjek]);
-        return redirect('/pengurusan_maklumat/selenggara/kriteria_penilaian');
     }
 
     /**
@@ -66,10 +62,6 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function edit($id)
     {
         //
-        $kriteria_penilaian = Projek::find($id);
-        return view('modul.pengurusan_maklumat.selenggara.kriteria_penilaian.edit', [
-            'kriteria_penilaian' => $kriteria_penilaian,
-        ]);
     }
 
     /**
@@ -82,8 +74,6 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function update(Request $request, $id)
     {
         //
-        Projek::where('id',$id)->update(['namaProjek' => $request->namaProjek]);    
-        return redirect('/pengurusan_maklumat/selenggara/kriteria_penilaian');
     }
 
     /**
@@ -95,9 +85,5 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function destroy($id)
     {
         //
-        $kriteria_penilaian = Projek::find($id);
-        $kriteria_penilaian->delete();
-        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
-        return redirect('/pengurusan_maklumat/selenggara/kriteria_penilaian');
     }
 }
