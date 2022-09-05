@@ -121,7 +121,7 @@
                             <h5 class="h6">Kaedah Pelaksaan/Jenis Perolehan:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $mt-> }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->kaedahPelaksanaan }}</h5>
                         </div>
 
                         <div class="col-4 mb-2">
@@ -132,7 +132,49 @@
                         </div>
 
                         <div class="col-4 mb-2">
-                            <h5 class="h6">Negeri:</h5>
+                            <h5 class="h6">Tarikh Kemaskini:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt-> }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Jenis Projek:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->jenisProjek }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Jenis Kategori:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->jenisKategori }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Nama Pemudah Cara:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt-> }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Nama Penilai Jalan:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt-> }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Nama ahli Pasukan:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->negeri }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Peranan Ahli Pasukan:</h5>
                         </div>
                         <div class="col-8 mb-2">
                             <h5 class="h6" style="font-weight: 700;">{{ $mt->negeri }}</h5>
