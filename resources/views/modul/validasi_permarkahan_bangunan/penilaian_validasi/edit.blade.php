@@ -137,12 +137,12 @@
                                 </td>
 
                                 <td colspan="2">1</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL"/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL"/></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off"/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                <td colspan="2">findTotalML</td>
                                 <td colspan="4">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
                                 <td>Tidak Berkenaan</td>
                                 <td>
@@ -718,8 +718,8 @@
                             <tr class="pg-1" align="center">
                                 <th colspan="3">Jumlah markah TL</th>
                                 <td colspan="2">11</td>
-                                <td colspan="2"><input class="form-control" id="total_amount_ms" type="text" autocapitalize="off" name="markahTL1" id="markahTL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
-                                <td colspan="2"><input class="form-control" id="total_amount_mr" type="text" autocapitalize="off" name="markahTL2" id="markahTL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
+                                <td colspan="2"><input class="form-control" id="total_amount_ms" type="text" autocapitalize="off" name="markahTL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
+                                <td colspan="2"><input class="form-control" id="total_amount_mr" type="text" autocapitalize="off" name="markahTL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -728,6 +728,9 @@
                                 <td colspan="3"></td>
                             </tr> 
                     </table>
+
+                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button>
 
                     <!--Testing-->
                     {{-- <a href="#" onClick="autoFill(); return true;" >Click to Autofill</a>
@@ -2611,73 +2614,63 @@
 
                     <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
-                </div>          <!--Scrollbar-->
+        </div>          <!--Scrollbar-->
 
 
                     <!--Button Simpan (TOOLTIPS)-->
                     <!--Page 1-->
-                    <div class="mt-3 text-center">
-                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
+                    <div class="mt-3 text-center pg-1">
+                        <button class="btn btn-primary pg-1" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-1" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button2()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 2-->
-                    {{-- <div class="mt-3 text-center pg-2">
+                    <div class="mt-3 text-center pg-2">
                         <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
-                    </div> --}}
+                    </div>
 
                     <!--Page 3-->
-                    {{-- <div class="mt-3 text-center pg-3">
+                    <div class="mt-3 text-center pg-3">
                         <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
-                    </div> --}}
+                    </div>
 
                     <!--Page 4-->
-                    {{-- <div class="mt-3 text-center pg-4">
+                    <div class="mt-3 text-center pg-4">
                         <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
-                    </div> --}}
+                    </div>
 
                     <!--Page 5-->
-                    {{-- <div class="mt-3 text-center pg-5">
+                    <div class="mt-3 text-center pg-5">
                         <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
-                    </div> --}}
+                    </div>
 
                     <!--Page 6-->
-                    {{-- <div class="mt-3 text-center pg-6">
+                    <div class="mt-3 text-center pg-6">
                         <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
-                    </div> --}}
+                    </div>
 
                     <!--Page 7-->
-                    {{-- <div class="mt-3 text-center pg-7">
+                    <div class="mt-3 text-center pg-7">
                         <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
-                    </div> --}}
+                    </div>
 
 
 
@@ -2694,7 +2687,24 @@
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
             })
-            </script>  
+            </script> 
+            
+            <!--ML: Markah Validasi-->
+            <!--------------------------------------- MarkahML ---------------------------------------->
+            <script>
+                function findTotalML() {
+                var arr = document.getElementsByClassName('sum_ml');
+                var tot = 0;
+                for (var i = 0; i < arr.length; i++) {
+                    if (parseFloat(arr[i].value))
+                    tot += parseFloat(arr[i].value);
+                }
+                document.getElementById('total_amount_ml').value = tot;
+            }
+
+            </script>
+
+
             
             <!--MS: Markah Sasaran-->
             <!--MR: Markah Rekabentuk-->

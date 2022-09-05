@@ -6,8 +6,8 @@
 @section('content')
 
 <div class="header">
-    Penilaian Reka Bentuk Bangunan 
-        <b class="pengesahan-penilaian">> Jana Keputusan Skor Kad</b>
+    Penilaian Verifikasi Permarkahan GPSS 
+    <b style="color: #0F5E31;">> Permohonan Rayuan</b>
 
     <h1 class="header-title">
         PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
@@ -44,6 +44,7 @@
                                                 <th class="text-center">Nama Projek</th>
                                                 <th class="text-center">Alamat</th>
                                                 <th class="text-center">Status</th>
+                                                <th class="text-center">Rayuan</th>
                                                 <th class="text-center">Tindakan</th> 
                                             </tr>
                                         </thead>
@@ -60,6 +61,7 @@
                                                 <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
                                                 <td style="text-align: center; vertical-align: middle;">Mukah</td>
                                                 <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
+                                                <td style="text-align: center; vertical-align: middle;">Rayuan Dibuat/Tiada</td>
                                                 <td style="text-align: center; vertical-align: middle;">
                                                     {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">
@@ -67,8 +69,8 @@
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_keputusan/edit" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Rayuan">Rayuan</a>
                                                 </td>
                                             </tr> 
                                         {{-- @endforeach --}}

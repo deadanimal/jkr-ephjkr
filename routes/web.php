@@ -193,9 +193,9 @@ Route::middleware('auth')->group(function () {
     // Verifikasi Permarkahan Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);
     Route::get('/verifikasi_permarkahan_bangunan', [VerifikasiPermarkahanBangunanController::class, 'index']);
-    // Route::get('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara', [PenilaianRekaBentukBangunanController::class, 'papar_projek']);
-    // Route::get('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}', [PenilaianRekaBentukBangunanController::class, 'pemudah_cara']);
-    // Route::post('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}', [PenilaianRekaBentukBangunanController::class, 'melantik_pemudah_cara']);
+    Route::get('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara', [VerifikasiPermarkahanBangunanController::class, 'papar_projek']);
+    Route::get('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara/{id}', [VerifikasiPermarkahanBangunanController::class, 'pemudah_cara']);
+    Route::post('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara/{id}', [VerifikasiPermarkahanBangunanController::class, 'melantik_pemudah_cara']);
     // Route::get('/penilaian_reka_bentuk_bangunan/skor_penilaian', [PenilaianRekaBentukBangunanController::class, 'skor_penilaian']);
     // Route::get('/penilaian_reka_bentuk_bangunan/skor_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_skor_penilaian']);
     // Route::post('/penilaian_reka_bentuk_bangunan/simpan_skor/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_skor']);
@@ -218,6 +218,19 @@ Route::middleware('auth')->group(function () {
     Route::get('/validasi_permarkahan_bangunan/jana_keputusan/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_jana_keputusan']);
     Route::get('/validasi_permarkahan_bangunan/pengesahan_rayuan', [ValidasiPermarkahanBangunanController::class, 'pengesahan_rayuan']);
     Route::get('/validasi_permarkahan_bangunan/pengesahan_rayuan/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_pengesahan_rayuan']);
+    Route::get('/validasi_permarkahan_bangunan/jana_sijil', [ValidasiPermarkahanBangunanController::class, 'jana_sijil']);
+    Route::get('/validasi_permarkahan_bangunan/jana_sijil/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_jana_sijil']);
+    Route::post('/validasi_permarkahan_bangunan/jana_sijil/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_jana_sijil']);
+
+    //Ketua Pasukan/Pen Ketua Pasukan
+    Route::get('/validasi_permarkahan_bangunan/permohonan_rayuan', [ValidasiPermarkahanBangunanController::class, 'permohonan_rayuan']);
+    Route::get('/validasi_permarkahan_bangunan/permohonan_rayuan/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_permohonan_rayuan']);
+    Route::post('/validasi_permarkahan_bangunan/permohonan_rayuan/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_permohonan_rayuan']);
+
+    // Pasukan Validasi
+    Route::get('/validasi_permarkahan_bangunan/penilaian_validasi', [ValidasiPermarkahanBangunanController::class, 'penilaian_validasi']);
+    Route::get('/validasi_permarkahan_bangunan/penilaian_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_penilaian_validasi']);
+    Route::post('/validasi_permarkahan_bangunan/penilaian_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_penilaian_validasi']);
 
 
 

@@ -433,11 +433,11 @@
                             </li>
                             {{-- BANGUNAN (Verifikasi) Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pemudah_cara') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/pemudah_cara">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/melantik_pemudah_cara') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/melantik_pemudah_cara">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/melantik_pemudah_cara') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
@@ -609,8 +609,8 @@
                                     href="/validasi_permarkahan_bangunan/semakan_rawak">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil
-                                            Penilaian Verfikasi Pemarkahan</span>
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat 
+                                            Turun Skor</span>
                                     </div>
                                 </a>
                             </li>
@@ -647,8 +647,8 @@
                                     href="/validasi_permarkahan_bangunan/jana_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/jana_sijil') ? 'text-dark' : '' }}">Semakan Rawak 
-                                            dan Jana Sijil
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/jana_sijil') ? 'text-dark' : '' }}">
+                                            Jana Sijil
                                             </span>
                                     </div>
                                 </a>

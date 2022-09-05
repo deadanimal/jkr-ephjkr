@@ -163,6 +163,40 @@ class ValidasiPermarkahanBangunanController extends Controller
         return view('modul.validasi_permarkahan_bangunan.pengesahan_rayuan.edit');
     }
 
+    public function jana_sijil()
+    {
+        return view('modul.validasi_permarkahan_bangunan.jana_sijil.index');
+    }
+
+    public function papar_jana_sijil($id)
+    {
+        return view('modul.validasi_permarkahan_bangunan.jana_sijil.edit');
+    }
+
+    public function simpan_jana_sijil(Request $request, $id)
+    {
+        // submit form jana sijil
+        return redirect('/validasi_permarkahan_bangunan/form_jana_sijil');
+    }
+
+    #ketua pasukan/penolong ketua pasukan
+    public function permohonan_rayuan()
+    {
+        return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.index');
+    }
+
+    public function papar_permohonan_rayuan($id)
+    {
+        return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.edit');
+    }
+
+    public function simpan_permohonan_rayuan(Request $request, $id)
+    {
+        alert()->success('PERMOHONAN RAYUAN BERJAYA', 'Berjaya');
+        return redirect('/validasi_permarkahan_bangunan/form_permohonan_rayuan');
+    }
+
+    #Pasukan Validasi
     public function penilaian_validasi()
     {
         return view('modul.validasi_permarkahan_bangunan.penilaian_validasi.index');
@@ -171,14 +205,23 @@ class ValidasiPermarkahanBangunanController extends Controller
     public function papar_penilaian_validasi($id)
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan();
+        
 
-        return view('modul.validasi_permarkahan_bangunan.penilaian_validasi.edit',[
+        return view('modul.validasi_permarkahan_bangunan.penilaian_validasi.create',[
             'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         ]);
     }
 
     public function simpan_penilaian_validasi(Request $request, $id)
     {
+        // $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan();
+        $kriteria_phjkr_bangunan->markahTL = $request->input('markahTL');
+
+        $kriteria_phjkr_bangunan->save();
+
+        alert()->success('PENILAIAN VALIDASI BERJAYA', 'Berjaya');
         return redirect('/validasi_permarkahan_bangunan/penilaian_validasi');
     }
 

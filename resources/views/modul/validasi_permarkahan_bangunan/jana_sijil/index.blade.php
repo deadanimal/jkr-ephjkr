@@ -7,7 +7,7 @@
 
 <div class="header">
     Penilaian Reka Bentuk Bangunan 
-        <b class="pengesahan-penilaian">> Jana Keputusan Skor Kad</b>
+        <b class="pengesahan-penilaian">> Jana Sijil</b>
 
     <h1 class="header-title">
         PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
@@ -67,7 +67,7 @@
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_keputusan/edit" role="button"
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_sijil/edit" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 

@@ -173,6 +173,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_skor(Request $request, $id)
     {
+
         $markah_TL_total = $request->markahTL1 + $request->markahTL2;
         $markah_KT_total = $request->markahKT1 + $request->markahKT2;
         $markah_SB_total = $request->markahSB1 + $request->markahSB2;
@@ -186,7 +187,10 @@ class PenilaianRekaBentukBangunanController extends Controller
                             + $request->markahPA2 + $request->markahPD2 + $request->markahFL2 + $request->markahIN2;
 
 
+        // req all
+        // $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan;
+
 
         $kriteria_phjkr_bangunan->jenisKategori = $request->input('jenisKategori');
         $kriteria_phjkr_bangunan->markahTL = $markah_TL_total;

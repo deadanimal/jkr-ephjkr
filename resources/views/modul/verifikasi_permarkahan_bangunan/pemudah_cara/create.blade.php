@@ -1,16 +1,16 @@
 @extends('layouts.base')
+<!--from DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
+<link rel="stylesheet" href="/cssfile/style.css">
 
-
+<!-- Styles -->
 @section('content')
-
+<!--Title: Header-->
 <div class="header">
-    Penilaian Reka Bentuk Bangunan 
-        <b class="pengesahan-penilaian">> Jana Keputusan Skor Kad</b>
+        <b class="paparan-senarai-projek">Paparan Senarai Projek</b>
 
     <h1 class="header-title">
-        PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
+        PENILAIAN REKA BENTUK BANGUNAN
     </h1>
     <hr class="line-6">
     
@@ -31,12 +31,13 @@
           
         <div class="col-12">
             <div class="card-header">
+
                     <div class="mt-5 row">
                     
                             <!--TO ENABLE SCROLLBAR AT TABLES-->
                             {{-- <div class="table-responsive scrollbar"> --}}
                             
-                                <table class="table table-bordered line-table" style="width:100%" border="1px solid">
+                                <table class="table table-bordered line-table" style="width:100%">
                                         <thead class="text-white bg-orange-jkr">
                                             <tr>
                                                 <th class="text-center">Bil</th>
@@ -47,9 +48,7 @@
                                                 <th class="text-center">Tindakan</th> 
                                             </tr>
                                         </thead>
-                                    {{-- </table>  --}}
-
-                                    {{-- <table class="kotak" style="width:100%"> --}}
+                                    
                                     <tbody>
                                         <!--LOOPING TABLES-->
                                         {{-- @foreach ($projek as $key => $p) --}}
@@ -67,8 +66,8 @@
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_keputusan/edit" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
                                                 </td>
                                             </tr> 
                                         {{-- @endforeach --}}
