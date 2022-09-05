@@ -117,12 +117,12 @@ class PenilaianRekaBentukGpssController extends Controller
 
         return redirect('/penilaian_reka_bentuk_gpss');
     }
-    # bawah ni utk skor penilaian - Pemudah Cara
+    # Pemudah Cara - bawah ni utk skor penilaian
     public function skor_penilaian()
     {
         // papar mcm index tapi ada button utk skor penilaian
         // pemudah cara view, akan memasukkan markah penilaian dan memuat naik dokumen
-        // below view should be in paparan senarai projek, sementara
+        // below view should be in paparan senarai projek for pemudah cara, temporary
         return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.index');
     }
     // public function papar_skor_penilaian($id)
@@ -147,51 +147,75 @@ class PenilaianRekaBentukGpssController extends Controller
     public function simpan_skor_penilaian_arkitek(Request $request, $id)
     {
         // simpan skor penilaian
-        $gpss_bangunan = new KriteriaGpssBangunan;
-        $gpss_bangunan->AwRoofRoofTilesClayTiles = $request->input('AwRoofRoofTilesClayTiles');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofTilesConcreteTiles');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofTilesMetalRoofing');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofTilesShingles');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationRockwool');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationGlasswool');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationFoam');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationAlumFoil');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofInsulationUndersheeting');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofEavesMetal');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofEavesFiberCement');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofEavesPlasterboard');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsMetal');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsFiberCement');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsPlasterboard');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofFascialBoardsTimber');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterUpvc');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterGallron');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterAluminium');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofGutterStainSteel');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesUpvc');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesGallron');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesAluminium');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRainPipesStainSteel');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofCellingPlasterboards');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofCellingFibreCement');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofCellingMetalStrip');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofTrussTimber');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofTrussMetal');
-        $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofTrussTimber');
+        $gpss_bangunan = new KriteriaGpssBangunan($request->all());
+        // $gpss_bangunan->AwRoofRoofTilesClayTiles = $request->input('AwRoofRoofTilesClayTiles');
+        // $gpss_bangunan->AwRoofRoofTilesConcreteTiles = $request->input('AwRoofRoofTilesConcreteTiles');
+        // $gpss_bangunan->AwRoofRoofTilesMetalRoofing = $request->input('AwRoofRoofTilesMetalRoofing');
+        // $gpss_bangunan->AwRoofRoofTilesShingles = $request->input('AwRoofRoofTilesShingles');
+        // $gpss_bangunan->AwRoofRoofInsulationRockwool = $request->input('AwRoofRoofInsulationRockwool');
+        // $gpss_bangunan->AwRoofRoofInsulationGlasswool = $request->input('AwRoofRoofInsulationGlasswool');
+        // $gpss_bangunan->AwRoofRoofInsulationFoam = $request->input('AwRoofRoofInsulationFoam');
+        // $gpss_bangunan->AwRoofRoofInsulationAlumFoil = $request->input('AwRoofRoofInsulationAlumFoil');
+        // $gpss_bangunan->AwRoofRoofInsulationUndersheeting = $request->input('AwRoofRoofInsulationUndersheeting');
+        // $gpss_bangunan->AwRoofRoofEavesMetal = $request->input('AwRoofRoofEavesMetal');
+        // $gpss_bangunan->AwRoofRoofEavesFiberCement = $request->input('AwRoofRoofEavesFiberCement');
+        // $gpss_bangunan->AwRoofRoofEavesPlasterboard = $request->input('AwRoofRoofEavesPlasterboard');
+        // $gpss_bangunan->AwRoofFascialBoardsMetal = $request->input('AwRoofFascialBoardsMetal');
+        // $gpss_bangunan->AwRoofFascialBoardsFiberCement = $request->input('AwRoofFascialBoardsFiberCement');
+        // $gpss_bangunan->AwRoofFascialBoardsPlasterboard = $request->input('AwRoofFascialBoardsPlasterboard');
+        // $gpss_bangunan->AwRoofFascialBoardsTimber = $request->input('AwRoofFascialBoardsTimber');
+        // $gpss_bangunan->AwRoofGutterUpvc = $request->input('AwRoofGutterUpvc');
+        // $gpss_bangunan->AwRoofGutterGallron = $request->input('AwRoofGutterGallron');
+        // $gpss_bangunan->AwRoofGutterAluminium = $request->input('AwRoofGutterAluminium');
+        // $gpss_bangunan->AwRoofGutterStainSteel = $request->input('AwRoofGutterStainSteel');
+        // $gpss_bangunan->AwRoofRainPipesUpvc = $request->input('AwRoofRainPipesUpvc');
+        // $gpss_bangunan->AwRoofRainPipesGallron = $request->input('AwRoofRainPipesGallron');
+        // $gpss_bangunan->AwRoofRainPipesAluminium = $request->input('AwRoofRainPipesAluminium');
+        // $gpss_bangunan->AwRoofRainPipesStainSteel = $request->input('AwRoofRainPipesStainSteel');
+        // $gpss_bangunan->AwRoofCellingPlasterboards = $request->input('AwRoofCellingPlasterboards');
+        // $gpss_bangunan->AwRoofCellingFibreCement = $request->input('AwRoofCellingFibreCement');
+        // $gpss_bangunan->AwRoofCellingMetalStrip = $request->input('AwRoofCellingMetalStrip');
+        // $gpss_bangunan->AwRoofTrussTimber = $request->input('AwRoofTrussTimber');
+        // $gpss_bangunan->AwRoofTrussMetal = $request->input('AwRoofTrussMetal');
+        // $gpss_bangunan->AwRoofTrussTimber = $request->input('AwRoofTrussTimber');
+        // $gpss_bangunan->markahPRAwRoof = $request->input('markahPRAwRoof');
+        // $gpss_bangunan->AwWallWallTypesBricks = $request->input('AwWallWallTypesBricks');
+        // $gpss_bangunan->AwWallWallTypesTimber = $request->input('AwWallWallTypesTimber');
+        // $gpss_bangunan->AwWallWallTypesBlockwork = $request->input('AwWallWallTypesBlockwork');
+        // $gpss_bangunan->AwWallWallTypesReinforce = $request->input('AwWallWallTypesReinforce');
+        // $gpss_bangunan->AwWallWallTypesAerated = $request->input('AwWallWallTypesAerated');
+        // $gpss_bangunan->AwWallWallTypesGlass = $request->input('AwWallWallTypesGlass');
+        // $gpss_bangunan->AwWallWallTypesGypsum = $request->input('AwWallWallTypesGypsum');
+        // $gpss_bangunan->AwWallWallTypesCement = $request->input('AwWallWallTypesCement');
+        // $gpss_bangunan->AwWallWallTypesFibreCement = $request->input('AwWallWallTypesFibreCement');
+        // $gpss_bangunan->AwWallFinishesPaints = $request->input('AwWallFinishesPaints');
+        // $gpss_bangunan->AwWallFinishesComposite = $request->input('AwWallFinishesComposite');
+        // $gpss_bangunan->AwWallFinishesWallpaper = $request->input('AwWallFinishesWallpaper');
+        // $gpss_bangunan->AwWallFinishesCeramic = $request->input('AwWallFinishesCeramic');
+        // $gpss_bangunan->AwWallFinishesStones = $request->input('AwWallFinishesStones');
+        // $gpss_bangunan->AwWallFinishesPebblewash = $request->input('AwWallFinishesPebblewash');
+        // $gpss_bangunan->AwWallFinishesGranite = $request->input('AwWallFinishesGranite');
+        // $gpss_bangunan->AwWallFinishesGlass = $request->input('AwWallFinishesGlass');
+        // $gpss_bangunan->AwWallFinishesGlassBlock = $request->input('AwWallFinishesGlassBlock');
+        // $gpss_bangunan->AwWallFinishesTimber = $request->input('AwWallFinishesTimber');
+        // $gpss_bangunan->AwWallFinishesPaster = $request->input('AwWallFinishesPaster');
+        // $gpss_bangunan->AwWallFinishesGrowall = $request->input('AwWallFinishesGrowall');
+        // $gpss_bangunan->markahPRAwWall = $request->input('markahPRAwWall');
         // $gpss_bangunan->markahAwW = $request->input('markahAwW');
         // $gpss_bangunan->markahAwD = $request->input('markahAwD');
         // $gpss_bangunan->markahAwF = $request->input('markahAwF');
         // $gpss_bangunan->markahAwS = $request->input('markahAwS');
         // $gpss_bangunan->markahAwWs = $request->input('markahAwWs');
+        alert()->success('Markah disimpan', 'Berjaya');
         $gpss_bangunan->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page2');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create');
     }
 
     public function skor_penilaian_arkitek_page2()
     {
         // papar 2nd page GPSS architectural works
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek_page2.index');
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek_page2.create');
     }
 
     public function simpan_skor_penilaian_arkitek_page2(Request $request, $id)

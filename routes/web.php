@@ -130,15 +130,16 @@ Route::middleware('auth')->group(function () {
 
 
     
-
-    // Penilaian Reka Bentuk Gpss - papar projek
+    // Ketua Pasukan/Penolong view
+    // Penilaian Reka Bentuk Gpss - papar projek, index() method
     Route::get('/penilaian_reka_bentuk_gpss', [PenilaianRekaBentukGpssController::class, 'index']);
-    // papar form pemudah cara
+    // papar form pemudah cara, create() method
     Route::get('/penilaian_reka_bentuk_gpss/pemudah_cara/create', [PenilaianRekaBentukGpssController::class, 'pemudah_cara']);
-    //action form pemudah cara
+    //action form pemudah cara, show() method
     Route::post('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}', [PenilaianRekaBentukGpssController::class, 'melantik_pemudah_cara']);
 
-    // papar projek utk skor penilaian, this should be for Sekretariat view
+    // Sekretariat view
+    // papar projek utk skor penilaian, index()
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian', [PenilaianRekaBentukGpssController::class, 'skor_penilaian']);
     // // papar form rating
     // Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'papar_skor_penilaian']);
