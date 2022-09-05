@@ -48,7 +48,7 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $ss->icPengguna }}</td>
-                                    <td>{{ $ss->Tarikh }}</td>
+                                    <td>{{ $ss->created_at }}</td>
                                     <td>{{ $ss->prosesAktiviti }}</td>
                                     
                                     {{-- <td>

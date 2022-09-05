@@ -48,6 +48,7 @@
                                 <th class="sort">Alamat Projek</th>
                                 <th class="sort">Status Projek</th>
                                 <th class="sort">Jenis Kategori</th>
+                                <th class="sort">Tindakan</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
@@ -59,7 +60,15 @@
                                     <td>{{ $pp->statusProjek }}</td>
                                     {{-- <td>{{ $pp->status->statusProjek }}</td> --}}
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
-                                    
+                                    <td>
+                                        <div class="col-auto">
+                                            <form action="/pengurusan_maklumat/pendaftaran_projek/{{ $pp->id }}" method="post">
+                                                @method('DELETE')
+                                                @csrf
+                                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
+                                            </form>
+                                        </div>
+                                    </td>
                                     
                                 </tr>
                             @endforeach

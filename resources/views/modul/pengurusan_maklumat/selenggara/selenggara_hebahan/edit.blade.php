@@ -29,14 +29,15 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/pengurusan_maklumat/selenggara/selenggara_hebahan" method="post" enctype="multipart/form-data">
+            <form action="/pengurusan_maklumat/selenggara/selenggara_hebahan/{{$selenggara_hebahan->id}}" method="post" enctype="multipart/form-data">
+                @method('PUT')
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Jenis Hebahan Sekarang:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="tajukHebahan" type="text"/>
+                        <input class="form-control" name="tajukHebahann" type="text" value="{{$selenggara_hebahan->tajukHebahan}}"/>
                     </div>
 
                     <div class="col-3 mb-2">

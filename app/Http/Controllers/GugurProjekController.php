@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Projek;
 use Illuminate\Http\Request;
-use Spatie\Permission\Models\Role;
 
-class SelenggaraPerananController extends Controller
+class GugurProjekController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +14,10 @@ class SelenggaraPerananController extends Controller
      */
     public function index()
     {
-        // $nama = Role::select('nama')->get();
-        // return view ('modul.pengurusan_maklumat.selenggara.selenggara_peranan.index', compact('nama'));
-        $peranan = Role::all();
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.index', [
-            'peranan'=>$peranan
+        //
+        $gugur_projek = Projek::all();
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
+            'gugur_projek'=>$gugur_projek
         ]);
     }
 
@@ -29,7 +28,7 @@ class SelenggaraPerananController extends Controller
      */
     public function create()
     {
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.create');
+        //
     }
 
     /**
@@ -40,8 +39,7 @@ class SelenggaraPerananController extends Controller
      */
     public function store(Request $request)
     {
-        Role::create(['name' => $request->nama]);
-        return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
+        //
     }
 
     /**
@@ -64,10 +62,6 @@ class SelenggaraPerananController extends Controller
     public function edit($id)
     {
         //
-        $peranan = Role::find($id);
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.edit', [
-            'peranan' => $peranan,
-        ]);
     }
 
     /**
@@ -79,12 +73,7 @@ class SelenggaraPerananController extends Controller
      */
     public function update(Request $request, $id)
     {
-        Role::where('id',$id)->update(['name' => $request->name]);
-        // $peranan = Role::where('id',$id)->first();
-        // dd($peranan);
-        
-        return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
-        
+        //
     }
 
     /**
@@ -96,9 +85,5 @@ class SelenggaraPerananController extends Controller
     public function destroy($id)
     {
         //
-        $peranan = Role::find($id);
-        $peranan->delete();
-        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
-        return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
     }
 }

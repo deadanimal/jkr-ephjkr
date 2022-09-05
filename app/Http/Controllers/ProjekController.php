@@ -70,7 +70,7 @@ class ProjekController extends Controller
         $pd->save();
 
         $pd2 = new StatusProjek();
-        $pd2->statusProjek = $request->jumlahblokBangunan;
+        $pd2->statusProjek = $request->statusProjek;
         $pd2->projek_id = $pd->id;
         $pd2->save();
 
@@ -122,8 +122,12 @@ class ProjekController extends Controller
      * @param  \App\Models\Projek  $projek
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Projek $projek)
+    public function destroy($id)
     {
         //
+        $pendaftaran_projek = Projek::find($id);
+        $pendaftaran_projek->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
 }

@@ -26,7 +26,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/pendaftaran_projek/pengesahan_pendaftaran/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
 

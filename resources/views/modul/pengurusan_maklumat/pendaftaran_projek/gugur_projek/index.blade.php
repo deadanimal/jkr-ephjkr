@@ -26,7 +26,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
 
@@ -46,13 +46,13 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($pendaftaran_projek as $pp)
+                            @foreach ($gugur_projek as $gp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $pp->namaProjek }}</td>
-                                    <td>{{ $pp->alamatProjek }}</td>
-                                    <td>{{ $pp->statusProjek }}</td>
-                                    <td>{{ $pp->jenisKategoriProjek }}</td>
+                                    <td>{{ $gp->namaProjek }}</td>
+                                    <td>{{ $gp->alamatProjek }}</td>
+                                    <td>{{ $gp->statusProjek }}</td>
+                                    <td>{{ $gp->jenisKategoriProjek }}</td>
                                     <td>
                                         <div class="col text-end">
                                             <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>

@@ -74,7 +74,10 @@ class SelenggaraHebahanController extends Controller
     public function edit($id)
     {
         //
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_hebahan.edit');
+        $selenggara_hebahan = Hebahan::find($id);
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_hebahan.edit', [
+            'selenggara_hebahan' => $selenggara_hebahan,
+        ]);
     }
 
     /**
@@ -87,9 +90,12 @@ class SelenggaraHebahanController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $selenggara_hebahan = Hebahan::find($id);
-        Hebahan::create(['tajukHebahan' => $request->tajukHebahan]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_hebahan');
+        Hebahan::where('id',$id)->update(['tajukHebahan' => $request->tajukHebahan]);
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_hebahan');
+
+        //$selenggara_hebahan = Hebahan::find($id);
+        //Hebahan::create(['tajukHebahan' => $request->tajukHebahan]);
+        //return redirect('/pengurusan_maklumat/selenggara/selanggara_hebahan');
     }
 
     /**
