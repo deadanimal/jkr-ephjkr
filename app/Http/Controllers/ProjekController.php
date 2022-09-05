@@ -59,9 +59,11 @@ class ProjekController extends Controller
         $pd->jumlahblokBangunan = $request->jumlahblokBangunan;
         $pd->dokumenSokongan = $request->dokumenSokongan;
         $pd->tarikh = $request->tarikh;
-        $pd->tarikhJangkaMulaPembinaan = $request->tarikhJangkaSiapPembinaan;
+        $pd->tarikhJangkaMulaPembinaan = $request->tarikhJangkaMulaPembinaan;
+        $pd->tarikhJangkaSiapPembinaan = $request->tarikhJangkaSiapPembinaan;
         $pd->kaedahPelaksanaan = $request->kaedahPelaksanaan;
         $pd->jenisPelaksanaan = $request->jenisPelaksanaan;
+        $pd->statusProjek = $request->statusProjek;
         $pd->kosProjek = $request->kosProjek;
         $pd->jenisKategoriProjek = $request->jenisKategoriProjek;
         $pd->tempohSijil = $request->tempohSijil;
@@ -75,7 +77,7 @@ class ProjekController extends Controller
         $pd2->save();
 
         alert()->success('Maklumat telah disimpan', 'Berjaya');
-        return redirect('/pengurusan_maklumat/pendaftaran_projek');
+        return redirect('/pengurusan_maklumat/pemilihan_ahli/'.$pd->id);
 
     }
 

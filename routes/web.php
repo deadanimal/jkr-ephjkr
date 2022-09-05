@@ -14,6 +14,7 @@ use App\Http\Controllers\ProjekController;
 use App\Http\Controllers\PenilaianRekaBentukBangunanController;
 use App\Http\Controllers\PenilaianRekaBentukGpssController;
 use App\Http\Controllers\PenilaianRekaBentukJalanController;
+use App\Http\Controllers\ProjekPemilihanAhliController;
 use App\Http\Controllers\SelenggaraPerananController;
 use App\Http\Controllers\SelenggaraStatusController;
 use App\Http\Controllers\SelenggaraHebahanController;
@@ -83,6 +84,7 @@ Route::middleware('auth')->group(function () {
             'maklum_balas' => MaklumBalasController::class,
             'hebahan' => HebahanController::class,
             'pendaftaran_projek' => ProjekController::class,
+            'pemilihan_ahli' => ProjekPemilihanAhliController::class,
         ]);
 
         Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);

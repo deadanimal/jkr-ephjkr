@@ -9,7 +9,7 @@
                     <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Pendaftaran Projek</a>
                 </li>
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Papar Senarai Projek
+                    Pemilihan Ahli Projek
                 </li>
             </ol>
         </nav>
@@ -18,17 +18,17 @@
 
 <div class="row">
     <div class="col">
-        <h3 class="mb-0 text-primary"><strong>PENDAFTARAN PROJEK</strong></h3>
+        <h3 class="mb-0 text-primary"><strong>PEMILIHAN AHLI PROJEK</strong></h3>
     </div>
 </div>
 
 <hr class="text-primary mb-3">
 
-    <div class="row mt-3">
+    {{-- <div class="row mt-3">
         <div class="col text-end">
             <a href="/pengurusan_maklumat/pendaftaran_projek/create" class="btn btn-primary">Tambah</a>
         </div>
-    </div>
+    </div> --}}
 
     {{-- <div class="row mt-3">
         <div class="col text-end">
@@ -62,11 +62,9 @@
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
                                     <td>
                                         <div class="col-auto">
-                                            <form action="/pengurusan_maklumat/pendaftaran_projek/{{ $pp->id }}" method="post">
-                                                @method('DELETE')
-                                                @csrf
-                                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
-                                            </form>
+                                            <a href="/pengurusan_maklumat/pemilihan_ahli/{{$pp->id}}" class="btn btn-sm btn-primary">
+                                                Tambah Ahli
+                                            </a>
                                         </div>
                                     </td>
                                     
