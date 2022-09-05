@@ -34,38 +34,108 @@
                         </div>
 
                         <div class="col-4 mb-2">
-                            <h5 class="h6">e-Mel Pengguna:</h5>
+                            <h5 class="h6">Nama Projek:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pengguna->email }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->namaProjek }}</h5>
                         </div>
 
                         <div class="col-4 mb-2">
-                            <h5 class="h6">No. Telefon Bimbit:</h5>
+                            <h5 class="h6">Alamat Projek:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pengguna->notelbimbitPengguna }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->alamatProjek }}</h5>
                         </div>
 
                         <div class="col-4 mb-2">
-                            <h5 class="h6">Nama Syarikat:</h5>
+                            <h5 class="h6">Poskod:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pengguna->namaSyarikat }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->poskod }}</h5>
                         </div>
 
                         <div class="col-4 mb-2">
-                            <h5 class="h6">Nama Cawangan:</h5>
+                            <h5 class="h6">Bandar:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pengguna->namaCawangan }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->bandar }}</h5>
                         </div>
 
                         <div class="col-4 mb-2">
-                            <h5 class="h6">Alamat Syarikat:</h5>
+                            <h5 class="h6">Negeri:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pengguna->alamatSyarikat }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->negeri }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Keluasan Tapak:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->keluasanTapak }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Jumlah Blok Bangunan:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->jumlahblokBangunan }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Dokumen Sokongan:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->dokumenSokongan }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Tarikh:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->tarikh }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">ID Status Projek:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->id }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Tarikh Jangka Mula Pembinaan:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->tarikhJangkaMulaPembinaan }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Tarikh Jangka Siap Pembinaan:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->tarikhJangkaSiapPembinaan }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Kaedah Pelaksaan/Jenis Perolehan:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt-> }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Kod Projek:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->kodProjek }}</h5>
+                        </div>
+
+                        <div class="col-4 mb-2">
+                            <h5 class="h6">Negeri:</h5>
+                        </div>
+                        <div class="col-8 mb-2">
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->negeri }}</h5>
                         </div>
                     </div>
                 </div>
