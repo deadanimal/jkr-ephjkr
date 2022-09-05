@@ -15,6 +15,9 @@
 
 
 <div class="row3 mx-6 table-responsive scrollbar text-center">
+  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
+    @method('POST')
+    @csrf
     <div class="col">
       <table class="table table-bordered line-table text-center" style="width: 100%">
         <thead class="text-white bg-orange-jkr">
@@ -43,7 +46,7 @@
             <td >Clay tiles</td>
             <td >2</td>
             <td>
-              <input onblur="findTotal()" type="number" class="arkitek" name="clay_tiles" id="clay_tiles">
+              <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofTilesClayTiles" id="AwRoofRoofTilesClayTiles">
             </td>            
             <td>
               <input onblur="findTotal()" type="number" class="arkitek" name="clay_tiles" id="clay_tiles">
@@ -55,11 +58,11 @@
             <td >Concrete tiles</td>
             <td >2</td>
             <td>
-              <input onblur="findTotal()" type="number" class="arkitek" name="concrete_tiles" id="concrete_tiles">
+              <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofTilesConcreteTiles" id="AwRoofRoofTilesConcreteTiles">
               
             </td>            
             <td>
-              <input onblur="findTotal()" type="number" class="arkitek" name="clay_tiles" id="clay_tiles">
+              <input onblur="findTotal()" type="number" class="arkitek" name="concrete_tiles" id="concrete_tiles">
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
           </tr>
@@ -69,7 +72,7 @@
             <td >Metal roofing</td>
             <td >2</td>
             <td>
-              <input onblur="findTotal()" type="number" class="arkitek" name="metal_roofing" id="metal_roofing">
+              <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofTilesMetalRoofing" id="AwRoofRoofTilesMetalRoofing">
             </td>            
             <td>
               <input type="number"></td>            
@@ -80,7 +83,7 @@
           <tr>
             <td >Shingles</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="shingles" id="shingles"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofTilesShingles" id="AwRoofRoofTilesShingles"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -91,7 +94,7 @@
             <td rowspan="5">Insulation</td>
             <td >Rockwool</td>
             <td >2</td>
-            <td> <input onblur="findTotal()" type="number" class="arkitek" name="rockwool" id="rockwool"></td>            
+            <td> <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofInsulationRockwool" id="AwRoofRoofInsulationRockwool"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -100,7 +103,7 @@
           <tr>
             <td >Glasswool</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="glasswool" id="glasswool"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofInsulationGlasswool" id="AwRoofRoofInsulationGlasswool"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -109,7 +112,7 @@
           <tr>
             <td >Foam</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="foam" id="foam"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofInsulationFoam" id="AwRoofRoofInsulationFoam"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -118,7 +121,7 @@
           <tr>
             <td >Aluminium Foil</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="aluminium_foil" id="aluminium_foil"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofInsulationAlumFoil" id="AwRoofRoofInsulationAlumFoil"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -127,7 +130,7 @@
           <tr>
             <td >Undersheeting</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="undersheeting" id="undersheeting"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofInsulationUndersheeting" id="AwRoofRoofInsulationUndersheeting"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -138,7 +141,7 @@
             <td rowspan="3">Roof Eaves</td>
             <td >Metal</td>
             <td >2</td>
-            <td> <input onblur="findTotal()" type="number" class="arkitek" name="metal" id="metal"></td>            
+            <td> <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofEavesMetal" id="AwRoofRoofEavesMetal"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -147,7 +150,7 @@
           <tr>
             <td >Fiber cement</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="fiber_cement" id="fiber_cement"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofEavesFiberCement" id="AwRoofRoofEavesFiberCement"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -156,7 +159,7 @@
           <tr>
             <td >Plasterboard</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="plasterboard" id="plasterboard"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRoofEavesPlasterboard" id="AwRoofRoofEavesPlasterboard"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -168,7 +171,7 @@
             <td rowspan="4">Fascia boards</td>
             <td >Metal</td>
             <td >2</td>
-            <td> <input onblur="findTotal()" type="number" class="arkitek" name="metal" id="metal"></td>            
+            <td> <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofFascialBoardsMetal" id="AwRoofFascialBoardsMetal"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td> 
@@ -178,7 +181,7 @@
           <tr>
             <td >Fibre cement</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="fibre_cement" id="fibre_cement"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofFascialBoardsFiberCement" id="AwRoofFascialBoardsFiberCement"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -187,7 +190,7 @@
           <tr>
             <td >Plasterboard</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="plasterboard" id="plasterboard"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofFascialBoardsPlasterboard" id="AwRoofFascialBoardsPlasterboard"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -196,7 +199,7 @@
           <tr>
             <td >Timber</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="timber" id="timber"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofFascialBoardsTimber" id="AwRoofFascialBoardsTimber"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -208,7 +211,7 @@
             <td rowspan="4">Gutter</td>
             <td >Upvc</td>
             <td >2</td>
-            <td> <input onblur="findTotal()" type="number" class="arkitek" name="upvc" id="upvc"></td>            
+            <td> <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofGutterUpvc" id="AwRoofGutterUpvc"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td> 
@@ -218,7 +221,7 @@
           <tr>
             <td >Galvanised iron</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="galvanised_iron" id="galvanised_iron"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofGutterGallron" id="AwRoofGutterGallron"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -227,7 +230,7 @@
           <tr>
             <td >Aluminium</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="aluminium" id="aluminium"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofGutterAluminium" id="AwRoofGutterAluminium"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -236,7 +239,7 @@
           <tr>
             <td >Stainless steel</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="stainless_steel" id="stainless_steel"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofGutterStainSteel" id="AwRoofGutterStainSteel"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -248,7 +251,7 @@
             <td rowspan="4">Rainwater down pipes</td>
             <td >Upvc</td>
             <td >2</td>
-            <td> <input onblur="findTotal()" type="number" class="arkitek" name="upvc" id="upvc"></td>            
+            <td> <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRainPipesUpvc" id="AwRoofRainPipesUpvc"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td> 
@@ -258,7 +261,7 @@
           <tr>
             <td >Galvanised iron</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="galvanised_iron" id="galvanised_iron"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRainPipesGallron" id="AwRoofRainPipesGallron"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -267,7 +270,7 @@
           <tr>
             <td >Aluminium</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="aluminium" id="aluminium"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRainPipesAluminium" id="AwRoofRainPipesAluminium"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -276,7 +279,7 @@
           <tr>
             <td >Stainless steel</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="stainless_steel" id="stainless_steel"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofRainPipesStainSteel" id="AwRoofRainPipesStainSteel"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -288,7 +291,7 @@
             <td rowspan="3">Gutter</td>
             <td >Plasterboard</td>
             <td >2</td>
-            <td> <input onblur="findTotal()" type="number" class="arkitek" name="plasterboard" id="plasterboard"></td>            
+            <td> <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofCellingPlasterboards" id="AwRoofCellingPlasterboards"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td> 
@@ -298,7 +301,7 @@
           <tr>
             <td >Fibre cement board</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="fibre_cement_board" id="fibre_cement_board"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofCellingFibreCement" id="AwRoofCellingFibreCement"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -307,7 +310,7 @@
           <tr>
             <td >Metal strip</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="metal_strip" id="metal_strip"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofCellingMetalStrip" id="AwRoofCellingMetalStrip"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -319,7 +322,7 @@
             <td rowspan="2">Truss system</td>
             <td >Timber</td>
             <td >2</td>
-            <td> <input onblur="findTotal()" type="number" class="arkitek" name="timber" id="timber"></td>            
+            <td> <input onblur="findTotal()" type="number" class="arkitek" name="AwRoofTrussTimber" id="AwRoofTrussTimber"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td> 
@@ -329,7 +332,7 @@
           <tr>
             <td >Metal</td>
             <td >2</td>
-            <td><input onblur="findTotal()" type="number" class="arkitek" name="metal" id="metal"></td>            
+            <td><input onblur="findTotal()" type="number" class="arkitek" name="AwRoofTrussMetal" id="AwRoofTrussMetal"></td>            
             <td><input type="number"></td>            
             <td><input type="number"></td>            
             <td><input type="text"></td>                    
@@ -546,17 +549,20 @@
             <td><input type="text"></td>                    
           </tr>
 
-
+          <div>
+            <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
+          </div>
+        </form>
         </tbody>
       </table>
-      
-
     </div>
   </div>
 
 
+
     <p><strong>Sum of AwR <span class="required"></span></strong><br />
       <input type="text" name="totalroof" id="totalroof" /></p>
+
 
 
 
@@ -584,13 +590,15 @@
             </a>
             </li> --}}
             <li>
-                <button>Simpan</button>
+                {{-- <button>Simpan</button> --}}
                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2">Seterusnya</a>
             </li>
         </ul>
         </nav>
 
 </tfoot>
+
+</form>
 
 <script>
   function findTotal(){

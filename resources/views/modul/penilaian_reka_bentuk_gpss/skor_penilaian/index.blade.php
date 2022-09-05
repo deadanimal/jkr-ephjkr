@@ -61,7 +61,7 @@
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
                     <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/edit" type="submit" class="btn btn-warning margin-auto">PILIH</a>
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="submit" class="btn btn-warning margin-auto">PILIH</a>
                     </td>
                 </tr>
             </tbody>
