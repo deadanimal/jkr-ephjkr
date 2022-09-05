@@ -151,19 +151,19 @@
                         <input class="form-control" name="jenisKategoriProjek" type="text"/>
                     </div>
 
-                    <div class="col-3 mb-2">
+                    {{-- <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="" type="text"/>
-                    </div>
+                    </div> --}}
 
-                    <div class="col-3 mb-2">
+                    {{-- <div class="col-3 mb-2">
                         <label class="col-form-label">Peranan Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="" type="text"/>
-                    </div>
+                    </div> --}}
 
                     
     
