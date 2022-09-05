@@ -94,19 +94,22 @@ class PenilaianRekaBentukBangunanController extends Controller
     }
 
     # bawah ni pemudah cara
+    // ketua pasukan atau pen ketua pasukan
     public function papar_projek()
     {
         $projeks = Projek::all();
+        $projeks = new Projek;
+        $pemudah_cara = new PemudahCara;
+        
 
         // papar table projek with button melantik pemudah cara
         // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
 
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
-            'projeks'=>$projeks
+            'projeks'=>$projeks,
+            'pemudah_cara'=>$pemudah_cara
         ]);
     }
-
-    
 
     public function pemudah_cara($id)
     {
@@ -136,6 +139,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         $pemudah_cara->email = $request->input('email');
         $pemudah_cara->disiplin = $request->input('disiplin');
         $pemudah_cara->kategori = $request->kategori;
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
         $pemudah_cara->save();
 
         $projeks->namaProjek = $request->input('namaProjek');
@@ -146,6 +150,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     }
 
+    // PemudahCara
     # bawah ni utk skor penilaian
     public function skor_penilaian()
     {
@@ -225,7 +230,9 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     // }
 
-    #pengesahan penilaian
+
+    #Sekreatariat
+    // pengesahan penilaian
     public function pengesahan_penilaian()
     {
         // papar mcm index tapi ada button utk pengesahan
@@ -246,6 +253,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
     }
 
+    // Sekretariat 
     // Semakan Rawak Penilaian Reka Bentuk Bangunan
 
     public function semakan_rawak()
@@ -274,6 +282,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     }
 
+    // Ketua Pasukan ATAU Penolong Ketua Pasukan
     // Muat Turun Sijil Penilaian Reka Bentuk Bangunan
 
     public function muat_turun_sijil()
@@ -298,5 +307,13 @@ class PenilaianRekaBentukBangunanController extends Controller
         return redirect('/penilaian_reka_bentuk_bangunan/muat_turun_sijil');
 
     }
+
+    #sekretariat JANA SIJIL
+    public function jana_sijil()
+    {
+
+        return view('modul.penilaian_reka_bentuk_bangunan.jana_sijil.index');
+    }
+
     
 }

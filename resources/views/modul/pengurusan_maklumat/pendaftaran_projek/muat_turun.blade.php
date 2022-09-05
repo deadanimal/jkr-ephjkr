@@ -27,10 +27,10 @@
                 <div class="card-body">
                     <div class="row mx-4">
                         <div class="col-4 mb-2">
-                            <h5 class="h6">Nama:</h5>
+                            <h5 class="h6">ID Skala:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pengguna->name }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $mt->id_ruj_skala }}</h5>
                         </div>
 
                         <div class="col-4 mb-2">

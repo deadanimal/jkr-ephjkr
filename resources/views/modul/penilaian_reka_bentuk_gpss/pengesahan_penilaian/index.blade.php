@@ -7,7 +7,7 @@
             PENILAIAN REKA BENTUK GPSS
         </h1>
     </div>
-    <hr style="background-color: #EB5500;"></hr>
+    <hr style="background-color: #EB5500;">
     {{-- body --}}
     <div class="container mt-5">
     <div class="row d-flex justify-content-center">
@@ -47,7 +47,7 @@
                     <td>Hospital Seri Iskandar</td>
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
-                    <td>
+                    <td style="text-align: center">
                         <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/edit" type="button" class="btn btn-warning">PAPAR</a>
                     </td>
                 </tr>
