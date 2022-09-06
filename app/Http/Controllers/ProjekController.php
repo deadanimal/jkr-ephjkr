@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateProjekRequest;
 use App\Models\Projek;
 use App\Models\StatusProjek;
 use Illuminate\Support\Facades\Auth;
+use \PDF;
 
 class ProjekController extends Controller
 {
@@ -17,6 +18,7 @@ class ProjekController extends Controller
      */
     public function index()
     {
+        // dd('test');
         //dd(Projek::with('status')->get());
         return view('modul.pengurusan_maklumat.pendaftaran_projek.index', [
             'pendaftaran_projek' => Projek::with('status')->get()
@@ -101,9 +103,18 @@ class ProjekController extends Controller
      * @param  \App\Models\Projek  $projek
      * @return \Illuminate\Http\Response
      */
-    public function edit(Projek $projek)
+    public function edit($id)
     {
         //
+        //dd('projek');
+        $projek = Projek::find($id);
+        // dd($projek->id);
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.edit', [
+            'pendaftaran_projek' => $projek
+        ]);
+
+        //
+        
     }
 
     /**
@@ -132,4 +143,14 @@ class ProjekController extends Controller
         alert()->success('Maklumat telah dihapuskan', 'Berjaya');
         return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
+
+    // public function createPDF($id){
+
+    //     // $details =['title' => 'test'];
+    //     $pdf = PDF::loadView('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
+    //     return $pdf->download('sijil.pdf');
+ 
+    // }
+
+    
 }

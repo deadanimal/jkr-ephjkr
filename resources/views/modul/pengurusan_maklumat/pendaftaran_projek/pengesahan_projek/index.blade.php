@@ -26,7 +26,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/pengesahan_pendaftaran/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
 
@@ -46,25 +46,25 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($pendaftaran_projek as $pp)
+                            @foreach ($pengesahan_projek as $ppp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $pp->namaProjek }}</td>
-                                    <td>{{ $pp->alamatProjek }}</td>
-                                    <td>{{ $pp->statusProjek }}</td>
-                                    <td>{{ $pp->jenisKategoriProjek }}</td>
+                                    <td>{{ $ppp->namaProjek }}</td>
+                                    <td>{{ $ppp->alamatProjek }}</td>
+                                    <td>{{ $ppp->statusProjek }}</td>
+                                    <td>{{ $ppp->jenisKategoriProjek }}</td>
                                     <td>
                                         <div
                                             class="col-auto mb-2 px-0"
                                                 style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
-                                                @if ($pendaftaran_projek->statusProjek == 'Lulus')
+                                                @if ($pengesahan_projek->statusProjek == 'Lulus')
                                                     <button class="btn btn-orange-jkr" type="button">LULUS</button>
                                                 @else
                                                     <button class="btn btn-final" type="button" data-bs-toggle="modal"
                                                         data-bs-target="#lulus">LULUS</button>
                                                 @endif
                                                     
-                                                @if ($pendaftaran_projek->statusProjek == 'Gagal')
+                                                @if ($pengesahan_projek->statusProjek == 'Gagal')
                                                     <button class="btn btn-orange-jkr" type="button">GAGAL</button>
                                                 @else
                                                     <button class="btn btn-final" type="button" data-bs-toggle="modal"
