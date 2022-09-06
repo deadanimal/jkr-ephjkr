@@ -9,7 +9,7 @@
                     <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Pendaftaran Projek</a>
                 </li>
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Papar Senarai Projek
+                    Papar Permohonan Gugur Projek
                 </li>
             </ol>
         </nav>
@@ -26,15 +26,9 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
-
-    {{-- <div class="row mt-3">
-        <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/show" class="btn btn-primary">Papar</a>
-        </div>
-    </div> --}}
 
     <div class="row mt-2">
         <div class="col">
@@ -52,24 +46,18 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($pendaftaran_projek as $pp)
+                            @foreach ($gugur_projek as $gp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $pp->namaProjek }}</td>
-                                    <td>{{ $pp->alamatProjek }}</td>
-                                    <td>{{ $pp->statusProjek }}</td>
-                                    {{-- <td>{{ $pp->status->statusProjek }}</td> --}}
-                                    <td>{{ $pp->jenisKategoriProjek }}</td>
+                                    <td>{{ $gp->namaProjek }}</td>
+                                    <td>{{ $gp->alamatProjek }}</td>
+                                    <td>{{ $gp->statusProjek }}</td>
+                                    <td>{{ $gp->jenisKategoriProjek }}</td>
                                     <td>
-                                        <div class="col-auto">
-                                            <form action="/pengurusan_maklumat/pendaftaran_projek/{{ $pp->id }}" method="post">
-                                                @method('DELETE')
-                                                @csrf
-                                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
-                                            </form>
-                                        </div>
+                                        <div class="col text-end">
+                                            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>
+                                        </div> 
                                     </td>
-                                    
                                 </tr>
                             @endforeach
                         </tbody>

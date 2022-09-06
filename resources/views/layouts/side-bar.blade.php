@@ -177,7 +177,7 @@
                                     </a>
 
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/kriteria_penilaian') ? 'active' : '' }} py-0"
                                         href="/pengurusan_maklumat/selenggara/kriteria_penilaian">
                                         <div class="d-flex align-items-center nav-link-side">
@@ -194,7 +194,7 @@
                                         </div>
                                     </a>
 
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
 
@@ -260,7 +260,7 @@
                                 </div>
                             </a>
                         
-                            <ul class="nav-item collapse {{ Request::is('pengurusan_maklumat/pendaftaran_projek/*') ? 'show' : 'false' }} my-1"
+                            <ul class="nav-item collapse {{ Request::is('pengurusan_maklumat/pendaftaran_projek/*', 'pengurusan_maklumat/pendaftaran_projek', 'pengurusan_maklumat/pemilihan_ahli', 'pengurusan_maklumat/pemilihan_ahli/*') ? 'show' : 'false' }} my-1"
                                 id="pendaftaran_projek">
                                 <li class="nav-item">
                                     <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
@@ -272,8 +272,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/create') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/create">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pendaftaran Projek</span>
                                         </div>
@@ -281,8 +281,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pemilihan_ahli', 'pengurusan_maklumat/pemilihan_ahli/*') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pemilihan_ahli">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pemilihan Ahli Pasukan dan Peranan</span>
                                         </div>
@@ -290,8 +290,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/pengesahan_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Pengesahan Pendaftaran Projek</span>
                                         </div>
@@ -299,8 +299,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/muat_turun') ? 'active' : '' }} py-0"
+                                        href="#">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Papar dan Muat Turun Matlumat Projek</span>
                                         </div>
@@ -308,8 +308,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/pendaftaran_projek">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/gugur_projek') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Permohonan Gugur Projek</span>
                                         </div>
@@ -542,15 +542,15 @@
                             </div>
                         </a>
                         <ul class="nav-item collapse {{ Request::is('validasi_permarkahan_bangunan/*') || Request::is('validasi_permarkahan_bangunan') ? 'show' : 'false' }} my-1"
-                            id="verifikasi_permarkahan_bangunan">
+                            id="validasi_permarkahan_bangunan">
                             
                             {{-- BANGUNAN (Validasi) Melantik Pasukan Validasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/pasukan_validasi') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/pemudah_cara">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/melantik_pasukan_validasi') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/melantik_pasukan_validasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/pasukan_validasi') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/melantik_pasukan_validasi') ? 'text-dark' : '' }}">Melantik
                                             Pasukan Validasi</span>
                                     </div>
                                 </a>
@@ -574,7 +574,7 @@
                                     href="/validasi_permarkahan_bangunan/borang_validasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/borang_validasi') ? 'text-dark' : '' }}">Penilaian 
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/borang_validasi') ? 'text-dark' : '' }}">Borang
                                             Validasi</span>
                                     </div>
                                 </a>
@@ -582,22 +582,22 @@
 
                             {{-- BANGUNAN (Validasi) Pengesahan Penilaian Validasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/pengesahan_penilaian') ? 'active' : '' }} py-0"
-                                    href="/validasi_permarkahan_bangunan/pengesahan_penilaian">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/pengesahan_penilaian_validasi') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/pengesahan_penilaian') ? 'text-dark' : '' }}">Pengesahan
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/pengesahan_penilaian_validasi') ? 'text-dark' : '' }}">Pengesahan
                                             Penilaian Validasi</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- BANGUNAN (Validasi) Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'active' : '' }} py-0"
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/jana_keputusan') ? 'active' : '' }} py-0"
                                     href="/validasi_permarkahan_bangunan/jana_keputusan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/jana_keputusan_bangunan') ? 'text-dark' : '' }}">Jana 
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/jana_keputusan') ? 'text-dark' : '' }}">Jana 
                                             Keputusan
                                             </span>
                                     </div>
@@ -630,11 +630,11 @@
                         
                             {{-- BANGUNAN (Validasi) Pengesahan Rayuan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/pengesahan_rayuan">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/pengesahan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/pengesahan_rayuan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pengesahan_rayuan') ? 'text-dark' : '' }}">Pengesahan 
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/pengesahan_rayuan') ? 'text-dark' : '' }}">Pengesahan 
                                             Rayuan
                                             </span>
                                     </div>

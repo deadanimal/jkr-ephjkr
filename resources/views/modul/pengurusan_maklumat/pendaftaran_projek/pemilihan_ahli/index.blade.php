@@ -9,7 +9,7 @@
                     <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Pendaftaran Projek</a>
                 </li>
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Papar Pengesahan Pendaftaran Projek
+                    Pemilihan Ahli Projek
                 </li>
             </ol>
         </nav>
@@ -18,17 +18,23 @@
 
 <div class="row">
     <div class="col">
-        <h3 class="mb-0 text-primary"><strong>PENDAFTARAN PROJEK</strong></h3>
+        <h3 class="mb-0 text-primary"><strong>PEMILIHAN AHLI PROJEK</strong></h3>
     </div>
 </div>
 
 <hr class="text-primary mb-3">
 
-    <div class="row mt-3">
+    {{-- <div class="row mt-3">
         <div class="col text-end">
             <a href="/pengurusan_maklumat/pendaftaran_projek/create" class="btn btn-primary">Tambah</a>
         </div>
-    </div>
+    </div> --}}
+
+    {{-- <div class="row mt-3">
+        <div class="col text-end">
+            <a href="/pengurusan_maklumat/pendaftaran_projek/show" class="btn btn-primary">Papar</a>
+        </div>
+    </div> --}}
 
     <div class="row mt-2">
         <div class="col">
@@ -52,27 +58,16 @@
                                     <td>{{ $pp->namaProjek }}</td>
                                     <td>{{ $pp->alamatProjek }}</td>
                                     <td>{{ $pp->statusProjek }}</td>
+                                    {{-- <td>{{ $pp->status->statusProjek }}</td> --}}
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
                                     <td>
-                                        <div
-                                            class="col-auto mb-2 px-0"
-                                                style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
-                                                @if ($pendaftaran_projek->statusProjek == 'Lulus')
-                                                    <button class="btn btn-orange-jkr" type="button">LULUS</button>
-                                                @else
-                                                    <button class="btn btn-final" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#lulus">LULUS</button>
-                                                @endif
-                                                    
-                                                @if ($pendaftaran_projek->statusProjek == 'Gagal')
-                                                    <button class="btn btn-orange-jkr" type="button">GAGAL</button>
-                                                @else
-                                                    <button class="btn btn-final" type="button" data-bs-toggle="modal"
-                                                        data-bs-target="#gagal">GAGAL</button>
-                                                @endif
-        
+                                        <div class="col-auto">
+                                            <a href="/pengurusan_maklumat/pemilihan_ahli/{{$pp->id}}" class="btn btn-sm btn-primary">
+                                                Tambah Ahli
+                                            </a>
                                         </div>
                                     </td>
+                                    
                                 </tr>
                             @endforeach
                         </tbody>

@@ -30,20 +30,21 @@
     <div class="row mt-4 mb-3">
         <div class="col">
             <form action="/pengurusan_maklumat/selenggara/kriteria_penilaian" method="post" enctype="multipart/form-data">
+                @method('PUT')
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Kriteria Sekarang:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="nama" type="text"/>
+                        <input class="form-control" name="namaProjekk" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Kriteria Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="nama" type="text"/>
+                        <input class="form-control" name="namaProjek" type="text"/>
                     </div>
                     
     
@@ -56,7 +57,7 @@
                                 <a href="/pengurusan_maklumat/senarai_pengguna" class="btn btn-outline-primary">Batal</a>
                             </div>
                             <div class="col-6 text-end">
-                                <button type="submit" class="btn btn-primary">Simpan Peranan</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
                             </div>
                         </div>
                     </div>

@@ -6,6 +6,7 @@ use App\Http\Controllers\HebahanController;
 use App\Http\Controllers\LamanUtamaController;
 use App\Http\Controllers\MaklumBalasController;
 use App\Http\Controllers\ManualDanStandardController;
+use App\Http\Controllers\PengesahanPendaftaranProjekController;
 use App\Http\Controllers\PengesahanPenggunaController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\ProfilController;
@@ -13,16 +14,19 @@ use App\Http\Controllers\ProjekController;
 use App\Http\Controllers\PenilaianRekaBentukBangunanController;
 use App\Http\Controllers\PenilaianRekaBentukGpssController;
 use App\Http\Controllers\PenilaianRekaBentukJalanController;
+use App\Http\Controllers\ProjekPemilihanAhliController;
 use App\Http\Controllers\SelenggaraPerananController;
 use App\Http\Controllers\SelenggaraStatusController;
 use App\Http\Controllers\SelenggaraHebahanController;
 use App\Http\Controllers\StatusMaklumBalasController;
-use App\Http\Controllers\KriteriaPenilaianController;
+use App\Http\Controllers\SelenggaraKriteriaPenilaianController;
 use App\Http\Controllers\SelenggaraStatusMaklumBalasController;
-use App\Http\Controllers\LogAuditController;
+use App\Http\Controllers\SelenggaraLogAuditController;
 use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
 use App\Http\Controllers\VerifikasiPermarkahanJalanController;
 use App\Http\Controllers\VerifikasiPermarkahanGpssController;
+use App\Http\Controllers\ValidasiPermarkahanBangunanController;
+use App\Models\ValidasiPermarkahanBangunan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -80,6 +84,7 @@ Route::middleware('auth')->group(function () {
             'maklum_balas' => MaklumBalasController::class,
             'hebahan' => HebahanController::class,
             'pendaftaran_projek' => ProjekController::class,
+            'pemilihan_ahli' => ProjekPemilihanAhliController::class,
         ]);
 
         Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
@@ -91,8 +96,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('/pengurusan_maklumat/selenggara/selenggara_status', SelenggaraStatusController::class);
     Route::resource('/pengurusan_maklumat/selenggara/selenggara_hebahan', SelenggaraHebahanController::class);
     Route::resource('/pengurusan_maklumat/selenggara/status_maklum_balas', SelenggaraStatusMaklumBalasController::class);
-    Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', KriteriaPenilaianController::class);
-    Route::resource('/pengurusan_maklumat/selenggara/log_audit', LogAuditController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', SelenggaraKriteriaPenilaianController::class);
+    Route::resource('/pengurusan_maklumat/selenggara/log_audit', SelenggaraLogAuditController::class);
+    Route::resource('/pengurusan_maklumat/pendaftaran_projek/pengesahan_pendaftaran', PengesahanPendaftaranProjekController::class);
 
     // Penilaian Reka Bentuk Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);
@@ -204,6 +210,23 @@ Route::middleware('auth')->group(function () {
     //  Route::post('penilaian_reka_bentuk_bangunan/semakan_rawak/{id}',  [PenilaianRekaBentukBangunanController::class, 'simpan_semakan_rawak']);
 
     //Validasi Permarkahan Bangunan
+    Route::get('/validasi_permarkahan_bangunan', [ValidasiPermarkahanBangunanController::class, 'index']);
+    // Sekretariat
+    Route::get('/validasi_permarkahan_bangunan/melantik_pasukan_validasi', [ValidasiPermarkahanBangunanController::class, 'papar_projek']);
+    Route::get('/validasi_permarkahan_bangunan/melantik_pasukan_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'pasukan_validasi']);
+    Route::post('/validasi_permarkahan_bangunan/melantik_pasukan_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'melantik_pasukan_validasi']);
+    Route::get('/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi', [ValidasiPermarkahanBangunanController::class, 'pengesahan_penilaian_validasi']);
+    Route::get('/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_pengesahan_penilaian_validasi']);
+    Route::get('/validasi_permarkahan_bangunan/jana_keputusan', [ValidasiPermarkahanBangunanController::class, 'jana_keputusan']);
+    Route::get('/validasi_permarkahan_bangunan/jana_keputusan/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_jana_keputusan']);
+    Route::get('/validasi_permarkahan_bangunan/pengesahan_rayuan', [ValidasiPermarkahanBangunanController::class, 'pengesahan_rayuan']);
+    Route::get('/validasi_permarkahan_bangunan/pengesahan_rayuan/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_pengesahan_rayuan']);
+
+
+
+
+
+
     
     
     // Penilaian Reka Bentuk Jalan

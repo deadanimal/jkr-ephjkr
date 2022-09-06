@@ -59,9 +59,11 @@ class ProjekController extends Controller
         $pd->jumlahblokBangunan = $request->jumlahblokBangunan;
         $pd->dokumenSokongan = $request->dokumenSokongan;
         $pd->tarikh = $request->tarikh;
-        $pd->tarikhJangkaMulaPembinaan = $request->tarikhJangkaSiapPembinaan;
+        $pd->tarikhJangkaMulaPembinaan = $request->tarikhJangkaMulaPembinaan;
+        $pd->tarikhJangkaSiapPembinaan = $request->tarikhJangkaSiapPembinaan;
         $pd->kaedahPelaksanaan = $request->kaedahPelaksanaan;
         $pd->jenisPelaksanaan = $request->jenisPelaksanaan;
+        $pd->statusProjek = $request->statusProjek;
         $pd->kosProjek = $request->kosProjek;
         $pd->jenisKategoriProjek = $request->jenisKategoriProjek;
         $pd->tempohSijil = $request->tempohSijil;
@@ -70,12 +72,12 @@ class ProjekController extends Controller
         $pd->save();
 
         $pd2 = new StatusProjek();
-        $pd2->statusProjek = $request->jumlahblokBangunan;
+        $pd2->statusProjek = $request->statusProjek;
         $pd2->projek_id = $pd->id;
         $pd2->save();
 
         alert()->success('Maklumat telah disimpan', 'Berjaya');
-        return redirect('/pengurusan_maklumat/pendaftaran_projek');
+        return redirect('/pengurusan_maklumat/pemilihan_ahli/'.$pd->id);
 
     }
 
@@ -122,8 +124,12 @@ class ProjekController extends Controller
      * @param  \App\Models\Projek  $projek
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Projek $projek)
+    public function destroy($id)
     {
         //
+        $pendaftaran_projek = Projek::find($id);
+        $pendaftaran_projek->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
 }

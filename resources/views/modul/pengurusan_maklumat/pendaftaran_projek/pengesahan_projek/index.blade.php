@@ -9,7 +9,7 @@
                     <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Pendaftaran Projek</a>
                 </li>
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Papar Permohonan Gugur Projek
+                    Papar Pengesahan Pendaftaran Projek
                 </li>
             </ol>
         </nav>
@@ -26,7 +26,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/pendaftaran_projek/pengesahan_pendaftaran/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
 
@@ -54,9 +54,24 @@
                                     <td>{{ $pp->statusProjek }}</td>
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
                                     <td>
-                                        <div class="col text-end">
-                                            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>
-                                        </div> 
+                                        <div
+                                            class="col-auto mb-2 px-0"
+                                                style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
+                                                @if ($pendaftaran_projek->statusProjek == 'Lulus')
+                                                    <button class="btn btn-orange-jkr" type="button">LULUS</button>
+                                                @else
+                                                    <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                        data-bs-target="#lulus">LULUS</button>
+                                                @endif
+                                                    
+                                                @if ($pendaftaran_projek->statusProjek == 'Gagal')
+                                                    <button class="btn btn-orange-jkr" type="button">GAGAL</button>
+                                                @else
+                                                    <button class="btn btn-final" type="button" data-bs-toggle="modal"
+                                                        data-bs-target="#gagal">GAGAL</button>
+                                                @endif
+        
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach
