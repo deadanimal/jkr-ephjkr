@@ -1,37 +1,47 @@
 @extends('layouts.base')
+<!--from DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="cssfile/style.css">
-
+<link rel="stylesheet" href="/cssfile/style.css">
 
 @section('content')
-<!--Verifikasi Permarkahan Bangunan-->
-
+<!--Title: Header-->
 <div class="header">
-    <b class="paparan-senarai-projek">Paparan Senarai Projek</b>
+    <div class="col-sm-6">
+        Penilaian Reka Bentuk Bangunan 
+        <b style="color: #0F5E31;">> Papar dan Muat Turun Sijil</b>
+        </div>
+    {{-- <b class="text-dark-green-jkr">Semakan Rawak dan Jana Sijil</b> --}}
 
 <h1 class="header-title">
-    VERIFIKASI PERMARKAHAN BANGUNAN
+    PENILAIAN REKA BENTUK BANGUNAN
 </h1>
-<hr class="line-6">
+<hr class="hr-jkr">
 
 
 </div>
-
 <div class="container-fluid">
     <!--Carian Nama Projek-->
     <div class="mt-8 form-group row">
-            <label class="col-sm-2 col-form-label text-black">Nama Projek:</label>
+        <label class="col-sm-2 col-form-label">Nama Projek:</label>
+            <div class="col-sm-5">
+                <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+            </div>
                 <div class="col-sm-5">
-                    <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                    <button type="button" class="btn btn-primary">Carian</button>
                 </div>
-                    <div class="col-sm-5">
-                        <button type="button" class="btn btn-primary">Carian</button>
-                    </div>
-    </div>
+</div>
 
+      
     <div class="col-12">
         <div class="card-header">
+                {{-- <div class="card-body">
+
+                </div> --}}
                 <div class="mt-5 row">
+                
+                        <!--TO ENABLE SCROLLBAR AT TABLES-->
+                        {{-- <div class="table-responsive scrollbar"> --}}
+                        
                             <table class="table table-bordered line-table" style="width:100%">
                                     <thead class="text-white bg-orange-jkr">
                                         <tr>
@@ -63,8 +73,8 @@
                                             </button> --}}
                                                 {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                 title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                <a class="btn btn-primary" href="/verifikasi_permarkahan_bangunan/melantik_pemudah_cara" role="button"
-                                                data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
+                                                <a class="btn btn-primary" href="/verifikasi_permarkahan_bangunan/muat_turun_sijil/edit" role="button"
+                                                data-toggle="tooltip" data-placement="bottom" title="Papar Skor Penilaian">Papar</a>
                                             </td>
                                         </tr> 
                                     {{-- @endforeach --}}
@@ -78,8 +88,4 @@
         </div>
     </div>
 </div>
-
-<!--JavaScript-->
-
 @endsection
-

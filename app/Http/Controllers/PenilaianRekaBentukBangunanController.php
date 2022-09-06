@@ -253,6 +253,9 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
+        
+        alert()->success('Penilaian Disahkan.', 'Berjaya');
+
         // simpan pengesahan penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian');
     }

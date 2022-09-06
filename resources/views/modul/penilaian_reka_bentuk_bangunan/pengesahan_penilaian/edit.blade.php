@@ -1596,10 +1596,12 @@ thead {
 
     </div>
 
+    <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}">
         <div class="mt-3 text-center">
             <button type="submit" class="btn btn-secondary">Tolak</button>
             <button type="submit" class="btn btn-primary">Sah</button>
         </div>
+    </form>
 
 </div>
 <div class="container mt-10">

@@ -73,8 +73,8 @@
 
 <div class="container-fluid">
     <div class="card-body">
-        <div class="table-responsive scrollbar">
-            <form action="/penilaian_reka_bentuk_bangunan/simpan_skor/{id}" method="post" enctype="multipart/form-data">
+        {{-- <div class="table-responsive scrollbar"> --}}
+            <form action="/verifikasi_permarkahan_bangunan/simpan_skor/{id}" method="post" enctype="multipart/form-data">
                 @csrf
                 {{-- @method('PUT') --}}
 
@@ -127,7 +127,7 @@
                                 <td>Perancangan Tapak</td>
                                 {{-- <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
                                 <td>
-                                    <select onClick="autoFill(); return true;" class="form-select" aria-label="Default select example" name="jenisKategori">
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option id="input1" hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -136,12 +136,12 @@
                                     </select>                         
                                 </td>
 
-                                <td colspan="2">1</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required id="markahTL" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required id="markahTL" required/></td>
+                                <td colspan="2">0</td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
                                 <td>Tidak Berkenaan</td>
@@ -162,7 +162,7 @@
                                 <td>TL2</td>
                                 <td>Sistem Pengurusan Alam Sekitar (SPAS)</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -171,11 +171,11 @@
                                     </select>                                 
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4"><span>&#183; Sijil ISO 14001</span><br>
                                     <span>&#183; Senarai kuantiti (BQ) kerja-kerja perlindungan alam sekitar</span>
@@ -200,7 +200,7 @@
                                 <td rowspan="2">TL3</td>
                                 <td>i. Pemotongan dan Penambakan tanah</td>
                                 <td rowspan="2">
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -209,11 +209,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Laporan rekabentuk tanah</span><br>
@@ -242,11 +242,11 @@
                                 <td>ii. Mengekalkan Topografi Tanah</td>
                                 {{-- <th>A</th> --}}
                                 <td colspan="2">2</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Pelan Topografi</span><br>
@@ -277,7 +277,7 @@
                                 <td>TL4</td>
                                 <td>Pelan Kawalan Hakisan & Kelodak (ESCP)</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -286,11 +286,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
@@ -314,7 +314,7 @@
                                 <td>TL5</td>
                                 <td>Pemuliharaan dan Pemeliharaan Cerun</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -323,11 +323,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Laporan penyenggaraan cerun</span><br>
@@ -351,7 +351,7 @@
                                 <td>TL6</td>
                                 <td>Pengurusan Air Larian Hujan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -360,11 +360,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
@@ -410,7 +410,7 @@
                                 <td>TL8.1</td>
                                 <td>Memelihara dan menyenggara pokok yang matang</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -419,11 +419,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Inventori pokok</span><br>
@@ -451,7 +451,7 @@
                                 <td>TL8.2</td>
                                 <td>Menyediakan kawasan hijau</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -460,11 +460,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>Laporan cadangan menunjukkan:</span><br>
@@ -491,7 +491,7 @@
                                 <td>TL8.3</td>
                                 <td>Menyedia dan menyenggara penanaman pokok teduhan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -500,11 +500,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Penyediaan pelan landskap</span><br>
@@ -534,7 +534,7 @@
                                     haba yang tinggi
                                 </td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -543,11 +543,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Lukisan terperinci dengan spesifikasi</span><br>
@@ -572,7 +572,7 @@
                                 <td>TL8.5</td>
                                 <td>Menyedia dan menyenggara sistem turapan berumput</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -581,11 +581,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Lukisan butiran dan spesifikasi sistem turapan</span><br>
@@ -631,7 +631,7 @@
                                 <td>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
                                 </td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -640,11 +640,11 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" name="markahTL1" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" name="markahTL2" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Katalog berserta jadual SRI bumbung</span><br>
@@ -673,7 +673,7 @@
                                 <td>Menggalakkan rekabentuk bumbung/dinding hijau
                                 </td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -682,11 +682,11 @@
                                     </select>                                 
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Pelan konsep rekabentuk</span><br>
@@ -718,41 +718,17 @@
                             <tr class="pg-1" align="center">
                                 <th colspan="3">Jumlah markah TL</th>
                                 <td colspan="2">11</td>
+                                <td colspan="2"></td>
+                                <td colspan="2"></td>
+                                <td colspan="2"></td>
                                 <td colspan="2"><input class="form-control" id="total_amount_ms" type="text" autocapitalize="off" name="markahTL1" id="markahTL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
                                 <td colspan="2"><input class="form-control" id="total_amount_mr" type="text" autocapitalize="off" name="markahTL2" id="markahTL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="4"></td>
                                 <td colspan="3"></td>
                             </tr> 
                     </table>
 
-                    <!--Testing-->
-                    {{-- <a href="#" onClick="autoFill(); return true;" >Click to Autofill</a>
-                    <form>
-                    <p>
-                        <label>Text Input: </label>
-                        <input type="text" id="input1">
-                    </p>
-                    <p>
-                        <label>Dropdown Input: </label>
-                        <select id="input2">
-                        <option value="Dropdown1">First Option</option>
-                        <option value="Dropdown2">Second Option</option>
-                        <option value="Dropdown3">Third Option</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label>Radio Input: </label>
-                        <input type="radio" name="input3" value="Radio1">First Radio
-                        <input type="radio" name="input3" value="Radio2">Second Radio
-                        <input type="radio" name="input3" value="Radio3">Third Radio
-                    </p>
-                    </form> --}}
-                        
-                        
                     <!--------------------------------------- MarkahKT ---------------------------------------->
                     <table id="example" class="table table-bordered line-table display">
                         <thead class="text-white">
@@ -800,7 +776,7 @@
                                 <td>Rekabentuk bumbung</td>
                                 {{-- <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -810,12 +786,12 @@
                                 </td>
 
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
                                     <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
@@ -842,17 +818,11 @@
                                 <td>KT2</td>
                                 <td>Orientasi bangunan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
+                                                                    
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"></td>
+                                <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -867,7 +837,7 @@
                                 <td>KT2.1</td>
                                 <td>Fasad Utama bangunan yang menghadap orientasi utara-selatan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -876,12 +846,12 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <th colspan="2"></th>
-                                <th colspan="2"></th>
+                                <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Pelan tapak berserta penunjuk arah utara
                                         menunjukkan pelan bangunan dengan meletakkan sun-path diagram</span><br>
@@ -908,7 +878,7 @@
                                 <td>KT2.2</td>
                                 <td>Meminimumkan bukaan pada fasad yang menghadap timur dan barat</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -917,12 +887,12 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <th colspan="2"></th>
-                                <th colspan="2"></th>
+                                <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
                                 <th colspan="4">
                                     <span>&#183; Laporan penyenggaraan cerun</span><br>
                                 </th>
@@ -956,13 +926,13 @@
                                 <td colspan="4"></td>
                                 <td></td>
                                 <td>
-                                    <form class="form">
+                                    {{-- <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
                                             <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
                                             <span id="custom-text">No file chosen, yet.</span>
                                         </label>
-                                    </form>
+                                    </form> --}}
                                 </td>
                             </tr>
 
@@ -971,7 +941,7 @@
                                 <td>KT3.1</td>
                                 <td>Dinding luar bangunan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -980,12 +950,12 @@
                                     </select> 
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
                                     <span>&#183; Pengiraan U-Value bagi rekabentuk dinding</span><br>
@@ -1011,7 +981,7 @@
                                 <td>KT3.2</td>
                                 <td>Pengadang Suria Luaran</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1020,12 +990,12 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Katalog bahan</span><br>
                                 </td>
@@ -1043,7 +1013,7 @@
                                 <td>KT4</td>
                                 <td>OTTV & RTTV</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1052,12 +1022,12 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
                                 </td>
@@ -1074,7 +1044,7 @@
                                 <td>KT5</td>
                                 <td>Kecekapan pencahayaan</td>
                                 <td>
-                                    {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1100,7 +1070,7 @@
                                 <td>KT5.2</td>
                                 <td>Kawalan Pencahayaan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1109,12 +1079,12 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
                                 <td colspan="4">
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1137,32 +1107,32 @@
 
                             <!--KT8-->
                             <tr class="pg-2" align="center">
-                                <td>KT8</td>
-                                <td>Tenaga Boleh Baharu (TBB)</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <td>KT8</th>
+                                <th>Tenaga Boleh Baharu (TBB)</th>
+                                <th>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
                                         <option value="D">D</option>
                                     </select>                
-                                </td>
+                                </th>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
+                                <th colspan="4">
                                     <span>&#183; Mengemukakan lukisan rekabentuk sistem dan simulasi pengiraan
                                         bagi anggaran tenaga baharu yang boleh dihasilkan oleh sistem tersebut</span><br>
-                                </td>
-                                <td>
+                                </th>
+                                <th>
                                     <span> &#183; Salinan lukisan siap bina dan laporan uji terima yang mematuhi kehendak rekabentuk</span><br>
                                     <span> &#183; Pengiraan penjanaan tenaga boleh baharu berbanding jumlah penggunaan tenaga tahunan bangunan</span><br>
-                                </td>
+                                </th>
                                 <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1177,30 +1147,30 @@
 
                             <!--KT11-->
                             <tr class="pg-2" align="center">
-                                <td>KT11</td>
-                                <td>Pengujian dan pentauliahan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <th>KT11</th>
+                                <th>Pengujian dan pentauliahan</th>
+                                <th>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
                                         <option value="D">D</option>
                                     </select>  
-                                </td>
+                                </th>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off"/></td>
+                              <td colspan="2"></td>
+                                <th colspan="4">
                                     <span>&#183; Pelan pengujian dan pentauliahan</span><br>
-                                </td>
-                                <td>
+                                </th>
+                                <th>
                                     <span>&#183; Dokumen lengkap pengujian dan pentauliahan yang telah disahkan</span><br>
-                                </td>
+                                </th>
                                 <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1217,11 +1187,11 @@
                             <tr class="pg-2" align="center">
                                 <th colspan="3">Jumlah markah KT</th>
                                 <th colspan="2">0</th>
+                                <th colspan="2">0</th>
+                                <th colspan="2">0</th>
+                                <th colspan="2">0</th>
                                 <th colspan="2"><input class="form-control" id="total_amount_ms_kt" type="text" autocapitalize="off" name="markahKT1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                 <th colspan="2"><input class="form-control" id="total_amount_mr_kt" type="text" autocapitalize="off" name="markahKT2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th colspan="2">0</th>
-                                <th colspan="2">0</th>
-                                <th colspan="2">0</th>
                                 <th colspan="2">0</th>
                                 <th colspan="4"></th>
                                 <th colspan="3"></th>
@@ -1249,7 +1219,7 @@
                                 </tr>
 
                                 <tr class="pg-3" align="center" style="background-color:#EB5500">
-                                    <th>MMR</th>
+                                    <th>MM</th>
                                     <th>MS</th>
                                     <th>MR</th>
                                     <th>MMV</th>
@@ -1272,7 +1242,7 @@
                                 <td>SB1</td>
                                 <td>Sistem Binaan Berindustri (IBS)</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1280,11 +1250,12 @@
                                         <option value="D">D</option>
                                     </select>    
                                 </td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td></td>
                                 <td colspan="4">
@@ -1312,7 +1283,7 @@
                                 <td>SB2</td>
                                 <td>Produk hijau</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1320,12 +1291,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                     <span>&#183; Sijil Pengesahan produk hijau</span><br>
@@ -1355,7 +1326,7 @@
                                 <td>SB3</td>
                                 <td>Pengurusan sisa semasa pembinaan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1363,12 +1334,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                     <span>&#183; Pelan pengurusan sisa yang meliputi Buangan Terjadual
@@ -1402,7 +1373,7 @@
                                 <td>SB4</td>
                                 <td>3r-Semasa Operasi</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -1410,12 +1381,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                     <span>&#183; Pelan pengurusan sisa domestik</span><br>
@@ -1437,18 +1408,17 @@
                                 </td>
                                 <tr>
 
-                                <!--Jumlah MarkahSB-->
                                 <tr class="pg-3" align="center">
-                                    <th colspan="3">Jumlah markah SB</th>
-                                    <th>0</th>
-                                    <th><input class="form-control" id="total_amount_mr_sb" type="text" autocapitalize="off" name="markahSB1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                    <th><input class="form-control" id="total_amount_ms_sb" type="text" autocapitalize="off" name="markahSB2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                    <th>0</th>
-                                    <th>0</th>
-                                    <th>0</th>
-                                    <th>0</th>
-                                    <th colspan="4"></th>
-                                    <th colspan="3"></th>
+                                    <td colspan="3">Jumlah markah SB</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td><input class="form-control" id="total_amount_mmr_sb" type="text" autocapitalize="off" name="markahSB1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
+                                    <td><input class="form-control" id="total_amount_mmv_sb" type="text" autocapitalize="off" name="markahSB2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
+                                    <td>0</td>
+                                    <td colspan="4"></td>
+                                    <td colspan="3"></td>
                                 </tr>  
                     </table>
 
@@ -1470,7 +1440,7 @@
                             </tr>
                         
                             <tr class="pg-4" align="center" style="background-color:#EB5500">
-                                <th>MMR</th>
+                                <th>MM</th>
                                 <th>MS</th>
                                 <th>MR</th>
                                 <th>MMV</th>
@@ -1490,32 +1460,32 @@
 
                             <!--PA1-->
                             <tr class="pg-4" align="center">
-                                <td>PA1</td>
-                                <td>Produk Kecekapan Air</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <th>PA1</th>
+                                <th>Produk Kecekapan Air</th>
+                                <th>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
                                         <option value="D">D</option>
                                     </select>
-                                </td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS_PA" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" autocapitalize="off" required/></td>
+                                </th>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
-                                <td colspan="4">
+                                <th colspan="4">
                                                 <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
                                                 <span>&#183; Pengiraan penjimatan</span><br>
-                                </td>
-                                <td>
+                                </th>
+                                <th>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
-                                </td>
+                                </th>
                                 <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1530,32 +1500,32 @@
 
                             <!--PA2-->
                             <tr class="pg-4" align="center">
-                                <td>PA2</td>
-                                <td>Penjimatan Penggunaan Air Dalam Bangunan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <th>PA2</th>
+                                <th>Penjimatan Penggunaan Air Dalam Bangunan</th>
+                                <th>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                     </select>
-                                </td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS_PA" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" autocapitalize="off" required/></td>
+                                </th>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
-                                <td colspan="4">
+                                <th colspan="4">
                                                 <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
                                                 <span>&#183; Pengiraan</span><br>
-                                </td>
-                                <td>
+                                </th>
+                                <th>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
-                                </td>
+                                </th>
                                 <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1570,32 +1540,32 @@
 
                             <!--PA3-->
                             <tr class="pg-4" align="center">
-                                <td rowspan="2">PA3</td>
-                                <td>i. SPAH</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <th rowspan="2">PA3</th>
+                                <th>i. SPAH</th>
+                                <th>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
                                         <option value="D">D</option>
                                     </select>
-                                </td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS_PA" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" autocapitalize="off" required/></td>
+                                </th>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
-                                <td colspan="4">
+                                <th colspan="4">
                                                 <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
                                                 <span>&#183; Pengiraan</span><br>
-                                </td>
-                                <td>
+                                </th>
+                                <th>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
-                                </td>
+                                </th>
                                 <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1609,35 +1579,35 @@
                             </tr>
 
                             <tr class="pg-4" align="center">
-                                {{-- <td rowspan="2">PA3</td> --}}
-                                <td>ii. Kitar Semula Air Sisa</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                {{-- <th rowspan="2">PA3</th> --}}
+                                <th>ii. Kitar Semula Air Sisa</th>
+                                <th>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
                                         <option value="D">D</option>
                                     </select>
-                                </td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS()" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
+                                </th>
+                                <td>5</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td><input onblur="findTotalMMR_SB()" class="form-control sum_mmr_sb" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_SB()" class="form-control sum_mmv_sb" type="number" autocapitalize="off"/></td required>
                                 <td></td>
-                                <td colspan="4">
+                                <th colspan="4">
                                                 <span>&#183; Laporan rekabentuk dan pengiraan SPAH atau
                                                     sistem kitar semula air sisa</span><br>
                                                 <span>&#183; Lukisan SPAH atau lukisan sistem kitar semula air sisa</span><br>
                                                 <span>&#183; Bil air domestik</span><br>
-                                </td>
-                                <td>
+                                </th>
+                                <th>
                                     <span>&#183; Laporan pengujian sistem</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
-                                </td>
+                                </th>
                                 <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1654,12 +1624,12 @@
                             <tr class="pg-4" align="center">
                                 <th colspan="3">Jumlah markah PA</th>
                                 <th>0</th>
-                                <th><input class="form-control" id="total_amount_ms_pa" type="text" autocapitalize="off" name="markahPA1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th><input class="form-control" id="total_amount_mr_pa" type="text" autocapitalize="off" name="markahPA2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
+                                <th></th>
+                                <th></th>
+                                <th><input class="form-control" id="total_amount_mmr_pa" type="text" autocapitalize="off" name="markahPA1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input class="form-control" id="total_amount_mmv_pa" type="text" autocapitalize="off" name="markahPA2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th></th>
                                 <th colspan="4"></th>
                                 <th colspan="3"></th>
                             </tr> 
@@ -1702,28 +1672,28 @@
                             </tr>
                         </thead>
 
-                        <!--PD2--> <!--No input-->
+                        <!--PD2-->
                         <tr class="pg-5" align="center">
-                            <td>PD2</td>
-                            <td>Perancangan ruang</td>
-                            <td>
-                                {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                            <th>PD2</th>
+                            <th>Perancangan ruang</th>
+                            <th>
+                                {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select> --}}
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td colspan="4"></td>
-                            <td></td>
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4"></th>
+                            <th></th>
                             <td>
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -1741,7 +1711,7 @@
                             <td>PD2.4</td>
                             <td>Ketinggian siling yang efektif</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -1750,11 +1720,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                                             <span>&#183; Lukisan keratan bangunan yang menunjukkan
@@ -1780,7 +1750,7 @@
                             <td>PD2.5</td>
                             <td>Warna cerah di permukaan dinding dan siling</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -1789,11 +1759,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                                             <span>&#183; Katalog dan sampel menunjukkan warna yang dicadangkan</span><br>
@@ -1813,29 +1783,29 @@
 
                         </tr>
 
-                        <!--PD3--> <!--No input-->
+                        <!--PD3-->
                         <tr class="pg-5" align="center">
-                            <td>PD3</td>
-                            <td>Kualiti Visual</td>
-                            <td>
-                                {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                            <th>PD3</th>
+                            <th>Kualiti Visual</th>
+                            <th>
+                                {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                     <option value="C">C</option>
                                     <option value="D">D</option>
                                 </select> --}}
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td colspan="4">
-                            </td>
-                            <td></td>
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="4">
+                            </th>
+                            <th></th>
                             <td>
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -1853,7 +1823,7 @@
                             <td>PD3.1</td>
                             <td>Faktor Pencahayaan Siang (DF)</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -1862,11 +1832,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                                             <span>&#183; Lukisan tampak dan jadual tingkap</span><br>
@@ -1894,7 +1864,7 @@
                             <td>PD3.2</td>
                             <td>Menggunakan rak cahaya (light shelves)</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -1903,11 +1873,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                                             <span>&#183; Rekabentuk rak cahaya</span><br>
@@ -1937,7 +1907,7 @@
                             <td>PD3.3</td>
                             <td>Kawalan Tahap Kesilauan</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -1946,11 +1916,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                                             <span>&#183; Katalog dan sampel menunjukkan bidai yang dicadangkan</span><br>
@@ -1977,7 +1947,7 @@
                             <td>PD3.4</td>
                             <td>Akses visual kepada pandangan di luar</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -1986,11 +1956,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                                             <span>&#183; Pelan susuratur</span><br>
@@ -2019,7 +1989,7 @@
                             <td>PD8</td>
                             <td>Kualiti Udara Dalaman (IAQ)</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -2028,11 +1998,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                                             <span>&#183; Katalog dan sijil pengesahan penarafan eco-label bahan</span><br>
@@ -2061,7 +2031,7 @@
                             <td>PD10</td>
                             <td>Kaji Selidik Keselesaan Penghuni</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -2070,11 +2040,11 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMMR_PD()" class="form-control sum_mmr_pd" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_PD()" class="form-control sum_mmv_pd" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4"> 
                                 <span>&#183; Tidak berkaitan (TB)</span></td>
@@ -2097,11 +2067,11 @@
                         <tr class="pg-5" align="center">
                             <th colspan="3">Jumlah markah PD</th>
                             <th>0</th>
-                            <th><input class="form-control" id="total_amount_ms_pd" type="text" autocapitalize="off" name="markahPD1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                            <th><input class="form-control" id="total_amount_mr_pd" type="text" autocapitalize="off" name="markahPD2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                             <th>0</th>
                             <th>0</th>
                             <th>0</th>
+                            <th><input class="form-control" id="total_amount_mmr_pd" type="text" autocapitalize="off" name="markahPD1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                            <th><input class="form-control" id="total_amount_mmv_pd" type="text" autocapitalize="off" name="markahPD2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                             <th>0</th>
                             <th colspan="4"></th>
                             <th colspan="3"></th>
@@ -2150,7 +2120,7 @@
                                 <td>FL1</td>
                                 <td>Penarafan sedia ada</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2158,16 +2128,17 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td colspan="4"></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
-                                <td colspan="2">
+                                
+                                <td colspan="2"></td>
+                                <td colspan="3"></td>
+                                <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2184,7 +2155,7 @@
                                 <td>FL2</td>
                                 <td>Pengurusan fasiliti bangunan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2192,12 +2163,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2219,7 +2190,7 @@
                                 <td>FL2.1</td>
                                 <td>Pengurusan data dan ruang</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2227,12 +2198,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2254,7 +2225,7 @@
                                 <td>FL2.2</td>
                                 <td>Pengurusan sistem penyenggaraan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2262,12 +2233,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2289,7 +2260,7 @@
                                 <td>FL2.3</td>
                                 <td>Prestasi penggurusan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2297,12 +2268,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2324,7 +2295,7 @@
                                 <td>FL3</td>
                                 <td>Penyenggaraan lestari</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2332,12 +2303,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2359,7 +2330,7 @@
                                 <td>FL3.1</td>
                                 <td>Ruang pejabat untuk pasukan penyenggaraan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2367,12 +2338,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2394,7 +2365,7 @@
                                 <td>FL3.2</td>
                                 <td>Kontraktor pengurusan fasiliti (FM)</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2402,12 +2373,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2429,7 +2400,7 @@
                                 <td>FL3.3</td>
                                 <td>Pelan Pengurusan Fasiliti (FM)</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2437,12 +2408,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4">
                                 </td>
@@ -2464,7 +2435,7 @@
                                 <td>FL3.4</td>
                                 <td>Manual Operasi dan Penyenggaraan Bangunan</td>
                                 <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
@@ -2472,12 +2443,12 @@
                                         <option value="D">D</option>
                                     </select>
                                 </td>
-                                <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalMMR_FL()" class="form-control sum_mmr_fl" type="number" autocapitalize="off"/></td required>
+                                <td><input onblur="findTotalMMV_FL()" class="form-control sum_mmv_fl" type="number" autocapitalize="off"/></td required>
                                 <td></td>
                                 <td colspan="4"> 
                                 Lorem ipsum</td>
@@ -2500,15 +2471,15 @@
                             <tr class="pg-6" align="center">
                                 <th colspan="3">Jumlah markah FL</th>
                                 <th>
-                                   0
-                                </th>
-                                <th><input class="form-control" id="total_amount_ms_fl" type="text" autocapitalize="off" name="markahFL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th><input class="form-control" id="total_amount_mr_fl" type="text" autocapitalize="off" name="markahFL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th>
                                     0
                                 </th>
                                 <th>0</th>
                                 <th>0</th>
+                                <th>
+                                0
+                                </th>
+                                <th><input class="form-control" id="total_amount_mmr_fl" type="text" autocapitalize="off" name="markahFL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input class="form-control" id="total_amount_mmv_fl" type="text" autocapitalize="off" name="markahFL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                 <th>0</th>
                                 <th colspan="4"></th>
                                 <th colspan="3"></th>
@@ -2557,7 +2528,7 @@
                             <td>IN1</td>
                             <td>Reka Bentuk Inovasi</td>
                             <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
+                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                     <option hidden selected="">Sila Pilih</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
@@ -2565,12 +2536,12 @@
                                     <option value="D">D</option>
                                 </select>
                             </td>
-                            <td>1</td>
-                            <td><input onblur="findTotalMS_IN()" class="form-control sum_ms_in" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_IN()" class="form-control sum_mr_in" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td><input onblur="findTotalMMR_IN()" class="form-control sum_mmr_in" type="number" autocapitalize="off"/></td required>
+                            <td><input onblur="findTotalMMV_IN()" class="form-control sum_mmv_in" type="number" autocapitalize="off"/></td required>
                             <td></td>
                             <td colspan="4">
                             <span>&#183; Laporan cadangan inovasi</span><br>
@@ -2595,17 +2566,16 @@
                             <!-- Jumlah MarkahIN-->
                             <tr class="pg-7" align="center">
                                 <th colspan="3">Jumlah markah IN</th>
-                                <th>
-                                    0
-                                </th>
-                                <th><input class="form-control" id="total_amount_ms_in" type="text" autocapitalize="off" name="markahIN1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th>
-                                    <input class="form-control" id="total_amount_mr_in" type="text" autocapitalize="off" name="markahIN2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>
-                                </th>
-                                <th>0
-                                </th>
                                 <th>0</th>
                                 <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>
+                                    <input class="form-control" id="total_amount_mmr_in" type="text" autocapitalize="off" name="markahIN1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>
+                                </th>
+                                <th> 
+                                    <input class="form-control" id="total_amount_mmv_in" type="text" autocapitalize="off" name="markahIN2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>
+                                </th>
                                 <th>0</th>
                                 <th colspan="4"></th>
                                 <th colspan="3"></th>
@@ -2614,73 +2584,73 @@
 
                     <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
-                </div>          <!--Scrollbar-->
+                {{-- </div>          <!--Scrollbar--> --}}
 
 
                     <!--Button Simpan (TOOLTIPS)-->
                     <!--Page 1-->
                     <div class="mt-3 text-center">
-                        <button class="btn btn-primary pg-1" data-toggle="tooltip" data-placement="bottom" 
+                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-1" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button2()" type="submit">Seterusnya</button>
-                        {{-- <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button> --}}
-                    </div>
-
-                    <!--Page 2-->
-                    <div class="mt-3 text-center pg-2">
-                        <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
-                    </div>
-
-                    <!--Page 3-->
-                    <div class="mt-3 text-center pg-3">
-                        <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
-                    </div>
-
-                    <!--Page 4-->
-                    <div class="mt-3 text-center pg-4">
-                        <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
-                    </div>
-
-                    <!--Page 5-->
-                    <div class="mt-3 text-center pg-5">
-                        <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
-                    </div>
-
-                    <!--Page 6-->
-                    <div class="mt-3 text-center pg-6">
-                        <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
                     </div>
 
+                    <!--Page 2-->
+                    {{-- <div class="mt-3 text-center pg-2">
+                        <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
+                    </div> --}}
+
+                    <!--Page 3-->
+                    {{-- <div class="mt-3 text-center pg-3">
+                        <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
+                    </div> --}}
+
+                    <!--Page 4-->
+                    {{-- <div class="mt-3 text-center pg-4">
+                        <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
+                    </div> --}}
+
+                    <!--Page 5-->
+                    {{-- <div class="mt-3 text-center pg-5">
+                        <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
+                    </div> --}}
+
+                    <!--Page 6-->
+                    {{-- <div class="mt-3 text-center pg-6">
+                        <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
+                    </div> --}}
+
                     <!--Page 7-->
-                    <div class="mt-3 text-center pg-7">
+                    {{-- <div class="mt-3 text-center pg-7">
                         <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
-                    </div>
+                    </div> --}}
 
 
 
@@ -2993,18 +2963,13 @@
             <!--Autofill form-->
 
             {{-- <script>
-                function autoFill() {
-                document.getElementById('input1').value = "My Text Input";
-                document.getElementById('input2').value = "Dropdown2";
-            
-                var radioElements = document.getElementsByName("input3");
-
-                for (var i=0; i<radioElements.length; i++) {
-                if (radioElements[i].getAttribute('value') == 'Radio3') {
-                    radioElements[i].checked = true;
-                }
-                }
-            }
+                var select = document.getElementsByClassName('js-select-auto__select'); // make sure you are selecting the right <select> element
+                var value = select[0].value; // e.g., 3
             </script> --}}
+
+            <script>
+                var selectAutocomplete = document.getElementsByClassName('select-auto')['A']; // your dynamically created select
+                new SelectAuto(selectAutocomplete);
+            </script>
             
 @endsection

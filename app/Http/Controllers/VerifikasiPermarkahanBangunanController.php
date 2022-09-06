@@ -152,15 +152,53 @@ class VerifikasiPermarkahanBangunanController extends Controller
     }
 
     #semakan rawak verifikasi permarkahan bangunan
+    #sekretariat
     public function semakan_rawak()
     {
         return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.index');
 
     }
-    public function semakan_rawak_form($id)
+    public function papar_semakan_rawak($id)
     {
         return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.edit');
 
+    }
+    public function simpan_semakan_rawak(Request $request, $id)
+    {
+        return redirect('/verifikasi_permarkahan_bangunan/semakan_rawak');
+    }
+
+    #pemudahcara
+    public function skor_penilaian()
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.index');
+
+    }
+
+    public function papar_skor_penilaian($id)
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.edit');
+    }
+
+    public function simpan_skor_penilaian(Request $request, $id)
+    {
+        return redirect('/verifikasi_permarkahan_bangunan/skor_penilaian');
+    }
+
+    #ketua pasukan
+    public function sijil_penilaian()
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.index');
+    }
+
+    public function papar_sijil_penilaian($id)
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.edit');
+    }
+
+    public function simpan_sijil_penilaian(Request $request, $id)
+    {
+        return view('/verifikasi_permarkahan_bangunan/muat_turun_sijil');
     }
 
 
