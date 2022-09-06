@@ -1,0 +1,1 @@
+sini tunjuk skor kad
