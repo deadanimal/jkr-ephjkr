@@ -48,10 +48,10 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $gb->id_ruj_skala }}</td>
                     <td>{{ $gb->namaProjek }}</td>
-                    <td>{{ $gb->alamatSyarikat }}</td>
-                    <td>{{ $gb->status }}</td>
+                    <td>{{ $gb->alamatProjek }}</td>
+                    <td>{{ $gb->statusProjek }}</td>
                     <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}" type="button" class="btn btn-warning">PAPAR</a>
+                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{{$gb->id}}" type="button" class="btn btn-warning">PAPAR</a>
                     </td> 
                 </tr>
                     @endforeach

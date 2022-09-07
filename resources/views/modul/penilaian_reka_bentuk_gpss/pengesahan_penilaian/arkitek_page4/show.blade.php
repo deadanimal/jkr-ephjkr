@@ -56,7 +56,7 @@
               <td >Tap fitting</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryTapFitting" id="AwSanitaryTapFitting">
+                {{$gpss_bangunan->AwSanitaryTapFitting}}
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -68,7 +68,7 @@
               <td >Water closet</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryWaterCloset" id="AwSanitaryWaterCloset">
+                {{$gpss_bangunan->AwSanitaryWaterCloset}}
                 
               </td>            
               <td>
@@ -82,7 +82,7 @@
               <td >Water basin</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryWaterBasin" id="AwSanitaryWaterBasin">
+                {{$gpss_bangunan->AwSanitaryWaterBasin}}
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -93,9 +93,7 @@
             <tr>
               <td >Sink</td>
               <td >2</td>
-              <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitarySink" id="AwSanitarySink">
-              </td>            
+              <td>{{$gpss_bangunan->AwSanitarySink}}   </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -105,9 +103,7 @@
             <tr>
               <td >Urinal</td>
               <td >2</td>
-              <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryUrinal" id="AwSanitaryUrinal">
-              </td>            
+              <td>{{$gpss_bangunan->AwSanitaryUrinal}}</td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -117,9 +113,7 @@
             <tr>
               <td >Bidet</td>
               <td >2</td>
-              <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryBidet" id="AwSanitaryBidet">
-              </td>            
+              <td>{{$gpss_bangunan->AwSanitaryBidet}}</td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -130,8 +124,7 @@
               <td >Floor trap</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryFloorTrap" id="AwSanitaryFloorTrap">
-              </td>            
+                {{$gpss_bangunan->AwSanitaryFloorTrap}}</td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -141,9 +134,7 @@
             <tr>
               <td >Shower</td>
               <td >2</td>
-              <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryShower" id="AwSanitaryShower">
-              </td>            
+              <td>{{$gpss_bangunan->AwSanitaryShower}}</td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -153,9 +144,7 @@
             <tr>
               <td >Faucet</td>
               <td >2</td>
-              <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryFaucet" id="AwSanitaryFaucet">
-              </td>            
+              <td>{{$gpss_bangunan->AwSanitaryFaucet}}</td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -195,8 +184,7 @@
         </div>
   
         <div align="right" class="mt-3">
-          <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/mekanikal/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <button class="btn btn-primary" type="submit" title="Simpan">Hantar</button>
         </div>
   
       </div>

@@ -165,12 +165,19 @@ Route::middleware('auth')->group(function () {
     // architectural works - Sanitary forms
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page4/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page4']);
     Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page4/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page4']);
+    // mechanical works form
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/mekanikal/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_mekanikal']);
+    Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_mekanikal']);
+
 
     // Sekretariat views
     // Pengesahan Penilaian, index() method
     Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian']);
     // papar form pengesahan, show() method
     Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian_skor_penilaian_arkitek']);
+    Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page2/{id}', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian_skor_penilaian_arkitek_page2']);
+    Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page3/{id}', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian_skor_penilaian_arkitek_page3']);
+    Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page4/{id}', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian_skor_penilaian_arkitek_page4']);
     // action pengesahan, update() method?
     Route::put('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
 
@@ -183,7 +190,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/penilaian_reka_bentuk_gpss/paparan_sijil', [PenilaianRekaBentukGpssController::class, 'paparan_sijil']);
     Route::get('/penilaian_reka_bentuk_gpss/papar_sijil', [PenilaianRekaBentukGpssController::class, 'papar_sijil']);
-    Route::get('/penilaian_reka_bentuk_gpss/createPDF', [PenilaianRekaBentukGpssController::class, 'createPDF']);
+    Route::get('/penilaian_reka_bentuk_gpss/createPDF/{id}', [PenilaianRekaBentukGpssController::class, 'createPDF']);
 
     // Penilaian Verifikasi Permarkahan GPSS
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukJalanController::class);

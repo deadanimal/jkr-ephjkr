@@ -4,7 +4,7 @@ use App\Models\Projek;
 use Illuminate\Http\Request;
 use App\Models\PemudahCara;
 use App\Models\KriteriaGpssBangunan;
-use Barryvdh\DomPDF\PDF;
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 
 class PenilaianRekaBentukGpssController extends Controller
 {
@@ -202,6 +202,22 @@ class PenilaianRekaBentukGpssController extends Controller
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page4');
     }
 
+    public function skor_penilaian_mekanikal()
+    {
+        // papar 2nd page GPSS architectural works
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.mekanikal.create');
+    }
+
+    public function simpan_skor_penilaian_mekanikal(Request $request, $id)
+    {
+        // simpan skor penilaian
+        $gpss_bangunan_sanitary = new KriteriaGpssBangunan($request->all());
+        alert()->success('Markah disimpan', 'Berjaya');
+        $gpss_bangunan_sanitary->save();
+
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page4');
+    }
+
 
 
     #pengesahan penilaian for Sekretariat views
@@ -215,10 +231,49 @@ class PenilaianRekaBentukGpssController extends Controller
     }
     public function pengesahan_penilaian_skor_penilaian_arkitek($id)
     {
-        
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
 
+        // dd('pape');
         // papar form pengesahan penilaian with id projek
-        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.show');
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ]);
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_arkitek_page2($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.arkitek_page2.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_arkitek_page3($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.arkitek_page3.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_arkitek_page4($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.arkitek_page4.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
     }
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
@@ -256,10 +311,10 @@ class PenilaianRekaBentukGpssController extends Controller
         return view('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
     }
 
-    public function createPDF(){
+    public function createPDF($id){
 
-        $details =['title' => 'test'];
-        $pdf = PDF::loadView('modul.penilaian_reka_bentuk_gpss.papar_sijil.index',$details);
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        $pdf = FacadePdf::loadView('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.pdf');
         return $pdf->download('sijil.pdf');
  
     }
