@@ -137,8 +137,8 @@
                                 </td>
 
                                 <td colspan="2">1</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required id="markahTL" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required id="markahTL" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required id="markahTL1_MS" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required id="markahTL1_MR" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
