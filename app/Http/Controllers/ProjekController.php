@@ -6,8 +6,13 @@ use App\Http\Requests\StoreProjekRequest;
 use App\Http\Requests\UpdateProjekRequest;
 use App\Models\Projek;
 use App\Models\StatusProjek;
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
+// use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
+// use Barryvdh\DomPDF\PDF as PDF;
 use Illuminate\Support\Facades\Auth;
+// use Barryvdh\DomPDF\Facade\Pdf;
 use \PDF;
+
 
 class ProjekController extends Controller
 {
@@ -144,13 +149,19 @@ class ProjekController extends Controller
         return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
 
-    // public function createPDF($id){
+    public function cetakpdfprojek($id){
 
-    //     // $details =['title' => 'test'];
-    //     $pdf = PDF::loadView('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
-    //     return $pdf->download('sijil.pdf');
+        $pendaftaran_projek = Projek::find($id);
+        $pdf = FacadePdf::loadView('test');
+        // $pdf = PDF::loadView('pendaftaran_projek.test');
+
+
+        return $pdf->download('PROJEK.'.'pdf');
+
+
+
  
-    // }
+    }
 
     
 }

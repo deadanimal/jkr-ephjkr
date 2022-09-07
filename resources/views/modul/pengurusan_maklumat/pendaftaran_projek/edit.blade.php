@@ -32,12 +32,12 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row mx-4">
-                        {{-- <div class="col-4 mb-2">
+                        <div class="col-4 mb-2">
                             <h5 class="h6">ID Skala:</h5>
                         </div>
                         <div class="col-8 mb-2">
                             <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->id_ruj_skala }}</h5>
-                        </div>  --}}
+                        </div> 
                        {{-- <input type="text" value={{$pendaftaran_projek->id}}> --}}
                         <div class="col-4 mb-2">
                             <h5 class="h6">Nama Projek:</h5>
@@ -74,7 +74,7 @@
                             <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->negeri }}</h5>
                         </div>
 
-                        {{-- <div class="col-4 mb-2">
+                        <div class="col-4 mb-2">
                             <h5 class="h6">Keluasan Tapak:</h5>
                         </div>
                         <div class="col-8 mb-2">
@@ -134,52 +134,52 @@
                             <h5 class="h6">Kod Projek:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->kodProjek }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->kosProjek }}</h5>
                         </div>
 
-                        <div class="col-4 mb-2">
+                        {{-- <div class="col-4 mb-2">
                             <h5 class="h6">Tarikh Kemaskini:</h5>
                         </div>
                         <div class="col-8 mb-2">
                             <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek-> }}</h5>
-                        </div>
+                        </div> --}}
 
                         <div class="col-4 mb-2">
                             <h5 class="h6">Jenis Projek:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->jenisProjek }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->jenisKategoriProjek }}</h5>
                         </div>
 
                         <div class="col-4 mb-2">
                             <h5 class="h6">Jenis Kategori:</h5>
                         </div>
                         <div class="col-8 mb-2">
-                            <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->jenisKategori }}</h5>
+                            <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->kategoriBangunan }}</h5>
                         </div>
 
-                        <div class="col-4 mb-2">
+                        {{-- <div class="col-4 mb-2">
                             <h5 class="h6">Nama Pemudah Cara:</h5>
                         </div>
                         <div class="col-8 mb-2">
                             <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek-> }}</h5>
-                        </div>
+                        </div> --}}
 
-                        <div class="col-4 mb-2">
+                        {{-- <div class="col-4 mb-2">
                             <h5 class="h6">Nama Penilai Jalan:</h5>
                         </div>
                         <div class="col-8 mb-2">
                             <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek-> }}</h5>
-                        </div>
+                        </div> --}}
 
-                        <div class="col-4 mb-2">
+                        {{-- <div class="col-4 mb-2">
                             <h5 class="h6">Nama ahli Pasukan:</h5>
                         </div>
                         <div class="col-8 mb-2">
                             <h5 class="h6" style="font-weight: 700;">{{ $pendaftaran_projek->negeri }}</h5>
-                        </div>
+                        </div> --}}
 
-                        <div class="col-4 mb-2">
+                        {{-- <div class="col-4 mb-2">
                             <h5 class="h6">Peranan Ahli Pasukan:</h5>
                         </div>
                         <div class="col-8 mb-2">
@@ -193,7 +193,7 @@
 
     <div class="row">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/*" class="btn btn-primary">Muat Turun</a>
+            <a href="/cetakprojek/{{$pendaftaran_projek->id}}" class="btn btn-primary">Muat Turun</a>
         </div>
     </div>
 

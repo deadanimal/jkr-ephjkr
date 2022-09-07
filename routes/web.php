@@ -107,6 +107,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('/pengurusan_maklumat/gugur_projek',GugurProjekController::class);
     Route::resource('/pengurusan_maklumat/pengesahan_projek', PengesahanPendaftaranProjekController::class);
 
+    //pdf muat turun
+    Route::get('/cetakprojek/{id}', [ProjekController::class, 'cetakpdfprojek']);
+
     // Penilaian Reka Bentuk Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);
     Route::get('/penilaian_reka_bentuk_bangunan', [PenilaianRekaBentukBangunanController::class, 'index']);

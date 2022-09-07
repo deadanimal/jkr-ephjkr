@@ -161,7 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Barryvdh\DomPDF\ServiceProvider::class,
+        // Barryvdh\DomPDF\ServiceProvider::class,
 
         // spatie role
         Spatie\Permission\PermissionServiceProvider::class,
@@ -196,7 +196,10 @@ return [
     */
 
     'aliases' => [
-
+        //
+        'providers' => [Barryvdh\DomPDF\ServiceProvider::class],
+        'aliases' => ['PDF' => Barryvdh\DomPDF\Facade::class], 
+        //
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -236,7 +239,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'PDF' => Barryvdh\DomPDF\Facade::class,
+        // 'PDF' => Barryvdh\DomPDF\Facade::class,
 
         // sweetalert
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
