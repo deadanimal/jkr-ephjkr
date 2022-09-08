@@ -10,7 +10,7 @@
     </div>
 
         <h1 class="header-title" style="color: #EB5500">
-            PENILAIAN REKA BENTUK BANGUNAN
+            VERIFIKASI PERMARKAHAN BANGUNAN
         </h1>
         <!--horizontal line-->
         <hr class="line-6">
@@ -21,13 +21,11 @@
                 <b class="maklumat-pemudah-cara">Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
-                <form action="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
+                <form action="/verifikasi_permarkahan_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
                     @csrf
                     {{-- @method('PUT') --}}
 
                     <!--Nama-->
-                    <input type="text" name="projek_id" value={{$projeks->id}}>
-
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Nama:</label>
                             <div class="col-sm-7">
@@ -39,8 +37,8 @@
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Nama Projek:</label>
                             <div class="col-sm-7">
-                                {{-- <input class="form-control" type="text" autocapitalize="off" name="projek_id" value="{{$pemudah_cara->projek_id}}"/>  --}}
-                                <textarea name="id" class="form-control" type="text">{{$projeks->id}}</textarea>                      
+                                
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$projeks->namaProjek}}" disabled/>                    
                             </div>
                     </div>
 

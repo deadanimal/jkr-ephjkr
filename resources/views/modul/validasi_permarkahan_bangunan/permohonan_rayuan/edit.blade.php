@@ -5,8 +5,8 @@
 @section('content')
 <div class="header">
     <div class="col-sm-6">
-        Penilaian Reka Bentuk Bangunan 
-        <b style="color: #0F5E31;">> Pengesahan Rayuan</b>
+        Penilaian Verifikasi Permarkahan GPSS 
+        <b style="color: #0F5E31;">> Permohonan Rayuan</b>
     </div>
             <h1 class="header-title">
                 PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
@@ -15,7 +15,7 @@
 
 <div class="container-fluid">
     <div class="card-body">
-        <form action="/validasi_permarkahan_bangunan/pengesahan_rayuan/{id}" method="post" enctype="multipart/form-data">
+        <form action="/validasi_permarkahan_bangunan/permohonan_rayuan/{id}" method="post" enctype="multipart/form-data">
             @csrf
             {{-- @method('PUT') --}}
 
@@ -229,10 +229,20 @@
                             </div>                     
                     </div>
 
-                    <div class="text-center">
-                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/pengesahan_rayuan/edit" role="button"
+                    <!--Sebab Rayuan-->
+                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
+                    data-toggle="tooltip" data-placement="bottom" title="Sebab Rayuan" disabled>Sebab Rayuan</a>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nyatakan sebab rayuan..."></textarea>
+                    </div>
+
+                    <!--Button Batal & Hantar-->
+                    <div class="mt-3 text-center">
+                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
                     data-toggle="tooltip" data-placement="bottom" title="Batal">Batal</a>
-                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/pengesahan_rayuan/edit" role="button"
+                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
                     data-toggle="tooltip" data-placement="bottom" title="Hantar">Hantar</a>
                     </div>     
 

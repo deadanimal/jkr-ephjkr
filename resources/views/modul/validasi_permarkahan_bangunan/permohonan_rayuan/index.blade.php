@@ -6,10 +6,11 @@
 @section('content')
 
 <div class="header">
-        <b class="pengesahan-penilaian">Pengesahan Penilaian</b>
+    Penilaian Verifikasi Permarkahan GPSS 
+    <b style="color: #0F5E31;">> Permohonan Rayuan</b>
 
     <h1 class="header-title">
-        PENILAIAN REKA BENTUK BANGUNAN
+        PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
     </h1>
     <hr class="line-6">
     
@@ -43,6 +44,7 @@
                                                 <th class="text-center">Nama Projek</th>
                                                 <th class="text-center">Alamat</th>
                                                 <th class="text-center">Status</th>
+                                                <th class="text-center">Rayuan</th>
                                                 <th class="text-center">Tindakan</th> 
                                             </tr>
                                         </thead>
@@ -51,14 +53,15 @@
                                     {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody>
                                         <!--LOOPING TABLES-->
-                                        @foreach ($kriteria_phjkr_bangunan as $key => $k)
+                                        {{-- @foreach ($projek as $key => $p) --}}
                                             <tr class="text-black">
-                                                <td>{{ $k->id }}</td>
-                                                {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->alamatProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
+                                                {{-- <td>{{ $pdkk->id }}</td> --}}
+                                                <td style="text-align: center; vertical-align: middle;">1</td>
+                                                <td style="text-align: center; vertical-align: middle;">SKL0202</td>
+                                                <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
+                                                <td style="text-align: center; vertical-align: middle;">Mukah</td>
+                                                <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
+                                                <td style="text-align: center; vertical-align: middle;">Rayuan Dibuat/Tiada</td>
                                                 <td style="text-align: center; vertical-align: middle;">
                                                     {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">
@@ -66,11 +69,11 @@
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$k->id}}" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Rayuan">Rayuan</a>
                                                 </td>
                                             </tr> 
-                                        @endforeach
+                                        {{-- @endforeach --}}
                                         </tbody>
                                     {{-- </table> --}}
                                 </table> 

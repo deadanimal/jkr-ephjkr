@@ -1,16 +1,15 @@
 @extends('layouts.base')
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="cssfile/style.css">
+<link rel="stylesheet" href="/cssfile/style.css">
 
 
 @section('content')
 <!--Verifikasi Permarkahan Bangunan-->
 
 <div class="header">
-    <b class="paparan-senarai-projek">Paparan Senarai Projek</b>
 
 <h1 class="header-title">
-    VERIFIKASI PERMARKAHAN BANGUNAN
+    PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
 </h1>
 <hr class="line-6">
 
@@ -63,8 +62,8 @@
                                             </button> --}}
                                                 {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                 title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                <a class="btn btn-primary" href="/verifikasi_permarkahan_bangunan/melantik_pemudah_cara" role="button"
-                                                data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
+                                                <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/penilaian_validasi/create" role="button"
+                                                data-toggle="tooltip" data-placement="bottom" title="Papar Penilaian Validasi Permarkahan Bangunan">Papar</a>
                                             </td>
                                         </tr> 
                                     {{-- @endforeach --}}
