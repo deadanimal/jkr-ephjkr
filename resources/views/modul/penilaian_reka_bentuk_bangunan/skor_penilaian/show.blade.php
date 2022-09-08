@@ -86,38 +86,38 @@
                             <tr class="pg-1" align="center" style="background-color:#EB5500">
                                 <th rowspan="3">Kod</th>
                                 <th rowspan="3">Kriteria</th>
-                                <th rowspan="3">Kategori bangunan</th>
-                                <th colspan="14">Pembangunan Baru</th>
+                                <th rowspan="3" colspan="6">Kategori bangunan</th>
+                                <th colspan="17">Pembangunan Baru</th>
                                 {{-- <th>Markah</th> --}}
-                                <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
+                                <th rowspan="2" colspan="2">Dokumen Pembuktian</th>
                                 <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
-                                <th rowspan="3" colspan="3">Muat Naik Dokumen Sokongan</th>
+                                <th rowspan="3" colspan="4">Muat Naik Dokumen Sokongan</th>
 
                             </tr>
             
                             <tr class="pg-1" align="center" style="background-color:#EB5500">
-                                <th colspan="14">Markah</th>
+                                <th colspan="17">Markah</th>
                             </tr>
                         
                             <tr class="pg-1" align="center" style="background-color:#EB5500">
                                 {{-- <th>TL</th> --}}
                                 {{-- <th>Kriteria</th> --}}
                                 {{-- <th>Kategori Bangunan</th> --}}
-                                <th colspan="2">MMR</th>
-                                <th colspan="2">MS</th>
-                                <th colspan="2">MR</th>
-                                <th colspan="2">MMV</th>
-                                <th colspan="2">MS</th>
-                                <th colspan="2">MV</th>
-                                <th colspan="2">ML</th>
-                                <th colspan="2">Rekabentuk (Peringkat 2)</th>
+                                <th colspan="4">MMR</th>
+                                <th colspan="4">MS</th>
+                                <th colspan="5">MR</th>
+                                <th>MMV</th>
+                                <th>MS</th>
+                                <th>MV</th>
+                                <th>ML</th>
+                                <th>Rekabentuk (Peringkat 2)</th>
                                 <th>Verifikasi (Peringkat 3)</th>
             
                             </tr>
             
                             <tr class="pg-1" style="background-color:#EB5500">
                                 <th>TL</th>
-                                <th colspan="28">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
+                                <th colspan="29">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
                             </tr>
                         </thead>
             
@@ -126,7 +126,7 @@
                                 <td>TL1</td>
                                 <td>Perancangan Tapak</td>
                                 {{-- <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
-                                <td>
+                                <td colspan="6">
                                     <select onClick="autoFill(); return true;" class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option id="input1" hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -136,16 +136,17 @@
                                     </select>                         
                                 </td>
 
-                                <td colspan="2">1</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required id="markahTL1_MS" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required id="markahTL1_MR" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
+                                <td colspan="4">1</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL1_MS" name="markahTL1_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL1_MR" name="markahTL1_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
                                 <td>Tidak Berkenaan</td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -161,7 +162,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL2</td>
                                 <td>Sistem Pengurusan Alam Sekitar (SPAS)</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -170,21 +171,22 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4"><span>&#183; Sijil ISO 14001</span><br>
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL2_MS" name="markahTL2_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL2_MR" name="markahTL2_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><span>&#183; Sijil ISO 14001</span><br>
                                     <span>&#183; Senarai kuantiti (BQ) kerja-kerja perlindungan alam sekitar</span>
                                 </td>
                                 <td>
                                     <span>&#183; Laporan Pelan Pengurusan Alam Sekitar</span><br>
                                     <span>&#183; Borang SPAS (Peringkat pembinaan)</span>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -199,7 +201,7 @@
                             <tr class="pg-1" align="center">
                                 <td rowspan="2">TL3</td>
                                 <td>i. Pemotongan dan Penambakan tanah</td>
-                                <td rowspan="2">
+                                <td rowspan="2" colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -208,14 +210,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL3_MS" name="markahTL3_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL3_MR" name="markahTL3_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Laporan rekabentuk tanah</span><br>
                                     <span>&#183; Lukisan pelan tanah</span><br>
                                     <span>&#183; Laporan geoteknikal (jika perlu)</span>
@@ -227,7 +229,8 @@
                                         atau setaraf
                                     </span>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -241,14 +244,14 @@
                             <tr class="pg-1" align="center">
                                 <td>ii. Mengekalkan Topografi Tanah</td>
                                 {{-- <th>A</th> --}}
-                                <td colspan="2">2</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">2</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL32_MS" name="markahTL32_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL32_MR" name="markahTL32_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Pelan Topografi</span><br>
                                     <span>&#183; Laporan geoteknikal</span><br>
                                     <span>&#183; Laporan rekabentuk tanah</span><br>
@@ -261,7 +264,8 @@
                                     <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
                                     <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -276,7 +280,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL4</td>
                                 <td>Pelan Kawalan Hakisan & Kelodak (ESCP)</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -285,20 +289,21 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL4_MS" name="markahTL4_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL4_MR" name="markahTL4_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
                                 </td>
                                 <td>
                                     <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -313,7 +318,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL5</td>
                                 <td>Pemuliharaan dan Pemeliharaan Cerun</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -322,20 +327,21 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL5_MS" name="markahTL5_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL5_MR" name="markahTL5_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Laporan penyenggaraan cerun</span><br>
                                 </td>
                                 <td>
                                     <span>Tidak Berkenaan</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -350,7 +356,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL6</td>
                                 <td>Pengurusan Air Larian Hujan</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -359,14 +365,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
                                     <span>&#183; Pelan sistem perparitan berdasarkan MSMA</span><br>
                                 </td>
@@ -378,7 +384,8 @@
                                     <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -389,19 +396,19 @@
                                     </td>
                             </tr>
             
-                            <!--TL8-->
+                            <!--TL8--> <!--NO INPUT-->
                             <tr class="pg-1" align="center">
                                 <td>TL8</td>
                                 <td>Landskap strategik</td>
+                                <td colspan="6"></td>
+                                <td colspan="4"></td>
+                                <td colspan="4"></td>
+                                <td colspan="5"></td>
                                 <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="3"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="4"></td>
             
                             </tr>
             
@@ -409,7 +416,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.1</td>
                                 <td>Memelihara dan menyenggara pokok yang matang</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -418,14 +425,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL81_MS" name="markahTL81_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL81_MR" name="markahTL81_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Inventori pokok</span><br>
                                     <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
                                     <span>&#183; Pelan penanaman pokok</span><br>
@@ -434,7 +441,8 @@
                                     <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
                                     <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -450,7 +458,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.2</td>
                                 <td>Menyediakan kawasan hijau</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -459,14 +467,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL82_MS" name="markahTL82_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL82_MR" name="markahTL82_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>Laporan cadangan menunjukkan:</span><br>
                                     <span>&#183; 30% kawasan hijau (disahkan oleh arkitek atau jururancang bertauliah)</span><br>
                                     <span>&#183; Pokok, pokok renek, tumbuhan penutup bumi, rumput</span><br>
@@ -475,7 +483,8 @@
                                     <span> &#40;a&#41; Pelan tapak siap bina yang telah disahkan oleh Arkitek Bertauliah</span><br>
                                     Nyatakan sekiranya ada perubahan
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -490,7 +499,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.3</td>
                                 <td>Menyedia dan menyenggara penanaman pokok teduhan</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -499,14 +508,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL83_MS" name="markahTL83_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL83_MR" name="markahTL83_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Penyediaan pelan landskap</span><br>
                                     <span>&#183; Jadual spesis pokok</span><br>
                                     <span>&#183; Anggaran bayang-bayang pokok atau struktur selain bangunan</span><br>
@@ -516,7 +525,8 @@
                                     <span> &#183; Inventori pokok</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -533,7 +543,7 @@
                                 <td>Pemilihan bahan binaan siarkaki (walkway) yang mempunyai daya pantulan
                                     haba yang tinggi
                                 </td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -542,21 +552,22 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL84_MS" name="markahTL84_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL84_MR" name="markahTL84_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Lukisan terperinci dengan spesifikasi</span><br>
                                     <span>&#183; Katalog berserta jadual SRI bahan siarkaki</span><br>
                                 </td>
                                 <td>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -571,7 +582,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.5</td>
                                 <td>Menyedia dan menyenggara sistem turapan berumput</td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -580,14 +591,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL85_MS" name="markahTL85_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL85_MR" name="markahTL85_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Lukisan butiran dan spesifikasi sistem turapan</span><br>
                                     <span>&#183; Lukisan susun atur tapak pembangunan</span><br>
                                     <span>&#183; Pengiraan luas zon turapan</span><br>
@@ -597,7 +608,8 @@
                                     <span> &#183; Lukisan siap bina</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -608,21 +620,22 @@
                                 </td>
                             </tr>
 
-                            <!--TL9-->
+                            <!--TL9--><!--NO INPUT-->
                             <tr class="pg-1" align="center">
                                 <td>TL9</td>
                                 <td>Bumbung Hijau & Dinding Hijau</td>
+                                <td colspan="6"></td>
+                                <td colspan="4"></td>
+                                <td colspan="4"></td>
+                                <td colspan="5"></td>
                                 <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="3"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="4"></td>
                             </tr>
 
                             <!--TL9.1-->
@@ -630,7 +643,7 @@
                                 <td>TL9.1</td>
                                 <td>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
                                 </td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -639,14 +652,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL91_MS" name="markahTL91_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL91_MR" name="markahTL91_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Katalog berserta jadual SRI bumbung</span><br>
                                     <span>&#183; Pengiraan keluasan bumbung</span><br>
                                 </td>
@@ -656,7 +669,8 @@
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -672,7 +686,7 @@
                                 <td>TL9.2</td>
                                 <td>Menggalakkan rekabentuk bumbung/dinding hijau
                                 </td>
-                                <td>
+                                <td colspan="6">
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
@@ -681,14 +695,14 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4">
+                                <td colspan="4">3</td>
+                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" required/></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span>&#183; Pelan konsep rekabentuk</span><br>
                                     <span>&#183; Jadual keluasan kawasan bumbung</span><br>
                                     <span>&#183; Lukisan butiran dan jadual penanaman</span><br>
@@ -701,7 +715,8 @@
                                     <span>&#183; Rekod Senggaraan</span><br>
 
                                 </td>
-                                <td>
+                                <td></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -716,43 +731,15 @@
 
                             <!--JUMLAH MARKAHTL-->
                             <tr class="pg-1" align="center">
-                                <th colspan="3">Jumlah markah TL</th>
-                                <td colspan="2">11</td>
-                                <td colspan="2"><input class="form-control" id="total_amount_ms" type="text" autocapitalize="off" name="markahTL1" id="markahTL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
-                                <td colspan="2"><input class="form-control" id="total_amount_mr" type="text" autocapitalize="off" name="markahTL2" id="markahTL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td colspan="4"></td>
-                                <td colspan="3"></td>
+                                <th colspan="6">Jumlah markah TL</th>
+                                <td colspan="4">11</td>
+                                <td colspan="4"><input class="form-control" id="total_amount_ms" type="text" autocapitalize="off" name="markahTOTAL_TL_MS" id="markahTOTAL_TL_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
+                                <td colspan="5"><input class="form-control" id="total_amount_mr" type="text" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
+                                
+                                {{-- <td colspan="4"></td> --}}
                             </tr> 
                     </table>
-
-                    <!--Testing-->
-                    {{-- <a href="#" onClick="autoFill(); return true;" >Click to Autofill</a>
-                    <form>
-                    <p>
-                        <label>Text Input: </label>
-                        <input type="text" id="input1">
-                    </p>
-                    <p>
-                        <label>Dropdown Input: </label>
-                        <select id="input2">
-                        <option value="Dropdown1">First Option</option>
-                        <option value="Dropdown2">Second Option</option>
-                        <option value="Dropdown3">Third Option</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label>Radio Input: </label>
-                        <input type="radio" name="input3" value="Radio1">First Radio
-                        <input type="radio" name="input3" value="Radio2">Second Radio
-                        <input type="radio" name="input3" value="Radio3">Third Radio
-                    </p>
-                    </form> --}}
-                        
-                        
+                                           
                     <!--------------------------------------- MarkahKT ---------------------------------------->
                     <table id="example" class="table table-bordered line-table display">
                         <thead class="text-white">
@@ -1217,8 +1204,8 @@
                             <tr class="pg-2" align="center">
                                 <th colspan="3">Jumlah markah KT</th>
                                 <th colspan="2">0</th>
-                                <th colspan="2"><input class="form-control" id="total_amount_ms_kt" type="text" autocapitalize="off" name="markahKT1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th colspan="2"><input class="form-control" id="total_amount_mr_kt" type="text" autocapitalize="off" name="markahKT2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th colspan="2"><input class="form-control" id="total_amount_ms_kt" type="text" autocapitalize="off" id="markahTOTAL_KT_MS" name="markahTOTAL_KT_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th colspan="2"><input class="form-control" id="total_amount_mr_kt" type="text" autocapitalize="off" id="markahTOTAL_KT_MR" name="markahTOTAL_KT_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                 <th colspan="2">0</th>
                                 <th colspan="2">0</th>
                                 <th colspan="2">0</th>
@@ -1441,8 +1428,8 @@
                                 <tr class="pg-3" align="center">
                                     <th colspan="3">Jumlah markah SB</th>
                                     <th>0</th>
-                                    <th><input class="form-control" id="total_amount_mr_sb" type="text" autocapitalize="off" name="markahSB1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                    <th><input class="form-control" id="total_amount_ms_sb" type="text" autocapitalize="off" name="markahSB2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                    <th><input class="form-control" id="total_amount_mr_sb" type="text" autocapitalize="off" id="markahTOTAL_SB_MS" name="markahTOTAL_SB_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                    <th><input class="form-control" id="total_amount_ms_sb" type="text" autocapitalize="off" id="markahTOTAL_SB_MR" name="markahTOTAL_SB_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                     <th>0</th>
                                     <th>0</th>
                                     <th>0</th>
@@ -1502,8 +1489,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS_PA" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_PA()" class="form-control sum_ms_pa" type="number" id="markahPA1_MS" name="markahPA1_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" id="markahPA1_MR" name="markahPA1_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1542,8 +1529,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS_PA" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_PA()" class="form-control sum_ms_pa" type="number" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1582,8 +1569,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS_PA" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_PA()" class="form-control sum_ms_pa" type="number" id="markahPA3_MS" name="markahPA3_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" id="markahPA3_MR" name="markahPA3_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1621,8 +1608,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS()" class="form-control sum_ms_pa" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS()" class="form-control sum_ms_pa" type="number" id="markahPA32_MS" name="markahPA32_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR()" class="form-control sum_mr" type="number" id="markahPA32_MR" name="markahPA32_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1654,8 +1641,8 @@
                             <tr class="pg-4" align="center">
                                 <th colspan="3">Jumlah markah PA</th>
                                 <th>0</th>
-                                <th><input class="form-control" id="total_amount_ms_pa" type="text" autocapitalize="off" name="markahPA1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th><input class="form-control" id="total_amount_mr_pa" type="text" autocapitalize="off" name="markahPA2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input class="form-control" id="total_amount_ms_pa" type="text" autocapitalize="off" name="markahTOTAL_PA_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input class="form-control" id="total_amount_mr_pa" type="text" autocapitalize="off" name="markahTOTAL_PA_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -1750,8 +1737,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" id="MarkahPD24_MS" name="MarkahPD24_MS" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" id="MarkahPD24_MR" name="MarkahPD24_MR" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1789,8 +1776,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="MarkahPD25_MS" name="MarkahPD25_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="MarkahPD25_MR" name="MarkahPD25_MR"autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1862,8 +1849,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD31_MS" name="markahPD31_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD31_MR" name="markahPD31_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1903,8 +1890,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD32_MS" name="markahPD32_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD32_MR" name="markahPD32_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1946,8 +1933,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD33_MS" name="markahPD33_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD33_MR" name="markahPD33_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1986,8 +1973,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD34_MS" name="markahPD34_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD34_MR" name="markahPD34_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2028,8 +2015,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD8_MS" name="markahPD8_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD8_MR" name="markahPD8_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2070,8 +2057,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD10_MS" name="markahPD10_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD10_MR" name="markahPD10_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2097,8 +2084,8 @@
                         <tr class="pg-5" align="center">
                             <th colspan="3">Jumlah markah PD</th>
                             <th>0</th>
-                            <th><input class="form-control" id="total_amount_ms_pd" type="text" autocapitalize="off" name="markahPD1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                            <th><input class="form-control" id="total_amount_mr_pd" type="text" autocapitalize="off" name="markahPD2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                            <th><input class="form-control" id="total_amount_ms_pd" type="text" autocapitalize="off" name="markahTOTAL_PD_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                            <th><input class="form-control" id="total_amount_mr_pd" type="text" autocapitalize="off" name="markahTOTAL_PD_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                             <th>0</th>
                             <th>0</th>
                             <th>0</th>
@@ -2159,8 +2146,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL1_MS" name="MarkahFL1_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL1_MR" name="MarkahFL1_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2193,8 +2180,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL2_MS" name="MarkahFL2_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL2_MR" name="MarkahFL2_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2228,8 +2215,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL21_MS" name="MarkahFL21_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL21_MR" name="MarkahFL21_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2263,8 +2250,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL22_MS" name="MarkahFL22_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL22_MR" name="MarkahFL22_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2298,8 +2285,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL23_MS" name="MarkahFL23_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL23_MR" name="MarkahFL23_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2333,8 +2320,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL3_MS" name="MarkahFL3_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL3_MR" name="MarkahFL3_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2368,8 +2355,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL31_MS" name="MarkahFL31_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL31_MR" name="MarkahFL31_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2403,8 +2390,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL32_MS" name="MarkahFL32_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL32_MR" name="MarkahFL32_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2438,8 +2425,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL33_MS" name="MarkahFL33_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL33_MR" name="MarkahFL33_MR"autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2473,8 +2460,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL34_MS" name="MarkahFL34_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL34_MR" name="MarkahFL34_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2502,8 +2489,8 @@
                                 <th>
                                    0
                                 </th>
-                                <th><input class="form-control" id="total_amount_ms_fl" type="text" autocapitalize="off" name="markahFL1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th><input class="form-control" id="total_amount_mr_fl" type="text" autocapitalize="off" name="markahFL2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input class="form-control" id="total_amount_ms_fl" type="text" autocapitalize="off" name="markahTOTAL_FL_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input class="form-control" id="total_amount_mr_fl" type="text" autocapitalize="off" name="markahTOTAL_FL_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                 <th>
                                     0
                                 </th>
@@ -2566,8 +2553,8 @@
                                 </select>
                             </td>
                             <td>1</td>
-                            <td><input onblur="findTotalMS_IN()" class="form-control sum_ms_in" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_IN()" class="form-control sum_mr_in" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_IN()" class="form-control sum_ms_in" type="number" id="markahIN1_MS" name="markahIN1_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_IN()" class="form-control sum_mr_in" type="number" id="markahIN1_MR" name="markahIN1_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2598,9 +2585,9 @@
                                 <th>
                                     0
                                 </th>
-                                <th><input class="form-control" id="total_amount_ms_in" type="text" autocapitalize="off" name="markahIN1" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input class="form-control" id="total_amount_ms_in" type="text" autocapitalize="off" name="markahTOTAL_IN_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
                                 <th>
-                                    <input class="form-control" id="total_amount_mr_in" type="text" autocapitalize="off" name="markahIN2" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>
+                                    <input class="form-control" id="total_amount_mr_in" type="text" autocapitalize="off" name="markahTOTAL_IN_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>
                                 </th>
                                 <th>0
                                 </th>
@@ -2611,6 +2598,8 @@
                                 <th colspan="3"></th>
                             </tr> 
                     </table>
+
+                    
 
                     <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
@@ -2624,16 +2613,6 @@
                         title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-1" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button2()" type="submit">Seterusnya</button>
-                        {{-- <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
-                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
-                        title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button> --}}
                     </div>
 
                     <!--Page 2-->

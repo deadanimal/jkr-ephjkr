@@ -68,24 +68,6 @@
                                                     data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
                                                 </td>
 
-                                                {{-- <td>{{ $pdkk->id }}</td> --}}
-                                                {{-- <td style="text-align: center; vertical-align: middle;">1</td>
-                                                <td style="text-align: center; vertical-align: middle;">SKL0202</td>
-                                                <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
-                                                <td style="text-align: center; vertical-align: middle;">Mukah</td>
-                                                <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
-                                                <td style="text-align: center; vertical-align: middle;"> --}}
-                                                    {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
-                                                    title="Daftar Pemudah Cara" type="submit">
-                                                    <a href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create">Daftar</a>
-                                                </button> --}}
-                                                    {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                                                    title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    {{-- <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
-                                                </td>
-                                            </tr>  --}}
-
                                         @endforeach
                                         </tbody>
                                     {{-- </table> --}}

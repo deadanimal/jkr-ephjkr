@@ -44,10 +44,10 @@
                             <tr align="center" class="text-black" >
                                 <th>TL</th>
                                 <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
-                                <th name="markahTL1">{{$kriteria_phjkr_bangunan ?? ''}}</th>
+                                <th>26</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th name="markahTL2">{{$kriteria_phjkr_bangunan ?? ''}}</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -56,10 +56,10 @@
                             <tr align="center" class="text-black" >
                                 <th>KT</th>
                                 <th colspan="2">Pengurusan Kecekapan Tenaga</th>
-                                <th name="markahKT1">{{$kriteria_phjkr_bangunan ?? ''}}</th>
+                                <th>26</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th name="markahKT2">{{$kriteria_phjkr_bangunan ?? ''}}</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -68,10 +68,10 @@
                             <tr align="center" class="text-black" >
                                 <th>SB</th>
                                 <th colspan="2">Pengurusan Sumber dan Bahan</th>
-                                <th name="markahSB1">26</th>
+                                <th>26</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th name="markahSB2">24</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -80,10 +80,10 @@
                             <tr align="center" class="text-black" >
                                 <th>PA</th>
                                 <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
-                                <th name="markahPA1">26</th>
+                                <th>26</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th name="markahPA2">24</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -92,10 +92,10 @@
                             <tr align="center" class="text-black" >
                                 <th>PD</th>
                                 <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
-                                <th name="markahPD1">26</th>
+                                <th>26</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th name="markahPD2">24</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -104,10 +104,10 @@
                             <tr align="center" class="text-black" >
                                 <th>FL</th>
                                 <th colspan="2">Pengurusan Fasiliti Lestari</th>
-                                <th name="markahKT2">26</th>
+                                <th>26</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th >24</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -117,9 +117,9 @@
                                 <th>IN</th>
                                 <th colspan="2">Inovasi dalam Reka Bentuk</th>
                                 <th>26</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th>24</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -128,9 +128,9 @@
                             <tr align="center" class="text-black" >
                                 <th colspan="3">JUMLAH</th>
                                 <th>101</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahMS}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahMR}}</th>
                                 <th>0</th>
-                                <th>0</th>
-                                <th>103</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>

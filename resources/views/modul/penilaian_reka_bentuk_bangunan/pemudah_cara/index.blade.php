@@ -26,7 +26,7 @@
                     {{-- @method('PUT') --}}
 
                     <!--Nama-->
-                    <input type="text" name="projek_id" value={{$projeks->id}}>
+                    {{-- <input type="text" name="projek_id" value={{$projeks->id}}> --}}
 
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Nama:</label>
@@ -39,8 +39,8 @@
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Nama Projek:</label>
                             <div class="col-sm-7">
-                                {{-- <input class="form-control" type="text" autocapitalize="off" name="projek_id" value="{{$pemudah_cara->projek_id}}"/>  --}}
-                                <textarea name="id" class="form-control" type="text">{{$projeks->id}}</textarea>                      
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" {{$projeks->namaProjek}}/> 
+                                {{-- <textarea name="id" class="form-control" type="text">{{$projeks->id}}</textarea>                       --}}
                             </div>
                     </div>
 
