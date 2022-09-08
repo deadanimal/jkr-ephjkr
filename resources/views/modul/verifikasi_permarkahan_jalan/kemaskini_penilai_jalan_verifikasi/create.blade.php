@@ -6,11 +6,12 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Melantik Pemudah Cara</a>
+                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Markah Penilaian</a>
                     </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Tambah Pemudah Cara
+                        Kemaskini Penilai Jalan
                     </li>
+                    
                 </ol>
             </nav>
         </div>
@@ -18,71 +19,63 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>VERIFIKASI PEMUDAH CARA</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>VERIFIKASI PERMARKAHAN JALAN</strong></h3>
         </div>
     </div>
 
     <hr class="text-primary mb-3">
 
+    <div class="row">
+        <div class="col">
+            <h5 class="mb-0 text-primary"><strong>Kemaskini Penilai Jalan</strong></h5>
+        </div>
+    </div>
+
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/verifikasi_permarkahan_jalan/papar_senarai_projek" method="post" enctype="multipart/form-data">
+            <form action="/verifikasi_permarkahan_jalan/melantik_penilai_jalan" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row mx-4">
-                    {{-- <div class="col-3 mb-2">
+                    <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Projek:</label>
-                        <select class="form-select js-choice" id="projek" name="projek"
-                            data-options='{"removeItemButton":true,"placeholder":true}'>
-                            <option value="">Sila pilih</option>
-                            @foreach ($projek as $pr)
-                                <option value="{{ $pr->namaProjek }}">{{ $pr->namaProjek }}</option>
-                            @endforeach
-                        </select>
-                    </div> --}}
-                    {{-- <div class="col-7 mb-2">
+                    </div>
+                    <div class="col-7 mb-2">
                         <input class="form-control" name="namaFAQ" type="text"/>
-                    </div> --}}
+                    </div>
 
-                    {{-- <div class="col-3 mb-2">
+                    <div class="col-3 mb-2">
                         <label class="col-form-label">Syarikat/Cawangan:</label>
-                        <select class="form-select js-choice" id="projek" name="projek"
-                            data-options='{"removeItemButton":true,"placeholder":true}'>
-                            <option value="">Sila pilih</option>
-                            @foreach ($user as $user)
-                                <option value="{{ $user->namaSyarikat }}">{{ $user->namaSyarikat }}</option>
-                            @endforeach
-                        </select>
-                    </div> --}}
-                    {{-- <div class="col-7 mb-2">
+                    </div>
+                    <div class="col-7 mb-2">
                         <input class="form-control" name="soalanFAQ" type="text"/>
-                    </div> --}}
+                    </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Pemudah Cara Jalan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="nama" type="text"/>
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">No. Tel:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="no_tel" type="text"/>
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">E-mel:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="email" type="text"/>
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">No. Fax:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="no_fax" type="text"/>
+                        <input class="form-control" name="JawapanFAQ" type="text"/>
                     </div>
 
                     
@@ -96,7 +89,7 @@
                                 <a href="/verifikasi_permarkahan_jalan/papar_senarai_projek" class="btn btn-outline-primary">Batal</a>
                             </div>
                             <div class="col-6 text-end">
-                                <button type="submit" class="btn btn-primary">Lantik Pemudah Cara</button>
+                                <button type="submit" class="btn btn-primary">Kemaskini Penilai Jalan</button>
                             </div>
                         </div>
                     </div>
