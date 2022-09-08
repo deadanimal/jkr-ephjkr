@@ -427,8 +427,8 @@ thead {
         <tr class="pg-1">
             <td colspan="3">Jumlah markah TL</td>
             <td>1</td>
-            <td>0</td>
-            <td>0</td>
+            <td>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</td>
             <td></td>
             <td>0</td>
             <td>0</td>
