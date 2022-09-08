@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PengesahanPendaftaranProjek;
 use App\Models\Projek;
 use Illuminate\Http\Request;
 
@@ -15,9 +16,11 @@ class PengesahanPendaftaranProjekController extends Controller
     public function index()
     {
         //
-        $pengesahan_pendaftaran = Projek::all();
+        
+        $pengesahan_projek = PengesahanPendaftaranProjek::all();
+        // dd($pengesahan_projek);
         return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.index', [
-            'pengesahan_pendaftaran'=>$pengesahan_pendaftaran
+            'pengesahan_projek'=>$pengesahan_projek
         ]);
     }
 
@@ -29,6 +32,7 @@ class PengesahanPendaftaranProjekController extends Controller
     public function create()
     {
         //
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.create');
     }
 
     /**

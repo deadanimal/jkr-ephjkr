@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuditTrailController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\GugurProjekController;
 use App\Http\Controllers\HebahanController;
 use App\Http\Controllers\LamanUtamaController;
 use App\Http\Controllers\MaklumBalasController;
@@ -85,10 +86,12 @@ Route::middleware('auth')->group(function () {
             'hebahan' => HebahanController::class,
             'pendaftaran_projek' => ProjekController::class,
             'pemilihan_ahli' => ProjekPemilihanAhliController::class,
+            
         ]);
 
         Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
         Route::post('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'update_peranan']);
+        
     });
     
     //selenggara
@@ -98,7 +101,14 @@ Route::middleware('auth')->group(function () {
     Route::resource('/pengurusan_maklumat/selenggara/status_maklum_balas', SelenggaraStatusMaklumBalasController::class);
     Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', SelenggaraKriteriaPenilaianController::class);
     Route::resource('/pengurusan_maklumat/selenggara/log_audit', SelenggaraLogAuditController::class);
-    Route::resource('/pengurusan_maklumat/pendaftaran_projek/pengesahan_pendaftaran', PengesahanPendaftaranProjekController::class);
+    
+    
+    //pendaftaran projek
+    Route::resource('/pengurusan_maklumat/gugur_projek',GugurProjekController::class);
+    Route::resource('/pengurusan_maklumat/pengesahan_projek', PengesahanPendaftaranProjekController::class);
+
+    //pdf muat turun
+    Route::get('/cetakprojek/{id}', [ProjekController::class, 'cetakpdfprojek']);
 
     // Penilaian Reka Bentuk Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);

@@ -6,7 +6,13 @@ use App\Http\Requests\StoreProjekRequest;
 use App\Http\Requests\UpdateProjekRequest;
 use App\Models\Projek;
 use App\Models\StatusProjek;
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
+// use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
+// use Barryvdh\DomPDF\PDF as PDF;
 use Illuminate\Support\Facades\Auth;
+// use Barryvdh\DomPDF\Facade\Pdf;
+use \PDF;
+
 
 class ProjekController extends Controller
 {
@@ -17,6 +23,7 @@ class ProjekController extends Controller
      */
     public function index()
     {
+        // dd('test');
         //dd(Projek::with('status')->get());
         return view('modul.pengurusan_maklumat.pendaftaran_projek.index', [
             'pendaftaran_projek' => Projek::with('status')->get()
@@ -101,9 +108,18 @@ class ProjekController extends Controller
      * @param  \App\Models\Projek  $projek
      * @return \Illuminate\Http\Response
      */
-    public function edit(Projek $projek)
+    public function edit($id)
     {
         //
+        //dd('projek');
+        $projek = Projek::find($id);
+        // dd($projek->id);
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.edit', [
+            'pendaftaran_projek' => $projek
+        ]);
+
+        //
+        
     }
 
     /**
@@ -132,4 +148,20 @@ class ProjekController extends Controller
         alert()->success('Maklumat telah dihapuskan', 'Berjaya');
         return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
+
+    public function cetakpdfprojek($id){
+
+        $pendaftaran_projek = Projek::find($id);
+        $pdf = FacadePdf::loadView('test');
+        // $pdf = PDF::loadView('pendaftaran_projek.test');
+
+
+        return $pdf->download('PROJEK.'.'pdf');
+
+
+
+ 
+    }
+
+    
 }

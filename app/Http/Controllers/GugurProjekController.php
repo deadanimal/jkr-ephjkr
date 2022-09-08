@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\GugurProjek;
 use App\Models\Projek;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Spatie\Permission\Contracts\Role;
 
 class GugurProjekController extends Controller
 {
@@ -15,10 +18,15 @@ class GugurProjekController extends Controller
     public function index()
     {
         //
-        $gugur_projek = Projek::all();
+        
+        $gugur_projek = GugurProjek::all();
         return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
             'gugur_projek'=>$gugur_projek
         ]);
+        
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
+        //     'pendaftaran_projek' => Projek::with('gugur_projek')->get()
+        // ]);
     }
 
     /**
@@ -28,7 +36,7 @@ class GugurProjekController extends Controller
      */
     public function create()
     {
-        //
+        // dd('2');
     }
 
     /**
@@ -51,6 +59,14 @@ class GugurProjekController extends Controller
     public function show($id)
     {
         //
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.edit', [
+        //     'pp' => Projek::with('gugur_projek')->where('id', $id)->first(),
+        //     'gugur_projek' => GugurProjek::with(['pengguna', 'peranan'])->where('projek_id', $id)->get(),
+        //     'pengguna' => User::all(),
+        //     'peranan' => Role::all(),
+
+        // ]);
+        
     }
 
     /**
