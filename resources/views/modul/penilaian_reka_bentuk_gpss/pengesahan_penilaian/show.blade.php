@@ -46,11 +46,8 @@
               <td rowspan="4">Roof tiles</td>
               <td >Clay tiles</td>
               <td >2</td>
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="AwRoofRoofTilesClayTiles" id="AwRoofRoofTilesClayTiles">
-              </td>            
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="clay_tiles" id="clay_tiles">
+              <td> {{$gpss_bangunan->AwRoofRoofTilesClayTiles}} </td>
+              <td><input type="number" min="0" max="2"></td>                        
               <td><input type="number" min="0" max="2" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
@@ -58,11 +55,8 @@
             <tr>
               <td >Concrete tiles</td>
               <td >2</td>
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="AwRoofRoofTilesConcreteTiles" id="AwRoofRoofTilesConcreteTiles">
-              </td>            
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="concrete_tiles" id="concrete_tiles">
+              <td>{{$gpss_bangunan->AwRoofRoofTilesConcreteTiles}} </td>            
+              <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
@@ -71,9 +65,7 @@
               
               <td >Metal roofing</td>
               <td >2</td>
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofTilesMetalRoofing" id="AwRoofRoofTilesMetalRoofing">
-              </td>            
+              <td> {{$gpss_bangunan->AwRoofRoofTilesMetalRoofing}} </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -83,7 +75,7 @@
             <tr>
               <td >Shingles</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofTilesShingles" id="AwRoofRoofTilesShingles"></td>            
+              <td> {{$gpss_bangunan->AwRoofRoofTilesShingles}} </td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -94,7 +86,7 @@
               <td rowspan="5">Insulation</td>
               <td >Rockwool</td>
               <td >2</td>
-              <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationRockwool" id="AwRoofRoofInsulationRockwool"></td>            
+              <td> {{$gpss_bangunan->AwRoofRoofInsulationRockwool}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -103,7 +95,7 @@
             <tr>
               <td >Glasswool</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationGlasswool" id="AwRoofRoofInsulationGlasswool"></td>            
+              <td> {{$gpss_bangunan->AwRoofRoofInsulationGlasswool}} </td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -112,7 +104,7 @@
             <tr>
               <td >Foam</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationFoam" id="AwRoofRoofInsulationFoam"></td>            
+              <td>{{$gpss_bangunan->AwRoofRoofInsulationFoam}} </td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -121,7 +113,7 @@
             <tr>
               <td >Aluminium Foil</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationAlumFoil" id="AwRoofRoofInsulationAlumFoil"></td>            
+              <td>{{$gpss_bangunan->AwRoofRoofInsulationAlumFoil}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -130,7 +122,7 @@
             <tr>
               <td >Undersheeting</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationUndersheeting" id="AwRoofRoofInsulationUndersheeting"></td>            
+              <td>{{$gpss_bangunan->AwRoofRoofInsulationUndersheeting}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -141,7 +133,7 @@
               <td rowspan="3">Roof Eaves</td>
               <td >Metal</td>
               <td >2</td>
-              <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofEavesMetal" id="AwRoofRoofEavesMetal"></td>            
+              <td>{{$gpss_bangunan->AwRoofRoofEavesMetal}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -150,7 +142,7 @@
             <tr>
               <td >Fiber cement</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofEavesFiberCement" id="AwRoofRoofEavesFiberCement"></td>            
+              <td>{{$gpss_bangunan->AwRoofRoofEavesFiberCement}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -159,7 +151,7 @@
             <tr>
               <td >Plasterboard</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofEavesPlasterboard" id="AwRoofRoofEavesPlasterboard"></td>            
+              <td>{{$gpss_bangunan->AwRoofRoofEavesPlasterboard}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -171,7 +163,7 @@
               <td rowspan="4">Fascia boards</td>
               <td >Metal</td>
               <td >2</td>
-              <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsMetal" id="AwRoofFascialBoardsMetal"></td>            
+              <td>{{$gpss_bangunan->AwRoofFascialBoardsMetal}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -181,7 +173,7 @@
             <tr>
               <td >Fibre cement</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsFiberCement" id="AwRoofFascialBoardsFiberCement"></td>            
+              <td>{{$gpss_bangunan->AwRoofFascialBoardsFiberCement}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -190,7 +182,7 @@
             <tr>
               <td >Plasterboard</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsPlasterboard" id="AwRoofFascialBoardsPlasterboard"></td>            
+              <td>{{$gpss_bangunan->AwRoofFascialBoardsPlasterboard}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -199,7 +191,7 @@
             <tr>
               <td >Timber</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsTimber" id="AwRoofFascialBoardsTimber"></td>            
+              <td>{{$gpss_bangunan->AwRoofFascialBoardsTimber}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -211,7 +203,7 @@
               <td rowspan="4">Gutter</td>
               <td >Upvc</td>
               <td >2</td>
-              <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterUpvc" id="AwRoofGutterUpvc"></td>            
+              <td>{{$gpss_bangunan->AwRoofGutterUpvc}}</td>      
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -221,7 +213,7 @@
             <tr>
               <td >Galvanised iron</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterGallron" id="AwRoofGutterGallron"></td>            
+              <td>{{$gpss_bangunan->AwRoofGutterGallron}}</td>           
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -230,7 +222,7 @@
             <tr>
               <td >Aluminium</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterAluminium" id="AwRoofGutterAluminium"></td>            
+              <td>{{$gpss_bangunan->AwRoofGutterAluminium}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -239,7 +231,7 @@
             <tr>
               <td >Stainless steel</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterStainSteel" id="AwRoofGutterStainSteel"></td>            
+              <td>{{$gpss_bangunan->AwRoofGutterStainSteel}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -251,7 +243,7 @@
               <td rowspan="4">Rainwater down pipes</td>
               <td >Upvc</td>
               <td >2</td>
-              <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesUpvc" id="AwRoofRainPipesUpvc"></td>            
+              <td>{{$gpss_bangunan->AwRoofRainPipesUpvc}}</td>           
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -261,7 +253,7 @@
             <tr>
               <td >Galvanised iron</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesGallron" id="AwRoofRainPipesGallron"></td>            
+              <td>{{$gpss_bangunan->AwRoofRainPipesGallron}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -270,7 +262,7 @@
             <tr>
               <td >Aluminium</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesAluminium" id="AwRoofRainPipesAluminium"></td>            
+              <td>{{$gpss_bangunan->AwRoofRainPipesAluminium}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -279,7 +271,7 @@
             <tr>
               <td >Stainless steel</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesStainSteel" id="AwRoofRainPipesStainSteel"></td>            
+              <td>{{$gpss_bangunan->AwRoofRainPipesStainSteel}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -291,7 +283,7 @@
               <td rowspan="3">Gutter</td>
               <td >Plasterboard</td>
               <td >2</td>
-              <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofCellingPlasterboards" id="AwRoofCellingPlasterboards"></td>            
+              <td>{{$gpss_bangunan->AwRoofCellingPlasterboards}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -301,7 +293,7 @@
             <tr>
               <td >Fibre cement board</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofCellingFibreCement" id="AwRoofCellingFibreCement"></td>            
+              <td>{{$gpss_bangunan->AwRoofCellingFibreCement}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -310,7 +302,7 @@
             <tr>
               <td >Metal strip</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofCellingMetalStrip" id="AwRoofCellingMetalStrip"></td>            
+              <td>{{$gpss_bangunan->AwRoofCellingMetalStrip}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -322,7 +314,7 @@
               <td rowspan="2">Truss system</td>
               <td >Timber</td>
               <td >2</td>
-              <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofTrussTimber" id="AwRoofTrussTimber"></td>            
+              <td>{{$gpss_bangunan->AwRoofTrussTimber}}</td>       
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -332,7 +324,7 @@
             <tr>
               <td >Metal</td>
               <td >2</td>
-              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofTrussMetal" id="AwRoofTrussMetal"></td>            
+              <td>{{$gpss_bangunan->AwRoofTrussMetal}}</td>     
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -342,14 +334,13 @@
             <tr class="text-white bg-orange-jkr">
               <th colspan="8">List of products for architectural works - Wall System</th>
             </tr>
-  
             <tr>
               
               <td rowspan="10">1</td>
               <td rowspan="10">Wall types</td>
               <td >Bricks</td>
               <td >2</td>
-              <td> <input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBricks" id="AwWallWallTypesBricks"></td>            
+              <td> {{$gpss_bangunan->AwWallWallTypesBricks}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -359,7 +350,7 @@
             <tr>
               <td >Timberwork</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall " name="AwWallWallTypesTimber" id="AwWallWallTypesTimber"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesTimber}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -368,7 +359,7 @@
             <tr>
               <td >Clay bricks</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesClay" id="AwWallWallTypesClay"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesClay}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -377,7 +368,7 @@
             <tr>
               <td >Blockwork</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBlockwork" id="AwWallWallTypesBlockwork"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesBlockwork}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -386,7 +377,7 @@
             <tr>
               <td >Reinforce concrete</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesReinforce" id="AwWallWallTypesReinforce"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesReinforce}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -395,7 +386,7 @@
             <tr>
               <td >Aerated concrete</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesAerated" id="AwWallWallTypesAerated"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesAerated}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -404,7 +395,7 @@
             <tr>
               <td >Glass</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGlass" id="AwWallWallTypesGlass"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesGlass}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -413,7 +404,7 @@
             <tr>
               <td >Gypsum board</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGypsum" id="AwWallWallTypesGypsum"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesGypsum}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -422,7 +413,7 @@
             <tr>
               <td >Cement board</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesCement" id="AwWallWallTypesCement"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesCement}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -431,7 +422,7 @@
             <tr>
               <td >Fibre cement</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesFibreCement" id="AwWallWallTypesFibreCement"></td>            
+              <td>{{$gpss_bangunan->AwWallWallTypesFibreCement}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -443,7 +434,7 @@
               <td rowspan="12">Finishes</td>
               <td >Paints</td>
               <td >2</td>
-              <td> <input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaints" id="AwWallFinishesPaints"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesPaints}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -453,7 +444,7 @@
             <tr>
               <td >Composite panel</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesComposite" id="AwWallFinishesComposite"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesComposite}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -462,7 +453,7 @@
             <tr>
               <td >Wall paper</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesWallpaper" id="AwWallFinishesWallpaper"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesWallpaper}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -471,7 +462,7 @@
             <tr>
               <td >Ceramic tiles</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesCeramic" id="AwWallFinishesCeramic"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesCeramic}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -480,7 +471,7 @@
             <tr>
               <td >Stones</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesStones" id="AwWallFinishesStones"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesStones}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -489,7 +480,7 @@
             <tr>
               <td >Pebblewash</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPebblewash" id="AwWallFinishesPebblewash"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesPebblewash}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -498,7 +489,7 @@
             <tr>
               <td >Granite</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGranite" id="AwWallFinishesGranite"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesGranite}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -507,7 +498,7 @@
             <tr>
               <td >Glass</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlass" id="AwWallFinishesGlass"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesGlass}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -516,7 +507,7 @@
             <tr>
               <td >Glass block</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlassBlock" id="AwWallFinishesGlassBlock"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesGlassBlock}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -525,7 +516,7 @@
             <tr>
               <td >Timber panelling</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesTimber" id="AwWallFinishesTimber"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesTimber}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -534,7 +525,7 @@
             <tr>
               <td >Plaster</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaster" id="AwWallFinishesPaster"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesPaster}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -543,7 +534,7 @@
             <tr>
               <td >Growall</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGrowall" id="AwWallFinishesGrowall"></td>            
+              <td>{{$gpss_bangunan->AwWallFinishesGrowall}}</td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -555,7 +546,9 @@
 
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page2/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page2/{{$gpss_bangunan->id}}" type="button" class="btn btn-secondary">Seterusnya</a> 
+          <a class="btn btn-primary" href="/penilaian_reka_bentuk_gpss/createPDF/{{$gpss_bangunan->id}}">Muat Turun</a>
+         
         </div>
 
       </div>
