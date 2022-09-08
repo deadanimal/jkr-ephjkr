@@ -73,7 +73,10 @@ class SelenggaraStatusController extends Controller
     public function edit($id)
     {
         //
-        return view('modul.pengurusan_maklumat.selenggara.selenggara_status.edit');
+        $selenggara_status = StatusProjek::find($id);
+        return view('modul.pengurusan_maklumat.selenggara.selenggara_status.edit', [
+            'selenggara_status' => $selenggara_status,
+        ]);
     }
 
     /**
@@ -86,9 +89,8 @@ class SelenggaraStatusController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $selenggara_status = StatusProjek::find($id);
-        StatusProjek::create(['statusProjek' => $request->statusProjek]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_status');
+        StatusProjek::where('id',$id)->update(['statusProjek' => $request->statusProjek]);
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_status');
     }
 
     /**

@@ -44,21 +44,21 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($faq as $f)
+                            @foreach ($kriteria_penilaian as $kp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $f->namaFAQ }}</td>
-                                    <td>{{ $f->soalanFAQ }}</td>
-                                    <td>{{ $f->JawapanFAQ }}</td>
+                                    <td>{{ $kp->namaProjek }}</td>
+                                    <td>{{ $kp->jenisKategori }}</td>
+                                    <td>{{ $kp->Kategori }}</td>
                                     
                                     <td>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/selenggara/kriteria_penilaian/{{ $f->id }}/edit"
+                                                <a href="/pengurusan_maklumat/selenggara/kriteria_penilaian/{{ $kp->id }}/edit"
                                                     class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                             </div>
                                             <div class="col-auto">
-                                                <form action="/pengurusan_maklumat/selenggara/kriteria_penilaian/{{ $f->id }}" method="post">
+                                                <form action="/pengurusan_maklumat/selenggara/kriteria_penilaian/{{ $kp->id }}" method="post">
                                                     @method('DELETE')
                                                     @csrf
                                                     <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>

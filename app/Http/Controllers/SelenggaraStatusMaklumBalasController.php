@@ -70,7 +70,10 @@ class SelenggaraStatusMaklumBalasController extends Controller
     public function edit($id)
     {
         //
-        return view('modul.pengurusan_maklumat.selenggara.status_maklum_balas.edit');
+        $status_maklum_balas = MaklumBalas::find($id);
+        return view('modul.pengurusan_maklumat.selenggara.status_maklum_balas.edit', [
+            'status_maklum_balas' => $status_maklum_balas,
+        ]);
     }
 
     /**
@@ -83,6 +86,8 @@ class SelenggaraStatusMaklumBalasController extends Controller
     public function update(Request $request, $id)
     {
         //
+        MaklumBalas::where('id',$id)->update(['statusMaklumbalas' => $request->statusMaklumbalas]);
+        return redirect('/pengurusan_maklumat/selenggara/status_maklum_balas');
     }
 
     /**

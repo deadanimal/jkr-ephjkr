@@ -60,11 +60,9 @@
                     <td>Hospital Seri Iskandar</td>
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
-                    <div class="flex-parent jc-center">
-                        <td>
-                            <a href="/penilaian_reka_bentuk_gpss/papar_sijil" type="submit" class="btn btn-warning margin-auto">PILIH</a>
-                        </td>
-                    </div>
+                    <td style="text-align: center">
+                        <a href="/penilaian_reka_bentuk_gpss/papar_sijil" type="submit" class="btn btn-warning margin-auto">PILIH</a>
+                    </td>
                 </tr>
             </tbody>
             </table>
