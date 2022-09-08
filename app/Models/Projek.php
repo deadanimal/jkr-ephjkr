@@ -20,6 +20,11 @@ class Projek extends Model
         return $this->hasOne(Sijil::class);
     }
 
+    public function PemudahCara()
+    {
+        return $this->hasOne(PemudahCara::class);
+    }
+    
     public function ahli()
     {
         return $this->hasMany(ProjekPemilihanAhli::class);

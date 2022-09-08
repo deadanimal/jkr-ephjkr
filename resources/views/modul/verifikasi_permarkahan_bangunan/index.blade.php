@@ -63,7 +63,7 @@
                                             </button> --}}
                                                 {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                 title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create" role="button"
+                                                <a class="btn btn-primary" href="/verifikasi_permarkahan_bangunan/melantik_pemudah_cara" role="button"
                                                 data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
                                             </td>
                                         </tr> 

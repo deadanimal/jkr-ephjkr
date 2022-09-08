@@ -51,14 +51,14 @@
                                     {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody>
                                         <!--LOOPING TABLES-->
-                                        {{-- @foreach ($projek as $key => $p) --}}
+                                        @foreach ($kriteria_phjkr_bangunan as $key => $k)
                                             <tr class="text-black">
-                                                {{-- <td>{{ $pdkk->id }}</td> --}}
-                                                <td style="text-align: center; vertical-align: middle;">1</td>
-                                                <td style="text-align: center; vertical-align: middle;">SKL0202</td>
-                                                <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
-                                                <td style="text-align: center; vertical-align: middle;">Mukah</td>
-                                                <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
+                                                <td>{{ $k->id }}</td>
+                                                {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
+                                                <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$k->alamatProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
                                                     {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">
@@ -66,11 +66,11 @@
                                                 </button> --}}
                                                     {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                                                     title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/edit" role="button"
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$k->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 
-                                        {{-- @endforeach --}}
+                                        @endforeach
                                         </tbody>
                                     {{-- </table> --}}
                                 </table> 

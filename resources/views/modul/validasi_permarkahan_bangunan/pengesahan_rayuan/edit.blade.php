@@ -6,7 +6,7 @@
 <div class="header">
     <div class="col-sm-6">
         Penilaian Reka Bentuk Bangunan 
-        <b style="color: #0F5E31;">> Jana Sijil</b>
+        <b style="color: #0F5E31;">> Pengesahan Rayuan</b>
     </div>
             <h1 class="header-title">
                 PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
@@ -23,7 +23,7 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" placeholder="Hospital Seri Iskandar" value="{{$pemudah_cara ?? ''}}"/>   
                     </div>                     
             </div>
 
@@ -31,15 +31,15 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">ID Rujukan Skala:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" value="{{$pemudah_cara ?? ''}}"/>  
+                        <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" placeholder="SKL0202" value="{{$pemudah_cara ?? ''}}"/>  
                     </div>                      
             </div>
 
-            <!--No Telefon-->
+            <!--Alamat-->
             <div class="mb-3 form-group row">
-                <label class="col-sm-2 col-form-label">No. Tel:</label>
+                <label class="col-sm-2 col-form-label">Alamat:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>   
+                        <input class="form-control" type="text" autocapitalize="off" name="alamatProjek" placeholder="Mukah" value="{{$pemudah_cara ?? ''}}"/>   
                     </div>                         
             </div>
 
@@ -47,7 +47,7 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Kos Projek Semasa:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="number" autocapitalize="off" name="kosProjek" value="{{$pemudah_cara ?? ''}}"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="kosProjek" placeholder="RM 5,000,000.00" value="{{$pemudah_cara ?? ''}}"/>                        
                     </div>
             </div>
 
@@ -66,8 +66,8 @@
                             </thead>
 
                             
-                            {{-- <tr>
-                                <td style="color: #282828">
+                            <tr>
+                                <td colspan="12" style="color: #282828">
                                     <!--Name of evaluator-->
                                     <div class="mb-3 form-group row">
                                         <label class="col-sm-2 col-form-label text-black">Name of Evaluator:</label>
@@ -96,7 +96,7 @@
                                     <div class="mb-3 form-group row">
                                         <label class="col-sm-2 col-form-label text-black">Project:</label>
                                             <div class="col-sm-5">
-                                                <input class="form-control" type="text" autocapitalize="off" placeholder="Hospital Seri Iskandar" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                                                <input class="form-control" type="text" autocapitalize="off" placeholder="SKL0202" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
                                             </div>                     
                                     </div>
 
@@ -116,8 +116,9 @@
                                             </div>                     
                                     </div>
                                 </td>
-                            </tr> --}}
-
+                            </tr>
+    
+                            
                             <thead class="text-white line-table">
                                 <tr align="center" style="background-color:#EB5500">
                                     <th rowspan="2">No.</th>
@@ -206,30 +207,36 @@
 
                     <!--Checked by: (Project Manager)-->
                     <div class="mb-3 form-group row">
-                        <label class="col-sm-5 col-form-label text-black">Checked by: (Project Manager)</label>
+                        <label class="col-sm-5 col-form-label text-black">Prepared by: (Design Stage)</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="text" autocapitalize="off" placeholder="Hospital Seri Iskandar" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
                             </div>                     
                     </div>
 
                     <!--Verified by: (Project Manager)-->
                     <div class="mb-3 form-group row">
-                        <label class="col-sm-5 col-form-label text-black">Checked by: (Project Manager)</label>
+                        <label class="col-sm-5 col-form-label text-black">Prepared by: (Construction Stage)</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="text" autocapitalize="off" placeholder="Hospital Seri Iskandar" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
                             </div>                     
                     </div>
 
                     <!--Checked by: (Project Manager)-->
                     <div class="mb-3 form-group row">
-                        <label class="col-sm-5 col-form-label text-black">Checked by: (Project Manager)</label>
+                        <label class="col-sm-5 col-form-label text-black">Prepared by: (Design Stage)</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="text" autocapitalize="off" placeholder="Hospital Seri Iskandar" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
                             </div>                     
                     </div>
-            
+
+                    <div class="text-center">
+                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/pengesahan_rayuan/edit" role="button"
+                    data-toggle="tooltip" data-placement="bottom" title="Batal">Batal</a>
+                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/pengesahan_rayuan/edit" role="button"
+                    data-toggle="tooltip" data-placement="bottom" title="Hantar">Hantar</a>
+                    </div>     
 
         </form> <!--Form Action--> 
     </div> <!--Card Body-->
 </div> <!--Container Fluid-->
-    @endsection
+@endsection

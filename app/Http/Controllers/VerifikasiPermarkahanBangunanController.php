@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreVerifikasiPermarkahanBangunanRequest;
 use App\Http\Requests\UpdateVerifikasiPermarkahanBangunanRequest;
+use App\Models\Projek;
+use App\Models\PemudahCara;
 use App\Models\VerifikasiPermarkahanBangunan;
+use Illuminate\Http\Request;
 
 class VerifikasiPermarkahanBangunanController extends Controller
 {
@@ -98,16 +101,104 @@ class VerifikasiPermarkahanBangunanController extends Controller
         return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.edit');
     }
 
+    #pemudahcara
+    public function papar_projek()
+    {
+        $projeks = Projek::all();
+        $projeks = new Projek;
+        $pemudah_cara = new PemudahCara;
+        
+
+        // papar table projek with button melantik pemudah cara
+        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
+
+        return view('modul.verifikasi_permarkahan_bangunan.pemudah_cara.index',[
+            'projeks'=>$projeks,
+            'pemudah_cara'=>$pemudah_cara
+        ]);
+    }
+    public function pemudah_cara($id)
+    {
+        $pemudah_cara = new PemudahCara;
+        $projeks = new Projek;
+
+        return view('modul.verifikasi_permarkahan_bangunan.pemudah_cara.create',[
+            'pemudah_cara'=>$pemudah_cara,
+            'projeks'=>$projeks
+        ]);
+    }
+
+    public function melantik_pemudah_cara(Request $request, $id)
+    {
+        //submit form melantik pemudah cara
+        $pemudah_cara = new PemudahCara;
+        $projeks = new Projek;
+
+        $pemudah_cara->nama = $request->input('nama');
+        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
+        $pemudah_cara->no_tel = $request->input('no_tel');
+        $pemudah_cara->no_fax = $request->input('no_fax');
+        $pemudah_cara->email = $request->input('email');
+        $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->kategori = $request->kategori;
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        $pemudah_cara->save();
+
+        $projeks->namaProjek = $request->input('namaProjek');
+        $projeks->save();
+
+        // // submit form melantik pemudah cara
+        return redirect('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara');
+    }
+
     #semakan rawak verifikasi permarkahan bangunan
+    #sekretariat
     public function semakan_rawak()
     {
         return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.index');
 
     }
-    public function semakan_rawak_form($id)
+    public function papar_semakan_rawak($id)
     {
         return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.edit');
 
+    }
+    public function simpan_semakan_rawak(Request $request, $id)
+    {
+        return redirect('/verifikasi_permarkahan_bangunan/semakan_rawak');
+    }
+
+    #pemudahcara
+    public function skor_penilaian()
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.index');
+
+    }
+
+    public function papar_skor_penilaian($id)
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.edit');
+    }
+
+    public function simpan_skor_penilaian(Request $request, $id)
+    {
+        return redirect('/verifikasi_permarkahan_bangunan/skor_penilaian');
+    }
+
+    #ketua pasukan
+    public function sijil_penilaian()
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.index');
+    }
+
+    public function papar_sijil_penilaian($id)
+    {
+        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.edit');
+    }
+
+    public function simpan_sijil_penilaian(Request $request, $id)
+    {
+        return view('/verifikasi_permarkahan_bangunan/muat_turun_sijil');
     }
 
 

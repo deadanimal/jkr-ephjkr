@@ -7,10 +7,11 @@
 <!--Semakan Rawak Verifikasi Bangunan-->
 
 <div class="header">
-        <b class="paparan-senarai-projek">Semakan Rawak dan Jana Sijil</b>
+    {{-- Penilaian Verifikasi Permarkahan Bangunan
+    <b class="text-dark-green-jkr">> Semakan Rawak dan Jana Sijil</b> --}}
 
             <h1 class="header-title">
-                PENILAIAN REKA BENTUK BANGUNAN
+                VERIFIKASI PERMARKAHAN BANGUNAN
             </h1>
             <hr class="line-6">
 
@@ -24,7 +25,7 @@
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label text-black">Nama Projek:</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek" placeholder="Hospital Seri Iskandar"/>   
                             </div>                     
                     </div>
 
@@ -32,15 +33,15 @@
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label text-black">ID Rujukan Skala:</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" value="{{$pemudah_cara ?? ''}}"/>  
+                                <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" placeholder="SKL0202"/>  
                             </div>                      
                     </div>
 
-                    <!--No Telefon-->
+                    <!--Alamat-->
                     <div class="mb-3 form-group row">
-                        <label class="col-sm-2 col-form-label text-black">No. Tel:</label>
+                        <label class="col-sm-2 col-form-label text-black">Alamat:</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>   
+                                <input class="form-control" type="text" autocapitalize="off" name="alamatProjek" placeholder="Mukah"/>   
                             </div>                         
                     </div>
 
@@ -48,7 +49,7 @@
                     <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label text-black">Kos Projek Semasa:</label>
                             <div class="col-sm-5">
-                                <input class="form-control" type="number" autocapitalize="off" name="kosProjek" value="{{$pemudah_cara ?? ''}}"/>                        
+                                <input class="form-control" type="number" autocapitalize="off" name="kosProjek" placeholder="RM 5,000,000.00"/>                        
                             </div>
                     </div>
     </div>
@@ -242,15 +243,15 @@
 </div>
 
     <!--pdf form Muat Naik Sijil -->
-    <div class="mb-3 text-center">
+    {{-- <div class="mb-3 text-center">
     <input type="file" id="real-file" hidden="hidden" />
     <button type="button" id="custom-button">MUAT NAIK SIJIL</button>
-    </div>
+    </div> --}}
     
     <!--Button Jana Sijil-->
-    <div class="mb-3 text-center">
+    {{-- <div class="mb-3 text-center">
     <button class="btn btn-primary">Jana</button>
-    </div>
+    </div> --}}
             
 <!--JavaScript-->              
 

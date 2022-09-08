@@ -42,15 +42,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">1.</th>
-                    <td>SKL0202</td>
-                    <td>Hospital Seri Iskandar</td>
-                    <td>Mukah</td>
-                    <td>BERJAYA DIDAFTAR</td>
+                    @foreach ($gpss_bangunan as $gb)
+
+                    {{-- <th scope="row">1.</th> --}}
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $gb->id_ruj_skala }}</td>
+                    <td>{{ $gb->namaProjek }}</td>
+                    <td>{{ $gb->alamatProjek }}</td>
+                    <td>{{ $gb->statusProjek }}</td>
                     <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/edit" type="button" class="btn btn-warning">PAPAR</a>
-                    </td>
+                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{{$gb->id}}" type="button" class="btn btn-warning">PAPAR</a>
+                    </td> 
                 </tr>
+                    @endforeach
             </tbody>
             </table>
         </div>

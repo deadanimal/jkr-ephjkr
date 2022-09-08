@@ -6,10 +6,11 @@
 @section('content')
 
 <div class="header">
-        <b class="pengesahan-penilaian">Penilaian Reka Bentuk Bangunan > Jana Keputusan Skor Kad</b>
+    Penilaian Reka Bentuk Bangunan 
+        <b class="pengesahan-penilaian">> Jana Keputusan Skor Kad</b>
 
     <h1 class="header-title">
-        PENILAIAN REKA BENTUK BANGUNAN
+        PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
     </h1>
     <hr class="line-6">
     
