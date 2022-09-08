@@ -177,21 +177,21 @@
               <div class="col-sm-5">
                   <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
               </div>
-      </div>
-      <!-- Construction stage -->
-      <div class="mb-3 form-group row">
-          <label class="col-sm-5 col-form-label text-black">Prepared by: (Construction Stage)</label>
-              <div class="col-sm-5">
-                  <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
-              </div>
-      </div>
-      <!-- Checked -->
-      <div class="mb-3 form-group row">
-          <label class="col-sm-5 col-form-label text-black">Checked by: (Construction Stage)</label>
-              <div class="col-sm-5">
-                  <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
-              </div>
-      </div>
+        </div>
+        <!-- Construction stage -->
+        <div class="mb-3 form-group row">
+            <label class="col-sm-5 col-form-label text-black">Prepared by: (Construction Stage)</label>
+                <div class="col-sm-5">
+                    <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
+                </div>
+        </div>
+        <!-- Checked -->
+        <div class="mb-3 form-group row">
+            <label class="col-sm-5 col-form-label text-black">Checked by: (Construction Stage)</label>
+                <div class="col-sm-5">
+                    <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
+                </div>
+        </div>
         </div>
   
         <div align="right" class="mt-3">

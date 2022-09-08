@@ -19,7 +19,7 @@
           aria-label="breadcrumb">
           <ol class="breadcrumb">
               <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                  Mechanical Works (Mw)
+                  Civil Works (Ew)
               </li>
           </ol>
       </nav>
@@ -27,7 +27,7 @@
 </div>
 
 <div class="row3 mx-1  text-center">
-  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
+  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/{id}" method="post" enctype="multipart/form-data">
     @method('POST')
       @csrf
 
@@ -36,7 +36,7 @@
           <thead class="text-white bg-orange-jkr">
             
             <tr>
-              <th colspan="8">List of products for mechanical works</th>
+              <th colspan="8">List of products for structure</th>
             </tr>
             <tr>
               <th>No.</th>
@@ -52,12 +52,60 @@
           <tbody>
             
             <tr class="text-center">
-              <td rowspan="3" >1</td>
-              <td rowspan="3">Water cooled chiller system</td>
-              <td >Compressor(Refrigerant)</td>
+              <td rowspan="5" >1</td>
+              <td rowspan="5">Common items</td>
+              <td >Cement</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwWaterSystemCompressor" id="MwWaterSystemCompressor">
+                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonCement" id="SwCommonCement">
+              </td>            
+              <td>
+                <input type="number" min="0" max="2"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="text"></td>                    
+            </tr>
+
+            <tr>
+              <td >Reinforcement bar</td>
+              <td >2</td>
+              <td>
+                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonBar" id="SwCommonBar">
+              </td>            
+              <td>
+                <input type="number" min="0" max="2"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="text"></td>                    
+            </tr>
+
+            <tr>
+              <td >Sand</td>
+              <td >2</td>
+              <td>
+                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonSand" id="SwCommonSand">
+              </td>            
+              <td>
+                <input type="number" min="0" max="2"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="text"></td>                    
+            </tr>
+
+            <tr>
+              <td >Aggregate</td>
+              <td >2</td>
+              <td>
+                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonAggregate" id="SwCommonAggregate">
+              </td>            
+              <td>
+                <input type="number" min="0" max="2"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="text"></td>                    
+            </tr>
+
+            <tr>
+              <td >Timber</td>
+              <td >2</td>
+              <td>
+                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonTimber" id="SwCommonTimber">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -65,90 +113,13 @@
               <td><input type="text"></td>                    
             </tr>
   
-            <tr>
-              <td >Air side</td>
-              <td >2</td>
-              <td>
-                <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwWaterSystemAirSide" id="MwWaterSystemAirSide">
-                
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
-            </tr>
-  
-            <tr>
-              <td >Water side</td>
-              <td >2</td>
-              <td>
-                <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwWaterSystemPump" id="MwWaterSystemPump">
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
-            </tr>
-  
-  
-            <tr class="text-center">
-                <td rowspan="2" >2</td>
-                <td rowspan="2">Multiple air-conditioning system</td>
-                <td >Compressor(Refrigerant)</td>
-                <td >2</td>
-                <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwACCompressor" id="MwACCompressor">
-                </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-  
-            <tr>
-              <td >Air side</td>
-              <td >2</td>
-              <td><input onblur="markahPRAwSystem()" type="number" min="0" max="2" class="prawsystem " name="AwSystemBuiltToilet" id="AwSystemBuiltToilet"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
-            </tr>
-
-            <tr class="text-center">
-                <td rowspan="1" >3</td>
-                <td rowspan="1">Split unit</td>
-                <td >Compressor(Refrigerant)</td>
-                <td >2</td>
-                <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwSplitCompressor" id="MwSplitCompressor">
-                </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-
               <tr class="text-center">
-                <td rowspan="1" >4</td>
-                <td rowspan="1">Lift</td>
-                <td >Lift motor</td>
+                <td rowspan="7" >2</td>
+                <td rowspan="7">Super structure</td>
+                <td >Concrete</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwLiftMotor" id="MwLiftMotor">
-                </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-
-              <tr class="text-center">
-                <td rowspan="4" >5</td>
-                <td rowspan="4">Firefighting system</td>
-                <td >Clean agent</td>
-                <td >2</td>
-                <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemMist" id="MwFireSystemMist">
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperConcrete" id="SwSuperConcrete">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -157,10 +128,10 @@
               </tr>
 
               <tr>
-                <td >Hose reel</td>
+                <td >Reinforcement bar</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemHosePump" id="MwFireSystemHosePump">
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperBar" id="SwSuperBar">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -169,10 +140,10 @@
               </tr>
 
               <tr>
-                <td >Sprinkler</td>
+                <td >Steel</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemSpriklerPump" id="MwFireSystemSpriklerPump">
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperSteel" id="SwSuperSteel">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -181,10 +152,46 @@
               </tr>
 
               <tr>
-                <td >Wet or dry riser</td>
+                <td >Water stop</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemWetPump" id="MwFireSystemWetPump">
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperWater" id="SwSuperWater">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+
+              <tr>
+                <td >Damp proof membrane</td>
+                <td >2</td>
+                <td>
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperDamp" id="SwSuperDamp">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+
+              <tr>
+                <td >Plastic sheeting</td>
+                <td >2</td>
+                <td>
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperPlastic" id="SwSuperPlastic">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+
+              <tr>
+                <td >Sealant</td>
+                <td >2</td>
+                <td>
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperSealant" id="SwSuperSealant">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -193,12 +200,12 @@
               </tr>
 
               <tr class="text-center">
-                <td rowspan="2" >6</td>
-                <td rowspan="2">Cold water system</td>
-                <td >Pump</td>
+                <td rowspan="6" >3</td>
+                <td rowspan="6">Roof trusses</td>
+                <td >Steel</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwColdSystemPump" id="MwColdSystemPump">
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofSteel" id="SwRoofSteel">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -207,10 +214,10 @@
               </tr>
 
               <tr>
-                <td >Water tank</td>
+                <td >Timber</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwColdSystemWaterTank" id="MwColdSystemWaterTank">
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofTimber" id="SwRoofTimber">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -218,21 +225,60 @@
                 <td><input type="text"></td>                    
               </tr>
 
-              <tr class="text-center">
-                <td rowspan="1" >7</td>
-                <td rowspan="1">Innovation</td>
-                <td >Rain water harvesting</td>
+              <tr>
+                <td >Aluminium</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwInnovationRainHarvesting" id="MwInnovationRainHarvesting">
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofAluminium" id="SwRoofAluminium">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
               </tr>
+
+              <tr>
+                <td >Bolt</td>
+                <td >2</td>
+                <td>
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofBolt" id="SwRoofBolt">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+
+              <tr>
+                <td >Plates</td>
+                <td >2</td>
+                <td>
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofPlates" id="SwRoofPlates">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+
+              <tr>
+                <td >Membrane</td>
+                <td >2</td>
+                <td>
+                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofMembrane" id="SwRoofMembrane">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+
           </tbody>
         </table>
+
+        <div align="right" class="mt-3">
+          <button class="btn btn-primary" type="submit" title="Simpan">Hantar</button>
+        </div>
 
         <div>
             <!-- Design stage -->
@@ -257,32 +303,22 @@
                   </div>
           </div>
           </div>
-  
-        <div align="right" class="mt-3">
-          <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/elektrikal/create" type="button" class="btn btn-secondary">Seterusnya</a>          
-        </div>
-  
-       
       </div>
-  
-  
   </form>
-    
   </div>
 
-  <p><strong>markahPRMw <span class="required"></span></strong><br />
-    <input type="text" name="markahPRMw" id="markahPRMw" /></p>
+  <p><strong>markahPRSw <span class="required"></span></strong><br />
+    <input type="text" name="markahPRSw" id="markahPRSw" /></p>
 
 <script>
-  function markahPRMw(){
-  var arr = document.getElementsByClassName('arkitek');
+  function markahPRSw(){
+  var arr = document.getElementsByClassName('stucture');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))
           tot += parseFloat(arr[i].value);
   }
-  document.getElementById('markahPRMw').value = tot;
+  document.getElementById('markahPRSw').value = tot;
 } 
 </script>  
 
