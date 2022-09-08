@@ -30,11 +30,11 @@
         </div>
     </div>
 
-    <div class="row mt-3">
+    {{-- <div class="row mt-3">
         <div class="col text-end">
             <a href="/pengurusan_maklumat/pendaftaran_projek/show" class="btn btn-primary">Papar</a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="row mt-2">
         <div class="col">
@@ -48,6 +48,7 @@
                                 <th class="sort">Alamat Projek</th>
                                 <th class="sort">Status Projek</th>
                                 <th class="sort">Jenis Kategori</th>
+                                <th class="sort">Tindakan</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
@@ -57,8 +58,17 @@
                                     <td>{{ $pp->namaProjek }}</td>
                                     <td>{{ $pp->alamatProjek }}</td>
                                     <td>{{ $pp->statusProjek }}</td>
+                                    {{-- <td>{{ $pp->status->statusProjek }}</td> --}}
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
-                                    
+                                    <td>
+                                        <div class="col-auto">
+                                            <form action="/pengurusan_maklumat/pendaftaran_projek/{{ $pp->id }}" method="post">
+                                                @method('DELETE')
+                                                @csrf
+                                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
+                                            </form>
+                                        </div>
+                                    </td>
                                     
                                 </tr>
                             @endforeach

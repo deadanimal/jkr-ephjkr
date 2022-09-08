@@ -64,9 +64,9 @@ class SelenggaraPerananController extends Controller
     public function edit($id)
     {
         //
-        $peranan = Role::all();
+        $peranan = Role::find($id);
         return view('modul.pengurusan_maklumat.selenggara.selenggara_peranan.edit', [
-            'peranan' => $peranan
+            'peranan' => $peranan,
         ]);
     }
 
@@ -79,10 +79,12 @@ class SelenggaraPerananController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-        $peranan = Role::find($id);
-        Role::create(['name' => $request->nama]);
-        return redirect('/pengurusan_maklumat/selenggara/selanggara_peranan');
+        Role::where('id',$id)->update(['name' => $request->name]);
+        // $peranan = Role::where('id',$id)->first();
+        // dd($peranan);
+        
+        return redirect('/pengurusan_maklumat/selenggara/selenggara_peranan');
+        
     }
 
     /**

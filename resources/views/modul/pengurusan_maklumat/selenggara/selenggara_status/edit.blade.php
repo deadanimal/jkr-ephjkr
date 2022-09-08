@@ -29,9 +29,17 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/pengurusan_maklumat/selenggara/selenggara_status" method="post" enctype="multipart/form-data">
+            <form action="/pengurusan_maklumat/selenggara/selenggara_status/{{$selenggara_status->id}}" method="post" enctype="multipart/form-data">
+                @method('PUT')
                 @csrf
                 <div class="row mx-4">
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Status Projek Sekarang:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="statusProjekk" type="text" value="{{$selenggara_status->statusProjek}}"/>
+                    </div>
+
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Status Projek Baru:</label>
                     </div>

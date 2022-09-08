@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProjekRequest;
 use App\Http\Requests\UpdateProjekRequest;
 use App\Models\Projek;
+use App\Models\StatusProjek;
+use Illuminate\Support\Facades\Auth;
 
 class ProjekController extends Controller
 {
@@ -15,10 +17,9 @@ class ProjekController extends Controller
      */
     public function index()
     {
-    
-        //
+        //dd(Projek::with('status')->get());
         return view('modul.pengurusan_maklumat.pendaftaran_projek.index', [
-            'pendaftaran_projek' => Projek::all()
+            'pendaftaran_projek' => Projek::with('status')->get()
         ]);
         // return view('modul.gpss.penilaian_reka_bentuk_gpss.senarai_projek_gpss.index');
     }
@@ -46,6 +47,37 @@ class ProjekController extends Controller
     public function store(StoreProjekRequest $request)
     {
         //
+        $pd = new Projek();
+        
+        $pd->id_ruj_skala = $request->id_ruj_skala;
+        $pd->namaProjek = $request->namaProjek;
+        $pd->alamatProjek = $request->alamatProjek;
+        $pd->poskod = $request->poskod;
+        $pd->bandar = $request->bandar;
+        $pd->negeri = $request->negeri;
+        $pd->keluasanTapak = $request->keluasanTapak;
+        $pd->jumlahblokBangunan = $request->jumlahblokBangunan;
+        $pd->dokumenSokongan = $request->dokumenSokongan;
+        $pd->tarikh = $request->tarikh;
+        $pd->tarikhJangkaMulaPembinaan = $request->tarikhJangkaMulaPembinaan;
+        $pd->tarikhJangkaSiapPembinaan = $request->tarikhJangkaSiapPembinaan;
+        $pd->kaedahPelaksanaan = $request->kaedahPelaksanaan;
+        $pd->jenisPelaksanaan = $request->jenisPelaksanaan;
+        $pd->statusProjek = $request->statusProjek;
+        $pd->kosProjek = $request->kosProjek;
+        $pd->jenisKategoriProjek = $request->jenisKategoriProjek;
+        $pd->tempohSijil = $request->tempohSijil;
+        $pd->jarak = $request->jarak;
+        // $pd->user_id = Auth::id();
+        $pd->save();
+
+        $pd2 = new StatusProjek();
+        $pd2->statusProjek = $request->statusProjek;
+        $pd2->projek_id = $pd->id;
+        $pd2->save();
+
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pemilihan_ahli/'.$pd->id);
 
     }
 
@@ -92,8 +124,12 @@ class ProjekController extends Controller
      * @param  \App\Models\Projek  $projek
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Projek $projek)
+    public function destroy($id)
     {
         //
+        $pendaftaran_projek = Projek::find($id);
+        $pendaftaran_projek->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
 }
