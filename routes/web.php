@@ -317,7 +317,20 @@ Route::middleware('auth')->group(function () {
     Route::get('/verifikasi_permarkahan_jalan/markah_penilaian/create', [VerifikasiPermarkahanJalanController::class, 'markah_penilaian_verifikasi']);
     Route::get('/verifikasi_permarkahan_jalan/kemaskini_penilai_jalan_verifikasi/create', [VerifikasiPermarkahanJalanController::class, 'kemaskini_penilai_jalan_verifikasi']);
 
+    //verifikasi permarkahan
+    Route::get('/verifikasi_permarkahan_jalan/verifikasi_permarkahan', [VerifikasiPermarkahanJalanController::class, 'verifikasi_permarkahan']);
+    Route::get('/verifikasi_permarkahan_jalan/verifikasi_permarkahan/create', [VerifikasiPermarkahanJalanController::class, 'verifikasi_permarkahan_create']);
 
+    //verifikasi jana_keputusan
+    Route::get('/verifikasi_permarkahan_jalan/jana_keputusan', [VerifikasiPermarkahanJalanController::class, 'jana_keputusan_verifikasi']);
+    Route::get('/verifikasi_permarkahan_jalan/jana_keputusan/create', [VerifikasiPermarkahanJalanController::class, 'jana_keputusan_verifikasi_create']);
+
+    //verifikasi papar_skor_kad
+    Route::get('/verifikasi_permarkahan_jalan/papar_skor_kad', [VerifikasiPermarkahanJalanController::class, 'papar_skor_kad_verifikasi']);
+
+    //verifikasi permohonan
+    Route::get('/verifikasi_permarkahan_jalan/permohonan_rayuan', [VerifikasiPermarkahanJalanController::class, 'permohonan_rayuan_verifikasi']);
+    Route::get('/verifikasi_permarkahan_jalan/permohonan_rayuan/create', [VerifikasiPermarkahanJalanController::class, 'permohonan_rayuan_verifikasi_create']);
 
 });
 

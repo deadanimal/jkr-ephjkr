@@ -140,4 +140,53 @@ class VerifikasiPermarkahanJalanController extends Controller
         return view('modul.verifikasi_permarkahan_jalan.kemaskini_penilai_jalan_verifikasi.create');
         
     }
+
+    public function verifikasi_permarkahan()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.verifikasi_permarkahan.index');
+        
+    }
+
+    public function verifikasi_permarkahan_create()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.verifikasi_permarkahan.create');
+        
+    }
+
+    public function jana_keputusan_verifikasi()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.jana_keputusan.index');
+        
+    }
+
+    public function jana_keputusan_verifikasi_create()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.jana_keputusan.create');
+        
+    }
+
+    public function papar_skor_kad_verifikasi()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.papar_skor_kad.index');
+        
+    }
+
+    public function permohonan_rayuan_verifikasi()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.permohonan_rayuan.index');
+        
+    }
+
+    public function permohonan_rayuan_verifikasi_create()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.permohonan_rayuan.create');
+        
+    }
 }
