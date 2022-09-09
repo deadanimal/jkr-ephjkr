@@ -51,7 +51,7 @@
                                     {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody>
                                         <!--LOOPING TABLES-->
-                                        @foreach ($projeks as $key => $p)
+                                        @foreach ($kriteria_phjkr_bangunan as $key => $p)
                                             <tr class="text-black">
                                                 <td style="text-align: center; vertical-align: middle;">{{ $p->id }}</td>
                                                 {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
@@ -59,14 +59,19 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$p->id}}" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
+                                                </td>
+                                            </tr> 
                                         @endforeach
-                                        @foreach ($kriteria_phjkr_bangunan as $key => $k)
+                                        {{-- @foreach ($kriteria_phjkr_bangunan as $key => $k)
                                                 <td style="text-align: center; vertical-align: middle;">
                                                     <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$k->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 
-                                        @endforeach
+                                        @endforeach --}}
                                         </tbody>
                                     {{-- </table> --}}
                                 </table> 

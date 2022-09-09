@@ -203,6 +203,8 @@ class PenilaianRekaBentukBangunanController extends Controller
         + $request->markahFL32_MS + $request->markahFL33_MS + $request->markahFL34_MS;
 
         $markah_IN_total = $request->markahIN1_MS;
+        $markahTOTALMS = $request->markahTOTAL_MS + $request->markahTOTAL_MR;
+
         // $markah_KT_total = $request->markahKT1 + $request->markahKT2;
         // $markah_SB_total = $request->markahSB1 + $request->markahSB2;
         // $markah_PA_total = $request->markahPA1 + $request->markahPA2;
@@ -252,10 +254,14 @@ class PenilaianRekaBentukBangunanController extends Controller
         // $kriteria_phjkr_bangunan->markahMMV = $request->markahMMV;
         // $kriteria_phjkr_bangunan->markahMSV = $request->markahMSV;
         // $kriteria_phjkr_bangunan->markahML = $request->markahML;
+        
         // JUMLAH MARKAH 
         $kriteria_phjkr_bangunan->markahMMR = $request->markahMMR;
-        $kriteria_phjkr_bangunan->markahMS = $request->markahTOTAL_MS + $request->markahTOTAL_MR;
+
+        $kriteria_phjkr_bangunan->markahMS = $markahTOTALMS;
         $kriteria_phjkr_bangunan->markahMR = $request->markahTOTAL_MR + $request->markahTOTAL_MR;
+        
+
         $kriteria_phjkr_bangunan->markahMMV = $request->markahMMV;
         $kriteria_phjkr_bangunan->markahMSV = $request->markahMSV;
         $kriteria_phjkr_bangunan->markahML = $request->markahML;
@@ -660,6 +666,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         $projeks->dokumenSokongan = $request->input('dokumenSokongan');
         $projeks->save();
 
+        alert()->success('PENILAIAN REKA BENTUK BANGUNAN BERJAYA', 'Berjaya');
         // simpan skor penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
     }

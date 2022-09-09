@@ -738,6 +738,12 @@
                                 
                                 {{-- <td colspan="4"></td> --}}
                             </tr> 
+
+                            <!--Hidden Table-->
+                            <tr hidden>
+                                <td hidden name="markahTL" id="markahTL"></td>
+                                <td hidden name="markahMS" id="markahMS"></td>
+                            </tr>
                     </table>
                                            
                     <!--------------------------------------- MarkahKT ---------------------------------------->
@@ -2600,66 +2606,67 @@
                     </table>
 
                     
-
+                    <div class="mt-3 text-center">
                     <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
+                    </div>
                 </div>          <!--Scrollbar-->
 
 
                     <!--Button Simpan (TOOLTIPS)-->
                     <!--Page 1-->
                     <div class="mt-3 text-center">
-                        <button class="btn btn-primary pg-1" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        {{-- <button class="btn btn-primary pg-1" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-1" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button2()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 2-->
                     <div class="mt-3 text-center pg-2">
-                        <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        {{-- <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 3-->
                     <div class="mt-3 text-center pg-3">
-                        <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        {{-- <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 4-->
                     <div class="mt-3 text-center pg-4">
-                        <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        {{-- <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 5-->
                     <div class="mt-3 text-center pg-5">
-                        <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        {{-- <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 6-->
                     <div class="mt-3 text-center pg-6">
-                        <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        {{-- <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 7-->
-                    <div class="mt-3 text-center pg-7">
+                    {{-- <div class="mt-3 text-center pg-7">
                         <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button>
-                    </div>
+                    </div> --}}
 
 
 
