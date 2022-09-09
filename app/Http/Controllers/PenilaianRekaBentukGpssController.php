@@ -16,9 +16,9 @@ class PenilaianRekaBentukGpssController extends Controller
     public function index()
     {
         // paparan senarai projek untuk Ketua Pasukan/Penolong, dummy data, should be from pendaftaran projek
-        // $projeks = Projek::all();
+        $projeks = Projek::all();
         return view('modul.penilaian_reka_bentuk_gpss.index',[
-            // 'projeks'=> $projeks,
+            'projeks'=> $projeks,
         ]);
     }
     /**
@@ -123,7 +123,12 @@ class PenilaianRekaBentukGpssController extends Controller
         // papar mcm index tapi ada button utk skor penilaian
         // pemudah cara view, akan memasukkan markah penilaian dan memuat naik dokumen
         // below view should be in paparan senarai projek for pemudah cara, temporary
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.index');
+        $projeks = Projek::all();
+
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.index',[
+            'projeks'=> $projeks,
+
+        ]);
     }
     // public function papar_skor_penilaian($id)
     // {
@@ -148,6 +153,7 @@ class PenilaianRekaBentukGpssController extends Controller
     {
         // simpan skor penilaian
         $gpss_bangunan = new KriteriaGpssBangunan($request->all());
+        
         alert()->success('Markah disimpan', 'Berjaya');
         $gpss_bangunan->save();
 
@@ -288,10 +294,13 @@ class PenilaianRekaBentukGpssController extends Controller
     public function pengesahan_penilaian()
     {
         // get all skor_penilaian_arkitek data
-        $gpss_bangunan = KriteriaGpssBangunan::all();
+        $projeks = Projek::all();
 
         // show(method)
-        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.index', compact('gpss_bangunan'));
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.index',[
+            'projeks'=> $projeks,
+
+        ]);
     }
     public function pengesahan_penilaian_skor_penilaian_arkitek($id)
     {
@@ -349,7 +358,9 @@ class PenilaianRekaBentukGpssController extends Controller
     public function jana_keputusan()
     {
         // index jana keputusan
-        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index');
+        $gpss_bangunan = KriteriaGpssBangunan::all();
+
+        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index',compact('gpss_bangunan'));
     }
     public function papar_jana_keputusan($id)
     {
@@ -377,7 +388,7 @@ class PenilaianRekaBentukGpssController extends Controller
 
     public function createPDF($id){
 
-        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        // $gpss_bangunan = KriteriaGpssBangunan::find($id);
         $pdf = FacadePdf::loadView('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.pdf');
         return $pdf->download('sijil.pdf');
  

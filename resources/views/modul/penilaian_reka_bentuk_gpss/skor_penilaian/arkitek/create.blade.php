@@ -337,7 +337,12 @@
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
-  
+
+            <tr style="display: none">
+              <td>markahPRAwRoof<input type="text" name="markahPRAwRoof" id="markahPRAwRoof" /></td>            
+            </tr>
+
+
             {{-- New table for wall system --}}
             <tr class="text-white bg-orange-jkr">
               <th colspan="8">List of products for architectural works - Wall System</th>
@@ -349,7 +354,7 @@
               <td rowspan="10">Wall types</td>
               <td >Bricks</td>
               <td >2</td>
-              <td> <input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBricks" id="AwWallWallTypesBricks"></td>            
+              <td> <input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBricks" id="AwWallWallTypesBricks"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -359,7 +364,7 @@
             <tr>
               <td >Timberwork</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall " name="AwWallWallTypesTimber" id="AwWallWallTypesTimber"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall " name="AwWallWallTypesTimber" id="AwWallWallTypesTimber"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -368,7 +373,7 @@
             <tr>
               <td >Clay bricks</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesClay" id="AwWallWallTypesClay"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesClay" id="AwWallWallTypesClay"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -377,7 +382,7 @@
             <tr>
               <td >Blockwork</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBlockwork" id="AwWallWallTypesBlockwork"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBlockwork" id="AwWallWallTypesBlockwork"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -386,7 +391,7 @@
             <tr>
               <td >Reinforce concrete</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesReinforce" id="AwWallWallTypesReinforce"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesReinforce" id="AwWallWallTypesReinforce"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -395,7 +400,7 @@
             <tr>
               <td >Aerated concrete</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesAerated" id="AwWallWallTypesAerated"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesAerated" id="AwWallWallTypesAerated"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -404,7 +409,7 @@
             <tr>
               <td >Glass</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGlass" id="AwWallWallTypesGlass"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGlass" id="AwWallWallTypesGlass"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -413,7 +418,7 @@
             <tr>
               <td >Gypsum board</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGypsum" id="AwWallWallTypesGypsum"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGypsum" id="AwWallWallTypesGypsum"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -422,7 +427,7 @@
             <tr>
               <td >Cement board</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesCement" id="AwWallWallTypesCement"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesCement" id="AwWallWallTypesCement"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -431,7 +436,7 @@
             <tr>
               <td >Fibre cement</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesFibreCement" id="AwWallWallTypesFibreCement"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesFibreCement" id="AwWallWallTypesFibreCement"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -443,7 +448,7 @@
               <td rowspan="12">Finishes</td>
               <td >Paints</td>
               <td >2</td>
-              <td> <input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaints" id="AwWallFinishesPaints"></td>            
+              <td> <input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaints" id="AwWallFinishesPaints"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -453,7 +458,7 @@
             <tr>
               <td >Composite panel</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesComposite" id="AwWallFinishesComposite"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesComposite" id="AwWallFinishesComposite"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -462,7 +467,7 @@
             <tr>
               <td >Wall paper</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesWallpaper" id="AwWallFinishesWallpaper"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesWallpaper" id="AwWallFinishesWallpaper"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -471,7 +476,7 @@
             <tr>
               <td >Ceramic tiles</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesCeramic" id="AwWallFinishesCeramic"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesCeramic" id="AwWallFinishesCeramic"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -480,7 +485,7 @@
             <tr>
               <td >Stones</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesStones" id="AwWallFinishesStones"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesStones" id="AwWallFinishesStones"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -489,7 +494,7 @@
             <tr>
               <td >Pebblewash</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPebblewash" id="AwWallFinishesPebblewash"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPebblewash" id="AwWallFinishesPebblewash"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -498,7 +503,7 @@
             <tr>
               <td >Granite</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGranite" id="AwWallFinishesGranite"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGranite" id="AwWallFinishesGranite"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -507,7 +512,7 @@
             <tr>
               <td >Glass</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlass" id="AwWallFinishesGlass"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlass" id="AwWallFinishesGlass"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -516,7 +521,7 @@
             <tr>
               <td >Glass block</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlassBlock" id="AwWallFinishesGlassBlock"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlassBlock" id="AwWallFinishesGlassBlock"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -525,7 +530,7 @@
             <tr>
               <td >Timber panelling</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesTimber" id="AwWallFinishesTimber"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesTimber" id="AwWallFinishesTimber"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -534,7 +539,7 @@
             <tr>
               <td >Plaster</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaster" id="AwWallFinishesPaster"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaster" id="AwWallFinishesPaster"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -543,10 +548,14 @@
             <tr>
               <td >Growall</td>
               <td >2</td>
-              <td><input onblur="markahPRAwWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGrowall" id="AwWallFinishesGrowall"></td>            
+              <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGrowall" id="AwWallFinishesGrowall"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
+            </tr>
+
+            <tr style="display: none">
+              <td>markahPRAwWall <input type="text" name="markahPRAwWall" id="markahPRAwWall" /></td>            
             </tr>
             
           </tbody>
@@ -561,16 +570,6 @@
       </div>
 
 </div>
-
-
-
-<p><strong>Markah PRAwRoof <span class="required"></span></strong><br />
-  <input type="text" name="markahPRAwRoof" id="markahPRAwRoof" /></p>
-
-<p><strong>Markah PRAwWall <span class="required"></span></strong><br />
-  <input type="text" name="markahPRAwWall" id="markahPRAwWall" /></p>
-
-    
 
 
 <script>
@@ -588,16 +587,16 @@
   </script> 
   
 <script>
-  function markahPRAwWall(){
+  function findTotalWall(){
   var arr = document.getElementsByClassName('prawwall');
   // add new var 
-  var PRAwWall=0;
+  var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))
-          PRAwWall += parseFloat(arr[i].value);
+          tot += parseFloat(arr[i].value);
           // add PRAwWall2
   }
-  document.getElementById('markahPRAwWall').value = PRAwWall;
+  document.getElementById('markahPRAwWall').value = tot;
 } 
   </script> 
 

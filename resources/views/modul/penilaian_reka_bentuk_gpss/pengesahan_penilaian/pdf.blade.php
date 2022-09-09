@@ -1,535 +1,201 @@
-tolong download
 
-<div class="card-body">
-    <div class="row3 mx-1 table-responsive scrollbar text-center">
-      
-        <div class="col">
-          <table class="table table-bordered line-table text-center" style="width: 100%">
-            <thead class="text-white bg-orange-jkr">
-              <tr>          
-                <th colspan="8">Green Product Scoring Sheet</th>
-              </tr>
-              <tr>
-                <th colspan="8">List of products for architectural works - Roof</th>
-              </tr>
-              <tr>
-                <th>No.</th>
-                <th >Component</th>
-                <th>Product</th>
-                <th>Point Allocated</th>
-                <th>Point Requested (design)</th>
-                <th>Point Requested (construction)</th>
-                <th>Point Awarded</th>
-                <th >Remark</th>
-              </tr>
-            </thead>
-            <tbody>
-              
-              <tr class="text-center">
-                <td rowspan="4" >1</td>
-                <td rowspan="4">Roof tiles</td>
-                <td >Clay tiles</td>
-                <td >2</td>
-                <td> {{$gpss_bangunan ?? ''}} </td>
-                <td><input type="number" min="0" max="2"></td>                        
-                <td><input type="number" min="0" max="2" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Concrete tiles</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}} </td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
+<div class="header" >
+    <h1 class="header-title" style="color: #EB5500">
+        PENILAIAN REKA BENTUK GPSS
+    </h1>
+</div>
+<hr style="background-color: #EB5500;">
+
+<div class="container-fluid">
+    <div class="card-body">
+        <form action="/penilaian_reka_bentuk_gpss" method="post" enctype="multipart/form-data">
+            @csrf
+            {{-- @method('PUT') --}}
+
+                <div class="row mx-3">
+                    <table class="table table-bordered line-table shadow-table-jkr line-corner-table-jkr">
+                        <thead class="text-white line-table">
+                            <tr align="center" style="background-color:#EB5500">
+                                <th colspan="3">Jenis Pembangunan</th>
+                                <th colspan="8">Pembangunan Baru</th>
+                            </tr>
                 
-                <td >Metal roofing</td>
-                <td >2</td>
-                <td> {{$gpss_bangunan ?? ''}} </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Shingles</td>
-                <td >2</td>
-                <td> {{$gpss_bangunan ?? ''}} </td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-              
-              <tr>
-                <td rowspan="5">2</td>
-                <td rowspan="5">Insulation</td>
-                <td >Rockwool</td>
-                <td >2</td>
-                <td> {{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Glasswool</td>
-                <td >2</td>
-                <td> {{$gpss_bangunan ?? ''}} </td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Foam</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}} </td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Aluminium Foil</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Undersheeting</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td rowspan="3">3</td>
-                <td rowspan="3">Roof Eaves</td>
-                <td >Metal</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Fiber cement</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Plasterboard</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                
-                <td rowspan="4">4</td>
-                <td rowspan="4">Fascia boards</td>
-                <td >Metal</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td> 
-    
-              </tr>
-    
-              <tr>
-                <td >Fibre cement</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Plasterboard</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Timber</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                
-                <td rowspan="4">5</td>
-                <td rowspan="4">Gutter</td>
-                <td >Upvc</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>                  
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td> 
-    
-              </tr>
-    
-              <tr>
-                <td >Galvanised iron</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>                       
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Aluminium</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Stainless steel</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                
-                <td rowspan="4">6</td>
-                <td rowspan="4">Rainwater down pipes</td>
-                <td >Upvc</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>                       
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td> 
-    
-              </tr>
-    
-              <tr>
-                <td >Galvanised iron</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Aluminium</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Stainless steel</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                
-                <td rowspan="3">7</td>
-                <td rowspan="3">Gutter</td>
-                <td >Plasterboard</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td> 
-    
-              </tr>
-    
-              <tr>
-                <td >Fibre cement board</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Metal strip</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                
-                <td rowspan="2">8</td>
-                <td rowspan="2">Truss system</td>
-                <td >Timber</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>                   
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td> 
-    
-              </tr>
-    
-              <tr>
-                <td >Metal</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>                
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              {{-- New table for wall system --}}
-              <tr class="text-white bg-orange-jkr">
-                <th colspan="8">List of products for architectural works - Wall System</th>
-              </tr>
-              <tr>
-                
-                <td rowspan="10">1</td>
-                <td rowspan="10">Wall types</td>
-                <td >Bricks</td>
-                <td >2</td>
-                <td> {{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td> 
-    
-              </tr>
-    
-              <tr>
-                <td >Timberwork</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Clay bricks</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>                        
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Blockwork</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Reinforce concrete</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Aerated concrete</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Glass</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Gypsum board</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Cement board</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Fibre cement</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                
-                <td rowspan="12">2</td>
-                <td rowspan="12">Finishes</td>
-                <td >Paints</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td> 
-    
-              </tr>
-    
-              <tr>
-                <td >Composite panel</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Wall paper</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Ceramic tiles</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Stones</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Pebblewash</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Granite</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Glass</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>                       
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Glass block</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Timber panelling</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Plaster</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-    
-              <tr>
-                <td >Growall</td>
-                <td >2</td>
-                <td>{{$gpss_bangunan ?? ''}}</td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="text"></td>                    
-              </tr>
-              
-            </tbody>
+                            <tr align="center" style="background-color:#EB5500">
+                                {{-- <th></th> --}}
+                                <th colspan="3">Peratusan Mengikut Kriteria</th>
+                                <th>MM</th>
+                                <th>MS</th>
+                                <th>MR</th>
+                                <th>MMV</th>
+                                <th>MS</th>
+                                <th>MV</th>
+                                <th>ML</th>
+                            </tr>
+                        </thead>
+
+                        <tr align="center" class="text-black" >
+                            <th>TL</th>
+                            <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
+                            <th>26</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>24</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th>KT</th>
+                            <th colspan="2">Pengurusan Kecekapan Tenaga</th>
+                            <th>26</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>24</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th>SB</th>
+                            <th colspan="2">Pengurusan Sumber dan Bahan</th>
+                            <th>26</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>24</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th>PA</th>
+                            <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
+                            <th>26</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>24</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th>PD</th>
+                            <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
+                            <th>26</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>24</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th>FL</th>
+                            <th colspan="2">Pengurusan Fasiliti Lestari</th>
+                            <th>26</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>24</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th>IN</th>
+                            <th colspan="2">Inovasi dalam Reka Bentuk</th>
+                            <th>26</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>24</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th colspan="3">JUMLAH</th>
+                            <th>101</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>103</th>
+                            <th>0</th>
+                            <th>0</th>
+                            <th>0</th>
+                        </tr>
+                    </table> <!--Table Jenis Pembangunan-->
+                </div> <!--row mx-3-->
             
-          </table>
-  
-          
-  
-        </div>
-  
-  </div>
+
+            <div class="row mx-3">
+                <table class="table table-bordered line-table shadow-table-jkr">
+                    <thead class="text-white line-table">
+
+                        <tr align="center" style="background-color:#EB5500">
+                            <th colspan="3">MARKAH PENILAIAN</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th colspan="2">Jumlah Markah</th>
+                            <th colspan="2">0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th colspan="2">Peratusan</th>
+                            <th colspan="2">0</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th colspan="2">Penarafan PH</th>
+                            <th colspan="2">1 <span class="star">&starf;</span></th>
+                        </tr>
+
+                        <tr align="center" style="background-color:#EB5500" >
+                            <th colspan="2">Petunjuk Penarafan</th>
+                            <th>Sijil Penarafan</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th><span class="star">&starf; &starf; &starf; &starf; &starf;</span></th>
+                            <th>80 - 100</th>
+                            <th>Kecemerlangan Global</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th><span class="star">&starf; &starf; &starf; &starf;</span></th>
+                            <th>65 - 79</th>
+                            <th>Kecemerlangan Nasional</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th><span class="star">&starf; &starf; &starf;</span></th>
+                            <th>45 - 64</th>
+                            <th>Amalan Pengurusan Terbaik</th>
+                        </tr>
+
+                        <tr align="center" class="text-black" >
+                            <th><span class="star">&starf; &starf;</span></th>
+                            <th>30 - 44</th>
+                            <th>Potensi Pengiktirafan</th>
+                        </tr>
+                        <tr align="center" class="text-black" >
+                            <th><span class="star">&starf;</span></th>
+                            <th>< 29</th>
+                            <th>Sijil Penyertaan</th>
+                        </tr>
+
+                    </thead>
+                </table>
+            </div>
+    
+
+                
+        </form> <!--Form-->
+    </div> <!--Card Body-->
+</div> <!--Container Fluid-->
+
+
