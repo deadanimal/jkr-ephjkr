@@ -23,7 +23,7 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" placeholder="Hospital Seri Iskandar" value="{{$pemudah_cara ?? ''}}"/>   
+                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" placeholder="Hospital Seri Iskandar"/>   
                     </div>                     
             </div>
 

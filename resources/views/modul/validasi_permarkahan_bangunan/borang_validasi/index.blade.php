@@ -64,7 +64,7 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/borang_validasi/{{$k->id}}" role="button"
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/borang_validasi/{{$k->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
                                                 </td>
 

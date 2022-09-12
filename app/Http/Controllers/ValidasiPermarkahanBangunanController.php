@@ -135,12 +135,22 @@ class ValidasiPermarkahanBangunanController extends Controller
 
     public function pengesahan_penilaian_validasi()
     {
-        return view('modul.validasi_permarkahan_bangunan.pengesahan_penilaian_validasi.index');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
+
+        return view('modul.validasi_permarkahan_bangunan.pengesahan_penilaian_validasi.index', [
+            'projeks'=>$projeks,
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function papar_pengesahan_penilaian_validasi($id)
     {
-        return view('modul.validasi_permarkahan_bangunan.pengesahan_penilaian_validasi.show');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.validasi_permarkahan_bangunan.pengesahan_penilaian_validasi.show', [
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function jana_keputusan()
@@ -182,11 +192,14 @@ class ValidasiPermarkahanBangunanController extends Controller
     #ketua pasukan/penolong ketua pasukan
     public function permohonan_rayuan()
     {
+
         return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.index');
     }
 
     public function papar_permohonan_rayuan($id)
     {
+        // $pasukan_validasi = PemudahCara::find($id);
+        // $projeks = Projek::find($id);
         return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.edit');
     }
 
@@ -199,17 +212,23 @@ class ValidasiPermarkahanBangunanController extends Controller
     #Pasukan Validasi
     public function penilaian_validasi()
     {
-        return view('modul.validasi_permarkahan_bangunan.penilaian_validasi.index');
+        // $projeks = Projek::all();
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+
+        return view('modul.validasi_permarkahan_bangunan.penilaian_validasi.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function papar_penilaian_validasi($id)
     {
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        // $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan::all();
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan();
+        // $projeks = Projek::find($id);
         
 
         return view('modul.validasi_permarkahan_bangunan.penilaian_validasi.create',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan,
         ]);
     }
 
@@ -232,18 +251,18 @@ class ValidasiPermarkahanBangunanController extends Controller
         + $request->markahTL92_ML;
 
         //SUM OF KT1 TO KT11
-        $markah_KT_total = $request->markahKT1_ML
-        + $request->markahKT2_ML
-        + $request->markahKT21_ML
-        + $request->markahKT22_ML
-        + $request->markahKT3_ML
-        + $request->markahKT31_ML
-        + $request->markahKT32_ML
-        + $request->markahKT4_ML
-        + $request->markahKT5_ML
-        + $request->markahKT52_ML
-        + $request->markahKT8_ML
-        + $request->markahKT11_ML;
+        // $markah_KT_total = $request->markahKT1_ML
+        // + $request->markahKT2_ML
+        // + $request->markahKT21_ML
+        // + $request->markahKT22_ML
+        // + $request->markahKT3_ML
+        // + $request->markahKT31_ML
+        // + $request->markahKT32_ML
+        // + $request->markahKT4_ML
+        // + $request->markahKT5_ML
+        // + $request->markahKT52_ML
+        // + $request->markahKT8_ML
+        // + $request->markahKT11_ML;
 
         //SUM OF SB1 TO SB4
         $markah_SB_total =
@@ -305,7 +324,7 @@ class ValidasiPermarkahanBangunanController extends Controller
     
        
         $kriteria_phjkr_bangunan->markahTOTAL_TL_ML = $markah_TL_total;
-        $kriteria_phjkr_bangunan->markahTOTAL_KT_ML = $markah_KT_total;
+        // $kriteria_phjkr_bangunan->markahTOTAL_KT_ML = $markah_KT_total;
         $kriteria_phjkr_bangunan->markahTOTAL_SB_ML = $markah_SB_total;
         $kriteria_phjkr_bangunan->markahTOTAL_PA_ML = $markah_PA_total;
         $kriteria_phjkr_bangunan->markahTOTAL_PD_ML = $markah_PD_total;
@@ -424,8 +443,9 @@ class ValidasiPermarkahanBangunanController extends Controller
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
 
-        return view('modul.validasi_permarkahan_bangunan.borang_validasi.index',
-        compact('kriteria_phjkr_bangunan'));
+        return view('modul.validasi_permarkahan_bangunan.borang_validasi.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function papar_borang_validasi($id)
@@ -433,6 +453,15 @@ class ValidasiPermarkahanBangunanController extends Controller
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
 
         return view('modul.validasi_permarkahan_bangunan.borang_validasi.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
+    }
+
+    public function kemaskini_borang_validasi($id)
+    {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.validasi_permarkahan_bangunan.borang_validasi.edit',[
             'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         ]);
     }

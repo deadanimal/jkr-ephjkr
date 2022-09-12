@@ -492,14 +492,14 @@
                                 </a>
                             </li>
 
-                            {{-- BANGUNAN (Verifikasi) Papar dan Muat Turun Sijil Penilaian Verfikasi Pemarkahan --}}
+                            {{-- BANGUNAN (Verifikasi) Papar dan Muat Turun Sijil Penilaian Verifikasi Pemarkahan --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/muat_turun_sijil') ? 'active' : '' }} py-0"
                                     href="/verifikasi_permarkahan_bangunan/muat_turun_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/muat_turun_sijil') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil
-                                            Penilaian Verfikasi Pemarkahan</span>
+                                            Penilaian Verifikasi Pemarkahan</span>
                                     </div>
                                 </a>
                             </li>
@@ -1183,14 +1183,14 @@
                                 </a>
                             </li>
 
-                            {{-- JALAN (Verifikasi) Papar dan Muat Turun Sijil Penilaian Verfikasi Pemarkahan --}}
+                            {{-- JALAN (Verifikasi) Papar dan Muat Turun Sijil Penilaian Verifikasi Pemarkahan --}}
                             {{-- <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/semakan_rawak') ? 'active' : '' }} py-0"
                                     href="/verifikasi_permarkahan_bangunan/semakan_rawak">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat Turun Sijil
-                                            Penilaian Verfikasi Pemarkahan</span>
+                                            Penilaian Verifikasi Pemarkahan</span>
                                     </div>
                                 </a>
                             </li> --}}

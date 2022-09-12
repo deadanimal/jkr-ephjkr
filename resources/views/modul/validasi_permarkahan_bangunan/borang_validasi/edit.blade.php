@@ -92,9 +92,9 @@
 <div class="container-fluid">
     <div class="card-body">
         <div class="table-responsive scrollbar">
-            <form action="/validasi_permarkahan_bangunan/penilaian_validasi/{id}" method="post" enctype="multipart/form-data">
+            <form action="" method="post" enctype="multipart/form-data">
                 @csrf
-                {{-- @method('POST') --}}
+                @method('PUT')
 
                     <!--------------------------------------- MarkahTL ---------------------------------------->
 
@@ -142,20 +142,20 @@
                                 {{-- <th><input class="" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
                                 <td colspan="2">
                                     <select onClick="autoFill(); return true;" class="form-select" aria-label="Default select example" name="jenisKategori" id="jenisKategori">
-                                        <option id="input1" hidden selected="">Sila Pilih</option>
+                                        <option hidden selected="{{ $kriteria_phjkr_bangunan->jenisKategori }}">{{ $kriteria_phjkr_bangunan->jenisKategori }}/option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
                                         <option value="D">D</option>
                                     </select>                         
                                 </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahTL1_ML}}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><input onblur="findTotalTL_ML()" class="text-center sum_ml_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL1_ML" name="markahTL1_ML" value="{{$kriteria_phjkr_bangunan->markahTL1_ML}}" /></td>
                                 <td colspan="2">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
                                 <td colspan="2">Tidak Berkenaan</td>
                                 <td></td>
