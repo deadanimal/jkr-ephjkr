@@ -6,6 +6,8 @@ use App\Http\Requests\UpdatePenilaianRekaBentukBangunanRequest;
 use App\Models\Projek;
 use App\Models\PemudahCara;
 use App\Models\KriteriaPhjkrBangunan;
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
+use \PDF;
 
 use Illuminate\Http\Request;
 
@@ -114,7 +116,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function pemudah_cara($id)
     {
         $pemudah_cara = new PemudahCara;
-        $projeks = new Projek;
+        $projeks = Projek::find($id);
 
         // papar form pemudah cara with id projek
         // $projek = Projek::find($id);
@@ -157,26 +159,52 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function skor_penilaian()
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
     
         // papar mcm index tapi ada button utk skor
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
-        ]);
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',compact('projeks'));
     }
     public function papar_skor_penilaian($id)
     {
-        $projeks = new Projek;
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+        // $projeks = Projek::all();
 
         // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.edit',[
-            'projeks'=> $projeks
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.show',[
+            'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan,
+            // 'projeks'=>$projeks
         ]);
     }
 
     public function simpan_skor(Request $request, $id)
     {
 
-        // $markah_TL_total = $request->markahTL1 + $request->markahTL2;
+        $markah_TL_total = $request->markahTL1_MS + $request->markahTL2_MS
+        + $request->markahTL3_MS + $request->markahTL32_MS + $request->markahTL4_MS + $request->markahTL5_MS + $request->markahTL6_MS
+        + $request->markahTL81_MS + $request->markahTL82_MS + $request->markahTL83_MS + $request->markahTL84_MS + $request->markahTL85_MS + $request->markahTL91_MS 
+        + $request->markahTL92_MS;
+
+        $markah_KT_total = $request->markahKT1_MS + $request->markahKT2_MS
+        + $request->markahKT21_MS + $request->markahKT22_MS + $request->markahKT3_MS + $request->markahKT31_MS + $request->markahKT32_MS
+        + $request->markahKT4_MS + $request->markahKT52_MS + $request->markahKT8_MS + $request->markahKT11_MS;
+
+        $markah_SB_total = $request->markahSB1_MS + $request->markahSB2_MS
+        + $request->markahSB3_MS + $request->markahSB4_MS;
+
+        $markah_PA_total = $request->markahPA1_MS + $request->markahPA2_MS
+        + $request->markahPA3_MS + $request->markahPA32_MS;
+
+        $markah_PD_total = $request->markahPD24_MS + $request->markahPD25_MS
+        + $request->markahPD31_MS + $request->markahPD32_MS + $request->markahPD33_MS + $request->markahPD34_MS + $request->markahPD8_MS
+        + $request->markahPD10_MS;
+
+        $markah_FL_total = $request->markahFL1_MS + $request->markahFL2_MS
+        + $request->markahFL21_MS + $request->markahFL22_MS + $request->markahFL23_MS + $request->markahFL3_MS + $request->markahFL31_MS
+        + $request->markahFL32_MS + $request->markahFL33_MS + $request->markahFL34_MS;
+
+        $markah_IN_total = $request->markahIN1_MS;
+        $markahTOTALMS = $request->markahTOTAL_MS + $request->markahTOTAL_MR;
+
         // $markah_KT_total = $request->markahKT1 + $request->markahKT2;
         // $markah_SB_total = $request->markahSB1 + $request->markahSB2;
         // $markah_PA_total = $request->markahPA1 + $request->markahPA2;
@@ -195,7 +223,15 @@ class PenilaianRekaBentukBangunanController extends Controller
 
 
         // $kriteria_phjkr_bangunan->jenisKategori = $request->input('jenisKategori');
-        // $kriteria_phjkr_bangunan->markahTL = $markah_TL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MS = $markah_TL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MS = $markah_KT_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MS = $markah_SB_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MS = $markah_PA_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MS = $markah_PD_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MS = $markah_FL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MS = $markah_IN_total;
+
+
         // $kriteria_phjkr_bangunan->markahKT = $markah_KT_total;
         // $kriteria_phjkr_bangunan->markahSB = $markah_SB_total;
         // $kriteria_phjkr_bangunan->markahPA = $markah_PA_total;
@@ -211,6 +247,68 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan->markahPD = $request->markahPD;
         $kriteria_phjkr_bangunan->markahFL = $request->markahFL;
         $kriteria_phjkr_bangunan->markahIN = $request->markahIN;
+
+        // $kriteria_phjkr_bangunan->markahMMR = $request->markahMMR;
+        // $kriteria_phjkr_bangunan->markahMS = $request->markahMS;
+        // $kriteria_phjkr_bangunan->markahMR = $request->markahMR;
+        // $kriteria_phjkr_bangunan->markahMMV = $request->markahMMV;
+        // $kriteria_phjkr_bangunan->markahMSV = $request->markahMSV;
+        // $kriteria_phjkr_bangunan->markahML = $request->markahML;
+        
+        // JUMLAH MARKAH 
+        $kriteria_phjkr_bangunan->markahMMR = $request->markahMMR;
+
+        $kriteria_phjkr_bangunan->markahMS = $markahTOTALMS;
+        $kriteria_phjkr_bangunan->markahMR = $request->markahTOTAL_MR + $request->markahTOTAL_MR;
+        
+
+        $kriteria_phjkr_bangunan->markahMMV = $request->markahMMV;
+        $kriteria_phjkr_bangunan->markahMSV = $request->markahMSV;
+        $kriteria_phjkr_bangunan->markahML = $request->markahML;
+        
+
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MMR = $request->markahTOTAL_TL_MMR;
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MS = $request->markahTOTAL_TL_MS;
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MR = $request->markahTOTAL_TL_MR;
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MMV = $request->markahTOTAL_TL_MMV;
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MSV = $request->markahTOTAL_TL_MSV;
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_ML = $request->markahTOTAL_TL_ML;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MMR = $request->markahTOTAL_KT_MMR;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MS = $request->markahTOTAL_KT_MS;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MR = $request->markahTOTAL_KT_MR;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MMV = $request->markahTOTAL_KT_MMV;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MSV = $request->markahTOTAL_KT_MSV;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_ML = $request->markahTOTAL_KT_ML;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MMR = $request->markahTOTAL_SB_MMR;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MS = $request->markahTOTAL_SB_MS;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MR = $request->markahTOTAL_SB_MR;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MMV = $request->markahTOTAL_SB_MMV;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MSV = $request->markahTOTAL_SB_MSV;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_ML = $request->markahTOTAL_SB_ML;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MMR = $request->markahTOTAL_PA_MMR;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MS = $request->markahTOTAL_PA_MS;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MR = $request->markahTOTAL_PA_MR;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MMV = $request->markahTOTAL_PA_MMV;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MSV = $request->markahTOTAL_PA_MSV;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_ML = $request->markahTOTAL_PA_ML;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MMR = $request->markahTOTAL_PD_MMR;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MS = $request->markahTOTAL_PD_MS;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MR = $request->markahTOTAL_PD_MR;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MMV = $request->markahTOTAL_PD_MMV;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MSV = $request->markahTOTAL_PD_MSV;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_ML = $request->markahTOTAL_PD_ML;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MMR = $request->markahTOTAL_FL_MMR;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MS = $request->markahTOTAL_FL_MS;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MR = $request->markahTOTAL_FL_MR;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MMV = $request->markahTOTAL_FL_MMV;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MSV = $request->markahTOTAL_FL_MSV;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_ML = $request->markahTOTAL_FL_ML;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MMR = $request->markahTOTAL_IN_MMR;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MS = $request->markahTOTAL_IN_MS;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MR = $request->markahTOTAL_IN_MR;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MMV = $request->markahTOTAL_IN_MMV;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MSV = $request->markahTOTAL_IN_MSV;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_ML = $request->markahTOTAL_IN_ML;
         $kriteria_phjkr_bangunan->markahTL1_MMR = $request->markahTL1_MMR;
         $kriteria_phjkr_bangunan->markahTL1_MS = $request->markahTL1_MS;
         $kriteria_phjkr_bangunan->markahTL1_MR = $request->markahTL1_MR;
@@ -568,6 +666,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         $projeks->dokumenSokongan = $request->input('dokumenSokongan');
         $projeks->save();
 
+        alert()->success('PENILAIAN REKA BENTUK BANGUNAN BERJAYA', 'Berjaya');
         // simpan skor penilaian
         return redirect('/penilaian_reka_bentuk_bangunan/skor_penilaian');
     }
@@ -595,9 +694,11 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function pengesahan_penilaian()
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
 
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index',compact('kriteria_phjkr_bangunan'));
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index',
+        compact('kriteria_phjkr_bangunan'), compact('projeks'));
     }
     public function papar_pengesahan_penilaian($id)
     {
@@ -622,12 +723,19 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function semakan_rawak()
     {
-        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+
+        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index', compact('kriteria_phjkr_bangunan'));
 
     }
     public function semakan_rawak_form($id)
     {
-        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.show',[
+            'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan
+        ]
+    );
 
     }
     public function simpan_semakan_rawak(Request $request, $id)
@@ -642,6 +750,17 @@ class PenilaianRekaBentukBangunanController extends Controller
         // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
         // $dokumen->save();
 
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan;
+        
+        // JUMLAH MARKAH 
+        $kriteria_phjkr_bangunan->markahMMR = $request->markahMMR;
+        $kriteria_phjkr_bangunan->markahMS = $request->markahTOTAL_MS + $request->markahTOTAL_MR;
+        $kriteria_phjkr_bangunan->markahMR = $request->markahTOTAL_MR + $request->markahTOTAL_MR;
+        $kriteria_phjkr_bangunan->markahMMV = $request->markahMMV;
+        $kriteria_phjkr_bangunan->markahMSV = $request->markahMSV;
+        $kriteria_phjkr_bangunan->markahML = $request->markahML;
+
+
         return redirect('/penilaian_reka_bentuk_bangunan/semakan_rawak');
 
     }
@@ -651,7 +770,9 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function muat_turun_sijil()
     {
-        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.index');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+
+        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.index', compact('kriteria_phjkr_bangunan'));
 
     }
     public function muat_turun_sijil_form($id)
@@ -662,8 +783,12 @@ class PenilaianRekaBentukBangunanController extends Controller
         //     $apaapa = $request->file('print_sijil')->store('print_sijil');
         //     $apapa -> print_naziran = $apa-apa;
         // }
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
         
-        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.edit');
+        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
 
     }
     public function simpan_muat_turun_sijil(Request $request, $id)

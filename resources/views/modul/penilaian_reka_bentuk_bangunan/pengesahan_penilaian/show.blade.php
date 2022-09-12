@@ -427,8 +427,8 @@ thead {
         <tr class="pg-1">
             <td colspan="3">Jumlah markah TL</td>
             <td>1</td>
-            <td>0</td>
-            <td>0</td>
+            <td>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</td>
             <td></td>
             <td>0</td>
             <td>0</td>
@@ -735,8 +735,8 @@ thead {
     <tr class="pg-2">
         <td colspan="3">Jumlah markah KT</td>
         <td>1</td>
-        <td>0</td>
-        <td>0</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</td>
         <td></td>
         <td>0</td>
         <td>0</td>
@@ -883,8 +883,8 @@ thead {
     <tr class="pg-3">
         <td colspan="3">Jumlah markah SB</td>
         <td>1</td>
-        <td>0</td>
-        <td>0</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</td>
         <td></td>
         <td>0</td>
         <td>0</td>
@@ -1020,8 +1020,8 @@ thead {
     <tr class="pg-4">
         <td colspan="3">Jumlah markah PA</td>
         <td>1</td>
-        <td>0</td>
-        <td>0</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</td>
         <td></td>
         <td>0</td>
         <td>0</td>
@@ -1289,8 +1289,8 @@ thead {
     <tr class="pg-5">
         <td colspan="3">Jumlah markah PD</td>
         <td>1</td>
-        <td>0</td>
-        <td>0</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</td>
+        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</td>
         <td></td>
         <td>0</td>
         <td>0</td>
@@ -1299,7 +1299,7 @@ thead {
         <td></td>
     </tr> 
 
-<!---------------------------------------MARKAHIN---------------------------------->
+<!---------------------------------------MARKAHFL---------------------------------->
 <thead>
     <tr class="pg-6">
         <th rowspan="3" style="border-color: #F4A258">Kod</th>
@@ -1325,19 +1325,19 @@ thead {
     
     </tr>
     <tr class="pg-6">
-        <th>IN</th>
+        <th>FL</th>
         <th colspan="20">INOVASI DALAM REKABENTUK</th>
     </tr>
 </thead>
 
-    <!--IN1-->
+    <!--FL-->
     <tr class="pg-6">
-        <td>IN1</td>
+        <td>FL1</td>
             <td>Reka Bentuk Inovasi</td>
             <td>A</td> 
             <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahIN1_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahIN2_MR}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL1_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL1_MR}}</td>
             <td><td>
             <td></td>
             <td></td>
@@ -1352,12 +1352,210 @@ thead {
             <td></td>
     </tr>
 
- <!--JUMLAH MARKAHIN-->
- <tr class="pg-6">
-    <td colspan="3">Jumlah markah IN</td>
+    <!--FL2-->
+    <tr class="pg-6">
+        <td>FL2</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL2_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL2_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL2.1-->
+    <tr class="pg-6">
+        <td>FL2.1</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL21_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL21_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL2.2-->
+    <tr class="pg-6">
+        <td>FL2.2</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL22_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL22_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL2.3-->
+    <tr class="pg-6">
+        <td>FL2.3</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL23_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL23_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL3-->
+    <tr class="pg-6">
+        <td>FL3</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL3_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL3_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL3.1-->
+    <tr class="pg-6">
+        <td>FL3.1</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL31_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL31_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL3.2-->
+    <tr class="pg-6">
+        <td>FL3.2</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL32_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL32_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL3.3-->
+    <tr class="pg-6">
+        <td>FL3.3</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL33_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL33_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+    <!--FL3.4-->
+    <tr class="pg-6">
+        <td>FL3.4</td>
+            <td>Reka Bentuk Inovasi</td>
+            <td>A</td> 
+            <td>1</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL34_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahFL34_MR}}</td>
+            <td><td>
+            <td></td>
+            <td></td>
+            <td>
+                <span>&#183; Laporan cadangan inovasi</span><br>
+                <span>&#183; Laporan kajian Return of Investment</span><br>
+            </td>
+            <td>
+                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
+                <span>&#183; Laporan prestasi inovasi</span><br>
+            </td> 
+            <td></td>
+    </tr>
+
+<!--JUMLAH MARKAHFL-->
+<tr class="pg-6">
+    <td colspan="3">Jumlah markah FL</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
+    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MS}}</td>
+    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}</td>
     <td></td>
     <td>0</td>
     <td>0</td>
@@ -1366,7 +1564,7 @@ thead {
     <td></td>
 </tr> 
 
-<!---------------------------------------MARKAHFL---------------------------------->
+<!---------------------------------------MARKAHIN---------------------------------->
 <thead>
     <tr class="pg-7">
         <th rowspan="3" style="border-color: #F4A258">Kod</th>
@@ -1392,19 +1590,19 @@ thead {
     
     </tr>
     <tr class="pg-7">
-        <th>FL</th>
+        <th>IN</th>
         <th colspan="20">INOVASI DALAM REKABENTUK</th>
     </tr>
 </thead>
 
-    <!--FL-->
+    <!--IN1-->
     <tr class="pg-7">
-        <td>FL1</td>
+        <td>IN1</td>
             <td>Reka Bentuk Inovasi</td>
             <td>A</td> 
             <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL1_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL1_MR}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahIN1_MS}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahIN2_MR}}</td>
             <td><td>
             <td></td>
             <td></td>
@@ -1419,210 +1617,12 @@ thead {
             <td></td>
     </tr>
 
-    <!--FL2-->
-    <tr class="pg-7">
-        <td>FL2</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL2_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL2_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL2.1-->
-    <tr class="pg-7">
-        <td>FL2.1</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL21_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL21_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL2.2-->
-    <tr class="pg-7">
-        <td>FL2.2</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL22_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL22_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL2.3-->
-    <tr class="pg-7">
-        <td>FL2.3</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL23_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL23_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL3-->
-    <tr class="pg-7">
-        <td>FL3</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL3_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL3_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL3.1-->
-    <tr class="pg-7">
-        <td>FL3.1</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL31_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL31_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL3.2-->
-    <tr class="pg-7">
-        <td>FL3.2</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL32_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL32_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL3.3-->
-    <tr class="pg-7">
-        <td>FL3.3</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL33_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL33_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-    <!--FL3.4-->
-    <tr class="pg-7">
-        <td>FL3.4</td>
-            <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL34_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahFL34_MR}}</td>
-            <td><td>
-            <td></td>
-            <td></td>
-            <td>
-                <span>&#183; Laporan cadangan inovasi</span><br>
-                <span>&#183; Laporan kajian Return of Investment</span><br>
-            </td>
-            <td>
-                <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
-                <span>&#183; Laporan prestasi inovasi</span><br>
-            </td> 
-            <td></td>
-    </tr>
-
-<!--JUMLAH MARKAHFL-->
-<tr class="pg-7">
-    <td colspan="3">Jumlah markah FL</td>
+ <!--JUMLAH MARKAHIN-->
+ <tr class="pg-7">
+    <td colspan="3">Jumlah markah IN</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
+    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MS}}</td>
+    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</td>
     <td></td>
     <td>0</td>
     <td>0</td>

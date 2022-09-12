@@ -274,6 +274,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/validasi_permarkahan_bangunan/penilaian_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_penilaian_validasi']);
     Route::post('/validasi_permarkahan_bangunan/penilaian_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_penilaian_validasi']);
 
+    //Ketua Validasi
+    Route::get('/validasi_permarkahan_bangunan/borang_validasi', [ValidasiPermarkahanBangunanController::class, 'borang_validasi']);
+    Route::get('/validasi_permarkahan_bangunan/borang_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_borang_validasi']);
+
 
 
 

@@ -1,44 +1,44 @@
 @extends('layouts.base')
 <!--from DataTables-->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="/cssfile/style.css">
 
-<!-- Styles -->
+<style>
+    table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0px 2.86088px 7.15219px 7.15219px rgba(0, 0, 0, 0.05);
+    border-color: #F4A258;
+    }
+</style>
+
 @section('content')
-<!--Title: Header-->
-<div class="header">
-        <b class="text-dark-green-jkr">Semakan Rawak dan Jana Sijil</b>
 
-    <h1 class="header-title">
-        PENILAIAN REKA BENTUK BANGUNAN
+<div class="header">
+        <b class="text-dark-green-jkr">Borang Validasi</b>
+
+    <h1 class="jkr-header-title">
+        PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
     </h1>
-    <hr class="hr-jkr">
+    <hr class="line-horizontal-jkr">
     
 
 </div>
     <div class="container-fluid">
         <!--Carian Nama Projek-->
         <div class="mt-8 form-group row">
-            <label class="col-sm-2 col-form-label">Nama Projek:</label>
-                <div class="col-sm-5">
-                    <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
-                </div>
+                <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-5">
-                        <button type="button" class="btn btn-primary">Carian</button>
+                        <input type="search" onkeyup="myFunction()" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
                     </div>
-    </div>
+                        <div class="col-sm-5">
+                            <button type="button" class="btn btn-primary">Carian</button>
+                        </div>
+        </div>
 
-          
         <div class="col-12">
             <div class="card-header">
-                    {{-- <div class="card-body">
-
-                    </div> --}}
                     <div class="mt-5 row">
-                    
-                            <!--TO ENABLE SCROLLBAR AT TABLES-->
-                            {{-- <div class="table-responsive scrollbar"> --}}
-                            
                                 <table class="table table-bordered line-table" style="width:100%">
                                         <thead class="text-white bg-orange-jkr">
                                             <tr>
@@ -57,23 +57,17 @@
                                         <!--LOOPING TABLES-->
                                         @foreach ($kriteria_phjkr_bangunan as $key => $k)
                                             <tr class="text-black">
-                                                <td style="text-align: center; vertical-align: middle;">{{ $k->id }}</td>
+                                                <td>{{ $k->id }}</td>
                                                 {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
+                                                <td style="text-align: center; vertical-align: middle;">{{$k->id_ruj_skala}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->alamatProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
-                                                    title="Daftar Pemudah Cara" type="submit">
-                                                    <a href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create">Daftar</a>
-                                                </button> --}}
-                                                    {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                                                    title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/semakan_rawak/{{$k->id}}" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Papar Skor Penilaian">Papar</a>
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/borang_validasi/{{$k->id}}" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
                                                 </td>
-                                            </tr> 
+
                                         @endforeach
                                         </tbody>
                                     {{-- </table> --}}
@@ -85,4 +79,28 @@
             </div>
         </div>
     </div>
+
+
+<!---------JavaScript--------------->
+    {{-- <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName('li');
+        
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script> --}}
 @endsection
