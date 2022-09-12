@@ -207,7 +207,7 @@
                 <!--BUTTON MUAT TURUN SIJIL-->
                 <div class="mb-3 text-center">
                     {{-- <button class="btn btn-primary">Muat Turun</button> --}}
-                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{{$gpss_bangunan->id}}">Muat Turun</a>
+                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_gpss/createPDF/{id}">Muat Turun</a>
                 </div>
         </form> <!--Form-->
     </div> <!--Card Body-->

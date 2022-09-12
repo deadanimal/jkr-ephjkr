@@ -56,7 +56,7 @@
               <td >Tap fitting</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryTapFitting" id="AwSanitaryTapFitting">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryTapFitting" id="AwSanitaryTapFitting">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -68,7 +68,7 @@
               <td >Water closet</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryWaterCloset" id="AwSanitaryWaterCloset">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryWaterCloset" id="AwSanitaryWaterCloset">
                 
               </td>            
               <td>
@@ -82,7 +82,7 @@
               <td >Water basin</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryWaterBasin" id="AwSanitaryWaterBasin">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryWaterBasin" id="AwSanitaryWaterBasin">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -94,7 +94,7 @@
               <td >Sink</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitarySink" id="AwSanitarySink">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitarySink" id="AwSanitarySink">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -106,7 +106,7 @@
               <td >Urinal</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryUrinal" id="AwSanitaryUrinal">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryUrinal" id="AwSanitaryUrinal">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -118,7 +118,7 @@
               <td >Bidet</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryBidet" id="AwSanitaryBidet">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryBidet" id="AwSanitaryBidet">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -130,7 +130,7 @@
               <td >Floor trap</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryFloorTrap" id="AwSanitaryFloorTrap">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryFloorTrap" id="AwSanitaryFloorTrap">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -142,7 +142,7 @@
               <td >Shower</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryShower" id="AwSanitaryShower">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryShower" id="AwSanitaryShower">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -154,12 +154,16 @@
               <td >Faucet</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwSanitary()" type="number" min="0" max="2" class="arkitek" name="AwSanitaryFaucet" id="AwSanitaryFaucet">
+                <input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryFaucet" id="AwSanitaryFaucet">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
+            </tr>
+
+            <tr style="display: none">
+              <td><input type="text" name="markahPRAwSanitary" id="markahPRAwSanitary" /></td>
             </tr>
           </tbody>
         </table>
@@ -205,15 +209,11 @@
    
 
   </div>
-
-  <p><strong>markahPRAwSanitary <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwSanitary" id="markahPRAwSanitary" /></p>
-
         
 
 <script>
-  function markahPRAwSanitary(){
-  var arr = document.getElementsByClassName('arkitek');
+  function findTotalSanitary(){
+  var arr = document.getElementsByClassName('sanitary');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))

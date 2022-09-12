@@ -56,7 +56,7 @@
             <td >Aluminium</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" min="0" max="2" type="number" class="arkitek" name="AwWindowFramesAluminium" id="AwWindowFramesAluminium">
+              <input onblur="findTotalWindow()" min="0" max="2" type="number" class="arkitek" name="AwWindowFramesAluminium" id="AwWindowFramesAluminium">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
@@ -68,7 +68,7 @@
             <td >Mild steel</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFramesMildSteel" id="AwWindowFramesMildSteel">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFramesMildSteel" id="AwWindowFramesMildSteel">
               
             </td>            
             <td>
@@ -82,7 +82,7 @@
             <td >Timber</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFramesTimber" id="AwWindowFramesTimber">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFramesTimber" id="AwWindowFramesTimber">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
@@ -94,7 +94,7 @@
             <td >UPVC</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFramesUpvc" id="AwWindowFramesUpvc">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFramesUpvc" id="AwWindowFramesUpvc">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
@@ -108,7 +108,7 @@
             <td >Glass</td>
             <td >2</td>
             <td> 
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelGlass" id="AwWindowPanelGlass">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelGlass" id="AwWindowPanelGlass">
             </td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
@@ -119,7 +119,7 @@
             <td >Timber</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelTimber" id="AwWindowPanelTimber">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelTimber" id="AwWindowPanelTimber">
               
             </td>            
             <td>
@@ -132,7 +132,7 @@
             <td >Aluminium</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelAluminium" id="AwWindowPanelAluminium">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelAluminium" id="AwWindowPanelAluminium">
               
             </td>            
             <td>
@@ -145,7 +145,7 @@
             <td >Steel</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelSteel" id="AwWindowPanelSteel">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowPanelSteel" id="AwWindowPanelSteel">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
@@ -159,7 +159,7 @@
             <td >Friction Stay</td>
             <td >2</td>
             <td> 
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronFriction" id="AwWindowIronFriction">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronFriction" id="AwWindowIronFriction">
             </td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
@@ -170,7 +170,7 @@
             <td >Hinges</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronHinges" id="AwWindowIronHinges">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronHinges" id="AwWindowIronHinges">
               
             </td>            
             <td>
@@ -183,7 +183,7 @@
             <td >Handle</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronHandle" id="AwWindowIronHandle">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronHandle" id="AwWindowIronHandle">
               
             </td>            
             <td>
@@ -196,7 +196,7 @@
             <td >Rubber Gasket</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronRubber" id="AwWindowIronRubber">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowIronRubber" id="AwWindowIronRubber">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
@@ -210,7 +210,7 @@
             <td >Anodised Coatings</td>
             <td >2</td>
             <td> 
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFinishesAnodised" id="AwWindowFinishesAnodised">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFinishesAnodised" id="AwWindowFinishesAnodised">
             </td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
@@ -221,7 +221,7 @@
             <td >Paint</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFinishesPaint" id="AwWindowFinishesPaint">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFinishesPaint" id="AwWindowFinishesPaint">
               
             </td>            
             <td>
@@ -234,13 +234,17 @@
             <td >Varnish/shellac</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFinishesVarnish" id="AwWindowFinishesVarnish">
+              <input onblur="findTotalWindow()" type="number" min="0" max="2" class="arkitek" name="AwWindowFinishesVarnish" id="AwWindowFinishesVarnish">
               
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="text"></td>                    
+          </tr>
+
+          <tr style="display: none">
+            <td> <input type="text" name="markahPRAwWindow" id="markahPRAwWindow" /></td>            
           </tr>
 
           {{-- New table for door --}}
@@ -254,7 +258,7 @@
             <td >Aluminium</td>
             <td >2</td>
             <td> 
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorFramesAluminium" id="AwDoorFramesAluminium">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorFramesAluminium" id="AwDoorFramesAluminium">
             </td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
@@ -265,7 +269,7 @@
             <td >Mild steel</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorFramesMildSteel" id="AwDoorFramesMildSteel">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorFramesMildSteel" id="AwDoorFramesMildSteel">
               
             </td>            
             <td>
@@ -278,7 +282,7 @@
             <td >Timber</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorFramesTimber" id="AwDoorFramesTimber">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorFramesTimber" id="AwDoorFramesTimber">
               
             </td>            
             <td>
@@ -291,7 +295,7 @@
             <td >Upvc</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorFramesUpvc" id="AwDoorFramesUpvc">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorFramesUpvc" id="AwDoorFramesUpvc">
               
             </td>            
             <td>
@@ -306,7 +310,7 @@
             <td >Timber</td>
             <td >2</td>
             <td> 
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorPanelTimber" id="AwDoorPanelTimber">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorPanelTimber" id="AwDoorPanelTimber">
             </td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
@@ -317,7 +321,7 @@
             <td >Aluminium</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorPanelAluminium" id="AwDoorPanelAluminium">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorPanelAluminium" id="AwDoorPanelAluminium">
               
             </td>            
             <td>
@@ -330,7 +334,7 @@
             <td >Upvc</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorPanelUpvc" id="AwDoorPanelUpvc">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorPanelUpvc" id="AwDoorPanelUpvc">
               
             </td>            
             <td>
@@ -343,7 +347,7 @@
             <td >Steel</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorPanelSteel" id="AwDoorPanelSteel">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorPanelSteel" id="AwDoorPanelSteel">
               
             </td>            
             <td>
@@ -356,7 +360,7 @@
             <td >Glass</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorPanelGlass" id="AwDoorPanelGlass">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorPanelGlass" id="AwDoorPanelGlass">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
@@ -370,7 +374,7 @@
             <td >Lockset</td>
             <td >2</td>
             <td> 
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorIronLockset" id="AwDoorIronLockset">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorIronLockset" id="AwDoorIronLockset">
             </td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
@@ -381,7 +385,7 @@
             <td >Door closer</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorIronDoorCloser" id="AwDoorIronDoorCloser">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorIronDoorCloser" id="AwDoorIronDoorCloser">
               
             </td>            
             <td>
@@ -394,7 +398,7 @@
             <td >Hinges</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorIronHinges" id="AwDoorIronHinges">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorIronHinges" id="AwDoorIronHinges">
               
             </td>            
             <td>
@@ -409,7 +413,7 @@
             <td >Anodised coatings</td>
             <td >2</td>
             <td> 
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorFinishesAnodised" id="AwDoorFinishesAnodised">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorFinishesAnodised" id="AwDoorFinishesAnodised">
             </td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
@@ -420,7 +424,7 @@
             <td >Paint</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorFinishesPaint" id="AwDoorFinishesPaint">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorFinishesPaint" id="AwDoorFinishesPaint">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
@@ -432,13 +436,19 @@
             <td >Varnish/shellac</td>
             <td >2</td>
             <td>
-              <input onblur="markahPRAwDoor()" type="number" min="0" max="2" class="arkitek" name="AwDoorFinishesVarnish" id="AwDoorFinishesVarnish">
+              <input onblur="findTotalDoor()" type="number" min="0" max="2" class="door" name="AwDoorFinishesVarnish" id="AwDoorFinishesVarnish">
             </td>            
             <td>
               <input type="number" min="0" max="2"></td>            
             <td><input type="number" min="0" max="2"></td>            
             <td><input type="text"></td>                    
           </tr>
+
+          <tr style="display: none">
+            <td><input type="text" name="markahPRAwDoor" id="markahPRAwDoor" />
+            </td>
+          </tr>
+
         </tbody>
       </table>
 
@@ -453,15 +463,10 @@
     
   </div>
 
-  <p><strong>markahPRAwWindow <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwWindow" id="markahPRAwWindow" /></p>
-
-  <p><strong>markahPRAwDoor <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwDoor" id="markahPRAwDoor" /></p>
 
 
 <script>
-  function findTotal(){
+  function findTotalWindow(){
   var arr = document.getElementsByClassName('arkitek');
   var tot=0;
   for(var i=0;i<arr.length;i++){
@@ -473,8 +478,8 @@
 </script>
 
 <script>
-  function markahPRAwDoor(){
-  var arr = document.getElementsByClassName('arkitek');
+  function findTotalDoor(){
+  var arr = document.getElementsByClassName('door');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))

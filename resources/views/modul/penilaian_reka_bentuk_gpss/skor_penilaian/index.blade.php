@@ -64,6 +64,22 @@
                         <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="submit" class="btn btn-warning margin-auto">PILIH</a>
                     </td>
                 </tr>
+
+                <tr>
+                    @foreach ($projeks as $p)
+
+                    {{-- <th scope="row">1.</th> --}}
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $p->id_ruj_skala }}</td>
+                    <td>{{ $p->namaProjek }}</td>
+                    <td>{{ $p->alamatProjek }}</td>
+                    <td>{{ $p->statusProjek }}</td>
+                    <td style="text-align: center">{{ $p->nama }}
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="button" class="btn btn-warning">PILIH</a>
+                    </td> 
+                </tr>
+                    @endforeach
+                    
             </tbody>
             </table>
         </div>

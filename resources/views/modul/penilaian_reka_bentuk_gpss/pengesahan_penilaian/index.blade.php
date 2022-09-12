@@ -42,16 +42,16 @@
             </thead>
             <tbody>
                 <tr>
-                    @foreach ($gpss_bangunan as $gb)
+                    @foreach ($projeks as $p)
 
                     {{-- <th scope="row">1.</th> --}}
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $gb->id_ruj_skala }}</td>
-                    <td>{{ $gb->namaProjek }}</td>
-                    <td>{{ $gb->alamatProjek }}</td>
-                    <td>{{ $gb->statusProjek }}</td>
+                    <td>{{ $p->id_ruj_skala }}</td>
+                    <td>{{ $p->namaProjek }}</td>
+                    <td>{{ $p->alamatProjek }}</td>
+                    <td>{{ $p->statusProjek }}</td>
                     <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{{$gb->id}}" type="button" class="btn btn-warning">PAPAR</a>
+                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{{$p->id}}" type="button" class="btn btn-warning">PAPAR</a>
                     </td> 
                 </tr>
                     @endforeach

@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Controllers\ProjekController;
+use App\Models\Projek;
 
 use Illuminate\Http\Request;
+use App\Models\PemudahCara;
 
 class PenilaianRekaBentukJalanController extends Controller
 {
@@ -14,7 +17,10 @@ class PenilaianRekaBentukJalanController extends Controller
     public function index()
     {
         //
-        return view('modul.penilaian_reka_bentuk_jalan.papar.index');
+        $projeks = Projek::all();
+        return view('modul.penilaian_reka_bentuk_jalan.papar.index',[
+            'projeks'=> $projeks,
+        ]);
     }
 
     /**
@@ -103,15 +109,33 @@ class PenilaianRekaBentukJalanController extends Controller
 
         $pemudah_cara->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara');
+        return redirect('/penilaian_reka_bentuk_jalan/pemudah_cara_jalan');
     }
 
     public function isi_skor_kad() 
     {
-        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad.index');
+        // create method
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad.create');
     }
 
+    // store() method - refer to which table?
     //store() and edit() method later
+
+    // next page isi_skor_kad
+
+    public function isi_skor_kad_page2() 
+    {
+        // create method
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page2.create');
+    }
+
+    public function isi_skor_kad_page3() 
+    {
+        // create method
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page3.create');
+    }
+
+
 
     public function penilai_jalan() 
     {

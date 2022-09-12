@@ -37,48 +37,49 @@
                 <b>Maklumat Pemudah Cara</b>
             </div>
             <div class="card-body">
-                <form action= "/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
+                <form action= "/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{id}" method="post" enctype="multipart/form-data">
+                    @method('POST')
                     @csrf
                     <!--Nama-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{ $pemudah_cara ?? '' }}" />
+                        <input class="form-control" type="text" autocapitalize="off" name="nama" />
                     </div>
                     </div>
                     <!--Syarikat/Cawangan-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Syarikat:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{ $pemudah_cara ?? '' }}" />
+                        <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" />
                     </div>
                     </div>
                     <!--No. Telefon-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Nama Pemudah Cara Jalan:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{ $pemudah_cara ?? '' }}" />
+                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" />
                     </div>
                     </div>
                     <!--No. Fax-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Tel:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="no_fax" value="{{ $pemudah_cara ?? '' }}" />
+                        <input class="form-control" type="text" autocapitalize="off" name="no_fax" />
                     </div>
                     </div>
                     <!--Emel-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">E-mel:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="email" value="{{ $pemudah_cara ?? '' }}" />
+                        <input class="form-control" type="text" autocapitalize="off" name="email" />
                     </div>
                     </div>
                     <!--No. Fax-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">No. Fax:</label>
                     <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="no_fax" value="{{ $pemudah_cara ?? '' }}" />
+                        <input class="form-control" type="text" autocapitalize="off" name="no_fax" />
                     </div>
                     </div>
                     
@@ -86,9 +87,12 @@
                     <!--Button Daftar-->
                     {{-- <button class=“btn btn-primary” type=“submit”>Daftar</button> --}}
                     <!--Button Daftar (TOOLTIPS)-->
-                    <div class="text-center">
+                
+                    <div class="text-center" align="right">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="center"
+                        title="Batal_Pemudah_Cara" type="button">Batal</button>
                         <button class="btn btn-warning" data-toggle="tooltip" data-placement="center"
-                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                        title="Daftar Pemudah Cara" type="submit">Lantik Pemudah Cara</button>
                     </div>
                 </form>
             </div>

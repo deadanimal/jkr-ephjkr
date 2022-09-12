@@ -33,11 +33,10 @@
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
                     <th scope="col">Nama Pemudah Cara</th>
-                    <th scope="col">Nama Penilai</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
                     <td>Bina Jalan</td>
@@ -49,8 +48,24 @@
                     <td>Adib Hanifah
                         <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="button" class="btn btn-warning">+</a>
                     </td>
-                    
+                </tr> --}}
+
+                <tr>
+                    @foreach ($projeks as $p)
+
+                    {{-- <th scope="row">1.</th> --}}
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $p->id_ruj_skala }}</td>
+                    <td>{{ $p->namaProjek }}</td>
+                    <td>{{ $p->alamatProjek }}</td>
+                    <td>{{ $p->statusProjek }}</td>
+                    <td style="text-align: right">{{ $p->nama }}
+                        <a href="/penilaian_reka_bentuk_jalan/pemudah_cara_jalan" type="button" class="btn btn-warning">+</a>
+                    </td> 
                 </tr>
+                    @endforeach
+
+
             </tbody>
             </table>
         </div>

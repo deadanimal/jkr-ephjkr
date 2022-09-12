@@ -329,7 +329,7 @@
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
-  
+
             {{-- New table for wall system --}}
             <tr class="text-white bg-orange-jkr">
               <th colspan="8">List of products for architectural works - Wall System</th>
@@ -540,6 +540,7 @@
               <td><input type="text"></td>                    
             </tr>
             
+            
           </tbody>
           </form>
         </table>
@@ -547,7 +548,6 @@
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
           <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page2/{{$gpss_bangunan->id}}" type="button" class="btn btn-secondary">Seterusnya</a> 
-          <a class="btn btn-primary" href="/penilaian_reka_bentuk_gpss/createPDF/{{$gpss_bangunan->id}}">Muat Turun</a>
          
         </div>
 
@@ -558,40 +558,9 @@
 
 
 <p><strong>Markah PRAwRoof <span class="required"></span></strong><br />
-  <input type="text" name="markahPRAwRoof" id="markahPRAwRoof" /></p>
+  <input type="number" name="markahPRAwRoof" id="markahPRAwRoof" value="{{$gpss_bangunan->markahPRAwRoof}}" /></p>
 
 <p><strong>Markah PRAwWall <span class="required"></span></strong><br />
-  <input type="text" name="markahPRAwWall" id="markahPRAwWall" /></p>
-
-    
-
-
-<script>
-  function findTotal(){
-  var arr = document.getElementsByClassName('arkitek');
-  // add new var 
-  var tot=0;
-  for(var i=0;i<arr.length;i++){
-      if(parseFloat(arr[i].value))
-          tot += parseFloat(arr[i].value);
-          // add tot2
-  }
-  document.getElementById('markahPRAwRoof').value = tot;
-} 
-  </script> 
-  
-<script>
-  function markahPRAwWall(){
-  var arr = document.getElementsByClassName('prawwall');
-  // add new var 
-  var PRAwWall=0;
-  for(var i=0;i<arr.length;i++){
-      if(parseFloat(arr[i].value))
-          PRAwWall += parseFloat(arr[i].value);
-          // add PRAwWall2
-  }
-  document.getElementById('markahPRAwWall').value = PRAwWall;
-} 
-  </script> 
+  <input type="text" name="markahPRAwWall" id="markahPRAwWall" /></p> 
 
 @endsection

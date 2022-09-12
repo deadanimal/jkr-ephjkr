@@ -57,7 +57,7 @@
               <td >Epoxy paint</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorEpoxy" id="AwFloorFloorEpoxy">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorEpoxy" id="AwFloorFloorEpoxy">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -69,7 +69,7 @@
               <td >Floor hardener</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorFloorHardener" id="AwFloorFloorFloorHardener">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorFloorHardener" id="AwFloorFloorFloorHardener">
                 
               </td>            
               <td>
@@ -83,7 +83,7 @@
               <td >Ceramic tiles</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorCeramic" id="AwFloorFloorCeramic">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorCeramic" id="AwFloorFloorCeramic">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -95,7 +95,7 @@
               <td >Stones</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorStones" id="AwFloorFloorStones">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorStones" id="AwFloorFloorStones">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -107,7 +107,7 @@
               <td >Granites</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorGranite" id="AwFloorFloorGranite">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorGranite" id="AwFloorFloorGranite">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -119,7 +119,7 @@
               <td >Marble</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorMarble" id="AwFloorFloorMarble">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorMarble" id="AwFloorFloorMarble">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -131,7 +131,7 @@
               <td >Carpet</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorCarpet" id="AwFloorFloorCarpet">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorCarpet" id="AwFloorFloorCarpet">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -143,7 +143,7 @@
               <td >Carpet underlay</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorUnderlay" id="AwFloorFloorUnderlay">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorUnderlay" id="AwFloorFloorUnderlay">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -155,7 +155,7 @@
               <td >Vinyl</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorVinyl" id="AwFloorFloorVinyl">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorVinyl" id="AwFloorFloorVinyl">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -167,7 +167,7 @@
               <td >Timber</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorTimber" id="AwFloorFloorTimber">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorTimber" id="AwFloorFloorTimber">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -179,7 +179,7 @@
               <td >Interlocking pavers</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorPavers" id="AwFloorFloorPavers">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorPavers" id="AwFloorFloorPavers">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -191,7 +191,7 @@
               <td >Pebble wash</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorPebble" id="AwFloorFloorPebble">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorPebble" id="AwFloorFloorPebble">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -203,7 +203,7 @@
               <td >Bamboo</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorBamboo" id="AwFloorFloorBamboo">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorBamboo" id="AwFloorFloorBamboo">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -215,7 +215,7 @@
               <td >Cement render</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorCement" id="AwFloorFloorCement">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorCement" id="AwFloorFloorCement">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -227,7 +227,7 @@
               <td >Marmoleum</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorMarmoleum" id="AwFloorFloorMarmoleum">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorMarmoleum" id="AwFloorFloorMarmoleum">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -239,7 +239,7 @@
               <td >Rubber mat(playgrouubd)</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorRubber" id="AwFloorFloorRubber">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorRubber" id="AwFloorFloorRubber">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -251,7 +251,7 @@
               <td >Concrete imprint</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorConcrete" id="AwFloorFloorConcrete">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorConcrete" id="AwFloorFloorConcrete">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -263,7 +263,7 @@
               <td >Laminated flooring</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorFloorLaminate" id="AwFloorFloorLaminate">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorLaminate" id="AwFloorFloorLaminate">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -277,7 +277,7 @@
               <td >Adhesive</td>
               <td >2</td>
               <td> 
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorProofingAdhesive" id="AwFloorProofingAdhesive">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorProofingAdhesive" id="AwFloorProofingAdhesive">
               </td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
@@ -288,7 +288,7 @@
               <td >Sealant</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorProofingSealant" id="AwFloorProofingSealant">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorProofingSealant" id="AwFloorProofingSealant">
                 
               </td>            
               <td>
@@ -301,13 +301,17 @@
               <td >Grout</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRAwFloor()" type="number" min="0" max="2" class="arkitek" name="AwFloorProofingGrout" id="AwFloorProofingGrout">
+                <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorProofingGrout" id="AwFloorProofingGrout">
                 
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
+            </tr>
+
+            <tr style="display: none">
+              <td><input type="text" name="markahPRAwFloor" id="markahPRAwFloor" /></td>
             </tr>
   
             {{-- New table for wall system --}}
@@ -321,7 +325,7 @@
               <td rowspan="5">Built in furniture (system furniture)</td>
               <td >Office workstation</td>
               <td >2</td>
-              <td> <input onblur="markahPRAwSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltOffice" id="AwSystemBuiltOffice"></td>            
+              <td> <input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltOffice" id="AwSystemBuiltOffice"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td> 
@@ -331,7 +335,7 @@
             <tr>
               <td >Toilet cubicle</td>
               <td >2</td>
-              <td><input onblur="markahPRAwSystem()" type="number" min="0" max="2" class="prawsystem " name="AwSystemBuiltToilet" id="AwSystemBuiltToilet"></td>            
+              <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem " name="AwSystemBuiltToilet" id="AwSystemBuiltToilet"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -340,7 +344,7 @@
             <tr>
               <td >Institutional seating</td>
               <td >2</td>
-              <td><input onblur="markahPRAwSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltInstitutional" id="AwSystemBuiltInstitutional"></td>            
+              <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltInstitutional" id="AwSystemBuiltInstitutional"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -349,7 +353,7 @@
             <tr>
               <td >Built-in cupboards</td>
               <td >2</td>
-              <td><input onblur="markahPRAwSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltCupboards" id="AwSystemBuiltCupboards"></td>            
+              <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltCupboards" id="AwSystemBuiltCupboards"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
@@ -358,13 +362,15 @@
             <tr>
               <td >Sport facilities seating</td>
               <td >2</td>
-              <td><input onblur="markahPRAwSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltSport" id="AwSystemBuiltSport"></td>            
+              <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltSport" id="AwSystemBuiltSport"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
-  
-            
+
+            <tr style="display: none">
+              <td><input type="text" name="markahPRAwSystem" id="markahPRAwSystem" /></td>
+            </tr>
   
           </tbody>
         </table>
@@ -382,16 +388,11 @@
     
   </div>
 
-  <p><strong>markahPRAwFloor <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwFloor" id="markahPRAwFloor" /></p>
-
-  <p><strong>markahPRAwSystem <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwSystem" id="markahPRAwSystem" /></p>
 
 
 <script>
-  function markahPRAwFloor(){
-  var arr = document.getElementsByClassName('arkitek');
+  function findTotalFloor(){
+  var arr = document.getElementsByClassName('floor');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))
@@ -402,7 +403,7 @@
 </script>  
 
 <script>
-  function markahPRAwSystem(){
+  function findTotalSystem(){
   var arr = document.getElementsByClassName('prawsystem');
   var tot=0;
   for(var i=0;i<arr.length;i++){
