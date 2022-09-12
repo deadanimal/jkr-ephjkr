@@ -17,11 +17,11 @@ class PengesahanPendaftaranProjekController extends Controller
     {
         //
         
-        $pengesahan_projek = PengesahanPendaftaranProjek::all();
-        // dd($pengesahan_projek);
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.index', [
-            'pengesahan_projek'=>$pengesahan_projek
-        ]);
+        // $pengesahan_projek = PengesahanPendaftaranProjek::all();
+        // // dd($pengesahan_projek);
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.index', [
+        //     'pengesahan_projek'=>$pengesahan_projek
+        // ]);
     }
 
     /**
@@ -32,7 +32,7 @@ class PengesahanPendaftaranProjekController extends Controller
     public function create()
     {
         //
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.create');
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.create');
     }
 
     /**
