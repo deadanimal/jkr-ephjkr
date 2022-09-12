@@ -157,7 +157,7 @@ class PenilaianRekaBentukGpssController extends Controller
         alert()->success('Markah disimpan', 'Berjaya');
         $gpss_bangunan->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create');
     }
 
     public function skor_penilaian_arkitek_page2()
@@ -173,7 +173,7 @@ class PenilaianRekaBentukGpssController extends Controller
         alert()->success('Markah disimpan', 'Berjaya');
         $gpss_bangunan_window->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page2/create');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create');
     }
 
     public function skor_penilaian_arkitek_page3()
@@ -189,7 +189,7 @@ class PenilaianRekaBentukGpssController extends Controller
         alert()->success('Markah disimpan', 'Berjaya');
         $gpss_bangunan_floor->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page3/create');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page4/create');
     }
 
     public function skor_penilaian_arkitek_page4()
@@ -205,7 +205,7 @@ class PenilaianRekaBentukGpssController extends Controller
         alert()->success('Markah disimpan', 'Berjaya');
         $gpss_bangunan_sanitary->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/arkitek_page4');
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/mekanikal');
     }
 
     public function skor_penilaian_mekanikal()
@@ -359,13 +359,17 @@ class PenilaianRekaBentukGpssController extends Controller
     {
         // index jana keputusan
         $gpss_bangunan = KriteriaGpssBangunan::all();
+        $projeks = Projek::all();
 
-        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index',compact('gpss_bangunan'));
+        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index',compact('projeks','gpss_bangunan'));
     }
     public function papar_jana_keputusan($id)
     {
-        //  form kana keputusan
-        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.create');
+        $projeks = Projek::find($id);
+        //  form jana keputusan
+        return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.create',[
+            'projeks' => $projeks
+        ]);
     }
     public function simpan_jana_keputusan(Request $request, $id)
     {
