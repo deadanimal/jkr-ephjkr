@@ -6,7 +6,10 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Melantik Penilai Jalan</a>
+                        <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Melantik Pemudah Cara</a>
+                    </li>
+                    <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
+                        Tambah Pemudah Cara
                     </li>
                     
                 </ol>
@@ -22,9 +25,15 @@
 
     <hr class="text-primary mb-3">
 
+    <div class="row">
+        <div class="col">
+            <h5 class="mb-0 text-primary"><strong>Lantikan Pemudah Cara</strong></h5>
+        </div>
+    </div>
+
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/verifikasi_permarkahan_jalan/papar_senarai_projek" method="post" enctype="multipart/form-data">
+            <form action="/verifikasi_permarkahan_jalan/pemudah_cara" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">

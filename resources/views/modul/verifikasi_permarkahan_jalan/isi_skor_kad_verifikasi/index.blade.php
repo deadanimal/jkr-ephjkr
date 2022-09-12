@@ -8,7 +8,7 @@
                 <ol class="breadcrumb">
                     
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Papar Skor Kad
+                        Isi Skor Kad
                     </li>
                 </ol>
             </nav>
@@ -25,13 +25,42 @@
 
     <div class="row">
         <div class="col">
-            <h5 class="mb-0 text-primary"><strong>Score Summary</strong></h5>
+            <h5 class="mb-0 text-primary"><strong>Skor Kad</strong></h5>
         </div>
     </div>
 
-    
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <form action= "/verifikasi_permarkahan_jalan/isi_skor_kad/{id}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <!--Nama-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Nama Projek:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="nama" />
+                    </div>
+                    </div>
+                    <!--Syarikat/Cawangan-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Syarikat:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" />
+                    </div>
+                    </div>
+                    <!--No. Telefon-->
+                    <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Nama Pemudah Cara Jalan:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" />
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <table class="mt-3">
+    <table>
         <div class="row3 mx-4 table-responsive scrollbar">
             <div class="col">
               <table class="table table-bordered line-table text-center" style="width: 100%">

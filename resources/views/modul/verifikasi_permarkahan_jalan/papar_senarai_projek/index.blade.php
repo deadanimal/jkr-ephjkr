@@ -22,7 +22,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/verifikasi_permarkahan_jalan/papar_senarai_projek/create" class="btn btn-primary">Tambah</a>
+            <a href="/verifikasi_permarkahan_jalan/senarai_projek_create/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
 
@@ -40,7 +40,7 @@
                                 <th class="sort">Status Projek</th>
                                 <th class="sort">Nama Pemudah Cara</th>
                                 <th class="sort">Nama Penilai</th>
-                                <th class="sort">Tindakan</th>
+                                {{-- <th class="sort">Tindakan</th> --}}
                             </tr>
                         </thead>
                         <tbody class="bg-white">
@@ -48,13 +48,17 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $spk->id_ruk_skala }}</td>
-                                    <td>{{ $spk->namaProjek }}</td>
+                                    <td>{{ $spk->namaProjek }} </td>
                                     <td>{{ $spk->alamatProjek }}</td>
                                     <td>{{ $spk->statusProjek }}</td>
-                                    <td>{{ $spk->nama }}</td>
-                                    <td>{{ $spk->nama }}</td>
+                                    <td>{{ $spk->nama }}
+                                        <a href="/verifikasi_permarkahan_jalan/senarai_projek_create/create" type="button" class="btn btn-warning">+</a>
+                                    </td>
+                                    <td>{{ $spk->nama }}
+                                        <a href="/verifikasi_permarkahan_jalan/senarai_projek_create/create" type="button" class="btn btn-warning">+</a>
+                                    </td>
                                     
-                                    <td>
+                                    {{-- <td>
                                         <div class="row">
                                             <div class="col-auto">
                                                 <a href="/verifikasi_permarkahan_jalan/papar_senarai_projek/{{ $spk->id }}/edit"
@@ -68,7 +72,7 @@
                                                 </form>
                                             </div>
                                         </div>
-                                    </td>
+                                    </td> --}}
                                 </tr>
                             @endforeach
                         </tbody>

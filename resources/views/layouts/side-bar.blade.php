@@ -1037,22 +1037,22 @@
                             id="verifikasi_permarkahan_jalan">
                             {{-- JALAN (Verifikasi) Paparan Senarai Projek jalan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/papar_senarai_projek') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/papar_senarai_projek">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Paparan
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/papar_senarai_projek') ? 'text-dark' : '' }}">Paparan
                                             Senarai Projek</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- JALAN (Verifikasi) Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/pemudah_cara">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara/index') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/pemudah_cara/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara/index') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
@@ -1060,11 +1060,11 @@
 
                             {{-- JALAN (Verifikasi) Mengisi Skor Kad dan Muat Naik Dokumen Sokongan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/melantik_skor_kad') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/melantik_skor_kad">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/isi_skor_kad') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/isi_skor_kad_verifikasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/melantik_skor_kad') ? 'text-dark' : '' }}">Mengisi Skor Kad dan
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/isi_skor_kad') ? 'text-dark' : '' }}">Mengisi Skor Kad dan
                                             Muat Naik Dokumen Sokongan</span>
                                     </div>
                                 </a>
@@ -1073,10 +1073,34 @@
                             {{-- JALAN (Verifikasi) Melantik Penilai jalan --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan">
+                                    href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'text-dark' : '' }}">Melantik
+                                            Penilai Jalan</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) markah penilaian Verifikasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/markah_penilaian') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/markah_penilaian/create">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/markah_penilaian') ? 'text-dark' : '' }}">Markah 
+                                            Penilaian</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            {{-- JALAN (Verifikasi) kemaskini penilai jalan Verifikasi --}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/kemaskini_penilai_jalan_verifikasi') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/kemaskini_penilai_jalan_verifikasi/create">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/kemaskini_penilai_jalan_verifikasi') ? 'text-dark' : '' }}">Kemaskini 
                                             Penilai Jalan</span>
                                     </div>
                                 </a>
@@ -1084,11 +1108,11 @@
 
                             {{-- JALAN (Verifikasi) Penilaian Verifikasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan">
+                                <a class="nav-link {{ Request::is('/verifikasi_permarkahan_jalan/verifikasi_permarkahan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/verifikasi_permarkahan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Verifikasi 
+                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/verifikasi_permarkahan') ? 'text-dark' : '' }}">Verifikasi 
                                             Permarkahan</span>
                                     </div>
                                 </a>
@@ -1096,22 +1120,22 @@
 
                             {{-- JALAN(Verifikasi) Pengesahan Penilaian Verifikasi --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('vverifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan">
+                                <a class="nav-link {{ Request::is('/verifikasi_permarkahan_jalan/verifikasi_permarkahan/create') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/verifikasi_permarkahan/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('vverifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Pengesahan
+                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/verifikasi_permarkahan/create') ? 'text-dark' : '' }}">Pengesahan
                                             Penilaian Verifikasi</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- JALAN (Verifikasi) Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan">
+                                <a class="nav-link {{ Request::is('/verifikasi_permarkahan_jalan/jana_keputusan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/jana_keputusan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Jana 
+                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/jana_keputusan') ? 'text-dark' : '' }}">Jana 
                                             Keputusan
                                             </span>
                                     </div>
@@ -1120,11 +1144,11 @@
 
                             {{-- JALAN (Verifikasi) Papar Skor Kad --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan">
+                                <a class="nav-link {{ Request::is('/verifikasi_permarkahan_jalan/papar_skor_kad') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/papar_skor_kad">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('vverifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Papar Skor 
+                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/papar_skor_kad') ? 'text-dark' : '' }}">Papar Skor 
                                             Kad
                                             </span>
                                     </div>
@@ -1133,11 +1157,11 @@
 
                             {{-- JALAN (Verifikasi) Permohonan Rayuan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/permohonan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_jalan/permohonan_rayuan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Permohonan 
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/permohonan_rayuan') ? 'text-dark' : '' }}">Permohonan 
                                             Rayuan
                                             </span>
                                     </div>

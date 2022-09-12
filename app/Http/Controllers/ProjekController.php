@@ -152,6 +152,7 @@ class ProjekController extends Controller
     public function cetakpdfprojek($id){
 
         $pendaftaran_projek = Projek::find($id);
+        
         $pdf = FacadePdf::loadView('test');
         // $pdf = PDF::loadView('pendaftaran_projek.test');
 
