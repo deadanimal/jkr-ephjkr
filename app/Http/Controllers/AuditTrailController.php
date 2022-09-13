@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreAuditTrailRequest;
 use App\Http\Requests\UpdateAuditTrailRequest;
+use App\Mail\PengesahanPengguna;
 use App\Models\AuditTrail;
+use Illuminate\Support\Facades\Mail;
 
 class AuditTrailController extends Controller
 {
@@ -25,7 +27,12 @@ class AuditTrailController extends Controller
      */
     public function create()
     {
-        //
+        try {
+            Mail::to('najhan.mnajib@gmail.com')->send(new PengesahanPengguna());
+            dd('done');
+        } catch (\Throwable $th) {
+            dd('error');
+        }
     }
 
     /**
