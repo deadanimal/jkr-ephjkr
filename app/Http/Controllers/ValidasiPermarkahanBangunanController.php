@@ -466,4 +466,31 @@ class ValidasiPermarkahanBangunanController extends Controller
         ]);
     }
 
+    // Muat Turun Sijil Validasi
+    public function sijil_validasi()
+    {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+
+        return view('modul.validasi_permarkahan_bangunan.sijil_validasi.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
+    }
+
+    public function papar_sijil_validasi($id)
+    {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.validasi_permarkahan_bangunan.sijil_validasi.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
+    }
+
+    public function simpan_sijil_validasi(Request $request,$id)
+    {
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+
+        $kriteria_phjkr_bangunan->save();
+        return redirect('/validasi_permarkahan_bangunan/sijil_validasi');
+    }
+
 }

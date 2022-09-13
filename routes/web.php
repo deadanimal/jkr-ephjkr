@@ -288,6 +288,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/validasi_permarkahan_bangunan/borang_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_borang_validasi']);
     Route::put('/validasi_permarkahan_bangunan/borang_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'kemaskini_borang_validasi']);
 
+    // Sekretariat
+    // Sijil Validasi
+    Route::get('/validasi_permarkahan_bangunan/sijil_validasi', [ValidasiPermarkahanBangunanController::class, 'sijil_validasi']);
+    Route::get('/validasi_permarkahan_bangunan/sijil_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_sijil_validasi']);
+    Route::post('/validasi_permarkahan_bangunan/sijil_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_sijil_validasi']);
+
 
 
 

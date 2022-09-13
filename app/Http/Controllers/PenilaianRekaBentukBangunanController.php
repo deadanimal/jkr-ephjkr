@@ -162,7 +162,9 @@ class PenilaianRekaBentukBangunanController extends Controller
         $projeks = Projek::all();
     
         // papar mcm index tapi ada button utk skor
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',compact('projeks'));
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',[
+            'projeks'=>$projeks
+        ]);
     }
     public function papar_skor_penilaian($id)
     {
@@ -712,6 +714,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
         
+
         alert()->success('Penilaian Disahkan.', 'Berjaya');
 
         // simpan pengesahan penilaian
@@ -725,7 +728,9 @@ class PenilaianRekaBentukBangunanController extends Controller
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
 
-        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index', compact('kriteria_phjkr_bangunan'));
+        return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
 
     }
     public function semakan_rawak_form($id)
@@ -761,6 +766,8 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan->markahML = $request->markahML;
 
 
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+
         return redirect('/penilaian_reka_bentuk_bangunan/semakan_rawak');
 
     }
@@ -772,7 +779,9 @@ class PenilaianRekaBentukBangunanController extends Controller
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
 
-        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.index', compact('kriteria_phjkr_bangunan'));
+        return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.index', [
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
 
     }
     public function muat_turun_sijil_form($id)
