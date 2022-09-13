@@ -6,6 +6,7 @@ use App\Http\Requests\StoreVerifikasiPermarkahanBangunanRequest;
 use App\Http\Requests\UpdateVerifikasiPermarkahanBangunanRequest;
 use App\Models\Projek;
 use App\Models\PemudahCara;
+use App\Models\KriteriaPhjkrBangunan;
 use App\Models\VerifikasiPermarkahanBangunan;
 use Illuminate\Http\Request;
 
@@ -91,14 +92,35 @@ class VerifikasiPermarkahanBangunanController extends Controller
     #pengesahan penilaian verifikasi bangunan
     public function pengesahan_penilaian()
     {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
+
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.index');
+        return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan,
+            'projeks'=>$projeks
+        ]);
     }
 
     public function papar_pengesahan_penilaian($id)
     {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
         // papar form pengesahan penilaian with id projek 
-        return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.edit');
+        return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
+    }
+
+    public function simpan_pengesahan_penilaian(Request $request, $id)
+    {
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+
+        $kriteria_phjkr_bangunan->save();
+
+        alert()->success('Penilaian Disahkan.', 'Berjaya');
+
+        // simpan pengesahan penilaian
+        return redirect('/verifikasi_permarkahan_bangunan/pengesahan_penilaian');
     }
 
     #pemudahcara
@@ -155,33 +177,76 @@ class VerifikasiPermarkahanBangunanController extends Controller
     #sekretariat
     public function semakan_rawak()
     {
-        return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.index');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
+
+        return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.index',[
+            'projeks'=>$projeks,
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
 
     }
     public function papar_semakan_rawak($id)
     {
-        return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.verifikasi_permarkahan_bangunan.semakan_rawak.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
 
     }
     public function simpan_semakan_rawak(Request $request, $id)
     {
+        alert()->success('Penilaian Disahkan.', 'Berjaya');
+
         return redirect('/verifikasi_permarkahan_bangunan/semakan_rawak');
     }
 
     #pemudahcara
     public function skor_penilaian()
     {
-        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.index');
+        $projeks = Projek::all();
+
+        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.index',[
+            'projeks'=>$projeks
+        ]);
 
     }
 
     public function papar_skor_penilaian($id)
     {
-        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.verifikasi_permarkahan_bangunan.skor_penilaian.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function simpan_skor_penilaian(Request $request, $id)
     {
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan->save();
+
+        $kriteria_phjkr_bangunan->markahMSV = $request->markahTOTAL_TL_MSV
+        + $request->markahTOTAL_KT_MSV
+        + $request->markahTOTAL_SB_MSV
+        + $request->markahTOTAL_PA_MSV
+        + $request->markahTOTAL_PD_MSV
+        + $request->markahTOTAL_FL_MSV
+        + $request->markahTOTAL_IN_MSV;
+
+        $kriteria_phjkr_bangunan->markahMMV = $request->markahTOTAL_TL_MMV
+        + $request->markahTOTAL_KT_MMV
+        + $request->markahTOTAL_SB_MMV
+        + $request->markahTOTAL_PA_MMV
+        + $request->markahTOTAL_PD_MMV
+        + $request->markahTOTAL_FL_MMV
+        + $request->markahTOTAL_IN_MMV;
+
+
+
+        alert()->success('PENILAIAN VERIFIKASI DISIMPAN', 'Berjaya');
+
         return redirect('/verifikasi_permarkahan_bangunan/skor_penilaian');
     }
 
