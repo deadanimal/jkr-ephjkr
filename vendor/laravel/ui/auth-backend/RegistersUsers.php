@@ -2,11 +2,13 @@
 
 namespace Illuminate\Foundation\Auth;
 
+use App\Mail\PengesahanPengguna;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
 trait RegistersUsers
 {
@@ -49,6 +51,7 @@ trait RegistersUsers
         $user->katalaluan = $request->password;
         $user->save();
         // $user->assignRole('Pengguna');
+        Mail::to('najhan.mnajib@gmail.com')->send(new PengesahanPengguna());
         alert()->success('Pendaftaran telah berjaya, sila tunggu pengesahan dari pihak JKR', 'Berjaya');
         return redirect('/login');
 
