@@ -51,7 +51,7 @@ trait RegistersUsers
         $user->katalaluan = $request->password;
         $user->save();
         // $user->assignRole('Pengguna');
-        Mail::to('najhan.mnajib@gmail.com')->send(new PengesahanPengguna());
+        Mail::to('eisomullah.lukman@pipeline-network.com')->send(new PengesahanPengguna());
         alert()->success('Pendaftaran telah berjaya, sila tunggu pengesahan dari pihak JKR', 'Berjaya');
         return redirect('/login');
 
