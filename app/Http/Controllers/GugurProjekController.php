@@ -19,10 +19,10 @@ class GugurProjekController extends Controller
     {
         //
         
-        $gugur_projek = GugurProjek::all();
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
-            'gugur_projek'=>$gugur_projek
-        ]);
+        // $gugur_projek = GugurProjek::all();
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
+        //     'gugur_projek'=>$gugur_projek
+        // ]);
         
         // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
         //     'pendaftaran_projek' => Projek::with('gugur_projek')->get()

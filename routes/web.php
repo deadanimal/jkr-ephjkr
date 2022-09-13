@@ -92,6 +92,8 @@ Route::middleware('auth')->group(function () {
         Route::get('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'penukaran_peranan']);
         Route::post('profil_pengguna/{id}/penukaran_peranan', [ProfilController::class, 'update_peranan']);
         
+        //gugur projek
+        //Route::get('/pengurusan_maklumat/gugur_projek/gugurprojek', [ProjekController::class, 'gugurprojek']);
     });
     
     //selenggara
@@ -104,11 +106,21 @@ Route::middleware('auth')->group(function () {
     
     
     //pendaftaran projek
-    Route::resource('/pengurusan_maklumat/gugur_projek',GugurProjekController::class);
-    Route::resource('/pengurusan_maklumat/pengesahan_projek', PengesahanPendaftaranProjekController::class);
+    //Route::resource('/pengurusan_maklumat/gugur_projek',GugurProjekController::class);
+    //Route::resource('/pengurusan_maklumat/pengesahan_projek', PengesahanPendaftaranProjekController::class);
 
     //pdf muat turun
     Route::get('/cetakprojek/{id}', [ProjekController::class, 'cetakpdfprojek']);
+
+    //gugur projek
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek', [ProjekController::class, 'gugurprojek']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create', [ProjekController::class, 'gugurprojek_create']);
+
+    //pengesahan projek
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek', [ProjekController::class, 'pengesahanprojek']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/create', [ProjekController::class, 'pengesahanprojek_create']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/edit/{id}', [ProjekController::class, 'pengesahanprojek_edit']);
+    
 
     // Penilaian Reka Bentuk Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);

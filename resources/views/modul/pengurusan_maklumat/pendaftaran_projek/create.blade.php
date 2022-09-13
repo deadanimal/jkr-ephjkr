@@ -131,7 +131,7 @@
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Kod Projek:</label>
+                        <label class="col-form-label">Kos Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="kosProjek" type="text"/>

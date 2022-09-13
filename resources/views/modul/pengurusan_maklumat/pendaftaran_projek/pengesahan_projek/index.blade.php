@@ -54,7 +54,13 @@
                                     <td>{{ $ppp->statusProjek }}</td>
                                     <td>{{ $ppp->jenisKategoriProjek }}</td>
                                     <td>
-                                        <div
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <a href="/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/edit/{{ $ppp->id }}"
+                                                    class="btn btn-sm btn-primary">SAHKAN</a>
+                                            </div>
+                                        </div>
+                                        {{-- <div
                                             class="col-auto mb-2 px-0"
                                                 style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
                                                 @if ($pengesahan_projek->statusProjek == 'Lulus')
@@ -71,7 +77,7 @@
                                                         data-bs-target="#gagal">GAGAL</button>
                                                 @endif
         
-                                        </div>
+                                        </div> --}}
                                     </td>
                                 </tr>
                             @endforeach

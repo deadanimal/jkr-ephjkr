@@ -97,6 +97,7 @@ class ProjekController extends Controller
     public function show(Projek $projek)
     {
         //
+        
         return view('modul.pengurusan_maklumat.pendaftaran_projek.show', [
             'pendaftaran_projek' => Projek::all()
         ]);
@@ -158,11 +159,52 @@ class ProjekController extends Controller
 
 
         return $pdf->download('PROJEK.'.'pdf');
-
-
-
- 
     }
 
-    
+    public function gugurprojek(){
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
+            'gugur_projek' => Projek::with('status')->get()
+        ]);
+    }
+
+    public function gugurprojek_create(){
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.create'
+            
+        );
+    }
+
+    public function pengesahanprojek(){
+//dd('fd');
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.index', [
+            'pengesahan_projek' => Projek::with('status')->get()
+        ]);
+    }
+
+    public function pengesahanprojek_edit($id){
+        //dd('fd');
+        $pengesahan_projek = Projek::find($id);
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit',[
+            'pengesahan_projek' => Projek::with('status')->get()
+        ]);
+
+                // return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit', [
+                //     'pengesahan_projek' => Projek::with('status')->get()
+                // ]);
+
+    //     // $pengesahan_projek = Projek::find($id);
+        
+        //  return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit', [
+        //      'pengesahan_projek' => Projek::with('status')->get()
+        //  ]);
+                
+             }
+
+    public function pengesahanprojek_create(){
+    //dd('fd');
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.create');
+
+        }
+
 }
