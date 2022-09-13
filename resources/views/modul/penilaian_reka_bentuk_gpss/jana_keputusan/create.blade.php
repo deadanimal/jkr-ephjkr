@@ -24,6 +24,7 @@
                     </div>
                     <div class="col-md-6">
                         <input type="text" class="form-control" placeholder="Hospital Seri Iskandar">
+                        {{-- <td>{{$p->namaProjek}}</td> --}}
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -52,6 +53,7 @@
                 </div>
             </div>
         </div>
+        
 
         <div>
             <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">

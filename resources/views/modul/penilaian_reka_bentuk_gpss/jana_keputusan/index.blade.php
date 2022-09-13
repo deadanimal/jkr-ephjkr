@@ -41,7 +41,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
                     <td>Hospital Seri Iskandar</td>
@@ -50,7 +50,22 @@
                     <td style="text-align: center">
                         <a href="/penilaian_reka_bentuk_gpss/jana_keputusan/create" type="button" class="btn btn-warning">PAPAR</a>
                     </td>
+                </tr> --}}
+
+                <tr>
+                    @foreach ($projeks as $p)
+
+                    {{-- <th scope="row">1.</th> --}}
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $p->id_ruj_skala }}</td>
+                    <td>{{ $p->namaProjek }}</td>
+                    <td>{{ $p->alamatProjek }}</td>
+                    <td>{{ $p->statusProjek }}</td>
+                    <td style="text-align: center">
+                        <a href="/penilaian_reka_bentuk_gpss/jana_keputusan/{{$p->id}}" type="button" class="btn btn-warning">PAPAR</a>
+                    </td> 
                 </tr>
+                    @endforeach
             </tbody>
             </table>
         </div>
