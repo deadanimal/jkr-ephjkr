@@ -177,10 +177,10 @@ Route::middleware('auth')->group(function () {
     // Pemudah Cara views
     // architectural works - Roof forms
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek']);
-    Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek']);
+    Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek']);
     // architectural works - Window forms
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page2']);
-    Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page2']);
+    Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page2']);
     // architectural works - Floor forms
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page3']);
     Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page3']);

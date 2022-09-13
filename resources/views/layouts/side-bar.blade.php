@@ -760,8 +760,7 @@
                         aria-expanded="{{ Request::is('penilaian_verifikasi_gpss') ? 'true' : 'false' }}"
                         aria-controls="penilaian_verifikasi_gpss">
                         <div class="d-flex align-items-center nav-link-side px-0">
-                            <span class="px-3"><span class="fas fa-home"></span> Penilaian Verifikasi 
-                                    Permarkahan GPSS</span>
+                            <span class="px-3"><span class="fas fa-home"></span> Penilaian Verifikasi Permarkahan GPSS</span>
                         </div>
                         </a>
                         <ul class="nav-item collapse {{ Request::is('penilaian_verifikasi_gpss/*') || Request::is('penilaian_verifikasi_gpss') ? 'show' : 'false' }} my-1"

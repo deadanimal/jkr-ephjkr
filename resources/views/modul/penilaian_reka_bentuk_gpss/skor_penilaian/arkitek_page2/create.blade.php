@@ -27,7 +27,7 @@
 </div>
 
 <div class="row3 mx-1 table-responsive scrollbar text-center">
-  <form action="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
+  <form action="/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page2/{id}" method="post" enctype="multipart/form-data">
     @method('POST')
     @csrf
     <div class="col">
