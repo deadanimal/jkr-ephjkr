@@ -6,8 +6,8 @@
 @section('content')
 
 <div class="header">
-    Penilaian Reka Bentuk Bangunan 
-        <b class="pengesahan-penilaian">> Jana Keputusan Skor Kad</b>
+    Penilaian Validasi Permarkahan Bangunan 
+        <b class="pengesahan-penilaian">> Skor Kad</b>
 
     <h1 class="header-title">
         PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
@@ -61,7 +61,7 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_keputusan/{{$k->id}}" role="button"
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/muat_turun_skor/{{$k->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 

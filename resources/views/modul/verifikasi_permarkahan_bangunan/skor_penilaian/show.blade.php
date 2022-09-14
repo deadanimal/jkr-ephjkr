@@ -747,10 +747,10 @@
                                 <td></td>
                             </tr> 
 
-                            <tr>
+                            {{-- <tr>
                                 <td>Jumlah MS and MV</td>
                                 <td><input onclick="add()" id="answer" type="number" autocapitalize="off" name="markahMSV"/></td>
-                            </tr>
+                            </tr> --}}
                     </table>
 
                     <!--------------------------------------- MarkahKT ---------------------------------------->

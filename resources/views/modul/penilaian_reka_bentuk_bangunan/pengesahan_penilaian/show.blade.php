@@ -1624,7 +1624,7 @@ thead {
             <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahIN1_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahIN2_MR}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahIN1_MR}}</td>
             <td><td>
             <td></td>
             <td></td>

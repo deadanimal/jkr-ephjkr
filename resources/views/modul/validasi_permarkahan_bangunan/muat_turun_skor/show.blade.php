@@ -7,8 +7,8 @@
 
 <div class="header">
     <div class="col-sm-6">
-        Penilaian Reka Bentuk Bangunan 
-        <b style="color: #0F5E31;">> Jana Sijil</b>
+        Penilaian Validasi Permarkahan Bangunan 
+        <b style="color: #0F5E31;">> Skor Kad</b>
     </div>
             <h1 class="header-title">
                 PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
@@ -257,6 +257,11 @@
     
     <!--Button Jana Sijil-->
     <div class="mb-3 text-center">
-    <button class="btn btn-primary">Muat Turun</button>
+    <button class="btn btn-primary">Jana</button>
     </div>
+            
+                
+
+
+
 @endsection

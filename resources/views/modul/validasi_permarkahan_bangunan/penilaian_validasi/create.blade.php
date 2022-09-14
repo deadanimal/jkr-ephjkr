@@ -2794,7 +2794,7 @@
                     if (parseFloat(arr[i].value))
                     totPA_ML += parseFloat(arr[i].value);
                 }
-                document.getElementById('total_amount_ml_pa').value = totPAB_ML;
+                document.getElementById('total_amount_ml_pa').value = totPA_ML;
             }
             </script>
 

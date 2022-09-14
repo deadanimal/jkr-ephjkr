@@ -13,7 +13,7 @@
     {{-- <b class="text-dark-green-jkr">Semakan Rawak dan Jana Sijil</b> --}}
 
 <h1 class="header-title">
-    PENILAIAN REKA BENTUK BANGUNAN
+    VERIFIKASI PERMARKAHAN BANGUNAN
 </h1>
 <hr class="hr-jkr">
 

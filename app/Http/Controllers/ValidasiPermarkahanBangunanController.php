@@ -153,14 +153,31 @@ class ValidasiPermarkahanBangunanController extends Controller
         ]);
     }
 
-    public function jana_keputusan()
+    public function simpan_pengesahan_penilaian_validasi(Request $request, $id)
     {
-        return view('modul.validasi_permarkahan_bangunan.jana_keputusan.index');
+
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan->save();
+
+        alert()->success('PENILAIAN VALIDASI BERJAYA', 'Berjaya');
+        return redirect('/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi');
     }
 
-    public function papar_jana_keputusan()
+    public function jana_keputusan()
     {
-        return view('modul.validasi_permarkahan_bangunan.jana_keputusan.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        return view('modul.validasi_permarkahan_bangunan.jana_keputusan.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
+    }
+
+    public function papar_jana_keputusan($id)
+    {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.validasi_permarkahan_bangunan.jana_keputusan.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function pengesahan_rayuan()
@@ -492,5 +509,32 @@ class ValidasiPermarkahanBangunanController extends Controller
         $kriteria_phjkr_bangunan->save();
         return redirect('/validasi_permarkahan_bangunan/sijil_validasi');
     }
+
+    // Muat Turun Skor
+    public function muat_turun_skor()
+    {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+
+        return view('modul.validasi_permarkahan_bangunan.muat_turun_skor.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
+    }
+
+    public function papar_muat_turun_skor($id)
+    {
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.validasi_permarkahan_bangunan.sijil_validasi.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
+    }
+
+    public function simpan_muat_turun_skor(Request $request, $id)
+    {
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan->save();
+        return redirect('/validasi_permarkahan_bangunan/sijil_validasi');
+    }
+
 
 }

@@ -147,13 +147,18 @@
                                 <td>Tidak Berkenaan</td>
                                 <td></td>
                                 <td colspan="4">
-                                <form class="form">
-                                    <label for="form__input" class="form__label">
+                                    <div class="form-group">
+                                        <label for="file">Choose File</label>
+                                        <input type="file" class="form-control" name="dokumenSokongan" id="dokumenSokongan"/>
+                                    </div>
+                                    <button type="submit">Upload</button>
+                                {{-- <form class="form"> --}}
+                                    {{-- <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
                                         <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
                                         <span id="custom-text">No file chosen, yet.</span>
-                                    </label>
-                                </form>
+                                    </label> --}}
+                                {{-- </form> --}}
                                 </td>
                 
                             </tr>
@@ -739,11 +744,13 @@
                                 {{-- <td colspan="4"></td> --}}
                             </tr> 
 
-                            <!--Hidden Table-->
-                            <tr hidden>
-                                <td hidden name="markahTL" id="markahTL"></td>
-                                <td hidden name="markahMS" id="markahMS"></td>
+                            <!--Test kira jap-->
+                            <tr>
+                                <td>
+                                    <input onblur="addFunctionOneAddFunctionTwo()"id="total" type="number" autocapitalize="off" name="markahMS" id="markahMS">
+                                </td>
                             </tr>
+
                     </table>
                                            
                     <!--------------------------------------- MarkahKT ---------------------------------------->
@@ -2618,6 +2625,8 @@
                         {{-- <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button1()" type="submit">Kembali</button>
+                        <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
                     </div>
 
@@ -2625,6 +2634,8 @@
                     <div class="mt-3 text-center pg-3">
                         {{-- <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
+                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button2()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
                     </div>
@@ -2634,6 +2645,8 @@
                         {{-- <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button3()" type="submit">Kembali</button>
+                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
                     </div>
 
@@ -2641,6 +2654,8 @@
                     <div class="mt-3 text-center pg-5">
                         {{-- <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
+                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button4()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
                     </div>
@@ -2650,14 +2665,18 @@
                         {{-- <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button5()" type="submit">Kembali</button>
+                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 7-->
-                    {{-- <div class="mt-3 text-center pg-7">
-                        <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
-                    </div> --}}
+                    <div class="mt-3 text-center pg-7">
+                        {{-- <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
+                        <button class="btn btn-secondary pg-7" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button6()" type="submit">Kembali</button>
+                    </div>
 
 
 
@@ -2683,13 +2702,16 @@
             <!--MarkahTL for MS-->
             <script>
                 function findTotalMS() {
-                var arr = document.getElementsByClassName('sum_ms');
+                var sum_ms = document.getElementsByClassName('sum_ms');
                 var tot = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms.length; i++) {
+                    if (parseFloat(sum_ms[i].value))
+                    tot += parseFloat(sum_ms[i].value);
                 }
                 document.getElementById('total_amount_ms').value = tot;
+
+                //display the total of inputs
+                sum_ms.innerText = tot;
             }
 
             </script>
@@ -2697,14 +2719,15 @@
             <!--MarkahTL for MR-->
             <script>
                 function findTotalMR() {
-                var arr = document.getElementsByClassName('sum_mr');
+                var sum_mr = document.getElementsByClassName('sum_mr');
                 var tot1 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot1 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr.length; i++) {
+                    if (parseFloat(sum_mr[i].value))
+                    tot1 += parseFloat(sum_mr[i].value);
                 }
                 document.getElementById('total_amount_mr').value = tot1;
             }
+
 
             </script>
 
@@ -2713,27 +2736,30 @@
             <!--MarkahKT for MS-->
             <script>
                 function findTotalMS_KT() {
-                var arr = document.getElementsByClassName('sum_ms_kt');
+                var sum_ms_kt = document.getElementsByClassName('sum_ms_kt');
                 var tot2 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot2 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_kt.length; i++) {
+                    if (parseFloat(sum_ms_kt[i].value))
+                    tot2 += parseFloat(sum_ms_kt[i].value);
                 }
                 document.getElementById('total_amount_ms_kt').value = tot2;
             }
+
+                sum_ms_kt.innerText = tot2;
 
             </script>
 
             <!--MarkahKT for MR-->
             <script>
                 function findTotalMR_KT() {
-                var arr = document.getElementsByClassName('sum_mr_kt');
+                var sum_mr_kt = document.getElementsByClassName('sum_mr_kt');
                 var tot3 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot3 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_kt.length; i++) {
+                    if (parseFloat(sum_mr_kt[i].value))
+                    tot3 += parseFloat(sum_mr_kt[i].value);
                 }
                 document.getElementById('total_amount_mr_kt').value = tot3;
+
             }
 
             </script>
@@ -2743,25 +2769,27 @@
             <!--MarkahSB for MS-->
             <script>
                 function findTotalMS_SB() {
-                var arr = document.getElementsByClassName('sum_ms_sb');
+                var sum_ms_sb = document.getElementsByClassName('sum_ms_sb');
                 var tot4 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot4 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_sb.length; i++) {
+                    if (parseFloat(sum_ms_sb[i].value))
+                    tot4 += parseFloat(sum_ms_sb[i].value);
                 }
                 document.getElementById('total_amount_ms_sb').value = tot4;
             }
 
+                //penambahan
+                sum_ms_sb.innerText = tot4;
             </script>
 
             <!--MarkahSB for MR-->
             <script>
                 function findTotalMR_SB() {
-                var arr = document.getElementsByClassName('sum_mr_sb');
+                var sum_mr_sb = document.getElementsByClassName('sum_mr_sb');
                 var tot5 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot5 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_sb.length; i++) {
+                    if (parseFloat(sum_mr_sb[i].value))
+                    tot5 += parseFloat(sum_mr_sb[i].value);
                 }
                 document.getElementById('total_amount_mr_sb').value = tot5;
             }
@@ -2773,25 +2801,27 @@
             <!--MarkahPA for MS-->
             <script>
                 function findTotalMS_PA() {
-                var arr = document.getElementsByClassName('sum_ms_pa');
+                var sum_ms_pa = document.getElementsByClassName('sum_ms_pa');
                 var tot6 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot6 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_pa.length; i++) {
+                    if (parseFloat(sum_ms_pa[i].value))
+                    tot6 += parseFloat(sum_ms_pa[i].value);
                 }
                 document.getElementById('total_amount_ms_pa').value = tot6;
             }
+
+                sum_ms_pa.innerText = tot6;
 
             </script>
 
             <!--MarkahPA for MR-->
             <script>
                 function findTotalMR_PA() {
-                var arr = document.getElementsByClassName('sum_mr_pa');
+                var sum_mr_pa = document.getElementsByClassName('sum_mr_pa');
                 var tot7 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot7 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_pa.length; i++) {
+                    if (parseFloat(sum_mr_pa[i].value))
+                    tot7 += parseFloat(sum_mr_pa[i].value);
                 }
                 document.getElementById('total_amount_mr_pa').value = tot7;
             }
@@ -2803,25 +2833,27 @@
             <!--MarkahPD for MS-->
             <script>
                 function findTotalMS_PD() {
-                var arr = document.getElementsByClassName('sum_ms_pd');
+                var sum_ms_pd = document.getElementsByClassName('sum_ms_pd');
                 var tot8 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot8 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_pd.length; i++) {
+                    if (parseFloat(sum_ms_pd[i].value))
+                    tot8 += parseFloat(sum_ms_pd[i].value);
                 }
                 document.getElementById('total_amount_ms_pd').value = tot8;
             }
+
+                sum_ms_pd.innerText = tot8;
 
             </script>
 
             <!--MarkahPD for MR-->
             <script>
                 function findTotalMR_PD() {
-                var arr = document.getElementsByClassName('sum_mr_pd');
+                var sum_mr_pd = document.getElementsByClassName('sum_mr_pd');
                 var tot9 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot9 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_pd.length; i++) {
+                    if (parseFloat(sum_mr_pd[i].value))
+                    tot9 += parseFloat(sum_mr_pd[i].value);
                 }
                 document.getElementById('total_amount_mr_pd').value = tot9;
             }
@@ -2833,25 +2865,27 @@
             <!--MarkahFL for MS-->
             <script>
                 function findTotalMS_FL() {
-                var arr = document.getElementsByClassName('sum_ms_fl');
+                var sum_ms_fl = document.getElementsByClassName('sum_ms_fl');
                 var tot10 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot10 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_fl.length; i++) {
+                    if (parseFloat(sum_ms_fl[i].value))
+                    tot10 += parseFloat(sum_ms_fl[i].value);
                 }
                 document.getElementById('total_amount_ms_fl').value = tot10;
             }
+
+                sum_ms_fl.innerText = tot10;
 
             </script>
 
             <!--MarkahFL for MR-->
             <script>
                 function findTotalMR_FL() {
-                var arr = document.getElementsByClassName('sum_mr_fl');
+                var sum_mr_fl = document.getElementsByClassName('sum_mr_fl');
                 var tot11 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot11 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_fl.length; i++) {
+                    if (parseFloat(sum_mr_fl[i].value))
+                    tot11 += parseFloat(sum_mr_fl[i].value);
                 }
                 document.getElementById('total_amount_mr_fl').value = tot11;
             }
@@ -2863,25 +2897,27 @@
             <!--MarkahIN for MS-->
             <script>
                 function findTotalMS_IN() {
-                var arr = document.getElementsByClassName('sum_ms_in');
+                var sum_ms_in = document.getElementsByClassName('sum_ms_in');
                 var tot12 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot12 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_in.length; i++) {
+                    if (parseFloat(sum_ms_in[i].value))
+                    tot12 += parseFloat(sum_ms_in[i].value);
                 }
                 document.getElementById('total_amount_ms_in').value = tot12;
             }
+
+                sum_ms_in.innerText = tot12;
 
             </script>
 
             <!--MarkahIN for MR-->
             <script>
                 function findTotalMR_IN() {
-                var arr = document.getElementsByClassName('sum_mr_in');
+                var sum_mr_in = document.getElementsByClassName('sum_mr_in');
                 var tot13 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot13 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_in.length; i++) {
+                    if (parseFloat(sum_mr_in[i].value))
+                    tot13 += parseFloat(sum_mr_in[i].value);
                 }
                 document.getElementById('total_amount_mr_in').value = tot13;
             }
@@ -2983,5 +3019,34 @@
                 }
             }
             </script> --}}
+
+            <!--Test kira jap-->
+            <script>
+                function addFunctionOneAddFunctionTwo(){
+                var sum_ms = sum_ms.innerText || 0; 
+                var sum_ms_kt = sum_ms_kt.innerText || 0; 
+                var sum_ms_sb = sum_ms_sb.innerText || 0; 
+                var sum_ms_pa = sum_ms_pa.innerText || 0; 
+                var sum_ms_pd = sum_ms_pd.innerText || 0; 
+                var sum_ms_fl = sum_ms_fl.innerText || 0; 
+                var sum_ms_in = sum_ms_in.innerText || 0;  
+
+                document.getElementById('total').innerText = 
+                parseFloat(sum_ms) + parseFloat(sum_ms_kt) + parseFloat(sum_ms_sb)
+                + parseFloat(sum_ms_pa) + parseFloat(sum_ms_pd) + parseFloat(sum_ms_fl)
+                + parseFloat(sum_ms_in);
+                }
+
+                document.addEventListener('keyup', function() {
+                findTotalMS();
+                findTotalMS_KT();
+                findTotalMS_SB();
+                findTotalMS_PA();
+                findTotalMS_PD();
+                findTotalMS_FL();
+
+                addFunctionOneAddFunctionTwo();
+                });
+            </script>
             
 @endsection
