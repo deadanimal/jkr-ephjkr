@@ -51,11 +51,11 @@
                                     <td>{{ $spk->namaProjek }} </td>
                                     <td>{{ $spk->alamatProjek }}</td>
                                     <td>{{ $spk->statusProjek }}</td>
-                                    <td>{{ $spk->nama }}
-                                        <a href="/verifikasi_permarkahan_jalan/senarai_projek_create/create" type="button" class="btn btn-warning">+</a>
+                                    <td style="text-align: right">{{ $spk->nama }}
+                                        <a href="/verifikasi_permarkahan_jalan/pemudah_cara/create" type="button" class="btn btn-warning">+</a>
                                     </td>
-                                    <td>{{ $spk->nama }}
-                                        <a href="/verifikasi_permarkahan_jalan/senarai_projek_create/create" type="button" class="btn btn-warning">+</a>
+                                    <td style="text-align: right">{{ $spk->nama }}
+                                        <a href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan/create" type="button" class="btn btn-warning">+</a>
                                     </td>
                                     
                                     {{-- <td>

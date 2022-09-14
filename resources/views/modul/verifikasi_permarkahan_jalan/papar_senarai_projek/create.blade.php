@@ -1,4 +1,4 @@
-@extends('layouts.base')
+{{--@extends('layouts.base')
 @section('content')
     <div class="row mb-3">
         <div class="col">
@@ -55,7 +55,7 @@
                     </div> --}}
                     {{-- <div class="col-7 mb-2">
                         <input class="form-control" name="soalanFAQ" type="text"/>
-                    </div> --}}
+                    </div> --}
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Pemudah Cara Jalan:</label>
@@ -104,4 +104,4 @@
             </form>
         </div>
     </div>
-@endsection
+@endsection --}}

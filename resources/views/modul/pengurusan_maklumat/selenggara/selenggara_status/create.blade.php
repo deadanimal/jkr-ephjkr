@@ -33,7 +33,7 @@
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Status Projek Baru:</label>
+                        <label class="col-form-label">Nama Status Projek Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="statusProjek" type="text"/>

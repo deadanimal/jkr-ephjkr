@@ -115,6 +115,7 @@ Route::middleware('auth')->group(function () {
     //gugur projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek', [ProjekController::class, 'gugurprojek']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create', [ProjekController::class, 'gugurprojek_create']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{id}', [ProjekController::class, 'padam_gugurprojek']);
 
     //pengesahan projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek', [ProjekController::class, 'pengesahanprojek']);
@@ -324,8 +325,10 @@ Route::middleware('auth')->group(function () {
     //Route::post('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'create']);
     Route::get('/verifikasi_permarkahan_jalan/papar_senarai_projek', [VerifikasiPermarkahanJalanController::class, 'papar_senarai_projek_verifikasi']);
     Route::get('/verifikasi_permarkahan_jalan/melantik_penilai_jalan/create', [VerifikasiPermarkahanJalanController::class, 'melantik_penilai_jalan']);
+    Route::post('/verifikasi_permarkahan_jalan/melantik_penilai_jalan/simpan/{id}', [VerifikasiPermarkahanJalanController::class, 'simpan_penilai_jalan']);
     //Route::post('/verifikasi_permarkahan_jalan/senarai_projek_create', [VerifikasiPermarkahanJalanController::class, 'senarai_projek_create']);
     Route::get('/verifikasi_permarkahan_jalan/pemudah_cara/create', [VerifikasiPermarkahanJalanController::class, 'pemudah_cara']);
+    Route::post('/verifikasi_permarkahan_jalan/pemudah_cara/simpan/{id}', [VerifikasiPermarkahanJalanController::class, 'simpan_pemudah_cara']);
 
     //isi skor kad
     Route::get('/verifikasi_permarkahan_jalan/isi_skor_kad_verifikasi', [VerifikasiPermarkahanJalanController::class, 'isi_skor_kad_verifikasi']);

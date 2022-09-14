@@ -59,7 +59,7 @@
                                         <div class="row">
                                             <div class="col-auto">
                                                 <a href="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}/edit"
-                                                    class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                                    class="btn btn-sm btn-primary"><i class="fas fa-edit"></i>SAHKAN</a>
                                             </div>
                                             <div class="col-auto">
                                                 <form action="/pengurusan_maklumat/maklum_balas/{{ $mb->id }}" method="post">

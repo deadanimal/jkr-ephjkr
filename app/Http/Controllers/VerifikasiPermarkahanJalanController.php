@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Projek;
+use App\Models\PemudahCara;
+use App\Models\PenilaianRekaBentukBangunan;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -188,5 +190,41 @@ class VerifikasiPermarkahanJalanController extends Controller
         
         return view('modul.verifikasi_permarkahan_jalan.permohonan_rayuan.create');
         
+    }
+
+    //simpan pemuda cara
+    public function simpan_pemudah_cara(Request $request, $id)
+    {
+        // submit form melantik pemudah cara
+        $pemudah_cara = new PemudahCara;
+        $pemudah_cara->namaProjek = $request->input('namaProjek');
+        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
+        $pemudah_cara->nama = $request->input('nama');
+        $pemudah_cara->no_tel = $request->input('no_tel');
+        $pemudah_cara->email = $request->input('email');
+        $pemudah_cara->no_fax = $request->input('no_fax');
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+
+        $pemudah_cara->save();
+
+        return redirect('/verifikasi_permarkahan_jalan/pemudah_cara');
+    }
+
+    //simpan penilai jalan
+    public function simpan_penilai_jalan(Request $request, $id)
+    {
+        // submit form melantik penilai jalan
+        $penilai_jalan = new Penilaijalan;
+        $penilai_jalan->namaProjek = $request->input('namaProjek');
+        $penilai_jalan->syarikat_cawangan = $request->input('syarikat_cawangan');
+        $penilai_jalan->nama = $request->input('nama');
+        $penilai_jalan->no_tel = $request->input('no_tel');
+        $penilai_jalan->email = $request->input('email');
+        $penilai_jalan->no_fax = $request->input('no_fax');
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+
+        $penilai_jalan->save();
+
+        return redirect('/verifikasi_permarkahan_jalan/penilai_jalan');
     }
 }

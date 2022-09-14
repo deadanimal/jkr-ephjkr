@@ -124,10 +124,17 @@
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Kaedah Pelaksanaan/Jenis Perolehan:</label>
+                        <label class="col-form-label">Kaedah Pelaksanaan:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="kaedahPelaksanaan" type="text"/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Jenis Pelaksanaan:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="jenisPelaksanaan" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">

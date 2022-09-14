@@ -150,6 +150,14 @@ class ProjekController extends Controller
         return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
 
+    //paparprojek
+    public function papar(){
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.papar', [
+            'papar' => Projek::with('status')->get()
+        ]);
+    }
+
     public function cetakpdfprojek($id){
 
         $pendaftaran_projek = Projek::find($id);
@@ -174,6 +182,17 @@ class ProjekController extends Controller
             
         );
     }
+
+    public function padam_gugurprojek($id){
+        //dd('fd');
+
+        $gugur_projek = Projek::find($id);
+    
+        $gugur_projek->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek/gugur_projek');
+            
+        }
 
     public function pengesahanprojek(){
 //dd('fd');

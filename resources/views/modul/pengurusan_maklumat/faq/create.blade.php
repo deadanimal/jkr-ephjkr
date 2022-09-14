@@ -47,7 +47,7 @@
                         <label class="col-form-label">Jawapan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="JawapanFAQ" type="text"/>
+                        <textarea class="form-control" rows="5" name="JawapanFAQ" type="text"> </textarea>
                     </div>
 
                     
