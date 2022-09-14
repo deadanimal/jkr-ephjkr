@@ -2,6 +2,14 @@
 
 <link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
 
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+</style>
+
 @section('content')
 
  {{-- header --}}
@@ -564,7 +572,7 @@
 
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create/{id}" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
 
       </div>

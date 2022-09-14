@@ -182,7 +182,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page2']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page2']);
     // architectural works - Floor forms
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page3']);
+    // Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page3']);
     Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page3']);
     // architectural works - Sanitary forms
     Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page4/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page4']);

@@ -146,6 +146,8 @@ class PenilaianRekaBentukGpssController extends Controller
     public function skor_penilaian_arkitek()
     {
         // 1st form(create) page GPSS architectural works for Pemudah Cara
+        // $gpss_bangunan = $request->session()->all();
+
         return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek.create');
     }
 
@@ -157,23 +159,49 @@ class PenilaianRekaBentukGpssController extends Controller
         alert()->success('Markah disimpan', 'Berjaya');
         $gpss_bangunan->save();
 
+
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create');
     }
 
     public function skor_penilaian_arkitek_page2()
     {
         // papar 2nd page GPSS architectural works
+        // $gpss_bangunan = $request->session()->all();
+        // $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        
+        // dd($id);
+
         return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.arkitek_page2.create');
     }
 
+    // public function simpan_skor_penilaian_arkitek_page2(Request $request, KriteriaGpssBangunan $gpss_bangunan)
     public function simpan_skor_penilaian_arkitek_page2(Request $request, $id)
     {
         // simpan skor penilaian
-        $gpss_bangunan_window = new KriteriaGpssBangunan($request->all());
-        alert()->success('Markah disimpan', 'Berjaya');
-        $gpss_bangunan_window->save();
+        // $gpss_bangunan = new KriteriaGpssBangunan($request->session()->all());
 
-        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create');
+        // $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        // $validatedData = $request->all();
+
+        // if(empty($request->session()->get('gpss_bangunan'))){
+        //     $gpss_bangunan = new KriteriaGpssBangunan();
+        //     $gpss_bangunan->fill($validatedData);
+        //     $request->session()->put('gpss_bangunan', $gpss_bangunan);
+        // }else{
+        //     $gpss_bangunan = $request->session()->get('gpss_bangunan');
+        //     $gpss_bangunan->fill($validatedData);
+        //     $request->session()->put('gpss_bangunan', $gpss_bangunan);
+        // }
+
+        // $data = $request->all();
+
+        // $gpss_bangunan->fill($data)->save();
+        $gpss_bangunan = new KriteriaGpssBangunan($request->all());
+        $gpss_bangunan->save();
+
+        alert()->success('Markah disimpan', 'Berjaya');
+
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create/');
     }
 
     public function skor_penilaian_arkitek_page3()

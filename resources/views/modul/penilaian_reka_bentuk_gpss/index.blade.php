@@ -54,7 +54,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
                     <td>Hospital Seri Iskandar</td>
@@ -62,7 +62,7 @@
                     <td>BERJAYA DIDAFTAR</td>
                     <td style="text-align: center"><a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="submit" class="btn btn-warning margin-auto">DAFTAR</a></td>
                     
-                </tr>
+                </tr> --}}
 
                 <tr>
                     @foreach ($projeks as $p)

@@ -2,6 +2,15 @@
 
 <link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
 
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button
+  {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+</style>
+
 @section('content')
 
  {{-- header --}}
@@ -27,7 +36,7 @@
 </div>
 
 <div class="row3 mx-1 table-responsive scrollbar text-center">
-  <form action="/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page2/{id}" method="post" enctype="multipart/form-data">
+  <form action="/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page2/{id}" method="post">
     @method('POST')
     @csrf
     <div class="col">
@@ -49,6 +58,8 @@
           </tr>
         </thead>
         <tbody>
+
+          
           
           <tr class="text-center">
             <td rowspan="4" >1</td>
@@ -454,7 +465,7 @@
 
       <div align="right" class="mt-3">
         <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create/{id}" type="button" class="btn btn-secondary">Seterusnya</a>          
       </div>
 
      
