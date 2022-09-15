@@ -2,6 +2,15 @@
 
 <link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
 
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button
+  {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+</style>
+
 @section('content')
 
  {{-- header --}}
@@ -27,7 +36,7 @@
 </div>
 
 <div class="row3 mx-1  text-center">
-  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
+  <form action= "/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_elektrikal/{id}" method="post" enctype="multipart/form-data">
     @method('POST')
       @csrf
 
@@ -57,7 +66,7 @@
               <td >Generator set</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwGeneratorSet" id="EwGeneratorSet">
+                <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwGeneratorSet" id="EwGeneratorSet">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -74,7 +83,7 @@
                 <td >11kV dry type distribution transformer</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwTransformer" id="EwTransformer">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTransformer" id="EwTransformer">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -88,7 +97,7 @@
                 <td >Surge Protective Device (PSD)</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwSPD" id="EwSPD">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSPD" id="EwSPD">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -102,7 +111,7 @@
                 <td >Combined overcurrent and earth fault relay</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwRelayCombined" id="EwRelayCombined">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRelayCombined" id="EwRelayCombined">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -114,7 +123,7 @@
                 <td >Overcurrent relay</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwRelayOvercurrent" id="EwRelayOvercurrent">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRelayOvercurrent" id="EwRelayOvercurrent">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -126,7 +135,7 @@
                 <td >Earth fault relay</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwRelayEarthFault" id="EwRelayEarthFault">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRelayEarthFault" id="EwRelayEarthFault">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -138,7 +147,7 @@
                 <td >Earth fault leakage</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwRelayEarthLeakage" id="EwRelayEarthLeakage">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRelayEarthLeakage" id="EwRelayEarthLeakage">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -152,7 +161,7 @@
                 <td >Air Circuit Breaker(ACB)</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwCircuitACB" id="EwCircuitACB">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwCircuitACB" id="EwCircuitACB">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -164,7 +173,7 @@
                 <td >Moulded Case Circuit Breaker(MCCB)</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwCircuitMCCB" id="EwCircuitMCCB">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwCircuitMCCB" id="EwCircuitMCCB">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -176,7 +185,7 @@
                 <td >Miniature Circuit Breaker(MCB)</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwCircuitMCB" id="EwCircuitMCB">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwCircuitMCB" id="EwCircuitMCB">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -189,7 +198,7 @@
                 <td rowspan="1">Residual current devices</td>
                 <td >Residual Current Operated Circuit Breaker with Integral o/c protection(RCBO)</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwResidualRCBO" id="EwResidualRCBO"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwResidualRCBO" id="EwResidualRCBO"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -200,7 +209,7 @@
                 <td rowspan="5">Switchboard</td>
                 <td >Metal enclosure</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwResidualRCBO" id="EwResidualRCBO"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwResidualRCBO" id="EwResidualRCBO"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -209,7 +218,7 @@
               <tr>
                 <td >Busbar support</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwSwitchboardBusbar" id="EwSwitchboardBusbar"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSwitchboardBusbar" id="EwSwitchboardBusbar"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -219,7 +228,7 @@
                 <td >Cables</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwSwitchboardCables" id="EwSwitchboardCables">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSwitchboardCables" id="EwSwitchboardCables">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -231,7 +240,7 @@
                 <td >Busbar</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwSwitchboardCables" id="EwSwitchboardCables">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSwitchboardCables" id="EwSwitchboardCables">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -243,7 +252,7 @@
                 <td >Consumer unit</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwSwitchboardConsumer" id="EwSwitchboardConsumer">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSwitchboardConsumer" id="EwSwitchboardConsumer">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -256,7 +265,7 @@
                 <td rowspan="4">Lamp</td>
                 <td >Compact fluorescent lamp(CFL)</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwLampCFL" id="EwLampCFL"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwLampCFL" id="EwLampCFL"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -265,7 +274,7 @@
               <tr>
                 <td >Fluorescent lamp(T5)</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwLampT5" id="EwLampT5"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwLampT5" id="EwLampT5"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -275,7 +284,7 @@
                 <td >LED tubes</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwLampLEDTube" id="EwLampLEDTube">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwLampLEDTube" id="EwLampLEDTube">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -287,7 +296,7 @@
                 <td >LED bulb</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwLampLEDBulb" id="EwLampLEDBulb">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwLampLEDBulb" id="EwLampLEDBulb">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -300,7 +309,7 @@
                 <td rowspan="6">Indoor luminaires</td>
                 <td >LED downlight</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwIndoorLEDDownlight" id="EwIndoorLEDDownlight"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwIndoorLEDDownlight" id="EwIndoorLEDDownlight"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -309,7 +318,7 @@
               <tr>
                 <td >LED recessed luminaires</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwIndoorLEDRecessed" id="EwIndoorLEDRecessed"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwIndoorLEDRecessed" id="EwIndoorLEDRecessed"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -319,7 +328,7 @@
                 <td >Fluorescent luminaires(T5)</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwIndoorT5" id="EwIndoorT5">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwIndoorT5" id="EwIndoorT5">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -331,7 +340,7 @@
                 <td >Fluorescent luminaires(T8) c/w electronic ballast</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwIndoorT8" id="EwIndoorT8">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwIndoorT8" id="EwIndoorT8">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -343,7 +352,7 @@
                 <td >Electronic ballast</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwIndoorBallast" id="EwIndoorBallast">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwIndoorBallast" id="EwIndoorBallast">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -355,7 +364,7 @@
                 <td >LED driver</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwIndoorLEDDriver" id="EwIndoorLEDDriver">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwIndoorLEDDriver" id="EwIndoorLEDDriver">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -368,7 +377,7 @@
                 <td rowspan="5">Outdoor luminaires</td>
                 <td >Road lighting luminaires(HPSV)</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwOutdoorHPSV" id="EwOutdoorHPSV"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwOutdoorHPSV" id="EwOutdoorHPSV"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -377,7 +386,7 @@
               <tr>
                 <td >Road lighting luminaires(Induction)</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwOutdoorInduction" id="EwOutdoorInduction"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwOutdoorInduction" id="EwOutdoorInduction"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -387,7 +396,7 @@
                 <td >Road lighting luminaires(LED)</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwOutdoorLED" id="EwOutdoorLED">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwOutdoorLED" id="EwOutdoorLED">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -399,7 +408,7 @@
                 <td >Ballast for discharge lamp</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwOutdoorBallast" id="EwOutdoorBallast">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwOutdoorBallast" id="EwOutdoorBallast">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -411,7 +420,7 @@
                 <td >Lighting columns</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwOutdoorLighting" id="EwOutdoorLighting">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwOutdoorLighting" id="EwOutdoorLighting">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -424,7 +433,7 @@
                 <td rowspan="3">Traffic light</td>
                 <td > Controller</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwTrafficController" id="EwTrafficController"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTrafficController" id="EwTrafficController"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -433,7 +442,7 @@
               <tr>
                 <td >Traffic signal module</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwTrafficSignal" id="EwTrafficSignal"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTrafficSignal" id="EwTrafficSignal"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -443,7 +452,7 @@
                 <td >Lighting columns</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwTrafficLighting" id="EwTrafficLighting">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTrafficLighting" id="EwTrafficLighting">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -456,7 +465,7 @@
                 <td rowspan="2">Switches and socket outlet</td>
                 <td > Switches</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwSwitches" id="EwSwitches"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSwitches" id="EwSwitches"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -465,7 +474,7 @@
               <tr>
                 <td >Switches socket outlet</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwSwitchesSocket" id="EwSwitchesSocket"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSwitchesSocket" id="EwSwitchesSocket"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -476,7 +485,7 @@
                 <td rowspan="3">Cables</td>
                 <td > Low voltage cable</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwCablesLow" id="EwCablesLow"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwCablesLow" id="EwCablesLow"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -485,7 +494,7 @@
               <tr>
                 <td >Medium voltage cable</td>
                 <td >2</td>
-                <td><input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwCablesMedium" id="EwCablesMedium"></td>            
+                <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwCablesMedium" id="EwCablesMedium"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -495,7 +504,7 @@
                 <td >High voltage cable</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="EwCablesHigh" id="EwCablesHigh">
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwCablesHigh" id="EwCablesHigh">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -503,38 +512,235 @@
                 <td><input type="text"></td>                    
               </tr>
 
-              
+              <tr class="text-center">
+                <td rowspan="4" >14</td>
+                <td rowspan="4">G. S conduit & High Impact PVC conduit/trunking/tray</td>
+                <td >Rigid high impact PVC conduit</td>
+                <td >2</td>
+                <td>
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTrayPVC" id="EwTrayPVC">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+  
+              <tr>
+                <td >Galvanised steel conduit</td>
+                <td >2</td>
+                <td>
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTrayGalvanised" id="EwTrayGalvanised">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+  
+              <tr>
+                <td >Trunking</td>
+                <td >2</td>
+                <td>
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTrayTrunking" id="EwTrayTrunking">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+  
+              <tr>
+                <td >Cable tray</td>
+                <td >2</td>
+                <td>
+                  <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwTrayCableTray" id="EwTrayCableTray">
+                </td>            
+                <td>
+                  <input type="number" min="0" max="2"></td>            
+                <td><input type="number" min="0" max="2"></td>            
+                <td><input type="text"></td>                    
+              </tr>
+    
+                <tr class="text-center">
+                  <td rowspan="3" >15</td>
+                  <td rowspan="3">Fan</td>
+                  <td >Ceiling fan</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwFanCeiling" id="EwFanCeiling">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr>
+                  <td >Wall fan</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwFanWall" id="EwFanWall">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr>
+                  <td >Oscillating fan</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwFanOscillating" id="EwFanOscillating">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr class="text-center">
+                  <td rowspan="2" >16</td>
+                  <td rowspan="2">Power factor correction</td>
+                  <td >Capacitor for power factor correction</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwPowerCapasitor" id="EwPowerCapasitor">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr>
+                  <td >Power factor regulator</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwPowerRegulator" id="EwPowerRegulator">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr class="text-center">
+                  <td rowspan="2" >17</td>
+                  <td rowspan="2">Emergency light & luminous sign</td>
+                  <td >'KELUAR' sign LED</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwEmergencyKeluar" id="EwEmergencyKeluar">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr>
+                  <td >Emergency light LED</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwEmergencyLED" id="EwEmergencyLED">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr class="text-center">
+                  <td rowspan="1" >18</td>
+                  <td rowspan="1">Switchgear</td>
+                  <td >11kV metal enclosed Switchgear - VCB</td>
+                  <td >2</td>
+                  <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwSwithcgearVCB" id="EwSwithcgearVCB"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr class="text-center">
+                  <td rowspan="4" >19</td>
+                  <td rowspan="4">Renewable energy system</td>
+                  <td >Solar panel</td>
+                  <td >2</td>
+                  <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRenewableSolar" id="EwRenewableSolar"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr>
+                  <td >Battery</td>
+                  <td >2</td>
+                  <td><input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRenewableBattery" id="EwRenewableBattery"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr>
+                  <td >Inverter</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRenewableInverter" id="EwRenewableInverter">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+  
+                <tr>
+                  <td >Low voltage cable</td>
+                  <td >2</td>
+                  <td>
+                    <input onblur="findTotalmarkahPREw()" type="number" min="0" max="2" class="elektrikal" name="EwRenewableLowCable" id="EwRenewableLowCable">
+                  </td>            
+                  <td>
+                    <input type="number" min="0" max="2"></td>            
+                  <td><input type="number" min="0" max="2"></td>            
+                  <td><input type="text"></td>                    
+                </tr>
+
+                <tr style="display: none">
+                  <td><input type="text" name="markahPREw" id="markahPREw" /></td>
+                </tr>
 
           </tbody>
         </table>
 
-        {{-- <div>
-            <!-- Design stage -->
-          <div class="mb-3 form-group row">
-            <label class="col-sm-5 col-form-label text-black">Prepared by: (Design Stage)</label>
+        <div>
+          <!-- Design stage -->
+        <div class="mb-3 form-group row">
+          <label class="col-sm-5 col-form-label text-black">Prepared by: (Design Stage)</label>
+              <div class="col-sm-5">
+                  <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
+              </div>
+        </div>
+        <!-- Construction stage -->
+        <div class="mb-3 form-group row">
+            <label class="col-sm-5 col-form-label text-black">Prepared by: (Construction Stage)</label>
                 <div class="col-sm-5">
                     <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
                 </div>
-          </div>
-          <!-- Construction stage -->
-          <div class="mb-3 form-group row">
-              <label class="col-sm-5 col-form-label text-black">Prepared by: (Construction Stage)</label>
-                  <div class="col-sm-5">
-                      <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
-                  </div>
-          </div>
-          <!-- Checked -->
-          <div class="mb-3 form-group row">
-              <label class="col-sm-5 col-form-label text-black">Checked by: (Construction Stage)</label>
-                  <div class="col-sm-5">
-                      <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
-                  </div>
-          </div>
-          </div> --}}
-  
+        </div>
+        <!-- Checked -->
+        <div class="mb-3 form-group row">
+            <label class="col-sm-5 col-form-label text-black">Checked by: (Construction Stage)</label>
+                <div class="col-sm-5">
+                    <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
+                </div>
+        </div>
+        </div>
+
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/elektrikal_page2/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
   
        
@@ -545,18 +751,18 @@
     
   </div>
 
-  <p><strong>markahPRMw <span class="required"></span></strong><br />
-    <input type="text" name="markahPRMw" id="markahPRMw" /></p>
+  {{-- <p><strong>findTotalmarkahPREw <span class="required"></span></strong><br />
+    <input type="text" name="markahPREw" id="markahPREw" /></p> --}}
 
 <script>
-  function markahPRMw(){
-  var arr = document.getElementsByClassName('arkitek');
+  function findTotalmarkahPREw(){
+  var arr = document.getElementsByClassName('elektrikal');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))
           tot += parseFloat(arr[i].value);
   }
-  document.getElementById('markahPRMw').value = tot;
+  document.getElementById('markahPREw').value = tot;
 } 
 </script>  
 

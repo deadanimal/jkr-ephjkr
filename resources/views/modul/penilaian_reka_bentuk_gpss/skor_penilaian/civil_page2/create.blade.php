@@ -2,6 +2,15 @@
 
 <link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
 
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button
+  {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+</style>
+
 @section('content')
 
  {{-- header --}}
@@ -19,7 +28,7 @@
           aria-label="breadcrumb">
           <ol class="breadcrumb">
               <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                  Civil Works (Ew)
+                  Civil Works (Sw)
               </li>
           </ol>
       </nav>
@@ -27,7 +36,7 @@
 </div>
 
 <div class="row3 mx-1  text-center">
-  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/{id}" method="post" enctype="multipart/form-data">
+  <form action= "/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_civil_page2/{id}" method="post" enctype="multipart/form-data">
     @method('POST')
       @csrf
 
@@ -57,7 +66,7 @@
               <td >Cement</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonCement" id="SwCommonCement">
+                <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwCommonCement" id="SwCommonCement">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -69,7 +78,7 @@
               <td >Reinforcement bar</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonBar" id="SwCommonBar">
+                <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwCommonBar" id="SwCommonBar">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -81,7 +90,7 @@
               <td >Sand</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonSand" id="SwCommonSand">
+                <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwCommonSand" id="SwCommonSand">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -93,7 +102,7 @@
               <td >Aggregate</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonAggregate" id="SwCommonAggregate">
+                <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwCommonAggregate" id="SwCommonAggregate">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -105,7 +114,7 @@
               <td >Timber</td>
               <td >2</td>
               <td>
-                <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwCommonTimber" id="SwCommonTimber">
+                <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwCommonTimber" id="SwCommonTimber">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -119,7 +128,7 @@
                 <td >Concrete</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperConcrete" id="SwSuperConcrete">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwSuperConcrete" id="SwSuperConcrete">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -131,7 +140,7 @@
                 <td >Reinforcement bar</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperBar" id="SwSuperBar">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwSuperBar" id="SwSuperBar">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -143,7 +152,7 @@
                 <td >Steel</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperSteel" id="SwSuperSteel">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwSuperSteel" id="SwSuperSteel">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -155,7 +164,7 @@
                 <td >Water stop</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperWater" id="SwSuperWater">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwSuperWater" id="SwSuperWater">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -167,7 +176,7 @@
                 <td >Damp proof membrane</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperDamp" id="SwSuperDamp">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwSuperDamp" id="SwSuperDamp">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -179,7 +188,7 @@
                 <td >Plastic sheeting</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperPlastic" id="SwSuperPlastic">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwSuperPlastic" id="SwSuperPlastic">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -191,7 +200,7 @@
                 <td >Sealant</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwSuperSealant" id="SwSuperSealant">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwSuperSealant" id="SwSuperSealant">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -205,7 +214,7 @@
                 <td >Steel</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofSteel" id="SwRoofSteel">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwRoofSteel" id="SwRoofSteel">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -217,7 +226,7 @@
                 <td >Timber</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofTimber" id="SwRoofTimber">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwRoofTimber" id="SwRoofTimber">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -229,7 +238,7 @@
                 <td >Aluminium</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofAluminium" id="SwRoofAluminium">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwRoofAluminium" id="SwRoofAluminium">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -241,7 +250,7 @@
                 <td >Bolt</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofBolt" id="SwRoofBolt">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwRoofBolt" id="SwRoofBolt">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -253,7 +262,7 @@
                 <td >Plates</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofPlates" id="SwRoofPlates">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwRoofPlates" id="SwRoofPlates">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -265,12 +274,16 @@
                 <td >Membrane</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRSw()" type="number" min="0" max="2" class="stucture" name="SwRoofMembrane" id="SwRoofMembrane">
+                  <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwRoofMembrane" id="SwRoofMembrane">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
+              </tr>
+
+              <tr style="display: none">
+                <td><input type="text" name="markahPRSw" id="markahPRSw" /></td>
               </tr>
 
           </tbody>
@@ -307,12 +320,12 @@
   </form>
   </div>
 
-  <p><strong>markahPRSw <span class="required"></span></strong><br />
-    <input type="text" name="markahPRSw" id="markahPRSw" /></p>
+  {{-- <p><strong>findTotalmarkahPRSw <span class="required"></span></strong><br />
+    <input type="text" name="markahPRSw" id="markahPRSw" /></p> --}}
 
 <script>
-  function markahPRSw(){
-  var arr = document.getElementsByClassName('stucture');
+  function findTotalmarkahPRSw(){
+  var arr = document.getElementsByClassName('structure');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))

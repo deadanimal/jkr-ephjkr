@@ -2,6 +2,15 @@
 
 <link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
 
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button
+  {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+</style>
+
 @section('content')
 
  {{-- header --}}
@@ -27,7 +36,7 @@
 </div>
 
 <div class="row3 mx-1  text-center">
-  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
+  <form action= "/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_civil/{id}" method="post" enctype="multipart/form-data">
     @method('POST')
       @csrf
 
@@ -57,7 +66,7 @@
                 <td >Cement</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwCommonCement" id="CwCommonCement">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonCement" id="CwCommonCement">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -69,7 +78,7 @@
                 <td >Timber</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwCommonTimber" id="CwCommonTimber">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonTimber" id="CwCommonTimber">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -81,7 +90,7 @@
                 <td >Reinforcement bar</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwCommonBar" id="CwCommonBar">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonBar" id="CwCommonBar">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -93,7 +102,7 @@
                 <td >Sand</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwCommonSand" id="CwCommonSand">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonSand" id="CwCommonSand">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -105,7 +114,7 @@
                 <td >Aggregate</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwCommonAggregate" id="CwCommonAggregate">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonAggregate" id="CwCommonAggregate">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -117,7 +126,7 @@
                 <td >Stone/rock</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwCommonStone" id="CwCommonStone">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonStone" id="CwCommonStone">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -131,7 +140,7 @@
                 <td >Geotextile</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwEarthworksGeotextile" id="CwEarthworksGeotextile">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksGeotextile" id="CwEarthworksGeotextile">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -143,7 +152,7 @@
                 <td >Erosion mat</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwEarthworksErosion" id="CwEarthworksErosion">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksErosion" id="CwEarthworksErosion">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -155,7 +164,7 @@
                 <td >Geogrid</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwEarthworksGeogrid" id="CwEarthworksGeogrid">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksGeogrid" id="CwEarthworksGeogrid">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -167,7 +176,7 @@
                 <td >Mulching</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwEarthworksMulching" id="CwEarthworksMulching">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksMulching" id="CwEarthworksMulching">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -179,7 +188,7 @@
                 <td >Gabion</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwEarthworksGabion" id="CwEarthworksGabion">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksGabion" id="CwEarthworksGabion">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -191,7 +200,7 @@
                 <td >Hydroseeding</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwEarthworksHydroseeding" id="CwEarthworksHydroseeding">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksHydroseeding" id="CwEarthworksHydroseeding">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -205,7 +214,7 @@
                 <td >Drain culvert</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwDrainageCulvert" id="CwDrainageCulvert">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageCulvert" id="CwDrainageCulvert">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -217,7 +226,7 @@
                 <td >Sump</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwDrainageSump" id="CwDrainageSump">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageSump" id="CwDrainageSump">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -229,7 +238,7 @@
                 <td >Pipe</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwDrainagePipe" id="CwDrainagePipe">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainagePipe" id="CwDrainagePipe">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -241,7 +250,7 @@
                 <td >Modular tank</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwDrainageTank" id="CwDrainageTank">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageTank" id="CwDrainageTank">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -253,7 +262,7 @@
                 <td >Geotextile</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwDrainageGeotextile" id="CwDrainageGeotextile">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageGeotextile" id="CwDrainageGeotextile">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -265,7 +274,7 @@
                 <td >Grating</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwDrainageGrating" id="CwDrainageGrating">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageGrating" id="CwDrainageGrating">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -278,7 +287,7 @@
                 <td rowspan="15">Pavement/road furniture</td>
                 <td >Asphalt concrete</td>
                 <td >2</td>
-                <td><input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id=""></td>            
+                <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -287,7 +296,7 @@
               <tr>
                 <td >Porous asphalt</td>
                 <td >2</td>
-                <td><input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id=""></td>            
+                <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -297,7 +306,7 @@
                 <td >Prime coat</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwPavementsPrime" id="CwPavementsPrime">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwPavementsPrime" id="CwPavementsPrime">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -309,7 +318,7 @@
                 <td >Tack coat</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwPavementsTack" id="CwPavementsTack">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwPavementsTack" id="CwPavementsTack">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -321,7 +330,7 @@
                 <td >Retroreflective sheeting</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -333,7 +342,7 @@
                 <td >Road paint</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadPaint" id="CwRoadPaint">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -345,7 +354,7 @@
                 <td >Paver block</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -357,7 +366,7 @@
                 <td >Permeable paver</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -369,7 +378,7 @@
                 <td >Kerb</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -381,7 +390,7 @@
                 <td >Road stud</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadStud" id="CwRoadStud">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -393,7 +402,7 @@
                 <td >Chevron delineator</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadChevron" id="CwRoadChevron">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -405,7 +414,7 @@
                 <td >Guardrail</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadGuardrails" id="CwRoadGuardrails">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -417,7 +426,7 @@
                 <td >Railing</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadRailings" id="CwRoadRailings">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -429,7 +438,7 @@
                 <td >Wire rope</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="" id="">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadGuardrails" id="CwRoadGuardrails">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -441,7 +450,7 @@
                 <td >Signages</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwRoadSignages" id="CwRoadSignages">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadSignages" id="CwRoadSignages">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -454,7 +463,7 @@
                 <td rowspan="7">Water reticulation works</td>
                 <td >Pipes</td>
                 <td >2</td>
-                <td><input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwWaterPipes" id="CwWaterPipes"></td>            
+                <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterPipes" id="CwWaterPipes"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -463,7 +472,7 @@
               <tr>
                 <td >Bulk meter</td>
                 <td >2</td>
-                <td><input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwWaterBulk" id="CwWaterBulk"></td>            
+                <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterBulk" id="CwWaterBulk"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -473,7 +482,7 @@
                 <td >Valves</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwWaterValves" id="CwWaterValves">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterValves" id="CwWaterValves">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -485,7 +494,7 @@
                 <td >Tank</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwWaterTank" id="CwWaterTank">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterTank" id="CwWaterTank">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -497,7 +506,7 @@
                 <td >Pump</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwWaterPump" id="CwWaterPump">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterPump" id="CwWaterPump">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -509,7 +518,7 @@
                 <td >First flush filter</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwWaterFirstFlush" id="CwWaterFirstFlush">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterFirstFlush" id="CwWaterFirstFlush">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -521,7 +530,7 @@
                 <td >Sand filter</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwWaterSand" id="CwWaterSand">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterSand" id="CwWaterSand">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -534,7 +543,7 @@
                 <td rowspan="4">Sewerage works</td>
                 <td >Pipes</td>
                 <td >2</td>
-                <td><input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwSeveragePipes" id="CwSeveragePipes"></td>            
+                <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeveragePipes" id="CwSeveragePipes"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -543,7 +552,7 @@
               <tr>
                 <td >Tank</td>
                 <td >2</td>
-                <td><input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwSeverageTank" id="CwSeverageTank"></td>            
+                <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeverageTank" id="CwSeverageTank"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
@@ -553,7 +562,7 @@
                 <td >Pump</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwSeveragePump" id="CwSeveragePump">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeveragePump" id="CwSeveragePump">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -565,7 +574,7 @@
                 <td >Manhole</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRCw()" type="number" min="0" max="2" class="arkitek" name="CwSeverageManhole" id="CwSeverageManhole">
+                  <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeverageManhole" id="CwSeverageManhole">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -573,26 +582,28 @@
                 <td><input type="text"></td>                    
               </tr>
 
+              <tr style="display: none">
+                <td><input type="text" name="markahPRCw" id="markahPRCw" /></td>
+              </tr>
+
           </tbody>
         </table>
 
-        
-  
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/civil_page2/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/create" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
       </div>
   </form>
     
   </div>
 
-  <p><strong>markahPRCw <span class="required"></span></strong><br />
-    <input type="text" name="markahPRCw" id="markahPRCw" /></p>
+  {{-- <p><strong>findTotalmarkahPRCw <span class="required"></span></strong><br />
+    <input type="text" name="markahPRCw" id="markahPRCw" /></p> --}}
 
 <script>
-  function markahPRCw(){
-  var arr = document.getElementsByClassName('arkitek');
+  function findTotalmarkahPRCw(){
+  var arr = document.getElementsByClassName('civil');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))
