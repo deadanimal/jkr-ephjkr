@@ -31,7 +31,7 @@
                     <table class="table datatable table-striped" style="width:100%">
                         <thead class="bg-primary">
                             <tr>
-                                
+                                <th class="sort">Bil.</th>
                                 <th class="sort">ID Projek</th>
                                 <th class="sort">Nama Projek</th>
                                 <th class="sort">Alamat Projek</th>
@@ -45,7 +45,10 @@
                                 1.
                             </td>
                             <td>
-                                {{ $pengesahan_projek->namaProjek }}
+                                {{$pengesahan_projek->id}}
+                            </td>
+                            <td>
+                                {{$pengesahan_projek->namaProjek}}
                             </td>
                             <td>
                                 {{$pengesahan_projek->alamatProjek}}
@@ -60,23 +63,23 @@
                                 <div
                                     class="col-auto mb-2 px-0"
                                         style="border: 1px solid #F4A258; box-shadow: inset 2px 2px 5px 2px lightgrey; background-color: white; z-index: 2; border-radius:5px;">
-                                        @if ($pengesahan_projek->statusProjek == 'Dalam Proses')
-                                            <button class="btn btn-orange-jkr" type="button">DALAM PROSES</button>
+                                        @if ($pengesahan_projek->statusProjek == 'Lulus')
+                                            <button class="btn btn-orange-jkr" type="button">LULUS</button>
                                         @else
                                             <button class="btn btn-final" type="button" data-bs-toggle="modal"
-                                                data-bs-target="#dalamproses">DALAM PROSES</button>
+                                                data-bs-target="#lulus">LULUS</button>
                                         @endif
                                             
-                                        @if ($pengesahan_projek->statusProjek == 'Disemak')
-                                            <button class="btn btn-orange-jkr" type="button">DISEMAK</button>
+                                        @if ($pengesahan_projek->statusProjek == 'Gagal')
+                                            <button class="btn btn-orange-jkr" type="button">GAGAL</button>
                                         @else
                                             <button class="btn btn-final" type="button" data-bs-toggle="modal"
-                                                data-bs-target="#disemak">DISEMAK</button>
+                                                data-bs-target="#gagal">GAGAL</button>
                                         @endif
 
                                 </div>
                                 {{-- lulus modal --}}
-                                         <div class="modal fade" id="dalamproses" tabindex="-1" role="dialog" aria-hidden="true">
+                                         <div class="modal fade" id="gagal" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
                                                 <div class="modal-content position-relative">
                                                     <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
@@ -87,11 +90,11 @@
 
                                                         <div class="p-4 text-center">
                                                             <h5 class="h5 text-green-jkr">Adakah anda mahu tolak projek ini?</h5>
-                                                            <form action="/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/{{ $pengesahan_projek->id }}"
+                                                            <form action="/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek_simpan/{{ $pengesahan_projek->id }}"
                                                                 method="post">
-                                                                @method('PUT')
+                                                                @method('POST')
                                                                 @csrf
-                                                                <input type="hidden" name="statusProjek" value="Dalam Proses">
+                                                                <input type="hidden" name="statusProjek" value="Gagal">
                                                                 <button class="btn btn-outline-green-jkr mt-3" type="button"
                                                                     data-bs-dismiss="modal">TIDAK</button>
                                                                 <button class="btn btn-green-jkr mt-3" type="submit">YA</button>
@@ -103,7 +106,7 @@
                                         </div> 
 
                                         {{-- tolak modal --}}
-                                         <div class="modal fade" id="disemak" tabindex="-1" role="dialog" aria-hidden="true">
+                                         <div class="modal fade" id="lulus" tabindex="-1" role="dialog" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 500px">
                                                 <div class="modal-content position-relative">
                                                     <div class="position-absolute top-0 end-0 mt-2 me-2 z-index-1">
@@ -114,11 +117,11 @@
 
                                                         <div class="p-4 text-center">
                                                             <h5 class="h5 text-green-jkr">Adakah anda pasti sahkan projek ini?</h5>
-                                                            <form action="/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/{{ $pengesahan_projek->id }}"
+                                                            <form action="/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek_simpan/{{ $pengesahan_projek->id }}"
                                                                 method="post">
-                                                                @method('PUT')
+                                                                @method('POST')
                                                                 @csrf
-                                                                <input type="hidden" name="statusProjek" value="Disemak">
+                                                                <input type="hidden" name="statusProjek" value="Lulus">
                                                                 <button class="btn btn-outline-green-jkr mt-3" type="button"
                                                                     data-bs-dismiss="modal">TIDAK</button>
                                                                 <button class="btn btn-green-jkr mt-3" type="submit">Ya</button>

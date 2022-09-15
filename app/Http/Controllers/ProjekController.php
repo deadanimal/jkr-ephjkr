@@ -205,20 +205,20 @@ class ProjekController extends Controller
         //dd('fd');
         $pengesahan_projek = Projek::find($id);
         return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit',[
-            'pengesahan_projek' => Projek::with('status')->get()
+            'pengesahan_projek' => $pengesahan_projek
         ]);
-
-                // return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit', [
-                //     'pengesahan_projek' => Projek::with('status')->get()
-                // ]);
-
-    //     // $pengesahan_projek = Projek::find($id);
-        
-        //  return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit', [
-        //      'pengesahan_projek' => Projek::with('status')->get()
-        //  ]);
                 
-             }
+    }
+
+    public function pengesahanprojek_simpan(UpdateProjekRequest $request, $id)
+    {
+        //dd('projek');
+        $pengesahan_projek = Projek::find($id);
+        $pengesahan_projek->statusProjek = $request->statusProjek;
+        $pengesahan_projek->save();
+        alert()->success('Pengesahan pengguna telah berjaya', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek');
+    }
 
     public function pengesahanprojek_create(){
     //dd('fd');

@@ -37,6 +37,7 @@
                     <table class="table datatable table-striped" style="width:100%">
                         <thead class="bg-primary">
                             <tr>
+                                <th class="sort">Bil.</th>
                                 <th class="sort">ID Projek</th>
                                 <th class="sort">Nama Projek</th>
                                 <th class="sort">Alamat Projek</th>
@@ -49,6 +50,7 @@
                             @foreach ($pengesahan_projek as $ppp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $ppp->id }}</td>
                                     <td>{{ $ppp->namaProjek }}</td>
                                     <td>{{ $ppp->alamatProjek }}</td>
                                     <td>{{ $ppp->statusProjek }}</td>
@@ -77,7 +79,7 @@
                                                         data-bs-target="#gagal">GAGAL</button>
                                                 @endif
         
-                                        </div> --}}
+                                        </div>  --}}
                                     </td>
                                 </tr>
                             @endforeach

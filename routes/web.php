@@ -121,6 +121,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek', [ProjekController::class, 'pengesahanprojek']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/create', [ProjekController::class, 'pengesahanprojek_create']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/edit/{id}', [ProjekController::class, 'pengesahanprojek_edit']);
+    Route::post('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek_simpan/{id}', [ProjekController::class, 'pengesahanprojek_simpan']);
     
 
     // Penilaian Reka Bentuk Bangunan
