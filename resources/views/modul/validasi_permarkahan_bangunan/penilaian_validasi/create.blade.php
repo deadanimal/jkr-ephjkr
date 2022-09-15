@@ -2939,5 +2939,137 @@
                 }
             }
             </script> --}}
+
+            <!--calculation lain test sat 123-->
+            <script>
+                function findTotalML_TL(){
+                    var totalML_TL = document.getElementById('totalML_TL');
+                    var ML_TL = document.getElementsByClassName('ML_TL');
+                    var sumML_TL = 0;
+
+                    for( var i = 0; i < ML_TL.length; i++ ){
+                        sumML_TL += Number(ML_TL[i].value);
+
+                    //display the total of inputs
+                    totalML_TL.innerText = sumML_TL;
+                }
+                    document.getElementById('totalML_TL').value = sumML_TL;
+                }
+
+                function findTotalML_KT(){
+                    var totalML_KT = document.getElementById('totalML_KT');
+                    var ML_KT = document.getElementsByClassName('ML_KT');
+                    var sumML_KT = 0;
+
+                    for( var i = 0; i < ML_KT.length; i++ ){
+                        sumML_KT += Number(ML_KT[i].value);
+
+                    //display the total of inputs
+                    totalML_KT.innerText = sumML_KT;
+                    }
+                    document.getElementById('totalML_KT').value = sumML_KT;
+                }
+
+                function findTotalML_SB(){
+                    var totalML_SB = document.getElementById('totalML_SB');
+                    var ML_SB = document.getElementsByClassName('ML_SB');
+                    var sumML_SB = 0;
+
+                    for( var i = 0; i < ML_SB.length; i++ ){
+                        sumML_SB += Number(ML_SB[i].value);
+
+                    //display the total of inputs
+                    totalML_SB.innerText = sumML_SB;
+                    }
+                    document.getElementById('totalML_SB').value = sumML_SB;
+                }
+
+                function findTotalML_PA(){
+                    var totalML_PA = document.getElementById('totalML_PA');
+                    var ML_PA = document.getElementsByClassName('ML_PA');
+                    var sumML_PA = 0;
+
+                    for( var i = 0; i < ML_PA.length; i++ ){
+                        sumML_PA += Number(ML_PA[i].value);
+
+                    //display the total of inputs
+                    totalML_PA.innerText = sumML_PA;
+                    }
+                    document.getElementById('totalML_PA').value = sumML_PA;
+                }
+
+                function findTotalML_PD(){
+                    var totalML_PD = document.getElementById('totalML_PD');
+                    var ML_PD = document.getElementsByClassName('ML_PD');
+                    var sumML_PD = 0;
+
+                    for( var i = 0; i < ML_PD.length; i++ ){
+                        sumML_PD += Number(ML_PD[i].value);
+
+                    //display the total of inputs
+                    totalML_PD.innerText = sumML_PD;
+                    }
+                    document.getElementById('totalML_PD').value = sumML_PD;
+                }
+
+                function findTotalML_FL(){
+                    var totalML_FL = document.getElementById('totalML_FL');
+                    var ML_FL = document.getElementsByClassName('ML_FL');
+                    var sumML_FL = 0;
+
+                    for( var i = 0; i < ML_FL.length; i++ ){
+                        sumML_FL += Number(ML_FL[i].value);
+
+                    //display the total of inputs
+                    totalML_FL.innerText = sumML_FL;
+                    }
+                    document.getElementById('totalML_FL').value = sumML_FL;
+                }
+
+
+                function findTotalML_IN(){
+                    var totalML_IN = document.getElementById('totalML_IN');
+                    var ML_IN = document.getElementsByClassName('ML_IN');
+                    var sumML_IN = 0;
+
+                    for( var i = 0; i < ML_IN.length; i++ ){
+                        sumML_IN += Number(ML_IN[i].value);
+
+                    //display the total of inputs
+                    totalML_IN.innerText = sumML_IN;
+                    }
+                    document.getElementById('totalML_IN').value = sumML_IN;
+                }
+
+
+
+                function findTotalMS(){
+                    var TL = document.getElementById('totalMS_TL').value = sumMS_TL;
+                    var KT = document.getElementById('totalMS_KT').value = sumMS_KT;
+                    // var TL = sumMS_TL.innerText || 0;
+                    // var KT = sumMS_KT.innerText || 0;
+                    // var SB = sumMS_SB.innerText || 0;
+                    // var PA = sumMS_PA.innerText || 0;
+                    // var PD = sumMS_PD.innerText || 0;
+                    // var FL = sumMS_FL.innerText || 0;
+                    // var IN = sumMS_IN.innerText || 0;
+                    // document.getElementById('total').innerText = Number(TL) + Number(KT);
+
+                    // + Number(SB) + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+                    document.getElementById('totalMS').value = Number(TL) + Number(KT);
+                }
+
+                document.addEventListener('keyup', function(){
+                    findTotalMS_TL();
+                    findTotalMS_KT();
+                    // findTotalMS_SB();
+                    // findTotalMS_PA();
+                    // findTotalMS_PD();
+                    // findTotalMS_FL();
+                    // findTotalMS_IN();
+                    findTotalMS();
+                });
+            </script>
+
             
 @endsection
