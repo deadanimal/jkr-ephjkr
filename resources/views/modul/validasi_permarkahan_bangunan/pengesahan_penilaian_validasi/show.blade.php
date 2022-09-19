@@ -92,7 +92,7 @@
 <div class="container-fluid">
     <div class="card-body">
         <div class="table-responsive scrollbar">
-            <form action="/validasi_permarkahan_bangunan/penilaian_validasi/{id}" method="post" enctype="multipart/form-data">
+            <form action="/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi/{id}" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('POST')
 
@@ -2215,68 +2215,68 @@
                             </tr> 
                     </table>
 
-                    <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                    <!--Button Tolak/Sah-->
+                    <div class="mt-3 text-center">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" 
+                        title="Tolak" type="submit">Tolak</button>
+                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
+                        title="Sah" type="submit">Sah</button>
+                    </div>
+
         </div>          <!--Scrollbar-->
 
 
                     <!--Button Simpan (TOOLTIPS)-->
                     <!--Page 1-->
                     <div class="mt-3 text-center pg-1">
-                        <button class="btn btn-primary pg-1" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-1" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button2()" type="submit">Seterusnya</button>
                     </div>
-                    <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Kemas kini</button>
-                        <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Hantar</button>
 
                     <!--Page 2-->
                     <div class="mt-3 text-center pg-2">
-                        <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button1()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 3-->
                     <div class="mt-3 text-center pg-3">
-                        <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button2()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 4-->
                     <div class="mt-3 text-center pg-4">
-                        <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button3()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 5-->
                     <div class="mt-3 text-center pg-5">
-                        <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button4()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 6-->
                     <div class="mt-3 text-center pg-6">
-                        <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button5()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 7-->
                     <div class="mt-3 text-center pg-7">
-                        <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-7" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button6()" type="submit">Kembali</button>
                     </div>
 
 

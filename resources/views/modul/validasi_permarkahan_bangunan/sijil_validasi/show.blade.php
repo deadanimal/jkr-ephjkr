@@ -25,7 +25,7 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" value="{{$pemudah_cara ?? ''}}"/>   
+                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" placeholder="Hospital Seri Iskandar" value="{{$pemudah_cara ?? ''}}"/>   
                     </div>                     
             </div>
 
@@ -33,7 +33,7 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">ID Rujukan Skala:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" value="{{$pemudah_cara ?? ''}}"/>  
+                        <input class="form-control" type="text" autocapitalize="off" name="id_ruj_skala" placeholder="SKL0202" value="{{$pemudah_cara ?? ''}}"/>  
                     </div>                      
             </div>
 
@@ -41,7 +41,7 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">No. Tel:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{$pemudah_cara ?? ''}}"/>   
+                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" placeholder="Mukah" value="{{$pemudah_cara ?? ''}}"/>   
                     </div>                         
             </div>
 
@@ -49,7 +49,7 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Kos Projek Semasa:</label>
                     <div class="col-sm-5">
-                        <input class="form-control" type="number" autocapitalize="off" name="kosProjek" value="{{$pemudah_cara ?? ''}}"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="kosProjek" placeholder="RM5,000,000.00" value="{{$pemudah_cara ?? ''}}"/>                        
                     </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                         <th>24</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_ML}}</th>
 
                     </tr>
                     <tr align="center" class="text-black" >
@@ -96,7 +96,7 @@
                         <th>24</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_ML}}</th>
 
                     </tr>
 
@@ -109,7 +109,7 @@
                         <th>24</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_ML}}</th>
 
                     </tr>
 
@@ -122,7 +122,7 @@
                         <th>24</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_ML}}</th>
 
                     </tr>
 
@@ -135,7 +135,7 @@
                         <th>24</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_ML}}</th>
                     
                     </tr>
 
@@ -148,7 +148,7 @@
                         <th>24</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_ML}}</th>
 
                     </tr>
 
@@ -161,7 +161,7 @@
                         <th>24</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_ML}}</th>
                 
                     </tr>
 
@@ -173,7 +173,7 @@
                         <th>103</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>0</th>
+                        <th>{{$kriteria_phjkr_bangunan->markahML}}</th>
                 
                     </tr>
         
@@ -257,11 +257,6 @@
     
     <!--Button Jana Sijil-->
     <div class="mb-3 text-center">
-    <button class="btn btn-primary">Jana</button>
+    <button class="btn btn-primary">Muat Turun</button>
     </div>
-            
-                
-
-
-
 @endsection

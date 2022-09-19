@@ -606,11 +606,11 @@
                             </li>
                             {{-- BANGUNAN (Validasi) Papar dan Muat Turun Skor --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/semakan_rawak') ? 'active' : '' }} py-0"
-                                    href="/validasi_permarkahan_bangunan/semakan_rawak">
+                                <a class="nav-link {{ Request::is('validasi_permarkahan_bangunan/muat_turun_skor') ? 'active' : '' }} py-0"
+                                    href="/validasi_permarkahan_bangunan/muat_turun_skor">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/semakan_rawak') ? 'text-dark' : '' }}">Papar dan Muat 
+                                            class="px-0 {{ Request::is('validasi_permarkahan_bangunan/muat_turun_skor') ? 'text-dark' : '' }}">Papar dan Muat 
                                             Turun Skor</span>
                                     </div>
                                 </a>

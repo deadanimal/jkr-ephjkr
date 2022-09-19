@@ -134,7 +134,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian']);
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian']);
     Route::put('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
-    // Route::post('/penilaian_reka_bentuk_bangunan/simpan_skor/{id}', [PenilaianRekaBentukBangunanController::class, 'dokumen_sokongan']);
+
+    // Upload File
+    // Route::get('/penilaian_reka_bentuk_bangunan/dokumen_sokongan', [PenilaianRekaBentukBangunanController::class, 'dokumen_sokongan']);
 
 
 
@@ -244,8 +246,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/verifikasi_permarkahan_bangunan/simpan_skor/{id}', [VerifikasiPermarkahanBangunanController::class, 'simpan_skor_penilaian']);
     Route::get('/verifikasi_permarkahan_bangunan/pengesahan_penilaian', [VerifikasiPermarkahanBangunanController::class, 'pengesahan_penilaian']);
     Route::get('/verifikasi_permarkahan_bangunan/pengesahan_penilaian/{id}', [VerifikasiPermarkahanBangunanController::class, 'papar_pengesahan_penilaian']);
-    Route::post('/verifikasi_permarkahan_bangunan/pengesahan_penilaian/{id}', [VerifikasiPermarkahanBangunanController::class, 'simpan_pengesahan_penilaian']);
-    // Route::put('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
+    // Route::post('/verifikasi_permarkahan_bangunan/pengesahan_penilaian/{id}', [VerifikasiPermarkahanBangunanController::class, 'simpan_pengesahan_penilaian']);
+    Route::put('/verifikasi_permarkahan_bangunan/pengesahan_penilaian/{id}', [VerifikasiPermarkahanBangunanController::class, 'simpan_pengesahan_penilaian']);
     Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak', [VerifikasiPermarkahanBangunanController::class, 'semakan_rawak']);
     Route::get('/verifikasi_permarkahan_bangunan/semakan_rawak/{id}', [VerifikasiPermarkahanBangunanController::class, 'papar_semakan_rawak']);
     Route::post('/verifikasi_permarkahan_bangunan/semakan_rawak/{id}',  [VerifikasiPermarkahanBangunanController::class, 'simpan_semakan_rawak']);
@@ -265,6 +267,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/validasi_permarkahan_bangunan/melantik_pasukan_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'melantik_pasukan_validasi']);
     Route::get('/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi', [ValidasiPermarkahanBangunanController::class, 'pengesahan_penilaian_validasi']);
     Route::get('/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_pengesahan_penilaian_validasi']);
+    Route::post('/validasi_permarkahan_bangunan/pengesahan_penilaian_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_pengesahan_penilaian_validasi']);
     Route::get('/validasi_permarkahan_bangunan/jana_keputusan', [ValidasiPermarkahanBangunanController::class, 'jana_keputusan']);
     Route::get('/validasi_permarkahan_bangunan/jana_keputusan/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_jana_keputusan']);
     Route::get('/validasi_permarkahan_bangunan/pengesahan_rayuan', [ValidasiPermarkahanBangunanController::class, 'pengesahan_rayuan']);
@@ -287,6 +290,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/validasi_permarkahan_bangunan/borang_validasi', [ValidasiPermarkahanBangunanController::class, 'borang_validasi']);
     Route::get('/validasi_permarkahan_bangunan/borang_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_borang_validasi']);
     Route::put('/validasi_permarkahan_bangunan/borang_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'kemaskini_borang_validasi']);
+
+    // Sekretariat
+    // Sijil Validasi
+    Route::get('/validasi_permarkahan_bangunan/sijil_validasi', [ValidasiPermarkahanBangunanController::class, 'sijil_validasi']);
+    Route::get('/validasi_permarkahan_bangunan/sijil_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_sijil_validasi']);
+    Route::post('/validasi_permarkahan_bangunan/sijil_validasi/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_sijil_validasi']);
+
+    Route::get('/validasi_permarkahan_bangunan/muat_turun_skor', [ValidasiPermarkahanBangunanController::class, 'muat_turun_skor']);
+    Route::get('/validasi_permarkahan_bangunan/muat_turun_skor/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_muat_turun_skor']);
+    Route::post('/validasi_permarkahan_bangunan/muat_turun_skor/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_muat_turun_skor']);
 
 
 

@@ -7,7 +7,7 @@
 
 <div class="header">
     Penilaian Reka Bentuk Bangunan 
-        <b class="pengesahan-penilaian">> Jana Keputusan Skor Kad</b>
+        <b class="pengesahan-penilaian">> Jana Sijil</b>
 
     <h1 class="header-title">
         PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
@@ -61,7 +61,7 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_keputusan/{{$k->id}}" role="button"
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/sijil_validasi/{{$k->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 

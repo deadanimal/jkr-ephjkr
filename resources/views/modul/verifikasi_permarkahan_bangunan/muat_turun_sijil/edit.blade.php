@@ -28,101 +28,100 @@
                             </tr>
                         </thead>
 
-                        <tr align="center" class="text-black" >
-                            <th>TL</th>
-                            <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
+                            <tr align="center" class="text-black" >
+                                <th>TL</th>
+                                <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
+                                <th>26</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>24</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MSV}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MMV}}</th>
+                                <th>0</th>
+                            </tr>
+                            <tr align="center" class="text-black" >
+                                <th>KT</th>
+                                <th colspan="2">Pengurusan Kecekapan Tenaga</th>
+                                <th>26</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>24</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MSV}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MMV}}</th>
+                                <th>0</th>
+                            </tr>
 
-                        <tr align="center" class="text-black" >
-                            <th>KT</th>
-                            <th colspan="2">Pengurusan Kecekapan Tenaga</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
+                            <tr align="center" class="text-black" >
+                                <th>SB</th>
+                                <th colspan="2">Pengurusan Sumber dan Bahan</th>
+                                <th>26</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>24</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MSV}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MMV}}</th>
+                                <th>0</th>
+                            </tr>
 
-                        <tr align="center" class="text-black" >
-                            <th>SB</th>
-                            <th colspan="2">Pengurusan Sumber dan Bahan</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
+                            <tr align="center" class="text-black" >
+                                <th>PA</th>
+                                <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
+                                <th>26</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>24</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MSV}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MMV}}</th>
+                                <th>0</th>
+                            </tr>
 
-                        <tr align="center" class="text-black" >
-                            <th>PA</th>
-                            <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
+                            <tr align="center" class="text-black" >
+                                <th>PD</th>
+                                <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
+                                <th>26</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>24</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MSV}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MMV}}</th>
+                                <th>0</th>
+                            </tr>
 
-                        <tr align="center" class="text-black" >
-                            <th>PD</th>
-                            <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
+                            <tr align="center" class="text-black" >
+                                <th>FL</th>
+                                <th colspan="2">Pengurusan Fasiliti Lestari</th>
+                                <th>26</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>24</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MSV}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MMV}}</th>
+                                <th>0</th>
+                            </tr>
 
-                        <tr align="center" class="text-black" >
-                            <th>FL</th>
-                            <th colspan="2">Pengurusan Fasiliti Lestari</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
+                            <tr align="center" class="text-black" >
+                                <th>IN</th>
+                                <th colspan="2">Inovasi dalam Reka Bentuk</th>
+                                <th>26</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>24</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MSV}}</th>
+                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MMV}}</th>
+                                <th>0</th>
+                            </tr>
 
-                        <tr align="center" class="text-black" >
-                            <th>IN</th>
-                            <th colspan="2">Inovasi dalam Reka Bentuk</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th colspan="3">JUMLAH</th>
-                            <th>101</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>103</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-                    </table> <!--Table Jenis Pembangunan-->
+                            <tr align="center" class="text-black" >
+                                <th colspan="3">JUMLAH</th>
+                                <th>101</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>103</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+                    </table>
                 </div> <!--row mx-3-->
             
 

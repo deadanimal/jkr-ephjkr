@@ -72,14 +72,12 @@ thead {
     </thead>
        
     <tbody>
-        <tr class="pg-1">
-            {{-- @foreach ($kriteria_phjkr_bangunan as $k) --}}
-                
-            
+
+        <!--TL1-->
+        <tr class="pg-1"> 
             <td>TL1</td>
             <td>Perancangan Tapak</td>
             <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
-            {{-- <td>{{$k->jenisKategori}}</td> --}}
             <td>3</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL1_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL1_MR}}</td>
@@ -93,11 +91,12 @@ thead {
 
             {{-- @endforeach --}}
         </tr>
+
+        <!--TL2-->
         <tr class="pg-1">
             <td>TL2</td>
             <td>Sistem Pengurusan Alam Sekitar (SPAS)</td>
-            <td></td>
-            {{-- <td>{{$k->jenisKategori}}</td> --}}
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
             <td>3</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL2_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL2_MR}}</td>
@@ -117,7 +116,7 @@ thead {
         <tr class="pg-1">
             <td rowspan="2">TL3</td>
                     <td>i. Pemotongan dan Penambakan tanah</td>
-                    <td rowspan="2">A</td>
+                    <td rowspan="2">{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
                     <td>3</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL3_MS}}</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL3_MR}}</td>
@@ -164,10 +163,12 @@ thead {
                     </td>
                     <td></td>
         </tr>
+
+        <!--TL4-->
         <tr class="pg-1">
             <td>TL4</td>
                     <td>Pelan Kawalan Hakisan & Kelodak (ESCP)</td>
-                    <td>A</td>
+                    <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
                     <td>1</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL4_MS}}</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL4_MR}}</td>
@@ -183,10 +184,12 @@ thead {
                     </td>
                     <td></td>
         </tr>
+
+        <!--TL5-->
         <tr class="pg-1">
             <td>TL5</td>
                     <td>Pemuliharaan dan Pemeliharaan Cerun</td>
-                    <td>A</td>
+                    <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
                     <td>1</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL5_MS}}</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL5_MR}}</td>
@@ -203,10 +206,11 @@ thead {
                     <td></td>
         </tr>
 
+        <!--TL6-->
         <tr class="pg-1">
             <td>TL6</td>
                     <td>Pengurusan Air Larian Hujan</td>
-                    <td>A</td>
+                    <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
                     <td>3</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL6_MS}}</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL6_MR}}</td>
@@ -229,6 +233,7 @@ thead {
                     <td></td>
         </tr>
     
+        <!--TL8-->
         <tr class="pg-1">
             <td>TL8</td>
                     <td>Landskap strategik</td>
@@ -244,10 +249,12 @@ thead {
                     <td></td>
                     <td></td>
         </tr>
+
+        <!--TL8.1-->
         <tr class="pg-1">
             <td>TL8.1</td>
                     <td>Memelihara dan menyenggara pokok yang matang</td>
-                    <td>A</td>
+                    <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
                     <td>3</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL81_MS}}</td>
                     <td>{{$kriteria_phjkr_bangunan->markahTL81_MR}}</td>
@@ -266,10 +273,12 @@ thead {
                     </td>
                     <td></td>
         </tr>
+
+        <!--TL8.2-->
         <tr class="pg-1">
             <td>TL8.2</td>
                             <td>Menyediakan kawasan hijau</td>
-                            <td>A</td>                            
+                            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>                            
                             <td>3</td>
                             <td>{{$kriteria_phjkr_bangunan->markahTL82_MS}}</td>
                             <td>{{$kriteria_phjkr_bangunan->markahTL82_MR}}</td>
@@ -288,9 +297,12 @@ thead {
                             </td>
                             <td></td>
         </tr>
+
+        <!--TL8.3-->
         <tr class="pg-1">
             <td>TL8.3</td>
             <td>Menyedia dan menyenggara penanaman pokok teduhan</td>
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
             <td>1</td>                            
             <td>{{$kriteria_phjkr_bangunan->markahTL83_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL83_MR}}</td>
@@ -311,11 +323,14 @@ thead {
             </td>
             <td></td>
         </tr>
+
+        <!--TL8.4-->
         <tr class="pg-1">
             <td>TL8.4</td>
             <td>Pemilihan bahan binaan siarkaki (walkway) yang mempunyai daya pantulan
                                 haba yang tinggi
             </td>
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
             <td>1</td>                            
             <td>{{$kriteria_phjkr_bangunan->markahTL84_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL84_MR}}</td>
@@ -333,9 +348,12 @@ thead {
             </td>
             <td></td>
         </tr>
+
+        <!--TL8.5-->
         <tr class="pg-1">
             <td>TL8.5</td>
                             <td>Menyedia dan menyenggara sistem turapan berumput</td>
+                            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
                             <td>1</td>                            
                             <td>{{$kriteria_phjkr_bangunan->markahTL85_MS}}</td>
                             <td>{{$kriteria_phjkr_bangunan->markahTL85_MR}}</td>
@@ -356,6 +374,8 @@ thead {
                             </td>
                             <td></td>
         </tr>
+
+        <!--TL9-->
         <tr class="pg-1">
             <td>TL9</td>
                             <td>Bumbung Hijau & Dinding Hijau</td>
@@ -371,11 +391,13 @@ thead {
                             <td></td>
                             <td></td>
         </tr>
+
+        <!--TL9.1-->
         <tr class="pg-1">
             <td>TL9.1</td>
             <td>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
             </td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL91_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahTL91_MR}}</td>
@@ -395,11 +417,13 @@ thead {
             <td></td> 
 
         </tr>
+
+        <!--TL9.2-->
         <tr class="pg-1">
             <td>TL9.2</td>
                             <td>Menggalakkan rekabentuk bumbung/dinding hijau
                             </td>
-                            <td>A</td>
+                            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahTL92_MS}}</td>
                             <td>{{$kriteria_phjkr_bangunan->markahTL92_MR}}</td>
@@ -474,8 +498,8 @@ thead {
     <tr class="pg-2">
         <td>KT1</td>
         <td>Rekabentuk bumbung</td>
-        <td>A</td> 
-        <td></td>
+        <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
+        <td>1</td>
         <td>{{$kriteria_phjkr_bangunan->markahKT1_MS}}</td>
         <td>{{$kriteria_phjkr_bangunan->markahKT1_MR}}</td>
         <td><td>
@@ -497,7 +521,7 @@ thead {
     <tr class="pg-2">
         <td>KT2</td>
             <td>Orientasi bangunan</td>
-            <td>A</td> 
+            <td></td> 
             <td></td>
             <td></td>
             <td></td>
@@ -520,7 +544,7 @@ thead {
     <tr class="pg-2">
         <td>KT2.1</td>
             <td>Fasad Utama bangunan yang menghadap orientasi utara-selatan</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT21_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT21_MR}}</td>
@@ -542,7 +566,7 @@ thead {
     <tr class="pg-2">
         <td>KT2.2</td>
             <td>Meminimumkan bukaan pada fasad yang menghadap timur dan barat</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT22_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT22_MR}}</td>
@@ -558,14 +582,14 @@ thead {
             <td></td>
     </tr>
     
-    <!--KT3-->
+    <!--KT3--><!--NO INPUT-->
     <tr class="pg-2">
         <td>KT3</td>
             <td>Rekabentuk fasad</td>
-            <td>A</td> 
-            <td>1</td>
-            <td>{{$kriteria_phjkr_bangunan->markahKT3_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahKT3_MR}}</td>
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td>
             <td><td>
             <td></td>
             <td></td>
@@ -585,7 +609,7 @@ thead {
     <tr class="pg-2">
         <td>KT3.1</td>
             <td>Dinding luar bangunan</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT31_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT31_MR}}</td>
@@ -593,12 +617,8 @@ thead {
             <td></td>
             <td></td>
             <td>
-                <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
-                <span>&#183; Pengiraan U-Value bagi rekabentuk dinding</span><br>
             </td>
             <td>
-                <span>&#183; Katalog bahan yang diluluskan untuk pembinaan</span><br>
-                <span>&#183; Pengiraan U-Value yang disahkan</span><br>
             </td> 
             <td></td>
     </tr>
@@ -607,7 +627,7 @@ thead {
     <tr class="pg-2">
         <td>KT3.2</td>
             <td>Pengadang Suria Luaran</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT32_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT32_MR}}</td>
@@ -628,7 +648,7 @@ thead {
     <tr class="pg-2">
         <td>KT4</td>
             <td>OTTV & RTTV</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT4_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT4_MR}}</td>
@@ -648,7 +668,7 @@ thead {
     <tr class="pg-2">
         <td>KT5</td>
             <td>Kecekapan pencahayaan</td>
-            <td>A</td> 
+            <td></td> 
             <td></td>
             <td></td>
             <td></td>
@@ -671,7 +691,7 @@ thead {
     <tr class="pg-2">
         <td>KT5.2</td>
             <td>Kawalan Pencahayaan</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT52_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT52_MR}}</td>
@@ -693,7 +713,7 @@ thead {
     <tr class="pg-2">
         <td>KT8</td>
             <td>Tenaga Boleh Baharu (TBB)</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT8_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT8_MR}}</td>
@@ -715,7 +735,7 @@ thead {
     <tr class="pg-2">
         <td>KT11</td>
             <td>Pengujian dan pentauliahan</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT11_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahKT11_MR}}</td>
@@ -785,7 +805,7 @@ thead {
     <tr class="pg-3">
         <td>SB1</td>
             <td>Sistem Binaan Berindustri (IBS)</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahSB1_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahSB2_MS}}</td>
@@ -807,7 +827,7 @@ thead {
     <tr class="pg-3">
         <td>SB2</td>
             <td>Produk hijau</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahSB2_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahSB2_MR}}</td>
@@ -831,7 +851,7 @@ thead {
     <tr class="pg-3">
         <td>SB3</td>
             <td>Pengurusan sisa semasa pembinaan</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahSB3_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahSB3_MR}}</td>
@@ -860,7 +880,8 @@ thead {
     <tr class="pg-3">
         <td>SB4</td>
             <td>3r-Semasa Operasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
+            <td>1</td> 
             <td>{{$kriteria_phjkr_bangunan->markahSB4_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahSB4_MR}}</td>
             <td></td>
@@ -929,7 +950,8 @@ thead {
     <tr class="pg-4">
         <td>PA1</td>
             <td>Produk Kecekapan Air</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
+            <td>1</td> 
             <td>{{$kriteria_phjkr_bangunan->markahPA1_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPA1_MR}}</td>
             <td></td>
@@ -951,7 +973,7 @@ thead {
     <tr class="pg-4">
         <td>PA2</td>
             <td>Penjimatan Penggunaan Air Dalam Bangunan</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPA2_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPA2_MR}}</td>
@@ -972,8 +994,8 @@ thead {
     <!--PA3-->
     <tr class="pg-4">
         <td rowspan="2">PA3</td>
-            <td>Rekabentuk bumbung</td>
-            <td>i. SPAH</td> 
+            <td>i. SPAH</td>
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPA3_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPA3_MR}}</td>
@@ -993,8 +1015,8 @@ thead {
 
     <!--PA3 PART2-->
     <tr class="pg-4">
-        {{-- <td>PA3</td> --}}
             <td>ii. Kitar Semula Air Sisa</td>
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td>
             <td>1</td> 
             <td>{{$kriteria_phjkr_bangunan->markahPA32_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPA32_MR}}</td>
@@ -1070,7 +1092,7 @@ thead {
     <tr class="pg-5">
         <td>PD2</td>
             <td>Perancangan ruang</td>
-            <td>A</td> 
+            <td></td> 
             <td></td>
             <td></td>
             <td></td>
@@ -1093,7 +1115,7 @@ thead {
     <tr class="pg-5">
         <td>PD2.4</td>
             <td>Ketinggian siling yang efektif</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD24_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD24_MR}}</td>
@@ -1114,7 +1136,7 @@ thead {
     <tr class="pg-5">
         <td>PD2.5</td>
             <td>Warna cerah di permukaan dinding dan siling</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD25_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD25_MR}}</td>
@@ -1134,7 +1156,7 @@ thead {
     <tr class="pg-5">
         <td>PD3</td>
             <td>Kualiti Visual</td>
-            <td>A</td> 
+            <td></td> 
             <td></td>
             <td></td>
             <td></td>
@@ -1152,7 +1174,7 @@ thead {
     <tr class="pg-5">
         <td>PD3.1</td>
             <td>Faktor Pencahayaan Siang (DF)</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD31_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD31_MR}}</td>
@@ -1175,7 +1197,7 @@ thead {
     <tr class="pg-5">
         <td>PD3.2</td>
             <td>Menggunakan rak cahaya (light shelves)</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD32_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD32_MR}}</td>
@@ -1199,7 +1221,7 @@ thead {
     <tr class="pg-5">
         <td>PD3.3</td>
             <td>Kawalan Tahap Kesilauan</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD33_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD33_MR}}</td>
@@ -1221,7 +1243,7 @@ thead {
     <tr class="pg-5">
         <td>PD3.4</td>
             <td>Akses visual kepada pandangan di luar</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD34_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD34_MR}}</td>
@@ -1245,7 +1267,7 @@ thead {
     <tr class="pg-5">
         <td>PD8</td>
             <td>Kualiti Udara Dalaman (IAQ)</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD8_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD8_MR}}</td>
@@ -1269,7 +1291,7 @@ thead {
     <tr class="pg-5">
         <td>PD10</td>
             <td>Kaji Selidik Keselesaan Penghuni</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD10_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahPD10_MR}}</td>
@@ -1334,7 +1356,7 @@ thead {
     <tr class="pg-6">
         <td>FL1</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL1_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL1_MR}}</td>
@@ -1356,7 +1378,7 @@ thead {
     <tr class="pg-6">
         <td>FL2</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL2_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL2_MR}}</td>
@@ -1378,7 +1400,7 @@ thead {
     <tr class="pg-6">
         <td>FL2.1</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL21_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL21_MR}}</td>
@@ -1400,7 +1422,7 @@ thead {
     <tr class="pg-6">
         <td>FL2.2</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL22_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL22_MR}}</td>
@@ -1422,7 +1444,7 @@ thead {
     <tr class="pg-6">
         <td>FL2.3</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL23_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL23_MR}}</td>
@@ -1444,7 +1466,7 @@ thead {
     <tr class="pg-6">
         <td>FL3</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL3_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL3_MR}}</td>
@@ -1466,7 +1488,7 @@ thead {
     <tr class="pg-6">
         <td>FL3.1</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL31_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL31_MR}}</td>
@@ -1488,7 +1510,7 @@ thead {
     <tr class="pg-6">
         <td>FL3.2</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL32_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL32_MR}}</td>
@@ -1510,7 +1532,7 @@ thead {
     <tr class="pg-6">
         <td>FL3.3</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL33_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL33_MR}}</td>
@@ -1532,7 +1554,7 @@ thead {
     <tr class="pg-6">
         <td>FL3.4</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL34_MS}}</td>
             <td>{{$kriteria_phjkr_bangunan->markahFL34_MR}}</td>
@@ -1599,10 +1621,10 @@ thead {
     <tr class="pg-7">
         <td>IN1</td>
             <td>Reka Bentuk Inovasi</td>
-            <td>A</td> 
+            <td>{{$kriteria_phjkr_bangunan->jenisKategori}}</td> 
             <td>1</td>
             <td>{{$kriteria_phjkr_bangunan->markahIN1_MS}}</td>
-            <td>{{$kriteria_phjkr_bangunan->markahIN2_MR}}</td>
+            <td>{{$kriteria_phjkr_bangunan->markahIN1_MR}}</td>
             <td><td>
             <td></td>
             <td></td>
