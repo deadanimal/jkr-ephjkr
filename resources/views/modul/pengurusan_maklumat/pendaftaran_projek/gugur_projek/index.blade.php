@@ -58,7 +58,7 @@
                                             <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>
                                         </div>  --}}
                                         <div class="col-auto">
-                                            <form action="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/{{ $gp->id }}" method="post">
+                                            <form action="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create" >
                                                 @method('DELETE')
                                                 @csrf
                                                 <button type="submit" class="btn btn-primary">Gugur</button>

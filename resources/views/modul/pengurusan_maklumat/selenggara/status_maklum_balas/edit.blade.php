@@ -37,14 +37,14 @@
                         <label class="col-form-label">Maklum Balas Sekarang:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="status_maklum_balass" type="text" value="{{$status_maklum_balas->statusMaklumbalas}}"/>
+                        <textarea class="form-control" rows="3" name="status_maklum_balass" type="text" value="{{$status_maklum_balas->statusMaklumbalas}}"> </textarea>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Maklum Balas Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="statusMaklumbalas" type="text"/>
+                        <textarea class="form-control" rows="3" name="statusMaklumbalas" type="text"> </textarea>
                     </div>
                     
     
