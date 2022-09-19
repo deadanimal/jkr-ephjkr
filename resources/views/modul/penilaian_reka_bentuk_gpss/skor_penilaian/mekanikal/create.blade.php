@@ -1,8 +1,20 @@
 @extends('layouts.base')
 
 <link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
-
 @section('content')
+
+<style>
+  ul,li{
+  color: #5e6e82;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button
+  {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+</style>
 
  {{-- header --}}
  <div class="row">
@@ -27,7 +39,7 @@
 </div>
 
 <div class="row3 mx-1  text-center">
-  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
+  <form action= "/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_mekanikal/{id}" method="post" enctype="multipart/form-data">
     @method('POST')
       @csrf
 
@@ -42,7 +54,7 @@
               <th>No.</th>
               <th >Component</th>
               <th>Product</th>
-              <th>Point Allocated</th>
+              <th >Point Allocated</th>
               <th>Point Requested (design)</th>
               <th>Point Requested (construction)</th>
               <th>Point Awarded</th>
@@ -52,12 +64,12 @@
           <tbody>
             
             <tr class="text-center">
-              <td rowspan="3" >1</td>
-              <td rowspan="3">Water cooled chiller system</td>
-              <td >Compressor(Refrigerant)</td>
-              <td >2</td>
+              <td rowspan="5">1</td>
+              <td rowspan="5">Water cooled chiller system</td>
+              <td>Compressor <li>Refrigerant</li></td>
+              <td>2</td>
               <td>
-                <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwWaterSystemCompressor" id="MwWaterSystemCompressor">
+                <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwWaterSystemCompressor" id="MwWaterSystemCompressor">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
@@ -66,10 +78,10 @@
             </tr>
   
             <tr>
-              <td >Air side</td>
+              <td >Air side <li>Air handling unit</li></td>
               <td >2</td>
               <td>
-                <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwWaterSystemAirSide" id="MwWaterSystemAirSide">
+                <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwWaterSystemAirSide" id="MwWaterSystemAirSide">
                 
               </td>            
               <td>
@@ -79,25 +91,45 @@
             </tr>
   
             <tr>
-              <td >Water side</td>
+              <td>Water side 
+                <li>Pump</li>
+              </td>
               <td >2</td>
               <td>
-                <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwWaterSystemPump" id="MwWaterSystemPump">
+                <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwWaterSystemPump" id="MwWaterSystemPump">
               </td>            
               <td>
                 <input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
-  
+
+            <tr>
+              <td><li>Cooling tower</li></td>
+              <td>2</td>
+              <td><input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwWaterSystemCoolingTower" id="MwWaterSystemCoolingTower"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="text"></td>            
+              
+            </tr>
+
+            <tr>
+              <td><li>Electronic water descater</li></td>
+              <td>2</td>
+              <td><input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwWaterSystemElectronicWater" id="MwWaterSystemElectronicWater"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="text"></td>            
+            </tr>
   
             <tr class="text-center">
-                <td rowspan="2" >2</td>
-                <td rowspan="2">Multiple air-conditioning system</td>
-                <td >Compressor(Refrigerant)</td>
+                <td rowspan="3" >2</td>
+                <td rowspan="3">Multiple air-conditioning system</td>
+                <td >Compressor <li>Refrigerant</li></td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwACCompressor" id="MwACCompressor">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwACCompressor" id="MwACCompressor">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -106,21 +138,32 @@
               </tr>
   
             <tr>
-              <td >Air side</td>
+              <td >Air side <li>Air handling unit</li></td>
               <td >2</td>
-              <td><input onblur="markahPRAwSystem()" type="number" min="0" max="2" class="prawsystem " name="AwSystemBuiltToilet" id="AwSystemBuiltToilet"></td>            
+              <td><input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal " name="MwACAirHandling" id="MwACAirHandling"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
 
+            <tr>
+              <td><li>Outdoor unit</li></td>
+              <td>2</td>
+              <td><input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwACOutdoorUnit" id="MwACOutdoorUnit"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="number" min="0" max="2"></td>            
+              <td><input type="text"></td>            
+            </tr>
+
+          
+
             <tr class="text-center">
                 <td rowspan="1" >3</td>
                 <td rowspan="1">Split unit</td>
-                <td >Compressor(Refrigerant)</td>
+                <td >Compressor <li>Refrigerant</li></td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwSplitCompressor" id="MwSplitCompressor">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwSplitCompressor" id="MwSplitCompressor">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -134,7 +177,7 @@
                 <td >Lift motor</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwLiftMotor" id="MwLiftMotor">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwLiftMotor" id="MwLiftMotor">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -145,10 +188,10 @@
               <tr class="text-center">
                 <td rowspan="4" >5</td>
                 <td rowspan="4">Firefighting system</td>
-                <td >Clean agent</td>
+                <td >Clean agent <li>Mist</li></td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemMist" id="MwFireSystemMist">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwFireSystemMist" id="MwFireSystemMist">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -157,10 +200,10 @@
               </tr>
 
               <tr>
-                <td >Hose reel</td>
+                <td >Hose reel <li>Pump</li></td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemHosePump" id="MwFireSystemHosePump">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwFireSystemHosePump" id="MwFireSystemHosePump">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -169,10 +212,10 @@
               </tr>
 
               <tr>
-                <td >Sprinkler</td>
+                <td >Sprinkler <li>Pump</li></td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemSpriklerPump" id="MwFireSystemSpriklerPump">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwFireSystemSpriklerPump" id="MwFireSystemSpriklerPump">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -181,10 +224,10 @@
               </tr>
 
               <tr>
-                <td >Wet or dry riser</td>
+                <td >Wet or dry riser <li>Pump</li></td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwFireSystemWetPump" id="MwFireSystemWetPump">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwFireSystemWetPump" id="MwFireSystemWetPump">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -198,7 +241,7 @@
                 <td >Pump</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwColdSystemPump" id="MwColdSystemPump">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwColdSystemPump" id="MwColdSystemPump">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -210,7 +253,7 @@
                 <td >Water tank</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwColdSystemWaterTank" id="MwColdSystemWaterTank">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwColdSystemWaterTank" id="MwColdSystemWaterTank">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
@@ -224,13 +267,18 @@
                 <td >Rain water harvesting</td>
                 <td >2</td>
                 <td>
-                  <input onblur="markahPRMw()" type="number" min="0" max="2" class="arkitek" name="MwInnovationRainHarvesting" id="MwInnovationRainHarvesting">
+                  <input onblur="findTotalmarkahPRMw()" type="number" min="0" max="2" class="mekanikal" name="MwInnovationRainHarvesting" id="MwInnovationRainHarvesting">
                 </td>            
                 <td>
                   <input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
               </tr>
+
+              <tr style="display: none">
+                <td><input type="text" name="markahPRMw" id="markahPRMw" /></td>
+              </tr>
+
           </tbody>
         </table>
 
@@ -260,7 +308,7 @@
   
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian/elektrikal/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
   
        
@@ -271,12 +319,12 @@
     
   </div>
 
-  <p><strong>markahPRMw <span class="required"></span></strong><br />
-    <input type="text" name="markahPRMw" id="markahPRMw" /></p>
+  {{-- <p><strong>markahPRMw <span class="required"></span></strong><br />
+    <input type="text" name="markahPRMw" id="markahPRMw" /></p> --}}
 
 <script>
-  function markahPRMw(){
-  var arr = document.getElementsByClassName('arkitek');
+  function findTotalmarkahPRMw(){
+  var arr = document.getElementsByClassName('mekanikal');
   var tot=0;
   for(var i=0;i<arr.length;i++){
       if(parseFloat(arr[i].value))

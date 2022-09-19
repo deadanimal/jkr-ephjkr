@@ -696,11 +696,11 @@
                             </li>
                             {{-- Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/melantik_pemudah_cara') ? 'active' : '' }} py-0"
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/pemudah_cara/create') ? 'active' : '' }} py-0"
                                     href="/penilaian_reka_bentuk_gpss/pemudah_cara/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/melantik_pemudah_cara') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/pemudah_cara/create') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
@@ -742,11 +742,11 @@
                             
                             {{-- Papar dan Muat Turun Skor Kad Penilaian Reka Bentuk --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/sijil_verifikasi_gpss') ? 'active' : '' }} py-0"
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_gpss/paparan_sijil') ? 'active' : '' }} py-0"
                                     href="/penilaian_reka_bentuk_gpss/paparan_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/sijil_verifikasi_gpss') ? 'text-dark' : '' }}">Papar
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_gpss/paparan_sijil') ? 'text-dark' : '' }}">Papar
                                             dan Muat Turun Skor Kad Penilaian Reka Bentuk</span>
                                     </div>
                                 </a>
@@ -760,8 +760,7 @@
                         aria-expanded="{{ Request::is('penilaian_verifikasi_gpss') ? 'true' : 'false' }}"
                         aria-controls="penilaian_verifikasi_gpss">
                         <div class="d-flex align-items-center nav-link-side px-0">
-                            <span class="px-3"><span class="fas fa-home"></span> Penilaian Verifikasi 
-                                    Permarkahan GPSS</span>
+                            <span class="px-3"><span class="fas fa-home"></span> Penilaian Verifikasi Permarkahan GPSS</span>
                         </div>
                         </a>
                         <ul class="nav-item collapse {{ Request::is('penilaian_verifikasi_gpss/*') || Request::is('penilaian_verifikasi_gpss') ? 'show' : 'false' }} my-1"
