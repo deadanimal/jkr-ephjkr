@@ -6,8 +6,10 @@ use App\Http\Requests\UpdatePenilaianRekaBentukBangunanRequest;
 use App\Models\Projek;
 use App\Models\PemudahCara;
 use App\Models\KriteriaPhjkrBangunan;
+use App\Models\PenilaianEphjkr;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use \PDF;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -134,12 +136,12 @@ class PenilaianRekaBentukBangunanController extends Controller
         $pemudah_cara = new PemudahCara;
         
 
-        $pemudah_cara->nama = $request->input('nama');
-        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
-        $pemudah_cara->no_tel = $request->input('no_tel');
-        $pemudah_cara->no_fax = $request->input('no_fax');
-        $pemudah_cara->email = $request->input('email');
-        $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->nama = $request->nama;
+        $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
+        $pemudah_cara->no_tel = $request->no_tel;
+        $pemudah_cara->no_fax = $request->no_fax;
+        $pemudah_cara->email = $request->email;
+        $pemudah_cara->disiplin = $request->disiplin;
         $pemudah_cara->kategori = $request->kategori;
         $pemudah_cara->projek_id = $request->projek_id;
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
@@ -163,7 +165,8 @@ class PenilaianRekaBentukBangunanController extends Controller
     
         // papar mcm index tapi ada button utk skor
         return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',[
-            'projeks'=>$projeks
+            'projeks'=>$projeks,
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         ]);
     }
     public function papar_skor_penilaian($id)
@@ -180,22 +183,12 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_skor(Request $request, $id)
     {
-        // req all
+        // request all
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
-        //$kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan;
-        
-        // JUMLAH MARKAH 
-        // $kriteria_phjkr_bangunan->markahMMR = $request->markahMMR;
-
-        // $kriteria_phjkr_bangunan->markahMS = $markahTOTALMS;
-        // $kriteria_phjkr_bangunan->markahMR = $request->markahTOTAL_MR + $request->markahTOTAL_MR;
-        
-
-        // $kriteria_phjkr_bangunan->markahMMV = $request->markahMMV;
-        // $kriteria_phjkr_bangunan->markahMSV = $request->markahMSV;
-        // $kriteria_phjkr_bangunan->markahML = $request->markahML;
-
         $kriteria_phjkr_bangunan->save();
+
+        $penilaian_ephjkr = new PenilaianEphjkr($request->all());
+        $penilaian_ephjkr->save();
 
         // $projeks = new Projek;
 
@@ -232,7 +225,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     // }
 
 
-    #Sekreatariat
+    #Sekretariat
     // pengesahan penilaian
     public function pengesahan_penilaian()
     {
@@ -254,7 +247,6 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
-        
 
         alert()->success('Penilaian Disahkan.', 'Berjaya');
 
@@ -268,51 +260,35 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function semakan_rawak()
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $penilaian_ephjkr = PenilaianEphjkr::all();
 
         return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan,
+            'penilaian_ephjkr'=>$penilaian_ephjkr
         ]);
 
     }
     public function semakan_rawak_form($id)
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+        $penilaian_ephjkr = PenilaianEphjkr::find($id);
+        // dd($penilaian_ephjkr);
 
         return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.show',[
-            'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan
+            'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan,
+            'penilaian_ephjkr'=>$penilaian_ephjkr
         ]
     );
 
     }
     public function simpan_semakan_rawak(Request $request, $id)
     {
-        // $dokumen = new Projek;
-
-        // if($request->hasFile('dokumenSokongan')){
-        //     $dokumen = $request->file('dokumenSokongan')->store('dokumenSokongan');
-        //     $dokumen->input('dokumenSokongan') = $dokumen;
-        // }
-
-        // $dokumen->dokumenSokongan = $request->input('dokumenSokongan');
-        // $dokumen->save();
-
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan;
-        
-        // JUMLAH MARKAH 
-        // $kriteria_phjkr_bangunan->markahMMR = $request->markahMMR;
-        $kriteria_phjkr_bangunan->markahMS = $request->markahTOTAL_TL_MS 
-        + $request->markahTOTAL_KT_MS 
-        + $request->markahTOTAL_SB_MS
-        + $request->markahTOTAL_PA_MS 
-        + $request->markahTOTAL_FL_MS 
-        + $request->markahTOTAL_IN_MS;
-
-        $kriteria_phjkr_bangunan->markahMR = $request->markahTOTAL_MR + $request->markahTOTAL_MR;
-        // $kriteria_phjkr_bangunan->markahMMV = $request->markahMMV;
-        // $kriteria_phjkr_bangunan->markahMSV = $request->markahMSV;
-        // $kriteria_phjkr_bangunan->markahML = $request->markahML;
-
         $kriteria_phjkr_bangunan->save();
+
+        // untuk penarafan PH
+        $penilaian_ephjkr = new PenilaianEphjkr;
+        $penilaian_ephjkr->save();
 
 
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');

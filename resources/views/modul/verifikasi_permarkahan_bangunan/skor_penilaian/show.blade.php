@@ -2715,7 +2715,7 @@
             <!--------------------------------------- MarkahTL ---------------------------------------->
 
             <!--MarkahTL for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_TL() {
                 var arr = document.getElementsByClassName('sum_ms_tl');
                 var tot = 0;
@@ -2726,10 +2726,10 @@
                 document.getElementById('total_amount_ms_tl').value = tot;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahTL for MV-->
-            <script>
+            {{-- <script>
                 function findTotalMV_TL() {
                 var arr = document.getElementsByClassName('sum_mv_tl');
                 var tot1 = 0;
@@ -2740,10 +2740,10 @@
                 document.getElementById('total_amount_mv_tl').value = tot1;
             }
 
-            </script>
+            </script> --}}
 
             <!--ADD MARKAHTL_MSV AND MARKAHTL_MMV-->
-            <script>
+            {{-- <script>
                 function add(){
                 var tot, tot1, sum;
                 tot = parseInt(document.getElementById("sum_ms_tl").value);
@@ -2751,12 +2751,12 @@
                 sum = tot + tot1;
                 document.getElementById("answer").value = sum;
                 }
-            </script>
+            </script> --}}
 
             <!--------------------------------------- MarkahKT ---------------------------------------->
 
             <!--MarkahKT for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_KT() {
                 var arr = document.getElementsByClassName('sum_ms_kt');
                 var tot2 = 0;
@@ -2767,10 +2767,10 @@
                 document.getElementById('total_amount_ms_kt').value = tot2;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahKT for MV-->
-            <script>
+            {{-- <script>
                 function findTotalMV_KT() {
                 var arr = document.getElementsByClassName('sum_mv_kt');
                 var tot3 = 0;
@@ -2781,12 +2781,12 @@
                 document.getElementById('total_amount_mv_kt').value = tot3;
             }
 
-            </script>
+            </script> --}}
 
             <!--------------------------------------- MarkahSB ---------------------------------------->
 
             <!--MarkahSB for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_SB() {
                 var arr = document.getElementsByClassName('sum_ms_sb');
                 var tot4 = 0;
@@ -2797,10 +2797,10 @@
                 document.getElementById('total_amount_ms_sb').value = tot4;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahSB for MV-->
-            <script>
+            {{-- <script>
                 function findTotalMV_SB() {
                 var arr = document.getElementsByClassName('sum_mv_sb');
                 var tot5 = 0;
@@ -2811,12 +2811,12 @@
                 document.getElementById('total_amount_mv_sb').value = tot5;
             }
 
-            </script>
+            </script> --}}
 
             <!--------------------------------------- MarkahPA ---------------------------------------->
 
             <!--MarkahPA for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_PA() {
                 var arr = document.getElementsByClassName('sum_ms_pa');
                 var tot6 = 0;
@@ -2827,10 +2827,10 @@
                 document.getElementById('total_amount_ms_pa').value = tot6;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahPA for MV-->
-            <script>
+            {{-- <script>
                 function findTotalMV_PA() {
                 var arr = document.getElementsByClassName('sum_mv_pa');
                 var tot7 = 0;
@@ -2841,12 +2841,12 @@
                 document.getElementById('total_amount_mv_pa').value = tot7;
             }
 
-            </script>
+            </script> --}}
 
             <!--------------------------------------- MarkahPD ---------------------------------------->
 
             <!--MarkahPD for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_PD() {
                 var arr = document.getElementsByClassName('sum_ms_pd');
                 var tot8 = 0;
@@ -2857,10 +2857,10 @@
                 document.getElementById('total_amount_ms_pd').value = tot8;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahPD for MV-->
-            <script>
+            {{-- <script>
                 function findTotalMV_PD() {
                 var arr = document.getElementsByClassName('sum_mv_pd');
                 var tot9 = 0;
@@ -2871,12 +2871,12 @@
                 document.getElementById('total_amount_mv_pd').value = tot9;
             }
 
-            </script>
+            </script> --}}
 
             <!--------------------------------------- MarkahFL ---------------------------------------->
 
             <!--MarkahFL for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_FL() {
                 var arr = document.getElementsByClassName('sum_ms_fl');
                 var tot10 = 0;
@@ -2887,10 +2887,10 @@
                 document.getElementById('total_amount_ms_fl').value = tot10;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahFL for MV-->
-            <script>
+            {{-- <script>
                 function findTotalMV_FL() {
                 var arr = document.getElementsByClassName('sum_mv_fl');
                 var tot11 = 0;
@@ -2901,12 +2901,12 @@
                 document.getElementById('total_amount_mv_fl').value = tot11;
             }
 
-            </script>
+            </script> --}}
 
             <!--------------------------------------- MarkahIN ---------------------------------------->
 
             <!--MarkahIN for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_IN() {
                 var arr = document.getElementsByClassName('sum_ms_in');
                 var tot12 = 0;
@@ -2917,10 +2917,10 @@
                 document.getElementById('total_amount_ms_in').value = tot12;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahIN for MV-->
-            <script>
+            {{-- <script>
                 function findTotalMV_IN() {
                 var arr = document.getElementsByClassName('sum_mv_in');
                 var tot13 = 0;
@@ -2931,7 +2931,7 @@
                 document.getElementById('total_amount_mv_in').value = tot13;
             }
 
-            </script>
+            </script> --}}
 
             <!--Pagination using button JavaScript-->
             <script>
@@ -2952,7 +2952,6 @@
                     $('.pg-5').hide();
                     $('.pg-6').hide();
                     $('.pg-7').hide();
-
 
                 }
                 function button2() {
@@ -3023,5 +3022,274 @@
                 var selectAutocomplete = document.getElementsByClassName('select-auto')['A']; // your dynamically created select
                 new SelectAuto(selectAutocomplete);
             </script> --}}
+
+            <!--MARKAH SASARAN (MS) VERIFIKASI CALCULATION-->
+            <!--MS_TL : MARKAH SASARAN TL-->
+            <!--MS_KT : MARKAH SASARAN KT-->
+            <!--MS_SB : MARKAH SASARAN SB-->
+            <!--MS_PA : MARKAH SASARAN PA-->
+            <!--MS_PD : MARKAH SASARAN PD-->
+            <!--MS_FL : MARKAH SASARAN FL-->
+            <!--MS_IN : MARKAH SASARAN IN-->
+            <script>
+                function findTotalMS_TL(){
+                    var totalMS_TL = document.getElementById('totalMS_TL');
+                    var MS_TL = document.getElementsByClassName('MS_TL');
+                    var sumMS_TL = 0;
+
+                    for( var i = 0; i < MS_TL.length; i++ ){
+                        sumMS_TL += Number(MS_TL[i].value);
+
+                    //display the total of inputs
+                    totalMS_TL.value = sumMS_TL;
+                    }
+                    document.getElementById('totalMS_TL').value = sumMS_TL;
+                }
+
+                function findTotalMS_KT(){
+                    var totalMS_KT = document.getElementById('totalMS_KT');
+                    var MS_KT = document.getElementsByClassName('MS_KT');
+                    var sumMS_KT = 0;
+
+                    for( var i = 0; i < MS_KT.length; i++ ){
+                        sumMS_KT += Number(MS_KT[i].value);
+
+                    //display the total of inputs
+                    totalMS_KT.value = sumMS_KT;
+                    }
+                    document.getElementById('totalMS_KT').value = sumMS_KT;
+                }
+
+                function findTotalMS_SB(){
+                    var totalMS_SB = document.getElementById('totalMS_SB');
+                    var MS_SB = document.getElementsByClassName('MS_SB');
+                    var sumMS_SB = 0;
+
+                    for( var i = 0; i < MS_SB.length; i++ ){
+                        sumMS_SB += Number(MS_SB[i].value);
+
+                    //display the total of inputs
+                    totalMS_SB.value = sumMS_SB;
+                    }
+                    document.getElementById('totalMS_SB').value = sumMS_SB;
+                }
+
+                function findTotalMS_PA(){
+                    var totalMS_PA = document.getElementById('totalMS_PA');
+                    var MS_PA = document.getElementsByClassName('MS_PA');
+                    var sumMS_PA = 0;
+
+                    for( var i = 0; i < MS_PA.length; i++ ){
+                        sumMS_PA += Number(MS_PA[i].value);
+
+                    //display the total of inputs
+                    totalMS_PA.value = sumMS_PA;
+                    }
+                    document.getElementById('totalMS_PA').value = sumMS_PA;
+                }
+
+                function findTotalMS_PD(){
+                    var totalMS_PD = document.getElementById('totalMS_PD');
+                    var MS_PD = document.getElementsByClassName('MS_PD');
+                    var sumMS_PD = 0;
+
+                    for( var i = 0; i < MS_PD.length; i++ ){
+                        sumMS_PD += Number(MS_PD[i].value);
+
+                    //display the total of inputs
+                    totalMS_PD.value = sumMS_PD;
+                    }
+                    document.getElementById('totalMS_PD').value = sumMS_PD;
+                }
+
+                function findTotalMS_FL(){
+                    var totalMS_FL = document.getElementById('totalMS_FL');
+                    var MS_FL = document.getElementsByClassName('MS_FL');
+                    var sumMS_FL = 0;
+
+                    for( var i = 0; i < MS_FL.length; i++ ){
+                        sumMS_FL += Number(MS_FL[i].value);
+
+                    //display the total of inputs
+                    totalMS_FL.value = sumMS_FL;
+                    }
+                    document.getElementById('totalMS_FL').value = sumMS_FL;
+                }
+
+                function findTotalMS_IN(){
+                    var totalMS_IN = document.getElementById('totalMS_IN');
+                    var MS_IN = document.getElementsByClassName('MS_IN');
+                    var sumMS_IN = 0;
+
+                    for( var i = 0; i < MS_IN.length; i++ ){
+                        sumMS_IN += Number(MS_IN[i].value);
+
+                    //display the total of inputs
+                    totalMS_IN.value = sumMS_IN;
+                    }
+                    document.getElementById('totalMS_IN').value = sumMS_IN;
+                }
+
+                function findTotalMS(){
+                    var TL = totalMS_TL.value || 0;
+                    var KT = totalMS_KT.value || 0;
+                    var SB = totalMS_SB.value || 0;
+                    var PA = totalMS_PA.value || 0;
+                    var PD = totalMS_PD.value || 0;
+                    var FL = totalMS_FL.value || 0;
+                    var IN = totalMS_IN.value || 0;
+                    document.getElementById('totalMS').value = Number(TL) + Number(KT)
+                    + Number(SB) + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+                }
+
+                document.addEventListener('keyup', function(){
+                    findTotalMS_TL();
+                    findTotalMS_KT();
+                    findTotalMS_SB();
+                    findTotalMS_PA();
+                    findTotalMS_PD();
+                    findTotalMS_FL();
+                    findTotalMS_IN();
+                    findTotalMS();
+                });
+                
+                // function peratusan_markah() {
+
+                //     var peratus = document.getElementById("totalMS").value;
+                //     // Method returns the element of num1 id
+                //     document.getElementById("peratus").value = (totalMS * 100) / 101 + "%";
+                //     }
+            </script>
+
+            <!--MARKAH VERIFIKASI (MV)  CALCULATION-->
+            <!--MV_TL : MARKAH VERIFIKASI TL-->
+            <!--MV_KT : MARKAH VERIFIKASI KT-->
+            <!--MV_SB : MARKAH VERIFIKASI SB-->
+            <!--MV_PA : MARKAH VERIFIKASI PA-->
+            <!--MV_PD : MARKAH VERIFIKASI PD-->
+            <!--MV_FL : MARKAH VERIFIKASI FL-->
+            <!--MV_IN : MARKAH VERIFIKASI IN-->
+            <script>
+                function findTotalMV_TL(){
+                    var totalMV_TL = document.getElementById('totalMV_TL');
+                    var MV_TL = document.getElementsByClassName('MV_TL');
+                    var sumMV_TL = 0;
+
+                    for( var i = 0; i < MV_TL.length; i++ ){
+                        sumMV_TL += Number(MV_TL[i].value);
+
+                    //display the total of inputs
+                    totalMV_TL.value = sumMV_TL;
+                }
+                    document.getElementById('totalMV_TL').value = sumMV_TL;
+                }
+
+                function findTotalMV_KT(){
+                    var totalMV_KT = document.getElementById('totalMV_KT');
+                    var MV_KT = document.getElementsByClassName('MV_KT');
+                    var sumMV_KT = 0;
+
+                    for( var i = 0; i < MV_KT.length; i++ ){
+                        sumMV_KT += Number(MV_KT[i].value);
+
+                    //display the total of inputs
+                    totalMV_KT.value = sumMV_KT;
+                    }
+                    document.getElementById('totalMV_KT').value = sumMV_KT;
+                }
+
+                function findTotalMV_SB(){
+                    var totalMV_SB = document.getElementById('totalMV_SB');
+                    var MV_SB = document.getElementsByClassName('MV_SB');
+                    var sumMV_SB = 0;
+
+                    for( var i = 0; i < MV_SB.length; i++ ){
+                        sumMV_SB += Number(MV_SB[i].value);
+
+                    //display the total of inputs
+                    totalMV_SB.value = sumMV_SB;
+                    }
+                    document.getElementById('totalMV_SB').value = sumMV_SB;
+                }
+
+                function findTotalMV_PA(){
+                    var totalMV_PA = document.getElementById('totalMV_PA');
+                    var MV_PA = document.getElementsByClassName('MV_PA');
+                    var sumMV_PA = 0;
+
+                    for( var i = 0; i < MV_PA.length; i++ ){
+                        sumMV_PA += Number(MV_PA[i].value);
+
+                    //display the total of inputs
+                    totalMV_PA.value = sumMV_PA;
+                    }
+                    document.getElementById('totalMV_PA').value = sumMV_PA;
+                }
+
+                function findTotalMV_PD(){
+                    var totalMV_PD = document.getElementById('totalMV_PD');
+                    var MV_PD = document.getElementsByClassName('MV_PD');
+                    var sumMV_PD = 0;
+
+                    for( var i = 0; i < MV_PD.length; i++ ){
+                        sumMV_PD += Number(MV_PD[i].value);
+
+                    //display the total of inputs
+                    totalMV_PD.value = sumMV_PD;
+                    }
+                    document.getElementById('totalMV_PD').value = sumMV_PD;
+                }
+
+                function findTotalMV_FL(){
+                    var totalMV_FL = document.getElementById('totalMV_FL');
+                    var MV_FL = document.getElementsByClassName('MV_FL');
+                    var sumMV_FL = 0;
+
+                    for( var i = 0; i < MV_FL.length; i++ ){
+                        sumMV_FL += Number(MV_FL[i].value);
+
+                    //display the total of inputs
+                    totalMV_FL.value = sumMV_FL;
+                    }
+                    document.getElementById('totalMV_FL').value = sumMV_FL;
+                }
+
+                function findTotalMV_IN(){
+                    var totalMV_IN = document.getElementById('totalMV_IN');
+                    var MV_IN = document.getElementsByClassName('MV_IN');
+                    var sumMV_IN = 0;
+
+                    for( var i = 0; i < MV_IN.length; i++ ){
+                        sumMV_IN += Number(MV_IN[i].value);
+
+                    //display the total of inputs
+                    totalMV_IN.value = sumMV_IN;
+                    }
+                    document.getElementById('totalMV_IN').value = sumMV_IN;
+                }
+
+                function findTotalMV(){
+                    var TL = totalMV_TL.value || 0;
+                    var KT = totalMV_KT.value || 0;
+                    var SB = totalMV_SB.value || 0;
+                    var PA = totalMV_PA.value || 0;
+                    var PD = totalMV_PD.value || 0;
+                    var FL = totalMV_FL.value || 0;
+                    var IN = totalMV_IN.value || 0;
+                    document.getElementById('totalMV').value = Number(TL) + Number(KT) + Number(SB) 
+                    + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+                }
+
+                document.addEventListener('keyup', function(){
+                    findTotalMV_TL();
+                    findTotalMV_KT();
+                    findTotalMV_SB();
+                    findTotalMV_PA();
+                    findTotalMV_PD();
+                    findTotalMV_FL();
+                    findTotalMV_IN();
+                    findTotalMV();
+                });
+            </script>
             
 @endsection
