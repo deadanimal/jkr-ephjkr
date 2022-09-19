@@ -50,11 +50,10 @@
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
                     <th scope="col">Tindakan</th>
-                    {{-- <th scope="col">Tindakan</th> --}}
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
                     <td>Hospital Seri Iskandar</td>
@@ -63,7 +62,7 @@
                     <td style="text-align: center">
                         <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="submit" class="btn btn-warning margin-auto">PILIH</a>
                     </td>
-                </tr>
+                </tr> --}}
 
                 <tr>
                     @foreach ($projeks as $p)

@@ -54,24 +54,18 @@
               <td rowspan="4">Roof tiles</td>
               <td >Clay tiles</td>
               <td >2</td>
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="AwRoofRoofTilesClayTiles" id="AwRoofRoofTilesClayTiles">
-              </td>            
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="clay_tiles" id="clay_tiles">
-              <td><input type="number" min="0" max="2" min="0" max="2"></td>            
+              <td><input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="AwRoofRoofTilesClayTiles" id="AwRoofRoofTilesClayTiles"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesClayTiles" id="Cons_AwRoofRoofTilesClayTiles">
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesClayTiles" id="Awarded_AwRoofRoofTilesClayTiles">
               <td><input type="text"></td>                    
             </tr>
   
             <tr>
               <td >Concrete tiles</td>
               <td >2</td>
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="AwRoofRoofTilesConcreteTiles" id="AwRoofRoofTilesConcreteTiles">
-              </td>            
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="concrete_tiles" id="concrete_tiles">
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotal()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="AwRoofRoofTilesConcreteTiles" id="AwRoofRoofTilesConcreteTiles"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesConcreteTiles" id="Cons_AwRoofRoofTilesConcreteTiles">
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesConcreteTiles" id="Awarded_AwRoofRoofTilesConcreteTiles">
               <td><input type="text"></td>                    
             </tr>
   
@@ -79,12 +73,10 @@
               
               <td >Metal roofing</td>
               <td >2</td>
-              <td>
-                <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofTilesMetalRoofing" id="AwRoofRoofTilesMetalRoofing">
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofTilesMetalRoofing" id="AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
+                          
               <td><input type="text"></td>                    
             </tr>
   
@@ -92,8 +84,8 @@
               <td >Shingles</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofTilesShingles" id="AwRoofRoofTilesShingles"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
             
@@ -103,8 +95,8 @@
               <td >Rockwool</td>
               <td >2</td>
               <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationRockwool" id="AwRoofRoofInsulationRockwool"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -112,8 +104,8 @@
               <td >Glasswool</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationGlasswool" id="AwRoofRoofInsulationGlasswool"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -121,8 +113,8 @@
               <td >Foam</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationFoam" id="AwRoofRoofInsulationFoam"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -130,8 +122,8 @@
               <td >Aluminium Foil</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationAlumFoil" id="AwRoofRoofInsulationAlumFoil"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -139,8 +131,8 @@
               <td >Undersheeting</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofInsulationUndersheeting" id="AwRoofRoofInsulationUndersheeting"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -150,8 +142,8 @@
               <td >Metal</td>
               <td >2</td>
               <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofEavesMetal" id="AwRoofRoofEavesMetal"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -159,8 +151,8 @@
               <td >Fiber cement</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofEavesFiberCement" id="AwRoofRoofEavesFiberCement"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -168,8 +160,8 @@
               <td >Plasterboard</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRoofEavesPlasterboard" id="AwRoofRoofEavesPlasterboard"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -180,8 +172,8 @@
               <td >Metal</td>
               <td >2</td>
               <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsMetal" id="AwRoofFascialBoardsMetal"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td> 
   
             </tr>
@@ -190,8 +182,8 @@
               <td >Fibre cement</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsFiberCement" id="AwRoofFascialBoardsFiberCement"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -199,8 +191,8 @@
               <td >Plasterboard</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsPlasterboard" id="AwRoofFascialBoardsPlasterboard"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -208,8 +200,8 @@
               <td >Timber</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofFascialBoardsTimber" id="AwRoofFascialBoardsTimber"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -220,8 +212,8 @@
               <td >Upvc</td>
               <td >2</td>
               <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterUpvc" id="AwRoofGutterUpvc"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td> 
   
             </tr>
@@ -230,8 +222,8 @@
               <td >Galvanised iron</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterGallron" id="AwRoofGutterGallron"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -239,8 +231,8 @@
               <td >Aluminium</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterAluminium" id="AwRoofGutterAluminium"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -248,8 +240,8 @@
               <td >Stainless steel</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofGutterStainSteel" id="AwRoofGutterStainSteel"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -260,8 +252,8 @@
               <td >Upvc</td>
               <td >2</td>
               <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesUpvc" id="AwRoofRainPipesUpvc"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td> 
   
             </tr>
@@ -270,8 +262,8 @@
               <td >Galvanised iron</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesGallron" id="AwRoofRainPipesGallron"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -279,8 +271,8 @@
               <td >Aluminium</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesAluminium" id="AwRoofRainPipesAluminium"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -288,8 +280,8 @@
               <td >Stainless steel</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofRainPipesStainSteel" id="AwRoofRainPipesStainSteel"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -300,8 +292,8 @@
               <td >Plasterboard</td>
               <td >2</td>
               <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofCellingPlasterboards" id="AwRoofCellingPlasterboards"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td> 
   
             </tr>
@@ -310,8 +302,8 @@
               <td >Fibre cement board</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofCellingFibreCement" id="AwRoofCellingFibreCement"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
   
@@ -319,8 +311,8 @@
               <td >Metal strip</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofCellingMetalStrip" id="AwRoofCellingMetalStrip"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -331,8 +323,8 @@
               <td >Timber</td>
               <td >2</td>
               <td> <input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofTrussTimber" id="AwRoofTrussTimber"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td> 
   
             </tr>
@@ -341,8 +333,8 @@
               <td >Metal</td>
               <td >2</td>
               <td><input onblur="findTotal()" type="number" min="0" max="2" class="arkitek" name="AwRoofTrussMetal" id="AwRoofTrussMetal"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
 
@@ -363,8 +355,8 @@
               <td >Bricks</td>
               <td >2</td>
               <td> <input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBricks" id="AwWallWallTypesBricks"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td> 
   
             </tr>
@@ -373,8 +365,8 @@
               <td >Timberwork</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall " name="AwWallWallTypesTimber" id="AwWallWallTypesTimber"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -382,8 +374,8 @@
               <td >Clay bricks</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesClay" id="AwWallWallTypesClay"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -391,8 +383,8 @@
               <td >Blockwork</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesBlockwork" id="AwWallWallTypesBlockwork"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -400,8 +392,8 @@
               <td >Reinforce concrete</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesReinforce" id="AwWallWallTypesReinforce"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -409,8 +401,8 @@
               <td >Aerated concrete</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesAerated" id="AwWallWallTypesAerated"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -418,8 +410,8 @@
               <td >Glass</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGlass" id="AwWallWallTypesGlass"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -427,8 +419,8 @@
               <td >Gypsum board</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesGypsum" id="AwWallWallTypesGypsum"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -436,8 +428,8 @@
               <td >Cement board</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesCement" id="AwWallWallTypesCement"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -445,8 +437,8 @@
               <td >Fibre cement</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallWallTypesFibreCement" id="AwWallWallTypesFibreCement"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -457,8 +449,8 @@
               <td >Paints</td>
               <td >2</td>
               <td> <input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaints" id="AwWallFinishesPaints"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td> 
   
             </tr>
@@ -467,8 +459,8 @@
               <td >Composite panel</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesComposite" id="AwWallFinishesComposite"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -476,8 +468,8 @@
               <td >Wall paper</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesWallpaper" id="AwWallFinishesWallpaper"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -485,8 +477,8 @@
               <td >Ceramic tiles</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesCeramic" id="AwWallFinishesCeramic"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -494,8 +486,8 @@
               <td >Stones</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesStones" id="AwWallFinishesStones"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -503,8 +495,8 @@
               <td >Pebblewash</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPebblewash" id="AwWallFinishesPebblewash"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -512,8 +504,8 @@
               <td >Granite</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGranite" id="AwWallFinishesGranite"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -521,8 +513,8 @@
               <td >Glass</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlass" id="AwWallFinishesGlass"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>           
               <td><input type="text"></td>                    
             </tr>
   
@@ -530,8 +522,8 @@
               <td >Glass block</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGlassBlock" id="AwWallFinishesGlassBlock"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>           
               <td><input type="text"></td>                    
             </tr>
   
@@ -539,8 +531,8 @@
               <td >Timber panelling</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesTimber" id="AwWallFinishesTimber"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -548,8 +540,8 @@
               <td >Plaster</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesPaster" id="AwWallFinishesPaster"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>            
               <td><input type="text"></td>                    
             </tr>
   
@@ -557,8 +549,8 @@
               <td >Growall</td>
               <td >2</td>
               <td><input onblur="findTotalWall()" type="number" min="0" max="2" class="prawwall" name="AwWallFinishesGrowall" id="AwWallFinishesGrowall"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalConstructed()" type="number" min="0" max="2" class="arkitek" name="Cons_AwRoofRoofTilesMetalRoofing" id="Cons_AwRoofRoofTilesMetalRoofing"></td>            
+              <td><input onblur="findTotalAwarded()" type="number" min="0" max="2" class="arkitek" name="Awarded_AwRoofRoofTilesMetalRoofing" id="Awarded_AwRoofRoofTilesMetalRoofing"></td>             
               <td><input type="text"></td>                    
             </tr>
 
