@@ -18,14 +18,14 @@
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
             <div class="card p-3  py-4">
-                @foreach ($projeks as $p)
+                {{-- @foreach ($projeks as $p) --}}
                 <div class="row g-3 mt-2">
                     <div class="col-md-3">
                         <label for="nama_projek">Nama:</label>
                     </div>
                     <div class="col-md-6">
-                        {{-- <input type="text" class="form-control" placeholder="Hospital Seri Iskandar"> --}}
-                        <input type="text" class="form-control" value=" {{$p->namaProjek}} ">                        
+                        <input type="text" class="form-control" placeholder="Hospital Seri Iskandar">
+                        {{-- <input type="text" class="form-control" value=" {{$p->namaProjek}} ">--}}
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -33,7 +33,9 @@
                         <label for="nama_projek">ID Rujukan Skala:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" value=" {{$p->id_ruj_skala}} ">                        
+                        {{-- <input type="text" class="form-control" value=" {{$p->id_ruj_skala}} ">  --}}
+                        <input type="text" class="form-control" placeholder="SKL0202">
+
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -41,7 +43,9 @@
                         <label for="nama_projek">Alamat:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" value=" {{ $p->alamatProjek }}">                        
+                        {{-- <input type="text" class="form-control" value=" {{ $p->alamatProjek }}">  --}}
+                        <input type="text" class="form-control" placeholder="Mukah">
+                       
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -49,12 +53,14 @@
                         <label for="nama_projek">Kos Projek Semasa:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" value=" {{ $p->kosProjek }}">                        
+                        {{-- <input type="text" class="form-control" value=" {{ $p->kosProjek }}"> --}}
+                        <input type="text" class="form-control" placeholder="RM50,000,000">
+                        
                     </div>
                 </div>
             </div>
         </div>
-        @endforeach
+        {{-- @endforeach --}}
 
         
 

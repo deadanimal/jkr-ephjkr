@@ -325,6 +325,10 @@ Route::middleware('auth')->group(function () {
     //penilai_reka_bentuk edit() method
     Route::get('/penilaian_reka_bentuk_jalan/pengesahan_penilaian_jalan', [PenilaianRekaBentukJalanController::class, 'pengesahan_penilaian_jalan']);
     Route::get('/penilaian_reka_bentuk_jalan/jana_keputusan_jalan', [PenilaianRekaBentukJalanController::class, 'jana_keputusan_jalan']);
+    Route::get('/penilaian_reka_bentuk_jalan/papar_skor_kad', [PenilaianRekaBentukJalanController::class, 'papar_skor_kad']);
+    Route::get('/penilaian_reka_bentuk_jalan/permohonan_rayuan', [PenilaianRekaBentukJalanController::class, 'permohonan_rayuan']);
+    Route::get('/penilaian_reka_bentuk_jalan/pengesahan_rayuan', [PenilaianRekaBentukJalanController::class, 'pengesahan_rayuan']);
+    Route::get('/penilaian_reka_bentuk_jalan/jana_sijil', [PenilaianRekaBentukJalanController::class, 'jana_sijil']);
 
     Route::get('/penilaian_reka_bentuk_jalan/skor_penilaian/{id}', [PenilaianRekaBentukJalanController::class, 'papar_skor_penilaian']);
     Route::post('/penilaian_reka_bentuk_jalan/simpan_skor/{id}', [PenilaianRekaBentukJalanController::class, 'simpan_skor']);
