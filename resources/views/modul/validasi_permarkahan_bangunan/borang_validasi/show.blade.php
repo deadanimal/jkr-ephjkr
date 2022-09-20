@@ -154,8 +154,8 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahTL1_ML}}</td>
+                                <td></td>
+                                <td><input onblur="findTotalTL_ML()" class="sum_ml_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL1_ML" name="markahTL1_ML" value="{{$kriteria_phjkr_bangunan->markahTL2_ML}}"/></td>
                                 <td colspan="2">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
                                 <td colspan="2">Tidak Berkenaan</td>
                                 <td></td>
@@ -184,7 +184,7 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>
-                                <td>3</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -223,7 +223,7 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td>3</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -257,7 +257,7 @@
                             <tr class="pg-1" align="center">
                                 <td>ii. Mengekalkan Topografi Tanah</td>
                                 {{-- <th>A</th> --}}
-                                <td>2</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -302,7 +302,7 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td>1</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -341,7 +341,7 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td>1</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -379,7 +379,7 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td>3</td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>

@@ -13,7 +13,7 @@
     {{-- <b class="text-dark-green-jkr">Semakan Rawak dan Jana Sijil</b> --}}
 
 <h1 class="header-title">
-    PENILAIAN REKA BENTUK BANGUNAN
+    VERIFIKASI PERMARKAHAN BANGUNAN
 </h1>
 <hr class="hr-jkr">
 
@@ -58,26 +58,20 @@
                                 {{-- <table class="kotak" style="width:100%"> --}}
                                 <tbody>
                                     <!--LOOPING TABLES-->
-                                    {{-- @foreach ($projek as $key => $p) --}}
+                                    @foreach ($kriteria_phjkr_bangunan as $key => $p)
                                         <tr class="text-black">
                                             {{-- <td>{{ $pdkk->id }}</td> --}}
-                                            <td style="text-align: center; vertical-align: middle;">1</td>
-                                            <td style="text-align: center; vertical-align: middle;">SKL0202</td>
-                                            <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
-                                            <td style="text-align: center; vertical-align: middle;">Mukah</td>
-                                            <td style="text-align: center; vertical-align: middle;">BERJAYA DIDAFTAR</td>
+                                            <td style="text-align: center; vertical-align: middle;">{{$p->id}}</td>
+                                            <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
+                                            <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
+                                            <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
+                                            <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                             <td style="text-align: center; vertical-align: middle;">
-                                                {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
-                                                title="Daftar Pemudah Cara" type="submit">
-                                                <a href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create">Daftar</a>
-                                            </button> --}}
-                                                {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                                                title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
-                                                <a class="btn btn-primary" href="/verifikasi_permarkahan_bangunan/muat_turun_sijil/edit" role="button"
+                                                <a class="btn btn-primary" href="/verifikasi_permarkahan_bangunan/muat_turun_sijil/{{$p->id}}" role="button"
                                                 data-toggle="tooltip" data-placement="bottom" title="Papar Skor Penilaian">Papar</a>
                                             </td>
                                         </tr> 
-                                    {{-- @endforeach --}}
+                                    @endforeach
                                     </tbody>
                                 {{-- </table> --}}
                             </table> 

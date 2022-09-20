@@ -2,6 +2,14 @@
 
 <link rel="stylesheet" href="/cssfile/pengesahan_penilaian_style.css">
 
+<style>
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+</style>
+
 @section('content')
 
  {{-- header --}}
@@ -16,9 +24,6 @@
 
 <div class="card-body">
   <div class="row3 mx-1 table-responsive scrollbar text-center">
-    <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
-      @method('POST')
-      @csrf
       <div class="col">
         <table class="table table-bordered line-table text-center" style="width: 100%">
           <thead class="text-white bg-orange-jkr">
@@ -539,10 +544,8 @@
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>
-            
-            
+
           </tbody>
-          </form>
         </table>
 
         <div align="right" class="mt-3">
@@ -554,13 +557,5 @@
       </div>
 
 </div>
-
-
-
-<p><strong>Markah PRAwRoof <span class="required"></span></strong><br />
-  <input type="number" name="markahPRAwRoof" id="markahPRAwRoof" value="{{$gpss_bangunan->markahPRAwRoof}}" /></p>
-
-<p><strong>Markah PRAwWall <span class="required"></span></strong><br />
-  <input type="text" name="markahPRAwWall" id="markahPRAwWall" /></p> 
 
 @endsection
