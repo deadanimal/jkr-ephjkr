@@ -115,6 +115,7 @@ Route::middleware('auth')->group(function () {
     //gugur projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek', [ProjekController::class, 'gugurprojek']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create', [ProjekController::class, 'gugurprojek_create']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{id}', [ProjekController::class, 'gugurprojek_edit']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{id}', [ProjekController::class, 'padam_gugurprojek']);
 
     //pengesahan projek

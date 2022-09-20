@@ -72,6 +72,11 @@ class ProjekController extends Controller
         $pd->jenisPelaksanaan = $request->jenisPelaksanaan;
         $pd->statusProjek = $request->statusProjek;
         $pd->kosProjek = $request->kosProjek;
+        $pd->jenisProjek = $request->jenisProjek;
+        $pd->ahli = $request->ahli;
+        $pd->perananAhli = $request->perananAhli;
+        $pd->ulasanGugur = $request->ulasanGugur;
+        $pd->dokumenGugur = $request->dokumenGugur;
         $pd->jenisKategoriProjek = $request->jenisKategoriProjek;
         $pd->tempohSijil = $request->tempohSijil;
         $pd->jarak = $request->jarak;
@@ -133,6 +138,42 @@ class ProjekController extends Controller
     public function update(UpdateProjekRequest $request, Projek $projek)
     {
         //
+        $gp = new Projek();
+        
+        $gp->id_ruj_skala = $request->id_ruj_skala;
+        $gp->namaProjek = $request->namaProjek;
+        $gp->alamatProjek = $request->alamatProjek;
+        $gp->poskod = $request->poskod;
+        $gp->bandar = $request->bandar;
+        $gp->negeri = $request->negeri;
+        $gp->keluasanTapak = $request->keluasanTapak;
+        $gp->jumlahblokBangunan = $request->jumlahblokBangunan;
+        $gp->dokumenSokongan = $request->dokumenSokongan;
+        $gp->tarikh = $request->tarikh;
+        $gp->tarikhJangkaMulaPembinaan = $request->tarikhJangkaMulaPembinaan;
+        $gp->tarikhJangkaSiapPembinaan = $request->tarikhJangkaSiapPembinaan;
+        $gp->kaedahPelaksanaan = $request->kaedahPelaksanaan;
+        $gp->jenisPelaksanaan = $request->jenisPelaksanaan;
+        $gp->statusProjek = $request->statusProjek;
+        $gp->kosProjek = $request->kosProjek;
+        $gp->jenisProjek = $request->jenisProjek;
+        $gp->ahli = $request->ahli;
+        $gp->perananAhli = $request->perananAhli;
+        $gp->ulasanGugur = $request->ulasanGugur;
+        $gp->dokumenGugur = $request->dokumenGugur;
+        $gp->jenisKategoriProjek = $request->jenisKategoriProjek;
+        $gp->tempohSijil = $request->tempohSijil;
+        $gp->jarak = $request->jarak;
+        // $gp->user_id = Auth::id();
+        $gp->save();
+
+        $gp2 = new StatusProjek();
+        $gp2->statusProjek = $request->statusProjek;
+        $gp2->projek_id = $gp->id;
+        $gp2->save();
+
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek');
     }
 
     /**
@@ -181,6 +222,22 @@ class ProjekController extends Controller
         return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.create'
             
         );
+    }
+
+    public function gugurprojek_store(){
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.create'
+            
+        );
+    }
+
+    public function gugurprojek_edit($id){
+        //dd('fd');
+        $gugur_projek = Projek::find($id);
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.create',[
+            'gugur_projek' => $gugur_projek
+        ]);
+                
     }
 
     public function padam_gugurprojek($id){

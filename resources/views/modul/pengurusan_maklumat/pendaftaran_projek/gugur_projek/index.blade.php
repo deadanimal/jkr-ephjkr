@@ -54,16 +54,26 @@
                                     <td>{{ $gp->statusProjek }}</td>
                                     <td>{{ $gp->jenisKategoriProjek }}</td>
                                     <td>
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{{ $gp->id }}"
+                                                    class="btn btn-sm btn-primary">Gugur</a>
+                                            </div>
+                                            <div class="col-auto">
+                                                <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit/{{ $gp->id }}"
+                                                    class="btn btn-sm btn-primary">SAHKAN</a>
+                                            </div>
+                                        </div>
                                         {{-- <div class="col text-end">
                                             <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>
                                         </div>  --}}
-                                        <div class="col-auto">
+                                        {{-- <div class="col-auto">
                                             <form action="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create" >
                                                 @method('DELETE')
                                                 @csrf
                                                 <button type="submit" class="btn btn-primary">Gugur</button>
                                             </form>
-                                        </div>
+                                        </div> --}}
                                     </td>
                                 </tr>
                             @endforeach

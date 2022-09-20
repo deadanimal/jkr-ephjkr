@@ -102,12 +102,12 @@
                         <input class="form-control" name="tarikh" type="date"/>
                     </div> --}}
 
-                    {{-- <div class="col-3 mb-2">
-                        <label class="col-form-label">ID Status Projek:</label>
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Status Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="statusProjek" type="text"/>
-                    </div> --}}
+                        <input class="form-control" name="statusProjek"  value="Dalam Proses" type="text"/>
+                    </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Tarikh Jangka Mula Pembinaan:</label>
@@ -155,12 +155,12 @@
                         </select>
                     </div>
 
-                    <div class="col-3 mb-2">
+                    {{-- <div class="col-3 mb-2">
                         <label class="col-form-label">Tarikh Kemas Kini:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="tarikh" type="date"/>
-                    </div>
+                    </div> --}}
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Jenis Kategori:</label>
@@ -179,14 +179,14 @@
                         <label class="col-form-label">Nama Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="" type="text"/>
+                        <input class="form-control" name="ahli" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Peranan Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="" type="text"/>
+                        <input class="form-control" name="perananAhli" type="text"/>
                     </div>
 
                     

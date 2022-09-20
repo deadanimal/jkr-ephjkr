@@ -9,7 +9,17 @@ class SelenggaraLogAudit extends Model
 {
     use HasFactory;
 
+    // public function penggunaa()
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
+
     public $table = 'users';
 
     protected $guarded = ['id'];
+
+    public function audit_trail()
+    {
+        return $this->belongsTo(AuditTrail::class);
+    }
 }

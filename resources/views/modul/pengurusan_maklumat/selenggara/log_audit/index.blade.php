@@ -23,11 +23,11 @@
 
     <hr class="text-primary">
 
-    <div class="row mt-3">
+    {{-- <div class="row mt-3">
         <div class="col text-end">
             <a href="/pengurusan_maklumat/selenggara/selenggara_log/create" class="btn btn-primary">Tambah</a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="row mt-2">
         <div class="col">
