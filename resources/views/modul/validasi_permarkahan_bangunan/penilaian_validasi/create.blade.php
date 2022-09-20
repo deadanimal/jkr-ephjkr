@@ -1,7 +1,4 @@
 @extends('layouts.base')
-{{-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> --}}
-{{-- <link rel="stylesheet" type="text/css" href="https://code.jquery.com/jquery-3.5.1.js"> --}}
-
 <link rel="stylesheet" href="/cssfile/skor_penilaian.css">
 <link rel="stylesheet" href="/cssfile/style.css">
 

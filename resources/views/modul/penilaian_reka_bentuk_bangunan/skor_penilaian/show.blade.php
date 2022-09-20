@@ -752,10 +752,10 @@
                             </tr> 
 
                                     <!--Total MS and Total MR-->
-                                    {{-- <input id="totalMS" hidden type="number" id="markahMS" name="markahMS"/> --}}
+                                    <input id="totalMS" hidden type="number" id="markahMS" name="markahMS"/>
                                     <input id="totalMR" hidden type="number" id="markahMR" name="markahMR"/>
 
-                                    <!--Peratusan Markah MS-->
+                                    <!--Peratusan Markah MS (Testing sat)-->
 
                                     <!-- Defines a field for entering a number -->
                                         <label><input type="number" id="totalMS" />
@@ -769,7 +769,28 @@
                                         
                                         <!-- Read-only input field to display 
                                             output and cannot be modified -->
-                                        <input onblur="percentage_2()" type="text" id="value2" readonly />
+                                        <input onblur="peratusan()" type="number" id="value2"/>
+
+                                        {{-- <a href="#" onClick="autoFill(); return true;" >Click to Autofill</a>
+                                        <p>
+                                            <label>Text Input: </label>
+                                            <input type="text" id="input1">
+                                        </p>
+                                        <p>
+                                            <label>Dropdown Input: </label>
+                                            <select id="input2">
+                                            <option value="Dropdown1">First Option</option>
+                                            <option value="Dropdown2">Second Option</option>
+                                            <option value="Dropdown3">Third Option</option>
+                                            </select>
+                                        </p>
+                                        <p>
+                                            <label>Radio Input: </label>
+                                            <input type="radio" name="input3" value="Radio1">First Radio
+                                            <input type="radio" name="input3" value="Radio2">Second Radio
+                                            <input type="radio" name="input3" value="Radio3">Third Radio
+                                        </p> --}}
+
 
                     </table>
                                            
@@ -3019,10 +3040,96 @@
                     findTotalMR_FL();
                     findTotalMR_IN();
                     findTotalMR();
-                });
+                })
+
+                // function peratusan(){
+                    
+                //     document.getElementById("totalMS").value;
+
+                //     // var jumlahMarkahMS = document.getElementById('totalMS').value = Number(TL) + Number(KT) + Number(SB) 
+                //     // + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+
+                    
+                //     // Method returns the elements of num2 id
+                //     var num2 = document.getElementById("num2").value;
+                //     document.getElementById("value2").value = (totalMS * 100) / num2 + "%";
+
+                // }
+                // function penarafan_ph(){
+                //     let nombor;
+                //     var penarafan_ph = document.getElementById('penarafan').value;
+                //     var penarafan = 0;
+
+                //     if (penarafan_ph >= 80 && penarafan_ph <= 100) {
+                //         nombor = '5';
+                //     }
+                //     else if (penarafan_ph >= 65 && penarafan_ph <= 79){
+                //         nombor '4';
+                //     }
+                //     else if (penarafan_ph >= 45 && penarafan_ph <= 64){
+                //         nombor '3';
+                //     }
+                //     else if (penarafan_ph >= 30 && penarafan_ph <= 44){
+                //         nombor '2';
+                //     }
+                //     else (penarafan_ph >= 29){
+                //         nombor '1';
+                //     }
+                // }
+                ;
             </script>
 
-            <!--Autofill form-->
+            <!--testing part-->
+            <!--Peratusan Markah-->
+            {{-- <script>
+                function percentage_2() {
+  
+                document.getElementById("totalMS").value;
+                    
+                // Method returns the elements of num2 id
+                var num2 = document.getElementById("num2").value;
+                document.getElementById("value2").value = (totalMS * 100) / num2 + "%";
+}
+            </script> --}}
+
+
+            {{-- <script>
+                function percentage_2() {
+
+                // Method returns the element of num1 id
+                var num1 = document.getElementById("num1").value;
+                    
+                // Method returns the elements of num2 id
+                var num2 = document.getElementById("num2").value;
+                document.getElementById("value2")
+                    .value = (num1 * 100) / num2 + "%";
+            }
+            </script> --}}
+
+            {{-- <script>
+                function penarafan_ph(){
+                    let nombor;
+                    var penarafan_ph = document.getElementById('peratusan').value;
+
+                    if (penarafan_ph >= 80 && penarafan_ph <= 100) {
+                        nombor = '5';
+                    }
+                    else if (penarafan_ph >= 65 && penarafan_ph <= 79){
+                        nombor '4';
+                    }
+                    else if (penarafan_ph >= 45 && penarafan_ph <= 64){
+                        nombor '3';
+                    }
+                    else if (penarafan_ph >= 30 && penarafan_ph <= 44){
+                        nombor '2';
+                    }
+                    else (penarafan_ph >= 29){
+                        nombor '1';
+                    }
+                }
+            </script> --}}
+
+             <!--Autofill form-->
 
             {{-- <script>
                 function autoFill() {
@@ -3037,62 +3144,6 @@
                 }
                 }
             }
-            </script> --}}
-
-            <!--Peratusan Markah-->
-            {{-- <script>
-                function peratusan_markahMS(){
-                    var peratus = document.getElementsById("peratus").value;
-
-                    var totalMS = document.getElementById("totalMS").value;
-                        document.getElementById("value1").value = (totalMS / 100) * peratus;
-                }
-            </script> --}}
-
-            <!--testing-->
-            <!--Peratusan Markah-->
-            <script>
-                function percentage_2() {
-  
-                // Method returns the element of num1 id
-                var num1 = document.getElementById("totalMS").value;
-                    
-                // Method returns the elements of num2 id
-                var num2 = document.getElementById("num2").value;
-                document.getElementById("value2").value = (totalMS * 100) / num2 + "%";
-}
-            </script>
-
-
-{{-- <script>
-    function percentage_2() {
-
-    // Method returns the element of num1 id
-    var num1 = document.getElementById("num1").value;
-        
-    // Method returns the elements of num2 id
-    var num2 = document.getElementById("num2").value;
-    document.getElementById("value2")
-        .value = (num1 * 100) / num2 + "%";
-}
-</script> --}}
-
-
-
-
-
-
-
-
-            {{-- <script>
-                function percentage_2() {
-                    // Method returns the element of num1 id
-                    var num1 = document.getElementById("num1").value;
-                    
-                    // Method returns the elements of num2 id
-                    var num2 = document.getElementById("num2").value;
-                    document.getElementById("value2").value = (num1 * 100) / num2 + "%";
-                }
             </script> --}}
 
 @endsection

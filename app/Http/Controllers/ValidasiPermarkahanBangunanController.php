@@ -8,6 +8,7 @@ use App\Models\ValidasiPermarkahanBangunan;
 use App\Models\Projek;
 use App\Models\PemudahCara;
 use App\Models\KriteriaPhjkrBangunan;
+use App\Models\PasukanValidasi;
 use Illuminate\Http\Request;
 
 class ValidasiPermarkahanBangunanController extends Controller
@@ -93,7 +94,7 @@ class ValidasiPermarkahanBangunanController extends Controller
     {
         $projeks = Projek::all();
         $projeks = new Projek;
-        $pasukan_validasi = new PemudahCara;
+        $pasukan_validasi = new PasukanValidasi;
         
 
         return view('modul.validasi_permarkahan_bangunan.pasukan_validasi.index',[
@@ -103,7 +104,7 @@ class ValidasiPermarkahanBangunanController extends Controller
     }
     public function pasukan_validasi($id)
     {
-        $pasukan_validasi = new PemudahCara;
+        $pasukan_validasi = new PasukanValidasi;
 
         return view('modul.validasi_permarkahan_bangunan.pasukan_validasi.create',[
             'pasukan_validasi'=>$pasukan_validasi
@@ -114,14 +115,14 @@ class ValidasiPermarkahanBangunanController extends Controller
     public function melantik_pasukan_validasi(Request $request, $id)
     {
         // submit form melantik pasukan validasi
-        $pasukan_validasi = new PemudahCara;
+        $pasukan_validasi = new PasukanValidasi();
 
-        $pasukan_validasi->nama = $request->input('nama');
-        $pasukan_validasi->syarikat_cawangan = $request->input('syarikat_cawangan');
-        $pasukan_validasi->no_tel = $request->input('no_tel');
-        $pasukan_validasi->no_fax = $request->input('no_fax');
-        $pasukan_validasi->email = $request->input('email');
-        $pasukan_validasi->disiplin = $request->input('disiplin');
+        $pasukan_validasi->nama = $request->nama;
+        $pasukan_validasi->syarikat_cawangan = $request->syarikat_cawangan;
+        $pasukan_validasi->no_tel = $request->no_tel;
+        $pasukan_validasi->no_fax = $request->no_fax;
+        $pasukan_validasi->email = $request->email;
+        $pasukan_validasi->disiplin = $request->disiplin;
         $pasukan_validasi->kategori = $request->kategori;
         alert()->success('Pasukan Validasi berjaya didaftar.', 'Berjaya');
 

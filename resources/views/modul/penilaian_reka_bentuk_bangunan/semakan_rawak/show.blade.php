@@ -171,12 +171,12 @@
 
                         <tr align="center" class="text-black" >
                             <th colspan="2">Peratusan</th>
-                            <th colspan="2">0</th>
+                            <th colspan="2">$penilaian_ephjkr->peratusan</th>
                         </tr>
 
                         <tr align="center" class="text-black" >
                             <th colspan="2">Penarafan PH</th>
-                            <th colspan="2">$penilaian_ephjkr->peratusan<span class="star">&starf;</span></th>
+                            <th colspan="2">$penilaian_ephjkr->penarafan<span class="star">&starf;</span></th>
                         </tr>
 
                         <tr align="center" style="background-color:#EB5500" >

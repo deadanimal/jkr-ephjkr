@@ -134,7 +134,6 @@ class PenilaianRekaBentukBangunanController extends Controller
     {
         // submit form melantik pemudah cara
         $pemudah_cara = new PemudahCara;
-        
 
         $pemudah_cara->nama = $request->nama;
         $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
