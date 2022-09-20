@@ -48,7 +48,7 @@
                         <label class="col-form-label">Jawapan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="JawapanFAQ" type="text" value="{{$f->JawapanFAQ}}"/>
+                        <textarea class="form-control" rows="5" name="JawapanFAQ" type="text" value="{{$f->JawapanFAQ}}"> </textarea>
                     </div>
     
                     <div class="col-3 mb-2">

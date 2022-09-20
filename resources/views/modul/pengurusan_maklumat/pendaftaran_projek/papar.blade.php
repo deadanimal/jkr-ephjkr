@@ -9,7 +9,7 @@
                     <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Pendaftaran Projek</a>
                 </li>
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Papar Permohonan Gugur Projek
+                    Papar Senarai Projek
                 </li>
             </ol>
         </nav>
@@ -24,13 +24,23 @@
 
 <hr class="text-primary mb-3">
 
-    <div class="row mt-3">
-        <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create" class="btn btn-primary">Tambah</a>
-        </div>
-    </div>
+<div class="row mt-3">
 
-    <div class="row mt-2">
+</div>
+
+    {{-- <div class="row mt-3">
+        <div class="col text-end">
+            <a href="/pengurusan_maklumat/pendaftaran_projek/create" class="btn btn-primary">Tambah</a>
+        </div>
+    </div> --}}
+
+    {{-- <div class="row mt-3">
+        <div class="col text-end">
+            <a href="/pengurusan_maklumat/pendaftaran_projek/show" class="btn btn-primary">Papar</a>
+        </div>
+    </div> --}}
+
+    {{-- <div class="row mt-2">
         <div class="col">
             <div class="card">
                 <div class="card-body">
@@ -46,25 +56,24 @@
                             </tr>
                         </thead>
                         <tbody class="bg-white">
-                            @foreach ($gugur_projek as $gp)
+                            @foreach ($pendaftaran_projek as $pp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $gp->namaProjek }}</td>
-                                    <td>{{ $gp->alamatProjek }}</td>
-                                    <td>{{ $gp->statusProjek }}</td>
-                                    <td>{{ $gp->jenisKategoriProjek }}</td>
+                                    <td>{{ $pp->namaProjek }}</td>
+                                    <td>{{ $pp->alamatProjek }}</td>
+                                    <td>{{ $pp->statusProjek }}</td>
+                                    {{-- <td>{{ $pp->status->statusProjek }}</td> --}
+                                    <td>{{ $pp->jenisKategoriProjek }}</td>
                                     <td>
-                                        {{-- <div class="col text-end">
-                                            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>
-                                        </div>  --}}
                                         <div class="col-auto">
-                                            <form action="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/{{ $gp->id }}" method="post">
+                                            <form action="/pengurusan_maklumat/pendaftaran_projek/{{ $pp->id }}" method="post">
                                                 @method('DELETE')
                                                 @csrf
-                                                <button type="submit" class="btn btn-primary">Gugur</button>
+                                                <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
                                             </form>
                                         </div>
                                     </td>
+                                    
                                 </tr>
                             @endforeach
                         </tbody>
@@ -72,5 +81,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

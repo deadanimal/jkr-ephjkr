@@ -10,118 +10,122 @@
                 <div class="row mx-3">
                     <table class="table table-bordered line-table shadow-table-jkr line-corner-table-jkr">
                         <thead class="text-white line-table">
-                            <tr align="center" style="background-color:#EB5500">
-                                <th colspan="3">Jenis Pembangunan</th>
-                                <th colspan="8">Pembangunan Baru</th>
-                            </tr>
-                
-                            <tr align="center" style="background-color:#EB5500">
-                                {{-- <th></th> --}}
-                                <th colspan="3">Peratusan Mengikut Kriteria</th>
-                                <th>MM</th>
-                                <th>MS</th>
-                                <th>MR</th>
-                                <th>MMV</th>
-                                <th>MS</th>
-                                <th>MV</th>
-                                <th>ML</th>
-                            </tr>
+                                <tr align="center" style="background-color:#EB5500">
+                                    <th colspan="3">Jenis Pembangunan</th>
+                                    <th colspan="8">Pembangunan Baru</th>
+                                </tr>
+                    
+                                <tr align="center" style="background-color:#EB5500">
+                                    {{-- <th></th> --}}
+                                    <th colspan="3">Peratusan Mengikut Kriteria</th>
+                                    <th>MMR</th>
+                                    <th>MS</th>
+                                    <th>MR</th>
+                                    <th>MMV</th>
+                                    <th>MS</th>
+                                    <th>MV</th>
+                                    <th>ML</th>
+                                </tr>
                         </thead>
-
-                        <tr align="center" class="text-black" >
-                            <th>TL</th>
-                            <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th>KT</th>
-                            <th colspan="2">Pengurusan Kecekapan Tenaga</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th>SB</th>
-                            <th colspan="2">Pengurusan Sumber dan Bahan</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th>PA</th>
-                            <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th>PD</th>
-                            <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th>FL</th>
-                            <th colspan="2">Pengurusan Fasiliti Lestari</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th>IN</th>
-                            <th colspan="2">Inovasi dalam Reka Bentuk</th>
-                            <th>26</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>24</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
-
-                        <tr align="center" class="text-black" >
-                            <th colspan="3">JUMLAH</th>
-                            <th>101</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>103</th>
-                            <th>0</th>
-                            <th>0</th>
-                            <th>0</th>
-                        </tr>
+    
+                        {{-- @foreach ($kriteria_phjkr_bangunan ?? '') --}}
+                                <tr align="center" class="text-black" >
+                                    <th>TL</th>
+                                    <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
+                                    <th>26</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                                <tr align="center" class="text-black" >
+                                    <th>KT</th>
+                                    <th colspan="2">Pengurusan Kecekapan Tenaga</th>
+                                    <th>26</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                                <tr align="center" class="text-black" >
+                                    <th>SB</th>
+                                    <th colspan="2">Pengurusan Sumber dan Bahan</th>
+                                    <th>26</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                                <tr align="center" class="text-black" >
+                                    <th>PA</th>
+                                    <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
+                                    <th>26</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                                <tr align="center" class="text-black" >
+                                    <th>PD</th>
+                                    <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
+                                    <th>26</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                                <tr align="center" class="text-black" >
+                                    <th>FL</th>
+                                    <th colspan="2">Pengurusan Fasiliti Lestari</th>
+                                    <th>26</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                                <tr align="center" class="text-black" >
+                                    <th>IN</th>
+                                    <th colspan="2">Inovasi dalam Reka Bentuk</th>
+                                    <th>26</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                                <tr align="center" class="text-black" >
+                                    <th colspan="3">JUMLAH</th>
+                                    <th>101</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahMS}}</th>
+                                    <th>{{$kriteria_phjkr_bangunan->markahMR}}</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                    <th>0</th>
+                                </tr>
+    
+                            {{-- @endforeach --}}
+            
                     </table> <!--Table Jenis Pembangunan-->
                 </div> <!--row mx-3-->
             

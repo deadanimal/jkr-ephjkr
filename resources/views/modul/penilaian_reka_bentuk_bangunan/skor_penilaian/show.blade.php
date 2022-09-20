@@ -100,9 +100,6 @@
                             </tr>
                         
                             <tr class="pg-1" align="center" style="background-color:#EB5500">
-                                {{-- <th>TL</th> --}}
-                                {{-- <th>Kriteria</th> --}}
-                                {{-- <th>Kategori Bangunan</th> --}}
                                 <th colspan="4">MMR</th>
                                 <th colspan="4">MS</th>
                                 <th colspan="5">MR</th>
@@ -112,7 +109,6 @@
                                 <th>ML</th>
                                 <th>Rekabentuk (Peringkat 2)</th>
                                 <th>Verifikasi (Peringkat 3)</th>
-            
                             </tr>
             
                             <tr class="pg-1" style="background-color:#EB5500">
@@ -125,7 +121,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL1</td>
                                 <td>Perancangan Tapak</td>
-                                {{-- <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
+                                {{-- <th><input  type="text" autocapitalize="off" name="jenisKategori"/></th> --}}
                                 <td colspan="6">
                                     <select onClick="autoFill(); return true;" class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option id="input1" hidden selected="">Sila Pilih</option>
@@ -137,8 +133,8 @@
                                 </td>
 
                                 <td colspan="4">1</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL1_MS" name="markahTL1_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL1_MR" name="markahTL1_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL1_MS" name="markahTL1_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL1_MR" name="markahTL1_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -147,13 +143,18 @@
                                 <td>Tidak Berkenaan</td>
                                 <td></td>
                                 <td colspan="4">
-                                <form class="form">
-                                    <label for="form__input" class="form__label">
+                                    <div class="form-group">
+                                        <label for="file">Choose File</label>
+                                        <input type="file" class="form-control" name="dokumenSokongan" id="dokumenSokongan"/>
+                                    </div>
+                                    <button type="submit">Upload</button>
+                                {{-- <form class="form"> --}}
+                                    {{-- <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
                                         <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
                                         <span id="custom-text">No file chosen, yet.</span>
-                                    </label>
-                                </form>
+                                    </label> --}}
+                                {{-- </form> --}}
                                 </td>
                 
                             </tr>
@@ -172,8 +173,8 @@
                                     </select>                                 
                                 </td>
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL2_MS" name="markahTL2_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL2_MR" name="markahTL2_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL2_MS" name="markahTL2_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL2_MR" name="markahTL2_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -211,8 +212,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL3_MS" name="markahTL3_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL3_MR" name="markahTL3_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL3_MS" name="markahTL3_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL3_MR" name="markahTL3_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -245,8 +246,8 @@
                                 <td>ii. Mengekalkan Topografi Tanah</td>
                                 {{-- <th>A</th> --}}
                                 <td colspan="4">2</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL32_MS" name="markahTL32_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL32_MR" name="markahTL32_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL32_MS" name="markahTL32_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL32_MR" name="markahTL32_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -290,8 +291,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL4_MS" name="markahTL4_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL4_MR" name="markahTL4_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL4_MS" name="markahTL4_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL4_MR" name="markahTL4_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -328,8 +329,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL5_MS" name="markahTL5_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL5_MR" name="markahTL5_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL5_MS" name="markahTL5_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL5_MR" name="markahTL5_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -366,8 +367,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -426,8 +427,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL81_MS" name="markahTL81_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL81_MR" name="markahTL81_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL81_MS" name="markahTL81_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL81_MR" name="markahTL81_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -468,8 +469,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL82_MS" name="markahTL82_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL82_MR" name="markahTL82_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL82_MS" name="markahTL82_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL82_MR" name="markahTL82_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -509,8 +510,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL83_MS" name="markahTL83_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL83_MR" name="markahTL83_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL83_MS" name="markahTL83_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL83_MR" name="markahTL83_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -553,8 +554,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL84_MS" name="markahTL84_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL84_MR" name="markahTL84_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL84_MS" name="markahTL84_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL84_MR" name="markahTL84_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -592,8 +593,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL85_MS" name="markahTL85_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL85_MR" name="markahTL85_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL85_MS" name="markahTL85_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL85_MR" name="markahTL85_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -653,8 +654,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL91_MS" name="markahTL91_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL91_MR" name="markahTL91_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL91_MS" name="markahTL91_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL91_MR" name="markahTL91_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -696,8 +697,8 @@
                                     </select>                                 
                                 </td>
                                 <td colspan="4">3</td>
-                                <td colspan="4"><input onblur="findTotalMS()" class="form-control sum_ms" type="number" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" required/></td>
-                                <td colspan="5"><input onblur="findTotalMR()" class="form-control sum_mr" type="number" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" required/></td>
+                                <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" required/></td>
+                                <td colspan="5"><input onblur="findTotalMR_TL()" class="MR_TL" type="number" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -733,17 +734,39 @@
                             <tr class="pg-1" align="center">
                                 <th colspan="6">Jumlah markah TL</th>
                                 <td colspan="4">11</td>
-                                <td colspan="4"><input class="form-control" id="total_amount_ms" type="text" autocapitalize="off" name="markahTOTAL_TL_MS" id="markahTOTAL_TL_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
-                                <td colspan="5"><input class="form-control" id="total_amount_mr" type="text" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></td>
+                                <td colspan="4">
+                                    <input id="totalMS_TL" name="markahTOTAL_TL_MS" id="markahTOTAL_TL_MS" value="{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}"/>
+                                    {{-- <span id="totalMS_TL" name="markahTOTAL_TL_MS" id="markahTOTAL_TL_MS">0</span> --}}
+                                </td>
+                                <td colspan="5"><input  id="totalMR_TL" type="number" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR"/></td>
                                 
                                 {{-- <td colspan="4"></td> --}}
                             </tr> 
+                            
 
-                            <!--Hidden Table-->
-                            <tr hidden>
-                                <td hidden name="markahTL" id="markahTL"></td>
-                                <td hidden name="markahMS" id="markahMS"></td>
-                            </tr>
+                            <!--Test kira jap-->
+                            {{-- <tr>
+                                <td>
+                                    <input onblur="addFunctionOneAddFunctionTwo()"id="total" type="number" autocapitalize="off" name="markahMS" id="markahMS">
+                                </td>
+                            </tr> --}}
+
+                            <!--Function ke tak mortgage ni-->
+                            {{-- <h3>Mortage Apartments:</h3>
+
+  Dept 1<input type="number" class="qty"><br><br>
+  Dept 2<input type="number" class="qty"><br><br>
+  Dept 3<input type="number" class="qty"><br><br>
+  <label>The Total Mortage is: <input id="totalMorgage"></label>
+  <h3>Bills Apartments:</h3>
+  Dept 1<input type="number" class="qtyBills"><br><br>
+  Dept 2<input type="number" class="qtyBills"><br><br>
+  Dept 3<input type="number" class="qtyBills"><br><br>
+  <label>The Total Bills is: <input id="totalBills"></label>
+
+  <h3>Total from Bills and morgage:</h3>
+  <label>The Total Mortage is: <input id="total"></label> --}}
+
                     </table>
                                            
                     <!--------------------------------------- MarkahKT ---------------------------------------->
@@ -791,7 +814,6 @@
                             <tr class="pg-2" align="center">
                                 <td>KT1</td>
                                 <td>Rekabentuk bumbung</td>
-                                {{-- <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
                                 <td>
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
@@ -803,8 +825,8 @@
                                 </td>
 
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT1_MS" name="markahKT1_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT1_MR" name="markahKT1_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -830,22 +852,22 @@
 
                             </tr>
 
-                            <!--KT2-->
+                            <!--KT2--><!--NO INPUT-->
                             <tr class="pg-2" align="center">
                                 <td>KT2</td>
                                 <td>Orientasi bangunan</td>
-                                <td>
+                                {{-- <td>
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
                                         <option hidden selected="">Sila Pilih</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
                                         <option value="D">D</option>
-                                    </select>                                 
+                                    </select>                                  --}}
                                 </td>
-                                <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"></td>
+                                <td colspan="2"></td>
+                                <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -869,8 +891,8 @@
                                     </select>                                 
                                 </td>                            
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT21_MS" name="markahKT21_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT21_MR" name="markahKT21_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <th colspan="2"></th>
@@ -910,8 +932,8 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT22_MS" name="markahKT22_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT22_MR" name="markahKT22_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <th colspan="2"></th>
@@ -934,7 +956,7 @@
 
                             </tr>
 
-                            <!--KT3-->
+                            <!--KT3--><!--NO INPUT-->
                             <tr class="pg-2" align="center">
                                 <td>KT3</td>
                                 <td>Rekabentuk fasad</td>
@@ -973,8 +995,8 @@
                                     </select> 
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT31_MS" name="markahKT31_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT31_MR" name="markahKT31_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -1013,8 +1035,8 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT32_MS" name="markahKT32_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT32_MR" name="markahKT32_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -1026,7 +1048,7 @@
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
+                                {{-- <td colspan="3"><input  type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
 
 
                             </tr>
@@ -1045,8 +1067,8 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT4_MS" name="markahKT4_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT4_MR" name="markahKT4_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -1057,24 +1079,16 @@
                                 <td>
                                     <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
                                 </td>
-                                {{-- <td colspan="3"><input class="form-control" type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
+                                {{-- <td colspan="3"><input  type="file" name="dokumenSokongan" id="file_dokumenSokongan" value="{{$dokumen_sokongan ?? ''}}"></td> --}}
 
 
                             </tr>
 
-                            <!--KT5-->
+                            <!--KT5--><!--NO INPUT-->
                             <tr class="pg-2" align="center">
                                 <td>KT5</td>
                                 <td>Kecekapan pencahayaan</td>
-                                <td>
-                                    {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori" required>
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                 --}}
-                                </td>
+                                <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -1102,8 +1116,8 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -1142,8 +1156,8 @@
                                     </select>                
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT8_MS" name="markahKT8_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT8_MR" name="markahKT8_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -1182,8 +1196,8 @@
                                     </select>  
                                 </td>
                                 <td colspan="2">3</td>
-                                <td colspan="2"><input onblur="findTotalMS_KT()" class="form-control sum_ms_kt" type="number" autocapitalize="off" required/></td>
-                                <td colspan="2"><input onblur="findTotalMR_KT()" class="form-control sum_mr_kt" type="number" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMS_KT()" class="MS_KT" type="number" id="markahKT11_MS" name="markahKT11_MS" autocapitalize="off" required/></td>
+                                <td colspan="2"><input onblur="findTotalMR_KT()" class="sum_mr_kt" type="number" id="markahKT11_MR" name="markahKT11_MR" autocapitalize="off" required/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -1210,8 +1224,8 @@
                             <tr class="pg-2" align="center">
                                 <th colspan="3">Jumlah markah KT</th>
                                 <th colspan="2">0</th>
-                                <th colspan="2"><input class="form-control" id="total_amount_ms_kt" type="text" autocapitalize="off" id="markahTOTAL_KT_MS" name="markahTOTAL_KT_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th colspan="2"><input class="form-control" id="total_amount_mr_kt" type="text" autocapitalize="off" id="markahTOTAL_KT_MR" name="markahTOTAL_KT_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th colspan="2"><input id="totalMS_KT" type="number" autocapitalize="off" id="markahTOTAL_KT_MS" name="markahTOTAL_KT_MS"/></th>
+                                <th colspan="2"><input id="totalMR_KT" type="number" autocapitalize="off" id="markahTOTAL_KT_MR" name="markahTOTAL_KT_MR"/></th>
                                 <th colspan="2">0</th>
                                 <th colspan="2">0</th>
                                 <th colspan="2">0</th>
@@ -1219,6 +1233,12 @@
                                 <th colspan="4"></th>
                                 <th colspan="3"></th>
                             </tr> 
+
+                            <tr>
+                                <td>
+                                    <input id="totalMS" type="number" id="markahMS" name="markahMS"/>
+                                </td>
+                            </tr>
                             
                     </table>
 
@@ -1274,8 +1294,8 @@
                                     </select>    
                                 </td>
                                 <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_SB()" class="sum_ms_sb" type="number" id="markahSB1_MS" name="markahSB1_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_SB()" class="sum_mr_sb" type="number" id="markahSB1_MR" name="markahSB1_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1314,8 +1334,8 @@
                                     </select>
                                 </td>
                                 <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_SB()" class="sum_ms_sb" type="number" id="markahSB2_MS" name="markahSB2_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_SB()" class="sum_mr_sb" type="number" id="markahSB2_MR" name="markahSB2_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1357,8 +1377,8 @@
                                     </select>
                                 </td>
                                 <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_SB()" class="sum_ms_sb" type="number" id="markahSB3_MS" name="markahSB3_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_SB()" class="sum_mr_sb" type="number" id="markahSB3_MR" name="markahSB3_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1404,8 +1424,8 @@
                                     </select>
                                 </td>
                                 <td></td>
-                                <td><input onblur="findTotalMS_SB()" class="form-control sum_ms_sb" type="number" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_SB()" class="form-control sum_mr_sb" type="number" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_SB()" class="sum_ms_sb" type="number" id="markahSB4_MS" name="markahSB4_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_SB()" class="sum_mr_sb" type="number" id="markahSB4_MR" name="markahSB4_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1434,8 +1454,8 @@
                                 <tr class="pg-3" align="center">
                                     <th colspan="3">Jumlah markah SB</th>
                                     <th>0</th>
-                                    <th><input class="form-control" id="total_amount_mr_sb" type="text" autocapitalize="off" id="markahTOTAL_SB_MS" name="markahTOTAL_SB_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                    <th><input class="form-control" id="total_amount_ms_sb" type="text" autocapitalize="off" id="markahTOTAL_SB_MR" name="markahTOTAL_SB_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                    <th><input  id="total_amount_mr_sb" type="text" autocapitalize="off" id="markahTOTAL_SB_MS" name="markahTOTAL_SB_MS"/></th>
+                                    <th><input  id="total_amount_ms_sb" type="text" autocapitalize="off" id="markahTOTAL_SB_MR" name="markahTOTAL_SB_MR"/></th>
                                     <th>0</th>
                                     <th>0</th>
                                     <th>0</th>
@@ -1495,8 +1515,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS_PA()" class="form-control sum_ms_pa" type="number" id="markahPA1_MS" name="markahPA1_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" id="markahPA1_MR" name="markahPA1_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_PA()" class="sum_ms_pa" type="number" id="markahPA1_MS" name="markahPA1_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_PA()" class="sum_mr_pa" type="number" id="markahPA1_MR" name="markahPA1_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1535,8 +1555,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS_PA()" class="form-control sum_ms_pa" type="number" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_PA()" class="sum_ms_pa" type="number" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_PA()" class="sum_mr_pa" type="number" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1575,8 +1595,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS_PA()" class="form-control sum_ms_pa" type="number" id="markahPA3_MS" name="markahPA3_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_PA()" class="form-control sum_mr_pa" type="number" id="markahPA3_MR" name="markahPA3_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_PA()" class="sum_ms_pa" type="number" id="markahPA3_MS" name="markahPA3_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_PA()" class="sum_mr_pa" type="number" id="markahPA3_MR" name="markahPA3_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1614,8 +1634,8 @@
                                     </select>
                                 </td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMS()" class="form-control sum_ms_pa" type="number" id="markahPA32_MS" name="markahPA32_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR()" class="form-control sum_mr" type="number" id="markahPA32_MR" name="markahPA32_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_PA()" class="sum_ms_pa" type="number" id="markahPA32_MS" name="markahPA32_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_PA()" class="sum_mr_pa" type="number" id="markahPA32_MR" name="markahPA32_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1647,8 +1667,8 @@
                             <tr class="pg-4" align="center">
                                 <th colspan="3">Jumlah markah PA</th>
                                 <th>0</th>
-                                <th><input class="form-control" id="total_amount_ms_pa" type="text" autocapitalize="off" name="markahTOTAL_PA_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th><input class="form-control" id="total_amount_mr_pa" type="text" autocapitalize="off" name="markahTOTAL_PA_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input  id="total_amount_ms_pa" type="number" autocapitalize="off" name="markahTOTAL_PA_MS"/></th>
+                                <th><input  id="total_amount_mr_pa" type="number" autocapitalize="off" name="markahTOTAL_PA_MR"/></th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -1743,8 +1763,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" id="MarkahPD24_MS" name="MarkahPD24_MS" type="number" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" id="MarkahPD24_MR" name="MarkahPD24_MR" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" id="markahPD24_MS" name="markahPD24_MS" type="number" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" id="markahPD24_MR" name="markahPD24_MR" type="number" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1782,8 +1802,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="MarkahPD25_MS" name="MarkahPD25_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="MarkahPD25_MR" name="MarkahPD25_MR"autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" id="markahPD25_MS" name="markahPD25_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" type="number" id="markahPD25_MR" name="markahPD25_MR"autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1855,8 +1875,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD31_MS" name="markahPD31_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD31_MR" name="markahPD31_MR" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" id="markahPD31_MS" name="markahPD31_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" type="number" id="markahPD31_MR" name="markahPD31_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1896,8 +1916,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD32_MS" name="markahPD32_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD32_MR" name="markahPD32_MR" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" id="markahPD32_MS" name="markahPD32_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" type="number" id="markahPD32_MR" name="markahPD32_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1939,8 +1959,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD33_MS" name="markahPD33_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD33_MR" name="markahPD33_MR" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" id="markahPD33_MS" name="markahPD33_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" type="number" id="markahPD33_MR" name="markahPD33_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1979,8 +1999,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD34_MS" name="markahPD34_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD34_MR" name="markahPD34_MR" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" id="markahPD34_MS" name="markahPD34_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" type="number" id="markahPD34_MR" name="markahPD34_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2021,8 +2041,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD8_MS" name="markahPD8_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD8_MR" name="markahPD8_MR" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" id="markahPD8_MS" name="markahPD8_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" type="number" id="markahPD8_MR" name="markahPD8_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2063,8 +2083,8 @@
                                 </select>
                             </td>
                             <td></td>
-                            <td><input onblur="findTotalMS_PD()" class="form-control sum_ms_pd" type="number" id="markahPD10_MS" name="markahPD10_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_PD()" class="form-control sum_mr_pd" type="number" id="markahPD10_MR" name="markahPD10_MR" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" id="markahPD10_MS" name="markahPD10_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_PD()" class="sum_mr_pd" type="number" id="markahPD10_MR" name="markahPD10_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2090,8 +2110,8 @@
                         <tr class="pg-5" align="center">
                             <th colspan="3">Jumlah markah PD</th>
                             <th>0</th>
-                            <th><input class="form-control" id="total_amount_ms_pd" type="text" autocapitalize="off" name="markahTOTAL_PD_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                            <th><input class="form-control" id="total_amount_mr_pd" type="text" autocapitalize="off" name="markahTOTAL_PD_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                            <th><input  id="total_amount_ms_pd" type="text" autocapitalize="off" name="markahTOTAL_PD_MS"/></th>
+                            <th><input  id="total_amount_mr_pd" type="text" autocapitalize="off" name="markahTOTAL_PD_MR"/></th>
                             <th>0</th>
                             <th>0</th>
                             <th>0</th>
@@ -2152,8 +2172,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL1_MS" name="MarkahFL1_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL1_MR" name="MarkahFL1_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL1_MS" name="markahFL1_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL1_MR" name="markahFL1_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2186,8 +2206,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL2_MS" name="MarkahFL2_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL2_MR" name="MarkahFL2_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL2_MS" name="markahFL2_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL2_MR" name="markahFL2_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2221,8 +2241,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL21_MS" name="MarkahFL21_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL21_MR" name="MarkahFL21_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL21_MS" name="markahFL21_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL21_MR" name="markahFL21_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2256,8 +2276,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL22_MS" name="MarkahFL22_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL22_MR" name="MarkahFL22_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL22_MS" name="markahFL22_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL22_MR" name="markahFL22_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2291,8 +2311,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL23_MS" name="MarkahFL23_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL23_MR" name="MarkahFL23_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL23_MS" name="markahFL23_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL23_MR" name="markahFL23_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2326,8 +2346,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL3_MS" name="MarkahFL3_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL3_MR" name="MarkahFL3_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL3_MS" name="markahFL3_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL3_MR" name="markahFL3_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2361,8 +2381,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL31_MS" name="MarkahFL31_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL31_MR" name="MarkahFL31_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL31_MS" name="markahFL31_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL31_MR" name="markahFL31_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2396,8 +2416,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL32_MS" name="MarkahFL32_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL32_MR" name="MarkahFL32_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL32_MS" name="markahFL32_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL32_MR" name="markahFL32_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2431,8 +2451,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL33_MS" name="MarkahFL33_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL33_MR" name="MarkahFL33_MR"autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL33_MS" name="markahFL33_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL33_MR" name="markahFL33_MR"autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2466,8 +2486,8 @@
                                     </select>
                                 </td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="form-control sum_ms_fl" type="number" id="MarkahFL34_MS" name="MarkahFL34_MS" autocapitalize="off" required/></td>
-                                <td><input onblur="findTotalMR_FL()" class="form-control sum_mr_fl" type="number" id="MarkahFL34_MR" name="MarkahFL34_MR" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" id="markahFL34_MS" name="markahFL34_MS" autocapitalize="off" required/></td>
+                                <td><input onblur="findTotalMR_FL()" class="sum_mr_fl" type="number" id="markahFL34_MR" name="markahFL34_MR" autocapitalize="off" required/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2495,8 +2515,8 @@
                                 <th>
                                    0
                                 </th>
-                                <th><input class="form-control" id="total_amount_ms_fl" type="text" autocapitalize="off" name="markahTOTAL_FL_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
-                                <th><input class="form-control" id="total_amount_mr_fl" type="text" autocapitalize="off" name="markahTOTAL_FL_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input  id="total_amount_ms_fl" type="text" autocapitalize="off" name="markahTOTAL_FL_MS"/></th>
+                                <th><input  id="total_amount_mr_fl" type="text" autocapitalize="off" name="markahTOTAL_FL_MR"/></th>
                                 <th>
                                     0
                                 </th>
@@ -2559,8 +2579,8 @@
                                 </select>
                             </td>
                             <td>1</td>
-                            <td><input onblur="findTotalMS_IN()" class="form-control sum_ms_in" type="number" id="markahIN1_MS" name="markahIN1_MS" autocapitalize="off" required/></td>
-                            <td><input onblur="findTotalMR_IN()" class="form-control sum_mr_in" type="number" id="markahIN1_MR" name="markahIN1_MR" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMS_IN()" class="sum_ms_in" type="number" id="markahIN1_MS" name="markahIN1_MS" autocapitalize="off" required/></td>
+                            <td><input onblur="findTotalMR_IN()" class="sum_mr_in" type="number" id="markahIN2_MR" name="markahIN2_MR" autocapitalize="off" required/></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2591,9 +2611,9 @@
                                 <th>
                                     0
                                 </th>
-                                <th><input class="form-control" id="total_amount_ms_in" type="text" autocapitalize="off" name="markahTOTAL_IN_MS" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th>
+                                <th><input  id="total_amount_ms_in" type="text" autocapitalize="off" name="markahTOTAL_IN_MS"/></th>
                                 <th>
-                                    <input class="form-control" id="total_amount_mr_in" type="text" autocapitalize="off" name="markahTOTAL_IN_MR" value="{{$kriteria_phjkr_bangunan ?? ''}}"/>
+                                    <input  id="total_amount_mr_in" type="text" autocapitalize="off" name="markahTOTAL_IN_MR"/>
                                 </th>
                                 <th>0
                                 </th>
@@ -2627,6 +2647,8 @@
                         {{-- <button class="btn btn-primary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button1()" type="submit">Kembali</button>
+                        <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
                     </div>
 
@@ -2634,6 +2656,8 @@
                     <div class="mt-3 text-center pg-3">
                         {{-- <button class="btn btn-primary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
+                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button2()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
                     </div>
@@ -2643,6 +2667,8 @@
                         {{-- <button class="btn btn-primary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button3()" type="submit">Kembali</button>
+                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
                     </div>
 
@@ -2650,6 +2676,8 @@
                     <div class="mt-3 text-center pg-5">
                         {{-- <button class="btn btn-primary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
+                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button4()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
                     </div>
@@ -2659,14 +2687,18 @@
                         {{-- <button class="btn btn-primary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Simpan" type="submit">Simpan</button> --}}
                         <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button5()" type="submit">Kembali</button>
+                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
                     </div>
 
                     <!--Page 7-->
-                    {{-- <div class="mt-3 text-center pg-7">
-                        <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
-                    </div> --}}
+                    <div class="mt-3 text-center pg-7">
+                        {{-- <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button> --}}
+                        <button class="btn btn-secondary pg-7" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button6()" type="submit">Kembali</button>
+                    </div>
 
 
 
@@ -2690,59 +2722,66 @@
             <!--------------------------------------- MarkahTL ---------------------------------------->
 
             <!--MarkahTL for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS() {
-                var arr = document.getElementsByClassName('sum_ms');
+                var sum_ms = document.getElementsByClassName('sum_ms');
                 var tot = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms.length; i++) {
+                    if (parseFloat(sum_ms[i].value))
+                    tot += parseFloat(sum_ms[i].value);
                 }
                 document.getElementById('total_amount_ms').value = tot;
+
+                //display the total of inputs
+                sum_ms.innerText = tot;
             }
 
-            </script>
+            </script> --}}
 
             <!--MarkahTL for MR-->
             <script>
                 function findTotalMR() {
-                var arr = document.getElementsByClassName('sum_mr');
+                var sum_mr = document.getElementsByClassName('sum_mr');
                 var tot1 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot1 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr.length; i++) {
+                    if (parseFloat(sum_mr[i].value))
+                    tot1 += parseFloat(sum_mr[i].value);
                 }
                 document.getElementById('total_amount_mr').value = tot1;
             }
+
 
             </script>
 
             <!--------------------------------------- MarkahKT ---------------------------------------->
 
             <!--MarkahKT for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_KT() {
-                var arr = document.getElementsByClassName('sum_ms_kt');
+                var sum_ms_kt = document.getElementsByClassName('sum_ms_kt');
                 var tot2 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot2 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_kt.length; i++) {
+                    if (parseFloat(sum_ms_kt[i].value))
+                    tot2 += parseFloat(sum_ms_kt[i].value);
                 }
                 document.getElementById('total_amount_ms_kt').value = tot2;
             }
 
-            </script>
+                sum_ms_kt.innerText = tot2;
+
+            </script> --}}
 
             <!--MarkahKT for MR-->
             <script>
                 function findTotalMR_KT() {
-                var arr = document.getElementsByClassName('sum_mr_kt');
+                var sum_mr_kt = document.getElementsByClassName('sum_mr_kt');
                 var tot3 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot3 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_kt.length; i++) {
+                    if (parseFloat(sum_mr_kt[i].value))
+                    tot3 += parseFloat(sum_mr_kt[i].value);
                 }
                 document.getElementById('total_amount_mr_kt').value = tot3;
+
             }
 
             </script>
@@ -2750,27 +2789,29 @@
             <!--------------------------------------- MarkahSB ---------------------------------------->
 
             <!--MarkahSB for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_SB() {
-                var arr = document.getElementsByClassName('sum_ms_sb');
+                var sum_ms_sb = document.getElementsByClassName('sum_ms_sb');
                 var tot4 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot4 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_sb.length; i++) {
+                    if (parseFloat(sum_ms_sb[i].value))
+                    tot4 += parseFloat(sum_ms_sb[i].value);
                 }
                 document.getElementById('total_amount_ms_sb').value = tot4;
             }
 
-            </script>
+                //penambahan
+                sum_ms_sb.innerText = tot4;
+            </script> --}}
 
             <!--MarkahSB for MR-->
             <script>
                 function findTotalMR_SB() {
-                var arr = document.getElementsByClassName('sum_mr_sb');
+                var sum_mr_sb = document.getElementsByClassName('sum_mr_sb');
                 var tot5 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot5 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_sb.length; i++) {
+                    if (parseFloat(sum_mr_sb[i].value))
+                    tot5 += parseFloat(sum_mr_sb[i].value);
                 }
                 document.getElementById('total_amount_mr_sb').value = tot5;
             }
@@ -2780,27 +2821,29 @@
             <!--------------------------------------- MarkahPA ---------------------------------------->
 
             <!--MarkahPA for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_PA() {
-                var arr = document.getElementsByClassName('sum_ms_pa');
+                var sum_ms_pa = document.getElementsByClassName('sum_ms_pa');
                 var tot6 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot6 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_pa.length; i++) {
+                    if (parseFloat(sum_ms_pa[i].value))
+                    tot6 += parseFloat(sum_ms_pa[i].value);
                 }
                 document.getElementById('total_amount_ms_pa').value = tot6;
             }
 
-            </script>
+                sum_ms_pa.innerText = tot6;
+
+            </script> --}}
 
             <!--MarkahPA for MR-->
             <script>
                 function findTotalMR_PA() {
-                var arr = document.getElementsByClassName('sum_mr_pa');
+                var sum_mr_pa = document.getElementsByClassName('sum_mr_pa');
                 var tot7 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot7 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_pa.length; i++) {
+                    if (parseFloat(sum_mr_pa[i].value))
+                    tot7 += parseFloat(sum_mr_pa[i].value);
                 }
                 document.getElementById('total_amount_mr_pa').value = tot7;
             }
@@ -2810,27 +2853,29 @@
             <!--------------------------------------- MarkahPD ---------------------------------------->
 
             <!--MarkahPD for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_PD() {
-                var arr = document.getElementsByClassName('sum_ms_pd');
+                var sum_ms_pd = document.getElementsByClassName('sum_ms_pd');
                 var tot8 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot8 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_pd.length; i++) {
+                    if (parseFloat(sum_ms_pd[i].value))
+                    tot8 += parseFloat(sum_ms_pd[i].value);
                 }
                 document.getElementById('total_amount_ms_pd').value = tot8;
             }
 
-            </script>
+                sum_ms_pd.innerText = tot8;
+
+            </script> --}}
 
             <!--MarkahPD for MR-->
             <script>
                 function findTotalMR_PD() {
-                var arr = document.getElementsByClassName('sum_mr_pd');
+                var sum_mr_pd = document.getElementsByClassName('sum_mr_pd');
                 var tot9 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot9 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_pd.length; i++) {
+                    if (parseFloat(sum_mr_pd[i].value))
+                    tot9 += parseFloat(sum_mr_pd[i].value);
                 }
                 document.getElementById('total_amount_mr_pd').value = tot9;
             }
@@ -2840,27 +2885,29 @@
             <!--------------------------------------- MarkahFL ---------------------------------------->
 
             <!--MarkahFL for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_FL() {
-                var arr = document.getElementsByClassName('sum_ms_fl');
+                var sum_ms_fl = document.getElementsByClassName('sum_ms_fl');
                 var tot10 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot10 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_fl.length; i++) {
+                    if (parseFloat(sum_ms_fl[i].value))
+                    tot10 += parseFloat(sum_ms_fl[i].value);
                 }
                 document.getElementById('total_amount_ms_fl').value = tot10;
             }
 
-            </script>
+                sum_ms_fl.innerText = tot10;
+
+            </script> --}}
 
             <!--MarkahFL for MR-->
             <script>
                 function findTotalMR_FL() {
-                var arr = document.getElementsByClassName('sum_mr_fl');
+                var sum_mr_fl = document.getElementsByClassName('sum_mr_fl');
                 var tot11 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot11 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_fl.length; i++) {
+                    if (parseFloat(sum_mr_fl[i].value))
+                    tot11 += parseFloat(sum_mr_fl[i].value);
                 }
                 document.getElementById('total_amount_mr_fl').value = tot11;
             }
@@ -2870,27 +2917,29 @@
             <!--------------------------------------- MarkahIN ---------------------------------------->
 
             <!--MarkahIN for MS-->
-            <script>
+            {{-- <script>
                 function findTotalMS_IN() {
-                var arr = document.getElementsByClassName('sum_ms_in');
+                var sum_ms_in = document.getElementsByClassName('sum_ms_in');
                 var tot12 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot12 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_ms_in.length; i++) {
+                    if (parseFloat(sum_ms_in[i].value))
+                    tot12 += parseFloat(sum_ms_in[i].value);
                 }
                 document.getElementById('total_amount_ms_in').value = tot12;
             }
 
-            </script>
+                sum_ms_in.innerText = tot12;
+
+            </script> --}}
 
             <!--MarkahIN for MR-->
             <script>
                 function findTotalMR_IN() {
-                var arr = document.getElementsByClassName('sum_mr_in');
+                var sum_mr_in = document.getElementsByClassName('sum_mr_in');
                 var tot13 = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    tot13 += parseFloat(arr[i].value);
+                for (var i = 0; i < sum_mr_in.length; i++) {
+                    if (parseFloat(sum_mr_in[i].value))
+                    tot13 += parseFloat(sum_mr_in[i].value);
                 }
                 document.getElementById('total_amount_mr_in').value = tot13;
             }
@@ -2991,6 +3040,311 @@
                 }
                 }
             }
+            </script> --}}
+
+
+            <!--MS CALCULATION-->
+            <script>
+                function findTotalMS_TL(){
+                    var totalMS_TL = document.getElementById('totalMS_TL');
+                    var MS_TL = document.getElementsByClassName('MS_TL');
+                    var sumMS_TL = 0;
+
+                    for( var i = 0; i < MS_TL.length; i++ ){
+                        sumMS_TL += Number(MS_TL[i].value);
+
+                    //display the total of inputs
+                    totalMS_TL.value = sumMS_TL;
+                }
+                    document.getElementById('totalMS_TL').value = sumMS_TL;
+                }
+
+                function findTotalMS_KT(){
+                    var totalMS_KT = document.getElementById('totalMS_KT');
+                    var MS_KT = document.getElementsByClassName('MS_KT');
+                    var sumMS_KT = 0;
+
+                    for( var i = 0; i < MS_KT.length; i++ ){
+                        sumMS_KT += Number(MS_KT[i].value);
+
+                    //display the total of inputs
+                    totalMS_KT.value = sumMS_KT;
+                    }
+                    document.getElementById('totalMS_KT').value = sumMS_KT;
+                }
+
+                function findTotalMS_SB(){
+                    var totalMS_SB = document.getElementById('totalMS_SB');
+                    var MS_SB = document.getElementsByClassName('MS_SB');
+                    var sumMS_SB = 0;
+
+                    for( var i = 0; i < MS_SB.length; i++ ){
+                        sumMS_SB += Number(MS_SB[i].value);
+
+                    //display the total of inputs
+                    totalMS_SB.value = sumMS_SB;
+                    }
+                    document.getElementById('totalMS_SB').value = sumMS_SB;
+                }
+
+                function findTotalMS_PA(){
+                    var totalMS_PA = document.getElementById('totalMS_PA');
+                    var MS_PA = document.getElementsByClassName('MS_PA');
+                    var sumMS_PA = 0;
+
+                    for( var i = 0; i < MS_PA.length; i++ ){
+                        sumMS_PA += Number(MS_PA[i].value);
+
+                    //display the total of inputs
+                    totalMS_PA.value = sumMS_PA;
+                    }
+                    document.getElementById('totalMS_PA').value = sumMS_PA;
+                }
+
+                function findTotalMS_PD(){
+                    var totalMS_PD = document.getElementById('totalMS_PD');
+                    var MS_PD = document.getElementsByClassName('MS_PD');
+                    var sumMS_PD = 0;
+
+                    for( var i = 0; i < MS_PD.length; i++ ){
+                        sumMS_PD += Number(MS_PD[i].value);
+
+                    //display the total of inputs
+                    totalMS_PD.value = sumMS_PD;
+                    }
+                    document.getElementById('totalMS_PD').value = sumMS_PD;
+                }
+
+                function findTotalMS_FL(){
+                    var totalMS_FL = document.getElementById('totalMS_FL');
+                    var MS_FL = document.getElementsByClassName('MS_FL');
+                    var sumMS_FL = 0;
+
+                    for( var i = 0; i < MS_FL.length; i++ ){
+                        sumMS_FL += Number(MS_FL[i].value);
+
+                    //display the total of inputs
+                    totalMS_FL.value = sumMS_FL;
+                    }
+                    document.getElementById('totalMS_FL').value = sumMS_FL;
+                }
+
+
+                function findTotalMS_IN(){
+                    var totalMS_IN = document.getElementById('totalMS_IN');
+                    var MS_IN = document.getElementsByClassName('MS_IN');
+                    var sumMS_IN = 0;
+
+                    for( var i = 0; i < MS_IN.length; i++ ){
+                        sumMS_IN += Number(MS_IN[i].value);
+
+                    //display the total of inputs
+                    totalMS_IN.value = sumMS_IN;
+                    }
+                    document.getElementById('totalMS_IN').value = sumMS_IN;
+                }
+
+
+
+                function findTotalMS(){
+                    var TL = totalMS_TL.value || 0;
+                    var KT = totalMS_KT.value || 0;
+                    // var SB = totalMS_SB.value || 0;
+                    // var PA = totalMS_PA.value || 0;
+                    // var PD = totalMS_PD.value || 0;
+                    // var FL = totalMS_FL.value || 0;
+                    // var IN = totalMS_IN.value || 0;
+                    document.getElementById('totalMS').value = Number(TL) + Number(KT);
+                    // + Number(SB) 
+                    // + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+                }
+
+                document.addEventListener('keyup', function(){
+                    findTotalMS_TL();
+                    findTotalMS_KT();
+                    // findTotalMS_SB();
+                    // findTotalMS_PA();
+                    // findTotalMS_PD();
+                    // findTotalMS_FL();
+                    // findTotalMS_IN();
+                    findTotalMS();
+                });
+            </script>
+
+            <!--MR CALCULATION-->
+            <script>
+                function findTotalMR_TL(){
+                    var totalMR_TL = document.getElementById('totalMR_TL');
+                    var MR_TL = document.getElementsByClassName('MR_TL');
+                    var sumMR_TL = 0;
+
+                    for( var i = 0; i < MR_TL.length; i++ ){
+                        sumMR_TL += Number(MR_TL[i].value);
+
+                    //display the total of inputs
+                    totalMR_TL.value = sumMR_TL;
+                }
+                    document.getElementById('totalMR_TL').value = sumMR_TL;
+                }
+
+                function findTotalMR_KT(){
+                    var totalMR_KT = document.getElementById('totalMR_KT');
+                    var MR_KT = document.getElementsByClassName('MR_KT');
+                    var sumMR_KT = 0;
+
+                    for( var i = 0; i < MR_KT.length; i++ ){
+                        sumMR_KT += Number(MR_KT[i].value);
+
+                    //display the total of inputs
+                    totalMR_KT.value = sumMR_KT;
+                    }
+                    document.getElementById('totalMR_KT').value = sumMR_KT;
+                }
+
+                function findTotalMR_SB(){
+                    var totalMR_SB = document.getElementById('totalMR_SB');
+                    var MR_SB = document.getElementsByClassName('MR_SB');
+                    var sumMR_SB = 0;
+
+                    for( var i = 0; i < MR_SB.length; i++ ){
+                        sumMR_SB += Number(MR_SB[i].value);
+
+                    //display the total of inputs
+                    totalMR_SB.value = sumMR_SB;
+                    }
+                    document.getElementById('totalMR_SB').value = sumMR_SB;
+                }
+
+                function findTotalMR_PA(){
+                    var totalMR_PA = document.getElementById('totalMR_PA');
+                    var MR_PA = document.getElementsByClassName('MR_PA');
+                    var sumMR_PA = 0;
+
+                    for( var i = 0; i < MR_PA.length; i++ ){
+                        sumMR_PA += Number(MR_PA[i].value);
+
+                    //display the total of inputs
+                    totalMR_PA.value = sumMR_PA;
+                    }
+                    document.getElementById('totalMR_PA').value = sumMR_PA;
+                }
+
+                function findTotalMR_PD(){
+                    var totalMR_PD = document.getElementById('totalMR_PD');
+                    var MR_PD = document.getElementsByClassName('MR_PD');
+                    var sumMR_PD = 0;
+
+                    for( var i = 0; i < MR_PD.length; i++ ){
+                        sumMR_PD += Number(MR_PD[i].value);
+
+                    //display the total of inputs
+                    totalMR_PD.value = sumMR_PD;
+                    }
+                    document.getElementById('totalMR_PD').value = sumMR_PD;
+                }
+
+                function findTotalMR_FL(){
+                    var totalMR_FL = document.getElementById('totalMR_FL');
+                    var MR_FL = document.getElementsByClassName('MR_FL');
+                    var sumMR_FL = 0;
+
+                    for( var i = 0; i < MR_FL.length; i++ ){
+                        sumMR_FL += Number(MR_FL[i].value);
+
+                    //display the total of inputs
+                    totalMR_FL.value = sumMR_FL;
+                    }
+                    document.getElementById('totalMR_FL').value = sumMR_FL;
+                }
+
+
+                function findTotalMR_IN(){
+                    var totalMR_IN = document.getElementById('totalMR_IN');
+                    var MR_IN = document.getElementsByClassName('MR_IN');
+                    var sumMR_IN = 0;
+
+                    for( var i = 0; i < MR_IN.length; i++ ){
+                        sumMR_IN += Number(MR_IN[i].value);
+
+                    //display the total of inputs
+                    totalMR_IN.value = sumMR_IN;
+                    }
+                    document.getElementById('totalMR_IN').value = sumMR_IN;
+                }
+
+                function findTotalMR(){
+                    var TL = totalMR_TL.value || 0;
+                    var KT = totalMR_KT.value || 0;
+                    // var SB = totalMR_SB.value || 0;
+                    // var PA = totalMR_PA.value || 0;
+                    // var PD = totalMR_PD.value || 0;
+                    // var FL = totalMR_FL.value || 0;
+                    // var IN = totalMR_IN.value || 0;
+                    document.getElementById('totalMR').value = Number(TL) + Number(KT) + Number(SB) 
+                    + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+                }
+
+                document.addEventListener('keyup', function(){
+                    findTotalMR_TL();
+                    findTotalMR_KT();
+                    findTotalMR_SB();
+                    findTotalMR_PA();
+                    findTotalMR_PD();
+                    findTotalMR_FL();
+                    findTotalMR_IN();
+                    findTotalMR();
+                });
+            </script>
+
+
+
+
+
+
+
+
+            <!--Function ke tk code ni?-->
+            {{-- <script>
+               //total input departments
+            function getTotalQty(){
+            var totalMorgage = document.getElementById('totalMorgage');
+            var qty = document.getElementsByClassName('qty');
+            var sumMorgage = 0;
+
+            for( var i = 0; i < qty.length; i++ ){
+                sumMorgage += Number(qty[i].value);
+            
+            //display the total of inputs
+            totalMorgage.value = sumMorgage;
+            }
+            document.getElementById('totalMorgage').value = sumMorgage;
+            }
+
+            //total input bills
+            function getBillsQty(){
+            var totalBills = document.getElementById('totalBills');
+            var qtyBills = document.getElementsByClassName('qtyBills');
+            var sumBills = 0;
+            for( var i = 0; i < qtyBills.length; i++ ){
+                sumBills += Number(qtyBills[i].value);
+            
+            //display the total of inputs
+            totalBills.value = sumBills;
+            }
+            document.getElementById('totalBills').value = sumBills; 
+            }
+
+            function addFunctionOneAddFunctionTwo (){
+            var totalM = totalMorgage.value || 0; 
+            var totalB = totalBills.value || 0;
+            document.getElementById('total').value = Number(totalM) + Number(totalB);
+            }
+
+            document.addEventListener('keyup', function() {
+            getTotalQty();
+            getBillsQty();
+            addFunctionOneAddFunctionTwo();
+            });
             </script> --}}
             
 @endsection

@@ -253,12 +253,20 @@ class VerifikasiPermarkahanBangunanController extends Controller
     #ketua pasukan
     public function sijil_penilaian()
     {
-        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.index');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+
+        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.index',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function papar_sijil_penilaian($id)
     {
-        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+
+        return view('modul.verifikasi_permarkahan_bangunan.muat_turun_sijil.edit',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function simpan_sijil_penilaian(Request $request, $id)

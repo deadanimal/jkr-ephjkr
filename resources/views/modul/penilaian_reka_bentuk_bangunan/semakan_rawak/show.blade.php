@@ -28,7 +28,6 @@
                             </tr>
                 
                             <tr align="center" style="background-color:#EB5500">
-                                {{-- <th></th> --}}
                                 <th colspan="3">Peratusan Mengikut Kriteria</th>
                                 <th>MMR</th>
                                 <th>MS</th>
@@ -40,7 +39,7 @@
                             </tr>
                     </thead>
 
-                    {{-- @foreach ($kriteria_phjkr_bangunan ?? '') --}}
+                            <!--TL-->
                             <tr align="center" class="text-black" >
                                 <th>TL</th>
                                 <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
@@ -53,6 +52,7 @@
                                 <th>0</th>
                             </tr>
 
+                            <!--KT-->
                             <tr align="center" class="text-black" >
                                 <th>KT</th>
                                 <th colspan="2">Pengurusan Kecekapan Tenaga</th>
@@ -65,6 +65,7 @@
                                 <th>0</th>
                             </tr>
 
+                            <!--SB-->
                             <tr align="center" class="text-black" >
                                 <th>SB</th>
                                 <th colspan="2">Pengurusan Sumber dan Bahan</th>
@@ -77,6 +78,7 @@
                                 <th>0</th>
                             </tr>
 
+                            <!--PA-->
                             <tr align="center" class="text-black" >
                                 <th>PA</th>
                                 <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
@@ -89,6 +91,7 @@
                                 <th>0</th>
                             </tr>
 
+                            <!--PD-->
                             <tr align="center" class="text-black" >
                                 <th>PD</th>
                                 <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
@@ -152,7 +155,7 @@
                         <tr align="center" class="text-black">
                             <th colspan="3">
                                 {{-- <button class="btn btn-primary btn-sasaran">Sasaran</button> --}}
-                                <a class="button btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/edit">Sasaran</a>
+                                <a class="button btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$kriteria_phjkr_bangunan->id}}">Sasaran</a>
                                 <button type="submit" class="btn btn-secondary">Disahkan</button>
                             </th>
                         </tr>
@@ -242,7 +245,4 @@
 </div> <!--Container Fluid-->
 
 <!--JavaScript-->
-
-
-
 @endsection

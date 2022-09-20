@@ -150,6 +150,14 @@ class ProjekController extends Controller
         return redirect('/pengurusan_maklumat/pendaftaran_projek');
     }
 
+    //paparprojek
+    public function papar(){
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.papar', [
+            'papar' => Projek::with('status')->get()
+        ]);
+    }
+
     public function cetakpdfprojek($id){
 
         $pendaftaran_projek = Projek::find($id);
@@ -175,6 +183,17 @@ class ProjekController extends Controller
         );
     }
 
+    public function padam_gugurprojek($id){
+        //dd('fd');
+
+        $gugur_projek = Projek::find($id);
+    
+        $gugur_projek->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek/gugur_projek');
+            
+        }
+
     public function pengesahanprojek(){
 //dd('fd');
         return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.index', [
@@ -186,20 +205,20 @@ class ProjekController extends Controller
         //dd('fd');
         $pengesahan_projek = Projek::find($id);
         return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit',[
-            'pengesahan_projek' => Projek::with('status')->get()
+            'pengesahan_projek' => $pengesahan_projek
         ]);
-
-                // return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit', [
-                //     'pengesahan_projek' => Projek::with('status')->get()
-                // ]);
-
-    //     // $pengesahan_projek = Projek::find($id);
-        
-        //  return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.edit', [
-        //      'pengesahan_projek' => Projek::with('status')->get()
-        //  ]);
                 
-             }
+    }
+
+    public function pengesahanprojek_simpan(UpdateProjekRequest $request, $id)
+    {
+        //dd('projek');
+        $pengesahan_projek = Projek::find($id);
+        $pengesahan_projek->statusProjek = $request->statusProjek;
+        $pengesahan_projek->save();
+        alert()->success('Pengesahan pengguna telah berjaya', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek');
+    }
 
     public function pengesahanprojek_create(){
     //dd('fd');
