@@ -1,6 +1,4 @@
 @extends('layouts.base')
-<!--from DataTables-->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 
 <style>
     table {
@@ -29,10 +27,11 @@
         <div class="mt-8 form-group row">
                 <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-5">
-                        <input type="search" onkeyup="myFunction()" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                        <input type="text" id="myInput" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                        
                     </div>
                         <div class="col-sm-5">
-                            <button type="button" class="btn btn-primary">Carian</button>
+                            <button type="button" id="myInput" class="btn btn-primary">Carian</button>
                         </div>
         </div>
 
@@ -53,7 +52,7 @@
                                     {{-- </table>  --}}
 
                                     {{-- <table class="kotak" style="width:100%"> --}}
-                                    <tbody>
+                                    <tbody id="myTable">
                                         <!--LOOPING TABLES-->
                                         @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
@@ -81,26 +80,16 @@
     </div>
 
 
-<!---------JavaScript--------------->
-    {{-- <script>
-        function myFunction() {
-          // Declare variables
-          var input, filter, ul, li, a, i, txtValue;
-          input = document.getElementById('myInput');
-          filter = input.value.toUpperCase();
-          ul = document.getElementById("myUL");
-          li = ul.getElementsByTagName('li');
-        
-          // Loop through all list items, and hide those who don't match the search query
-          for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              li[i].style.display = "";
-            } else {
-              li[i].style.display = "none";
-            }
-          }
-        }
-        </script> --}}
+<!---------------JavaScript--------------->
+        <!--Filter Paparan Senarai Projek-->
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>
 @endsection

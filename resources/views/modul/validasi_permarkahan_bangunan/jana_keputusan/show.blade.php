@@ -90,10 +90,10 @@
                     <tr align="center" class="text-black" >
                         <th>KT</th>
                         <th colspan="2">Pengurusan Kecekapan Tenaga</th>
-                        <th>26</th>
-                        <th>0</th>
-                        <th>0</th>
                         <th>24</th>
+                        <th>0</th>
+                        <th>0</th>
+                        <th>26</th>
                         <th>0</th>
                         <th>0</th>
                         <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_ML}}</th>
@@ -103,10 +103,10 @@
                     <tr align="center" class="text-black" >
                         <th>SB</th>
                         <th colspan="2">Pengurusan Sumber dan Bahan</th>
-                        <th>26</th>
+                        <th>20</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>24</th>
+                        <th>20</th>
                         <th>0</th>
                         <th>0</th>
                         <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_ML}}</th>
@@ -116,10 +116,10 @@
                     <tr align="center" class="text-black" >
                         <th>PA</th>
                         <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
-                        <th>26</th>
+                        <th>14</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>24</th>
+                        <th>14</th>
                         <th>0</th>
                         <th>0</th>
                         <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_ML}}</th>
@@ -129,10 +129,10 @@
                     <tr align="center" class="text-black" >
                         <th>PD</th>
                         <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
-                        <th>26</th>
+                        <th>11</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>24</th>
+                        <th>13</th>
                         <th>0</th>
                         <th>0</th>
                         <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_ML}}</th>
@@ -142,10 +142,10 @@
                     <tr align="center" class="text-black" >
                         <th>FL</th>
                         <th colspan="2">Pengurusan Fasiliti Lestari</th>
-                        <th>26</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>24</th>
+                        <th>0</th>
+                        <th>0</th>
                         <th>0</th>
                         <th>0</th>
                         <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_ML}}</th>
@@ -155,10 +155,10 @@
                     <tr align="center" class="text-black" >
                         <th>IN</th>
                         <th colspan="2">Inovasi dalam Reka Bentuk</th>
-                        <th>26</th>
+                        <th>6</th>
                         <th>0</th>
                         <th>0</th>
-                        <th>24</th>
+                        <th>6</th>
                         <th>0</th>
                         <th>0</th>
                         <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_ML}}</th>

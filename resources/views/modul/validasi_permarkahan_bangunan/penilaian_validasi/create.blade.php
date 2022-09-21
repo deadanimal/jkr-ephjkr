@@ -1,7 +1,4 @@
 @extends('layouts.base')
-{{-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"> --}}
-{{-- <link rel="stylesheet" type="text/css" href="https://code.jquery.com/jquery-3.5.1.js"> --}}
-
 <link rel="stylesheet" href="/cssfile/skor_penilaian.css">
 <link rel="stylesheet" href="/cssfile/style.css">
 
@@ -61,16 +58,16 @@
 
         /* Hide Arrows from Input Number*/
         /* Chrome, Safari, Edge, Opera */
-        /* input::-webkit-outer-spin-button,
+        input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
-        } */
+        }
 
         /* Firefox */
-        /* input[type=number] {
+        input[type=number] {
         -moz-appearance: textfield;
-        } */
+        }
 
         select {
             width: 250px;
@@ -139,7 +136,6 @@
                             <tr class="pg-1" align="center">
                                 <td>TL1</td>
                                 <td>Perancangan Tapak</td>
-                                {{-- <th><input class="" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
                                 <td colspan="2">
                                     <select onClick="autoFill(); return true;" class="form-select" aria-label="Default select example" name="jenisKategori" id="jenisKategori">
                                         <option id="input1" hidden selected="">Sila Pilih</option>
@@ -154,8 +150,8 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>0</td>
-                                <td><input onblur="findTotalTL_ML()" class="text-center sum_ml_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_ML" name="markahTL1_ML" value="{{$kriteria_phjkr_bangunan->markahTL1_ML}}" /></td>
+                                <td></td>
+                                <td><input onblur="findTotalML_TL()" class="text-center ML_TL" type="number" autocapitalize="off" id="markahTL1_ML" name="markahTL1_ML" value="{{$kriteria_phjkr_bangunan->markahTL1_ML}}" /></td>
                                 <td colspan="2">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
                                 <td colspan="2">Tidak Berkenaan</td>
                                 <td></td>
@@ -184,13 +180,13 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>
-                                <td>3</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class="sum_ml_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_ML" name="markahTL2_ML" value="{{$kriteria_phjkr_bangunan->markahTL2_ML}}"/></td>
+                                <td></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" autocapitalize="off" id="markahTL2_ML" name="markahTL2_ML" value="{{$kriteria_phjkr_bangunan->markahTL2_ML}}"/></td>
                                 <td colspan="2"><span>&#183; Sijil ISO 14001</span><br>
                                     <span>&#183; Senarai kuantiti (BQ) kerja-kerja perlindungan alam sekitar</span>
                                 </td>
@@ -223,13 +219,13 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td>3</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class="sum_ml_tl" type="number" min="0" max="3" id="markahTL3_ML" name="markahTL3_ML" autocapitalize="off"/></td>
+                                <td></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL3_ML" name="markahTL3_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Laporan rekabentuk tanah</span><br>
                                     <span>&#183; Lukisan pelan tanah</span><br>
@@ -256,14 +252,13 @@
             
                             <tr class="pg-1" align="center">
                                 <td>ii. Mengekalkan Topografi Tanah</td>
-                                {{-- <th>A</th> --}}
                                 <td>2</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class=" sum_ml_tl" type="number" min="0" max="2" id="markahTL32_ML" name="markahTL32_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL32_ML" name="markahTL32_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pelan Topografi</span><br>
                                     <span>&#183; Laporan geoteknikal</span><br>
@@ -302,13 +297,13 @@
                                         <option value="D">D</option>
                                     </select>                                 
                                 </td>                            
-                                <td>1</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class=" sum_ml_tl" type="number" min="0" max="1" id="markahTL4_ML" name="markahTL4_ML" autocapitalize="off"/></td>
+                                <td></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL4_ML" name="markahTL4_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
                                 </td>
@@ -347,7 +342,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class="sum_ml_tl" type="number" min="0" max="1" id="markahTL5_ML" name="markahTL5_ML" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL5_ML" name="markahTL5_ML" autocapitalize="off" /></td>
                                 <td colspan="2">
                                     <span>&#183; Laporan penyenggaraan cerun</span><br>
                                 </td>
@@ -385,7 +380,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class=" sum_ml_tl" type="number" id="markahTL6_ML" min="0" max="3" name="markahTL6_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL6_ML" name="markahTL6_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
                                     <span>&#183; Pelan sistem perparitan berdasarkan MSMA</span><br>
@@ -448,7 +443,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class=" sum_ml_tl" type="number" min="0" max="3" id="markahTL81_ML" name="markahTL81_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL81_ML" name="markahTL81_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Inventori pokok</span><br>
                                     <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
@@ -490,7 +485,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class="sum_ml_tl" type="number" min="0" max="1" id="markahTL82_ML" name="markahTL82_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL82_ML" name="markahTL82_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>Laporan cadangan menunjukkan:</span><br>
                                     <span>&#183; 30% kawasan hijau (disahkan oleh arkitek atau jururancang bertauliah)</span><br>
@@ -531,7 +526,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class="sum_ml_tl" type="number" min="0" max="1" id="markahTL83_ML" name="markahTL83_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL83_ML" name="markahTL83_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Penyediaan pelan landskap</span><br>
                                     <span>&#183; Jadual spesis pokok</span><br>
@@ -575,7 +570,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class="sum_ml_tl" type="number" min="0" max="1" id="markahTL84_ML" name="markahTL84_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class="ML_TL" type="number" id="markahTL84_ML" name="markahTL84_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Lukisan terperinci dengan spesifikasi</span><br>
                                     <span>&#183; Katalog berserta jadual SRI bahan siarkaki</span><br>
@@ -614,7 +609,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class=" sum_ml_tl" type="number" min="0" max="2" id="markahTL85_ML" name="markahTL85_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class=" ML_TL" type="number" id="markahTL85_ML" name="markahTL85_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Lukisan butiran dan spesifikasi sistem turapan</span><br>
                                     <span>&#183; Lukisan susun atur tapak pembangunan</span><br>
@@ -675,7 +670,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class=" sum_ml_tl" type="number" min="0" max="1" id="markahTL91_ML" name="markahTL91_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class=" ML_TL" type="number" id="markahTL91_ML" name="markahTL91_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Katalog berserta jadual SRI bumbung</span><br>
                                     <span>&#183; Pengiraan keluasan bumbung</span><br>
@@ -718,7 +713,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalTL_ML()" class=" sum_ml_tl" type="number" min="0" max="3" id="markahTL92_ML" name="markahTL92_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_TL()" class=" ML_TL" type="number" id="markahTL92_ML" name="markahTL92_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pelan konsep rekabentuk</span><br>
                                     <span>&#183; Jadual keluasan kawasan bumbung</span><br>
@@ -751,7 +746,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input class="" id="total_amount_ml_tl" name="markahTOTAL_TL_ML" id="markahTOTAL_TL_ML" type="number" min="0" max="26" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahTOTAL_TL_ML}}"/></td>
+                                <td><input class="" id="totalML_TL" name="markahTOTAL_TL_ML" id="markahTOTAL_TL_ML" type="number" min="0" max="26" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahTOTAL_TL_ML}}"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -798,7 +793,6 @@
                             <tr class="pg-2" align="center">
                                 <td>KT1</td>
                                 <td>Rekabentuk bumbung</td>
-                                {{-- <th><input class="" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
                                 <td>
                                     <select class="form-select" aria-label="Default select example" name="jenisKategori">
                                         <option hidden selected="">Sila Pilih</option>
@@ -814,7 +808,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalKT_ML()" class=" sum_ml_kt" type="number" id="markahKT1_ML" name="markahKT1_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT1_ML" name="markahKT1_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
                                     <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
@@ -840,15 +834,7 @@
                             <tr class="pg-2" align="center">
                                 <td>KT2</td>
                                 <td>Orientasi bangunan</td>
-                                <td>
-                                    {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                  --}}
-                                </td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -881,7 +867,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalKT_ML()" class=" sum_ml_kt" type="number" id="markahKT21_ML" name="markahKT21_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT21_ML" name="markahKT21_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pelan tapak berserta penunjuk arah utara
                                         menunjukkan pelan bangunan dengan meletakkan sun-path diagram</span><br>
@@ -923,7 +909,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalKT_ML()" class="sum_ml_kt" type="number" id="markahKT22_ML" name="markahKT22_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT22_ML" name="markahKT22_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Laporan penyenggaraan cerun</span><br>
                                 </td>
@@ -979,7 +965,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalKT_ML()" class=" sum_ml_kt" type="number" id="markahKT31_ML" name="markahKT31_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT31_ML" name="markahKT31_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
                                     <span>&#183; Pengiraan U-Value bagi rekabentuk dinding</span><br>
@@ -1020,7 +1006,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalKT_ML()" class=" sum_ml_kt" type="number" id="markahKT32_ML" name="markahKT32_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT32_ML" name="markahKT32_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Katalog bahan</span><br>
                                 </td>
@@ -1060,7 +1046,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalKT_ML()" class="sum_ml_kt" type="number" id="markahKT4_ML" name="markahKT4_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT4_ML" name="markahKT4_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
                                 </td>
@@ -1084,15 +1070,7 @@
                             <tr class="pg-2" align="center">
                                 <td>KT5</td>
                                 <td>Kecekapan pencahayaan</td>
-                                <td>
-                                    {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                 --}}
-                                </td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -1124,7 +1102,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalML()" class=" sum_ml_kt" type="number" id="markahKT52_ML" name="markahKT52_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT52_ML" name="markahKT52_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1165,7 +1143,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalML()" class=" sum_ml_kt" type="number" id="markahKT8_ML" name="markahKT8_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT8_ML" name="markahKT8_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Mengemukakan lukisan rekabentuk sistem dan simulasi pengiraan
                                         bagi anggaran tenaga baharu yang boleh dihasilkan oleh sistem tersebut</span><br>
@@ -1205,7 +1183,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalML()" class="sum_ml_kt" type="number" id="markahKT11_ML" name="markahKT11_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_KT()" class="ML_KT" type="number" id="markahKT11_ML" name="markahKT11_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pelan pengujian dan pentauliahan</span><br>
                                 </td>
@@ -1234,7 +1212,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input type="number" id="total_amount_ml_kt" name="markahTOTAL_KT_ML" autocapitalize="off"/></td>
+                                <td><input type="number" id="totalML_KT" name="markahTOTAL_KT_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -1300,7 +1278,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalSB_ML()" class=" sum_ml_sb" type="number" id="markahSB1_ML" name="markahSB1_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_SB()" class="ML_SB" type="number" id="markahSB1_ML" name="markahSB1_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Cadangan sistem IBS oleh pembekal IBS berdaftar</span><br>
                                     <span>&#183; Laporan Pengiraan Skor IBS</span><br>
@@ -1341,7 +1319,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalSB_ML()" class=" sum_ml_sb" type="number" id="markahSB2_ML" name="markahSB2_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_SB()" class="ML_SB" type="number" id="markahSB2_ML" name="markahSB2_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Sijil Pengesahan produk hijau</span><br>
                                     <span>&#183; spesifikasi produk</span><br>
@@ -1383,7 +1361,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalSB_ML()" class=" sum_ml_sb" type="number" id="markahSB3_ML" name="markahSB3_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_SB()" class="ML_SB" type="number" id="markahSB3_ML" name="markahSB3_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pelan pengurusan sisa yang meliputi Buangan Terjadual
                                         dan Sisa Bahan Binaan</span><br>
@@ -1431,7 +1409,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalSB_ML()" class=" sum_ml_sb" type="number" id="markahSB4_ML" name="markahSB4_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_SB()" class="ML_SB" type="number" id="markahSB4_ML" name="markahSB4_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                     <span>&#183; Pelan pengurusan sisa domestik</span><br>
                                     <span>&#183; Pelan kedudukan tong 3Rdi semua aras bangunan</span><br>
@@ -1462,7 +1440,7 @@
                                     <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
-                                    <td><input id="total_amount_ml_sb" type="text" autocapitalize="off" name="markahTOTAL_SB_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_SB_ML}}"/></td>
+                                    <td><input id="totalML_SB" type="text" autocapitalize="off" name="markahTOTAL_SB_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_SB_ML}}"/></td>
                                     <td colspan="2"></td>
                                     <td colspan="2"></td>
                                     <td></td>
@@ -1525,7 +1503,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalPA_ML()" class=" sum_ml_pa" type="number" id="markahPA1_ML" name="markahPA1_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_PA()" class="ML_PA" type="number" id="markahPA1_ML" name="markahPA1_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                                 <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
                                                 <span>&#183; Pengiraan penjimatan</span><br>
@@ -1565,7 +1543,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalPA_ML()" class=" sum_ml_pa" type="number" id="markahPA2_ML" name="markahPA2_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_PA()" class="ML_PA" type="number" id="markahPA2_ML" name="markahPA2_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                                 <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
                                                 <span>&#183; Pengiraan</span><br>
@@ -1606,7 +1584,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalPA_ML()" class="sum_ml_pa" type="number" id="markahPA3_ML" name="markahPA3_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_PA()" class="ML_PA" type="number" id="markahPA3_ML" name="markahPA3_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                                 <span>&#183; Katalog bahan dan sampai yang telah disahkan WELPS dan SPAN</span><br>
                                                 <span>&#183; Pengiraan</span><br>
@@ -1646,7 +1624,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalPA_ML()" class=" sum_ml_pa" type="number" id="markahPA32_ML" name="markahPA32_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_PA()" class="ML_PA" type="number" id="markahPA32_ML" name="markahPA32_ML" autocapitalize="off"/></td>
                                 <td colspan="2">
                                                 <span>&#183; Laporan rekabentuk dan pengiraan SPAH atau
                                                     sistem kitar semula air sisa</span><br>
@@ -1680,7 +1658,7 @@
                                 <td>0</td>
                                 <td>0</td>
                                 <td>0</td>
-                                <td><input id="total_amount_ml_pa" type="text" autocapitalize="off" name="markahTOTAL_PA_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PA_ML}}"/></td>
+                                <td><input id="totalML_PA" type="number" autocapitalize="off" name="markahTOTAL_PA_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PA_ML}}"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -1729,15 +1707,7 @@
                         <tr class="pg-5" align="center">
                             <td>PD2</td>
                             <td>Perancangan ruang</td>
-                            <td>
-                                {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select> --}}
-                            </td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -1779,7 +1749,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD24_ML" name="markahPD24_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD24_ML" name="markahPD24_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                                             <span>&#183; Lukisan keratan bangunan yang menunjukkan
                                                 ukuran (lantai ke siling)</span><br>
@@ -1819,7 +1789,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD25_ML" name="markahPD25_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD25_ML" name="markahPD25_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                                             <span>&#183; Katalog dan sampel menunjukkan warna yang dicadangkan</span><br>
                             </td>
@@ -1843,15 +1813,7 @@
                         <tr class="pg-5" align="center">
                             <td>PD3</td>
                             <td>Kualiti Visual</td>
-                            <td>
-                                {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select> --}}
-                            </td>
+                            <td></td>
                             <td>3</td>
                             <td></td>
                             <td></td>
@@ -1895,7 +1857,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD31_ML" name="markahPD31_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD31_ML" name="markahPD31_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                                             <span>&#183; Lukisan tampak dan jadual tingkap</span><br>
                                             <span>&#183; Pengiraan keluasan lantai yang menunjukkan
@@ -1937,7 +1899,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD32_ML" name="markahPD32_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD32_ML" name="markahPD32_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                                             <span>&#183; Rekabentuk rak cahaya</span><br>
                                             <span>&#183; Lukisan terperinci</span><br>
@@ -1981,7 +1943,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD33_ML" name="markahPD33_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD33_ML" name="markahPD33_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                                             <span>&#183; Katalog dan sampel menunjukkan bidai yang dicadangkan</span><br>
                             </td>
@@ -2022,7 +1984,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD34_ML" name="markahPD34_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD34_ML" name="markahPD34_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                                             <span>&#183; Pelan susuratur</span><br>
                                             <span>&#183; Rekabentuk awalan yang menunjukkan
@@ -2065,7 +2027,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD8_ML" name="markahPD8_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD8_ML" name="markahPD8_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                                             <span>&#183; Katalog dan sijil pengesahan penarafan eco-label bahan</span><br>
                                             <span>&#183; Spesifikasi teknikal pembekal</span><br>
@@ -2108,7 +2070,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalPD_ML()" class=" sum_ml_pd" type="number" id="markahPD10_ML" name="markahPD10_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_PD()" class="ML_PD" type="number" id="markahPD10_ML" name="markahPD10_ML" autocapitalize="off"/></td>
                             <td colspan="2"> 
                                 <span>&#183; Tidak berkaitan (TB)</span></td>
                             <td colspan="2">
@@ -2135,7 +2097,7 @@
                             <td>0</td>
                             <td>0</td>
                             <td>0</td>
-                            <td><input class="" id="total_amount_ml_pd" type="text" autocapitalize="off" name="markahTOTAL_PD_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PD_ML}}"/></td>
+                            <td><input class="" id="totalML_PD" type="number" autocapitalize="off" name="markahTOTAL_PD_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PD_ML}}"/></td>
                             <td colspan="2"></td>
                             <td colspan="2"></td>
                             <td></td>
@@ -2199,7 +2161,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL1_ML" name="markahFL1_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL1_ML" name="markahFL1_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2233,7 +2195,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL2_ML" name="markahFL2_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL2_ML" name="markahFL2_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2268,7 +2230,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL21_ML" name="markahFL21_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL21_ML" name="markahFL21_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2303,7 +2265,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL22_ML" name="markahFL22_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL22_ML" name="markahFL22_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2338,7 +2300,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL23_ML" name="markahFL23_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL23_ML" name="markahFL23_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2373,7 +2335,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL3_ML" name="markahFL3_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL3_ML" name="markahFL3_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2408,7 +2370,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL31_ML" name="markahFL31_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL31_ML" name="markahFL31_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2443,7 +2405,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL32_ML" name="markahFL32_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL32_ML" name="markahFL32_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2478,7 +2440,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL33_ML" name="markahFL33_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL33_ML" name="markahFL33_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2512,7 +2474,7 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><input onblur="findTotalFL_ML()" class="sum_ml_fl" type="number" id="markahFL34_ML" name="markahFL34_ML" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalML_FL()" class="ML_FL" type="number" id="markahFL34_ML" name="markahFL34_ML" autocapitalize="off"/></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
                                 <td></td>
@@ -2537,7 +2499,7 @@
                                 <td>0</td>
                                 <td>0</td>
                                 <td>
-                                    <input class="" id="total_amount_ml_fl" type="text" autocapitalize="off" name="markahTOTAL_FL_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PD_ML}}"/>
+                                    <input class="" id="totalML_FL" type="number" autocapitalize="off" name="markahTOTAL_FL_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PD_ML}}"/>
                                 </td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -2602,7 +2564,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><input onblur="findTotalIN_ML()" class="sum_ml_in" type="number" id="markahIN1_ML" name="markahIN1_ML" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalML_IN()" class="ML_IN" type="number" id="markahIN1_ML" name="markahIN1_ML" autocapitalize="off"/></td>
                             <td colspan="2">
                             <span>&#183; Laporan cadangan inovasi</span><br>
                             <span>&#183; Laporan kajian Return of Investment</span><br>
@@ -2633,7 +2595,7 @@
                                 <td>0</td>
                                 <td>0</td>
                                 <td>                                    
-                                    <input class="" id="total_amount_ml_in" type="number" autocapitalize="off" name="markahTOTAL_IN_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_IN_ML}}"/>
+                                    <input class="" id="totalML_IN" type="number" autocapitalize="off" name="markahTOTAL_IN_ML" value="{{$kriteria_phjkr_bangunan->markahTOTAL_IN_ML}}"/>
                                 </td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -2721,128 +2683,6 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
             })
             </script> 
-            
-            <!--ML: Markah Validasi-->
-            {{-- <script>
-                function findTotalML() {
-                var arr = document.getElementsByClassName('sum_ml');
-                var totML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totML += parseFloat(arr[i].value);
-                }
-                document.getElementById('markahTL').value = totML;
-            }
-
-            </script> --}}
-
-            
-            <!--ML: Markah Validasi-->
-            <!--------------------------------------- MarkahTL ---------------------------------------->
-
-            <!--MarkahTL for ML-->
-            <script>
-                function findTotalTL_ML() {
-                var arr = document.getElementsByClassName('sum_ml_tl');
-                var totTL_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totTL_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_tl').value = totTL_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahKT ---------------------------------------->
-
-            <!--MarkahKT for ML-->
-            <script>
-                function findTotalKT_ML() {
-                var arr = document.getElementsByClassName('sum_ml_kt');
-                var totKT_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totKT_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_kt').value = totKT_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahSB ---------------------------------------->
-
-            <!--MarkahSB for ML-->
-            <script>
-                function findTotalSB_ML() {
-                var arr = document.getElementsByClassName('sum_ml_sb');
-                var totSB_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totSB_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_sb').value = totSB_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahPA ---------------------------------------->
-
-            <!--MarkahPA for ML-->
-            <script>
-                function findTotalPA_ML() {
-                var arr = document.getElementsByClassName('sum_ml_pa');
-                var totPA_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totPA_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_pa').value = totPA_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahPD ---------------------------------------->
-
-            <!--MarkahSB for ML-->
-            <script>
-                function findTotalSB_ML() {
-                var arr = document.getElementsByClassName('sum_ml_sb');
-                var totSB_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totSB_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_sb').value = totSB_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahFL ---------------------------------------->
-
-            <!--MarkahFL for ML-->
-            <script>
-                function findTotalFL_ML() {
-                var arr = document.getElementsByClassName('sum_ml_fl');
-                var totFL_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totFL_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_fl').value = totFL_ML;
-            }
-
-            </script>
-
-            <!--------------------------------------- MarkahIN ---------------------------------------->
-
-            <!--MarkahIN for ML-->
-            <script>
-                function findTotalIN_ML() {
-                var arr = document.getElementsByClassName('sum_ml_in');
-                var totIN_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totIN_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_in').value = totIN_ML;
-            }
-            </script>
 
             <!--Pagination using button JavaScript-->
             <script>
@@ -2940,7 +2780,14 @@
             }
             </script> --}}
 
-            <!--calculation lain test sat 123-->
+            <!--MARKAH VALIDASI (ML) CALCULATION-->
+            <!--ML_TL : MARKAH VALIDASI TL-->
+            <!--ML_KT : MARKAH VALIDASI KT-->
+            <!--ML_SB : MARKAH VALIDASI SB-->
+            <!--ML_PA : MARKAH VALIDASI PA-->
+            <!--ML_PD : MARKAH VALIDASI PD-->
+            <!--ML_FL : MARKAH VALIDASI FL-->
+            <!--ML_IN : MARKAH VALIDASI IN-->
             <script>
                 function findTotalML_TL(){
                     var totalML_TL = document.getElementById('totalML_TL');
@@ -2951,7 +2798,7 @@
                         sumML_TL += Number(ML_TL[i].value);
 
                     //display the total of inputs
-                    totalML_TL.innerText = sumML_TL;
+                    totalML_TL.value = sumML_TL;
                 }
                     document.getElementById('totalML_TL').value = sumML_TL;
                 }
@@ -2965,7 +2812,7 @@
                         sumML_KT += Number(ML_KT[i].value);
 
                     //display the total of inputs
-                    totalML_KT.innerText = sumML_KT;
+                    totalML_KT.value = sumML_KT;
                     }
                     document.getElementById('totalML_KT').value = sumML_KT;
                 }
@@ -2979,7 +2826,7 @@
                         sumML_SB += Number(ML_SB[i].value);
 
                     //display the total of inputs
-                    totalML_SB.innerText = sumML_SB;
+                    totalML_SB.value = sumML_SB;
                     }
                     document.getElementById('totalML_SB').value = sumML_SB;
                 }
@@ -2993,7 +2840,7 @@
                         sumML_PA += Number(ML_PA[i].value);
 
                     //display the total of inputs
-                    totalML_PA.innerText = sumML_PA;
+                    totalML_PA.value = sumML_PA;
                     }
                     document.getElementById('totalML_PA').value = sumML_PA;
                 }
@@ -3007,7 +2854,7 @@
                         sumML_PD += Number(ML_PD[i].value);
 
                     //display the total of inputs
-                    totalML_PD.innerText = sumML_PD;
+                    totalML_PD.value = sumML_PD;
                     }
                     document.getElementById('totalML_PD').value = sumML_PD;
                 }
@@ -3021,11 +2868,10 @@
                         sumML_FL += Number(ML_FL[i].value);
 
                     //display the total of inputs
-                    totalML_FL.innerText = sumML_FL;
+                    totalML_FL.value = sumML_FL;
                     }
                     document.getElementById('totalML_FL').value = sumML_FL;
                 }
-
 
                 function findTotalML_IN(){
                     var totalML_IN = document.getElementById('totalML_IN');
@@ -3036,40 +2882,33 @@
                         sumML_IN += Number(ML_IN[i].value);
 
                     //display the total of inputs
-                    totalML_IN.innerText = sumML_IN;
+                    totalML_IN.value = sumML_IN;
                     }
                     document.getElementById('totalML_IN').value = sumML_IN;
                 }
 
-
-
-                function findTotalMS(){
-                    var TL = document.getElementById('totalMS_TL').value = sumMS_TL;
-                    var KT = document.getElementById('totalMS_KT').value = sumMS_KT;
-                    // var TL = sumMS_TL.innerText || 0;
-                    // var KT = sumMS_KT.innerText || 0;
-                    // var SB = sumMS_SB.innerText || 0;
-                    // var PA = sumMS_PA.innerText || 0;
-                    // var PD = sumMS_PD.innerText || 0;
-                    // var FL = sumMS_FL.innerText || 0;
-                    // var IN = sumMS_IN.innerText || 0;
-                    // document.getElementById('total').innerText = Number(TL) + Number(KT);
-
-                    // + Number(SB) + Number(PA) + Number(PD) + Number(FL) + Number(IN);
-                    document.getElementById('totalMS').value = Number(TL) + Number(KT);
+                function findTotalML(){
+                    var TL = totalML_TL.value || 0;
+                    var KT = totalML_KT.value || 0;
+                    var SB = totalML_SB.value || 0;
+                    var PA = totalML_PA.value || 0;
+                    var PD = totalML_PD.value || 0;
+                    var FL = totalML_FL.value || 0;
+                    var IN = totalML_IN.value || 0;
+                    document.getElementById('totalML').value = Number(TL) + Number(KT) + Number(SB) 
+                    + Number(PA) + Number(PD) + Number(FL) + Number(IN);
                 }
 
                 document.addEventListener('keyup', function(){
-                    findTotalMS_TL();
-                    findTotalMS_KT();
-                    // findTotalMS_SB();
-                    // findTotalMS_PA();
-                    // findTotalMS_PD();
-                    // findTotalMS_FL();
-                    // findTotalMS_IN();
-                    findTotalMS();
+                    findTotalML_TL();
+                    findTotalML_KT();
+                    findTotalML_SB();
+                    findTotalML_PA();
+                    findTotalML_PD();
+                    findTotalML_FL();
+                    findTotalML_IN();
+                    findTotalML();
                 });
             </script>
-
             
 @endsection

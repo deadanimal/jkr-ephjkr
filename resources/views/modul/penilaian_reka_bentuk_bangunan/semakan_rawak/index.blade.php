@@ -64,12 +64,6 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    {{-- <button class="btn-daftar" data-toggle="tooltip" data-placement="bottom" 
-                                                    title="Daftar Pemudah Cara" type="submit">
-                                                    <a href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/create">Daftar</a>
-                                                </button> --}}
-                                                    {{-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                                                    title="Daftar Pemudah Cara" type="submit">Daftar</button> --}}
                                                     <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/semakan_rawak/{{$k->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar Skor Penilaian">Papar</a>
                                                 </td>

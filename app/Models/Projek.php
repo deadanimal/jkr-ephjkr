@@ -39,4 +39,9 @@ class Projek extends Model
     {
         return $this->hasMany(PengesahanPendaftaranProjek::class);
     }
+
+    public function PasukanValidasi()
+    {
+        return $this->hasOne(PasukanValidasi::class);
+    }
 }

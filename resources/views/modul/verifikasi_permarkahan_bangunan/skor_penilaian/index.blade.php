@@ -59,7 +59,7 @@
                                             <tr class="text-black">
                                                 <td style="text-align: center; vertical-align: middle;">{{ $p->id }}</td>
                                                 {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
-                                                <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->id_ruj_skala}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
