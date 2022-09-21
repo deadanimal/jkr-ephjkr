@@ -32,12 +32,12 @@
             <form action="/pengurusan_maklumat/pendaftaran_projek" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row mx-4">
-                    <div class="col-3 mb-2">
+                    {{-- <div class="col-3 mb-2">
                         <label class="col-form-label">ID Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="id_ruj_skala" type="text"/>
-                    </div>
+                    </div> --}}
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Projek:</label>
@@ -95,18 +95,18 @@
                         <input class="form-control" name="dokumenSokongan" type="file"/>
                     </div>
 
-                    <div class="col-3 mb-2">
+                    {{-- <div class="col-3 mb-2">
                         <label class="col-form-label">Tarikh:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="tarikh" type="date"/>
-                    </div>
+                    </div> --}}
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">ID Status Projek:</label>
+                        <label class="col-form-label">Status Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="statusProjek" type="text"/>
+                        <input class="form-control" name="statusProjek"  value="Dalam Proses" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
@@ -145,32 +145,49 @@
                     </div>
 
                     <div class="col-3 mb-2">
+                        <label class="col-form-label">Jenis Projek:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <select class="form-select" aria-label="Default select example" name="jenisProjek">
+                            <option selected="">Sila Pilih</option>
+                            <option value="Kerajaan">Kerajaan</option>
+                            <option value="Swasta">Swasta</option>
+                        </select>
+                    </div>
+
+                    {{-- <div class="col-3 mb-2">
                         <label class="col-form-label">Tarikh Kemas Kini:</label>
                     </div>
                     <div class="col-7 mb-2">
                         <input class="form-control" name="tarikh" type="date"/>
-                    </div>
+                    </div> --}}
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Jenis Kategori:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="jenisKategoriProjek" type="text"/>
+                        <select class="form-select" aria-label="Default select example" name="jenisKategoriProjek">
+                            <option selected="">Sila Pilih</option>
+                            <option value="phJKR Bangunan">phJKR Bangunan</option>
+                            <option value="phJKR Jalan">phJKR Jalan</option>
+                            <option value="GPSS Bangunan">GPSS Bangunan</option>
+                            <option value="GPSS Jalan">GPSS Jalan</option>
+                        </select>
                     </div>
 
-                    {{-- <div class="col-3 mb-2">
+                    <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="" type="text"/>
-                    </div> --}}
+                        <input class="form-control" name="ahli" type="text"/>
+                    </div>
 
-                    {{-- <div class="col-3 mb-2">
+                    <div class="col-3 mb-2">
                         <label class="col-form-label">Peranan Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="" type="text"/>
-                    </div> --}}
+                        <input class="form-control" name="perananAhli" type="text"/>
+                    </div>
 
                     
     

@@ -30,20 +30,21 @@
     <div class="row mt-4 mb-3">
         <div class="col">
             <form action="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" method="post" enctype="multipart/form-data">
+                @method('PUT')
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Ulasan Gugur Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="gugurProjek" type="text"/>
+                        <input class="form-control" name="ulasanGugur" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Muat Naik Dokumen Sokongan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="dokumenSokongan" type="file"/>
+                        <input class="form-control" name="dokumenGugur" type="file"/>
                     </div>
 
                     <div class="col-3 mb-2">

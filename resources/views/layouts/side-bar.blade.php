@@ -177,7 +177,7 @@
                                     </a>
 
                                 </li>
-                                {{-- <li class="nav-item">
+                                <li class="nav-item">
                                     <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/kriteria_penilaian') ? 'active' : '' }} py-0"
                                         href="/pengurusan_maklumat/selenggara/kriteria_penilaian">
                                         <div class="d-flex align-items-center nav-link-side">
@@ -194,7 +194,7 @@
                                         </div>
                                     </a>
 
-                                </li>  --}}
+                                </li> 
                             </ul>
                         </li>
 

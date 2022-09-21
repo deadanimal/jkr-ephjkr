@@ -31,6 +31,11 @@ class CreateProjeksTable extends Migration
             $table->string('kaedahPelaksanaan')->nullable();
             $table->string('jenisPelaksanaan')->nullable();
             $table->float('kosProjek', 20,2)->nullable();
+            $table->string('jenisProjek')->nullable();
+            $table->string('ahli')->nullable();
+            $table->string('perananAhli')->nullable();
+            $table->string('ulasanGugur')->nullable();
+            $table->string('dokumenGugur')->nullable();
             $table->string('jenisKategoriProjek')->nullable();
             $table->string('tempohSijil')->nullable();
             $table->float('jarak', 10, 2)->nullable();
