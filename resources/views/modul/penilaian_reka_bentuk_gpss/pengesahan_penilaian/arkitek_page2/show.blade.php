@@ -55,26 +55,20 @@
             <td rowspan="4">Frames</td>
             <td >Aluminium</td>
             <td >2</td>
-            <td>
-              {{$gpss_bangunan->AwWindowFramesAluminium}}
-            </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwWindowFramesAluminium}}</td>            
+            <td>{{$gpss_bangunan->Cons_AwWindowFramesAluminium}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowFramesAluminium}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowFramesAluminium}}</td>            
+                               
           </tr>
 
           <tr>
             <td >Mild steel</td>
             <td >2</td>
-            <td>
-              {{$gpss_bangunan->AwWindowFramesMildSteel}}
-              
-            </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwWindowFramesMildSteel}}</td>            
+            <td>{{$gpss_bangunan->Cons_AwWindowFramesMildSteel}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowFramesMildSteel}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowFramesMildSteel}}</td>                  
           </tr>
 
           <tr>
@@ -82,20 +76,18 @@
             <td >Timber</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwWindowFramesTimber}}</td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwWindowFramesTimber}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowFramesTimber}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowFramesTimber}}</td>                   
           </tr>
 
           <tr>
             <td >UPVC</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwWindowFramesUpvc}}   </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwWindowFramesUpvc}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowFramesUpvc}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowFramesUpvc}}</td>                   
           </tr>
           
           <tr>
@@ -104,41 +96,36 @@
             <td >Glass</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwWindowPanelGlass}}</td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwWindowPanelGlass}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowPanelGlass}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowPanelGlass}}</td>                   
           </tr>
 
           <tr>
             <td >Timber</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwWindowPanelTimber}}</td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwWindowPanelTimber}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowPanelTimber}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowPanelTimber}}</td>                   
           </tr>
 
           <tr>
             <td >Aluminium</td>
             <td >2</td>
-            <td>
-              {{$gpss_bangunan->AwWindowPanelAluminium}}             
-            </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwWindowPanelAluminium}} </td>            
+            <td>{{$gpss_bangunan->Cons_AwWindowPanelAluminium}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowPanelAluminium}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowPanelAluminium}}</td>
           </tr>
 
           <tr>
             <td >Steel</td>
             <td >2</td>
-            <td>{{$gpss_bangunan->AwWindowPanelSteel}}   </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwWindowPanelSteel}} </td>            
+            <td>{{$gpss_bangunan->Cons_AwWindowPanelSteel}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowPanelSteel}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowPanelSteel}}</td>                   
           </tr>
 
           <tr>
@@ -147,41 +134,36 @@
             <td >Friction Stay</td>
             <td >2</td>
             <td> {{$gpss_bangunan->AwWindowIronFriction}}</td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwWindowIronFriction}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowIronFriction}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowIronFriction}}</td>                   
           </tr>
 
           <tr>
             <td >Hinges</td>
             <td >2</td>
-            <td>{{$gpss_bangunan->AwWindowIronHinges}}     
-            </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwWindowIronHinges}}</td>            
+            <td>{{$gpss_bangunan->Cons_AAwWindowIronHinges}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AAwWindowIronHinges}}</td>            
+            <td>{{$gpss_bangunan->Remark_AAwWindowIronHinges}}</td>                    
           </tr>
 
           <tr>
             <td >Handle</td>
             <td >2</td>
-            <td>{{$gpss_bangunan->AwWindowIronHandle}}     
-            </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwWindowIronHandle}}     </td>            
+            <td>{{$gpss_bangunan->Cons_AwWindowIronHandle}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowIronHandle}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowIronHandle}}</td>                   
           </tr>
 
           <tr>
             <td >Rubber Gasket</td>
             <td >2</td>
-            <td>{{$gpss_bangunan->AwWindowIronRubber}}   </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwWindowIronRubber}}</td>            
+            <td>{{$gpss_bangunan->Cons_AwWindowIronRubber}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowIronRubber}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowIronRubber}}</td>                   
           </tr>
 
           <tr>
@@ -189,32 +171,28 @@
             <td rowspan="3">Finishes</td>
             <td >Anodised Coatings</td>
             <td >2</td>
-            <td> 
-              {{$gpss_bangunan->AwWindowFinishesAnodised}}
-            </td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td> {{$gpss_bangunan->AwWindowFinishesAnodised}}</td>            
+            <td>{{$gpss_bangunan->Cons_AwWindowFinishesAnodised}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowFinishesAnodised}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowFinishesAnodised}}</td>                    
           </tr>
 
           <tr>
             <td >Paint</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwWindowFinishesPaint}}</td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwWindowFinishesPaint}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowFinishesPaint}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowFinishesPaint}}</td>                   
           </tr>
 
           <tr>
             <td >Varnish/shellac</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwWindowFinishesVarnish}}</td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwWindowFinishesVarnish}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwWindowFinishesVarnish}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwWindowFinishesVarnish}}</td>                   
           </tr>
 
           {{-- New table for door --}}
@@ -228,40 +206,36 @@
             <td >Aluminium</td>
             <td >2</td>
             <td> {{$gpss_bangunan->AwDoorFramesAluminium}} </td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorFramesAluminium}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorFramesAluminium}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorFramesAluminium}}</td>                    
           </tr>
 
           <tr>
             <td >Mild steel</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorFramesMildSteel}}</td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorFramesMildSteel}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorFramesMildSteel}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorFramesMildSteel}}</td>                   
           </tr>
 
           <tr>
             <td >Timber</td>
             <td >2</td>
-            <td>{{$gpss_bangunan->AwDoorFramesTimber}}   
-            </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwDoorFramesTimber}}</td>            
+            <td>{{$gpss_bangunan->Cons_AwDoorFramesTimber}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorFramesTimber}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorFramesTimber}}</td>                   
           </tr>
 
           <tr>
             <td >Upvc</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorFramesUpvc}} </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorFramesUpvc}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorFramesUpvc}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorFramesUpvc}}</td>                   
           </tr>
 
           <tr>
@@ -270,45 +244,45 @@
             <td >Timber</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorPanelTimber}}</td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorPanelTimber}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorPanelTimber}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorPanelTimber}}</td>                   
           </tr>
 
           <tr>
             <td >Aluminium</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorPanelAluminium}}</td>            
-            <td><input type="number" min="0" max="2"></td>                        
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorPanelAluminium}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorPanelAluminium}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorPanelAluminium}}</td>                    
           </tr>
 
           <tr>
             <td >Upvc</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorPanelUpvc}}</td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorPanelUpvc}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorPanelUpvc}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorPanelUpvc}}</td>
           </tr>
 
           <tr>
             <td >Steel</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorPanelSteel}}</td>                        
-            <td><input type="number" min="0" max="2"></td>
-            <td><input type="number" min="0" max="2"></td>                       
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorPanelSteel}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorPanelSteel}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorPanelSteel}}</td>                    
           </tr>
 
           <tr>
             <td >Glass</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorPanelGlass}}           
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorPanelGlass}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorPanelGlass}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorPanelGlass}}</td>                   
           </tr>
 
           <tr>
@@ -317,30 +291,27 @@
             <td >Lockset</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorIronLockset}}</td>           
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorIronLockset}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorIronLockset}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorIronLockset}}</td>                   
           </tr>
 
           <tr>
             <td >Door closer</td>
             <td >2</td>
-            <td>{{$gpss_bangunan->AwDoorIronDoorCloser}}       
-            </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwDoorIronDoorCloser}}</td>            
+            <td>{{$gpss_bangunan->Cons_AwDoorIronDoorCloser}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorIronDoorCloser}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorIronDoorCloser}}</td>                   
           </tr>
 
           <tr>
             <td >Hinges</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorIronHinges}}</td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorIronHinges}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorIronHinges}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorIronHinges}}</td>                    
           </tr>
 
           <tr>
@@ -349,29 +320,27 @@
             <td >Anodised coatings</td>
             <td >2</td>
             <td> {{$gpss_bangunan->AwDoorFinishesAnodised}}</td>
-            <td><input type="number" min="0" max="2"></td>                        
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorFinishesAnodised}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorFinishesAnodised}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorFinishesAnodised}}</td>                   
           </tr>
 
           <tr>
             <td >Paint</td>
             <td >2</td>
-            <td>{{$gpss_bangunan->AwDoorFinishesPaint}}   </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->AwDoorFinishesPaint}}</td>            
+            <td>{{$gpss_bangunan->Cons_AwDoorFinishesPaint}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorFinishesPaint}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorFinishesPaint}}</td>                   
           </tr>
 
           <tr>
             <td >Varnish/shellac</td>
             <td >2</td>
             <td>{{$gpss_bangunan->AwDoorFinishesVarnish}} </td>            
-            <td>
-              <input type="number" min="0" max="2"></td>            
-            <td><input type="number" min="0" max="2"></td>            
-            <td><input type="text"></td>                    
+            <td>{{$gpss_bangunan->Cons_AwDoorFinishesVarnish}}</td>            
+            <td>{{$gpss_bangunan->Awarded_AwDoorFinishesVarnish}}</td>            
+            <td>{{$gpss_bangunan->Remark_AwDoorFinishesVarnish}}</td>                    
           </tr>
         </tbody>
       </table>
@@ -387,34 +356,5 @@
     
   </div>
 
-  <p><strong>markahPRAwWindow <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwWindow" id="markahPRAwWindow" /></p>
 
-  <p><strong>markahPRAwDoor <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwDoor" id="markahPRAwDoor" /></p>
-
-
-<script>
-  function findTotal(){
-  var arr = document.getElementsByClassName('arkitek');
-  var tot=0;
-  for(var i=0;i<arr.length;i++){
-      if(parseFloat(arr[i].value))
-          tot += parseFloat(arr[i].value);
-  }
-  document.getElementById('markahPRAwWindow').value = tot;
-}  
-</script>
-
-<script>
-  function markahPRAwDoor(){
-  var arr = document.getElementsByClassName('arkitek');
-  var tot=0;
-  for(var i=0;i<arr.length;i++){
-      if(parseFloat(arr[i].value))
-          tot += parseFloat(arr[i].value);
-  }
-  document.getElementById('markahPRAwDoor').value = tot;
-}  
-</script>
 @endsection

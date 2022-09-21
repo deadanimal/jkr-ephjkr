@@ -963,45 +963,45 @@
 
                             {{-- Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/papar_skor_kad') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/papar_skor_kad">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'text-dark' : '' }}">Papar
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/papar_skor_kad') ? 'text-dark' : '' }}">Papar
                                             Skor Kad</span>
                                     </div>
                                 </a>
                             </li>
                             
-                            {{-- Papar dan Muat Turun Skor Kad Penilaian Reka Bentuk --}}
+                            {{-- Permohonan Rayuan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/sijil_verifikasi_jalan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/papar_sijil">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/permohonan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/permohonan_rayuan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/sijil_verifikasi_jalan') ? 'text-dark' : '' }}">
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/permohonan_rayuan') ? 'text-dark' : '' }}">
                                             Permohonan Rayuan</span>
                                     </div>
                                 </a>
                             </li>
-                            {{-- Jana Keputusan --}}
+                            {{-- Pengesahan Rayuan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/pengesahan_rayuan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/pengesahan_rayuan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'text-dark' : '' }}">Pengesahan
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/pengesahan_rayuan') ? 'text-dark' : '' }}">Pengesahan
                                             Rayuan</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_sijil') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/jana_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'text-dark' : '' }}">Jana
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_sijil') ? 'text-dark' : '' }}">Jana
                                             Sijil</span>
                                     </div>
                                 </a>

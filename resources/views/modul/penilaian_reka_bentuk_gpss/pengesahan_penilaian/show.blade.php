@@ -52,18 +52,21 @@
               <td >Clay tiles</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwRoofRoofTilesClayTiles}} </td>
-              <td><input type="number" min="0" max="2"></td>                        
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofTilesClayTiles}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofTilesClayTiles}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofTilesClayTiles}} </td>
+              {{-- <td><input type="number" min="0" max="2"></td>                        
               <td><input type="number" min="0" max="2" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td><input type="text"></td>                     --}}
             </tr>
   
             <tr>
               <td >Concrete tiles</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRoofTilesConcreteTiles}} </td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofTilesConcreteTiles}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofTilesConcreteTiles}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofTilesConcreteTiles}} </td>
             </tr>
   
             <tr>
@@ -71,19 +74,18 @@
               <td >Metal roofing</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwRoofRoofTilesMetalRoofing}} </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofTilesMetalRoofing}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofTilesMetalRoofing}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofTilesMetalRoofing}} </td>                   
             </tr>
   
             <tr>
               <td >Shingles</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwRoofRoofTilesShingles}} </td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofTilesShingles}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofTilesShingles}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofTilesShingles}} </td>                   
             </tr>
             
             <tr>
@@ -92,45 +94,45 @@
               <td >Rockwool</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwRoofRoofInsulationRockwool}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofInsulationRockwool}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofInsulationRockwool}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofInsulationRockwool}} </td>                    
             </tr>
   
             <tr>
               <td >Glasswool</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwRoofRoofInsulationGlasswool}} </td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofInsulationGlasswool}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofInsulationGlasswool}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofInsulationGlasswool}} </td>                   
             </tr>
   
             <tr>
               <td >Foam</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRoofInsulationFoam}} </td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofInsulationFoam}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofInsulationFoam}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofInsulationFoam}} </td>                    
             </tr>
   
             <tr>
               <td >Aluminium Foil</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRoofInsulationAlumFoil}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofInsulationAlumFoil}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofInsulationAlumFoil}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofInsulationAlumFoil}} </td>                   
             </tr>
   
             <tr>
               <td >Undersheeting</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRoofInsulationUndersheeting}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofInsulationUndersheeting}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofInsulationUndersheeting}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofInsulationUndersheeting}} </td>                   
             </tr>
   
             <tr>
@@ -139,27 +141,27 @@
               <td >Metal</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRoofEavesMetal}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofEavesMetal}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofEavesMetal}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofEavesMetal}} </td>                   
             </tr>
   
             <tr>
               <td >Fiber cement</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRoofEavesFiberCement}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofEavesFiberCement}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofEavesFiberCement}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofEavesFiberCement}} </td>                   
             </tr>
   
             <tr>
               <td >Plasterboard</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRoofEavesPlasterboard}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRoofEavesPlasterboard}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRoofEavesPlasterboard}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRoofEavesPlasterboard}} </td>                   
             </tr>
   
             <tr>
@@ -169,9 +171,9 @@
               <td >Metal</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofFascialBoardsMetal}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td> {{$gpss_bangunan->Cons_AwRoofFascialBoardsMetal}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofFascialBoardsMetal}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofFascialBoardsMetal}} </td> 
   
             </tr>
   
@@ -179,27 +181,27 @@
               <td >Fibre cement</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofFascialBoardsFiberCement}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofFascialBoardsFiberCement}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofFascialBoardsFiberCement}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofFascialBoardsFiberCement}} </td>                   
             </tr>
   
             <tr>
               <td >Plasterboard</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofFascialBoardsPlasterboard}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofFascialBoardsPlasterboard}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofFascialBoardsPlasterboard}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofFascialBoardsPlasterboard}} </td>                    
             </tr>
   
             <tr>
               <td >Timber</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofFascialBoardsTimber}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofFascialBoardsTimber}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofFascialBoardsTimber}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofFascialBoardsTimber}} </td>                    
             </tr>
   
             <tr>
@@ -209,9 +211,9 @@
               <td >Upvc</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofGutterUpvc}}</td>      
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td> {{$gpss_bangunan->Cons_AwRoofGutterUpvc}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofGutterUpvc}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofGutterUpvc}} </td>
   
             </tr>
   
@@ -219,27 +221,27 @@
               <td >Galvanised iron</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofGutterGallron}}</td>           
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofGutterGallron}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofGutterGallron}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofGutterGallron}} </td>                   
             </tr>
   
             <tr>
               <td >Aluminium</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofGutterAluminium}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofGutterAluminium}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofGutterAluminium}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofGutterAluminium}} </td>                    
             </tr>
   
             <tr>
               <td >Stainless steel</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofGutterStainSteel}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofGutterStainSteel}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofGutterStainSteel}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofGutterStainSteel}} </td>                    
             </tr>
   
             <tr>
@@ -249,9 +251,9 @@
               <td >Upvc</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRainPipesUpvc}}</td>           
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td> {{$gpss_bangunan->Cons_AwRoofRainPipesUpvc}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRainPipesUpvc}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRainPipesUpvc}} </td>
   
             </tr>
   
@@ -259,27 +261,27 @@
               <td >Galvanised iron</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRainPipesGallron}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRainPipesGallron}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRainPipesGallron}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRainPipesGallron}} </td>                    
             </tr>
   
             <tr>
               <td >Aluminium</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRainPipesAluminium}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRainPipesAluminium}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRainPipesAluminium}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRainPipesAluminium}} </td>                   
             </tr>
   
             <tr>
               <td >Stainless steel</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofRainPipesStainSteel}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofRainPipesStainSteel}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofRainPipesStainSteel}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofRainPipesStainSteel}} </td>                   
             </tr>
   
             <tr>
@@ -289,9 +291,9 @@
               <td >Plasterboard</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofCellingPlasterboards}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td> {{$gpss_bangunan->Cons_AwRoofCellingPlasterboards}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofCellingPlasterboards}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofCellingPlasterboards}} </td> 
   
             </tr>
   
@@ -299,18 +301,18 @@
               <td >Fibre cement board</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofCellingFibreCement}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofCellingFibreCement}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofCellingFibreCement}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofCellingFibreCement}} </td>                   
             </tr>
   
             <tr>
               <td >Metal strip</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofCellingMetalStrip}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofCellingMetalStrip}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofCellingMetalStrip}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofCellingMetalStrip}} </td>                    
             </tr>
   
             <tr>
@@ -320,9 +322,9 @@
               <td >Timber</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofTrussTimber}}</td>       
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td> {{$gpss_bangunan->Cons_AwRoofTrussTimber}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofTrussTimber}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofTrussTimber}} </td> 
   
             </tr>
   
@@ -330,9 +332,9 @@
               <td >Metal</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwRoofTrussMetal}}</td>     
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwRoofTrussMetal}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwRoofTrussMetal}} </td>
+              <td> {{$gpss_bangunan->Remark_AwRoofTrussMetal}} </td>                    
             </tr>
 
             {{-- New table for wall system --}}
@@ -346,9 +348,9 @@
               <td >Bricks</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwWallWallTypesBricks}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesBricks}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesBricks}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesBricks}} </td>
   
             </tr>
   
@@ -356,81 +358,81 @@
               <td >Timberwork</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesTimber}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesTimber}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesTimber}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesTimber}} </td>                   
             </tr>
   
             <tr>
               <td >Clay bricks</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesClay}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesClay}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesClay}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesClay}} </td>                     
             </tr>
   
             <tr>
               <td >Blockwork</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesBlockwork}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesBlockwork}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesBlockwork}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesBlockwork}} </td>                    
             </tr>
   
             <tr>
               <td >Reinforce concrete</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesReinforce}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesReinforce}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesReinforce}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesReinforce}} </td>                    
             </tr>
   
             <tr>
               <td >Aerated concrete</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesAerated}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesAerated}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesAerated}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesAerated}} </td>                   
             </tr>
   
             <tr>
               <td >Glass</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesGlass}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesGlass}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesGlass}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesGlass}} </td>                    
             </tr>
   
             <tr>
               <td >Gypsum board</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesGypsum}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesGypsum}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesGypsum}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesGypsum}} </td>                   
             </tr>
   
             <tr>
               <td >Cement board</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesCement}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesCement}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesCement}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesCement}} </td>                   
             </tr>
   
             <tr>
               <td >Fibre cement</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallWallTypesFibreCement}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallWallTypesFibreCement}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallWallTypesFibreCement}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallWallTypesFibreCement}} </td>                   
             </tr>
   
             <tr>
@@ -440,9 +442,9 @@
               <td >Paints</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesPaints}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesPaints}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesPaints}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesPaints}} </td>
   
             </tr>
   
@@ -450,99 +452,99 @@
               <td >Composite panel</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesComposite}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesComposite}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesComposite}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesComposite}} </td>                  
             </tr>
   
             <tr>
               <td >Wall paper</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesWallpaper}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesWallpaper}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesWallpaper}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesWallpaper}} </td>                   
             </tr>
   
             <tr>
               <td >Ceramic tiles</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesCeramic}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesCeramic}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesCeramic}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesCeramic}} </td>                    
             </tr>
   
             <tr>
               <td >Stones</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesStones}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesStones}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesStones}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesStones}} </td>                   
             </tr>
   
             <tr>
               <td >Pebblewash</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesPebblewash}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesPebblewash}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesPebblewash}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesPebblewash}} </td>                    
             </tr>
   
             <tr>
               <td >Granite</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesGranite}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesGranite}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesGranite}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesGranite}} </td>                   
             </tr>
   
             <tr>
               <td >Glass</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesGlass}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesGlass}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesGlass}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesGlass}} </td>                   
             </tr>
   
             <tr>
               <td >Glass block</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesGlassBlock}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesGlassBlock}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesGlassBlock}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesGlassBlock}} </td>                    
             </tr>
   
             <tr>
               <td >Timber panelling</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesTimber}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesTimber}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesTimber}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesTimber}} </td>                    
             </tr>
   
             <tr>
               <td >Plaster</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesPaster}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesPaster}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesPaster}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesPaster}} </td>                   
             </tr>
   
             <tr>
               <td >Growall</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwWallFinishesGrowall}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->Cons_AwWallFinishesGrowall}} </td>
+              <td> {{$gpss_bangunan->Awarded_AwWallFinishesGrowall}} </td>
+              <td> {{$gpss_bangunan->Remark_AwWallFinishesGrowall}} </td>                   
             </tr>
 
           </tbody>

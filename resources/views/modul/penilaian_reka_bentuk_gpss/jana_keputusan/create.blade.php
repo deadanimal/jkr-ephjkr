@@ -18,13 +18,14 @@
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
             <div class="card p-3  py-4">
+                {{-- @foreach ($projeks as $p) --}}
                 <div class="row g-3 mt-2">
                     <div class="col-md-3">
                         <label for="nama_projek">Nama:</label>
                     </div>
                     <div class="col-md-6">
                         <input type="text" class="form-control" placeholder="Hospital Seri Iskandar">
-                        {{-- <td>{{$p->namaProjek}}</td> --}}
+                        {{-- <input type="text" class="form-control" value=" {{$p->namaProjek}} ">--}}
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -32,7 +33,9 @@
                         <label for="nama_projek">ID Rujukan Skala:</label>
                     </div>
                     <div class="col-md-6">
+                        {{-- <input type="text" class="form-control" value=" {{$p->id_ruj_skala}} ">  --}}
                         <input type="text" class="form-control" placeholder="SKL0202">
+
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -40,7 +43,9 @@
                         <label for="nama_projek">Alamat:</label>
                     </div>
                     <div class="col-md-6">
+                        {{-- <input type="text" class="form-control" value=" {{ $p->alamatProjek }}">  --}}
                         <input type="text" class="form-control" placeholder="Mukah">
+                       
                     </div>
                 </div>
                 <div class="row g-3 mt-2">
@@ -48,11 +53,15 @@
                         <label for="nama_projek">Kos Projek Semasa:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="number" class="form-control" placeholder="RM 5,000,000.00">
+                        {{-- <input type="text" class="form-control" value=" {{ $p->kosProjek }}"> --}}
+                        <input type="text" class="form-control" placeholder="RM50,000,000">
+                        
                     </div>
                 </div>
             </div>
         </div>
+        {{-- @endforeach --}}
+
         
 
         <div>
@@ -81,7 +90,7 @@
                                         <label for="nama_projek">Name of evaluator:</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Hospital Seri Iskandar">
+                                        <input type="text" class="form-control" placeholder="Name of evaluator">
                                     </div>
                                 </div>
                                 <div class="row g-3 mt-2">
@@ -89,7 +98,7 @@
                                         <label for="nama_projek">Date:</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="SKL0202">
+                                        <input type="text" class="form-control" placeholder="DD/MM/YYYY">
                                     </div>
                                 </div>
                                 <div class="row g-3 mt-2">
@@ -97,7 +106,7 @@
                                         <label for="nama_projek">Time:</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Mukah">
+                                        <input type="text" class="form-control" placeholder="00:00:00">
                                     </div>
                                 </div>
                                 <div class="row g-3 mt-2">
@@ -105,7 +114,7 @@
                                         <label for="nama_projek">Project:</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="number" class="form-control" placeholder="RM 5,000,000.00">
+                                        <input type="number" class="form-control" placeholder="Project">
                                     </div>
                                 </div>
                                 <div class="row g-3 mt-2">
@@ -113,7 +122,7 @@
                                         <label for="nama_projek">Building/Road:</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="number" class="form-control" placeholder="RM 5,000,000.00">
+                                        <input type="number" class="form-control" placeholder="Building/Road">
                                     </div>
                                 </div>
                                 <div class="row g-3 mt-2">
@@ -121,7 +130,7 @@
                                         <label for="nama_projek">Work component:</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="number" class="form-control" placeholder="Aw">
+                                        <input type="number" class="form-control" placeholder="Dropdown">
                                     </div>
                                 </div>
                             </div>
@@ -162,8 +171,8 @@
                                               <tr>
                                                 <th >1</th>
                                                 <th >Architectural (Aw)</th>
-                                                <th>2</th>
-                                                <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
+                                                <th>232</th>
+                                                <th> {{$gpss_bangunan->markahPRAwRoof + $gpss_bangunan->markahPRAwWall + $gpss_bangunan->markahPRAwWindow + $gpss_bangunan->markahPRAwDoor + $gpss_bangunan->markahPRAwSystem + $gpss_bangunan->markahPRAwSanitary}} </th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
@@ -173,8 +182,8 @@
                                               <tr>
                                                 <th >2</th>
                                                 <th >Mechanical (Mw)</th>
-                                                <th>2</th>
-                                                <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
+                                                <th>34</th>
+                                                <th>{{ $gpss_bangunan->markahPRMw }} </th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
@@ -184,8 +193,8 @@
                                               <tr>
                                                 <th >3</th>
                                                 <th >Electrical (Ew)</th>
-                                                <th>2</th>
-                                                <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
+                                                <th>110</th>
+                                                <th>{{ $gpss_bangunan->markahPREw }}</th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
@@ -195,8 +204,8 @@
                                               <tr>
                                                 <th >4</th>
                                                 <th >Civil & Structural (Cw)</th>
-                                                <th>2</th>
-                                                <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
+                                                <th>124</th>
+                                                <th>{{ $gpss_bangunan->markahPRCw }}</th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
@@ -206,7 +215,7 @@
                                               <tr>
                                                 <th >5</th>
                                                 <th >Road & Geotechnial (Rw)</th>
-                                                <th>2</th>
+                                                <th>98</th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
@@ -217,12 +226,21 @@
                                               <tr>
                                                 <th >6</th>
                                                 <th >Structural(Bridge) (Sw)</th>
-                                                <th>2</th>
-                                                <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
+                                                <th>12</th>
+                                                <th>{{ $gpss_bangunan->markahPRSw }}</th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
-                                                
+                                              </tr>
+
+                                              <tr>
+                                                <th ></th>
+                                                <th >Total points</th>
+                                                <th>610</th>
+                                                <th> {{$gpss_bangunan->markahPRAwRoof + $gpss_bangunan->markahPRAwWall + $gpss_bangunan->markahPRAwWindow + $gpss_bangunan->markahPRAwDoor + $gpss_bangunan->markahPRAwSystem + $gpss_bangunan->markahPRAwSanitary + $gpss_bangunan->markahPRMw + $gpss_bangunan->markahPREw + $gpss_bangunan->markahPRCw + $gpss_bangunan->markahPRSw}} </th>
+                                                <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
+                                                <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
+                                                <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
                                               </tr>
                             
                                             </tbody>
@@ -264,9 +282,7 @@
             
                   </div>
               </form>
-        </div>
-
-        
+        </div>      
     </div>
 
 @endsection

@@ -282,7 +282,7 @@
                 <td><input type="text"></td>                    
               </tr>
 
-              <tr class="text-center">
+              {{-- <tr class="text-center">
                 <td rowspan="15" >7</td>
                 <td rowspan="15">Pavement/road furniture</td>
                 <td >Asphalt concrete</td>
@@ -300,7 +300,7 @@
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
-              </tr>
+              </tr> --}}
 
               <tr>
                 <td >Prime coat</td>
@@ -326,7 +326,7 @@
                 <td><input type="text"></td>                    
               </tr>
 
-              <tr>
+              {{-- <tr>
                 <td >Retroreflective sheeting</td>
                 <td >2</td>
                 <td>
@@ -336,7 +336,7 @@
                   <input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
-              </tr>
+              </tr> --}}
 
               <tr>
                 <td >Road paint</td>
@@ -350,7 +350,7 @@
                 <td><input type="text"></td>                    
               </tr>
 
-              <tr>
+              {{-- <tr>
                 <td >Paver block</td>
                 <td >2</td>
                 <td>
@@ -360,9 +360,9 @@
                   <input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
-              </tr>
+              </tr> --}}
 
-              <tr>
+              {{-- <tr>
                 <td >Permeable paver</td>
                 <td >2</td>
                 <td>
@@ -372,9 +372,9 @@
                   <input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
-              </tr>
+              </tr> --}}
 
-              <tr>
+              {{-- <tr>
                 <td >Kerb</td>
                 <td >2</td>
                 <td>
@@ -384,7 +384,7 @@
                   <input type="number" min="0" max="2"></td>            
                 <td><input type="number" min="0" max="2"></td>            
                 <td><input type="text"></td>                    
-              </tr>
+              </tr> --}}
 
               <tr>
                 <td >Road stud</td>

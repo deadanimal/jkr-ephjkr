@@ -65,11 +65,8 @@
               <td rowspan="5">Common items</td>
               <td >Cement</td>
               <td >2</td>
-              <td>
-                <input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwCommonCement" id="SwCommonCement">
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
+              <td><input onblur="findTotalmarkahPRSw()" type="number" min="0" max="2" class="structure" name="SwCommonCement" id="SwCommonCement"></td>            
+              <td><input type="number" min="0" max="2"></td>            
               <td><input type="number" min="0" max="2"></td>            
               <td><input type="text"></td>                    
             </tr>

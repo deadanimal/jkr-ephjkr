@@ -157,6 +157,26 @@ class PenilaianRekaBentukJalanController extends Controller
         return view('modul.penilaian_reka_bentuk_jalan.jana_keputusan_jalan.index');
     }
 
+    public function papar_skor_kad() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.papar_skor_kad.index');
+    }
+
+    public function permohonan_rayuan() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.permohonan_rayuan.index');
+    }
+
+    public function pengesahan_rayuan() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.pengesahan_rayuan.index');
+    }
+
+    public function jana_sijil() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.jana_sijil.index');
+    }
+
     
 }
 
