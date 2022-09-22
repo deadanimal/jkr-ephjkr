@@ -268,7 +268,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL4</td>
                                 <td>Pelan Kawalan Hakisan & Kelodak (ESCP)</td>
-                                <td colspan="2">{{$kriteria_phjkr_bangunan->markahTL4_ML}}/td>                            
+                                <td colspan="2">{{$kriteria_phjkr_bangunan->markahTL4_ML}}</td>                            
                                 <td>1</td>
                                 <td></td>
                                 <td></td>
@@ -2295,128 +2295,6 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
             })
             </script> 
-            
-            <!--ML: Markah Validasi-->
-            {{-- <script>
-                function findTotalML() {
-                var arr = document.getElementsByClassName('sum_ml');
-                var totML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totML += parseFloat(arr[i].value);
-                }
-                document.getElementById('markahTL').value = totML;
-            }
-
-            </script> --}}
-
-            
-            <!--ML: Markah Validasi-->
-            <!--------------------------------------- MarkahTL ---------------------------------------->
-
-            <!--MarkahTL for ML-->
-            <script>
-                function findTotalTL_ML() {
-                var arr = document.getElementsByClassName('sum_ml_tl');
-                var totTL_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totTL_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_tl').value = totTL_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahKT ---------------------------------------->
-
-            <!--MarkahKT for ML-->
-            <script>
-                function findTotalKT_ML() {
-                var arr = document.getElementsByClassName('sum_ml_kt');
-                var totKT_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totKT_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_kt').value = totKT_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahSB ---------------------------------------->
-
-            <!--MarkahSB for ML-->
-            <script>
-                function findTotalSB_ML() {
-                var arr = document.getElementsByClassName('sum_ml_sb');
-                var totSB_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totSB_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_sb').value = totSB_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahPA ---------------------------------------->
-
-            <!--MarkahPA for ML-->
-            <script>
-                function findTotalPA_ML() {
-                var arr = document.getElementsByClassName('sum_ml_pa');
-                var totPA_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totPA_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_pa').value = totPAB_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahPD ---------------------------------------->
-
-            <!--MarkahSB for ML-->
-            <script>
-                function findTotalSB_ML() {
-                var arr = document.getElementsByClassName('sum_ml_sb');
-                var totSB_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totSB_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_sb').value = totSB_ML;
-            }
-            </script>
-
-            <!--------------------------------------- MarkahFL ---------------------------------------->
-
-            <!--MarkahFL for ML-->
-            <script>
-                function findTotalFL_ML() {
-                var arr = document.getElementsByClassName('sum_ml_fl');
-                var totFL_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totFL_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_fl').value = totFL_ML;
-            }
-
-            </script>
-
-            <!--------------------------------------- MarkahIN ---------------------------------------->
-
-            <!--MarkahIN for ML-->
-            <script>
-                function findTotalIN_ML() {
-                var arr = document.getElementsByClassName('sum_ml_in');
-                var totIN_ML = 0;
-                for (var i = 0; i < arr.length; i++) {
-                    if (parseFloat(arr[i].value))
-                    totIN_ML += parseFloat(arr[i].value);
-                }
-                document.getElementById('total_amount_ml_in').value = totIN_ML;
-            }
-            </script>
 
             <!--Pagination using button JavaScript-->
             <script>

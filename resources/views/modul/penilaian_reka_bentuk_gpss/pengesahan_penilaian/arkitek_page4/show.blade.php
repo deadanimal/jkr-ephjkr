@@ -55,100 +55,84 @@
               <td rowspan="9">Sanitary Features</td>
               <td >Tap fitting</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwSanitaryTapFitting}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwSanitaryTapFitting}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwSanitaryTapFitting}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryTapFitting}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryTapFitting}}</td>            
+                                
             </tr>
   
             <tr>
               <td >Water closet</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwSanitaryWaterCloset}}
-                
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwSanitaryWaterCloset}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwSanitaryWaterCloset}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryWaterCloset}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryWaterCloset}}</td>
             </tr>
   
             <tr>
               
               <td >Water basin</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwSanitaryWaterBasin}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwSanitaryWaterBasin}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwSanitaryWaterBasin}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryWaterBasin}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryWaterBasin}}</td>                    
             </tr>
   
             <tr>
               <td >Sink</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitarySink}}   </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSanitarySink}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitarySink}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitarySink}}</td>                   
             </tr>
   
             <tr>
               <td >Urinal</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryUrinal}}</td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSanitaryUrinal}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryUrinal}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryUrinal}}</td>                    
             </tr>
   
             <tr>
               <td >Bidet</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryBidet}}</td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSanitaryBidet}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryBidet}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryBidet}}</td>                    
             </tr>
   
             <tr>
               <td >Floor trap</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwSanitaryFloorTrap}}</td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwSanitaryFloorTrap}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwSanitaryFloorTrap}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryFloorTrap}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryFloorTrap}}</td>                    
             </tr>
   
             <tr>
               <td >Shower</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryShower}}</td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSanitaryShower}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryShower}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryShower}}</td>                    
             </tr>
   
             <tr>
               <td >Faucet</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryFaucet}}</td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSanitaryFaucet}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSanitaryFaucet}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSanitaryFaucet}}</td>                   
             </tr>
           </tbody>
         </table>
@@ -193,22 +177,5 @@
    
 
   </div>
-
-  <p><strong>markahPRAwSanitary <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwSanitary" id="markahPRAwSanitary" /></p>
-
-        
-
-<script>
-  function markahPRAwSanitary(){
-  var arr = document.getElementsByClassName('arkitek');
-  var tot=0;
-  for(var i=0;i<arr.length;i++){
-      if(parseFloat(arr[i].value))
-          tot += parseFloat(arr[i].value);
-  }
-  document.getElementById('markahPRAwSanitary').value = tot;
-} 
-  
-  </script>  
+   
 @endsection

@@ -31,7 +31,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header bg-oranje-jkr">
-                <b>Maklumat Pemudah Cara</b>
+                <b></b>
             </div>
             <div class="card-body">
                 <form action= "/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
@@ -52,7 +52,7 @@
                     </div>
                     <!--No. Telefon-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Nama Pemudah Cara Jalan:</label>
+                        <label class="col-sm-2 col-form-label">Nama Penilai Jalan:</label>
                     <div class="col-sm-10">
                         <input class="form-control" type="text" autocapitalize="off" name="no_tel" value="{{ $pemudah_cara ?? '' }}" />
                     </div>
@@ -83,9 +83,11 @@
                     <!--Button Daftar-->
                     {{-- <button class=“btn btn-primary” type=“submit”>Daftar</button> --}}
                     <!--Button Daftar (TOOLTIPS)-->
-                    <div class="text-center">
+                    <div class="text-center" align="right">
+                        <button class="btn btn-secondary" data-toggle="tooltip" data-placement="center"
+                        title="Batal_Pemudah_Cara" type="button">Batal</button>
                         <button class="btn btn-warning" data-toggle="tooltip" data-placement="center"
-                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                        title="Daftar Pemudah Cara" type="submit">Lantik Penilai Jalan</button>
                     </div>
                 </form>
             </div>

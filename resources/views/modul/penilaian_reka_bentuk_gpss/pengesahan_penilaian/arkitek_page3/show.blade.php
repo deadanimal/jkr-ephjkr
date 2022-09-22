@@ -56,219 +56,165 @@
               <td rowspan="18">Floor</td>
               <td >Epoxy paint</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorEpoxy}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorEpoxy}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorEpoxy}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorEpoxy}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorEpoxy}}</td>            
+                                  
             </tr>
   
             <tr>
               <td >Floor hardener</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorFloorHardener}}
-                
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorFloorHardener}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorFloorHardener}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorFloorHardener}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorFloorHardener}}</td>                   
             </tr>
   
             <tr>
               
               <td >Ceramic tiles</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorCeramic}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorCeramic}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorCeramic}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorCeramic}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorCeramic}}</td>                    
             </tr>
   
             <tr>
               <td >Stones</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorStones}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorStones}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorStones}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorStones}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorStones}}</td>                    
             </tr>
   
             <tr>
               <td >Granites</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorGranite}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorGranite}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorGranite}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorGranite}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorGranite}}</td>                    
             </tr>
   
             <tr>
               <td >Marble</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorMarble}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorMarble}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorMarble}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorMarble}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorMarble}}</td>                   
             </tr>
   
             <tr>
               <td >Carpet</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorCarpet}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorCarpet}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorCarpet}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorCarpet}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorCarpet}}</td>                    
             </tr>
   
             <tr>
               <td >Carpet underlay</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorUnderlay}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorUnderlay}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorUnderlay}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorUnderlay}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorUnderlay}}</td>                    
             </tr>
   
             <tr>
               <td >Vinyl</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorVinyl}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorVinyl}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorVinyl}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorVinyl}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorVinyl}}</td>                    
             </tr>
   
             <tr>
               <td >Timber</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorTimber}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorTimber}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorTimber}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorTimber}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorTimber}}</td>                    
             </tr>
   
             <tr>
               <td >Interlocking pavers</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorPavers}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorPavers}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorPavers}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorPavers}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorPavers}}</td>                    
             </tr>
   
             <tr>
               <td >Pebble wash</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorPebble}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorPebble}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorPebble}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorPebble}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorPebble}}</td>                  
             </tr>
   
             <tr>
               <td >Bamboo</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorBamboo}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorBamboo}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorBamboo}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorBamboo}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorBamboo}}</td>                    
             </tr>
   
             <tr>
               <td >Cement render</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorCement}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorCement}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorCement}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorCement}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorCement}}</td>                    
             </tr>
   
             <tr>
               <td >Marmoleum</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorMarmoleum}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorMarmoleum}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorMarmoleum}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorMarmoleum}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorMarmoleum}}</td>                   
             </tr>
   
             <tr>
               <td >Rubber mat(playgrouubd)</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorRubber}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorRubber}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorRubber}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorRubber}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorRubber}}</td>
             </tr>
   
             <tr>
               <td >Concrete imprint</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorConcrete}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorConcrete}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorConcrete}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorConcrete}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorConcrete}}</td>                   
             </tr>
   
             <tr>
               <td >Laminated flooring</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorFloorLaminate}}
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorFloorLaminate}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorFloorLaminate}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorFloorLaminate}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorFloorLaminate}}</td>                   
             </tr>
             
             <tr>
@@ -276,38 +222,28 @@
               <td rowspan="3">Water proofing</td>
               <td >Adhesive</td>
               <td >2</td>
-              <td> 
-                {{$gpss_bangunan->AwFloorProofingAdhesive}}
-              </td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td> {{$gpss_bangunan->AwFloorProofingAdhesive}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorProofingAdhesive}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorProofingAdhesive}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorProofingAdhesive}}</td>                  
             </tr>
   
             <tr>
               <td >Sealant</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorProofingSealant}}
-                
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorProofingSealant}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorProofingSealant}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorProofingSealant}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorProofingSealant}}</td>                   
             </tr>
   
             <tr>
               <td >Grout</td>
               <td >2</td>
-              <td>
-                {{$gpss_bangunan->AwFloorProofingGrout}}
-                
-              </td>            
-              <td>
-                <input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->AwFloorProofingGrout}}</td>            
+              <td>{{$gpss_bangunan->Cons_AwFloorProofingGrout}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwFloorProofingGrout}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwFloorProofingGrout}}</td>                   
             </tr>
   
             {{-- New table for wall system --}}
@@ -322,9 +258,9 @@
               <td >Office workstation</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwSystemBuiltOffice}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td> 
+              <td>{{$gpss_bangunan->Cons_AwSystemBuiltOffice}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltOffice}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSystemBuiltOffice}}</td>
   
             </tr>
   
@@ -332,36 +268,36 @@
               <td >Toilet cubicle</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltToilet}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSystemBuiltToilet}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltToilet}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSystemBuiltToilet}}</td>                   
             </tr>
   
             <tr>
               <td >Institutional seating</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltInstitutional}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSystemBuiltInstitutional}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltInstitutional}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSystemBuiltInstitutional}}</td>                   
             </tr>
   
             <tr>
               <td >Built-in cupboards</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltCupboards}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSystemBuiltCupboards}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltCupboards}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSystemBuiltCupboards}}</td>                   
             </tr>
   
             <tr>
               <td >Sport facilities seating</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltSport}}</td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="number" min="0" max="2"></td>            
-              <td><input type="text"></td>                    
+              <td>{{$gpss_bangunan->Cons_AwSystemBuiltSport}}</td>            
+              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltSport}}</td>            
+              <td>{{$gpss_bangunan->Remark_AwSystemBuiltSport}}</td>                   
             </tr>
   
             
@@ -381,36 +317,5 @@
   </form>
     
   </div>
-
-  <p><strong>markahPRAwFloor <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwFloor" id="markahPRAwFloor" /></p>
-
-  <p><strong>markahPRAwSystem <span class="required"></span></strong><br />
-    <input type="text" name="markahPRAwSystem" id="markahPRAwSystem" /></p>
-
-
-<script>
-  function markahPRAwFloor(){
-  var arr = document.getElementsByClassName('arkitek');
-  var tot=0;
-  for(var i=0;i<arr.length;i++){
-      if(parseFloat(arr[i].value))
-          tot += parseFloat(arr[i].value);
-  }
-  document.getElementById('markahPRAwFloor').value = tot;
-} 
-</script>  
-
-<script>
-  function markahPRAwSystem(){
-  var arr = document.getElementsByClassName('prawsystem');
-  var tot=0;
-  for(var i=0;i<arr.length;i++){
-      if(parseFloat(arr[i].value))
-          tot += parseFloat(arr[i].value);
-  }
-  document.getElementById('markahPRAwSystem').value = tot;
-} 
-</script>
 
 @endsection

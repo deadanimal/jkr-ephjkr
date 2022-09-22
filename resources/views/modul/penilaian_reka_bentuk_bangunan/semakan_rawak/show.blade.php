@@ -56,7 +56,7 @@
                             <tr align="center" class="text-black" >
                                 <th>KT</th>
                                 <th colspan="2">Pengurusan Kecekapan Tenaga</th>
-                                <th>26</th>
+                                <th>24</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th>
                                 <th>0</th>
@@ -69,7 +69,7 @@
                             <tr align="center" class="text-black" >
                                 <th>SB</th>
                                 <th colspan="2">Pengurusan Sumber dan Bahan</th>
-                                <th>26</th>
+                                <th>20</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th>
                                 <th>0</th>
@@ -82,7 +82,7 @@
                             <tr align="center" class="text-black" >
                                 <th>PA</th>
                                 <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
-                                <th>26</th>
+                                <th>14</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th>
                                 <th>0</th>
@@ -95,7 +95,7 @@
                             <tr align="center" class="text-black" >
                                 <th>PD</th>
                                 <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
-                                <th>26</th>
+                                <th>11</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th>
                                 <th>0</th>
@@ -107,7 +107,7 @@
                             <tr align="center" class="text-black" >
                                 <th>FL</th>
                                 <th colspan="2">Pengurusan Fasiliti Lestari</th>
-                                <th>26</th>
+                                <th>0</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MS}}</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}</th>
                                 <th>0</th>
@@ -119,7 +119,7 @@
                             <tr align="center" class="text-black" >
                                 <th>IN</th>
                                 <th colspan="2">Inovasi dalam Reka Bentuk</th>
-                                <th>26</th>
+                                <th>6</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MS}}</th>
                                 <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</th>
                                 <th>0</th>
@@ -166,17 +166,17 @@
 
                         <tr align="center" class="text-black" >
                             <th colspan="2">Jumlah Markah</th>
-                            <th colspan="2">0</th>
+                            <th colspan="2">{{$kriteria_phjkr_bangunan->markahMR}}</th>
                         </tr>
 
                         <tr align="center" class="text-black" >
                             <th colspan="2">Peratusan</th>
-                            <th colspan="2">0</th>
+                            <th colspan="2">$penilaian_ephjkr->peratusan</th>
                         </tr>
 
                         <tr align="center" class="text-black" >
                             <th colspan="2">Penarafan PH</th>
-                            <th colspan="2">1 <span class="star">&starf;</span></th>
+                            <th colspan="2">$penilaian_ephjkr->penarafan<span class="star">&starf;</span></th>
                         </tr>
 
                         <tr align="center" style="background-color:#EB5500" >
@@ -245,4 +245,7 @@
 </div> <!--Container Fluid-->
 
 <!--JavaScript-->
+
+<!--Penarafan Bintang-->
+
 @endsection

@@ -57,7 +57,7 @@
                                         <!--LOOPING TABLES-->
                                         @foreach ($kriteria_phjkr_bangunan as $key => $k)
                                             <tr class="text-black">
-                                                <td>{{ $k->id }}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{ $k->id }}</td>
                                                 {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->id_ruj_skala}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
@@ -67,7 +67,6 @@
                                                     <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/borang_validasi/{{$k->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
                                                 </td>
-
                                         @endforeach
                                         </tbody>
                                     {{-- </table> --}}

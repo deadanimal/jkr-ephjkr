@@ -249,7 +249,6 @@ class PenilaianRekaBentukGpssController extends Controller
         $gpss_bangunan->fill($validatedData);
         $request->session()->put('gpss_bangunan', $gpss_bangunan);
         alert()->success('Markah disimpan', 'Berjaya');
-        // $gpss_bangunan->save();
 
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create');
     }
@@ -412,10 +411,15 @@ class PenilaianRekaBentukGpssController extends Controller
     }
     public function papar_jana_keputusan($id)
     {
-        $projeks = Projek::find($id);
+        $projeks = Projek::all();
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // $projeks = Projek::find($id);
+
         //  form jana keputusan
         return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.create',[
-            'projeks' => $projeks
+            'projeks' => $projeks,
+            'gpss_bangunan' => $gpss_bangunan
         ]);
     }
     public function simpan_jana_keputusan(Request $request, $id)
