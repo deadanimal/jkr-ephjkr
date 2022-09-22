@@ -112,6 +112,10 @@ Route::middleware('auth')->group(function () {
     //pdf muat turun
     Route::get('/cetakprojek/{id}', [ProjekController::class, 'cetakpdfprojek']);
 
+    //papar projek
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/papar', [ProjekController::class, 'papar']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/myskala', [ProjekController::class, 'myskala']);
+
     //gugur projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek', [ProjekController::class, 'gugurprojek']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create', [ProjekController::class, 'gugurprojek_create']);

@@ -24,9 +24,21 @@
 
 <hr class="text-primary mb-3">
 
-<div class="row mt-3">
+    <div class="row mt-3">
+        <div class="mt-4">
+            <div class="row">
+                <div class="col-auto">
+                    <a href="/pengurusan_maklumat/pendaftaran_projek"
+                        class="btn btn-sm btn-primary">Projek Baru</a>
+                </div>
+                <div class="col-auto">
+                    <a href="/pengurusan_maklumat/pendaftaran_projek/projek/myskala"
+                        class="btn btn-sm btn-primary">Projek MySKALA</a>
+                </div>
+            </div>
+        </div>
 
-</div>
+    </div>
 
     {{-- <div class="row mt-3">
         <div class="col text-end">

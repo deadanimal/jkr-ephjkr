@@ -262,9 +262,19 @@
                         
                             <ul class="nav-item collapse {{ Request::is('pengurusan_maklumat/pendaftaran_projek/*', 'pengurusan_maklumat/pendaftaran_projek', 'pengurusan_maklumat/pemilihan_ahli', 'pengurusan_maklumat/pemilihan_ahli/*') ? 'show' : 'false' }} my-1"
                                 id="pendaftaran_projek">
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek') ? 'active' : '' }} py-0"
                                         href="/pengurusan_maklumat/pendaftaran_projek">
+                                        <div class="d-flex align-items-center nav-link-side">
+                                            <span class="px-0">Papar Senarai Projek</span>
+                                        </div>
+                                    </a>
+
+                                </li> --}}
+
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/pendaftaran_projek/projek/papar') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/pendaftaran_projek/projek/papar">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Papar Senarai Projek</span>
                                         </div>

@@ -194,9 +194,12 @@ class ProjekController extends Controller
     //paparprojek
     public function papar(){
 
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.papar', [
-            'papar' => Projek::with('status')->get()
-        ]);
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.papar');
+    }
+
+    public function myskala(){
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.myskala');
     }
 
     public function cetakpdfprojek($id){
