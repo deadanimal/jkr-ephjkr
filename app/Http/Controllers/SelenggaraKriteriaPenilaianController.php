@@ -42,7 +42,14 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function store(Request $request)
     {
         //
-        Projek::create(['namaProjek' => $request->namaProjek]);
+        $kp = new SelenggaraKriteriaPenilaian;
+        $kp->nama_kriteria = $request->nama_kriteria;
+        $kp->jenis_kriteria = $request->jenis_kriteria;
+        $kp->kod_kriteria = $request->kod_kriteria;
+        $kp->kategori_kriteria = $request->kategori_kriteria;
+        $kp->save();
+        
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/selenggara/kriteria_penilaian');
     }
 
@@ -66,9 +73,9 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function edit($id)
     {
         //
-        $kriteria_penilaian = Projek::find($id);
+        $kriteria_penilaian = SelenggaraKriteriaPenilaian::find($id);
         return view('modul.pengurusan_maklumat.selenggara.kriteria_penilaian.edit', [
-            'kriteria_penilaian' => $kriteria_penilaian,
+            'kp' => $kriteria_penilaian,
         ]);
     }
 
@@ -79,10 +86,18 @@ class SelenggaraKriteriaPenilaianController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, SelenggaraKriteriaPenilaian $kriteria_penilaian)
     {
         //
-        Projek::where('id',$id)->update(['namaProjek' => $request->namaProjek]);    
+        
+        $kp = $kriteria_penilaian;
+        $kp->nama_kriteria = $request->nama_kriteria;
+        $kp->jenis_kriteria = $request->jenis_kriteria;
+        $kp->kod_kriteria = $request->kod_kriteria;
+        $kp->kategori_kriteria = $request->kategori_kriteria;
+        $kp->save();
+        
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/selenggara/kriteria_penilaian');
     }
 
@@ -95,8 +110,8 @@ class SelenggaraKriteriaPenilaianController extends Controller
     public function destroy($id)
     {
         //
-        $kriteria_penilaian = Projek::find($id);
-        $kriteria_penilaian->delete();
+        $kp = SelenggaraKriteriaPenilaian::find($id);
+        $kp->delete();
         alert()->success('Maklumat telah dihapuskan', 'Berjaya');
         return redirect('/pengurusan_maklumat/selenggara/kriteria_penilaian');
     }

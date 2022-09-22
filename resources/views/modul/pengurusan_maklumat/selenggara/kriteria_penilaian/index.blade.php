@@ -47,9 +47,9 @@
                             @foreach ($kriteria_penilaian as $kp)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $kp->namaProjek }}</td>
-                                    <td>{{ $kp->jenisKategori }}</td>
-                                    <td>{{ $kp->Kategori }}</td>
+                                    <td>{{ $kp->nama_kriteria }}</td>
+                                    <td>{{ $kp->jenis_kriteria }}</td>
+                                    <td>{{ $kp->kategori_kriteria }}</td>
                                     
                                     <td>
                                         <div class="row">
