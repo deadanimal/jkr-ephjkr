@@ -12,7 +12,7 @@
 
 @section('content')
 
-{{-- View: Ketua Pasukan --}}
+{{-- View: Pemudah Cara --}}
 <div class="header">
         <b class="text-dark-green-jkr">Paparan Senarai Projek</b>
 
@@ -63,8 +63,8 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/create" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Penilaian Reka Bentuk">Penilaian</a>
                                                 </td>
 
                                         @endforeach

@@ -6,7 +6,7 @@ use App\Http\Requests\UpdatePenilaianRekaBentukBangunanRequest;
 use App\Models\Projek;
 use App\Models\PemudahCara;
 use App\Models\KriteriaPhjkrBangunan;
-use App\Models\PenilaianEphjkr;
+// use App\Models\PenilaianEphjkr;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use \PDF;
 use Illuminate\Support\Facades\DB;
@@ -99,33 +99,32 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     # bawah ni pemudah cara
     // ketua pasukan atau pen ketua pasukan
-    public function papar_projek()
-    {
-        $projeks = Projek::all();
-        $projeks = new Projek;
-        $pemudah_cara = new PemudahCara;
+    // public function papar_projek()
+    // {
+    //     $projeks = Projek::all();
+    //     $projeks = new Projek;
+    //     $pemudah_cara = new PemudahCara;
         
 
-        // papar table projek with button melantik pemudah cara
-        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
+    //     // papar table projek with button melantik pemudah cara
+    //     // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
 
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
-            'projeks'=>$projeks,
-            'pemudah_cara'=>$pemudah_cara
-        ]);
-    }
+    //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
+    //         'projeks'=>$projeks,
+    //         'pemudah_cara'=>$pemudah_cara
+    //     ]);
+    // }
 
     public function pemudah_cara($id)
     {
-        $pemudah_cara = new PemudahCara;
-        $projeks = Projek::find($id);
+        $pemudah_cara = new PemudahCara();
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
 
         // papar form pemudah cara with id projek
-        // $projek = Projek::find($id);
         
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
-            'pemudah_cara'=>$pemudah_cara,
-            'projeks'=> $projeks
+            'pemudah_cara'=>$pemudah_cara
         ]);
         
     }
@@ -136,22 +135,23 @@ class PenilaianRekaBentukBangunanController extends Controller
         $pemudah_cara = new PemudahCara;
 
         $pemudah_cara->nama = $request->nama;
-        $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
-        $pemudah_cara->no_tel = $request->no_tel;
-        $pemudah_cara->no_fax = $request->no_fax;
-        $pemudah_cara->email = $request->email;
-        $pemudah_cara->disiplin = $request->disiplin;
-        $pemudah_cara->kategori = $request->kategori;
+        // $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
+        // $pemudah_cara->no_tel = $request->no_tel;
+        // $pemudah_cara->no_fax = $request->no_fax;
+        // $pemudah_cara->email = $request->email;
+        // $pemudah_cara->disiplin = $request->disiplin;
+        // $pemudah_cara->kategori = $request->kategori;
         $pemudah_cara->projek_id = $request->projek_id;
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
         $pemudah_cara->save();
 
-        $projeks = new Projek;
-        $projeks->id = $request->id;
+        // $projeks = Projek::find($id);
+        // $projeks = new Projek;
+        // $projeks->id = $request->id;
         // $projeks->save();
 
         // // submit form melantik pemudah cara
-        return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
+        return redirect('/penilaian_reka_bentuk_bangunan');
 
     }
 
@@ -170,11 +170,12 @@ class PenilaianRekaBentukBangunanController extends Controller
     }
     public function papar_skor_penilaian($id)
     {
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+        // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
         // $projeks = Projek::all();
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
 
         // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.show',[
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.create',[
             'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan,
             // 'projeks'=>$projeks
         ]);
@@ -186,8 +187,8 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
         $kriteria_phjkr_bangunan->save();
 
-        $penilaian_ephjkr = new PenilaianEphjkr($request->all());
-        $penilaian_ephjkr->save();
+        // $penilaian_ephjkr = new PenilaianEphjkr($request->all());
+        // $penilaian_ephjkr->save();
 
         // $projeks = new Projek;
 
@@ -259,23 +260,21 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function semakan_rawak()
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
-        $penilaian_ephjkr = PenilaianEphjkr::all();
+        // $penilaian_ephjkr = PenilaianEphjkr::all();
 
         return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan,
-            'penilaian_ephjkr'=>$penilaian_ephjkr
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         ]);
 
     }
     public function semakan_rawak_form($id)
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
-        $penilaian_ephjkr = PenilaianEphjkr::find($id);
+        // $penilaian_ephjkr = PenilaianEphjkr::find($id);
         // dd($penilaian_ephjkr);
 
         return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.show',[
-            'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan,
-            'penilaian_ephjkr'=>$penilaian_ephjkr
+            'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan
         ]
     );
 
@@ -286,8 +285,8 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan->save();
 
         // untuk penarafan PH
-        $penilaian_ephjkr = new PenilaianEphjkr;
-        $penilaian_ephjkr->save();
+        // $penilaian_ephjkr = new PenilaianEphjkr;
+        // $penilaian_ephjkr->save();
 
 
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');

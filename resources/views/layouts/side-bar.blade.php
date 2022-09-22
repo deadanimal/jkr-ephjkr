@@ -349,11 +349,11 @@
 
                             {{-- BANGUNAN Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/melantik_pemudah_cara') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara/create') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/melantik_pemudah_cara') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara/create') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
@@ -393,15 +393,14 @@
                                 </a>
                             </li>
                 
-                            {{-- BANGUNAN Papar dan Muat Turun Sijil Verifikasi Reka Bentuk --}}
+                            {{-- BANGUNAN Papar dan Muat Turun Sijil Penilaian Reka Bentuk --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/muat_turun_sijil') ? 'active' : '' }} py-0"
                                     href="/penilaian_reka_bentuk_bangunan/muat_turun_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/muat_turun_sijil') ? 'text-dark' : '' }}">Papar
-                                            dan Muat Turun Sijil
-                                            Verifikasi Penilaian Reka Bentuk</span>
+                                            dan Muat Turun Sijil Penilaian Reka Bentuk</span>
                                     </div>
                                 </a>
                             </li>
