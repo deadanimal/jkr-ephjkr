@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\AuditTrail;
 use App\Models\SelenggaraLogAudit;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class SelenggaraLogAuditController extends Controller
@@ -18,7 +19,8 @@ class SelenggaraLogAuditController extends Controller
         //
         $selenggara_log = SelenggaraLogAudit::all();
         return view('modul.pengurusan_maklumat.selenggara.log_audit.index', [
-            'selenggara_log'=>$selenggara_log
+            'selenggara_log'=>$selenggara_log,
+            'selenggara_log' => AuditTrail::with('prosesAktiviti')->get()
         ]);
     }
 

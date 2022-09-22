@@ -68,7 +68,11 @@ class User extends Authenticatable
 
     public function audit_trail()
     {
-        return $this->hasMany(AuditTrail::class);
+        return $this->hasOne(AuditTrail::class);
+    }
+    public function log_audit()
+    {
+        return $this->hasMany(SelenggaraLogAudit::class);
     }
 
     public function faq()
