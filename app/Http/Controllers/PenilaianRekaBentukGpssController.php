@@ -84,15 +84,17 @@ class PenilaianRekaBentukGpssController extends Controller
         //
     }
     # bawah ni pemudah cara
-    // public function papar_projek()
-    //  {
-    //    //papar table projek with button melantik pemudah cara
-    //    //should be isi form pemudahcara - create()
+    public function papar_senarai_pemudah_cara()
+     {
+       //papar table projek with button melantik pemudah cara
+       //should be isi form pemudahcara - create()
+
+       $pemudah_cara = PemudahCara::all();
          
-    //      return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
-    //         'projeks'=> $projeks
-    //      ]);
-    //  }
+         return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
+            'pemudah_cara'=> $pemudah_cara
+         ]);
+     }
     public function pemudah_cara()
     {
         // papar form pemudah cara with id projek

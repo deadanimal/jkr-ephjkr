@@ -74,7 +74,7 @@
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
                     <td style="text-align: center">{{ $p->nama }}
-                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Daftar</a>
+                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
                     </td> 
                 </tr>
                     @endforeach

@@ -86,7 +86,7 @@
                     <!--Button Daftar (TOOLTIPS)-->
                     <div class="text-center">
                         <button class="btn btn-warning" data-toggle="tooltip" data-placement="center"
-                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                        title="Daftar Pemudah Cara" type="submit">Lantik Pemudah Cara</button>
                     </div>
                 </form>
             </div>
