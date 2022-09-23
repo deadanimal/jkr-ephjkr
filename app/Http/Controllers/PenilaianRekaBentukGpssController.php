@@ -118,7 +118,7 @@ class PenilaianRekaBentukGpssController extends Controller
 
         $pemudah_cara->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss');
+        return redirect('/penilaian_reka_bentuk_gpss/papar_senarai_pemudah_cara');
     }
     # Pemudah Cara - bawah ni utk skor penilaian
     public function skor_penilaian()

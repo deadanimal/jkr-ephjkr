@@ -51,7 +51,9 @@
                     <th scope="col">Nombor Fax</th>
                     <th scope="col">Email</th>
                     <th scope="col">Disiplin</th>
-                    <th scope="col">Tindakan</th>
+                    <th scope="col">Lantik</th>
+                    
+                    {{-- <th scope="col">Tindakan</th> --}}
                     {{-- <th scope="col">Tindakan</th> --}}
                 </tr>
             </thead>
@@ -77,9 +79,12 @@
                     <td>{{ $pc->no_fax }}</td>
                     <td>{{ $pc->email }}</td>
                     <td>{{ $pc->disiplin }}</td>
-                    <td style="text-align: center">
+                    <td align="center">
+                        <input type="checkbox" value="Lantik" id="lantik" name="lantik">
+                    </td>
+                    {{-- <td style="text-align: center">
                         <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Kemaskini Pemudah Cara</a>
-                    </td> 
+                    </td>  --}}
                 </tr>
                     @endforeach
                     
