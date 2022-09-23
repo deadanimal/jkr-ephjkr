@@ -49,6 +49,7 @@ class SelenggaraKriteriaPenilaianController extends Controller
         $kp->kategori_kriteria = $request->kategori_kriteria;
         $kp->save();
         
+        //AuditTrailController::audit('create', 'pengguna', $pengguna->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/selenggara/kriteria_penilaian');
     }

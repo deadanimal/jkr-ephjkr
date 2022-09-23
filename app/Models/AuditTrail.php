@@ -14,8 +14,8 @@ class AuditTrail extends Model
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
-    public function log_audit()
-    {
-        return $this->hasMany(SelenggaraLogAudit::class);
-    }
+    // public function log_audit()
+    // {
+    //     return $this->hasMany(SelenggaraLogAudit::class);
+    // }
 }

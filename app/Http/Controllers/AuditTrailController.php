@@ -6,6 +6,7 @@ use App\Http\Requests\StoreAuditTrailRequest;
 use App\Http\Requests\UpdateAuditTrailRequest;
 use App\Mail\PengesahanPengguna;
 use App\Models\AuditTrail;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
 class AuditTrailController extends Controller
@@ -18,6 +19,17 @@ class AuditTrailController extends Controller
     public function index()
     {
         //
+        //dd('dsa');
+        $selenggara_log = AuditTrail::with('pengguna')->get();
+        return view('modul.pengurusan_maklumat.selenggara.log_audit.index', [
+            'selenggara_log'=>$selenggara_log
+        ]);
+
+        // dd('selenggara_log');
+        // $selenggara_log = AuditTrail::all();
+        // return view('modul.pengurusan_maklumat.selenggara.log_audit.index', [
+        //     'selenggara_log'=>$selenggara_log,
+        // ]);
     }
 
     /**
@@ -89,5 +101,15 @@ class AuditTrailController extends Controller
     public function destroy(AuditTrail $auditTrail)
     {
         //
+    }
+
+    public static function audit($tindakan, $model, $id)
+    {
+        $audit = new AuditTrail;
+        $audit->user_id = Auth::id();
+        $audit->no_kakitangan = Auth::user()->no_kakitangan;
+        $audit->tindakan = strtoupper($tindakan);
+        $audit->deskripsi = ucwords($tindakan).' '.ucwords($model).' ID='.$id;
+        $audit->save();
     }
 }

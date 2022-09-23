@@ -34,59 +34,31 @@
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Kriteria Sekarang:</label>
+                        <label class="col-form-label">Nama Kriteria:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="/*" type="text" value="{{$kp->nama_kriteria}}"/>
+                        <input class="form-control" ib='namakriteria' name="nama_kriteria" type="text" value="{{$kp->nama_kriteria}}" required/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Kriteria Baru:</label>
+                        <label class="col-form-label">Jenis Kriteria:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="nama_kriteria" type="text"/>
+                        <input class="form-control" name="jenis_kriteria" type="text" value="{{$kp->jenis_kriteria}}" required/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Jenis Kriteria Sekarang:</label>
+                        <label class="col-form-label">Kod Kriteria:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="/*" type="text" value="{{$kp->jenis_kriteria}}"/>
+                        <input class="form-control" name="kod_kriteria" type="text" value="{{$kp->kod_kriteria}}" required/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Jenis Kriteria Baru:</label>
+                        <label class="col-form-label">Kategori Kriteria:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="jenis_kriteria" type="text"/>
-                    </div>
-
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Kod Kriteria Sekarang:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="/*" type="text" value="{{$kp->kod_kriteria}}"/>
-                    </div>
-
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Kod Kriteria Baru:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="kod_kriteria" type="text"/>
-                    </div>
-
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Kategori Kriteria Sekarang:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="/*" type="text" value="{{$kp->kategori_kriteria}}"/>
-                    </div>
-
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">Kategori Kriteria Baru:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="kategori_kriteria" type="text"/>
+                        <input class="form-control" name="kategori_kriteria" type="text" value="{{$kp->kategori_kriteria}}" required/>
                     </div>
                     
     

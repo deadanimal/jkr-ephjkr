@@ -102,7 +102,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/pengurusan_maklumat/selenggara/selenggara_hebahan', SelenggaraHebahanController::class);
     Route::resource('/pengurusan_maklumat/selenggara/status_maklum_balas', SelenggaraStatusMaklumBalasController::class);
     Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', SelenggaraKriteriaPenilaianController::class);
-    Route::resource('/pengurusan_maklumat/selenggara/log_audit', SelenggaraLogAuditController::class);
+    //Route::resource('/pengurusan_maklumat/selenggara/log_audit', SelenggaraLogAuditController::class);
     
     
     //pendaftaran projek
@@ -120,6 +120,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek', [ProjekController::class, 'gugurprojek']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create', [ProjekController::class, 'gugurprojek_create']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{id}', [ProjekController::class, 'gugurprojek_edit']);
+    // Route::post('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/{id}', [ProjekController::class, 'update']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{id}', [ProjekController::class, 'padam_gugurprojek']);
 
     //pengesahan projek
