@@ -1660,7 +1660,7 @@ thead {
 
     </div>
 
-    <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}">
+    <form action="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian">
         <div class="mt-3 text-center">
             <button type="submit" class="btn btn-secondary">Tolak</button>
             <button type="submit" class="btn btn-primary">Sah</button>

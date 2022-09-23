@@ -24,30 +24,47 @@
                     @csrf
                     @method('POST')
 
-                    <!--Nama-->
+                    <!--Nama Pemudah Cara-->
                     {{-- <input type="text" name="projek_id" value={{$projeks->id}}> --}}
 
-                    <div class="mb-3 form-group row">
-                        <label class="col-sm-2 col-form-label">Nama:</label>
+                    {{-- <div class="mb-3 form-group row">
+                        <label class="col-sm-2 col-form-label">Pemudah Cara:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara->nama}}"/>                        
                             </div>
-                    </div>
+                    </div> --}}
 
                     <!--Nama Projek-->
-                    <div class="mb-3 form-group row">
+                    {{-- <div class="mb-3 form-group row">
                         <label class="col-sm-2 col-form-label">Nama Projek:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/> 
-                                {{-- <textarea name="id" class="form-control" type="text">{{$projeks->id}}</textarea>                       --}}
                             </div>
-                    </div>
+                    </div> --}}
+
+                    {{-- <!--Nama Syarikat-->
+                    <div class="mb-3 form-group row">
+                        <label class="col-sm-2 col-form-label">Nama Syarikat:</label>
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/> 
+                            </div>
+                    </div> --}}
 
                     <!--Syarikat/Cawangan-->
                     <div class="mb-3 form-group row">
-                        <label class="col-sm-2 col-form-label">Syarikat:</label>
+                        <label class="col-sm-2 col-form-label">Cawangan:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan"/>                        
+                            </div>
+                    </div>
+
+                    <!--Nama Pemudah Cara-->
+                    {{-- <input type="text" name="projek_id" value={{$projeks->id}}> --}}
+
+                    <div class="mb-3 form-group row">
+                        <label class="col-sm-2 col-form-label">Pemudah Cara:</label>
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara->nama}}"/>                        
                             </div>
                     </div>
 
@@ -83,6 +100,19 @@
                             </div>
                     </div>
 
+                    <!--Peranan-->
+                    <div class="mb-3 row form-check form-check-inline">
+                        <label class="col-sm-2 col-form-label">Peranan:</label>
+                            <div class="col-sm-7">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            </div>
+                        <label class="form-check-label" for="inlineCheckbox1">Ketua Pemudah Cara</label>
+                    </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Pemudah Cara</label>
+                      </div>
+
                     <!--Kategori-->
                         <input class="form-control" type="hidden" name="kategori" value="bangunan" />
 
@@ -93,6 +123,46 @@
                         title="Lantik Pemudah Cara" type="submit">Lantik</button>
                     </div>
                 </form>
+
+                <div class="col-12">
+                    <div class="card-header">
+                            <div class="mt-5 row">
+                                        <table class="table table-bordered line-table" style="width:100%">
+                                                <thead class="text-white bg-orange-jkr">
+                                                    <tr>
+                                                        <th class="text-center">Bil</th>
+                                                        <th class="text-center">Pemudah Cara</th>
+                                                        <th class="text-center">Nama Projek</th>
+                                                        <th class="text-center">Nama Syarikat</th>
+                                                        <th class="text-center">Peranan</th>                                                    </tr>
+                                                </thead>
+                                            {{-- </table>  --}}
+        
+                                            {{-- <table class="kotak" style="width:100%"> --}}
+                                            <tbody id="myTable">
+                                                <!--LOOPING TABLES-->
+                                                {{-- @foreach ($projeks as $key => $p) --}}
+                                                    <tr class="text-black">
+                                                        <td style="text-align: center; vertical-align: middle;">1</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Ali bin Adib</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Mukah</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Ketua Pemudah Cara</td>
+                                                        {{-- <td style="text-align: center; vertical-align: middle;">
+                                                            <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan" role="button"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
+                                                        </td> --}}
+        
+                                                {{-- @endforeach --}}
+                                                </tbody>
+                                            {{-- </table> --}}
+                                        </table> 
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div> <!--card-body-->
     </div> <!--Container Fluid-->
 

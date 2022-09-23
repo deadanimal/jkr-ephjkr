@@ -155,7 +155,7 @@
                         <tr align="center" class="text-black">
                             <th colspan="3">
                                 {{-- <button class="btn btn-primary btn-sasaran">Sasaran</button> --}}
-                                <a class="button btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$kriteria_phjkr_bangunan->id}}">Sasaran</a>
+                                <a class="button btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$kriteria_phjkr_bangunan->id}}">Semakan Rawak</a>
                                 <button type="submit" class="btn btn-secondary">Disahkan</button>
                             </th>
                         </tr>
