@@ -118,9 +118,10 @@ Route::middleware('auth')->group(function () {
 
     //gugur projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek', [ProjekController::class, 'gugurprojek']);
-    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create', [ProjekController::class, 'gugurprojek_create']);
+    //Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit', [ProjekController::class, 'gugurprojek_create']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{id}', [ProjekController::class, 'gugurprojek_edit']);
     // Route::post('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/{id}', [ProjekController::class, 'update']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/edit', [ProjekController::class, 'gugurprojek_gugur']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{id}', [ProjekController::class, 'padam_gugurprojek']);
 
     //pengesahan projek

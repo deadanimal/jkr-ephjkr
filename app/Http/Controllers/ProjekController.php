@@ -197,9 +197,10 @@ class ProjekController extends Controller
 
     public function gugurprojek_create(){
 
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.create'
-            
-        );
+        //dd('hgf');
+        // return view('modul.pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit', [
+        //     'gugur_projek' => Projek::with('status')->get()
+        // ]);
     }
 
     public function gugurprojek_store(){
@@ -216,6 +217,18 @@ class ProjekController extends Controller
             'gp' => $gp
         ]);
                 
+    }
+
+    public function gugurprojek_gugur(){
+        //
+        //dd('sdaf');
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.edit', [
+            'gugur_projek' => Projek::with('status')->get()
+        ]);
+
+        //$pengesahan_gugur = Projek::all();
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.edit');
     }
 
     public function padam_gugurprojek($id){

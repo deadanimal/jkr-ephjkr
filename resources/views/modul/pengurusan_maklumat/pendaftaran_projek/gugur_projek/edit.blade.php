@@ -9,7 +9,7 @@
                     <a href="/pengurusan_maklumat/senarai_pengguna" class="text-secondary">Pendaftaran Projek</a>
                 </li>
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Papar Permohonan Gugur Projek
+                    Papar Pengesahan Permohonan Gugur Projek
                 </li>
             </ol>
         </nav>
@@ -24,11 +24,11 @@
 
 <hr class="text-primary mb-3">
 
-    <div class="row mt-3">
+    {{-- <div class="row mt-3">
         <div class="col text-end">
             <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/edit" class="btn btn-primary">Sahkan Permohonan</a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="row mt-2">
         <div class="col">
@@ -55,11 +55,11 @@
                                     <td>{{ $gp->jenisKategoriProjek }}</td>
                                     <td>
                                         <div class="row">
-                                            <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{{ $gp->id }}"
-                                                    class="btn btn-sm btn-primary">Gugur</a>
-                                            </div>
                                             
+                                            <div class="col-auto">
+                                                <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit/{{ $gp->id }}"
+                                                    class="btn btn-sm btn-primary">SAHKAN</a>
+                                            </div>
                                         </div>
                                         {{-- <div class="col text-end">
                                             <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>
@@ -79,5 +79,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 @endsection
