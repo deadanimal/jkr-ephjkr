@@ -116,6 +116,7 @@ class PenilaianRekaBentukGpssController extends Controller
         $pemudah_cara->kategori = $request->kategori;
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
 
+
         $pemudah_cara->save();
 
         return redirect('/penilaian_reka_bentuk_gpss/papar_senarai_pemudah_cara');
