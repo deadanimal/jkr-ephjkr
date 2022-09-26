@@ -241,8 +241,8 @@ Route::middleware('auth')->group(function () {
     // Verifikasi Permarkahan Bangunan
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukBangunanController::class);
     Route::get('/verifikasi_permarkahan_bangunan', [VerifikasiPermarkahanBangunanController::class, 'index']);
-    Route::get('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara', [VerifikasiPermarkahanBangunanController::class, 'papar_projek']);
-    Route::get('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara/{id}', [VerifikasiPermarkahanBangunanController::class, 'pemudah_cara']);
+    // Route::get('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara', [VerifikasiPermarkahanBangunanController::class, 'papar_projek']);
+    Route::get('/verifikasi_permarkahan_bangunan/pemudah_cara/{id}', [VerifikasiPermarkahanBangunanController::class, 'pemudah_cara']);
     Route::post('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara/{id}', [VerifikasiPermarkahanBangunanController::class, 'melantik_pemudah_cara']);
     Route::get('/verifikasi_permarkahan_bangunan/skor_penilaian', [VerifikasiPermarkahanBangunanController::class, 'skor_penilaian']);
     Route::get('/verifikasi_permarkahan_bangunan/skor_penilaian/{id}', [VerifikasiPermarkahanBangunanController::class, 'papar_skor_penilaian']);

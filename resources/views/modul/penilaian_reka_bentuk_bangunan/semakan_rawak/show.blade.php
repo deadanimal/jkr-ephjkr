@@ -15,25 +15,137 @@
 </div>
 <div class="container-fluid">
     <div class="card-body">
-        <form action="/penilaian_reka_bentuk_bangunan/simpan_semakan_rawak/{id}" method="post" enctype="multipart/form-data">
-            @csrf
-            {{-- @method('PUT') --}}
+        
+            <form action="/penilaian_reka_bentuk_bangunan/simpan_semakan_rawak/{id}" method="post" enctype="multipart/form-data">
+                @csrf
+                {{-- @method('PUT') --}}
 
+            <div class="table-responsive scrollbar">
             <div class="row mx-3">
                 <table class="table table-bordered line-table shadow-table-jkr line-corner-table-jkr">
                     <thead class="text-white line-table">
                             <tr align="center" style="background-color:#EB5500">
                                 <th colspan="3">Jenis Pembangunan</th>
-                                <th colspan="8">Pembangunan Baru</th>
+                                <th colspan="20">Pembangunan Baru</th>
+                                <th colspan="20">Pemuliharaan/Ubah Suai/Naik Taraf (PUN)</th>
+                                <th colspan="20">Penarafan Semula/Sedia Ada</th>
+                            </tr>
+
+                            <tr align="center" style="background-color:#EB5500">
+                                <th colspan="3">Kategori</th>
+                                <th colspan="5">A</th>
+                                <th colspan="5">B</th>
+                                <th colspan="5">C</th>
+                                <th colspan="5">D</th>
+
+                                <th colspan="5">A</th>
+                                <th colspan="5">B</th>
+                                <th colspan="5">C</th>
+                                <th colspan="5">D</th>
+
+                                <th colspan="5">A</th>
+                                <th colspan="5">B</th>
+                                <th colspan="5">C</th>
+                                <th colspan="5">D</th>
                             </tr>
                 
                             <tr align="center" style="background-color:#EB5500">
                                 <th colspan="3">Peratusan Mengikut Kriteria</th>
-                                <th>MMR</th>
-                                <th>MS</th>
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
                                 <th>MR</th>
                                 <th>MMV</th>
-                                <th>MS</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                {{-- PUN --}}
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MV</th>
+                                <th>ML</th>
+
+                                <th>MM</th>
+                                {{-- <th>MS</th> --}}
+                                <th>MR</th>
+                                <th>MMV</th>
+                                {{-- <th>MS</th> --}}
                                 <th>MV</th>
                                 <th>ML</th>
                             </tr>
@@ -44,8 +156,98 @@
                                 <th>TL</th>
                                 <th colspan="2">Perancangan dan Pengurusan Tapak Lestari</th>
                                 <th>26</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>26</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -57,8 +259,98 @@
                                 <th>KT</th>
                                 <th colspan="2">Pengurusan Kecekapan Tenaga</th>
                                 <th>24</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>24</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -70,8 +362,98 @@
                                 <th>SB</th>
                                 <th colspan="2">Pengurusan Sumber dan Bahan</th>
                                 <th>20</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>20</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -83,8 +465,98 @@
                                 <th>PA</th>
                                 <th colspan="2">Pengurusan Kecekapan Penggunaan Air</th>
                                 <th>14</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>14</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -96,20 +568,201 @@
                                 <th>PD</th>
                                 <th colspan="2">Pengurusan Kualiti Persekitaran Dalaman</th>
                                 <th>11</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
                             </tr>
 
                             <tr align="center" class="text-black" >
                                 <th>FL</th>
                                 <th colspan="2">Pengurusan Fasiliti Lestari</th>
                                 <th>0</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -120,19 +773,200 @@
                                 <th>IN</th>
                                 <th colspan="2">Inovasi dalam Reka Bentuk</th>
                                 <th>6</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>11</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
                             </tr>
 
                             <tr align="center" class="text-black" >
                                 <th colspan="3">JUMLAH</th>
                                 <th>101</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahMS}}</th>
-                                <th>{{$kriteria_phjkr_bangunan->markahMR}}</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- PUN --}}
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                {{-- Sedia Ada --}}
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+
+                                <th>101</th>
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
+                                {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
                                 <th>0</th>
                                 <th>0</th>
@@ -143,7 +977,8 @@
         
                 </table> <!--Table Jenis Pembangunan-->
             </div> <!--row mx-3-->
-            
+        </div> <!--Scrollbar-->
+           
 
             <div class="row mx-3">
                 <table class="table table-bordered line-table shadow-table-jkr">
@@ -240,7 +1075,7 @@
                     </div>
                 </div> --}}
 
-        </form> <!--Form Sasaran/Disahkan--> 
+            </form> <!--Form Sasaran/Disahkan--> 
     </div> <!--Card Body-->
 </div> <!--Container Fluid-->
 

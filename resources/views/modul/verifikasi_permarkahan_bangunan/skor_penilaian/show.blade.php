@@ -86,38 +86,43 @@
                             <tr class="pg-1" align="center" style="background-color:#EB5500">
                                 <th rowspan="3">Kod</th>
                                 <th rowspan="3">Kriteria</th>
-                                <th rowspan="3">Kategori bangunan</th>
-                                <th colspan="7">Pembangunan Baru</th>
-                                {{-- <th>Markah</th> --}}
-                                <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
-                                <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
-                                <th rowspan="3">Muat Naik Dokumen Sokongan</th>
+                                <th rowspan="3" colspan="6">Kategori bangunan</th>
+                                <th colspan="4">Pembangunan Baru</th>
+                                <th colspan="4">Pemuliharaan/ Ubahsuai/ Naiktaraf (PUN)</th>
+                                <th colspan="4">Penarafan semula/bangunan sedia ada</th>
+                                <th rowspan="2">Dokumen Pembuktian</th>
+                                <th rowspan="3" colspan="5">Ulasan/Maklumbalas</th>
+                                <th rowspan="3" colspan="4">Muat Naik Dokumen Sokongan</th>
 
                             </tr>
             
                             <tr class="pg-1" align="center" style="background-color:#EB5500">
-                                <th colspan="7">Markah</th>
+                                <th colspan="4">Markah</th>
+                                <th colspan="4">Markah</th>
+                                <th colspan="4">Markah</th>
                             </tr>
                         
                             <tr class="pg-1" align="center" style="background-color:#EB5500">
-                                {{-- <th>TL</th> --}}
-                                {{-- <th>Kriteria</th> --}}
-                                {{-- <th>Kategori Bangunan</th> --}}
-                                <th>MMR</th>
-                                <th>MS</th>
+                                <th>MM</th>
                                 <th>MR</th>
                                 <th>MMV</th>
-                                <th>MS</th>
                                 <th>MV</th>
-                                <th>ML</th>
-                                <th colspan="2">Rekabentuk (Peringkat 2)</th>
-                                <th colspan="2">Verifikasi (Peringkat 3)</th>
+                                <th>MM</th>
+                                <th>MR</th>
+                                <th>MMV</th>
+                                <th>MV</th>
+                                <th>MM</th>
+                                <th>MR</th>
+                                <th>MMV</th>
+                                <th>MV</th>
+                                {{-- <th colspan="2">Rekabentuk (Peringkat 2)</th> --}}
+                                <th>Verifikasi (Peringkat 3)</th>
             
                             </tr>
             
                             <tr class="pg-1" style="background-color:#EB5500">
                                 <th>TL</th>
-                                <th colspan="15">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
+                                <th colspan="32">PERANCANGAN & PENGURUSAN TAPAK LESTARI</th>
                             </tr>
                         </thead>
             
@@ -125,27 +130,23 @@
                             <tr class="pg-1" align="center">
                                 <td>TL1</td>
                                 <td>Perancangan Tapak</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option id="input1" hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                         
-                                </td>
-
-                                <td>0</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MSV" name="markahTL1_MSV" required/></td>
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
                                 <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">Rancangan Tempatan yang menunjukkan kawasan pembangunan yang terlibat</td>
-                                <td colspan="2">Tidak Berkenaan</td>
-                                <td></td>
-                                <td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MSV" name="markahTL1_MSV" required/></td> --}}
+                                <td>Tidak Berkenaan</td>
+                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -161,31 +162,28 @@
                             <tr class="pg-1" align="center">
                                 <td>TL2</td>
                                 <td>Sistem Pengurusan Alam Sekitar (SPAS)</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>
-                                <td>3</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MSV" name="markahTL2_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MMV" name="markahTL2_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2"><span>&#183; Sijil ISO 14001</span><br>
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL2_MMV" name="markahTL2_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL2_MMV" name="markahTL2_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL2_MMV" name="markahTL2_MMV" required/></td>
+                                {{-- <td colspan="2"><span>&#183; Sijil ISO 14001</span><br>
                                     <span>&#183; Senarai kuantiti (BQ) kerja-kerja perlindungan alam sekitar</span>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Laporan Pelan Pengurusan Alam Sekitar</span><br>
                                     <span>&#183; Borang SPAS (Peringkat pembinaan)</span>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -194,41 +192,40 @@
                                         </label>
                                     </form>
                                     </td>                        
-                                </tr>
+                            </tr>
 
                             <!--TL3-->
                             <tr class="pg-1" align="center">
                                 <td rowspan="2">TL3</td>
                                 <td>i. Pemotongan dan Penambakan tanah</td>
-                                <td rowspan="2">
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>3</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MSV" name="markahTL3_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MMV" name="markahTL3_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td rowspan="2" colspan="6">
+                                                                     
+                                </td>  
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL3_MMV" name="markahTL3_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL3_MMV" name="markahTL3_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL3_MMV" name="markahTL3_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Laporan rekabentuk tanah</span><br>
                                     <span>&#183; Lukisan pelan tanah</span><br>
                                     <span>&#183; Laporan geoteknikal (jika perlu)</span>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Laporan kuantiti tanah yang diimport atau eksport</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO 
                                         atau setaraf
                                     </span>
                                 </td>
-                                <td></td>
+                                <td colspan="5"></td>
                                 <td>
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -243,28 +240,25 @@
                             <tr class="pg-1" align="center">
                                 <td>ii. Mengekalkan Topografi Tanah</td>
                                 {{-- <th>A</th> --}}
-                                <td>2</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MSV" name="markahTL32_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MMV" name="markahTL32_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
-                                    <span>&#183; Pelan Topografi</span><br>
-                                    <span>&#183; Laporan geoteknikal</span><br>
-                                    <span>&#183; Laporan rekabentuk tanah</span><br>
-                                    <span>&#183; Lukisan pelan kerja tanah</span><br>
-                                    <span>&#183; Pelan kawalan hakisan kelodak (ESCP)</span>
-            
-                                </td>
-                                <td colspan="2">
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL32_MMV" name="markahTL32_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL32_MMV" name="markahTL32_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
                                     <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -279,30 +273,27 @@
                             <tr class="pg-1" align="center">
                                 <td>TL4</td>
                                 <td>Pelan Kawalan Hakisan & Kelodak (ESCP)</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MSV" name="markahTL4_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MMV" name="markahTL4_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL4_MMV" name="markahTL4_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL4_MMV" name="markahTL4_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL4_MMV" name="markahTL4_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Pelan Kawalan Hakisan & Kelodak (ESCP)</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -311,36 +302,33 @@
                                         </label>
                                     </form>
                                 </td>                        
-                                </tr>
+                            </tr>
             
                             <!--TL5-->
                             <tr class="pg-1" align="center">
                                 <td>TL5</td>
                                 <td>Pemuliharaan dan Pemeliharaan Cerun</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>0</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL5_MSV" name="markahTL5_MSV" required/></td>
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
                                 <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL5_MMV" name="markahTL5_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL5_MMV" name="markahTL5_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL2_MMV" name="markahTL2_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Laporan penyenggaraan cerun</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>Tidak Berkenaan</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -349,33 +337,30 @@
                                         </label>
                                     </form>
                                     </td>                        
-                                </tr>
+                            </tr>
 
                             <!--TL6-->
                             <tr class="pg-1" align="center">
                                 <td>TL6</td>
                                 <td>Pengurusan Air Larian Hujan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>3</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MSV" name="markahTL6_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MMV" name="markahTL6_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL6_MMV" name="markahTL6_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL6_MMV" name="markahTL6_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL6_MMV" name="markahTL6_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Laporan rekabentuk sistem perparitan</span><br>
                                     <span>&#183; Pelan sistem perparitan berdasarkan MSMA</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#40;a&#41; Baru</span><br>
                                     <span>&#183; Laporan sistem perparitan</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
@@ -383,8 +368,8 @@
                                     <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -394,11 +379,52 @@
                                     </form>
                                 </td>
                             </tr>
+
+                            <!--TL7-->
+                            <tr class="pg-1" align="center">
+                                <td>TL7</td>
+                                <td>Rekabentuk, Aksebiliti dan Kemudahan OKU</td>
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MSV" name="markahTL1_MSV" required/></td> --}}
+                                <td>
+                                    <span>a&#41; Baru</span><br>
+                                    <span>&#183; Lukisan siap bina</span><br>
+                                    <span>&#183; Laporan audit akses OKU dan bukti bergambar yang telah siap</span><br>
+                                    <span>a&#41; Sedia Ada</span><br>
+                                    <span>&#183; Laporan audit akses OKU</span><br>
+                                    <span>&#183; Bukti bergambar kerja-kerja penambahbaikan yang dilaksanakan
+                                        mengikut laporan audit akses</span><br>
+                                </td>
+                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="4">
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>
+                
+                            </tr>
             
                             <!--TL8--><!--NO INPUT-->
                             <tr class="pg-1" align="center">
                                 <td>TL8</td>
                                 <td>Landskap strategik</td>
+                                <td colspan="6"></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -406,11 +432,15 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                {{-- <td colspan="2"></td> --}}
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="5"></td>
+                                <td colspan="4"></td>
             
                             </tr>
             
@@ -418,33 +448,30 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.1</td>
                                 <td>Memelihara dan menyenggara pokok yang matang</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>3</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MSV" name="markahTL81_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MMV" name="markahTL81_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL81_MMV" name="markahTL81_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL81_MMV" name="markahTL81_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL81_MMV" name="markahTL81_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Inventori pokok</span><br>
                                     <span>&#183; Pelan ukur bagi lokasi pokok matang sedia ada</span><br>
                                     <span>&#183; Pelan penanaman pokok</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
                                     <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -460,33 +487,30 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.2</td>
                                 <td>Menyediakan kawasan hijau</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MSV" name="markahTL82_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MMV" name="markahTL82_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV" name="markahTL82_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV" name="markahTL82_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV" name="markahTL82_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>Laporan cadangan menunjukkan:</span><br>
                                     <span>&#183; 30% kawasan hijau (disahkan oleh arkitek atau jururancang bertauliah)</span><br>
                                     <span>&#183; Pokok, pokok renek, tumbuhan penutup bumi, rumput</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#40;a&#41; Pelan tapak siap bina yang telah disahkan oleh Arkitek Bertauliah</span><br>
                                     Nyatakan sekiranya ada perubahan
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -501,34 +525,31 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.3</td>
                                 <td>Menyedia dan menyenggara penanaman pokok teduhan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MSV" name="markahTL83_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MMV" name="markahTL83_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL83_MMV" name="markahTL83_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL83_MMV" name="markahTL83_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL83_MMV" name="markahTL83_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Penyediaan pelan landskap</span><br>
                                     <span>&#183; Jadual spesis pokok</span><br>
                                     <span>&#183; Anggaran bayang-bayang pokok atau struktur selain bangunan</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#183; Pelan landskap siap bina</span><br>
                                     <span> &#183; Inventori pokok</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -545,31 +566,28 @@
                                 <td>Pemilihan bahan binaan siarkaki (walkway) yang mempunyai daya pantulan
                                     haba yang tinggi
                                 </td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MSV" name="markahTL84_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MMV" name="markahTL84_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL84_MMV" name="markahTL84_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL84_MMV" name="markahTL84_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL84_MMV" name="markahTL84_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Lukisan terperinci dengan spesifikasi</span><br>
                                     <span>&#183; Katalog berserta jadual SRI bahan siarkaki</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -584,34 +602,31 @@
                             <tr class="pg-1" align="center">
                                 <td>TL8.5</td>
                                 <td>Menyedia dan menyenggara sistem turapan berumput</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>2</td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MSV" name="markahTL85_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MMV" name="markahTL85_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL85_MMV" name="markahTL85_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL85_MMV" name="markahTL85_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL85_MMV" name="markahTL85_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Lukisan butiran dan spesifikasi sistem turapan</span><br>
                                     <span>&#183; Lukisan susun atur tapak pembangunan</span><br>
                                     <span>&#183; Pengiraan luas zon turapan</span><br>
 
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#183; Lukisan siap bina</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -626,6 +641,7 @@
                             <tr class="pg-1" align="center">
                                 <td>TL9</td>
                                 <td>Bumbung Hijau & Dinding Hijau</td>
+                                <td colspan="6"></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -634,10 +650,13 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="5"></td>
+                                <td colspan="4"></td>
                             </tr>
 
                             <!--TL9.1-->
@@ -645,34 +664,31 @@
                                 <td>TL9.1</td>
                                 <td>Indeks Pantulan Suria (SRI) mengikut jenis & kecerunan bumbung
                                 </td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td>1</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MSV" name="markahTL91_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MMV" name="markahTL91_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL91_MMV" name="markahTL91_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL91_MMV" name="markahTL91_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL91_MMV" name="markahTL91_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Katalog berserta jadual SRI bumbung</span><br>
                                     <span>&#183; Pengiraan keluasan bumbung</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Method statement yang telah disahkan oleh
                                         pegawai penguasa (SO)</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -688,37 +704,34 @@
                                 <td>TL9.2</td>
                                 <td>Menggalakkan rekabentuk bumbung/dinding hijau
                                 </td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>
-                                <td>3</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MSV" name="markahTL92_MSV" required/></td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MMV" name="markahTL92_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL92_MMV" name="markahTL92_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL92_MMV" name="markahTL92_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL92_MMV" name="markahTL92_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Pelan konsep rekabentuk</span><br>
                                     <span>&#183; Jadual keluasan kawasan bumbung</span><br>
                                     <span>&#183; Lukisan butiran dan jadual penanaman</span><br>
                                     <span>&#183; Pengiraan</span><br>
 
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                     <span>&#183; Rekod Senggaraan</span><br>
 
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -731,18 +744,56 @@
             
                             </tr>
 
+                            <!--TL10-->
+                            <tr class="pg-1" align="center">
+                                <td>TL10</td>
+                                <td>Rekabentuk, Aksebiliti dan Kemudahan OKU</td>
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="sum_ms_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MSV" name="markahTL1_MSV" required/></td> --}}
+                                <td>
+                                    <span>&#183; Lukisan siap bina tempat letak kenderaan dan penanda</span><br>
+                                    <span>&#183; Bukti bergambar</span><br>
+                                </td>
+                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="4">
+                                <form class="form">
+                                    <label for="form__input" class="form__label">
+                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                        <span id="custom-text">No file chosen, yet.</span>
+                                    </label>
+                                </form>
+                                </td>
+                
+                            </tr>
+
                             <!--JUMLAH MARKAHTL-->
                             <tr class="pg-1" align="center">
-                                <td colspan="3">Jumlah markah TL</td>
-                                <td></td>
+                                <td colspan="6">Jumlah markah TL</td>
+                                <td colspan="3"></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td><input id="total_amount_ms_tl" type="text" autocapitalize="off" name="markahTOTAL_TL_MSV" id="markahTOTAL_TL_MSV" /></td>
                                 <td><input id="total_amount_mv_tl" type="text" autocapitalize="off" name="markahTOTAL_TL_MMV" id="markahTOTAL_TL_MMV" /></td>
                                 <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
+                                {{-- <td colspan="2"></td> --}}
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr> 
@@ -759,33 +810,42 @@
                             <tr class="pg-2" align="center" style="background-color:#EB5500">
                                 <th rowspan="3">Kod</th>
                                 <th rowspan="3">Kriteria</th>
-                                <th rowspan="3">Kategori bangunan</th>
-                                <th colspan="7">Pembangunan Baru</th>
-                                <th rowspan="2" colspan="4">Dokumen Pembuktian</th>
-                                <th rowspan="3">Ulasan/Maklumbalas Penilai</th>
-                                <th rowspan="3">Muat Naik Dokumen Sokongan</th>
+                                <th rowspan="3" colspan="6">Kategori bangunan</th>
+                                <th colspan="4">Pembangunan Baru</th>
+                                <th colspan="4">Pemuliharaan/ Ubahsuai/ Naiktaraf (PUN)</th>
+                                <th colspan="4">Penarafan semula/bangunan sedia ada</th>
+                                <th rowspan="2">Dokumen Pembuktian</th>
+                                <th rowspan="3" colspan="5">Ulasan/Maklumbalas</th>
+                                <th rowspan="3" colspan="4">Muat Naik Dokumen Sokongan</th>
 
                             </tr>
 
                             <tr class="pg-2" align="center" style="background-color:#EB5500">
-                                <th colspan="7">Markah</th>
+                                <th colspan="4">Markah</th>
+                                <th colspan="4">Markah</th>
+                                <th colspan="4">Markah</th>
                             </tr>
                         
                             <tr class="pg-2" align="center" style="background-color:#EB5500">
-                                <th>MMR</th>
-                                <th>MS</th>
+                                <th>MM</th>
                                 <th>MR</th>
                                 <th>MMV</th>
-                                <th>MS</th>
                                 <th>MV</th>
-                                <th>ML</th>
-                                <th colspan="2">Rekabentuk (Peringkat 2)</th>
-                                <th colspan="2">Verifikasi (Peringkat 3)</th>
+                                <th>MM</th>
+                                <th>MR</th>
+                                <th>MMV</th>
+                                <th>MV</th>
+                                <th>MM</th>
+                                <th>MR</th>
+                                <th>MMV</th>
+                                <th>MV</th>
+                                {{-- <th colspan="2">Rekabentuk (Peringkat 2)</th> --}}
+                                <th>Verifikasi (Peringkat 3)</th>
                             </tr>
 
                             <tr class="pg-2" style="background-color:#EB5500">
                                 <th>KT</th>
-                                <th colspan="15">PENGURUSAN KECEKAPAN TENAGA DAN PENGGUNAAN TENAGA BOLEH BAHARU</th>
+                                <th colspan="32">PENGURUSAN KECEKAPAN TENAGA DAN PENGGUNAAN TENAGA BOLEH BAHARU</th>
                             </tr>
                         </thead>
 
@@ -794,33 +854,30 @@
                                 <td>KT1</td>
                                 <td>Rekabentuk bumbung</td>
                                 {{-- <th><input class="form-control" type="text" autocapitalize="off" name="jenisKategori" value="{{$kriteria_phjkr_bangunan ?? ''}}"/></th> --}}
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                         
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>2</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MSV" name="markahKT1_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV" name="markahKT1_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
                                     <span>&#183; Pengiraan U-Value bagi rekabentuk bumbung</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -835,6 +892,7 @@
                             <tr class="pg-2" align="center">
                                 <td>KT2</td>
                                 <td>Orientasi bangunan</td>
+                                <td colspan="6"></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -843,10 +901,13 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="5"></td>
+                                <td colspan="4"></td>
 
                             </tr>
 
@@ -854,32 +915,29 @@
                             <tr class="pg-2" align="center">
                                 <td>KT2.1</td>
                                 <td>Fasad Utama bangunan yang menghadap orientasi utara-selatan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                                 
-                                </td>                            
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MSV" name="markahKT21_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV" name="markahKT21_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td>
                                     <span>&#183; Pelan tapak berserta penunjuk arah utara
                                         menunjukkan pelan bangunan dengan meletakkan sun-path diagram</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -896,30 +954,27 @@
                             <tr class="pg-2" align="center">
                                 <td>KT2.2</td>
                                 <td>Meminimumkan bukaan pada fasad yang menghadap timur dan barat</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MSV" name="markahKT22_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV" name="markahKT22_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Laporan penyenggaraan cerun</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>Tidak Berkenaan</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -934,6 +989,7 @@
                             <tr class="pg-2" align="center">
                                 <td>KT3</td>
                                 <td>Rekabentuk fasad</td>
+                                <td colspan="6"></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -942,42 +998,42 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="5"></td>
+                                <td colspan="4"></td>
                             </tr>
 
                             <!--KT3.1-->
                             <tr class="pg-2" align="center">
                                 <td>KT3.1</td>
                                 <td>Dinding luar bangunan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select> 
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="1" autocapitalize="off" id="markah31_MSV" name="markah31_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="1" autocapitalize="off" id="markah31_MMV" name="markah31_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Katalog spesifikasi U-Value bahan</span><br>
                                     <span>&#183; Pengiraan U-Value bagi rekabentuk dinding</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Katalog bahan yang diluluskan untuk pembinaan</span><br>
                                     <span>&#183; Pengiraan U-Value yang disahkan</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -992,31 +1048,28 @@
                             <tr class="pg-2" align="center">
                                 <td>KT3.2</td>
                                 <td>Pengadang Suria Luaran</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MSV" name="markahKT32_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV" name="markahKT32_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Katalog bahan</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -1025,37 +1078,33 @@
                                         </label>
                                     </form>
                                 </td>
-
                             </tr>
 
                             <!--KT4-->
                             <tr class="pg-2" align="center">
                                 <td>KT4</td>
                                 <td>OTTV & RTTV</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MSV" name="markahKT4_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MMV" name="markahKT4_MMV" required/></td>
-                                <td></td>
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td colspan="2">
+                                    <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
+                                </td> --}}
                                 <td colspan="2">
                                     <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
                                 </td>
-                                <td colspan="2">
-                                    <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
-                                </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -1070,58 +1119,88 @@
                             <tr class="pg-2" align="center">
                                 <td>KT5</td>
                                 <td>Kecekapan pencahayaan</td>
+                                <td colspan="6"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td colspan="5"></td>
+                                <td colspan="4"></td>
+                            </tr>
+
+                            <!--KT5.1-->
+                            <tr class="pg-2" align="center">
+                                <td>KT5.1</td>
+                                <td>Kawalan Pencahayaan</td>
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td>
+                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
+                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
+                                </td> --}}
                                 <td>
-                                    {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                 --}}
+                                    <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
+                                    <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td colspan="2"></td>
-                                <td colspan="2"></td>
-                                <td></td>
-                                <td></td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
+                                    <form class="form">
+                                        <label for="form__input" class="form__label">
+                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                            <span id="custom-text">No file chosen, yet.</span>
+                                        </label>
+                                    </form>
+                                </td>
                             </tr>
 
                             <!--KT5.2-->
                             <tr class="pg-2" align="center">
                                 <td>KT5.2</td>
                                 <td>Kawalan Pencahayaan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MSV" name="markahKT52_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV" name="markahKT52_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -1135,33 +1214,29 @@
                             <!--KT8-->
                             <tr class="pg-2" align="center">
                                 <td>KT8</td>
-                                <td>Tenaga Boleh Baharu (TBB)</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>                
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MSV" name="markahKT8_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV" name="markahKT8_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Mengemukakan lukisan rekabentuk sistem dan simulasi pengiraan
                                         bagi anggaran tenaga baharu yang boleh dihasilkan oleh sistem tersebut</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span> &#183; Salinan lukisan siap bina dan laporan uji terima yang mematuhi kehendak rekabentuk</span><br>
                                     <span> &#183; Pengiraan penjanaan tenaga boleh baharu berbanding jumlah penggunaan tenaga tahunan bangunan</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -1169,37 +1244,34 @@
                                             <span id="custom-text">No file chosen, yet.</span>
                                         </label>
                                     </form>
-                                    </td>
+                                </td>
                             </tr>
 
                             <!--KT11-->
                             <tr class="pg-2" align="center">
                                 <td>KT11</td>
                                 <td>Pengujian dan pentauliahan</td>
-                                <td>
-                                    <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                        <option hidden selected="">Sila Pilih</option>
-                                        <option value="A">A</option>
-                                        <option value="B">B</option>
-                                        <option value="C">C</option>
-                                        <option value="D">D</option>
-                                    </select>  
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMS_KT()" class="sum_ms_kt" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MSV" name="markahKT11_MSV" required/></td>
-                                <td><input onblur="findTotalMV_KT()" class="sum_mv_kt" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV" name="markahKT11_MMV" required/></td>
-                                <td></td>
-                                <td colspan="2">
+                                <td colspan="6"></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td>MM</td>
+                                <td>MR</td>
+                                <td>MMV</td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                {{-- <td colspan="2">
                                     <span>&#183; Pelan pengujian dan pentauliahan</span><br>
-                                </td>
-                                <td colspan="2">
+                                </td> --}}
+                                <td>
                                     <span>&#183; Dokumen lengkap pengujian dan pentauliahan yang telah disahkan</span><br>
                                 </td>
-                                <td></td>
-                                <td>
+                                <td colspan="5"></td>
+                                <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
                                             <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -1207,8 +1279,7 @@
                                             <span id="custom-text">No file chosen, yet.</span>
                                         </label>
                                     </form>
-                                    </td>
-
+                                </td>
                             </tr>
 
                             <!--JUMLAH MARKAHKT-->

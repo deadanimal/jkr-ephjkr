@@ -432,11 +432,11 @@
                             </li>
                             {{-- BANGUNAN (Verifikasi) Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/melantik_pemudah_cara') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_bangunan/melantik_pemudah_cara">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_bangunan/pemudah_cara/create') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_bangunan/pemudah_cara/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/melantik_pemudah_cara') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_bangunan/pemudah_cara/create') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
