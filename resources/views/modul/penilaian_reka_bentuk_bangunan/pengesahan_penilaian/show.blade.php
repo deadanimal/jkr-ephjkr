@@ -717,7 +717,8 @@
                                 {{-- <td>
                                     <input id="totalMS_TL" type="number" name="markahTOTAL_TL_MS" id="markahTOTAL_TL_MS"/>
                                 </td> --}}
-                                <td><input  id="totalMR_TL" type="number" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR"/></td>
+                                <td>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</td>
+                                {{-- <td><input  id="totalMR" type="number" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR"/></td> --}}
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>

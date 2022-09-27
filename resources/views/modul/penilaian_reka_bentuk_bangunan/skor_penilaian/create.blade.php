@@ -143,8 +143,8 @@
                                 </td>
 
                                 <td>1</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL1_MS" name="markahTL1_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL1_MR" name="markahTL1_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL1_MS" name="markahTL1_MS" /></td> --}}
+                                <td><input type="number" min="0" max="1" autocapitalize="off" id="markahTL1_MR" name="markahTL1_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -177,8 +177,8 @@
                                                                      
                                 </td>
                                 <td>3</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MS" name="markahTL2_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MR" name="markahTL2_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MS" name="markahTL2_MS" /></td> --}}
+                                <td><input type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MR" name="markahTL2_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -210,8 +210,8 @@
                                                                      
                                 </td>                            
                                 <td>3</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MS" name="markahTL3_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MR" name="markahTL3_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MS" name="markahTL3_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MR" name="markahTL3_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -244,8 +244,8 @@
                                 <td>ii. Mengekalkan Topografi Tanah</td>
                                 {{-- <th>A</th> --}}
                                 <td>2</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MS" name="markahTL32_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MR" name="markahTL32_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MS" name="markahTL32_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MR" name="markahTL32_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -283,8 +283,8 @@
                                                                      
                                 </td>                            
                                 <td>1</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MS" name="markahTL4_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MR" name="markahTL4_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MS" name="markahTL4_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MR" name="markahTL4_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -315,8 +315,8 @@
                                                                      
                                 </td>                            
                                 <td>1</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL5_MS" name="markahTL5_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL5_MR" name="markahTL5_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL5_MS" name="markahTL5_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL5_MR" name="markahTL5_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -348,8 +348,8 @@
                                                                      
                                 </td>                            
                                 <td>3</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -385,9 +385,9 @@
                                 <td colspan="6">
                                                                      
                                 </td>                            
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" required/></td> --}}
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" /></td> --}}
                                 <td>2</td>
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" required/></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -439,8 +439,8 @@
                                 <td>Memelihara dan menyenggara pokok yang matang</td>
                                 <td colspan="6"></td>                            
                                 <td>3</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MS" name="markahTL81_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MR" name="markahTL81_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MS" name="markahTL81_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MR" name="markahTL81_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -474,8 +474,8 @@
                                                                      
                                 </td>                            
                                 <td>1</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MS" name="markahTL82_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MR" name="markahTL82_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MS" name="markahTL82_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MR" name="markahTL82_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -509,8 +509,8 @@
                                                                      
                                 </td>                            
                                 <td>1</td>
-                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MS" name="markahTL83_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MR" name="markahTL83_MR" required/></td>
+                                {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MS" name="markahTL83_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MR" name="markahTL83_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -547,8 +547,8 @@
                                                                      
                                 </td>                            
                                 <td>1</td>
-                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MS" name="markahTL84_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MR" name="markahTL84_MR" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MS" name="markahTL84_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MR" name="markahTL84_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -580,8 +580,8 @@
                                                                      
                                 </td>                            
                                 <td>2</td>
-                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MS" name="markahTL85_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MR" name="markahTL85_MR" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MS" name="markahTL85_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MR" name="markahTL85_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -630,8 +630,8 @@
                                                                      
                                 </td>                            
                                 <td>1</td>
-                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MS" name="markahTL91_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MR" name="markahTL91_MR" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MS" name="markahTL91_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MR" name="markahTL91_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -667,8 +667,8 @@
                                                                      
                                 </td>
                                 <td>3</td>
-                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -703,8 +703,8 @@
                                 <td>Tempat Letak Kenderaan</td>
                                 <td colspan="6"></td>
                                 <td>3</td>
-                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" required/></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" required/></td>
+                                {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" /></td> --}}
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -736,7 +736,7 @@
                                 {{-- <td>
                                     <input id="totalMS_TL" type="number" name="markahTOTAL_TL_MS" id="markahTOTAL_TL_MS"/>
                                 </td> --}}
-                                <td><input  id="totalMR_TL" type="number" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR"/></td>
+                                <td><input type="number" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR"/></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -839,8 +839,8 @@
                                 </td>
 
                                 <td>2</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="2" id="markahKT1_MS" name="markahKT1_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="2" id="markahKT1_MR" name="markahKT1_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="2" id="markahKT1_MS" name="markahKT1_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="2" id="markahKT1_MR" name="markahKT1_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -891,8 +891,8 @@
                                                                      
                                 </td>                            
                                 <td>1</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT21_MS" name="markahKT21_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT21_MR" name="markahKT21_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT21_MS" name="markahKT21_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT21_MR" name="markahKT21_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -925,8 +925,8 @@
                                                     
                                 </td>
                                 <td>1</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT22_MS" name="markahKT22_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT22_MR" name="markahKT22_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT22_MS" name="markahKT22_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT22_MR" name="markahKT22_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -974,8 +974,8 @@
                                      
                                 </td>
                                 <td>1</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT31_MS" name="markahKT31_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT31_MR" name="markahKT31_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT31_MS" name="markahKT31_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT31_MR" name="markahKT31_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1009,8 +1009,8 @@
                                                     
                                 </td>
                                 <td>1</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT32_MS" name="markahKT32_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT32_MR" name="markahKT32_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT32_MS" name="markahKT32_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT32_MR" name="markahKT32_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1036,8 +1036,8 @@
                                                     
                                 </td>
                                 <td>5</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="5" id="markahKT4_MS" name="markahKT4_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="5" id="markahKT4_MR" name="markahKT4_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="5" id="markahKT4_MS" name="markahKT4_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="5" id="markahKT4_MR" name="markahKT4_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1080,8 +1080,8 @@
                                    ditarik drpd projek ID            
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1117,8 +1117,8 @@
                                                     
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1152,8 +1152,8 @@
                                     ditarik drpd projek Id               
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1187,9 +1187,9 @@
                                     ditarik pendaftaran projek          
                                 </td>
                                 <td></td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
                                 <td>
-                                    {{-- <input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/> --}}
+                                    {{-- <input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /> --}}
                                 </td>
                                 <td></td>
                                 <td></td>
@@ -1224,8 +1224,8 @@
                                 <td colspan="6">            
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1261,8 +1261,8 @@
                                                     
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1297,8 +1297,8 @@
                                                     
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1335,8 +1335,8 @@
                                                     
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT8_MS" name="markahKT8_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT8_MR" name="markahKT8_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT8_MS" name="markahKT8_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT8_MR" name="markahKT8_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1370,8 +1370,8 @@
                                                     
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1403,8 +1403,8 @@
                                 <td colspan="6">        
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1437,8 +1437,8 @@
                                 <td colspan="6">          
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1478,8 +1478,8 @@
                                                     
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1515,8 +1515,8 @@
                                                     
                                 </td>
                                 <td>6</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1549,8 +1549,8 @@
                                       
                                 </td>
                                 <td>1</td>
-                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT11_MS" name="markahKT11_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT11_MR" name="markahKT11_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT11_MS" name="markahKT11_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT11_MR" name="markahKT11_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1639,8 +1639,8 @@
                                 <td colspan="6">tarik projek pendaftaran meh..   
                                 </td>
                                 <td>5</td>
-                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="5" id="markahSB1_MS" name="markahSB1_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="5" id="markahSB1_MR" name="markahSB1_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="5" id="markahSB1_MS" name="markahSB1_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="5" id="markahSB1_MR" name="markahSB1_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1672,8 +1672,8 @@
                                 <td>Produk hijau</td>
                                 <td colspan="6">tarik id projek</td>
                                 <td>7</td>
-                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="7" id="markahSB2_MS" name="markahSB2_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="7" id="markahSB2_MR" name="markahSB2_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="7" id="markahSB2_MS" name="markahSB2_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="7" id="markahSB2_MR" name="markahSB2_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1706,8 +1706,8 @@
                                 <td>Pengurusan sisa semasa pembinaan</td>
                                 <td colspan="6">tarik id projek lah</td>
                                 <td>4</td>
-                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="4" id="markahSB3_MS" name="markahSB3_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB3_MR" name="markahSB3_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="4" id="markahSB3_MS" name="markahSB3_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB3_MR" name="markahSB3_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1748,8 +1748,8 @@
                                     
                                 </td>
                                 <td>4</td>
-                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="4" id="markahSB4_MS" name="markahSB4_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB4_MR" name="markahSB4_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="4" id="markahSB4_MS" name="markahSB4_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB4_MR" name="markahSB4_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1839,8 +1839,8 @@
                                 <td>Produk Kecekapan Air</td>
                                 <td colspan="6"></td>
                                 <td>3</td>
-                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="3" id="markahPA3_MS" name="markahPA1_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="3" id="markahPA1_MR" name="markahPA1_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="3" id="markahPA3_MS" name="markahPA1_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="3" id="markahPA1_MR" name="markahPA1_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1872,8 +1872,8 @@
                                 <td>Penjimatan Penggunaan Air Dalam Bangunan</td>
                                 <td colspan="6"></td>
                                 <td>2</td>
-                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1905,8 +1905,8 @@
                                 <td>i. SPAH</td>
                                 <td colspan="6"></td>
                                 <td>4</td>
-                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="4" id="markahPA3_MS" name="markahPA3_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="4" id="markahPA3_MR" name="markahPA3_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="4" id="markahPA3_MS" name="markahPA3_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="4" id="markahPA3_MR" name="markahPA3_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1937,8 +1937,8 @@
                                 <td>ii. Kitar Semula Air Sisa</td>
                                 <td colspan="6"></td>
                                 <td>5</td>
-                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="5" id="markahPA32_MS" name="markahPA32_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="5" id="markahPA32_MR" name="markahPA32_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="5" id="markahPA32_MS" name="markahPA32_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="5" id="markahPA32_MR" name="markahPA32_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -1972,8 +1972,8 @@
                                 <td>Sub-Meter Air</td>
                                 <td colspan="6"></td>
                                 <td>2</td>
-                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -2006,8 +2006,8 @@
                                 <td>Sistem Pengesan Kebocoran Air</td>
                                 <td colspan="6"></td>
                                 <td>2</td>
-                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -2100,8 +2100,8 @@
                             <td>Larangan merokok</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2146,8 +2146,8 @@
                             <td>Dinding sesekat dalaman yang telus cahaya</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2179,8 +2179,8 @@
                             <td>Ketinggian siling yang efektif</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2211,8 +2211,8 @@
                             <td>Warna cerah di permukaan dinding dan siling</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD25_MS" name="markahPD25_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1"id="markahPD25_MR" name="markahPD25_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD25_MS" name="markahPD25_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1"id="markahPD25_MR" name="markahPD25_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2260,8 +2260,8 @@
                                 
                             </td>
                             <td>2</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="2" id="markahPD31_MS" name="markahPD31_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD31_MR" name="markahPD31_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="2" id="markahPD31_MS" name="markahPD31_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD31_MR" name="markahPD31_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2294,8 +2294,8 @@
                             <td>Menggunakan rak cahaya (light shelves)</td>
                             <td colspan="6"></td>
                             <td>2</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="2" id="markahPD32_MS" name="markahPD32_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD32_MR" name="markahPD32_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="2" id="markahPD32_MS" name="markahPD32_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD32_MR" name="markahPD32_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2330,8 +2330,8 @@
                             <td>Kawalan Tahap Kesilauan</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD33_MS" name="markahPD33_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD33_MR" name="markahPD33_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD33_MS" name="markahPD33_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD33_MR" name="markahPD33_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2363,8 +2363,8 @@
                             <td>Akses visual kepada pandangan di luar</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD34_MS" name="markahPD34_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD34_MR" name="markahPD34_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD34_MS" name="markahPD34_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD34_MR" name="markahPD34_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2398,8 +2398,8 @@
                             <td>Tahap Pencahayaan (bukan semulajadi) Bilik</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2430,8 +2430,8 @@
                             <td>Prestasi Pengudaraan</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2460,8 +2460,8 @@
                             <td>Memaksimakan Kawasan Tanpa Keperluan Sistem Penyaman Udara</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2495,8 +2495,8 @@
                             <td>Keselesaan Thermal & Kawalan Sistem</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2518,8 +2518,8 @@
                             <td>Rekabentuk Keselesaan Thermal: ASHRAE 55</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2552,8 +2552,8 @@
                             <td>Kawalan Sistem Pencahayaan & Pengudaraan (Pencahayaan)</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2585,8 +2585,8 @@
                             <td>Prestasi Pengudaraan</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2615,8 +2615,8 @@
                             <td>Kawalan Paras Karbon Dioksida</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2647,8 +2647,8 @@
                             <td>Kualiti Persekitaran Semasa Pembinaan dan Sebelum diduduki</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2678,8 +2678,8 @@
                             <td>Keselesaan Akustik</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2712,8 +2712,8 @@
                             <td>Kualiti Udara Dalaman (IAQ)</td>
                             <td colspan="6"></td>
                             <td>3</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="3" id="markahPD8_MS" name="markahPD8_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="3" id="markahPD8_MR" name="markahPD8_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="3" id="markahPD8_MS" name="markahPD8_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="3" id="markahPD8_MR" name="markahPD8_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2747,8 +2747,8 @@
                             <td>Pencegahan Kulapok (Mold)</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2780,8 +2780,8 @@
                             <td>Kaji Selidik Keselesaan Penghuni</td>
                             <td colspan="6"></td>
                             <td></td>
-                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="0" id="markahPD10_MS" name="markahPD10_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="0" id="markahPD10_MR" name="markahPD10_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="0" id="markahPD10_MS" name="markahPD10_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="0" id="markahPD10_MR" name="markahPD10_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td><input type="number"></td>
                             <td></td>
@@ -2870,8 +2870,8 @@
                                     
                                 </td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL1_MS" name="markahFL1_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL1_MR" name="markahFL1_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL1_MS" name="markahFL1_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL1_MR" name="markahFL1_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -2897,8 +2897,8 @@
                                     
                                 </td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL2_MS" name="markahFL2_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL2_MR" name="markahFL2_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL2_MS" name="markahFL2_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL2_MR" name="markahFL2_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -2922,8 +2922,8 @@
                                 <td>Pengurusan data dan ruang</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL21_MS" name="markahFL21_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL21_MR" name="markahFL21_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL21_MS" name="markahFL21_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL21_MR" name="markahFL21_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -2948,8 +2948,8 @@
                                 <td>Pengurusan sistem penyenggaraan</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL22_MS" name="markahFL22_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL22_MR" name="markahFL22_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL22_MS" name="markahFL22_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL22_MR" name="markahFL22_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -2973,8 +2973,8 @@
                                 <td>Prestasi penggurusan</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL23_MS" name="markahFL23_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL23_MR" name="markahFL23_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL23_MS" name="markahFL23_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL23_MR" name="markahFL23_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -2999,8 +2999,8 @@
                                 <td>Penyenggaraan lestari</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL3_MS" name="markahFL3_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL3_MR" name="markahFL3_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL3_MS" name="markahFL3_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL3_MR" name="markahFL3_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -3025,8 +3025,8 @@
                                 <td>Ruang pejabat untuk pasukan penyenggaraan</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL31_MS" name="markahFL31_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL31_MR" name="markahFL31_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL31_MS" name="markahFL31_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL31_MR" name="markahFL31_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -3051,8 +3051,8 @@
                                 <td>Kontraktor pengurusan fasiliti (FM)</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL32_MS" name="markahFL32_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL32_MR" name="markahFL32_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL32_MS" name="markahFL32_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL32_MR" name="markahFL32_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -3076,8 +3076,8 @@
                                 <td>Pelan Pengurusan Fasiliti (FM)</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL33_MS" name="markahFL33_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL33_MR" name="markahFL33_MR"autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL33_MS" name="markahFL33_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL33_MR" name="markahFL33_MR"autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -3102,8 +3102,8 @@
                                 <td>Manual Operasi dan Penyenggaraan Bangunan</td>
                                 <td colspan="6"></td>
                                 <td>0</td>
-                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL34_MS" name="markahFL34_MS" autocapitalize="off" required/></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL34_MR" name="markahFL34_MR" autocapitalize="off" required/></td>
+                                {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL34_MS" name="markahFL34_MS" autocapitalize="off" /></td> --}}
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL34_MR" name="markahFL34_MR" autocapitalize="off" /></td>
                                 <td></td>
                                 <td><input type="number"></td>
                                 <td></td>
@@ -3191,8 +3191,8 @@
                             <td>Reka Bentuk Inovasi</td>
                             <td colspan="6"></td>
                             <td>6</td>
-                            {{-- <td><input onblur="findTotalMS_IN()" class="MS_IN" type="number" min="0" max="6" id="markahIN1_MS" name="markahIN1_MS" autocapitalize="off" required/></td> --}}
-                            <td><input onblur="findTotalMR_IN()" class="MR_IN" type="number" min="0" max="6" id="markahIN2_MR" name="markahIN2_MR" autocapitalize="off" required/></td>
+                            {{-- <td><input onblur="findTotalMS_IN()" class="MS_IN" type="number" min="0" max="6" id="markahIN1_MS" name="markahIN1_MS" autocapitalize="off" /></td> --}}
+                            <td><input onblur="findTotalMR_IN()" class="MR_IN" type="number" min="0" max="6" id="markahIN2_MR" name="markahIN2_MR" autocapitalize="off" /></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -3564,110 +3564,111 @@
                     document.getElementById('totalMR_TL').value = sumMR_TL;
                 }
 
-                function findTotalMR_KT(){
-                    var totalMR_KT = document.getElementById('totalMR_KT');
-                    var MR_KT = document.getElementsByClassName('MR_KT');
-                    var sumMR_KT = 0;
+                // function findTotalMR_KT(){
+                //     var totalMR_KT = document.getElementById('totalMR_KT');
+                //     var MR_KT = document.getElementsByClassName('MR_KT');
+                //     var sumMR_KT = 0;
 
-                    for( var i = 0; i < MR_KT.length; i++ ){
-                        sumMR_KT += Number(MR_KT[i].value);
+                //     for( var i = 0; i < MR_KT.length; i++ ){
+                //         sumMR_KT += Number(MR_KT[i].value);
 
-                    //display the total of inputs
-                    totalMR_KT.value = sumMR_KT;
-                    }
-                    document.getElementById('totalMR_KT').value = sumMR_KT;
-                }
+                //     //display the total of inputs
+                //     totalMR_KT.value = sumMR_KT;
+                //     }
+                //     document.getElementById('totalMR_KT').value = sumMR_KT;
+                // }
 
-                function findTotalMR_SB(){
-                    var totalMR_SB = document.getElementById('totalMR_SB');
-                    var MR_SB = document.getElementsByClassName('MR_SB');
-                    var sumMR_SB = 0;
+                // function findTotalMR_SB(){
+                //     var totalMR_SB = document.getElementById('totalMR_SB');
+                //     var MR_SB = document.getElementsByClassName('MR_SB');
+                //     var sumMR_SB = 0;
 
-                    for( var i = 0; i < MR_SB.length; i++ ){
-                        sumMR_SB += Number(MR_SB[i].value);
+                //     for( var i = 0; i < MR_SB.length; i++ ){
+                //         sumMR_SB += Number(MR_SB[i].value);
 
-                    //display the total of inputs
-                    totalMR_SB.value = sumMR_SB;
-                    }
-                    document.getElementById('totalMR_SB').value = sumMR_SB;
-                }
+                //     //display the total of inputs
+                //     totalMR_SB.value = sumMR_SB;
+                //     }
+                //     document.getElementById('totalMR_SB').value = sumMR_SB;
+                // }
 
-                function findTotalMR_PA(){
-                    var totalMR_PA = document.getElementById('totalMR_PA');
-                    var MR_PA = document.getElementsByClassName('MR_PA');
-                    var sumMR_PA = 0;
+                // function findTotalMR_PA(){
+                //     var totalMR_PA = document.getElementById('totalMR_PA');
+                //     var MR_PA = document.getElementsByClassName('MR_PA');
+                //     var sumMR_PA = 0;
 
-                    for( var i = 0; i < MR_PA.length; i++ ){
-                        sumMR_PA += Number(MR_PA[i].value);
+                //     for( var i = 0; i < MR_PA.length; i++ ){
+                //         sumMR_PA += Number(MR_PA[i].value);
 
-                    //display the total of inputs
-                    totalMR_PA.value = sumMR_PA;
-                    }
-                    document.getElementById('totalMR_PA').value = sumMR_PA;
-                }
+                //     //display the total of inputs
+                //     totalMR_PA.value = sumMR_PA;
+                //     }
+                //     document.getElementById('totalMR_PA').value = sumMR_PA;
+                // }
 
-                function findTotalMR_PD(){
-                    var totalMR_PD = document.getElementById('totalMR_PD');
-                    var MR_PD = document.getElementsByClassName('MR_PD');
-                    var sumMR_PD = 0;
+                // function findTotalMR_PD(){
+                //     var totalMR_PD = document.getElementById('totalMR_PD');
+                //     var MR_PD = document.getElementsByClassName('MR_PD');
+                //     var sumMR_PD = 0;
 
-                    for( var i = 0; i < MR_PD.length; i++ ){
-                        sumMR_PD += Number(MR_PD[i].value);
+                //     for( var i = 0; i < MR_PD.length; i++ ){
+                //         sumMR_PD += Number(MR_PD[i].value);
 
-                    //display the total of inputs
-                    totalMR_PD.value = sumMR_PD;
-                    }
-                    document.getElementById('totalMR_PD').value = sumMR_PD;
-                }
+                //     //display the total of inputs
+                //     totalMR_PD.value = sumMR_PD;
+                //     }
+                //     document.getElementById('totalMR_PD').value = sumMR_PD;
+                // }
 
-                function findTotalMR_FL(){
-                    var totalMR_FL = document.getElementById('totalMR_FL');
-                    var MR_FL = document.getElementsByClassName('MR_FL');
-                    var sumMR_FL = 0;
+                // function findTotalMR_FL(){
+                //     var totalMR_FL = document.getElementById('totalMR_FL');
+                //     var MR_FL = document.getElementsByClassName('MR_FL');
+                //     var sumMR_FL = 0;
 
-                    for( var i = 0; i < MR_FL.length; i++ ){
-                        sumMR_FL += Number(MR_FL[i].value);
+                //     for( var i = 0; i < MR_FL.length; i++ ){
+                //         sumMR_FL += Number(MR_FL[i].value);
 
-                    //display the total of inputs
-                    totalMR_FL.value = sumMR_FL;
-                    }
-                    document.getElementById('totalMR_FL').value = sumMR_FL;
-                }
+                //     //display the total of inputs
+                //     totalMR_FL.value = sumMR_FL;
+                //     }
+                //     document.getElementById('totalMR_FL').value = sumMR_FL;
+                // }
 
-                function findTotalMR_IN(){
-                    var totalMR_IN = document.getElementById('totalMR_IN');
-                    var MR_IN = document.getElementsByClassName('MR_IN');
-                    var sumMR_IN = 0;
+                // function findTotalMR_IN(){
+                //     var totalMR_IN = document.getElementById('totalMR_IN');
+                //     var MR_IN = document.getElementsByClassName('MR_IN');
+                //     var sumMR_IN = 0;
 
-                    for( var i = 0; i < MR_IN.length; i++ ){
-                        sumMR_IN += Number(MR_IN[i].value);
+                //     for( var i = 0; i < MR_IN.length; i++ ){
+                //         sumMR_IN += Number(MR_IN[i].value);
 
-                    //display the total of inputs
-                    totalMR_IN.value = sumMR_IN;
-                    }
-                    document.getElementById('totalMR_IN').value = sumMR_IN;
-                }
+                //     //display the total of inputs
+                //     totalMR_IN.value = sumMR_IN;
+                //     }
+                //     document.getElementById('totalMR_IN').value = sumMR_IN;
+                // }
 
                 function findTotalMR(){
                     var TL = totalMR_TL.value || 0;
-                    var KT = totalMR_KT.value || 0;
-                    var SB = totalMR_SB.value || 0;
-                    var PA = totalMR_PA.value || 0;
-                    var PD = totalMR_PD.value || 0;
-                    var FL = totalMR_FL.value || 0;
-                    var IN = totalMR_IN.value || 0;
-                    document.getElementById('totalMR').value = Number(TL) + Number(KT) + Number(SB) 
-                    + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+                    // var KT = totalMR_KT.value || 0;
+                    // var SB = totalMR_SB.value || 0;
+                    // var PA = totalMR_PA.value || 0;
+                    // var PD = totalMR_PD.value || 0;
+                    // var FL = totalMR_FL.value || 0;
+                    // var IN = totalMR_IN.value || 0;
+                    // document.getElementById('totalMR').value = Number(TL) + Number(KT) + Number(SB) 
+                    // + Number(PA) + Number(PD) + Number(FL) + Number(IN);
+                    document.getElementById('totalMR').value = Number(TL);
                 }
 
                 document.addEventListener('keyup', function(){
                     findTotalMR_TL();
-                    findTotalMR_KT();
-                    findTotalMR_SB();
-                    findTotalMR_PA();
-                    findTotalMR_PD();
-                    findTotalMR_FL();
-                    findTotalMR_IN();
+                    // findTotalMR_KT();
+                    // findTotalMR_SB();
+                    // findTotalMR_PA();
+                    // findTotalMR_PD();
+                    // findTotalMR_FL();
+                    // findTotalMR_IN();
                     findTotalMR();
                 })
 

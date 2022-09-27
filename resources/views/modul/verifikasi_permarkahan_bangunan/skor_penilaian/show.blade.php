@@ -817,7 +817,6 @@
                                 <th rowspan="2">Dokumen Pembuktian</th>
                                 <th rowspan="3" colspan="5">Ulasan/Maklumbalas</th>
                                 <th rowspan="3" colspan="4">Muat Naik Dokumen Sokongan</th>
-
                             </tr>
 
                             <tr class="pg-2" align="center" style="background-color:#EB5500">

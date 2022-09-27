@@ -20,15 +20,37 @@ class PenilaianRekaBentukBangunanController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $projeks = Projek::all();
-        // paparan senarai projek
-
-
+        // $user = $request->user();
+        // if($user->hasRole('Ketua Pasukan') or $user->hasRole('Penolong Ketua Pasukan')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.index',[
+        //         'projeks'=>$projeks
+        //     ]);
+        // } else {
+        //     return view('tak_leh_viewla');
+        // }
         return view('modul.penilaian_reka_bentuk_bangunan.index',[
             'projeks'=>$projeks
         ]);
+
+
+        // $user = $request->user();
+        // if($user->hasRole('alpha') or $user->hasRole('beta')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.index',[
+        //         'projeks'=>$projeks
+        //     ]);
+        // } else {
+        //     return view('tak_leh_viewla');
+        // }
+
+        
+        
+
+        // paparan senarai projek
+
+
     }
 
     /**
@@ -183,8 +205,26 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_skor(Request $request, $id)
     {
+        $markah_TL_total = $request->markahTL1_MR + $request->markahTL2_MR;
         // request all
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        // $kriteria_phjkr_bangunan->save();
+
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MR = $markah_TL_total;
+        $kriteria_phjkr_bangunan->save();
+        // $total = [];
+        // $calc1 = 3*3;
+        // $total['markahTL1_MMR'] = $calc1; 
+        // $total['markahTL2_MMR'] = $calc1; 
+
+        // $total2 = $total['markahTL1_MR'] + $total['markahTL2_MR'];
+
+        // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::where('','id_bangunan');
+        // $kriteria_phjkr_bangunan->markahTOTAL_TL_MR = $total2;
+        // $total2 = $kriteria_phjkr_bangunan->markahTL1_MR + $kriteria_phjkr_bangunan->markahTL2_MR;
+
+        // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::where('','id_bangunan');
+        // $kriteria_phjkr_bangunan->markahTOTAL_TL_MR = $total2;
         $kriteria_phjkr_bangunan->save();
 
         // $penilaian_ephjkr = new PenilaianEphjkr($request->all());
@@ -194,7 +234,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
         // $projeks->dokumenSokongan = $request->input('dokumenSokongan');
 
-        //Dokumen Sokongan
+        // Dokumen Sokongan
         // $request->file->store('public');
         // if($request->hasFile('dokumenSokongan')){
         //     $projeks = $request->file('dokumenSokongan');
@@ -230,14 +270,17 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function pengesahan_penilaian()
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
-        $projeks = Projek::all();
+        // $projeks = Projek::find($id);
 
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index',
-        compact('kriteria_phjkr_bangunan'), compact('projeks'));
+        return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index',[
+        'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan, 
+        // 'projeks'=>$projeks
+    ]);
     }
     public function papar_pengesahan_penilaian($id)
     {
+        $projeks = Projek::find($id);
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
         // papar form pengesahan penilaian with id projek 
         return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.show',[
