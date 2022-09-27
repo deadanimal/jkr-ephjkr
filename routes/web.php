@@ -103,6 +103,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('/pengurusan_maklumat/selenggara/status_maklum_balas', SelenggaraStatusMaklumBalasController::class);
     Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', SelenggaraKriteriaPenilaianController::class);
     //Route::resource('/pengurusan_maklumat/selenggara/log_audit', SelenggaraLogAuditController::class);
+
+    //audit trails
+    Route::get('audit', [AuditTrailController::class, 'audit']);
     
     
     //pendaftaran projek

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMaklumBalasRequest;
 use App\Http\Requests\UpdateMaklumBalasRequest;
 use App\Models\MaklumBalas;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -52,6 +53,16 @@ class MaklumBalasController extends Controller
         $mb->statusMaklumbalas = $request->statusMaklumbalas;
         $mb->user_id = Auth::id();
         $mb->save();
+
+        $user_id = $request->user()->id;
+        $user = User::find($user_id);
+
+        activity()
+            ->performedOn($mb)
+            ->causedBy($user)
+            ->withProperties(['customProperty' => 'customValue'])
+            ->log('Update maklum balas');
+
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/maklum_balas');
     }
@@ -98,6 +109,16 @@ class MaklumBalasController extends Controller
         $maklumBalas->update([
             'statusMaklumbalas'=>$request->statusMaklumbalas,
         ]);
+
+        // $user_id = $request->user()->id;
+        // $user = User::find($user_id);
+
+        // activity()
+        //     ->performedOn($maklumBalas)
+        //     ->causedBy($user)
+        //     // ->withProperties(['customProperty' => 'customValue'])
+        //     ->log('Update maklum balas');
+
         return redirect('/pengurusan_maklumat/maklum_balas');
     }
 

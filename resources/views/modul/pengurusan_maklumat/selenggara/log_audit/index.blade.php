@@ -47,7 +47,7 @@
                             @foreach ($selenggara_log as $ss)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $ss->icPengguna }}</td>
+                                    <td>{{ $ss->pengguna->icPengguna }}</td>
                                     <td>{{ $ss->created_at }}</td>
                                     <td>{{ $ss->prosesAktiviti }}</td>
                                     

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Request;
 use App\Http\Requests\StoreAuditTrailRequest;
 use App\Http\Requests\UpdateAuditTrailRequest;
 use App\Mail\PengesahanPengguna;
@@ -20,7 +21,7 @@ class AuditTrailController extends Controller
     {
         //
         //dd('dsa');
-        $selenggara_log = AuditTrail::with('pengguna')->get();
+        $selenggara_log = AuditTrail::with('pengguna')->where('user_id',Auth::user()->id)->get();
         return view('modul.pengurusan_maklumat.selenggara.log_audit.index', [
             'selenggara_log'=>$selenggara_log
         ]);
@@ -103,13 +104,21 @@ class AuditTrailController extends Controller
         //
     }
 
-    public static function audit($tindakan, $model, $id)
+    public function tunjuk_audit(Request $request)
     {
+        $user_id = $request->user()->id;
+        $semua_aktiviti = Activity::where('user_id', $user_id)->get();
+       
+    }
+
+    public static function audit($prosesAktiviti, $model, $id)
+    {
+        //dd('sdf');
         $audit = new AuditTrail;
         $audit->user_id = Auth::id();
-        $audit->no_kakitangan = Auth::user()->no_kakitangan;
-        $audit->tindakan = strtoupper($tindakan);
-        $audit->deskripsi = ucwords($tindakan).' '.ucwords($model).' ID='.$id;
+        //$audit->icPengguna = Auth::user()->icPengguna;
+        //$audit->tindakan = strtoupper($prosesAktiviti);
+        //$audit->prosesAktiviti = ucwords($prosesAktiviti).' '.ucwords($model).' ID='.$id;
         $audit->save();
     }
 }

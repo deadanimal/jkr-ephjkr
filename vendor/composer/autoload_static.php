@@ -36,6 +36,7 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+        '72b1e3f4a2af9b30b3f137b3ec2057fc' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/helpers.php',
         '377b22b161c09ed6e5152de788ca020a' => __DIR__ . '/..' . '/spatie/laravel-permission/src/helpers.php',
         'a806c12c6e24e7e4e900847766218dba' => __DIR__ . '/..' . '/uxweb/sweet-alert/src/SweetAlert/functions.php',
     );
@@ -89,6 +90,8 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
             'Symfony\\Component\\Console\\' => 26,
             'Svg\\' => 4,
             'Spatie\\Permission\\' => 18,
+            'Spatie\\LaravelPackageTools\\' => 27,
+            'Spatie\\Activitylog\\' => 19,
             'Sabberworm\\CSS\\' => 15,
         ),
         'R' => 
@@ -329,6 +332,14 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
         'Spatie\\Permission\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-permission/src',
+        ),
+        'Spatie\\LaravelPackageTools\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-package-tools/src',
+        ),
+        'Spatie\\Activitylog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-activitylog/src',
         ),
         'Sabberworm\\CSS\\' => 
         array (
@@ -695,6 +706,7 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
         'App\\Models\\Faq' => __DIR__ . '/../..' . '/app/Models/Faq.php',
         'App\\Models\\GugurProjek' => __DIR__ . '/../..' . '/app/Models/GugurProjek.php',
         'App\\Models\\Hebahan' => __DIR__ . '/../..' . '/app/Models/Hebahan.php',
+        'App\\Models\\Integrasi' => __DIR__ . '/../..' . '/app/Models/Integrasi.php',
         'App\\Models\\KriteriaGpssBangunan' => __DIR__ . '/../..' . '/app/Models/KriteriaGpssBangunan.php',
         'App\\Models\\KriteriaGpssJalan' => __DIR__ . '/../..' . '/app/Models/KriteriaGpssJalan.php',
         'App\\Models\\KriteriaPhjkrBangunan' => __DIR__ . '/../..' . '/app/Models/KriteriaPhjkrBangunan.php',
@@ -867,6 +879,7 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
         'Database\\Factories\\AuditTrailFactory' => __DIR__ . '/../..' . '/database/factories/AuditTrailFactory.php',
         'Database\\Factories\\FaqFactory' => __DIR__ . '/../..' . '/database/factories/FaqFactory.php',
         'Database\\Factories\\HebahanFactory' => __DIR__ . '/../..' . '/database/factories/HebahanFactory.php',
+        'Database\\Factories\\IntegrasiFactory' => __DIR__ . '/../..' . '/database/factories/IntegrasiFactory.php',
         'Database\\Factories\\KriteriaGpssBangunanFactory' => __DIR__ . '/../..' . '/database/factories/KriteriaGpssBangunanFactory.php',
         'Database\\Factories\\KriteriaGpssJalanFactory' => __DIR__ . '/../..' . '/database/factories/KriteriaGpssJalanFactory.php',
         'Database\\Factories\\KriteriaPhjkrBangunanFactory' => __DIR__ . '/../..' . '/database/factories/KriteriaPhjkrBangunanFactory.php',
@@ -5372,6 +5385,27 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\Activitylog\\ActivityLogStatus' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/ActivityLogStatus.php',
+        'Spatie\\Activitylog\\ActivityLogger' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/ActivityLogger.php',
+        'Spatie\\Activitylog\\ActivitylogServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/ActivitylogServiceProvider.php',
+        'Spatie\\Activitylog\\CauserResolver' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/CauserResolver.php',
+        'Spatie\\Activitylog\\CleanActivitylogCommand' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/CleanActivitylogCommand.php',
+        'Spatie\\Activitylog\\Contracts\\Activity' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Contracts/Activity.php',
+        'Spatie\\Activitylog\\Contracts\\LoggablePipe' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Contracts/LoggablePipe.php',
+        'Spatie\\Activitylog\\EventLogBag' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/EventLogBag.php',
+        'Spatie\\Activitylog\\Exceptions\\CouldNotLogActivity' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Exceptions/CouldNotLogActivity.php',
+        'Spatie\\Activitylog\\Exceptions\\CouldNotLogChanges' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Exceptions/CouldNotLogChanges.php',
+        'Spatie\\Activitylog\\Exceptions\\InvalidConfiguration' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Exceptions/InvalidConfiguration.php',
+        'Spatie\\Activitylog\\Facades\\CauserResolver' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Facades/CauserResolver.php',
+        'Spatie\\Activitylog\\Facades\\LogBatch' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Facades/LogBatch.php',
+        'Spatie\\Activitylog\\LogBatch' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/LogBatch.php',
+        'Spatie\\Activitylog\\LogOptions' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/LogOptions.php',
+        'Spatie\\Activitylog\\Models\\Activity' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Models/Activity.php',
+        'Spatie\\Activitylog\\Traits\\CausesActivity' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Traits/CausesActivity.php',
+        'Spatie\\Activitylog\\Traits\\LogsActivity' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/Traits/LogsActivity.php',
+        'Spatie\\LaravelPackageTools\\Exceptions\\InvalidPackage' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Exceptions/InvalidPackage.php',
+        'Spatie\\LaravelPackageTools\\Package' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/Package.php',
+        'Spatie\\LaravelPackageTools\\PackageServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-package-tools/src/PackageServiceProvider.php',
         'Spatie\\Permission\\Commands\\CacheReset' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CacheReset.php',
         'Spatie\\Permission\\Commands\\CreatePermission' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreatePermission.php',
         'Spatie\\Permission\\Commands\\CreateRole' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Commands/CreateRole.php',

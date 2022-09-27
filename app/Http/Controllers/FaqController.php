@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Http\Requests\StoreFaqRequest;
 use App\Http\Requests\UpdateFaqRequest;
 use App\Models\Faq;
@@ -48,6 +49,10 @@ class FaqController extends Controller
         $f->JawapanFAQ = $request->JawapanFAQ;
         $f->user_id = Auth::id();
         $f->save();
+
+        AuditTrailController::audit('create', 'pengguna', $f->id);
+        //AuditController::audit('create', 'pengguna', $f->id);
+
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/faq');
     }
