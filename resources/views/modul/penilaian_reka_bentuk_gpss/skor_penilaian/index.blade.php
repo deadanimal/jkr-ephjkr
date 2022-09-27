@@ -77,7 +77,7 @@
                     {{-- <td style="text-align: center">{{ $p->nama }}
                         <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="button" class="btn btn-warning">PILIH</a>
                     </td>  --}}
-                    {{-- <td style="text-align: center">{{ $p->nama }}
+                    <td style="text-align: center">{{ $p->nama }}
                         <form method="get" id="select-action" onsubmit="return submitForm()">
                             <select class="select-action" name="action">
                                 <option  disabled selected>Pilih bidang</option>
@@ -88,9 +88,9 @@
                              </select>
                              <button type="submit" class="btn btn-warning">Submit</button>
                         </form>
-                        if ($p)
-                    </td> --}}
-                    <td> <select name="bidang" class="form-control">
+                        {{-- if ($p) --}}
+                    </td>
+                    {{-- <td> <select name="bidang" class="form-control">
                         <option value=1>Mekanikal</option>
                         <option value=2>Paip</option>
                         </select>
@@ -100,7 +100,7 @@
                         @else
                             <a href="" class="btn btn-warning">PILIH</a>
                         @endif
-                    </td>
+                    </td> --}}
                 </tr>
                     @endforeach
                     

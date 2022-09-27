@@ -138,7 +138,7 @@
 
                         <div>
                             <div>
-                                <form action="">
+                                <form action="calculation">
                                   <table>
                                     <div class="row3 mx-4 table-responsive scrollbar">
                                         <div class="col">
@@ -172,7 +172,7 @@
                                                 <th >1</th>
                                                 <th >Architectural (Aw)</th>
                                                 <th>232</th>
-                                                <th> {{$gpss_bangunan->markahPRAwRoof + $gpss_bangunan->markahPRAwWall + $gpss_bangunan->markahPRAwWindow + $gpss_bangunan->markahPRAwDoor + $gpss_bangunan->markahPRAwSystem + $gpss_bangunan->markahPRAwSanitary}} </th>
+                                                <th>{{ $gpss_bangunan->markahPRAwRoof}} </th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>

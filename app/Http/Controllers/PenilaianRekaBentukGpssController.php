@@ -412,10 +412,21 @@ class PenilaianRekaBentukGpssController extends Controller
 
         return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index',compact('projeks','gpss_bangunan'));
     }
-    public function papar_jana_keputusan($id)
+    public function papar_jana_keputusan(Request $request,$id)
     {
+        $total_arkitek = $request->markahPRAwRoof + $request->markahPRAwWall
+        + $request->markahPRAwWindow + $request->markahPRAwDoor+ $request->markahPRAwFloor
+        + $request->markahPRAwSystem
+        + $request->markahPRAwSanitary;
+
         $projeks = Projek::all();
         $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // calculations/summation for Architectural design stage 
+        $gpss_bangunan->markahPRAwRoof = $total_arkitek ;
+
+
+       
 
         // $projeks = Projek::find($id);
 
