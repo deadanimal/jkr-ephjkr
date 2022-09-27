@@ -104,12 +104,12 @@ class AuditTrailController extends Controller
         //
     }
 
-    public function tunjuk_audit(Request $request)
-    {
-        $user_id = $request->user()->id;
-        $semua_aktiviti = Activity::where('user_id', $user_id)->get();
+    // public function tunjuk_audit(Request $request)
+    // {
+    //     $user_id = $request->user()->id;
+    //     $semua_aktiviti = Activity::where('user_id', $user_id)->get();
        
-    }
+    // }
 
     public static function audit($prosesAktiviti, $model, $id)
     {
@@ -118,7 +118,7 @@ class AuditTrailController extends Controller
         $audit->user_id = Auth::id();
         //$audit->icPengguna = Auth::user()->icPengguna;
         //$audit->tindakan = strtoupper($prosesAktiviti);
-        //$audit->prosesAktiviti = ucwords($prosesAktiviti).' '.ucwords($model).' ID='.$id;
+        $audit->prosesAktiviti = ucwords($model).' ID='.$id;
         $audit->save();
     }
 }

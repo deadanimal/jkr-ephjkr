@@ -54,14 +54,14 @@ class MaklumBalasController extends Controller
         $mb->user_id = Auth::id();
         $mb->save();
 
-        $user_id = $request->user()->id;
-        $user = User::find($user_id);
+        // $user_id = $request->user()->id;
+        // $user = User::find($user_id);
 
-        activity()
-            ->performedOn($mb)
-            ->causedBy($user)
-            ->withProperties(['customProperty' => 'customValue'])
-            ->log('Update maklum balas');
+        // activity()
+        //     ->performedOn($mb)
+        //     ->causedBy($user)
+        //     ->withProperties(['customProperty' => 'customValue'])
+        //     ->log('Update maklum balas');
 
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/maklum_balas');
