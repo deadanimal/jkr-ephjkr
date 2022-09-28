@@ -89,9 +89,50 @@
                     <div class="text-center">
                         {{-- <a href="#" class="btn btn-primary" type="submit">Daftar</a> --}}
                         <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                        title="Lantik Pemudah Cara" type="submit">Lantik</button>
                     </div>
                 </form>
+
+                <div class="col-12">
+                    <div class="card-header">
+                            <div class="mt-5 row">
+                                        <table class="table table-bordered line-table" style="width:100%">
+                                                <thead class="text-white bg-orange-jkr">
+                                                    <tr>
+                                                        <th class="text-center">Bil</th>
+                                                        <th class="text-center">Pemudah Cara</th>
+                                                        <th class="text-center">Nama Projek</th>
+                                                        <th class="text-center">Nama Syarikat</th>
+                                                        <th class="text-center">Peranan</th>                                                    </tr>
+                                                </thead>
+                                            {{-- </table>  --}}
+        
+                                            {{-- <table class="kotak" style="width:100%"> --}}
+                                            <tbody id="myTable">
+                                                <!--LOOPING TABLES-->
+                                                {{-- @foreach ($projeks as $key => $p) --}}
+                                                    <tr class="text-black">
+                                                        <td style="text-align: center; vertical-align: middle;">1</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Ali bin Adib</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Mukah</td>
+                                                        <td style="text-align: center; vertical-align: middle;">Ketua Pemudah Cara</td>
+                                                        {{-- <td style="text-align: center; vertical-align: middle;">
+                                                            <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan" role="button"
+                                                            data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
+                                                        </td> --}}
+        
+                                                {{-- @endforeach --}}
+                                                </tbody>
+                                            {{-- </table> --}}
+                                        </table> 
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
             </div> <!--card-body-->
     </div> <!--Container Fluid-->
 
