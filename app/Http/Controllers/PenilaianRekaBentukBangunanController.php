@@ -183,6 +183,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
         $projeks = Projek::all();
+
     
         // papar mcm index tapi ada button utk skor
         return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',[
@@ -205,12 +206,42 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_skor(Request $request, $id)
     {
-        $markah_TL_total = $request->markahTL1_MR + $request->markahTL2_MR;
+
+        $markah_TL_total = $request->markahTL1_MR + $request->markahTL2_MR
+        + $request->markahTL3_MR + $request->markahTL32_MR + $request->markahTL4_MR + $request->markahTL5_MR + $request->markahTL6_MR
+        + $request->markahTL81_MR + $request->markahTL82_MR + $request->markahTL83_MR + $request->markahTL84_MR + $request->markahTL85_MR + $request->markahTL91_MR 
+        + $request->markahTL92_MR;
+
+         $markah_KT_total = $request->markahKT1_MR + $request->markahKT2_MR
+        + $request->markahKT21_MR + $request->markahKT22_MR + $request->markahKT3_MR + $request->markahKT31_MR + $request->markahKT32_MR
+        + $request->markahKT4_MR + $request->markahKT52_MR + $request->markahKT8_MR + $request->markahKT11_MR;
+
+         $markah_SB_total = $request->markahSB1_MR + $request->markahSB2_MR
+        + $request->markahSB3_MR + $request->markahSB4_MR;
+
+        $markah_PA_total = $request->markahPA1_MR + $request->markahPA2_MR
+        + $request->markahPA3_MR + $request->markahPA32_MR;
+
+        $markah_PD_total = $request->markahPD24_MR + $request->markahPD25_MR
+        + $request->markahPD31_MR + $request->markahPD32_MR + $request->markahPD33_MR + $request->markahPD34_MR + $request->markahPD8_MR
+        + $request->markahPD10_MR;
+
+        $markah_FL_total = $request->markahFL1_MR + $request->markahFL2_MR
+        + $request->markahFL21_MR + $request->markahFL22_MR + $request->markahFL23_MR + $request->markahFL3_MR + $request->markahFL31_MR
+        + $request->markahFL32_MR + $request->markahFL33_MR + $request->markahFL34_MR;
+
+        $markah_IN_total = $request->markahIN1_MR;
+
         // request all
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
-        // $kriteria_phjkr_bangunan->save();
 
         $kriteria_phjkr_bangunan->markahTOTAL_TL_MR = $markah_TL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MR = $markah_KT_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MR = $markah_SB_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MR = $markah_PA_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MR = $markah_PD_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MR = $markah_FL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MR = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
         // $total = [];
         // $calc1 = 3*3;
@@ -225,7 +256,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
         // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::where('','id_bangunan');
         // $kriteria_phjkr_bangunan->markahTOTAL_TL_MR = $total2;
-        $kriteria_phjkr_bangunan->save();
+        // $kriteria_phjkr_bangunan->save();
 
         // $penilaian_ephjkr = new PenilaianEphjkr($request->all());
         // $penilaian_ephjkr->save();
@@ -241,6 +272,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         //  }
 
         // $projeks->save();
+        // dd($markah_TL_total);
 
         alert()->success('PENILAIAN REKA BENTUK BANGUNAN BERJAYA', 'Berjaya');
         // simpan skor penilaian
@@ -271,6 +303,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     {
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
         // $projeks = Projek::find($id);
+        // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::where('id', $projeks->id)->get();
 
         // papar mcm index tapi ada button utk pengesahan
         return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.index',[
@@ -280,7 +313,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     }
     public function papar_pengesahan_penilaian($id)
     {
-        $projeks = Projek::find($id);
+        // $projeks = Projek::find($id);
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
         // papar form pengesahan penilaian with id projek 
         return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.show',[

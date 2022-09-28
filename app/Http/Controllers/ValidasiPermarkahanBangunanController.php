@@ -253,8 +253,39 @@ class ValidasiPermarkahanBangunanController extends Controller
     public function simpan_penilaian_validasi(Request $request, $id)
     {
     
-        //Request all
+        $markah_TL_total = $request->markahTL1_ML + $request->markahTL2_ML
+        + $request->markahTL3_ML + $request->markahTL32_ML + $request->markahTL4_ML + $request->markahTL5_ML + $request->markahTL6_ML
+        + $request->markahTL81_ML + $request->markahTL82_ML + $request->markahTL83_ML + $request->markahTL84_ML + $request->markahTL85_ML + $request->markahTL91_ML 
+        + $request->markahTL92_ML;
+
+        $markah_KT_total = $request->markahKT1_ML + $request->markahKT2_ML
+        + $request->markahKT21_ML + $request->markahKT22_ML + $request->markahKT3_ML + $request->markahKT31_ML + $request->markahKT32_ML
+        + $request->markahKT4_ML + $request->markahKT52_ML + $request->markahKT8_ML + $request->markahKT11_ML;
+
+        $markah_SB_total = $request->markahSB1_ML + $request->markahSB2_ML
+        + $request->markahSB3_ML + $request->markahSB4_ML;
+
+        $markah_PA_total = $request->markahPA1_ML + $request->markahPA2_ML
+        + $request->markahPA3_ML + $request->markahPA32_ML;
+
+        $markah_PD_total = $request->markahPD24_ML + $request->markahPD25_ML
+        + $request->markahPD31_ML + $request->markahPD32_ML + $request->markahPD33_ML + $request->markahPD34_ML + $request->markahPD8_ML
+        + $request->markahPD10_ML;
+
+        $markah_FL_total = $request->markahFL1_ML + $request->markahFL2_ML
+        + $request->markahFL21_ML + $request->markahFL22_ML + $request->markahFL23_ML + $request->markahFL3_ML + $request->markahFL31_ML
+        + $request->markahFL32_ML + $request->markahFL33_ML + $request->markahFL34_ML;
+
+        $markah_IN_total = $request->markahIN1_ML;
+
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_ML = $markah_TL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_ML = $markah_KT_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_ML = $markah_SB_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_ML = $markah_PA_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_ML = $markah_PD_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_ML = $markah_FL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_ML = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
 
         alert()->success('PENILAIAN VALIDASI BERJAYA', 'Berjaya');
