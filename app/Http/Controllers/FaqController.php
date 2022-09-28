@@ -98,6 +98,8 @@ class FaqController extends Controller
         $f->JawapanFAQ = $request->JawapanFAQ;
         $f->user_id = Auth::id();
         $f->save();
+
+        AuditTrailController::audit('update', 'pengguna', $f->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/faq');
 

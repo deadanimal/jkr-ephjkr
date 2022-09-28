@@ -88,6 +88,8 @@ class ProjekController extends Controller
         $pd2->projek_id = $pd->id;
         $pd2->save();
 
+        AuditTrailController::audit('create', 'pengguna', $pd->id);
+
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/pemilihan_ahli/'.$pd->id);
 
@@ -145,7 +147,7 @@ class ProjekController extends Controller
         
         $gp->save();
 
-        
+        AuditTrailController::audit('update', 'pengguna', $gp->id);
 
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek');
@@ -264,6 +266,8 @@ class ProjekController extends Controller
         $pengesahan_projek = Projek::find($id);
         $pengesahan_projek->statusProjek = $request->statusProjek;
         $pengesahan_projek->save();
+
+        AuditTrailController::audit('create', 'pengguna', $pengesahan_projek->id);
         alert()->success('Pengesahan pengguna telah berjaya', 'Berjaya');
         return redirect('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek');
     }

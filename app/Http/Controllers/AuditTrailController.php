@@ -111,14 +111,14 @@ class AuditTrailController extends Controller
        
     // }
 
-    public static function audit($prosesAktiviti, $model, $id)
+    public static function audit($tindakan, $model, $id)
     {
         //dd('sdf');
         $audit = new AuditTrail;
         $audit->user_id = Auth::id();
         //$audit->icPengguna = Auth::user()->icPengguna;
-        //$audit->tindakan = strtoupper($prosesAktiviti);
-        $audit->prosesAktiviti = ucwords($model).' ID='.$id;
+        $audit->tindakan = strtoupper($tindakan);
+        $audit->prosesAktiviti = ucwords($tindakan).''. ucwords($model).' ID='.$id;
         $audit->save();
     }
 }

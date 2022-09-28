@@ -62,7 +62,8 @@ class MaklumBalasController extends Controller
         //     ->causedBy($user)
         //     ->withProperties(['customProperty' => 'customValue'])
         //     ->log('Update maklum balas');
-
+        
+        AuditTrailController::audit('create', 'pengguna', $mb->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/maklum_balas');
     }
@@ -119,6 +120,7 @@ class MaklumBalasController extends Controller
         //     // ->withProperties(['customProperty' => 'customValue'])
         //     ->log('Update maklum balas');
 
+        AuditTrailController::audit('update', 'pengguna', $maklumBalas->id);
         return redirect('/pengurusan_maklumat/maklum_balas');
     }
 
