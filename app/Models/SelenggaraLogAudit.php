@@ -23,8 +23,8 @@ class SelenggaraLogAudit extends Model
         return $this->belongsTo(user::class, 'user_id','id');
     }
 
-    public function audit_trail()
-    {
-        return $this->belongsTo(AuditTrail::class, 'user_id', 'id');
-    }
+    // public function audit_trail()
+    // {
+    //     return $this->belongsTo(AuditTrail::class, 'user_id', 'id');
+    // }
 }

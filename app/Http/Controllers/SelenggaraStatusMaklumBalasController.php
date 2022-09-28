@@ -47,6 +47,7 @@ class SelenggaraStatusMaklumBalasController extends Controller
 
         $status_maklum_balas->save();
 
+        AuditTrailController::audit('create', 'pengguna', $status_maklum_balas->id);
         return redirect('/pengurusan_maklumat/selenggara/status_maklum_balas');
     }
 

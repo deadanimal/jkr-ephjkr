@@ -48,6 +48,8 @@ class HebahanController extends Controller
         $h->jenisHebahan = $request->jenisHebahan;
         $h->user_id = Auth::id();
         $h->save();
+
+        AuditTrailController::audit('create', 'pengguna', $h->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/hebahan');
     }
@@ -92,6 +94,8 @@ class HebahanController extends Controller
         $h->jenisHebahan = $request->jenisHebahan;
         $h->user_id = Auth::id();
         $h->save();
+
+        AuditTrailController::audit('update', 'pengguna', $h->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/hebahan');
     }

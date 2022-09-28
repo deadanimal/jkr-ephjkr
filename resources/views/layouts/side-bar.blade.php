@@ -187,8 +187,8 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/selenggara/log_audit') ? 'active' : '' }} py-0"
-                                        href="/pengurusan_maklumat/selenggara/log_audit">
+                                    <a class="nav-link {{ Request::is('pengurusan_maklumat/audit_trail') ? 'active' : '' }} py-0"
+                                        href="/pengurusan_maklumat/audit_trail">
                                         <div class="d-flex align-items-center nav-link-side">
                                             <span class="px-0">Selenggara Log Audit</span>
                                         </div>
