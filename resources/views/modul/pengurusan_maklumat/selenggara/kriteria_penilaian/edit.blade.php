@@ -29,22 +29,36 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/pengurusan_maklumat/selenggara/kriteria_penilaian" method="post" enctype="multipart/form-data">
+            <form action="/pengurusan_maklumat/selenggara/kriteria_penilaian/{{$kp->id}}" method="post" enctype="multipart/form-data">
                 @method('PUT')
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Kriteria Sekarang:</label>
+                        <label class="col-form-label">Nama Kriteria:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="namaProjekk" type="text"/>
+                        <input class="form-control" ib='namakriteria' name="nama_kriteria" type="text" value="{{$kp->nama_kriteria}}" required/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Kriteria Baru:</label>
+                        <label class="col-form-label">Jenis Kriteria:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="namaProjek" type="text"/>
+                        <input class="form-control" name="jenis_kriteria" type="text" value="{{$kp->jenis_kriteria}}" required/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Kod Kriteria:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="kod_kriteria" type="text" value="{{$kp->kod_kriteria}}" required/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Kategori Kriteria:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="kategori_kriteria" type="text" value="{{$kp->kategori_kriteria}}" required/>
                     </div>
                     
     

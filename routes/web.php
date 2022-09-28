@@ -102,7 +102,10 @@ Route::middleware('auth')->group(function () {
     Route::resource('/pengurusan_maklumat/selenggara/selenggara_hebahan', SelenggaraHebahanController::class);
     Route::resource('/pengurusan_maklumat/selenggara/status_maklum_balas', SelenggaraStatusMaklumBalasController::class);
     Route::resource('/pengurusan_maklumat/selenggara/kriteria_penilaian', SelenggaraKriteriaPenilaianController::class);
-    Route::resource('/pengurusan_maklumat/selenggara/log_audit', SelenggaraLogAuditController::class);
+    //Route::resource('/pengurusan_maklumat/selenggara/log_audit', SelenggaraLogAuditController::class);
+
+    //audit trails
+    Route::get('audit', [AuditTrailController::class, 'audit']);
     
     
     //pendaftaran projek
@@ -112,10 +115,16 @@ Route::middleware('auth')->group(function () {
     //pdf muat turun
     Route::get('/cetakprojek/{id}', [ProjekController::class, 'cetakpdfprojek']);
 
+    //papar projek
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/papar', [ProjekController::class, 'papar']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/myskala', [ProjekController::class, 'myskala']);
+
     //gugur projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek', [ProjekController::class, 'gugurprojek']);
-    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create', [ProjekController::class, 'gugurprojek_create']);
+    //Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit', [ProjekController::class, 'gugurprojek_create']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{id}', [ProjekController::class, 'gugurprojek_edit']);
+    // Route::post('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/{id}', [ProjekController::class, 'update']);
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/edit', [ProjekController::class, 'gugurprojek_gugur']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{id}', [ProjekController::class, 'padam_gugurprojek']);
 
     //pengesahan projek

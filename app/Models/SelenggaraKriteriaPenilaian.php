@@ -9,7 +9,7 @@ class SelenggaraKriteriaPenilaian extends Model
 {
     use HasFactory;
 
-    public $table = 'penilaian_ephjkrs';
+    // public $table = 'penilaian_ephjkrs';
 
-    protected $guarded = ['id'];
+    // protected $guarded = ['id'];
 }

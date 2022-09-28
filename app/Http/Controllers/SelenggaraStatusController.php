@@ -50,6 +50,7 @@ class SelenggaraStatusController extends Controller
 
         $status->save();
 
+        AuditTrailController::audit('create', 'pengguna', $status->id);
         return redirect('/pengurusan_maklumat/selenggara/selenggara_status');
     }
 

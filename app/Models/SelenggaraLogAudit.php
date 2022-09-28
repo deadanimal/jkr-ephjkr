@@ -14,12 +14,17 @@ class SelenggaraLogAudit extends Model
     //     return $this->belongsTo(User::class);
     // }
 
-    public $table = 'users';
+    //public $table = 'users';
 
     protected $guarded = ['id'];
 
-    public function audit_trail()
+    public function pengguna()
     {
-        return $this->belongsTo(AuditTrail::class);
+        return $this->belongsTo(user::class, 'user_id','id');
     }
+
+    // public function audit_trail()
+    // {
+    //     return $this->belongsTo(AuditTrail::class, 'user_id', 'id');
+    // }
 }

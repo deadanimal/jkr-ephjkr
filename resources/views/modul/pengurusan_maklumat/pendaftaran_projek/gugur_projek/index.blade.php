@@ -26,7 +26,7 @@
 
     <div class="row mt-3">
         <div class="col text-end">
-            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create" class="btn btn-primary">Tambah</a>
+            <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/edit" class="btn btn-primary">Sahkan Permohonan</a>
         </div>
     </div>
 
@@ -59,10 +59,7 @@
                                                 <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{{ $gp->id }}"
                                                     class="btn btn-sm btn-primary">Gugur</a>
                                             </div>
-                                            <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit/{{ $gp->id }}"
-                                                    class="btn btn-sm btn-primary">SAHKAN</a>
-                                            </div>
+                                            
                                         </div>
                                         {{-- <div class="col text-end">
                                             <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" class="btn btn-primary">Gugur</a>

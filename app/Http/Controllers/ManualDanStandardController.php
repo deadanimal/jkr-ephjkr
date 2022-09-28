@@ -47,6 +47,8 @@ class ManualDanStandardController extends Controller
         $mds->failManual = 'dokumen_sokongan/manual_dan_standard/' . $dokumen_sokongan;
         $mds->user_id = Auth::id();
         $mds->save();
+
+        AuditTrailController::audit('create', 'pengguna', $mds->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/manual_dan_standard');
     }
@@ -93,6 +95,8 @@ class ManualDanStandardController extends Controller
             $mds->user_id = Auth::id();
         }
         $mds->save();
+
+        AuditTrailController::audit('update', 'pengguna', $mds->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/manual_dan_standard');
     }
