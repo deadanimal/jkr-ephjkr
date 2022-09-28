@@ -87,20 +87,60 @@ class IntegrasiController extends Controller
         //
     }
 
-    public function papar_semua_projek($id_sso_skala) 
+    public function papar_semua_projek() 
     {
 
-        //dd('');
+        //dd('jksbdc');
+        //cara risda
+        // $skala = Integrasi::where('tajuk_projek')->get();
+        // foreach ($skala as $key => $s) {
+        //     $skala = Http::withHeaders('')
+        //         ->get('http://admin3-skala.jkr.gov.my/ephjkr-api/' . $s->tajuk_projek)
+        //         ->getBody()
+        //         ->getContents();
+
+        //     $skala = json_decode($skala, true);
+        //     if (!empty($skala['tajuk_projek'])) {
+        //         $s->tajuk_projek = $skala['tajuk_projek'];
+        //     } else {
+        //         $s->tajuk_projek = null;
+        //     }
+        // }
+
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', [
+        //     'skala' => $skala
+        // ]);
+    
         $url = 'http://admin3-skala.jkr.gov.my/ephjkr-api/';
-        $response = Http::withHeaders(([
-            'id_pengguna' => $id_sso_skala
+        $url = Http::withHeaders(([
+            'id_pengguna' => $url
         ]))->get($url);
 
-        $response_json = $response->json();
+        // //dd($url);
+        $url = json_decode($url, true);
 
-        //dd();  
+        // // $url = json_decode($url, true);
+        // //     if (!empty($url['tajuk_projek'])) {
+        // //         $s->tajuk_projek = $url['tajuk_projek'];
+        // //     } else {
+        // //         $s->tajuk_projek = null;
+        // //     }
 
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.myskala', $response_json);
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', [
+            'id_pengguna' => $url
+        ]);
+
+        // //dd(); 
+
+        //cara bos
+        // $url = 'http://admin3-skala.jkr.gov.my/ephjkr-api/';
+        // $response = Http::withHeaders(([
+        //     'id_pengguna' => $id_sso_skala
+        // ]))->get($url);
+
+        // $response_json = $response->json();
+
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', $response_json);
 
 
     }

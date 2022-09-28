@@ -19,6 +19,12 @@
                         <div class="col-9 mb-2">
                             <input type="text" name="name" class="form-control">
                         </div>
+                        {{-- <div class="col-3">
+                            <label>Peranan Pengguna:</label>
+                        </div>
+                        <div class="col-9 mb-2">
+                            <input type="text" name="perananPengguna" class="form-control">
+                        </div> --}}
                         <div class="col-3">
                             <label>No. Kad Pengguna:</label>
                         </div>

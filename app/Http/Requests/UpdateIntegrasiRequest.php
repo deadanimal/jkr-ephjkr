@@ -13,7 +13,7 @@ class UpdateIntegrasiRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
