@@ -172,7 +172,10 @@
                                                 <th >1</th>
                                                 <th >Architectural (Aw)</th>
                                                 <th>232</th>
-                                                <th>{{ $gpss_bangunan->markahPRAwRoof}} </th>
+                                                <th>{{ $gpss_bangunan->markahPRAwRoof + $gpss_bangunan->markahPRAwWall
+                                                    + $gpss_bangunan->markahPRAwWindow + $gpss_bangunan->markahPRAwDoor+ $gpss_bangunan->markahPRAwFloor
+                                                    + $gpss_bangunan->markahPRAwSystem
+                                                    + $gpss_bangunan->markahPRAwSanitary}} </th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
                                                 <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>

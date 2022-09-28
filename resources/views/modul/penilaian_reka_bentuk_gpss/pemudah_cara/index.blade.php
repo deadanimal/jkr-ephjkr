@@ -52,6 +52,7 @@
                     <th scope="col">Email</th>
                     <th scope="col">Disiplin</th>
                     <th scope="col">Lantik</th>
+                    <th></th>
                     
                     {{-- <th scope="col">Tindakan</th> --}}
                     {{-- <th scope="col">Tindakan</th> --}}
@@ -82,9 +83,9 @@
                     <td align="center">
                         <input type="checkbox" value="Lantik" id="lantik" name="lantik">
                     </td>
-                    {{-- <td style="text-align: center">
+                    <td style="text-align: center">
                         <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Kemaskini Pemudah Cara</a>
-                    </td>  --}}
+                    </td> 
                 </tr>
                     @endforeach
                     

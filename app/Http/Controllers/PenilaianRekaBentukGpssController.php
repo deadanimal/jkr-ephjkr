@@ -413,21 +413,19 @@ class PenilaianRekaBentukGpssController extends Controller
         return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index',compact('projeks','gpss_bangunan'));
     }
     public function papar_jana_keputusan(Request $request,$id)
-    {
-        $total_arkitek = $request->markahPRAwRoof + $request->markahPRAwWall
-        + $request->markahPRAwWindow + $request->markahPRAwDoor+ $request->markahPRAwFloor
-        + $request->markahPRAwSystem
-        + $request->markahPRAwSanitary;
-
+    {   
         $projeks = Projek::all();
         $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        // dd('$total_arkitek');
+        // salah
+        // $total_arkitek = $request->markahPRAwRoof + $request->markahPRAwWall
+        // + $request->markahPRAwWindow + $request->markahPRAwDoor+ $request->markahPRAwFloor
+        // + $request->markahPRAwSystem
+        // + $request->markahPRAwSanitary;
+
 
         // calculations/summation for Architectural design stage 
-        $gpss_bangunan->markahPRAwRoof = $total_arkitek ;
-
-
-       
-
+        // $gpss_bangunan->markahPRAwRoof = $total_arkitek ;
         // $projeks = Projek::find($id);
 
         //  form jana keputusan
@@ -444,15 +442,23 @@ class PenilaianRekaBentukGpssController extends Controller
 
     #papar sijil
     public function paparan_sijil()
-    {
+    {   
+        $projeks = Projek::all();
         // index jana keputusan
-        return view('modul.penilaian_reka_bentuk_gpss.paparan_sijil.index');
+        return view('modul.penilaian_reka_bentuk_gpss.paparan_sijil.index',[
+            'projeks'=> $projeks,
+        ]);
+
     }
     
-    public function papar_sijil()
+    public function papar_muatTurun_sijil()
     {
+        // $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
         // index jana keputusan
-        return view('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
+        return view('modul.penilaian_reka_bentuk_gpss.papar_muatTurun_sijil.index', [
+            // 'gpss_bangunan' => $gpss_bangunan
+        ]);
     }
 
     public function createPDF($id){
