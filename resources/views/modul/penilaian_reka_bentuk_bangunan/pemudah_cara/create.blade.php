@@ -15,10 +15,57 @@
         <hr class="line-6">
 </div>
     <div class="container-fluid">
-        
+            <div class="col-12">
+                <div class="card-header">
+                    <div class="row mt-3">
+                        <div class="col text-end">
+                            <a href="" class="btn btn-primary">Tambah</a>
+                        </div>
+                    </div>
+                    <div class="mt-5 row">
+                                <table class="table table-bordered line-table" style="width:100%">
+                                        <thead class="text-white bg-orange-jkr">
+                                            <tr>
+                                                <th class="text-center">Bil</th>
+                                                <th class="text-center">Pemudah Cara</th>
+                                                <th class="text-center">Nama Projek</th>
+                                                <th class="text-center">Nama Syarikat</th>
+                                                <th class="text-center">Peranan</th>                                                    </tr>
+                                        </thead>
+                                    {{-- </table>  --}}
+
+                                    {{-- <table class="kotak" style="width:100%"> --}}
+                                    <tbody id="myTable">
+                                        <!--LOOPING TABLES-->
+                                        {{-- @foreach ($projeks as $key => $p) --}}
+                                            <tr class="text-black">
+                                                <td style="text-align: center; vertical-align: middle;">1</td>
+                                                <td style="text-align: center; vertical-align: middle;">Ali bin Adib</td>
+                                                <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
+                                                <td style="text-align: center; vertical-align: middle;">Mukah</td>
+                                                <td style="text-align: center; vertical-align: middle;">Ketua Pemudah Cara</td>
+                                                {{-- <td style="text-align: center; vertical-align: middle;">
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
+                                                </td> --}}
+
+                                        {{-- @endforeach --}}
+                                    </tbody>
+                                    {{-- </table> --}}
+                                </table> 
+                            {{-- </div>
+                        </div>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+
+
             <div class="card-header" style="color: #EB5500">
                 <b class="maklumat-pemudah-cara">Maklumat Pemudah Cara</b>
             </div>
+
+            
             <div class="card-body">
                 <form action="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
                     @csrf
@@ -101,7 +148,7 @@
                     </div>
 
                     <!--Peranan-->
-                    <div class="mb-3 row form-check form-check-inline">
+                    {{-- <div class="mb-3 row form-check form-check-inline">
                         <label class="col-sm-2 col-form-label">Peranan:</label>
                             <div class="col-sm-7">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -111,7 +158,11 @@
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                         <label class="form-check-label" for="inlineCheckbox2">Pemudah Cara</label>
-                      </div>
+                      </div> --}}
+
+                      <!--Peranan-->
+                    
+
 
                     <!--Kategori-->
                         <input class="form-control" type="hidden" name="kategori" value="bangunan" />
@@ -123,46 +174,6 @@
                         title="Lantik Pemudah Cara" type="submit">Lantik</button>
                     </div>
                 </form>
-
-                <div class="col-12">
-                    <div class="card-header">
-                            <div class="mt-5 row">
-                                        <table class="table table-bordered line-table" style="width:100%">
-                                                <thead class="text-white bg-orange-jkr">
-                                                    <tr>
-                                                        <th class="text-center">Bil</th>
-                                                        <th class="text-center">Pemudah Cara</th>
-                                                        <th class="text-center">Nama Projek</th>
-                                                        <th class="text-center">Nama Syarikat</th>
-                                                        <th class="text-center">Peranan</th>                                                    </tr>
-                                                </thead>
-                                            {{-- </table>  --}}
-        
-                                            {{-- <table class="kotak" style="width:100%"> --}}
-                                            <tbody id="myTable">
-                                                <!--LOOPING TABLES-->
-                                                {{-- @foreach ($projeks as $key => $p) --}}
-                                                    <tr class="text-black">
-                                                        <td style="text-align: center; vertical-align: middle;">1</td>
-                                                        <td style="text-align: center; vertical-align: middle;">Ali bin Adib</td>
-                                                        <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
-                                                        <td style="text-align: center; vertical-align: middle;">Mukah</td>
-                                                        <td style="text-align: center; vertical-align: middle;">Ketua Pemudah Cara</td>
-                                                        {{-- <td style="text-align: center; vertical-align: middle;">
-                                                            <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan" role="button"
-                                                            data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
-                                                        </td> --}}
-        
-                                                {{-- @endforeach --}}
-                                                </tbody>
-                                            {{-- </table> --}}
-                                        </table> 
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
             </div> <!--card-body-->
     </div> <!--Container Fluid-->
 
