@@ -87,8 +87,20 @@ class IntegrasiController extends Controller
         //
     }
 
-    public function papar_semua_projek() 
+    public function papar_semua_projek($id_sso_skala) 
     {
+
+        $url = 'http://admin3-skala.jkr.gov.my/ephjkr-api/';
+        $response = Http::withHeaders(([
+            'id_pengguna' => $id_sso_skala
+        ]))->get($url);
+
+        dd($response);
+        //$url = json_decode($url, true);
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', [
+            'id_pengguna' => $response
+        ]);
 
         //dd('jksbdc');
         //cara risda
@@ -111,13 +123,8 @@ class IntegrasiController extends Controller
         //     'skala' => $skala
         // ]);
     
-        $url = 'http://admin3-skala.jkr.gov.my/ephjkr-api/';
-        $url = Http::withHeaders(([
-            'id_pengguna' => $url
-        ]))->get($url);
-
-        // //dd($url);
-        $url = json_decode($url, true);
+        
+        //$url = json_decode($url, true);
 
         // // $url = json_decode($url, true);
         // //     if (!empty($url['tajuk_projek'])) {
@@ -126,9 +133,9 @@ class IntegrasiController extends Controller
         // //         $s->tajuk_projek = null;
         // //     }
 
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', [
-            'id_pengguna' => $url
-        ]);
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', [
+        //     'id_pengguna' => $response
+        // ]);
 
         // //dd(); 
 

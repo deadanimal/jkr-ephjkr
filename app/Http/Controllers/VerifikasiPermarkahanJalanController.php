@@ -6,6 +6,7 @@ use App\Models\Projek;
 use App\Models\PemudahCara;
 use App\Models\PenilaianRekaBentukBangunan;
 use App\Models\User;
+use App\Models\VerifikasiPermarkahanJalan;
 use Illuminate\Http\Request;
 
 class VerifikasiPermarkahanJalanController extends Controller
@@ -105,10 +106,14 @@ class VerifikasiPermarkahanJalanController extends Controller
     }
 
     //melantik penilai jalan
-    public function melantik_penilai_jalan()
+    public function melantik_penilai_jalan($id)
     {
+
+        $spk = VerifikasiPermarkahanJalan::find($id);
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.verifikasi_permarkahan_jalan.melantik_penilai_jalan.create');
+        return view('modul.verifikasi_permarkahan_jalan.melantik_penilai_jalan.create',[
+            'spk' => $spk
+        ]);
     }
 
     public function pemudah_cara()

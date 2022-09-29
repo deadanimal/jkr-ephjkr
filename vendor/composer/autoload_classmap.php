@@ -152,6 +152,7 @@ return array(
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\ValidasiPermarkahanBangunan' => $baseDir . '/app/Models/ValidasiPermarkahanBangunan.php',
     'App\\Models\\VerifikasiPermarkahanBangunan' => $baseDir . '/app/Models/VerifikasiPermarkahanBangunan.php',
+    'App\\Models\\VerifikasiPermarkahanJalan' => $baseDir . '/app/Models/VerifikasiPermarkahanJalan.php',
     'App\\Policies\\AuditTrailPolicy' => $baseDir . '/app/Policies/AuditTrailPolicy.php',
     'App\\Policies\\FaqPolicy' => $baseDir . '/app/Policies/FaqPolicy.php',
     'App\\Policies\\HebahanPolicy' => $baseDir . '/app/Policies/HebahanPolicy.php',

@@ -738,6 +738,7 @@ class ComposerStaticInit8ad6b4128bf0ac8166785c4ed8d75960
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\ValidasiPermarkahanBangunan' => __DIR__ . '/../..' . '/app/Models/ValidasiPermarkahanBangunan.php',
         'App\\Models\\VerifikasiPermarkahanBangunan' => __DIR__ . '/../..' . '/app/Models/VerifikasiPermarkahanBangunan.php',
+        'App\\Models\\VerifikasiPermarkahanJalan' => __DIR__ . '/../..' . '/app/Models/VerifikasiPermarkahanJalan.php',
         'App\\Policies\\AuditTrailPolicy' => __DIR__ . '/../..' . '/app/Policies/AuditTrailPolicy.php',
         'App\\Policies\\FaqPolicy' => __DIR__ . '/../..' . '/app/Policies/FaqPolicy.php',
         'App\\Policies\\HebahanPolicy' => __DIR__ . '/../..' . '/app/Policies/HebahanPolicy.php',
