@@ -84,15 +84,17 @@ class PenilaianRekaBentukGpssController extends Controller
         //
     }
     # bawah ni pemudah cara
-    // public function papar_projek()
-    //  {
-    //    //papar table projek with button melantik pemudah cara
-    //    //should be isi form pemudahcara - create()
+    public function papar_senarai_pemudah_cara()
+     {
+       //papar table projek with button melantik pemudah cara
+       //should be isi form pemudahcara - create()
+
+       $pemudah_cara = PemudahCara::all();
          
-    //      return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
-    //         'projeks'=> $projeks
-    //      ]);
-    //  }
+         return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index', [
+            'pemudah_cara'=> $pemudah_cara
+         ]);
+     }
     public function pemudah_cara()
     {
         // papar form pemudah cara with id projek
@@ -114,9 +116,10 @@ class PenilaianRekaBentukGpssController extends Controller
         $pemudah_cara->kategori = $request->kategori;
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
 
+
         $pemudah_cara->save();
 
-        return redirect('/penilaian_reka_bentuk_gpss');
+        return redirect('/penilaian_reka_bentuk_gpss/papar_senarai_pemudah_cara');
     }
     # Pemudah Cara - bawah ni utk skor penilaian
     public function skor_penilaian()
@@ -409,11 +412,20 @@ class PenilaianRekaBentukGpssController extends Controller
 
         return view('modul.penilaian_reka_bentuk_gpss.jana_keputusan.index',compact('projeks','gpss_bangunan'));
     }
-    public function papar_jana_keputusan($id)
-    {
+    public function papar_jana_keputusan(Request $request,$id)
+    {   
         $projeks = Projek::all();
         $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        // dd('$total_arkitek');
+        // salah
+        // $total_arkitek = $request->markahPRAwRoof + $request->markahPRAwWall
+        // + $request->markahPRAwWindow + $request->markahPRAwDoor+ $request->markahPRAwFloor
+        // + $request->markahPRAwSystem
+        // + $request->markahPRAwSanitary;
 
+
+        // calculations/summation for Architectural design stage 
+        // $gpss_bangunan->markahPRAwRoof = $total_arkitek ;
         // $projeks = Projek::find($id);
 
         //  form jana keputusan
@@ -430,15 +442,23 @@ class PenilaianRekaBentukGpssController extends Controller
 
     #papar sijil
     public function paparan_sijil()
-    {
+    {   
+        $projeks = Projek::all();
         // index jana keputusan
-        return view('modul.penilaian_reka_bentuk_gpss.paparan_sijil.index');
+        return view('modul.penilaian_reka_bentuk_gpss.paparan_sijil.index',[
+            'projeks'=> $projeks,
+        ]);
+
     }
     
-    public function papar_sijil()
+    public function papar_muatTurun_sijil()
     {
+        // $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
         // index jana keputusan
-        return view('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
+        return view('modul.penilaian_reka_bentuk_gpss.papar_muatTurun_sijil.index', [
+            // 'gpss_bangunan' => $gpss_bangunan
+        ]);
     }
 
     public function createPDF($id){

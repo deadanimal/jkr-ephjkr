@@ -175,6 +175,7 @@ Route::middleware('auth')->group(function () {
     // Ketua Pasukan/Penolong view
     // Penilaian Reka Bentuk Gpss - papar projek, index() method
     Route::get('/penilaian_reka_bentuk_gpss', [PenilaianRekaBentukGpssController::class, 'index']);
+    Route::get('/penilaian_reka_bentuk_gpss/papar_senarai_pemudah_cara', [PenilaianRekaBentukGpssController::class, 'papar_senarai_pemudah_cara']);
     // papar form pemudah cara, create() method
     Route::get('/penilaian_reka_bentuk_gpss/pemudah_cara/create', [PenilaianRekaBentukGpssController::class, 'pemudah_cara']);
     //action form pemudah cara, show() method
@@ -236,7 +237,7 @@ Route::middleware('auth')->group(function () {
     Route::put('/penilaian_reka_bentuk_gpss/jana_keputusan/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_jana_keputusan']);
 
     Route::get('/penilaian_reka_bentuk_gpss/paparan_sijil', [PenilaianRekaBentukGpssController::class, 'paparan_sijil']);
-    Route::get('/penilaian_reka_bentuk_gpss/papar_sijil', [PenilaianRekaBentukGpssController::class, 'papar_sijil']);
+    Route::get('/penilaian_reka_bentuk_gpss/papar_muatTurun_sijil', [PenilaianRekaBentukGpssController::class, 'papar_muatTurun_sijil']);
     Route::get('/penilaian_reka_bentuk_gpss/createPDF/{id}', [PenilaianRekaBentukGpssController::class, 'createPDF']);
 
     // Penilaian Verifikasi Permarkahan GPSS

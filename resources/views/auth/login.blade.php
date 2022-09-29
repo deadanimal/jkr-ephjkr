@@ -23,12 +23,12 @@
                                                 :value="old('no_KP')" maxlength="12" size="12"
                                                 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
                                         </div>
-                                        <div class="mb-3">
+                                        {{-- <div class="mb-3">
                                             <div class="d-flex justify-content-between">
                                                 <label class="form-label text-primary">Peranan Pengguna</label>
                                             </div>
                                             <input type="text" name="peranan_pengguna" id="peranan_pengguna" class="form-control">
-                                        </div>
+                                        </div> --}}
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between">
                                                 <label class="form-label text-primary">Kata
@@ -49,15 +49,19 @@
                                             <button class="btn btn-primary d-block w-100 mt-3" type="submit"
                                                 name="submit">Log Masuk</button>
                                         </div>
+
+                                        <hr class="text-primary mb-3">
                                     </form>
-                                    <div class="text-center">
+                                   
+                                    {{-- <div class="text-center">
                                         <label>Atau</label>
-                                    </div>
+                                    </div> --}}
     
                                     <div class="row">
                                         <div class="col text-center">
                                             <div class="mb-3">
                                                 <a class="btn btn-outline-primary d-block w-100" href="/register">Daftar Akaun</a>
+                                                <a class="mt-3" style="color:#5B8E7D" href="/register">Anda Pengguna JKR? Daftar Sini.</a>
                                             </div>
                                         </div>
                                     </div>
