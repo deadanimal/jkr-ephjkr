@@ -57,8 +57,11 @@
                                         <div class="row">
                                             
                                             <div class="col-auto">
-                                                <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit/{{ $gp->id }}"
-                                                    class="btn btn-sm btn-primary">SAHKAN</a>
+                                                <form action="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{{ $gp->id }}" method="post">
+                                                    @method('DELETE')
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-sm btn-primary">Lulus</button>
+                                                </form>
                                             </div>
                                         </div>
                                         {{-- <div class="col text-end">
@@ -70,7 +73,11 @@
                                                 @csrf
                                                 <button type="submit" class="btn btn-primary">Gugur</button>
                                             </form>
-                                        </div> --}}
+                                        </div>
+                                            <div class="col-auto">
+                                                <a href="/pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit/{{ $gp->id }}"
+                                                    class="btn btn-sm btn-primary">LULUS</a>
+                                            </div> --}}
                                     </td>
                                 </tr>
                             @endforeach

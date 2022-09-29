@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProjekRequest;
 use App\Http\Requests\UpdateProjekRequest;
 use App\Models\Projek;
+//use Auth;
 use App\Models\StatusProjek;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 // use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
@@ -236,11 +237,11 @@ class ProjekController extends Controller
     public function padam_gugurprojek($id){
         //dd('fd');
 
-        $gugur_projek = Projek::find($id);
+        $gp = Projek::find($id);
     
-        $gugur_projek->delete();
+        $gp->delete();
         alert()->success('Maklumat telah dihapuskan', 'Berjaya');
-        return redirect('/pengurusan_maklumat/pendaftaran_projek/gugur_projek');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/edit');
             
         }
 
@@ -276,6 +277,58 @@ class ProjekController extends Controller
     //dd('fd');
         return view('modul.pengurusan_maklumat.pendaftaran_projek.create');
 
-        }
+    }
+
+    public function kemaskini($id){
+        //dd('fd');
+        $pp = Projek::find($id);
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.kemaskini',[
+            'pp' => $pp
+        ]);
+                
+    }
+
+    public function kemaskini_simpan(UpdateProjekRequest $request,$id)
+    {
+        $pp = Projek::find($id);
+
+        $pp->namaProjek = $request->namaProjek;
+        $pp->alamatProjek = $request->alamatProjek;
+        $pp->poskod = $request->poskod;
+        $pp->bandar = $request->bandar;
+        $pp->negeri = $request->negeri;
+        $pp->keluasanTapak = $request->keluasanTapak;
+        $pp->jumlahblokBangunan = $request->jumlahblokBangunan;
+        $pp->dokumenSokongan = $request->dokumenSokongan;
+        $pp->tarikh = $request->tarikh;
+        $pp->tarikhJangkaMulaPembinaan = $request->tarikhJangkaMulaPembinaan;
+        $pp->tarikhJangkaSiapPembinaan = $request->tarikhJangkaSiapPembinaan;
+        $pp->kaedahPelaksanaan = $request->kaedahPelaksanaan;
+        $pp->jenisPelaksanaan = $request->jenisPelaksanaan;
+        $pp->statusProjek = $request->statusProjek;
+        $pp->kosProjek = $request->kosProjek;
+        $pp->jenisProjek = $request->jenisProjek;
+        $pp->ahli = $request->ahli;
+        $pp->perananAhli = $request->perananAhli;
+        $pp->ulasanGugur = $request->ulasanGugur;
+        $pp->dokumenGugur = $request->dokumenGugur;
+        $pp->jenisKategoriProjek = $request->jenisKategoriProjek;
+        $pp->tempohSijil = $request->tempohSijil;
+        $pp->jarak = $request->jarak;
+        // $pp->user_id = Auth::id();
+        $pp->save();
+
+        $pp2 = new StatusProjek();
+        $pp2->statusProjek = $request->statusProjek;
+        $pp2->projek_id = $pp->id;
+        $pp2->save();
+        
+        $pp->save();
+
+        //AuditTrailController::audit('update', 'pengguna', $gp->id);
+
+        alert()->success('Maklumat telah disimpan', 'Berjaya');
+        return redirect('/pengurusan_maklumat/pendaftaran_projek');
+    }
 
 }

@@ -1,5 +1,8 @@
 @extends('layouts.base')
 @section('content')
+{{-- {{ dd(Auth::user()) }} --}}
+{{-- @if (Auth::user()->hasRole(['zack'])) --}}
+
 <div class="row mb-3">
     <div class="col">
         <nav style="--falcon-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%23748194'/%3E%3C/svg%3E&#34;);"
@@ -61,13 +64,26 @@
                                     {{-- <td>{{ $pp->status->statusProjek }}</td> --}}
                                     <td>{{ $pp->jenisKategoriProjek }}</td>
                                     <td>
-                                        <div class="col-auto">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <a href="/pengurusan_maklumat/pendaftaran_projek/projek/kemaskini/{{ $pp->id }}"
+                                                    class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                            </div>
+                                            <div class="col-auto">
+                                                <form action="/pengurusan_maklumat/pendaftaran_projek/{{ $pp->id }}" method="post">
+                                                    @method('DELETE')
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        {{-- <div class="col-auto">
                                             <form action="/pengurusan_maklumat/pendaftaran_projek/{{ $pp->id }}" method="post">
                                                 @method('DELETE')
                                                 @csrf
                                                 <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
                                             </form>
-                                        </div>
+                                        </div> --}}
                                     </td>
                                     
                                 </tr>
@@ -78,4 +94,5 @@
             </div>
         </div>
     </div>
+{{-- @endif --}}
 @endsection

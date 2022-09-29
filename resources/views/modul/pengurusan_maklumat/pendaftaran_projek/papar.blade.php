@@ -32,7 +32,7 @@
                         class="btn btn-sm btn-primary">Projek Baru</a>
                 </div>
                 <div class="col-auto">
-                    <a href="/pengurusan_maklumat/pendaftaran_projek/projek/myskala"
+                    <a href="/pengurusan_maklumat/pendaftaran_projek/projek/integrasi"
                         class="btn btn-sm btn-primary">Projek MySKALA</a>
                 </div>
             </div>
