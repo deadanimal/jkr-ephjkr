@@ -64,8 +64,13 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
+                                                    {{-- @if () --}}
                                                     <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/create" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Pilih Senarai Paparan Projek">Pilih</a>
+
+                                                    {{-- @else --}}
+                                                    {{-- <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/edit" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Pilih Senarai Paparan Projek">Pilih</a> --}}
                                                 </td>
                                             </tr> 
                                         @endforeach

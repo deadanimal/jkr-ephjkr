@@ -1,0 +1,197 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class AddNewMarkahRekabentukVerifikasiValidasiToKriteriaPhjkrBangunans extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('kriteria_phjkr_bangunans', function (Blueprint $table) {
+            //
+            $table->integer('markahTL7_MMR')->nullable();
+            $table->integer('markahTL7_MS')->nullable();
+            $table->integer('markahTL7_MR')->nullable();
+            $table->integer('markahTL7_MMV')->nullable();
+            $table->integer('markahTL7_MSV')->nullable();
+            $table->integer('markahTL7_ML')->nullable();
+            $table->integer('markahTL10_MMR')->nullable();
+            $table->integer('markahTL10_MS')->nullable();
+            $table->integer('markahTL10_MR')->nullable();
+            $table->integer('markahTL10_MMV')->nullable();
+            $table->integer('markahTL10_MSV')->nullable();
+            $table->integer('markahTL10_ML')->nullable();
+
+            $table->integer('markahKT51_MMR')->nullable();
+            $table->integer('markahKT51_MS')->nullable();
+            $table->integer('markahKT51_MR')->nullable();
+            $table->integer('markahKT51_MMV')->nullable();
+            $table->integer('markahKT51_MSV')->nullable();
+            $table->integer('markahKT51_ML')->nullable();
+            $table->integer('markahKT53_MMR')->nullable();
+            $table->integer('markahKT53_MS')->nullable();
+            $table->integer('markahKT53_MR')->nullable();
+            $table->integer('markahKT53_MMV')->nullable();
+            $table->integer('markahKT53_MSV')->nullable();
+            $table->integer('markahKT53_ML')->nullable();
+            $table->integer('markahKT6_MMR')->nullable();
+            $table->integer('markahKT6_MS')->nullable();
+            $table->integer('markahKT6_MR')->nullable();
+            $table->integer('markahKT6_MMV')->nullable();
+            $table->integer('markahKT6_MSV')->nullable();
+            $table->integer('markahKT6_ML')->nullable();
+            $table->integer('markahKT61_MMR')->nullable();
+            $table->integer('markahKT61_MS')->nullable();
+            $table->integer('markahKT61_MR')->nullable();
+            $table->integer('markahKT61_MMV')->nullable();
+            $table->integer('markahKT61_MSV')->nullable();
+            $table->integer('markahKT61_ML')->nullable();
+            $table->integer('markahKT7_MMR')->nullable();
+            $table->integer('markahKT7_MS')->nullable();
+            $table->integer('markahKT7_MR')->nullable();
+            $table->integer('markahKT7_MMV')->nullable();
+            $table->integer('markahKT7_MSV')->nullable();
+            $table->integer('markahKT7_ML')->nullable();
+            $table->integer('markahKT9_MMR')->nullable();
+            $table->integer('markahKT9_MS')->nullable();
+            $table->integer('markahKT9_MR')->nullable();
+            $table->integer('markahKT9_MMV')->nullable();
+            $table->integer('markahKT9_MSV')->nullable();
+            $table->integer('markahKT9_ML')->nullable();
+            $table->integer('markahKT10_MMR')->nullable();
+            $table->integer('markahKT10_MS')->nullable();
+            $table->integer('markahKT10_MR')->nullable();
+            $table->integer('markahKT10_MMV')->nullable();
+            $table->integer('markahKT10_MSV')->nullable();
+            $table->integer('markahKT10_ML')->nullable();
+            $table->integer('markahKT101_MMR')->nullable();
+            $table->integer('markahKT101_MS')->nullable();
+            $table->integer('markahKT101_MR')->nullable();
+            $table->integer('markahKT101_MMV')->nullable();
+            $table->integer('markahKT101_MSV')->nullable();
+            $table->integer('markahKT101_ML')->nullable();
+            $table->integer('markahKT102_MMR')->nullable();
+            $table->integer('markahKT102_MS')->nullable();
+            $table->integer('markahKT102_MR')->nullable();
+            $table->integer('markahKT102_MMV')->nullable();
+            $table->integer('markahKT102_MSV')->nullable();
+            $table->integer('markahKT102_ML')->nullable();
+            $table->integer('markahKT103_MMR')->nullable();
+            $table->integer('markahKT103_MS')->nullable();
+            $table->integer('markahKT103_MR')->nullable();
+            $table->integer('markahKT103_MMV')->nullable();
+            $table->integer('markahKT103_MSV')->nullable();
+            $table->integer('markahKT103_ML')->nullable();
+            
+            $table->integer('markahPA4_MMR')->nullable();
+            $table->integer('markahPA4_MS')->nullable();
+            $table->integer('markahPA4_MR')->nullable();
+            $table->integer('markahPA4_MMV')->nullable();
+            $table->integer('markahPA4_MSV')->nullable();
+            $table->integer('markahPA4_ML')->nullable();
+            $table->integer('markahPA5_MMR')->nullable();
+            $table->integer('markahPA5_MS')->nullable();
+            $table->integer('markahPA5_MR')->nullable();
+            $table->integer('markahPA5_MMV')->nullable();
+            $table->integer('markahPA5_MSV')->nullable();
+            $table->integer('markahPA5_ML')->nullable();
+            
+            $table->integer('markahPD1_MMR')->nullable();
+            $table->integer('markahPD1_MS')->nullable();
+            $table->integer('markahPD1_MR')->nullable();
+            $table->integer('markahPD1_MMV')->nullable();
+            $table->integer('markahPD1_MSV')->nullable();
+            $table->integer('markahPD1_ML')->nullable();
+            $table->integer('markahPD21_MMR')->nullable();
+            $table->integer('markahPD21_MS')->nullable();
+            $table->integer('markahPD21_MR')->nullable();
+            $table->integer('markahPD21_MMV')->nullable();
+            $table->integer('markahPD21_MSV')->nullable();
+            $table->integer('markahPD21_ML')->nullable();
+            $table->integer('markahPD22_MMR')->nullable();
+            $table->integer('markahPD22_MS')->nullable();
+            $table->integer('markahPD22_MR')->nullable();
+            $table->integer('markahPD22_MMV')->nullable();
+            $table->integer('markahPD22_MSV')->nullable();
+            $table->integer('markahPD22_ML')->nullable();
+            $table->integer('markahPD23_MMR')->nullable();
+            $table->integer('markahPD23_MS')->nullable();
+            $table->integer('markahPD23_MR')->nullable();
+            $table->integer('markahPD23_MMV')->nullable();
+            $table->integer('markahPD23_MSV')->nullable();
+            $table->integer('markahPD23_ML')->nullable();
+            $table->integer('markahPD35_MMR')->nullable();
+            $table->integer('markahPD35_MS')->nullable();
+            $table->integer('markahPD35_MR')->nullable();
+            $table->integer('markahPD35_MMV')->nullable();
+            $table->integer('markahPD35_MSV')->nullable();
+            $table->integer('markahPD35_ML')->nullable();
+            $table->integer('markahPD4_MMR')->nullable();
+            $table->integer('markahPD4_MS')->nullable();
+            $table->integer('markahPD4_MR')->nullable();
+            $table->integer('markahPD4_MMV')->nullable();
+            $table->integer('markahPD4_MSV')->nullable();
+            $table->integer('markahPD4_ML')->nullable();
+            $table->integer('markahPD42_MMR')->nullable();
+            $table->integer('markahPD42_MS')->nullable();
+            $table->integer('markahPD42_MR')->nullable();
+            $table->integer('markahPD42_MMV')->nullable();
+            $table->integer('markahPD42_MSV')->nullable();
+            $table->integer('markahPD42_ML')->nullable();
+            $table->integer('markahPD51_MMR')->nullable();
+            $table->integer('markahPD51_MS')->nullable();
+            $table->integer('markahPD51_MR')->nullable();
+            $table->integer('markahPD51_MMV')->nullable();
+            $table->integer('markahPD51_MSV')->nullable();
+            $table->integer('markahPD51_ML')->nullable();
+            $table->integer('markahPD52_MMR')->nullable();
+            $table->integer('markahPD52_MS')->nullable();
+            $table->integer('markahPD52_MR')->nullable();
+            $table->integer('markahPD52_MMV')->nullable();
+            $table->integer('markahPD52_MSV')->nullable();
+            $table->integer('markahPD52_ML')->nullable();
+            $table->integer('markahPD6_MMR')->nullable();
+            $table->integer('markahPD6_MS')->nullable();
+            $table->integer('markahPD6_MR')->nullable();
+            $table->integer('markahPD6_MMV')->nullable();
+            $table->integer('markahPD6_MSV')->nullable();
+            $table->integer('markahPD6_ML')->nullable();
+            $table->integer('markahPD61_MMR')->nullable();
+            $table->integer('markahPD61_MS')->nullable();
+            $table->integer('markahPD61_MR')->nullable();
+            $table->integer('markahPD61_MMV')->nullable();
+            $table->integer('markahPD61_MSV')->nullable();
+            $table->integer('markahPD61_ML')->nullable();
+            $table->integer('markahPD7_MMR')->nullable();
+            $table->integer('markahPD7_MS')->nullable();
+            $table->integer('markahPD7_MR')->nullable();
+            $table->integer('markahPD7_MMV')->nullable();
+            $table->integer('markahPD7_MSV')->nullable();
+            $table->integer('markahPD7_ML')->nullable();
+            $table->integer('markahPD9_MMR')->nullable();
+            $table->integer('markahPD9_MS')->nullable();
+            $table->integer('markahPD9_MR')->nullable();
+            $table->integer('markahPD9_MMV')->nullable();
+            $table->integer('markahPD9_MSV')->nullable();
+            $table->integer('markahPD9_ML')->nullable();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('kriteria_phjkr_bangunans', function (Blueprint $table) {
+            //
+        });
+    }
+}

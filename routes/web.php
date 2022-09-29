@@ -154,6 +154,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian']);
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian']);
     Route::put('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
+    Route::get('/penilaian_reka_bentuk_bangunan/createPDFBangunan/{id}', [PenilaianRekaBentukBangunanController::class, 'createPDFBangunan']);
+
 
     // Upload File
     // Route::get('/penilaian_reka_bentuk_bangunan/dokumen_sokongan', [PenilaianRekaBentukBangunanController::class, 'dokumen_sokongan']);
