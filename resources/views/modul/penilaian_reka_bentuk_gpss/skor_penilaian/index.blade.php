@@ -1,5 +1,34 @@
 @extends('layouts.base')
 
+<style>
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+
+  .show {display: block;}
+</style>
+
 @section('content')
     {{-- header --}}
     <div class="row mb-3">
@@ -74,66 +103,48 @@
                     <td>{{ $p->namaProjek }}</td>
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
-                    {{-- <td style="text-align: center">{{ $p->nama }}
-                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="button" class="btn btn-warning">PILIH</a>
-                    </td>  --}}
                     <td style="text-align: center">{{ $p->nama }}
-                        <form method="get" id="select-action" onsubmit="return submitForm()">
-                            <select class="select-action" name="action">
-                                <option  disabled selected>Pilih bidang</option>
-                                <option value ="arkitek">Arkitek</option>
-                                <option value ="mekanikal">Mekanikal</option>
-                                <option value ="elektrikal">Elektrikal</option>
-                                <option value ="civil">Civil</option>
-                             </select>
-                             <button type="submit" class="btn btn-warning">Submit</button>
-                        </form>
-                        {{-- if ($p) --}}
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}" type="button" class="btn btn-warning">PILIH</a>
                     </td>
-                    {{-- <td> <select name="bidang" class="form-control">
-                        <option value=1>Mekanikal</option>
-                        <option value=2>Paip</option>
-                        </select>
-
-                        @if($p->nama=='1')
-                            <a href="/" class="btn btn-warning">PILIH</a>
-                        @else
-                            <a href="" class="btn btn-warning">PILIH</a>
-                        @endif
-                    </td> --}}
+                    <td style="text-align: center">{{ $p->nama }} 
+                        <div class="dropdown">
+                            <button onclick="myFunction({{$p->id}})" class="dropbtn btn btn-warning">Pilih Bidang</button>
+                            <div id="gpss_dropdown{{$p->id}}" class="dropdown-content ">
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}">Arkitek</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create/{{$p->id}}">Mekanikal</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create/{{$p->id}}">Elektrikal</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create/{{$p->id}}">Civil</a>
+                            </div>
+                          </div>
+                    </td> 
                 </tr>
-                    @endforeach
-                    
-                
-             
-                    
-            </tbody>
-            
+                    @endforeach                                
+            </tbody>      
             </table>
-
-
         </div>
     </div>
 
-    <script type="text/javascript">
-
-        function submitForm() {
-            var selectedOption = $('.select-action').val();
-            var url = "";
-            if(selectedOption == 'arkitek') {
-                url = "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create";
-            } else if (selectedOption == 'mekanikal') {
-                url = "/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create";
-            } else if (selectedOption == 'elektrikal') {
-                url = "/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create";
-            } else if (selectedOption == 'civil') {
-                url = "/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create";
-            }
     
-            $('#select-action').attr('action', url);
-            $('#select-action').submit();
-            return false;
+
+   <script>
+     function myFunction(id) {
+        document.getElementById("gpss_dropdown"+id).classList.toggle("show");
+      }
+      
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
         }
-    </script>
+      }
+   </script>
+      
 
 @endsection
