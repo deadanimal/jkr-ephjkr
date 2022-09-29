@@ -88,6 +88,8 @@ class ProjekController extends Controller
         $pd2->projek_id = $pd->id;
         $pd2->save();
 
+        AuditTrailController::audit('create', 'pengguna', $pd->id);
+
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/pemilihan_ahli/'.$pd->id);
 
@@ -135,42 +137,17 @@ class ProjekController extends Controller
      * @param  \App\Models\Projek  $projek
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProjekRequest $request, Projek $projek)
+    public function update(UpdateProjekRequest $request,$id)
     {
-        //
-        $gp = new Projek();
+        $gp = Projek::find($id);
+
         
-        $gp->id_ruj_skala = $request->id_ruj_skala;
-        $gp->namaProjek = $request->namaProjek;
-        $gp->alamatProjek = $request->alamatProjek;
-        $gp->poskod = $request->poskod;
-        $gp->bandar = $request->bandar;
-        $gp->negeri = $request->negeri;
-        $gp->keluasanTapak = $request->keluasanTapak;
-        $gp->jumlahblokBangunan = $request->jumlahblokBangunan;
-        $gp->dokumenSokongan = $request->dokumenSokongan;
-        $gp->tarikh = $request->tarikh;
-        $gp->tarikhJangkaMulaPembinaan = $request->tarikhJangkaMulaPembinaan;
-        $gp->tarikhJangkaSiapPembinaan = $request->tarikhJangkaSiapPembinaan;
-        $gp->kaedahPelaksanaan = $request->kaedahPelaksanaan;
-        $gp->jenisPelaksanaan = $request->jenisPelaksanaan;
-        $gp->statusProjek = $request->statusProjek;
-        $gp->kosProjek = $request->kosProjek;
-        $gp->jenisProjek = $request->jenisProjek;
-        $gp->ahli = $request->ahli;
-        $gp->perananAhli = $request->perananAhli;
         $gp->ulasanGugur = $request->ulasanGugur;
         $gp->dokumenGugur = $request->dokumenGugur;
-        $gp->jenisKategoriProjek = $request->jenisKategoriProjek;
-        $gp->tempohSijil = $request->tempohSijil;
-        $gp->jarak = $request->jarak;
-        // $gp->user_id = Auth::id();
+        
         $gp->save();
 
-        $gp2 = new StatusProjek();
-        $gp2->statusProjek = $request->statusProjek;
-        $gp2->projek_id = $gp->id;
-        $gp2->save();
+        AuditTrailController::audit('update', 'pengguna', $gp->id);
 
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek');
@@ -222,9 +199,10 @@ class ProjekController extends Controller
 
     public function gugurprojek_create(){
 
-        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.create'
-            
-        );
+        //dd('hgf');
+        // return view('modul.pengurusan_maklumat/pendaftaran_projek/gugur_projek/edit', [
+        //     'gugur_projek' => Projek::with('status')->get()
+        // ]);
     }
 
     public function gugurprojek_store(){
@@ -236,11 +214,23 @@ class ProjekController extends Controller
 
     public function gugurprojek_edit($id){
         //dd('fd');
-        $gugur_projek = Projek::find($id);
+        $gp = Projek::find($id);
         return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.create',[
-            'gugur_projek' => $gugur_projek
+            'gp' => $gp
         ]);
                 
+    }
+
+    public function gugurprojek_gugur(){
+        //
+        //dd('sdaf');
+
+        return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.edit', [
+            'gugur_projek' => Projek::with('status')->get()
+        ]);
+
+        //$pengesahan_gugur = Projek::all();
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.edit');
     }
 
     public function padam_gugurprojek($id){
@@ -276,6 +266,8 @@ class ProjekController extends Controller
         $pengesahan_projek = Projek::find($id);
         $pengesahan_projek->statusProjek = $request->statusProjek;
         $pengesahan_projek->save();
+
+        AuditTrailController::audit('create', 'pengguna', $pengesahan_projek->id);
         alert()->success('Pengesahan pengguna telah berjaya', 'Berjaya');
         return redirect('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek');
     }

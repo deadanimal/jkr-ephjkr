@@ -92,13 +92,22 @@ class VerifikasiPermarkahanBangunanController extends Controller
     #pengesahan penilaian verifikasi bangunan
     public function pengesahan_penilaian()
     {
+
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
         $projeks = Projek::all();
+
+        // $total = [];
+        // $calc1 = 3*3;
+        // $total['pertama'] = $calc1; 
+        // $total['kedua'] = $calc1; 
+
+        
 
         // papar mcm index tapi ada button utk pengesahan
         return view('modul.verifikasi_permarkahan_bangunan.pengesahan_penilaian.index',[
             'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan,
-            'projeks'=>$projeks
+            'projeks'=>$projeks,
+            // 'total'=>$total
         ]);
     }
 
@@ -124,21 +133,22 @@ class VerifikasiPermarkahanBangunanController extends Controller
     }
 
     #pemudahcara
-    public function papar_projek()
-    {
-        $projeks = Projek::all();
-        $projeks = new Projek;
-        $pemudah_cara = new PemudahCara;
+    // public function papar_projek()
+    // {
+    //     $projeks = Projek::all();
+    //     $projeks = new Projek;
+    //     $pemudah_cara = new PemudahCara;
         
 
-        // papar table projek with button melantik pemudah cara
-        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
+    //     // papar table projek with button melantik pemudah cara
+    //     // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
 
-        return view('modul.verifikasi_permarkahan_bangunan.pemudah_cara.index',[
-            'projeks'=>$projeks,
-            'pemudah_cara'=>$pemudah_cara
-        ]);
-    }
+    //     return view('modul.verifikasi_permarkahan_bangunan.pemudah_cara.index',[
+    //         'projeks'=>$projeks,
+    //         'pemudah_cara'=>$pemudah_cara
+    //     ]);
+    // }
+    
     public function pemudah_cara($id)
     {
         $pemudah_cara = new PemudahCara;

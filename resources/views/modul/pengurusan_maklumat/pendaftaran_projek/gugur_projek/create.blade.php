@@ -29,7 +29,7 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/pengurusan_maklumat/pendaftaran_projek/gugur_projek" method="post" enctype="multipart/form-data">
+            <form action="/pengurusan_maklumat/pendaftaran_projek/{{$gp->id}}" method="post" enctype="multipart/form-data">
                 @method('PUT')
                 @csrf
                 <div class="row mx-4">

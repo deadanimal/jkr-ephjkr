@@ -36,7 +36,28 @@
                         <label class="col-form-label">Nama Kriteria Baru:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="namaProjek" type="text"/>
+                        <input class="form-control" name="nama_kriteria" type="text"/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Kod Kriteria Baru:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="kod_kriteria" type="text"/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Jenis Kriteria Baru:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="jenis_kriteria" type="text"/>
+                    </div>
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Kategori Kriteria Baru:</label>
+                    </div>
+                    <div class="col-7 mb-2">
+                        <input class="form-control" name="kategori_kriteria" type="text"/>
                     </div>
                     
     
@@ -46,7 +67,7 @@
                     <div class="col-7 mb-2">
                         <div class="row mt-4">
                             <div class="col-6">
-                                <a href="/pengurusan_maklumat/senarai_pengguna" class="btn btn-outline-primary">Batal</a>
+                                <a href="/pengurusan_maklumat/selenggara/kriteria_penilaian" class="btn btn-outline-primary">Batal</a>
                             </div>
                             <div class="col-6 text-end">
                                 <button type="submit" class="btn btn-primary">Simpan</button>

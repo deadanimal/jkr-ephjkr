@@ -12,6 +12,7 @@
 
 @section('content')
 
+{{-- View: Ketua Pasukan --}}
 <div class="header">
         <b class="text-dark-green-jkr">Paparan Senarai Projek</b>
 
@@ -56,15 +57,14 @@
                                         <!--LOOPING TABLES-->
                                         @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
-                                                <td>{{ $p->id }}</td>
-                                                {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
+                                                <td>{{ $loop->iteration }}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->id_ruj_skala}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Daftar Pemudah Cara">Daftar</a>
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
                                                 </td>
 
                                         @endforeach

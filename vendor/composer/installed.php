@@ -3,7 +3,11 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+<<<<<<< HEAD
         'reference' => '7056b833bfa02319ad2dea00dfe3d389063e1b65',
+=======
+        'reference' => 'a25a1bec1ab2a5f1c3cf6729ca1334318f32e02f',
+>>>>>>> 7d3f37374dbfd515396497cb753ea07a3e60faa1
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -451,7 +455,11 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+<<<<<<< HEAD
             'reference' => '7056b833bfa02319ad2dea00dfe3d389063e1b65',
+=======
+            'reference' => 'a25a1bec1ab2a5f1c3cf6729ca1334318f32e02f',
+>>>>>>> 7d3f37374dbfd515396497cb753ea07a3e60faa1
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1042,6 +1050,24 @@
             'install_path' => __DIR__ . '/../sebastian/version',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'spatie/laravel-activitylog' => array(
+            'pretty_version' => '4.6.0',
+            'version' => '4.6.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-activitylog',
+            'aliases' => array(),
+            'reference' => '7c08e6bd8fbd1cd2b57c0f6acf3708bcafc3f7e1',
+            'dev_requirement' => false,
+        ),
+        'spatie/laravel-package-tools' => array(
+            'pretty_version' => '1.12.1',
+            'version' => '1.12.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-package-tools',
+            'aliases' => array(),
+            'reference' => '09f80fa240d44fafb1c70657c74ee44ffa929357',
+            'dev_requirement' => false,
         ),
         'spatie/laravel-permission' => array(
             'pretty_version' => '5.5.5',

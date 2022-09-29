@@ -50,6 +50,7 @@ class SelenggaraHebahanController extends Controller
         
         $selenggara_hebahan->save();
         
+        AuditTrailController::audit('create', 'pengguna', $selenggara_hebahan->id);
         alert()->success('Maklumat telah disimpan', 'Berjaya');
         return redirect('/pengurusan_maklumat/selenggara/selenggara_hebahan');
     }
