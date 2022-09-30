@@ -69,9 +69,9 @@ class PenilaianRekaBentukBangunanController extends Controller
 
 
 
-        // return view('modul.penilaian_reka_bentuk_bangunan.index',[
-        //     'projeks'=>$projeks
-        // ]);
+        return view('modul.penilaian_reka_bentuk_bangunan.index',[
+            'projeks'=>$projeks
+        ]);
 
 
         // $user = $request->user();
