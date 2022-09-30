@@ -49,8 +49,10 @@
                     <th scope="col">Nama Projek</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Tindakan</th>
+                    <th scope="col">Jenis Projek</th>
                     <th scope="col">Kategori</th>
+                    <th scope="col">Tindakan</th>
+
                 </tr>
             </thead>
             <tbody>
@@ -73,9 +75,7 @@
                     <td>{{ $p->namaProjek }}</td>
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
-                    <td style="text-align: center">{{ $p->nama }}
-                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
-                    </td>
+                    <td>{{ $p->jenisKategoriProjek }}</td>
                     <td>
                         <select class="select-action" name="action" class="btn btn-warning">
                             <option  disabled selected>Pilih Kategori</option>
@@ -85,6 +85,10 @@
                             <option value ="civil">Civil</option>
                          </select>
                     </td> 
+                    <td style="text-align: center">{{ $p->nama }}
+                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
+                    </td>
+                    
                 </tr>
                     @endforeach
                     

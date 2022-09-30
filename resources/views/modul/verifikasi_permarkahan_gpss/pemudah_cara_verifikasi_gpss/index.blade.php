@@ -16,7 +16,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK GPSS</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>PENILAIAN VERIFIKASI PERMARKAHAN GPSS</strong></h3>
         </div>
     </div>
     

@@ -785,25 +785,25 @@
                                     </div>
                                 </a>
                             </li>
-                            {{-- Melantik Penilai GPSS --}}
+                            {{-- Melantik Pemudah Cara Verifikasi GPSS --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('/verifikasi_permarkahan_gpss/pemudah_cara/create') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_gpss/pemudah_cara/create">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_gpss/papar_senarai_pemudah_cara_verifikasi') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_gpss/papar_senarai_pemudah_cara_verifikasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_gpss/pemudah_cara/create') ? 'text-dark' : '' }}">Melantik
-                                            Penilai GPSS</span>
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_gpss/papar_senarai_pemudah_cara_verifikasi') ? 'text-dark' : '' }}">Melantik
+                                            Pemudah Cara</span>
                                     </div>
                                 </a>
                             </li>
-                            {{-- Penilaian Verifikasi GPSS --}}
+                            {{-- Hantar Skor Kad Verifikasi GPSS --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_verifikasi_gpss/penilaian_verifikasi') ? 'active' : '' }} py-0"
-                                    href="/penilaian_verifikasi_gpss/penilaian_verifikasi">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_gpss/skor_kad') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_gpss/skor_kad">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_verifikasi_gpss/penilaian_verifikasi') ? 'text-dark' : '' }}">Penilaian
-                                            Verifikasi</span>
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_gpss/skor_kad') ? 'text-dark' : '' }}">Hantar Skor Kad dan
+                                            Muat Naik Dokumen Sokongan</span>
                                     </div>
                                 </a>
                             </li>

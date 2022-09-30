@@ -171,7 +171,7 @@ class PenilaianRekaBentukGpssController extends Controller
         $gpss_bangunan = new KriteriaGpssBangunan();
         $gpss_bangunan->fill($validatedData);
         $request->session()->put('gpss_bangunan', $gpss_bangunan);
-        // $gpss_bangunan->save();
+        $gpss_bangunan->save();
         alert()->success('Markah disimpan', 'Berjaya');
         
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create');

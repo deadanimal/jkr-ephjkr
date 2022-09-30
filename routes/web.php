@@ -251,9 +251,13 @@ Route::middleware('auth')->group(function () {
     // Penilaian Verifikasi Permarkahan GPSS
     // Route::resource('/penilaian_reka_bentuk_bangunan', PenilaianRekaBentukJalanController::class);
     Route::get('/papar_verifikasi_gpss', [VerifikasiPermarkahanGpssController::class, 'index']);
-    Route::get('/verifikasi_permarkahan_gpss/pemudah_cara/create', [VerifikasiPermarkahanGpssController::class, 'pemudah_cara']);
-    Route::get('/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{id}', [VerifikasiPermarkahanGpssController::class, 'melantik_pemudah_cara_jalan']);
-    Route::get('/penilaian_reka_bentuk_jalan/isi_skor_kad', [VerifikasiPermarkahanGpssController::class, 'isi_skor_kad']);
+    Route::get('/verifikasi_permarkahan_gpss/papar_senarai_pemudah_cara_verifikasi', [VerifikasiPermarkahanGpssController::class, 'papar_senarai_pemudah_cara_verifikasi']);
+    Route::get('/verifikasi_permarkahan_gpss/pemudah_cara_verifikasi_gpss/create/{id}', [VerifikasiPermarkahanGpssController::class, 'pemudah_cara_verifikasi_gpss']);
+    Route::post('/verifikasi_permarkahan_gpss/melantik_pemudah_cara_verifikasi_gpss/{id}', [VerifikasiPermarkahanGpssController::class, 'melantik_pemudah_cara_verifikasi_gpss']);
+    Route::get('/verifikasi_permarkahan_gpss/skor_kad', [VerifikasiPermarkahanGpssController::class, 'skor_kad']);
+    Route::get('/verifikasi_permarkahan_gpss/skor_verifikasi_arkitek/create/{id}', [VerifikasiPermarkahanGpssController::class, 'skor_verifikasi_arkitek']);
+    Route::post('/verifikasi_permarkahan_gpss/simpan_skor_verifikasi_arkitek/{id}', [VerifikasiPermarkahanGpssController::class, 'simpan_skor_verifikasi_arkitek']);
+
 
 
     // Verifikasi Permarkahan Bangunan
