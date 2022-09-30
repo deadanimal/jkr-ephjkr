@@ -234,24 +234,56 @@ class VerifikasiPermarkahanBangunanController extends Controller
 
     public function simpan_skor_penilaian(Request $request, $id)
     {
+        $markah_TL_total = $request->markahTL1_MSV + $request->markahTL2_MSV
+        + $request->markahTL3_MSV + $request->markahTL32_MSV + $request->markahTL4_MSV + $request->markahTL5_MSV + $request->markahTL6_MSV
+        + $request->markahTL81_MSV + $request->markahTL82_MSV + $request->markahTL83_MSV + $request->markahTL84_MSV + $request->markahTL85_MSV + $request->markahTL91_MSV 
+        + $request->markahTL92_MSV;
+
+        $markah_KT_total = $request->markahKT1_MSV + $request->markahKT2_MSV
+        + $request->markahKT21_MSV + $request->markahKT22_MSV + $request->markahKT3_MSV + $request->markahKT31_MSV + $request->markahKT32_MSV
+        + $request->markahKT4_MSV + $request->markahKT52_MSV + $request->markahKT8_MSV + $request->markahKT11_MSV;
+
+        $markah_SB_total = $request->markahSB1_MSV + $request->markahSB2_MSV
+        + $request->markahSB3_MSV + $request->markahSB4_MSV;
+
+        $markah_PA_total = $request->markahPA1_MSV + $request->markahPA2_MSV
+        + $request->markahPA3_MSV + $request->markahPA32_MSV;
+
+        $markah_PD_total = $request->markahPD24_MSV + $request->markahPD25_MSV
+        + $request->markahPD31_MSV + $request->markahPD32_MSV + $request->markahPD33_MSV + $request->markahPD34_MSV + $request->markahPD8_MSV
+        + $request->markahPD10_MSV;
+
+        $markah_FL_total = $request->markahFL1_MSV + $request->markahFL2_MSV
+        + $request->markahFL21_MSV + $request->markahFL22_MSV + $request->markahFL23_MSV + $request->markahFL3_MSV + $request->markahFL31_MSV
+        + $request->markahFL32_MSV + $request->markahFL33_MSV + $request->markahFL34_MSV;
+
+        $markah_IN_total = $request->markahIN1_MSV;
+
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan->markahTOTAL_TL_MSV = $markah_TL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_KT_MSV = $markah_KT_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_SB_MSV = $markah_SB_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PA_MSV = $markah_PA_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_PD_MSV = $markah_PD_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_FL_MSV = $markah_FL_total;
+        $kriteria_phjkr_bangunan->markahTOTAL_IN_MSV = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
 
-        $kriteria_phjkr_bangunan->markahMSV = $request->markahTOTAL_TL_MSV
-        + $request->markahTOTAL_KT_MSV
-        + $request->markahTOTAL_SB_MSV
-        + $request->markahTOTAL_PA_MSV
-        + $request->markahTOTAL_PD_MSV
-        + $request->markahTOTAL_FL_MSV
-        + $request->markahTOTAL_IN_MSV;
+        // $kriteria_phjkr_bangunan->markahMSV = $request->markahTOTAL_TL_MSV
+        // + $request->markahTOTAL_KT_MSV
+        // + $request->markahTOTAL_SB_MSV
+        // + $request->markahTOTAL_PA_MSV
+        // + $request->markahTOTAL_PD_MSV
+        // + $request->markahTOTAL_FL_MSV
+        // + $request->markahTOTAL_IN_MSV;
 
-        $kriteria_phjkr_bangunan->markahMMV = $request->markahTOTAL_TL_MMV
-        + $request->markahTOTAL_KT_MMV
-        + $request->markahTOTAL_SB_MMV
-        + $request->markahTOTAL_PA_MMV
-        + $request->markahTOTAL_PD_MMV
-        + $request->markahTOTAL_FL_MMV
-        + $request->markahTOTAL_IN_MMV;
+        // $kriteria_phjkr_bangunan->markahMMV = $request->markahTOTAL_TL_MMV
+        // + $request->markahTOTAL_KT_MMV
+        // + $request->markahTOTAL_SB_MMV
+        // + $request->markahTOTAL_PA_MMV
+        // + $request->markahTOTAL_PD_MMV
+        // + $request->markahTOTAL_FL_MMV
+        // + $request->markahTOTAL_IN_MMV;
 
 
 

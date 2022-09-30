@@ -4,6 +4,7 @@ use App\Http\Controllers\AuditTrailController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\GugurProjekController;
 use App\Http\Controllers\HebahanController;
+use App\Http\Controllers\IntegrasiController;
 use App\Http\Controllers\LamanUtamaController;
 use App\Http\Controllers\MaklumBalasController;
 use App\Http\Controllers\ManualDanStandardController;
@@ -115,6 +116,13 @@ Route::middleware('auth')->group(function () {
     //pdf muat turun
     Route::get('/cetakprojek/{id}', [ProjekController::class, 'cetakpdfprojek']);
 
+    //integrasi myskala projek
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/integrasi', [IntegrasiController::class, 'papar_semua_projek']);
+
+    //kemaskini projek
+    Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/kemaskini/{id}', [ProjekController::class, 'kemaskini']);
+    Route::put('/pengurusan_maklumat/pendaftaran_projek/kemaskini/{id}', [ProjekController::class, 'kemaskini_simpan']);
+
     //papar projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/papar', [ProjekController::class, 'papar']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/projek/myskala', [ProjekController::class, 'myskala']);
@@ -125,7 +133,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/create/{id}', [ProjekController::class, 'gugurprojek_edit']);
     // Route::post('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/{id}', [ProjekController::class, 'update']);
     Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/edit', [ProjekController::class, 'gugurprojek_gugur']);
-    Route::get('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{id}', [ProjekController::class, 'padam_gugurprojek']);
+    Route::delete('/pengurusan_maklumat/pendaftaran_projek/gugur_projek/projek/padam/{id}', [ProjekController::class, 'padam_gugurprojek']);
 
     //pengesahan projek
     Route::get('/pengurusan_maklumat/pendaftaran_projek/pengesahan_projek/projek', [ProjekController::class, 'pengesahanprojek']);

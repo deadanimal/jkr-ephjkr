@@ -2,6 +2,7 @@
 
 namespace Illuminate\Foundation\Auth;
 
+use App\Mail\Pendaftaran;
 use App\Mail\PengesahanPengguna;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\JsonResponse;
@@ -51,7 +52,8 @@ trait RegistersUsers
         $user->katalaluan = $request->password;
         $user->save();
         // $user->assignRole('Pengguna');
-        Mail::to('eisomullah.lukman@pipeline-network.com')->send(new PengesahanPengguna());
+        Mail::to($user->email)->send(new Pendaftaran());
+        Mail::to('vanithaa.ponnaiah@pipeline-network.com')->send(new PengesahanPengguna());
         alert()->success('Pendaftaran telah berjaya, sila tunggu pengesahan dari pihak JKR', 'Berjaya');
         return redirect('/login');
 

@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PendaftaranLulus;
+use App\Mail\PendaftaranTolak;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PengesahanPenggunaController extends Controller
 {
@@ -15,7 +18,7 @@ class PengesahanPenggunaController extends Controller
     public function index()
     {
         return view('modul.dashboard.pengesahan_pengguna.index', [
-            'pengguna'=>User::all()
+            'pengguna'=>User::where('status_akaun', null)->where('icPengguna', '!=', '010101010101')->get(),
         ]);
     }
 
@@ -76,6 +79,12 @@ class PengesahanPenggunaController extends Controller
         $pengguna = User::find($id);
         $pengguna->status_akaun = $request->status_akaun;
         $pengguna->save();
+        if ($request->status_akaun == 'Lulus') {
+            Mail::to($pengguna->email)->send(new PendaftaranLulus());
+        } else {
+            Mail::to($pengguna->email)->send(new PendaftaranTolak());
+        }
+        
         alert()->success('Pengesahan pengguna telah berjaya', 'Berjaya');
         return redirect('/dashboard/pengesahan_pengguna');
     }
