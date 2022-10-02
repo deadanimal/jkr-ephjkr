@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Projek;
 use App\Models\PemudahCara;
 use App\Models\PenilaianRekaBentukBangunan;
+use App\Models\PenilaiJalanVerifikasi;
 use App\Models\User;
 use App\Models\VerifikasiPermarkahanJalan;
 use Illuminate\Http\Request;
@@ -109,21 +110,45 @@ class VerifikasiPermarkahanJalanController extends Controller
     public function melantik_penilai_jalan($id)
     {
 
-        $spk = VerifikasiPermarkahanJalan::find($id);
+        $spk = Projek::find($id);
         // papar mcm index tapi ada button utk pengesahan
         return view('modul.verifikasi_permarkahan_jalan.melantik_penilai_jalan.create',[
             'spk' => $spk
         ]);
     }
 
-    public function pemudah_cara()
+    public function pemudah_cara($id)
     {
         // papar mcm index tapi ada button utk pengesahan
         
-        
-        return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.create');
+        $spk = Projek::find($id);
+        return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.create',[
+            'spk' => $spk
+        ]);
         
     }
+
+    // public function pemudah_cara_simpan(Request $request, $id)
+    // {
+    //     // papar mcm index tapi ada button utk pengesahan
+        
+    //     $spk = VerifikasiPermarkahanJalan::find($id);
+
+    //     $spk->nama = $request->nama;
+    //     $spk->syarikat_cawangan = $request->syarikat_cawangan;
+    //     $spk->no_tel = $request->no_tel;
+    //     $spk->no_fax = $request->no_fax;
+    //     $spk->email = $request->email;
+    //     $spk->disiplin = $request->disiplin;
+    //     $spk->kategori = $request->kategori;
+    //     $spk->dokumenSokongan = $request->dokumenSokongan;
+        
+    //     $spk->save();
+
+    //     alert()->success('Maklumat telah disimpan', 'Berjaya');
+    //     return redirect('/verifikasi_permarkahan_jalan/papar_senarai_projek');
+        
+    // }
 
     public function isi_skor_kad_verifikasi()
     {
@@ -202,7 +227,7 @@ class VerifikasiPermarkahanJalanController extends Controller
     {
         // submit form melantik pemudah cara
         $pemudah_cara = new PemudahCara;
-        $pemudah_cara->namaProjek = $request->input('namaProjek');
+        $pemudah_cara->nama = $request->input('nama');
         $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
         $pemudah_cara->nama = $request->input('nama');
         $pemudah_cara->no_tel = $request->input('no_tel');
@@ -219,7 +244,7 @@ class VerifikasiPermarkahanJalanController extends Controller
     public function simpan_penilai_jalan(Request $request, $id)
     {
         // submit form melantik penilai jalan
-        $penilai_jalan = new Penilaijalan;
+        $penilai_jalan = new PenilaiJalanVerifikasi();
         $penilai_jalan->namaProjek = $request->input('namaProjek');
         $penilai_jalan->syarikat_cawangan = $request->input('syarikat_cawangan');
         $penilai_jalan->nama = $request->input('nama');

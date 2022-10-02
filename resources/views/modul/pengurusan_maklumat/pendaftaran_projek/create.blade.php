@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-7 mb-2">
                         <select class="form-select" aria-label="Default select example" name="jenisKategoriProjek">
-                            <option selected="">Sila Pilih</option>
+                            <option selected disabled="">Sila Pilih</option>
                             <option value="phJKR Bangunan">phJKR Bangunan</option>
                             <option value="phJKR Jalan">phJKR Jalan</option>
                             <option value="GPSS Bangunan">GPSS Bangunan</option>

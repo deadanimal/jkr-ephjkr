@@ -33,7 +33,7 @@
 
     <div class="row mt-4 mb-3">
         <div class="col">
-            <form action="/verifikasi_permarkahan_jalan/pemudah_cara/{id}" method="post" enctype="multipart/form-data">
+            <form action="/verifikasi_permarkahan_jalan/pemudah_cara/simpan/{id}" method="post" enctype="multipart/form-data">
                 @method('POST')
                 @csrf
                 <div class="row mx-4">
@@ -41,7 +41,7 @@
                         <label class="col-form-label">Nama Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="namaProjek" type="text"/>
+                        <input class="form-control" name="nama" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">

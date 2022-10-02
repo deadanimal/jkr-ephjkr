@@ -52,7 +52,7 @@
                                     <td>{{ $spk->alamatProjek }}</td>
                                     <td>{{ $spk->statusProjek }}</td>
                                     <td style="text-align: right">{{ $spk->nama }}
-                                        <a href="/verifikasi_permarkahan_jalan/pemudah_cara/create/" type="button" class="btn btn-warning">+</a>
+                                        <a href="/verifikasi_permarkahan_jalan/pemudah_cara/create/{{$spk->id}}" type="button" class="btn btn-warning">+</a>
                                     </td>
                                     <td style="text-align: right">{{ $spk->nama }}
                                         <a href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan/create" type="button" class="btn btn-warning">+</a>

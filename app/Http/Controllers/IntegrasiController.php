@@ -90,14 +90,15 @@ class IntegrasiController extends Controller
     public function papar_semua_projek($id_sso_skala) 
     {
 
-        $url = 'http://admin3-skala.jkr.gov.my/ephjkr-api/';
+        $url = 'http://admin3-skala.jkr.gov.my/~vnisa/2022-devpskala/web/www/api/ephjkr-api.php?id_pengguna=850703045020';
         $response = Http::withHeaders(([
-            'id_pengguna' => $id_sso_skala
+            'id_pengguna' => $id_sso_skala //'850703045020'
         ]))->get($url);
 
-        dd($response);
-        //$url = json_decode($url, true);
+        //dd($response);
+        $response = json_decode($response, true) ['data'];
 
+        //dd($response);
         return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', [
             'id_pengguna' => $response
         ]);
