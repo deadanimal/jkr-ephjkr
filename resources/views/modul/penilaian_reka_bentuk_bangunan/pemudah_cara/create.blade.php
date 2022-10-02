@@ -30,26 +30,33 @@
                                                 <th class="text-center">Pemudah Cara</th>
                                                 <th class="text-center">Nama Projek</th>
                                                 <th class="text-center">Nama Syarikat</th>
-                                                <th class="text-center">Peranan</th>                                                    </tr>
+                                                <th class="text-center">Peranan</th>
+                                                <th class="text-center">Tindakan</th>                                                    
+                                            </tr>
                                         </thead>
                                     {{-- </table>  --}}
 
                                     {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody id="myTable">
                                         <!--LOOPING TABLES-->
-                                        {{-- @foreach ($projeks as $key => $p) --}}
+                                        @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
-                                                <td style="text-align: center; vertical-align: middle;">1</td>
-                                                <td style="text-align: center; vertical-align: middle;">Ali bin Adib</td>
-                                                <td style="text-align: center; vertical-align: middle;">Hospital Seri Iskandar</td>
-                                                <td style="text-align: center; vertical-align: middle;">Mukah</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->id}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">Ali bin Abu</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->namaSyarikat}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">Ketua Pemudah Cara</td>
-                                                {{-- <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan" role="button"
-                                                    data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
-                                                </td> --}}
+                                                <td>
+                                                    <div class="col-auto">
+                                                        <form action="/penilaian_reka_bentuk_bangunan/pemudah_cara/{{$p->id}}" method="post">
+                                                            @method('DELETE')
+                                                            @csrf
+                                                            <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
+                                                        </form>
+                                                    </div>
+                                                </td>
 
-                                        {{-- @endforeach --}}
+                                        @endforeach
                                     </tbody>
                                     {{-- </table> --}}
                                 </table> 
@@ -99,7 +106,7 @@
 
                     <!--Syarikat/Cawangan-->
                     <div class="mb-3 form-group row">
-                        <label class="col-sm-2 col-form-label">Cawangan:</label>
+                        <label class="col-sm-3 col-form-label">Syarikat/Cawangan:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan"/>                        
                             </div>
@@ -109,7 +116,7 @@
                     {{-- <input type="text" name="projek_id" value={{$projeks->id}}> --}}
 
                     <div class="mb-3 form-group row">
-                        <label class="col-sm-2 col-form-label">Pemudah Cara:</label>
+                        <label class="col-sm-3 col-form-label">Pemudah Cara:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara->nama}}"/>                        
                             </div>
@@ -117,7 +124,7 @@
 
                     <!--No. Telefon-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">No. Tel:</label>
+                        <label class="col-sm-3 col-form-label">No. Tel:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="number" autocapitalize="off" name="no_tel" />                        
                             </div>
@@ -125,7 +132,7 @@
 
                     <!--No. Fax-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">No. Fax:</label>
+                        <label class="col-sm-3 col-form-label">No. Fax:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="number" autocapitalize="off" name="no_fax"/>                        
                             </div>
@@ -133,7 +140,7 @@
 
                     <!--Emel-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">E-mel:</label>
+                        <label class="col-sm-3 col-form-label">E-mel:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="text" autocapitalize="off" name="email"/>                        
                             </div>
@@ -141,7 +148,7 @@
 
                     <!--Disiplin-->
                     <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Disiplin:</label>
+                        <label class="col-sm-3 col-form-label">Disiplin:</label>
                             <div class="col-sm-7">
                                 <input class="form-control" type="text" autocapitalize="off" name="disiplin"/>
                             </div>
