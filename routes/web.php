@@ -6,6 +6,7 @@ use App\Http\Controllers\GugurProjekController;
 use App\Http\Controllers\HebahanController;
 use App\Http\Controllers\IntegrasiController;
 use App\Http\Controllers\LamanUtamaController;
+use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\MaklumBalasController;
 use App\Http\Controllers\ManualDanStandardController;
 use App\Http\Controllers\PengesahanPendaftaranProjekController;
@@ -28,6 +29,7 @@ use App\Http\Controllers\VerifikasiPermarkahanBangunanController;
 use App\Http\Controllers\VerifikasiPermarkahanJalanController;
 use App\Http\Controllers\VerifikasiPermarkahanGpssController;
 use App\Http\Controllers\ValidasiPermarkahanBangunanController;
+use App\Models\Laporan;
 use App\Models\ValidasiPermarkahanBangunan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -394,6 +396,23 @@ Route::middleware('auth')->group(function () {
     //verifikasi permohonan
     Route::get('/verifikasi_permarkahan_jalan/permohonan_rayuan', [VerifikasiPermarkahanJalanController::class, 'permohonan_rayuan_verifikasi']);
     Route::get('/verifikasi_permarkahan_jalan/permohonan_rayuan/create', [VerifikasiPermarkahanJalanController::class, 'permohonan_rayuan_verifikasi_create']);
+
+
+    // Modul Laporan
+    // Keputusan Permarkahan
+    // Papar senarai projek
+    Route::get('/laporan', [LaporanController::class, 'keputusan_permarkahan']);
+    Route::get('/laporan/paparan_keputusan/{id}', [LaporanController::class, 'paparan_keputusan']);
+    Route::get('/laporan/muat_turun_keputusan/{id}', [LaporanController::class, 'muat_turun_keputusan']);
+
+    // Analisis Pencapaian
+    Route::get('/laporan/analisis_pencapaian', [LaporanController::class, 'index']);
+    Route::get('/laporan/jana_analisis_pencapaian/{id}', [LaporanController::class, 'jana_analisis_pencapaian']);
+    Route::get('/laporan/papar_analisis_pencapaian/{id}', [LaporanController::class, 'papar_analisis_pencapaian']);
+    Route::get('/laporan/muat_turun_analisis_pencapaian/{id}', [LaporanController::class, 'muat_turun_analisis_pencapaian']);
+
+
+
 
 });
 
