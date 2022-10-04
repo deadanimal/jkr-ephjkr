@@ -8,7 +8,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Paparan Senarai Projek (Ketua Pasukan temp. view)
+                        Paparan Senarai Lantikan Pemudah Cara
                     </li>
                 </ol>
             </nav>
@@ -45,48 +45,36 @@
             <thead class="text-white bg-orange-jkr">
                 <tr>
                     <th scope="col">Bil.</th>
-                    <th scope="col">ID Rujukan</th>
-                    <th scope="col">Nama Projek</th>
-                    <th scope="col">Alamat</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Kategori</th>
-                    <th scope="col">Tindakan</th>
-                    {{-- <th scope="col">Kategori</th> --}}
+                    <th scope="col">Nama</th>
+                    <th scope="col">Syarikat/Cawangan</th>
+                    <th scope="col">Nombor Telefon</th>
+                    <th scope="col">Nombor Fax</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Disiplin</th>
+                    <th scope="col">Lantik</th>
+                    <th></th>
+                    
                 </tr>
             </thead>
             <tbody>
-                {{-- <tr>
-                    <th scope="row">1.</th>
-                    <td>SKL0202</td>
-                    <td>Hospital Seri Iskandar</td>
-                    <td>Mukah</td>
-                    <td>BERJAYA DIDAFTAR</td>
-                    <td style="text-align: center"><a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="submit" class="btn btn-warning margin-auto">DAFTAR</a></td>
-                    
-                </tr> --}}
+               
 
                 <tr>
-                    @foreach ($projeks as $p)
+                    @foreach ($pemudah_cara as $pc)
 
-                    {{-- <th scope="row">1.</th> --}}
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $p->id_ruj_skala }}</td>
-                    <td>{{ $p->namaProjek }}</td>
-                    <td>{{ $p->alamatProjek }}</td>
-                    <td>{{ $p->statusProjek }}</td>
-                    <td>{{ $p->jenisKategoriProjek }}</td>
-                    <td style="text-align: center">{{ $p->nama }}
-                        <a href="/verifikasi_permarkahan_gpss/pemudah_cara_verifikasi_gpss/create/{{$p->id}}" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
+                    <td>{{ $pc->nama }}</td>
+                    <td>{{ $pc->syarikat_cawangan }}</td>
+                    <td>{{ $pc->no_tel }}</td>
+                    <td>{{ $pc->no_fax }}</td>
+                    <td>{{ $pc->email }}</td>
+                    <td>{{ $pc->disiplin }}</td>
+                    <td align="center">
+                        <input type="checkbox" value="Lantik" id="lantik" name="lantik">
                     </td>
-                    {{-- <td>
-                        <select class="select-action" name="action" class="btn btn-warning">
-                            <option  disabled selected>Pilih Kategori</option>
-                            <option value ="arkitek">Bangunan 1</option>
-                            <option value ="mekanikal">Mekanikal</option>
-                            <option value ="elektrikal">Elektrikal</option>
-                            <option value ="civil">Civil</option>
-                         </select>
-                    </td>  --}}
+                    <td style="text-align: center">
+                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{id}" type="button" class="btn btn-warning">Kemaskini Pemudah Cara</a>
+                    </td> 
                 </tr>
                     @endforeach
                     
@@ -95,16 +83,3 @@
         </div>
     </div>
 @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
