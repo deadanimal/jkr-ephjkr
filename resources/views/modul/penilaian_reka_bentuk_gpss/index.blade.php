@@ -8,7 +8,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Paparan Senarai Projek
+                        Paparan Senarai Projek (Ketua Pasukan temp. view)
                     </li>
                 </ol>
             </nav>
@@ -30,7 +30,7 @@
                         <label for="nama_projek">Nama Projek:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
+                        <input type="text" id="myInput" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
                     </div>
                     <div class="col-md-3">
                         <button class="btn btn-warning btn-block">Carian</button>
@@ -49,11 +49,13 @@
                     <th scope="col">Nama Projek</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
+                    <th scope="col">Jenis Projek</th>
+                    <th scope="col">Kategori</th>
                     <th scope="col">Tindakan</th>
-                    {{-- <th scope="col">Tindakan</th> --}}
+
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="myTable">
                 {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
@@ -73,9 +75,20 @@
                     <td>{{ $p->namaProjek }}</td>
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
-                    <td style="text-align: center">{{ $p->nama }}
-                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Daftar</a>
+                    <td>{{ $p->jenisKategoriProjek }}</td>
+                    <td>
+                        <select class="select-action" name="action" class="btn btn-warning">
+                            <option  disabled selected>Pilih Kategori</option>
+                            <option value ="arkitek">Bangunan 1</option>
+                            <option value ="mekanikal">Mekanikal</option>
+                            <option value ="elektrikal">Elektrikal</option>
+                            <option value ="civil">Civil</option>
+                         </select>
                     </td> 
+                    <td style="text-align: center">{{ $p->nama }}
+                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{{$p->id}}" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
+                    </td>
+                    
                 </tr>
                     @endforeach
                     
@@ -83,4 +96,29 @@
             </table>
         </div>
     </div>
+
+    <!--Search bar-->
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+    </script>
 @endsection
+
+
+
+
+
+
+
+
+
+
+
+
+

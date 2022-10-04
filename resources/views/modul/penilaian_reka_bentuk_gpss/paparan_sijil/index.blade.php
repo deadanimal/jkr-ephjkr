@@ -8,7 +8,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Paparan Senarai Projek
+                        Paparan Senarai Projek (Ketua Pasukan temp. view)
                     </li>
                 </ol>
             </nav>
@@ -50,20 +50,44 @@
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
                     <th scope="col">Tindakan</th>
-                    {{-- <th scope="col">Tindakan</th> --}}
+                    {{-- <th scope="col">Kategori</th> --}}
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
                     <td>Hospital Seri Iskandar</td>
                     <td>Mukah</td>
                     <td>BERJAYA DIDAFTAR</td>
-                    <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/papar_sijil" type="submit" class="btn btn-warning margin-auto">PILIH</a>
+                    <td style="text-align: center"><a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="submit" class="btn btn-warning margin-auto">DAFTAR</a></td>
+                    
+                </tr> --}}
+
+                <tr>
+                    @foreach ($projeks as $p)
+
+                    {{-- <th scope="row">1.</th> --}}
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $p->id_ruj_skala }}</td>
+                    <td>{{ $p->namaProjek }}</td>
+                    <td>{{ $p->alamatProjek }}</td>
+                    <td>{{ $p->statusProjek }}</td>
+                    <td style="text-align: center">{{ $p->nama }}
+                        <a href="/penilaian_reka_bentuk_gpss/papar_muatTurun_sijil" type="submit" class="btn btn-warning margin-auto">Penilaian</a>
                     </td>
+                    {{-- <td>
+                        <select class="select-action" name="action" class="btn btn-warning">
+                            <option  disabled selected>Pilih Kategori</option>
+                            <option value ="arkitek">Bangunan 1</option>
+                            <option value ="mekanikal">Mekanikal</option>
+                            <option value ="elektrikal">Elektrikal</option>
+                            <option value ="civil">Civil</option>
+                         </select>
+                    </td>  --}}
                 </tr>
+                    @endforeach
+                    
             </tbody>
             </table>
         </div>

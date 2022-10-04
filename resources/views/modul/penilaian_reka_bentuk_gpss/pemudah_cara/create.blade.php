@@ -72,9 +72,16 @@
                     <!--Disiplin-->
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Disiplin:</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="disiplin"  />
-                    </div>
+                        <div class="col-sm-10">
+                            <select class="form-select" aria-label="Default select example" name="disiplin">
+                                <option selected="">Sila Pilih</option>
+                                <option value="Arkitektur">Arkitektur</option>
+                                <option value="Mekanikal">Mekanikal</option>
+                                <option value="Elektrikal">Elektrikal</option>
+                                <option value="Awam">Awam</option>
+                                <option value="Jalan">Jalan</option>
+                            </select>
+                        </div>
                     </div>
                     {{--Kategori--}}
                     <div class="col-sm-10">
@@ -86,7 +93,7 @@
                     <!--Button Daftar (TOOLTIPS)-->
                     <div class="text-center">
                         <button class="btn btn-warning" data-toggle="tooltip" data-placement="center"
-                        title="Daftar Pemudah Cara" type="submit">Daftar</button>
+                        title="Daftar Pemudah Cara" type="submit">Lantik Pemudah Cara</button>
                     </div>
                 </form>
             </div>
