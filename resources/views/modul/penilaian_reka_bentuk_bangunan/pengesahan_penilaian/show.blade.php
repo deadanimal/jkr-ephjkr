@@ -543,7 +543,7 @@
                                     <td>3</td>
                                     <td>{{$kriteria_phjkr_bangunan->markahTL92_MR}}</td>
                                     <td>3</td>
-                                    <td><input type="number" min="0" max="3" id="markahTL92_MR_PUN" name="markahTL92_MR_PUN"></td>
+                                    <td>{{$kriteria_phjkr_bangunan->markahTL92_MR_PUN}}</td>
                                     <td>
                                         <span>&#183; Pelan konsep rekabentuk</span><br>
                                         <span>&#183; Jadual keluasan kawasan bumbung</span><br>
@@ -964,21 +964,14 @@
                                                        
                                     </td>
                                     <td>1</td>
-                                    {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
                                     <td>{{$kriteria_phjkr_bangunan->markahKT53_MR}}</td>
                                     <td>1</td>
                                     <td>{{$kriteria_phjkr_bangunan->markahKT53_MR_PUN}}</td>
-                                    {{-- <td></td>
-                                    <td></td> --}}
                                     <td>
                                         <span>&#183; Brosur/katalog produk lampu</span><br>
                                         <span>&#183; Pengiraan dan jadual LPD (kaedah manual atau simulasi) bagi setiap ruang</span><br>
                                         <span>&#183; Lukisan pelan elektrik yang menunjukkan bilangan dan jenis lampu</span><br>
                                     </td>
-                                    {{-- <td>
-                                        <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
-                                        <span> &#183; Bukti bergambar</span><br>
-                                    </td> --}}
                                     <td colspan="5"></td>
                                     <td colspan="4">
                                         <form class="form">
@@ -2740,9 +2733,9 @@
                                 <tr class="pg-6" align="center">
                                     <td colspan="6">Jumlah markah FL</td>
                                     <td colspan="3">5</td>
-                                    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</td>
+                                    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}</td>
                                     <td>5</td>
-                                    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR_PUN}}</td>
+                                    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR_PUN}}</td>
                                 </tr>  
                         </table>
     
@@ -2811,9 +2804,7 @@
                                     <td colspan="3">6</td>
                                     <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</td>
                                     <td>6</td>
-                                    <td>
-                                        <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR_PUN}}</td>
-                                    </td>
+                                    <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR_PUN}}</td>
                                 </tr> 
                         </table>
 

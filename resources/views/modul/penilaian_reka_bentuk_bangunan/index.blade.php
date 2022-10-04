@@ -62,7 +62,7 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create" role="button"
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create/{{$p->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Lantik Pemudah Cara">Lantik</a>
                                                 </td>
 

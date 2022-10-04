@@ -142,7 +142,22 @@ class PenilaianRekaBentukBangunanController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $pemudah_cara =PemudahCara::find($id);
+
+        $pemudah_cara->nama = $request->nama;
+        $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
+        $pemudah_cara->no_tel = $request->no_tel;
+        $pemudah_cara->no_fax = $request->no_fax;
+        $pemudah_cara->email = $request->email;
+        $pemudah_cara->disiplin = $request->disiplin;
+        $pemudah_cara->kategori = $request->kategori;
+        $pemudah_cara->projek_id = $request->projek_id;
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        $pemudah_cara->save();
+
+        // dd($id);
+        // return redirect()->back();
+        return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
     }
 
     /**
@@ -162,29 +177,32 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     # bawah ni pemudah cara
     // ketua pasukan atau pen ketua pasukan
-    // public function papar_projek()
-    // {
-    //     $projeks = Projek::all();
-    //     $projeks = new Projek;
-    //     $pemudah_cara = new PemudahCara;
+    public function papar_pemudah_cara()
+    {
+        $projeks = Projek::all();
+        // $projeks = new Projek;
+        // $projeks = Projek::find($id);
+        // $pemudah_cara = PemudahCara::find($id);
         
 
-    //     // papar table projek with button melantik pemudah cara
-    //     // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index');
+        // papar table projek with button melantik pemudah cara
+        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
+        //     'projeks'=>$projeks
+        // ]);
 
-    //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
-    //         'projeks'=>$projeks,
-    //         'pemudah_cara'=>$pemudah_cara
-    //     ]);
-    // }
+        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',
+        compact('projeks')
+        );
+    }
 
     public function pemudah_cara($id)
     {
-        $pemudah_cara = new PemudahCara();
+        // $pemudah_cara = new PemudahCara($id);
         // $pemudah_cara = PemudahCara::find($id);
         // $projeks = new Projek();
-        $projeks = Projek::all();
+        // $projeks = Projek::all();
         // $projeks = Projek::find($id);
+        $pemudah_cara = PemudahCara::find($id);
 
         // $user = $request->user();
         // if($user->hasRole('Pemudah Cara (bagi PHJKR Bangunan & GPSS Bangunan dan Jalan)')) {
@@ -196,11 +214,24 @@ class PenilaianRekaBentukBangunanController extends Controller
 
         // papar form pemudah cara with id projek
         
-        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
-            'pemudah_cara'=>$pemudah_cara,
-            'projeks'=>$projeks
-        ]);
+        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
+        //     'pemudah_cara'=>$pemudah_cara,
+        //     'projeks'=>$projeks
+        // ]);
+    //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create', compact('pemudah_cara','id'),
+    // compact('projeks'));
+        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create', 
+        compact('pemudah_cara')
+        );
         
+    }
+
+    public function kemaskini_pemudah_cara($id)
+    {
+        $pemudah_cara = PemudahCara::find($id);
+
+        return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.edit',
+        compact('pemudah_cara'));
     }
 
     public function melantik_pemudah_cara(Request $request, $id)
@@ -209,12 +240,12 @@ class PenilaianRekaBentukBangunanController extends Controller
         $pemudah_cara = new PemudahCara;
 
         $pemudah_cara->nama = $request->nama;
-        // $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
-        // $pemudah_cara->no_tel = $request->no_tel;
-        // $pemudah_cara->no_fax = $request->no_fax;
-        // $pemudah_cara->email = $request->email;
-        // $pemudah_cara->disiplin = $request->disiplin;
-        // $pemudah_cara->kategori = $request->kategori;
+        $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
+        $pemudah_cara->no_tel = $request->no_tel;
+        $pemudah_cara->no_fax = $request->no_fax;
+        $pemudah_cara->email = $request->email;
+        $pemudah_cara->disiplin = $request->disiplin;
+        $pemudah_cara->kategori = $request->kategori;
         $pemudah_cara->projek_id = $request->projek_id;
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
         $pemudah_cara->save();
@@ -225,7 +256,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         // $projeks->save();
 
         // // submit form melantik pemudah cara
-        return redirect('/penilaian_reka_bentuk_bangunan');
+        return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
 
     }
 
