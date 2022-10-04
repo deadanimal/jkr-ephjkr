@@ -154,8 +154,36 @@ class VerifikasiPermarkahanJalanController extends Controller
     {
         // papar mcm index tapi ada button utk pengesahan
         
-        
+        //dd('sd');
         return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_verifikasi.index');
+        
+    }
+
+    public function isi_skor_kad_verifikasi2()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page2.create');
+        
+    }
+
+    public function isi_skor_kad_verifikasi3()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page3.create');
+        
+    }
+
+    public function isi_skor_kad_verifikasi4()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page4.create');
+        
+    }
+
+    public function isi_skor_kad_verifikasi5()
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page5.create');
         
     }
 
