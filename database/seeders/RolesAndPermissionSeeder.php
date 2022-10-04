@@ -15,6 +15,29 @@ class RolesAndPermissionSeeder extends Seeder
      */
     public function run()
     {
+
+
+        Permission::create(['name' => 'Dashboard']);
+        Permission::create(['name' => 'faq']);
+        Permission::create(['name' => 'hebahan']);
+        Permission::create(['name' => 'maklum balas']);
+        Permission::create(['name' => 'manual dan standard']);
+        Permission::create(['name' => 'pendaftaran projek']);
+        Permission::create(['name' => 'kriteria penilaian']);
+        Permission::create(['name' => 'selenggara (log audit)']);
+        Permission::create(['name' => 'selenggara (hebahan)']);
+        Permission::create(['name' => 'selenggara (peranan)']);
+        Permission::create(['name' => 'selenggara (status)']);
+        Permission::create(['name' => 'selenggara (status maklum balas)']);
+        Permission::create(['name' => 'senarai pengguna']);
+
+
+
+        $ketuapasukan = Role::create(['name' => 'Ketua Pasukan'])
+            ->givePermissionTo(Permission::all());
+
+        $pengguna = Role::create(['name' => 'Pengguna'])
+            ->givePermissionTo(Permission::all());
         
         Role::create(['name' => 'Pengguna']);
         Role::create(['name' => 'Pengurusan Atasan']);

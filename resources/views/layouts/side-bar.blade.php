@@ -1078,11 +1078,11 @@
                             </li>
                             {{-- JALAN (Verifikasi) Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara/index') ? 'active' : '' }} py-0"
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'active' : '' }} py-0"
                                     href="/verifikasi_permarkahan_jalan/pemudah_cara/create">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara/index') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>

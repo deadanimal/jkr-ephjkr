@@ -119,4 +119,11 @@ class ProfilController extends Controller
         alert()->success('Peranan telah dikemaskini', 'Berjaya');
         return redirect('/pengurusan_maklumat/profil_pengguna');
     }
+
+    public function senarai_tukar_peranan()
+    {
+        return view('modul.pengurusan_maklumat.profil_pengguna.senarai_tukar_peranan', [
+            'pengguna' => Auth::user()
+        ]);
+    }
 }

@@ -29,42 +29,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="card">
-            <div class="card-body">
-                <form action= "/penilaian_reka_bentuk_gpss/melantik_pemudah_cara_jalan/{id}" method="post" enctype="multipart/form-data">
-                    @csrf
-                    <!--Nama-->
-                    <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Nama Projek:</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="nama" />
-                    </div>
-                    </div>
-                    <!--Syarikat/Cawangan-->
-                    <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Syarikat:</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" />
-                    </div>
-                    </div>
-                    <!--No. Telefon-->
-                    <div class="mb-3 row">
-                        <label class="col-sm-2 col-form-label">Nama Pemudah Cara Jalan:</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" type="text" autocapitalize="off" name="no_tel" />
-                    </div>
-                    </div>
-                    <div class="mb-3 row">
-                      <label class="col-sm-2 col-form-label">Kategori:</label>
-                  <div class="col-sm-10">
-                      <input class="form-control" type="text" autocapitalize="off" name="no_tel" />
-                  </div>
-                  </div>
-                </form>
-            </div>
-        </div>
-    </div>
+    
 
     <div>
       <form action="">
@@ -98,8 +63,8 @@
                   <tbody>
 
                     <tr>
-                      <td>SM</td>
-                      <td colspan="6" align="left">site planning</td>
+                      <td>EW</td>
+                      <td colspan="6" align="left">ENVIRONMENT & WATER</td>
                      
                       
                       
@@ -107,10 +72,10 @@
                     </tr>
   
                     <tr>
-                      <td colspan="1" rowspan="12">SM1</td>
-                      <td colspan="2">Requirement for road works design</td>
+                      <td colspan="1" rowspan="2">EW 1</td>
+                      <td colspan="2">ENVIRONMENTAL MANAGEMENT SYSTEM</td>
                       {{-- <td></td> --}}
-                      <td>7</td>
+                      <td>3</td>
                       <td>0</td>
                       <td>0</td>
                       <td></td>
@@ -119,108 +84,31 @@
                     </tr>
   
                     <tr>
-                      <td >Traffic study</td>
-                      <td rowspan="7">CJ</td>
-                      <td>1</td>
+                      <td>Provision of EPW in contract (Design Stage)</td>
+                      <td rowspan="1">CSFJ</td>
+                      <td>3</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
-                    <tr>
-                      <td >Site investigation data</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
+                    
+
+                    
 
                     <tr>
-                      <td >response to public</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-  
-                    <tr>
-                      <td >Survey drawing</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >Flood records</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >Value Management</td>
-                      <td>1</td>
-                      {{-- <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td> --}}
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >As Built Drawings</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >Accident Reports</td>
-                      <td>CSFJ</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >Structure Replacement</td>
-                      <td rowspan="3">CJ</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >Forensic Report</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >Pavement Evaluation</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td colspan="1" rowspan="9">SM2</td>
-                      <td colspan="2">ROAD ALIGNMENT</td>
+                      <td colspan="1" rowspan="3">EW 2</td>
+                      <td colspan="2">STORMWATER MANAGEMENT</td>
                       {{-- <td></td> --}}
-                      <td>6</td>
+                      <td>2</td>
                       <td>0</td>
                       <td>0</td>
                       <td></td>
                       
                       
                     </tr>
+
+                    
   
                     {{-- <tr>
                       <td rowspan="9">SM2</td>
@@ -233,63 +121,71 @@
                     </tr> --}}
 
                     <tr>
-                      <td >Slope not more tdan 6berms</td>
-                      <td></td>
+                      <td >Develop a stormwater management documents and frawing plans</td>
+                      <td rowspan="2">CKAS</td>
                       <td>1</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
-                      <td >cut slope not ste</td>
-                      <td></td>
+                      <td >Develop a stromwater management plan for the site using stormwater</td>
+                      {{-- <td></td> --}}
                       <td>1</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
-                    <tr>
-                      <td >cut slope not ste</td>
+                    
+                    <tr >
+                      <td colspan="3"> SUB TOTAL EW POINT</td>
+                      <td>5</td>
                       <td></td>
-                      <td>1</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td>AE</td>
+                      <td colspan="6" align="left">ACCESS & EQUITY</td>
+                     
+                      
+                      
+                      
+                    </tr>
+  
+                    <tr>
+                      <td colspan="1" rowspan="5">AE 1</td>
+                      <td colspan="2">SAFETY AUDIT</td>
+                      {{-- <td></td> --}}
+                      <td>5</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >Road Safety Audit (During Design Stage)</td>
+                      <td></td>
+                      <td>3</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
+
                     <tr>
-                      <td >cut slope not ste</td>
+                      <td >Road Safety Audit (During Construction Stage)</td>
                       <td></td>
-                      <td>1</td>
+                      <td>3</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
+
                     <tr>
-                      <td >cut slope not ste</td>
-                      <td></td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-                    <tr>
-                      <td >cut slope not ste</td>
-                      <td></td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-                    <tr>
-                      <td >cut slope not ste</td>
-                      <td></td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-                    <tr>
-                      <td >cut slope not ste</td>
+                      <td >Additional Audit For Traffic Management Safety Report During Construction</td>
                       <td></td>
                       <td>1</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -298,8 +194,32 @@
                     </tr>
 
                     <tr>
-                      <td colspan="1" rowspan="7">SM3</td>
-                      <td colspan="2">SITE VEGETATION</td>
+                      <td >Road Safety Audit (During Operational Stage)</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td colspan="3"> SUB TOTAL AE POINT</td>
+                      <td>5</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+
+                    <tr>
+                      <td>CA</td>
+                      <td colspan="6" align="left">CONSTRUCTION ACTIVITY</td>
+                      
+                    </tr>
+                    
+
+                    <tr>
+                      <td colspan="1" rowspan="2">CA 1</td>
+                      <td colspan="2">REQUIREMENT FOR ROAD WORKS DESIGN</td>
                       {{-- <td></td> --}}
                       <td>3</td>
                       <td>0</td>
@@ -310,23 +230,36 @@
                     </tr>
 
                     <tr>
-                      <td >Slope not more tdan 6berms</td>
+                      <td >MS ISO 9001:2008 or (latest version) certification for main contractor</td>
                       <td></td>
-                      <td>1</td>
+                      <td>3</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="1" rowspan="3">CA 2</td>
+                      <td colspan="2">OCCUPTIONAL HEALTH AND SAFETY MANAGEMENT SYSTEM</td>
+                      {{-- <td></td> --}}
+                      <td>3</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >OHSAS 18001:2007 0r (latest version) certification for main contractor</td>
+                      <td></td>
+                      <td>2</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
-                      <td >cut slope not ste</td>
-                      <td></td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-                    <tr>
-                      <td >cut slope not ste</td>
+                      <td >To provide site safety and health officer with certification by DOSH</td>
                       <td></td>
                       <td>1</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -335,7 +268,37 @@
                     </tr>
 
                     <tr>
-                      <td >cut slope not ste</td>
+                      <td colspan="1" rowspan="5">CA 3</td>
+                      <td colspan="2">OCONSTRUCTION WASTE MANAGEMENT PLAN	</td>
+                      {{-- <td></td> --}}
+                      <td>4</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >Create, establish, implement and maintain a formal construction waste management plan during road construction</td>
+                      <td></td>
+                      <td>2</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Provision of Waste Management Plan in the contract (BQ)</td>
+                      <td></td>
+                      <td>2</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Provide a designated location to segregate construction waste on-site</td>
                       <td></td>
                       <td>1</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -344,7 +307,7 @@
                     </tr>
 
                     <tr>
-                      <td >cut slope not ste</td>
+                      <td >Appoint the licensed contractor(s) to collect the construction waste </td>
                       <td></td>
                       <td>1</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -353,7 +316,28 @@
                     </tr>
 
                     <tr>
-                      <td >cut slope not ste</td>
+                      <td colspan="1" rowspan="4">CA 4</td>
+                      <td colspan="2">TRAFFIC MANAGEMENT PLAN</td>
+                      {{-- <td></td> --}}
+                      <td>4</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >Create, establish and implement a formal traffic management plan during Design and road construction stage</td>
+                      <td></td>
+                      <td>2</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Provision of Traffic Management Officer in the contract document (BQ)</td>
                       <td></td>
                       <td>1</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -362,8 +346,17 @@
                     </tr>
 
                     <tr>
-                      <td colspan="1" rowspan="4">SM4</td>
-                      <td colspan="2">NOISE MITIGATION PLAN</td>
+                      <td >Provision of third party auditor for Traffic Management Plan (TMP)</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="1" rowspan="2">CA 5</td>
+                      <td colspan="2">SITE ROUTINE MAINTENANCE PLAN 	</td>
                       {{-- <td></td> --}}
                       <td>2</td>
                       <td>0</td>
@@ -374,7 +367,51 @@
                     </tr>
 
                     <tr>
-                      <td >Slope not more tdan 6berms</td>
+                      <td >Create, establish, implement routine maintenanace for road project </td>
+                      <td></td>
+                      <td>2</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="1" rowspan="2">CA 6</td>
+                      <td colspan="2">HOUSEKEEPING 	</td>
+                      {{-- <td></td> --}}
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >"Provision Housekeeping implementation in the contract document/ BQ
+                        OR
+                        Establish and implement housekeeping during construction "</td>
+                      <td></td>
+                      <td>2</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="1" rowspan="4">CA 7</td>
+                      <td colspan="2">HOUSEKEEPING 	</td>
+                      {{-- <td></td> --}}
+                      <td>4</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >Perform scheduled maintenance of construction machineries</td>
                       <td></td>
                       <td>2</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -382,7 +419,7 @@
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
-                      <td >cut slope not ste</td>
+                      <td >Use high performance machineries with low fuel consumption and low air emission</td>
                       <td></td>
                       <td>2</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -390,7 +427,7 @@
                       <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
-                      <td >cut slope not ste</td>
+                      <td >Provision of ESCP and Environmental Monitoring Report (EMR) – (eg. Water/ Air/ Noise Quality ) in the contract</td>
                       <td></td>
                       <td>2</td>
                       <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
@@ -399,8 +436,8 @@
                     </tr>
 
                     <tr >
-                      <td colspan="3"> SUB TOTAL SM POINT</td>
-                      <td>18</td>
+                      <td colspan="3"> SUB TOTAL CA POINT</td>
+                      <td>22</td>
                       <td></td>
                       <td></td>
                       <td></td>
@@ -411,7 +448,7 @@
 
                 <div align="center" class="mt-3">
                   <button class="btn btn-primary" type="submit" title="Simpan">Batal</button>
-                  <a href="/verifikasi_permarkahan_jalan/isi_skor_kad_verifikasi2" type="button" class="btn btn-primary">Simpan</a>          
+                  <a href="/verifikasi_permarkahan_jalan/isi_skor_kad_verifikasi4" type="button" class="btn btn-primary">Simpan</a>          
                 </div>
       </form>
       </div>   
