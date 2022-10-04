@@ -8,7 +8,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Paparan Senarai Lantikan Pemudah Cara
+                        Paparan Senarai Lantikan Penilai Jalan
                     </li>
                 </ol>
             </nav>
@@ -73,7 +73,7 @@
                         <input type="checkbox" value="Lantik" id="lantik" name="lantik">
                     </td>
                     <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{id}" type="button" class="btn btn-warning">Kemaskini Pemudah Cara</a>
+                        <a href="/verifikasi_permarkahan_gpss/penilai_jalan_verifikasi_gpss/create" type="button" class="btn btn-warning">Kemaskini Penilai Jalan</a>
                     </td> 
                 </tr>
                     @endforeach

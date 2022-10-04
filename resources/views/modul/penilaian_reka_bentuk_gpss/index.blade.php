@@ -30,7 +30,7 @@
                         <label for="nama_projek">Nama Projek:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
+                        <input type="text" id="myInput" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
                     </div>
                     <div class="col-md-3">
                         <button class="btn btn-warning btn-block">Carian</button>
@@ -55,7 +55,7 @@
 
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="myTable">
                 {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
@@ -86,7 +86,7 @@
                          </select>
                     </td> 
                     <td style="text-align: center">{{ $p->nama }}
-                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
+                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{{$p->id}}" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
                     </td>
                     
                 </tr>
@@ -96,6 +96,18 @@
             </table>
         </div>
     </div>
+
+    <!--Search bar-->
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+    </script>
 @endsection
 
 

@@ -167,7 +167,7 @@
 
         <div>
           <!-- Design stage -->
-        <div class="mb-3 form-group row">
+        {{-- <div class="mb-3 form-group row">
           <label class="col-sm-5 col-form-label text-black">Prepared by: (Design Stage)</label>
               <div class="col-sm-5">
                   <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
@@ -186,12 +186,12 @@
                 <div class="col-sm-5">
                     <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
                 </div>
-        </div>
+        </div> --}}
         </div>
   
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian" type="button" class="btn btn-secondary">Hantar</a>          
         </div>
   
       </div>

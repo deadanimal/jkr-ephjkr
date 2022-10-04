@@ -10,7 +10,7 @@
                         <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}" class="text-secondary">Penilaian Verifikasi Pemarkahan GPSS</a>
                     </li>
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Melantik Pemudah Cara
+                        Melantik Penilai Jalan
                     </li>
                 </ol>
             </nav>
@@ -147,7 +147,7 @@
                         </div>
                         {{--Kategori--}}
                         <div class="col-sm-10">
-                            <input class="form-control" type="hidden" name="kategori" value="verifikasi_gpss" />
+                            <input class="form-control" type="hidden" name="kategori" value="penilai_jalan_gpss" />
                         </div>
                         
                         <!--Button Daftar-->
@@ -155,7 +155,7 @@
                         <!--Button Daftar (TOOLTIPS)-->
                         <div class="text-center">
                             <button class="btn btn-warning" data-toggle="tooltip" data-placement="center"
-                            title="Daftar Pemudah Cara" type="submit">Lantik Pemudah Cara</button>
+                            title="Daftar Pemudah Cara" type="submit">Lantik Penilai Jalan</button>
                         </div>
                     </form>
                 </div>

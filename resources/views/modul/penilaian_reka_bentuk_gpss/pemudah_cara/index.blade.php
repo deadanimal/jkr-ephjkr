@@ -52,7 +52,7 @@
                     <th scope="col">Email</th>
                     <th scope="col">Disiplin</th>
                     <th scope="col">Lantik</th>
-                    <th></th>
+                    <th scope="col">Tindakan</th>
                     
                 </tr>
             </thead>
@@ -72,9 +72,25 @@
                     <td align="center">
                         <input type="checkbox" value="Lantik" id="lantik" name="lantik">
                     </td>
-                    <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create" type="button" class="btn btn-warning">Kemaskini Pemudah Cara</a>
-                    </td> 
+                    <td>
+                        <div class="row">
+                            <div class="col-auto">
+                                <a href="/penilaian_reka_bentuk_gpss/edit_pemudah_cara/{{$pc->id}}/edit"
+                                    class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <form action="/penilaian_reka_bentuk_gpss/delete_pemudah_cara/{{$pc->id}}" method="post">
+                                    @method('DELETE')
+                                    @csrf
+                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </td>
+                    {{-- <td style="text-align: center">
+                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{{$pc->id}}" type="button" class="btn btn-warning" >Kemaskini</a>
+                    </td> --}}
+                 
                 </tr>
                     @endforeach
                     

@@ -92,46 +92,47 @@ class VerifikasiPermarkahanGpssController extends Controller
         //
     }
 
-    // papar senarai pemudah cara
+
+     // papar senarai pemudahcara
     public function papar_senarai_pemudah_cara_verifikasi()
-     {
-       //papar table projek with button melantik pemudah cara
-       //should be isi form pemudahcara - create()
-
-       $pemudah_cara = PemudahCara::all();
-         
-         return view('modul.verifikasi_permarkahan_gpss.pemudah_cara_verifikasi_gpss.index', [
-            'pemudah_cara'=> $pemudah_cara
-         ]);
-     }
-
-
-    // form pemudah cara
-    public function pemudah_cara_verifikasi_gpss($id) 
     {
-        $pemudah_cara = PemudahCara::find($id);
-        return view('modul.verifikasi_permarkahan_gpss.pemudah_cara_verifikasi_gpss.create', compact('pemudah_cara','id'));
+      //papar table projek with button melantik pemudahcara
+      //should be isi form pemudahcara - create()
+
+      $pemudah_cara = PemudahCara::all();
+        
+        return view('modul.verifikasi_permarkahan_gpss.pemudah_cara_verifikasi_gpss.index', [
+           'pemudah_cara'=> $pemudah_cara
+        ]);
     }
 
-    // store pemudah cara
-    public function melantik_pemudah_cara_verifikasi_gpss(Request $request, $id)
-    {
-        // submit form melantik pemudah cara
-        $pemudah_cara = new PemudahCara;
-        $pemudah_cara->nama = $request->input('nama');
-        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
-        $pemudah_cara->no_tel = $request->input('no_tel');
-        $pemudah_cara->no_fax = $request->input('no_fax');
-        $pemudah_cara->email = $request->input('email');
-        $pemudah_cara->disiplin = $request->input('disiplin');
-        $pemudah_cara->kategori = $request->kategori;
-        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+
+   // form pemudahcara
+   public function pemudah_cara_verifikasi_gpss($id) 
+   {
+       $pemudah_cara = PemudahCara::find($id);
+       return view('modul.verifikasi_permarkahan_gpss.pemudah_cara_verifikasi_gpss.create', compact('pemudah_cara','id'));
+   }
+
+   // store pemudahcara
+   public function melantik_pemudah_cara_verifikasi_gpss(Request $request, $id)
+   {
+       // submit form melantik pemudahcara
+       $pemudah_cara = new PemudahCara;
+       $pemudah_cara->nama = $request->input('nama');
+       $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
+       $pemudah_cara->no_tel = $request->input('no_tel');
+       $pemudah_cara->no_fax = $request->input('no_fax');
+       $pemudah_cara->email = $request->input('email');
+       $pemudah_cara->disiplin = $request->input('disiplin');
+       $pemudah_cara->kategori = $request->kategori;
+       alert()->success('Pemudah Cara berjaya didaftar.', 'Berjaya');
 
 
-        $pemudah_cara->save();
+       $pemudah_cara->save();
 
-        return redirect('/verifikasi_permarkahan_gpss/papar_senarai_pemudah_cara_verifikasi');
-    }
+       return redirect('/verifikasi_permarkahan_gpss/papar_senarai_pemudah_cara_verifikasi');
+   }
 
     public function skor_kad()
     {
@@ -166,5 +167,94 @@ class VerifikasiPermarkahanGpssController extends Controller
         alert()->success('Markah disimpan', 'Berjaya');
         
         return redirect('/verifikasi_permarkahan_gpss/skor_verifikasi_arkitek_page2/create');
+    }
+
+    // Sekretariat Views
+
+    // papar senarai penilai_jalan
+    public function papar_senarai_penilai_jalan()
+     {
+       //papar table projek with button melantik penilai_jalan
+       //should be isi form pemudahcara - create()
+
+       $pemudah_cara = PemudahCara::all();
+         
+         return view('modul.verifikasi_permarkahan_gpss.penilai_jalan_verifikasi_gpss.index', [
+            'pemudah_cara'=> $pemudah_cara
+         ]);
+     }
+
+    // form penilai_jalan
+    public function penilai_jalan_verifikasi_gpss($id) 
+    {
+        $pemudah_cara = PemudahCara::find($id);
+        return view('modul.verifikasi_permarkahan_gpss.penilai_jalan_verifikasi_gpss.create', compact('pemudah_cara','id'));
+    }
+
+    // store penilai_jalan
+    public function melantik_penilai_jalan_verifikasi_gpss(Request $request, $id)
+    {
+        // submit form melantik penilai_jalan
+        $pemudah_cara = new PemudahCara;
+        $pemudah_cara->nama = $request->input('nama');
+        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
+        $pemudah_cara->no_tel = $request->input('no_tel');
+        $pemudah_cara->no_fax = $request->input('no_fax');
+        $pemudah_cara->email = $request->input('email');
+        $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->kategori = $request->kategori;
+        alert()->success('Penilai Jalan berjaya didaftar.', 'Berjaya');
+
+
+        $pemudah_cara->save();
+
+        return redirect('/verifikasi_permarkahan_gpss/papar_senarai_penilai_jalan');
+    }
+
+    public function penilaian_verifikasi()
+    {
+        
+        // below view should be in paparan senarai projek for pemudah cara, temporary
+        $projeks = Projek::all();
+
+        return view('modul.verifikasi_permarkahan_gpss.penilaian_verifikasi.index',[
+            'projeks'=> $projeks,
+
+        ]);
+    }
+    
+
+    public function pengesahan_penilaian_verifikasi()
+    {
+        // get all skor_penilaian_arkitek data
+        $projeks = Projek::all();
+
+        // show(method)
+        return view('modul.verifikasi_permarkahan_gpss.pengesahan_penilaian_verifikasi.index',[
+            'projeks'=> $projeks,
+
+        ]);
+    }
+
+     #jana keputusan(skor kad)
+     public function jana_keputusan_skor_kad()
+     {
+         // index jana keputusan
+         $gpss_bangunan = KriteriaGpssBangunan::all();
+         $projeks = Projek::all();
+ 
+         return view('modul.verifikasi_permarkahan_gpss.jana_keputusan_skor_kad.index',compact('projeks','gpss_bangunan'));
+     }
+
+     public function permohonan_rayuan_verifikasi()
+    {
+
+        return view('modul.verifikasi_permarkahan_gpss.permohonan_rayuan_verifikasi.index');
+    }
+
+    public function pengesahan_rayuan_verifikasi()
+    {
+
+        return view('modul.verifikasi_permarkahan_gpss.pengesahan_rayuan_verifikasi.index');
     }
 }
