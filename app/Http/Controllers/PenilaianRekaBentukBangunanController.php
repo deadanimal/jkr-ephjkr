@@ -16,6 +16,7 @@ use Spatie\Permission\Models\Role;
 use Spatie\Permission\PermissionRegistrar;
 
 
+
 use Illuminate\Http\Request;
 
 class PenilaianRekaBentukBangunanController extends Controller
@@ -36,13 +37,19 @@ class PenilaianRekaBentukBangunanController extends Controller
         $projeks = Projek::all();
         // Contoh
 
-        // $user = $request->user();
-        // if($user->hasRole('alpha') or $user->hasRole('beta')) {
+        $user = $request->user();
+
+        if($user->hasRole('Pengguna') or $user->hasRole('Ketua Pasukan') or $user->hasRole('Sekretariat') or $user->hasRole('Pemudah Cara 1')) {
+            return view('modul.penilaian_reka_bentuk_bangunan.index',['projeks'=>$projeks]);
+        // } else {
+        //     return view('tak_leh_viewla');
+        // }
+
+        // $user2 = $request->user();
+        // if($user2->hasRole('Pengurusan Atasan')) {
         //     return view('modul.penilaian_reka_bentuk_bangunan.index',[
         //         'projeks'=>$projeks
         //     ]);
-        // } else {
-        //     return view('tak_leh_viewla');
         // }
 
         // $user = $request->user();
@@ -54,20 +61,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         //     return view('modul.penilaian_reka_bentuk_bangunan.index');
         // }
 
-        // Reset cached roles and permissions
-        // app()[PermissionRegistrar::class]->forgetCachedPermissions();
-
-        // create permissions
-        // Permission::create(['name' => 'Ketua Pasukan']);
-
-        // create roles and assign existing permissions
-        // $role1 = Role::where(['name' => 'Ketua Pasukan'])->get()->first();
-        // $role1->givePermissionTo('modul.penilaian_reka_bentuk_bangunan.index');
-        // $role1->givePermissionTo('delete articles');
-
-        // $role2 = Role::create(['name' => 'Penolong Ketua Pasukan']);
-        // $role2->givePermissionTo('publish articles');
-        // $role2->givePermissionTo('unpublish articles');
+        
 
 
 
@@ -95,6 +89,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
 
     }
+}
 
     /**
      * Show the form for creating a new resource.

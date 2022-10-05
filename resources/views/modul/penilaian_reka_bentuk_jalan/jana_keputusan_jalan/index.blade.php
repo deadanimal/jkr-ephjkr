@@ -111,7 +111,7 @@
                         <td colspan="1">EW</td>
                         <td colspan="2">ENVIRONMENT & WATER</td>
                         {{-- <td></td> --}}
-                        <td>5</td>
+                        <td>4</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
@@ -120,7 +120,7 @@
                         <td colspan="1">AE</td>
                         <td colspan="2">ACCESS & EQUITY</td>
                         {{-- <td></td> --}}
-                        <td>5</td>
+                        <td>3</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
@@ -129,7 +129,7 @@
                         <td colspan="1">CA</td>
                         <td colspan="2">CONSTRUCTION ACTIVITIES</td>
                         {{-- <td></td> --}}
-                        <td>22</td>
+                        <td>19</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
@@ -164,7 +164,7 @@
                       <tr>
                         <td colspan="3">TOTAL CORE POINTS	</td>
                         {{-- <td></td> --}}
-                        <td>74</td>
+                        <td>68</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
