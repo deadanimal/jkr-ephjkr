@@ -60,11 +60,11 @@
                                     <!--LOOPING TABLES-->
                                     @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
-                                                <td style="text-align: center; vertical-align: middle;">{{ $p->id }}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{ $loop->iteration }}</td>
                                                 {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->id_ruj_skala}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                             <td style="text-align: center; vertical-align: middle;">
                                                 <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/muat_turun_sijil/{{$p->id}}" role="button"

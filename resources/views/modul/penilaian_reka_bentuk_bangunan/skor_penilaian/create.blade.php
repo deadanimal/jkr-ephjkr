@@ -2608,8 +2608,6 @@
                                 <td></td>
                                 <td>0</td>
                                 <td><input onblur="findTotalMR_FL_PUN()" class="MR_FL_PUN" type="number" min="0" max="0" id="markahFL32_MR_PUN" name="markahFL32_MR_PUN"></td>
-                                <td></td>
-                                <td></td>
                                 <td>
                                     <span>&#183; Tidak berkaitan (TB)</span><br>
                                 </td>
@@ -2634,8 +2632,6 @@
                                 <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="2" id="markahFL33_MR" name="markahFL33_MR"autocapitalize="off" /></td>
                                 <td>2</td>
                                 <td><input onblur="findTotalMR_FL_PUN()" class="MR_FL_PUN" type="number" min="0" max="2" id="markahFL33_MR_PUN" name="markahFL33_MR_PUN"></td>
-                                <td></td>
-                                <td></td>
                                 <td>
                                     <span>&#183; Rangka Preventive Maintenance Plan</span><br>
                                     <span>&#183; Surat Komitmen pemilik bangunan untuk menyediakan pelan
@@ -2662,8 +2658,6 @@
                                 <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="2" id="markahFL34_MR" name="markahFL34_MR" autocapitalize="off" /></td>
                                 <td>2</td>
                                 <td><input onblur="findTotalMR_FL_PUN()" class="MR_FL_PUN" type="number" min="0" max="2" id="markahFL34_MR_PUN" name="markahFL34_MR_PUN"></td>
-                                <td></td>
-                                <td></td>
                                 <td> 
                                     <span>&#183; Surat Aku Janji pemilik bangunan untuk menyediakan manual pengguna</span><br>
                                 </td>
@@ -2686,8 +2680,6 @@
                                 <td><input  id="totalMR_FL" type="number" min="0" max="5" autocapitalize="off" id="markahTOTAL_FL_MR" name="markahTOTAL_FL_MR"/></td>
                                 <td>5</td>
                                 <td><input  id="totalMR_FL_PUN" type="number" min="0" max="5" autocapitalize="off" id="markahTOTAL_FL_MR_PUN" name="markahTOTAL_FL_MR_PUN"/></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr>  

@@ -18,9 +18,9 @@
             <div class="col-12">
                 <div class="card-header">
                     <div class="row mt-3">
-                        <div class="col text-end">
-                            <a href="" class="btn btn-primary">Tambah</a>
-                        </div>
+                        {{-- <div class="col text-end">
+                            <a href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create/{id}" class="btn btn-primary">Tambah</a>
+                        </div> --}}
                     </div>
                     <div class="mt-5 row">
                                 <table class="table table-bordered line-table" style="width:100%">
@@ -44,21 +44,9 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->id}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->nama}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$p->namaSyarikat}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->syarikat_cawangan}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">Ketua Pemudah Cara</td>
                                                 <td>
-                                                    {{-- <div class="col-auto">
-                                                        <form action="/penilaian_reka_bentuk_bangunan/pemudah_cara/{{$p->id}}" method="post">
-                                                            @method('DELETE')
-                                                            @csrf
-                                                            <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
-                                                        </form>
-                                                        <form action="/penilaian_reka_bentuk_bangunan/pemudah_cara/{{$p->id}}" method="post">
-                                                            @method('DELETE')
-                                                            @csrf
-                                                            <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
-                                                        </form>
-                                                    </div> --}}
                                                     <div class="row">
                                                         <div class="col-auto">
                                                             <a href="/penilaian_reka_bentuk_bangunan/pemudah_cara/edit/{{$p->id}}"

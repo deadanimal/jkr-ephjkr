@@ -180,18 +180,22 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function papar_pemudah_cara()
     {
         $projeks = Projek::all();
+        $pemudah_cara = PemudahCara::all();
         // $projeks = new Projek;
         // $projeks = Projek::find($id);
+        // $pemudah_cara = PemudahCara::find($id);
         // $pemudah_cara = PemudahCara::find($id);
         
 
         // papar table projek with button melantik pemudah cara
         // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
-        //     'projeks'=>$projeks
+        //     'projeks'=>$projeks,
+        //     'pemudah_cara'=>$pemudah_cara
         // ]);
 
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',
-        compact('projeks')
+        compact('projeks'),
+        compact('pemudah_cara')
         );
     }
 

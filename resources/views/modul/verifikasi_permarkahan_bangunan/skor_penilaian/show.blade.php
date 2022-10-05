@@ -128,7 +128,7 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL1_MR}}</td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL1_MMV" name="markahTL1_MMV" /></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -157,11 +157,11 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL2_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MMV" name="markahTL2_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MMV" name="markahTL2_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL2_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MMV_PUN" name="markahTL2_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MMV_PUN" name="markahTL2_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -190,11 +190,11 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL3_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MMV" name="markahTL3_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MMV" name="markahTL3_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL3_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MMV_PUN" name="markahTL3_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MMV_PUN" name="markahTL3_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -221,11 +221,11 @@
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL32_MR}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MMV" name="markahTL32_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MMV" name="markahTL32_MMV" /></td>
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL32_MR_PUN}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MMV_PUN" name="markahTL32_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MMV_PUN" name="markahTL32_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -253,11 +253,11 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL4_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MMV" name="markahTL4_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MMV" name="markahTL4_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL4_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MMV_PUN" name="markahTL4_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MMV_PUN" name="markahTL4_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -283,7 +283,7 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL5_MR}}</td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL5_MMV" name="markahTL5_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL5_MMV" name="markahTL5_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL5_MR_PUN}}</td>
                                 <td></td>
@@ -313,13 +313,13 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL6_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MMV" name="markahTL6_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MMV" name="markahTL6_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL6_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL6_MMV_PUN" name="markahTL6_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL6_MMV_PUN" name="markahTL6_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL6_MMV_SEDIA" name="markahTL6_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL6_MMV_SEDIA" name="markahTL6_MMV_SEDIA" /></td>
                                 <td>
                                     <span> &#40;a&#41; Baru</span><br>
                                     <span>&#183; Laporan sistem perparitan</span><br>
@@ -348,13 +348,13 @@
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL7_MR}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL7_MMV" name="markahTL7_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL7_MMV" name="markahTL7_MMV" /></td>
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL7_MR_PUN}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL7_MMV_PUN" name="markahTL7_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL7_MMV_PUN" name="markahTL7_MMV_PUN" /></td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL7_MMV_SEDIA" name="markahTL7_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL7_MMV_SEDIA" name="markahTL7_MMV_SEDIA" /></td>
                                 <td>
                                     <span>a&#41; Baru</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
@@ -404,13 +404,13 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL81_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MMV" name="markahTL81_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MMV" name="markahTL81_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL81_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MMV_PUN" name="markahTL81_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MMV_PUN" name="markahTL81_MMV_PUN" /></td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MMV_SEDIA" name="markahTL81_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MMV_SEDIA" name="markahTL81_MMV_SEDIA" /></td>
                                 <td>
                                     <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
                                     <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
@@ -435,13 +435,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL82_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV" name="markahTL82_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV" name="markahTL82_MMV" /></td>
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL82_MR_PUN}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV_PUN" name="markahTL82_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV_PUN" name="markahTL82_MMV_PUN" /></td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV_SEDIA" name="markahTL82_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL82_MMV_SEDIA" name="markahTL82_MMV_SEDIA" /></td>
                                 <td>
                                     <span> &#40;a&#41; Pelan tapak siap bina yang telah disahkan oleh Arkitek Bertauliah</span><br>
                                     Nyatakan sekiranya ada perubahan
@@ -466,13 +466,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL83_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MMV" name="markahTL83_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MMV" name="markahTL83_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL83_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MMV_PUN" name="markahTL83_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MMV_PUN" name="markahTL83_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL83_MMV_SEDIA" name="markahTL83_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL83_MMV_SEDIA" name="markahTL83_MMV_SEDIA" /></td>
                                 <td>
                                     <span> &#183; Pelan landskap siap bina</span><br>
                                     <span> &#183; Inventori pokok</span><br>
@@ -500,13 +500,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL4_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MMV" name="markahTL84_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MMV" name="markahTL84_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL84_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MMV_PUN" name="markahTL84_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MMV_PUN" name="markahTL84_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MMV_SEDIA" name="markahTL84_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MMV_SEDIA" name="markahTL84_MMV_SEDIA" /></td>
                                 <td>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
@@ -530,13 +530,13 @@
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL85_MR}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MMV" name="markahTL85_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MMV" name="markahTL85_MMV" /></td>
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL85_MR_PUN}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MMV_PUN" name="markahTL85_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MMV_PUN" name="markahTL85_MMV_PUN" /></td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MMV_SEDIA" name="markahTL85_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MMV_SEDIA" name="markahTL85_MMV_SEDIA" /></td>
                                 <td>
                                     <span> &#183; Lukisan siap bina</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
@@ -582,13 +582,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL91_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MMV" name="markahTL91_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MMV" name="markahTL91_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL91_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MR_SEDIA" name="markahTL91_MR_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MR_SEDIA" name="markahTL91_MR_SEDIA" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MMV_SEDIA" name="markahTL91_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MMV_SEDIA" name="markahTL91_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Method statement yang telah disahkan oleh
                                         pegawai penguasa (SO)</span><br>
@@ -616,13 +616,13 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL92_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MMV" name="markahTL92_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MMV" name="markahTL92_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL92_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MMV_PUN" name="markahTL92_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MMV_PUN" name="markahTL92_MMV_PUN" /></td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MMV_SEDIA" name="markahTL92_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MMV_SEDIA" name="markahTL92_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
@@ -650,13 +650,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL10_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL10_MMV" name="markahTL10_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL10_MMV" name="markahTL10_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTL10_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL10_MR_SEDIA" name="markahTL10_MR_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL10_MMV_PUN" name="markahTL10_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL10_MMV_SEDIA" name="markahTL10_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="0" autocapitalize="off" id="markahTL10_MMV_SEDIA" name="markahTL10_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Lukisan siap bina tempat letak kenderaan dan penanda</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
@@ -745,13 +745,13 @@
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT1_MR}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV" name="markahKT1_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV" name="markahKT1_MMV" /></td>
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT1_MR_PUN}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV_PUN" name="markahKT1_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV_PUN" name="markahKT1_MMV_PUN" /></td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV_SEDIA" name="markahKT1_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV_SEDIA" name="markahKT1_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
@@ -798,13 +798,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT21_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV" name="markahKT21_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV" name="markahKT21_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT21_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV_PUN" name="markahKT21_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV_PUN" name="markahKT21_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV_SEDIA" name="markahKT21_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV_SEDIA" name="markahKT21_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
@@ -828,13 +828,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT22_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV" name="markahKT22_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV" name="markahKT22_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT22_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV_PUN" name="markahKT22_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV_PUN" name="markahKT22_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV_SEDIA" name="markahKT22_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV_SEDIA" name="markahKT22_MMV_SEDIA" /></td>
                                 <td>
                                     <span> &#183; Lukisan siap bina</span><br>
                                 </td>
@@ -878,11 +878,11 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT31_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT31_MMV" name="markahKT31_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT31_MMV" name="markahKT31_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT31_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT31_MMV_PUN" name="markahKT31_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT31_MMV_PUN" name="markahKT31_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -909,13 +909,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT32_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV" name="markahKT32_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV" name="markahKT32_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT32_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV_PUN" name="markahKT32_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV_PUN" name="markahKT32_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV_SEDIA" name="markahKT32_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV_SEDIA" name="markahKT32_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
@@ -940,11 +940,11 @@
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT4_MR}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MMV" name="markahKT4_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MMV" name="markahKT4_MMV" /></td>
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT4_MR_PUN}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MMV_PUN" name="markahKT4_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MMV_PUN" name="markahKT4_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -990,13 +990,13 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT51_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV" name="markahKT51_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV" name="markahKT51_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT51_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV_PUN" name="markahKT51_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV_PUN" name="markahKT51_MMV_PUN" /></td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV_SEDIA" name="markahKT51_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV_SEDIA" name="markahKT51_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1025,13 +1025,13 @@
                                 <td>6</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT52_MR}}</td>
                                 <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV" name="markahKT52_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV" name="markahKT52_MMV" /></td>
                                 <td>6</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT52_MR_PUN}}</td>
                                 <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV_PUN" name="markahKT52_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV_PUN" name="markahKT52_MMV_PUN" /></td>
                                 <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV_SEDIA" name="markahKT52_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV_SEDIA" name="markahKT52_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1060,13 +1060,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT53_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV" name="markahKT53_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV" name="markahKT53_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT53_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV_PUN" name="markahKT53_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV_PUN" name="markahKT53_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV_SEDIA" name="markahKT53_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV_SEDIA" name="markahKT53_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1130,13 +1130,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT61_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV" name="markahKT61_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV" name="markahKT61_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT61_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV_PUN" name="markahKT61_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV_PUN" name="markahKT61_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV_SEDIA" name="markahKT61_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV_SEDIA" name="markahKT61_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1165,13 +1165,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT62_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV" name="markahKT62_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV" name="markahKT62_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT62_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV_PUN" name="markahKT62_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV_PUN" name="markahKT62_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV_SEDIA" name="markahKT62_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV_SEDIA" name="markahKT62_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1201,13 +1201,13 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT7_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV" name="markahKT7_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV" name="markahKT7_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT7_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV_PUN" name="markahKT7_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV_PUN" name="markahKT7_MMV_PUN" /></td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV_SEDIA" name="markahKT7_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV_SEDIA" name="markahKT7_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1236,13 +1236,13 @@
                                 <td>6</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT8_MR}}</td>
                                 <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV" name="markahKT8_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV" name="markahKT8_MMV" /></td>
                                 <td>6</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT8_MR_PUN}}</td>
                                 <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV_PUN" name="markahKT8_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV_PUN" name="markahKT8_MMV_PUN" /></td>
                                 <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV_SEDIA" name="markahKT8_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV_SEDIA" name="markahKT8_MMV_SEDIA" /></td>
                                 {{-- <td colspan="2">
                                     <span>&#183; Mengemukakan lukisan rekabentuk sistem dan simulasi pengiraan
                                         bagi anggaran tenaga baharu yang boleh dihasilkan oleh sistem tersebut</span><br>
@@ -1271,13 +1271,13 @@
                                 <td>10</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT9_MR}}</td>
                                 <td>10</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV" name="markahKT9_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV" name="markahKT9_MMV" /></td>
                                 <td>10</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT9_MR_PUN}}</td>
                                 <td>10</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV_PUN" name="markahKT9_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV_PUN" name="markahKT9_MMV_PUN" /></td>
                                 <td>10</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV_SEDIA" name="markahKT9_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV_SEDIA" name="markahKT9_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1343,13 +1343,13 @@
                                 <td>6</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT101_MR}}</td>
                                 <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT101_MMV" name="markahKT101_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT101_MMV" name="markahKT101_MMV" /></td>
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT101_MR_PUN}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT101_MMV_PUN" name="markahKT101_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT101_MMV_PUN" name="markahKT101_MMV_PUN" /></td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT101_MMV_SEDIA" name="markahKT101_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT101_MMV_SEDIA" name="markahKT101_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1378,13 +1378,13 @@
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT102_MR}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV" name="markahKT102_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV" name="markahKT102_MMV" /></td>
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT102_MR_PUN}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV_PUN" name="markahKT102_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV_PUN" name="markahKT102_MMV_PUN" /></td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV_SEDIA" name="markahKT102_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV_SEDIA" name="markahKT102_MMV_SEDIA" /></td>
                                 <td>
                                     <span> a &#41; Baru</span><br>
                                     <span> &#183; Lukisan siap bina</span><br>
@@ -1416,13 +1416,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT103_MR}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV" name="markahKT103_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV" name="markahKT103_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT103_MR_PUN}}</td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV_PUN" name="markahKT103_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV_PUN" name="markahKT103_MMV_PUN" /></td>
                                 <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV_SEDIA" name="markahKT103_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV_SEDIA" name="markahKT103_MMV_SEDIA" /></td>
                                 {{-- <td>
                                     <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
                                     <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
@@ -1452,13 +1452,13 @@
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT11_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV" name="markahKT11_MMV" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV" name="markahKT11_MMV" /></td>
                                 <td>1</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahKT11_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV_PUN" name="markahKT11_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV_PUN" name="markahKT11_MMV_PUN" /></td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV_SEDIA" name="markahKT11_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV_SEDIA" name="markahKT11_MMV_SEDIA" /></td>
                                 {{-- <td colspan="2">
                                     <span>&#183; Pelan pengujian dan pentauliahan</span><br>
                                 </td> --}}
@@ -1547,11 +1547,11 @@
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB1_MR}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB1_MMV" name="markahSB1_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB1_MMV" name="markahSB1_MMV" /></td>
                                 <td>7</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB1_MR_PUN}}</td>
                                 <td>7</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB1_MMV_PUN" name="markahSB1_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB1_MMV_PUN" name="markahSB1_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -1578,11 +1578,11 @@
                                 <td>7</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB1_MR}}</td>
                                 <td>7</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB2_MMV" name="markahSB2_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB2_MMV" name="markahSB2_MMV" /></td>
                                 <td>7</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB1_MR_PUN}}</td>
                                 <td>7</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB1_MMV_PUN" name="markahSB1_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB1_MMV_PUN" name="markahSB1_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -1610,11 +1610,11 @@
                                 <td>4</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB3_MR}}</td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB3_MMV" name="markahSB3_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB3_MMV" name="markahSB3_MMV" /></td>
                                 <td>4</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB3_MR_PUN}}</td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB3_MMV_PUN" name="markahSB3_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahSB3_MMV_PUN" name="markahSB3_MMV_PUN" /></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -1646,13 +1646,13 @@
                                 <td>4</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB4_MR}}</td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahSB4_MMV" name="markahSB4_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahSB4_MMV" name="markahSB4_MMV" /></td>
                                 <td>4</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahSB4_MR_PUN}}</td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahSB4_MMV_PUN" name="markahSB4_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahSB4_MMV_PUN" name="markahSB4_MMV_PUN" /></td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahSB4_MMV_SEDIA" name="markahSB4_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahSB4_MMV_SEDIA" name="markahSB4_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Pematuhan pelan pengurusan sisa domestik</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
@@ -1736,13 +1736,13 @@
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA1_MR}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPA1_MMV" name="markahPA1_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPA1_MMV" name="markahPA1_MMV" /></td>
                                 <td>3</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA1_MR_PUN}}</td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPA1_MMV_PUN" name="markahPA1_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPA1_MMV_PUN" name="markahPA1_MMV_PUN" /></td>
                                 <td>3</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPA1_MMV_PUN" name="markahPA1_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPA1_MMV_PUN" name="markahPA1_MMV_PUN" /></td>
                                 <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
@@ -1767,13 +1767,13 @@
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA2_MR}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPA2_MMV" name="markahPA2_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPA2_MMV" name="markahPA2_MMV" /></td>
                                 <td>2</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA2_MR_PUN}}</td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPA2_MMV_PUN" name="markahPA2_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPA2_MMV_PUN" name="markahPA2_MMV_PUN" /></td>
                                 <td>2</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPA2_MMV_SEDIA" name="markahPA2_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPA2_MMV_SEDIA" name="markahPA2_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
@@ -1798,13 +1798,13 @@
                                 <td>4</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA3_MR}}</td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahPA3_MMV" name="markahPA3_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahPA3_MMV" name="markahPA3_MMV" /></td>
                                 <td>4</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA3_MR_PUN}}</td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahPA3_MMV_PUN" name="markahPA3_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahPA3_MMV_PUN" name="markahPA3_MMV_PUN" /></td>
                                 <td>4</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahPA3_MMV_SEDIA" name="markahPA3_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="4" autocapitalize="off" id="markahPA3_MMV_SEDIA" name="markahPA3_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
@@ -1827,13 +1827,13 @@
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA32_MR}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA32_MMV" name="markahPA32_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA32_MMV" name="markahPA32_MMV" /></td>
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA32_MR_PUN}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA32_MMV_PUN" name="markahPA32_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA32_MMV_PUN" name="markahPA32_MMV_PUN" /></td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA32_MMV_SEDIA" name="markahPA32_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA32_MMV_SEDIA" name="markahPA32_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Laporan pengujian sistem</span><br>
                                     <span>&#183; Bukti bergambar</span><br>
@@ -1859,13 +1859,13 @@
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA4_MR}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA4_MMV" name="markahPA4_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA4_MMV" name="markahPA4_MMV" /></td>
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA4_MR_PUN}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA4_MMV_PUN" name="markahPA4_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA4_MMV_PUN" name="markahPA4_MMV_PUN" /></td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA4_MMV_SEDIA" name="markahPA4_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA4_MMV_SEDIA" name="markahPA4_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
@@ -1889,13 +1889,13 @@
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA5_MR}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA5_MMV" name="markahPA5_MMV" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA5_MMV" name="markahPA5_MMV" /></td>
                                 <td>5</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahPA5_MR_PUN}}</td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA5_MMV_PUN" name="markahPA5_MMV_PUN" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA5_MMV_PUN" name="markahPA5_MMV_PUN" /></td>
                                 <td>5</td>
-                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA5_MMV_SEDIA" name="markahPA5_MMV_SEDIA" required/></td>
+                                <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="5" autocapitalize="off" id="markahPA5_MMV_SEDIA" name="markahPA5_MMV_SEDIA" /></td>
                                 <td>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
@@ -1968,7 +1968,7 @@
 
                             <tr class="pg-5" style="background-color:#EB5500">
                                 <th>PD</th>
-                                <th colspan="38">PENGURUSAN KUALITI PERSEKITARAN DALAMAN</th>
+                                <th colspan="32">PENGURUSAN KUALITI PERSEKITARAN DALAMAN</th>
                             </tr>
                         </thead>
 
@@ -1980,13 +1980,13 @@
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD1_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD1_MMV" name="markahPD1_MMV" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD1_MMV" name="markahPD1_MMV" /></td>
                             <td>2</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD1_MR_PUN}}</td>
                             <td>2</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD1_MMV_PUN" name="markahPD1_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD1_MMV_PUN" name="markahPD1_MMV_PUN" /></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD1_MMV_PUN" name="markahPD1_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD1_MMV_PUN" name="markahPD1_MMV_PUN" /></td>
                             <td>
                                 <span> a &#41; Baru</span><br>
                                 <span> &#183; Gambar papan tanda dan lokasi larangan merokok</span><br>
@@ -2033,7 +2033,7 @@
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD1_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD21_MMV" name="markahPD21_MMV" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="7" autocapitalize="off" id="markahPD21_MMV" name="markahPD21_MMV" /></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2063,13 +2063,13 @@
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD22_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD22_MMV" name="markahPD22_MMV" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD22_MMV" name="markahPD22_MMV" /></td>
                             <td>2</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD22_MR_PUN}}</td>
                             <td>2</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD22_MMV_PUN" name="markahPD22_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD22_MMV_PUN" name="markahPD22_MMV_PUN" /></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD22_MMV_PUN" name="markahPD22_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD22_MMV_PUN" name="markahPD22_MMV_PUN" /></td>
                             <td>
                                 <span>&#183; Lukisan siap bina</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
@@ -2094,13 +2094,13 @@
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD23_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD23_MMV" name="markahPD23_MMV" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD23_MMV" name="markahPD23_MMV" /></td>
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD23_MR_PUN}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD23_MMV_PUN" name="markahPD23_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD23_MMV_PUN" name="markahPD23_MMV_PUN" /></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD23_MMV_PUN" name="markahPD23_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD23_MMV_PUN" name="markahPD23_MMV_PUN" /></td>
                             <td>
                                 <span>&#183; Lukisan siap bina</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
@@ -2126,13 +2126,13 @@
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD22_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD22_MMV" name="markahPD22_MMV" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD22_MMV" name="markahPD22_MMV" /></td>
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD22_MR_PUN}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD12_MMV_PUN" name="markahPD22_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD12_MMV_PUN" name="markahPD22_MMV_PUN" /></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD22_MMV_PUN" name="markahPD22_MMV_PUN" required/></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD22_MMV_PUN" name="markahPD22_MMV_PUN" /></td>
                             <td>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
@@ -2152,30 +2152,22 @@
                         <tr class="pg-5" align="center">
                             <td>PD2.5</td>
                             <td>Warna cerah di permukaan dinding dan siling</td>
-                            <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" min="0" max="1" autocapitalize="off" id="markahPD25_MSV" name="markahPD25_MSV" required/></td>
-                            <td><input onblur="findTotalMV_PD()" class="sum_mv_pd" type="number" min="0" max="1" autocapitalize="off" id="markahPD25_MMV" name="markahPD25_MMV" required/></td>
-                            <td></td>
-                            <td colspan="2">
-                                            <span>&#183; Katalog dan sampel menunjukkan warna yang dicadangkan</span><br>
-                            </td>
-                            <td colspan="2">
+                            <td>{{$kriteria_phjkr_bangunan->markahPD25_MR}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD25_MMV" name="markahPD25_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD25_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD25_MMV_PUN" name="markahPD25_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD25_MMV_SEDIA" name="markahPD25_MMV_SEDIA" /></td>
+                            <td>
                                 <span>&#183; Bukti bergambar bagi mengesahkan skima warna yang digunakan</span><br>
                             </td>
-                            <td></td>
-                            <td>
+                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2190,15 +2182,7 @@
                         <tr class="pg-5" align="center">
                             <td>PD3</td>
                             <td>Kualiti Visual</td>
-                            <td>
-                                {{-- <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select> --}}
-                            </td>
+                            <td colspan="6"></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -2206,51 +2190,34 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td colspan="2"></td>
-                            <td colspan="2"></td>
                             <td></td>
-                            <td>
-                                <form class="form">
-                                    <label for="form__input" class="form__label">
-                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                        <span id="custom-text">No file chosen, yet.</span>
-                                    </label>
-                                </form>
-                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td colspan="5"></td>
+                            <td colspan="4"></td>
                         </tr>
 
                         <!--PD3.1-->
                         <tr class="pg-5" align="center">
                             <td>PD3.1</td>
                             <td>Faktor Pencahayaan Siang (DF)</td>
-                            <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td colspan="6"></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" min="0" max="2" autocapitalize="off" id="markahPD31_MSV" name="markahPD31_MSV" required/></td>
-                            <td><input onblur="findTotalMV_PD()" class="sum_mv_pd" type="number" min="0" max="2" autocapitalize="off" id="markahPD31_MMV" name="markahPD31_MMV" required/></td>
-                            <td></td>
-                            <td colspan="2">
-                                            <span>&#183; Lukisan tampak dan jadual tingkap</span><br>
-                                            <span>&#183; Pengiraan keluasan lantai yang menunjukkan
-                                                30% daripada NLA yang menunjukkan nilai DF 1.0% - 3.5%</span><br>
-                                            <span>&#183; Laporan simulasi (jika ada)</span><br>
-                            </td>
-                            <td colspan="2">
+                            <td>{{$kriteria_phjkr_bangunan->markahPD32_MR}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" clas2="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD31_MMV" name="markahPD31_MMV" /></td>
+                            <td>2</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD32_MR_PUN}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" clas2="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD31_MMV_PUN" name="markahPD31_MMV_PUN" /></td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" clas2="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD31_MMV_SEDIA" name="markahPD31_MMV_SEDIA" /></td>
+                            <td>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            <td></td>
-                            <td>
+                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2265,34 +2232,24 @@
                         <tr class="pg-5" align="center">
                             <td>PD3.2</td>
                             <td>Menggunakan rak cahaya (light shelves)</td>
-                            <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td colspan="6"></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" min="0" max="2" autocapitalize="off" id="markahPD32_MSV" name="markahPD32_MSV" required/></td>
-                            <td><input onblur="findTotalMV_PD()" class="sum_mv_pd" type="number" min="0" max="2" autocapitalize="off" id="markahPD32_MMV" name="markahPD32_MMV" required/></td>
-                            <td></td>
-                            <td colspan="2">
-                                            <span>&#183; Rekabentuk rak cahaya</span><br>
-                                            <span>&#183; Lukisan terperinci</span><br>
-                                            <span>&#183; Laporan simulasi, jika ada</span><br>
-                            </td>
-                            <td colspan="2">
+                            <td>{{$kriteria_phjkr_bangunan->markahPD32_MR}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD32_MMV" name="markahPD32_MMV" /></td>
+                            <td>2</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD32_MR_PUN}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD32_MMV_PUN" name="markahPD32_MMV_PUN" /></td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD32_MMV_SEDIA" name="markahPD32_MMV_SEDIA" /></td>
+                            <td>
                                 <span>&#183; Lukisan pemasangan</span><br>
                                 <span>&#183; Lukisan siap bina</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                             </td>
-                            <td></td>
-                            <td>
+                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2307,32 +2264,24 @@
                         <tr class="pg-5" align="center">
                             <td>PD3.3</td>
                             <td>Kawalan Tahap Kesilauan</td>
-                            <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" min="0" max="1" autocapitalize="off" id="markahPD33_MSV" name="markahPD33_MSV" required/></td>
-                            <td><input onblur="findTotalMV_PD()" class="sum_mv_pd" type="number" min="0" max="1" autocapitalize="off" id="markahPD33_MMV" name="markahPD33_MMV" required/></td>
-                            <td></td>
-                            <td colspan="2">
-                                            <span>&#183; Katalog dan sampel menunjukkan bidai yang dicadangkan</span><br>
-                            </td>
-                            <td colspan="2">
+                            <td>{{$kriteria_phjkr_bangunan->markahPD33_MR}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD33_MMV" name="markahPD33_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD33_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD33_MMV_PUN" name="markahPD33_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD33_MMV_SEDIA" name="markahPD33_MMV_SEDIA" /></td>
+                            <td>
                                 <span>&#183; Lukisan siap bina dan bukti bergambar
                                     bagi mengesahkan bidai yang digunakan</span><br>
                                 <span>&#183; Laporan prestasi pencahayaan (jika ada)</span><br>
                             </td>
-                            <td></td>
-                            <td>
+                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2347,34 +2296,23 @@
                         <tr class="pg-5" align="center">
                             <td>PD3.4</td>
                             <td>Akses visual kepada pandangan di luar</td>
-                            <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" min="0" max="1" autocapitalize="off" id="markahPD34_MSV" name="markahPD34_MSV" required/></td>
-                            <td><input onblur="findTotalMV_PD()" class="sum_mv_pd" type="number" min="0" max="1" autocapitalize="off" id="markahPD34_MMV" name="markahPD34_MMV" required/></td>
-                            <td></td>
-                            <td colspan="2">
-                                            <span>&#183; Pelan susuratur</span><br>
-                                            <span>&#183; Rekabentuk awalan yang menunjukkan
-                                                pembahagian ruang yang bebas halangan binaan kekal</span><br>
-                                            <span>&#183; Lukisan terperinci dinding sesekat berserta spesifikasi</span><br>
-                            </td>
-                            <td colspan="2">
+                            <td>{{$kriteria_phjkr_bangunan->markahPD34_MR}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD34_MMV" name="markahPD34_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD34_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD34_MMV_PUN" name="markahPD34_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD34_MMV_SEDIA" name="markahPD34_MMV_SEDIA" /></td>
+                            <td>
                                 <span>&#183; Katalog dan sample bahan yang diluluskan oleh S.O.</span><br>
                                 <span>&#183; Lukisan Siap Bina</span><br>
                             </td>
-                            <td></td>
-                            <td>
+                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2391,12 +2329,18 @@
                             <td>Tahap Pencahayaan (bukan semulajadi) Bilik</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD35_MR" name="markahPD35_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD35_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="1" id="markahPD35_MR_PUN" name="markahPD35_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD35_MMV" name="markahPD35_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD35_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD35_MMV_PUN" name="markahPD35_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD35_MMV_SEDIA" name="markahPD35_MMV_SEDIA" /></td>
                             <td>
-                                            <span>&#183; Mengemukakan data tahap pencahayaan bagi
-                                                setiap ruang dengan menggunakan kaedah pengiraan manual atau perisian simulasi</span><br>
+                                <span>&#183; Pengiraan dan lukisan terpasang bagi siling yang menunjukkan susun atur lampu</span><br>
+                                <span>&#183; Laporan Pengujian dan Pentauliahan</span><br>
                             </td>
                             <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
                             <td colspan="4">
@@ -2420,17 +2364,14 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td colspan="5"></td>
-                            <td colspan="4">
-                                {{-- <form class="form">
-                                    <label for="form__input" class="form__label">
-                                        <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                        <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                        <span id="custom-text">No file chosen, yet.</span>
-                                    </label>
-                                </form> --}}
-                            </td>
-
+                            <td colspan="4"></td>
                         </tr>
 
                         <!--PD4.1-->
@@ -2439,15 +2380,19 @@
                             <td>Memaksimakan Kawasan Tanpa Keperluan Sistem Penyaman Udara</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD41_MR" name="markahPD41_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD41_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="1" id="markahPD41_MR_PUN" name="markahPD41_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD41_MMV" name="markahPD41_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD41_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD41_MMV_PUN" name="markahPD41_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD41_MMV_SEDIA" name="markahPD41_MMV_SEDIA" /></td>
                             <td>
-                                            <span>&#183; Mengemukakan lukisan pelan lantai yang menunjukkan
-                                                ruang pengudaraan secara semulajadi</span><br>
-                                            <span>&#183; Laporan simulasi, jika ada</span><br>
-                                            <span>&#183; Pelan susun atur</span><br>
-
+                                <span>&#183; Mengemukakan lukisan siap bina yang menunjukkan ruang
+                                    pengudaraan secara semula jadi</span><br>
+                                <span>&#183; Pelan susun atur</span><br>
                             </td>
                             <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
                             <td colspan="4">
@@ -2467,9 +2412,15 @@
                             <td>Prestasi Kualiti Udara Dalaman: ASHRAE 62.1:2007 & 129</td>
                             <td colspan="6"></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD42_MR" name="markahPD42_MR" type="number" min="0" max="2" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD42_MR}}</td>
                             <td>2</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="2" id="markahPD42_MR_PUN" name="markahPD42_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD42_MMV" name="markahPD42_MMV" /></td>
+                            <td>2</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD42_MR_PUN}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD42_MMV_PUN" name="markahPD42_MMV_PUN" /></td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD42_MMV_SEDIA" name="markahPD42_MMV_SEDIA" /></td>
                             <td>
                                             <span>&#183; Mengemukakan lukisan pelan lantai yang menunjukkan
                                                 ruang pengudaraan secara semulajadi</span><br>
@@ -2499,8 +2450,14 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td colspan="5"></td>
-                            <td colspan="4">
+                            <td colspan="4"></td>
                             </td>
                         </tr>
 
@@ -2510,13 +2467,21 @@
                             <td>Rekabentuk Keselesaan Thermal: ASHRAE 55</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD51_MR" name="markahPD51_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD51_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="1" id="markahPD51_MR_PUN" name="markahPD51_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD51_MMV" name="markahPD51_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD51_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD51_MMV_PUN" name="markahPD51_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD51_MMV_SEDIA" name="markahPD51_MMV_SEDIA" /></td>
                             <td>
-                                <span>Laporan ringkas yang mengandungi:</span><br>
-                                <span>&#183; Maklumat berkenaan kaedah yang digunakan untuk
-                                    mendapatkan keadaan keselesaan thermal bagi sesebuah projek</span><br>
+                                <span>&#183; Laporan Post Occupancy Evaluation (POE)</span><br>
+                                <span>&#183; Lukisan siap bina dan bukti bergambar bagi setiap
+                                    jenis sensor dan kawalan keselesaan thermal</span><br>
+                                <span>&#183; Menyediakan kaji selidik tahap keselesaan pengguna</span><br>
+
                             </td>
                             <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
                             <td colspan="4">
@@ -2536,13 +2501,18 @@
                             <td>Kawalan Sistem Pencahayaan & Pengudaraan (Pencahayaan)</td>
                             <td colspan="6"></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD52_MR" name="markahPD52_MR" type="number" min="0" max="2" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD52_MR}}</td>
                             <td>2</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="2" id="markahPD52_MR_PUN" name="markahPD52_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD52_MMV" name="markahPD52_MMV" /></td>
+                            <td>2</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD52_MR_PUN}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD52_MMV_PUN" name="markahPD52_MMV_PUN" /></td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD52_MMV_SEDIA" name="markahPD52_MMV_SEDIA" /></td>
                             <td>
-                                <span>&#183; Laporan strategi</span><br>
-                                <span>&#183; Lukisan skematik dan pengiraan bagi perkara i &#41;</span><br>
-                                <span>&#183; Lukisan skematik dan pengiraan bagi perkara ii &#41;</span><br>
+                                <span>&#183; Bukti bergambar</span><br>
+                                <span>&#183; Lukisan siap bina</span><br>
                             </td>
                             <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
                             <td colspan="4">
@@ -2566,6 +2536,12 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
                             <td colspan="4">
                                 <form class="form">
@@ -2584,12 +2560,21 @@
                             <td>Kawalan Paras Karbon Dioksida</td>
                             <td colspan="6"></td>
                             <td>3</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD61_MR" name="markahPD61_MR" type="number" min="0" max="3" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD61_MR}}</td>
                             <td>3</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="3" id="markahPD61_MR_PUN" name="markahPD61_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD61_MMV" name="markahPD61_MMV" /></td>
+                            <td>3</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD61_MR_PUN}}</td>
+                            <td>3</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD61_MMV_PUN" name="markahPD61_MMV_PUN" /></td>
+                            <td>3</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD61_MMV_SEDIA" name="markahPD61_MMV_SEDIA" /></td>
                              <td>
-                                <span>&#183; Pelan pemasangan sistem pemantauan tahap CO2</span><br>
-                                <span>&#183; Lukisan skematik pemasangan sistem pemantauan tahap CO2</span><br>
+                                <span>&#183; Lukisan siap bina</span><br>
+                                <span>&#183; Bukti bergambar</span><br>
+                                <span>&#183; Rekod kalibrasi berkala</span><br>
+                                <span>&#183; Rekod senggara sistem pemantauan dan kawalan CO2</span><br>
+
                             </td>
                             <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
                             <td colspan="4">
@@ -2603,17 +2588,24 @@
                             </td>
                         </tr>
 
-                         <!--PD6.2--><!--PUN not available-->
+                         <!--PD6.2--><!--PUN | Sedia Ada not available-->
                          <tr class="pg-5" align="center">
                             <td>PD6.2</td>
                             <td>Kualiti Persekitaran Semasa Pembinaan dan Sebelum diduduki</td>
                             <td colspan="6"></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD62_MR" name="markahPD62_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD52_MR}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD52_MMV" name="markahPD52_MMV" /></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td>
-                                <span>&#183; Pelan pelaksanaan</span><br>
+                                <span>&#183; Laporan bergambar berkala tahap kebersihan tapak</span><br>
+                                <span>&#183; Laporan flush out</span>
                             </td>
                             <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
                             <td colspan="4">
@@ -2632,10 +2624,17 @@
                             <td>PD7</td>
                             <td>Keselesaan Akustik</td>
                             <td colspan="6"></td>
+                            <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD7_MR" name="markahPD7_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD7_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="1" id="markahPD7_MR_PUN" name="markahPD7_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD7_MMV" name="markahPD7_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD7_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD7_MMV_PUN" name="markahPD7_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="1" autocapitalize="off" id="markahPD7_MMV_SEDIA" name="markahPD7_MMV_SEDIA" /></td>
                             <td>
                                 <span>&#183; Laporan strategi rekabentuk untuk memastikan tahap bunyi dalaman
                                     dikekalkan pada tahap yang ditetapkan</span><br>
@@ -2658,34 +2657,25 @@
                         <tr class="pg-5" align="center">
                             <td>PD8</td>
                             <td>Kualiti Udara Dalaman (IAQ)</td>
-                            <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td colspan="6"></td>
                             <td>3</td>
-                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" min="0" max="3" autocapitalize="off" id="markahPD8_MSV" name="markahPD8_MSV" required/></td>
-                            <td><input onblur="findTotalMV_PD()" class="sum_mv_pd" type="number" min="0" max="3" autocapitalize="off" id="markahPD8_MMV" name="markahPD8_MMV" required/></td>
-                            <td></td>
-                            <td colspan="2">
-                                            <span>&#183; Katalog dan sijil pengesahan penarafan eco-label bahan</span><br>
-                                            <span>&#183; Spesifikasi teknikal pembekal</span><br>
-                            </td>
-                            <td colspan="2">
+                            <td>{{$kriteria_phjkr_bangunan->markahPD8_MR}}</td>
+                            <td>3</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPD8_MMV" name="markahPD8_MMV" /></td>
+                            <td>3</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD8_MR_PUN}}</td>
+                            <td>3</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPD8_MMV_PUN" name="markahPD8_MMV_PUN" /></td>
+                            <td>3</td>
+                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="3" autocapitalize="off" id="markahPD8_MMV_SEDIA" name="markahPD8_MMV_SEDIA" /></td>
+                            <td>
                                 <span>&#183; Katalog dan kaedah pemasangan (method statement) yang telah
                                     disahkan oleh Pegawai yang kompeten</span><br>
                                 <span>&#183; Gambar semasa kerja pemasangan</span><br>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            <td></td>
-                            <td>
+                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2702,9 +2692,15 @@
                             <td>Pencegahan Kulapok (Mold)</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD9_MR" name="markahPD9_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahTL9_MR}}</td>
                             <td>1</td>
-                            <td><input onblur="findTotalMR_PD_PUN()" class="MR_PD_PUN" type="number" min="0" max="1" id="markahPD9_MR_PUN" name="markahPD9_MR_PUN"></td>
+                            <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL9_MMV" name="markahTL9_MMV" /></td>
+                            <td>1</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahTL9_MR_PUN}}</td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL9_MMV_PUN" name="markahTL9_MMV_PUN" /></td>
+                            <td>1</td>
+                            <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahTL9_MMV_SEDIA" name="markahTL9_MMV_SEDIA" /></td>
                             <td>
                                 <span>&#183; Laporan ringkas yang menggariskan strategi yang akan dilaksanakan
                                     untuk memenuhi keperluan bagi pencegahan kulapok</span><br>
@@ -2721,29 +2717,22 @@
                             </td>
                         </tr>
 
-                        <!--PD10-->
+                        <!--PD10--><!--Baru not available-->
                         <tr class="pg-5" align="center">
                             <td>PD10</td>
                             <td>Kaji Selidik Keselesaan Penghuni</td>
-                            <td>
-                                <select class="form-select" aria-label="Default select example" name="jenisKategori">
-                                    <option hidden selected="">Sila Pilih</option>
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </select>
-                            </td>
-                            <td></td>
+                            <td colspan="6"></td>
                             <td></td>
                             <td></td>
                             <td>2</td>
-                            <td><input onblur="findTotalMS_PD()" class="sum_ms_pd" type="number" min="0" max="2" autocapitalize="off" id="markahPD10_MSV" name="markahPD10_MSV" required/></td>
-                            <td><input onblur="findTotalMV_PD()" class="sum_mv_pd" type="number" min="0" max="2" autocapitalize="off" id="markahPD10_MMV" name="markahPD10_MMV" required/></td>
-                            <td></td>
-                            <td colspan="2"> 
-                                <span>&#183; Tidak berkaitan (TB)</span></td>
-                            <td colspan="2">
+                            <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL10_MMV" name="markahTL10_MMV" /></td>
+                            <td>0</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahTL10_MR_PUN}}</td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL10_MMV_PUN" name="markahTL10_MMV_PUN" /></td>
+                            <td>2</td>
+                            <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahTL10_MMV_SEDIA" name="markahTL10_MMV_SEDIA" /></td>
+                            <td>
                                 <span>&#183; Laporan maklumbalas kaji selidik</span><br>
                             </td>
                             <td></td>
@@ -2760,18 +2749,17 @@
 
                         <!-- Jumlah MarkahPD-->
                         <tr class="pg-5" align="center">
-                            <td colspan="3">Jumlah markah PD</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td><input id="total_amount_ms_pd" type="number" min="0" max="13" autocapitalize="off" name="markahTOTAL_PD_MSV"/></td>
-                            <td><input id="total_amount_mv_pd" type="number" min="0" max="13" autocapitalize="off" name="markahTOTAL_PD_MMV"/></td>
-                            <td>0</td>
-                            <td colspan="2"></td>
-                            <td colspan="2"></td>
-                            <td></td>
-                            <td></td>
+                            <td colspan="6">Jumlah markah PD</td>
+                            <td colspan="3">29</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</td>
+                            <td>31</td>
+                            <td><input type="number" min="0" max="31" id="markahTOTAL_PD_MMV" name="markahTOTAL_PD_MMV"></td>
+                            <td>27</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR_PUN}}</td>
+                            <td>29</td>
+                            <td><input type="number" min="0" max="29" id="markahTOTAL_PD_MMV_PUN" name="markahTOTAL_PD_MMV_PUN"></td>
+                            <td>29</td>
+                            <td><input type="number" min="0" max="29" id="markahTOTAL_PD_MMV_SEDIA" name="markahTOTAL_PD_MMV_SEDIA"></td>
                         </tr>   
                     </table>
 
@@ -2829,8 +2817,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL1_MSV" name="markahFL1_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL1_MMV" name="markahFL1_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL1_MSV" name="markahFL1_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL1_MMV" name="markahFL1_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -2863,8 +2851,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL2_MSV" name="markahFL2_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL2_MMV" name="markahFL2_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL2_MSV" name="markahFL2_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL2_MMV" name="markahFL2_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -2897,8 +2885,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL21_MSV" name="markahFL21_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL21_MMV" name="markahFL21_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL21_MSV" name="markahFL21_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL21_MMV" name="markahFL21_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -2931,8 +2919,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL22_MSV" name="markahFL22_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL22_MMV" name="markahFL22_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL22_MSV" name="markahFL22_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL22_MMV" name="markahFL22_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -2965,8 +2953,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL23_MSV" name="markahFL23_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL23_MMV" name="markahFL23_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL23_MSV" name="markahFL23_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL23_MMV" name="markahFL23_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -2999,8 +2987,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL3_MSV" name="markahFL3_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL3_MMV" name="markahFL3_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL3_MSV" name="markahFL3_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL3_MMV" name="markahFL3_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -3033,8 +3021,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL31_MSV" name="markahFL31_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL31_MMV" name="markahFL31_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL31_MSV" name="markahFL31_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL31_MMV" name="markahFL31_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -3067,8 +3055,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL32_MSV" name="markahFL32_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL32_MMV" name="markahFL32_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL32_MSV" name="markahFL32_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL32_MMV" name="markahFL32_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -3101,8 +3089,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL33_MSV" name="markahFL33_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL33_MMV" name="markahFL33_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL33_MSV" name="markahFL33_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL33_MMV" name="markahFL33_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -3136,8 +3124,8 @@
                                 <td></td>
                                 <td></td>
                                 <td>0</td>
-                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL34_MSV" name="markahFL34_MSV" required/></td>
-                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL34_MMV" name="markahFL34_MMV" required/></td>
+                                <td><input onblur="findTotalMS_FL()" class="sum_ms_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL34_MSV" name="markahFL34_MSV" /></td>
+                                <td><input onblur="findTotalMV_FL()" class="sum_mv_fl" type="number" min="0" max="0" autocapitalize="off" id="markahFL34_MMV" name="markahFL34_MMV" /></td>
                                 <td></td>
                                 <td colspan="2"></td>
                                 <td colspan="2"></td>
@@ -3224,8 +3212,8 @@
                             <td></td>
                             <td></td>
                             <td>0</td>
-                            <td><input onblur="findTotalMS_IN()" class="sum_ms_in" type="number" min="0" max="0" autocapitalize="off" id="markahIN1_MSV" name="markahIN1_MSV" required/></td>
-                            <td><input onblur="findTotalMV_IN()" class="sum_mv_in" type="number" min="0" max="0" autocapitalize="off" id="markahIN1_MMV" name="markahIN1_MMV" required/></td>
+                            <td><input onblur="findTotalMS_IN()" class="sum_ms_in" type="number" min="0" max="0" autocapitalize="off" id="markahIN1_MSV" name="markahIN1_MSV" /></td>
+                            <td><input onblur="findTotalMV_IN()" class="sum_mv_in" type="number" min="0" max="0" autocapitalize="off" id="markahIN1_MMV" name="markahIN1_MMV" /></td>
                             <td></td>
                             <td colspan="2">
                                 <span>&#183; Laporan cadangan inovasi</span><br>
@@ -3277,21 +3265,74 @@
                     <!--Button Simpan (TOOLTIPS)-->
                     <!--Page 1-->
                     <div class="mt-3 text-center">
-                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                        title="Simpan" type="submit">Simpan</button>
                         <button class="btn btn-secondary pg-1" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button2()" type="submit">Seterusnya</button>
+                    </div>
+
+                    <!--Page 2-->
+                    <div class="mt-3 text-center pg-2">
+                        <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button1()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button3()" type="submit">Seterusnya</button>
+                    </div>
+
+                    <!--Page 3-->
+                    <div class="mt-3 text-center pg-3">
+                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button2()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button4()" type="submit">Seterusnya</button>
+                    </div>
+
+                    <!--Page 4-->
+                    <div class="mt-3 text-center pg-4">
+                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button3()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button5()" type="submit">Seterusnya</button>
+                    </div>
+
+                    <!--Page 5-->
+                    <div class="mt-3 text-center pg-5">
+                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button4()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button6()" type="submit">Seterusnya</button>
+                    </div>
+
+                    <!--Page 6-->
+                    <div class="mt-3 text-center pg-6">
+                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button5()" type="submit">Kembali</button>
                         <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
                         title="Seterusnya" onclick="button7()" type="submit">Seterusnya</button>
                     </div>
+
+                    <!--Page 7-->
+                    <div class="mt-3 text-center pg-7">
+                        <button class="btn btn-secondary pg-7" data-toggle="tooltip" data-placement="bottom" 
+                        title="Kembali" onclick="button6()" type="submit">Kembali</button>
+                    </div>
+
+                    <!--Button Simpan (TOOLTIPS)-->
+                    <!--Page 1-->
+                    {{-- <div class="mt-3 text-center">
+                        <button class="btn btn-primary pg-7" data-toggle="tooltip" data-placement="bottom" 
+                        title="Simpan" type="submit">Simpan</button>
+                        <button class="btn btn-secondary pg-1" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button2()">Seterusnya</button>
+                        <button class="btn btn-secondary pg-2" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button3()">Seterusnya</button>
+                        <button class="btn btn-secondary pg-3" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button4()">Seterusnya</button>
+                        <button class="btn btn-secondary pg-4" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button5()">Seterusnya</button>
+                        <button class="btn btn-secondary pg-5" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button6()">Seterusnya</button>
+                        <button class="btn btn-secondary pg-6" data-toggle="tooltip" data-placement="bottom" 
+                        title="Seterusnya" onclick="button7()">Seterusnya</button>
+                    </div> --}}
 
                     <!--Page 2-->
                     {{-- <div class="mt-3 text-center pg-2">
@@ -3342,7 +3383,7 @@
 
 
             </form> <!--Form Markah-->
-            </div> <!--Scrollbar-->
+            {{-- </div> <!--Scrollbar--> --}}
     </div>
 </div>
 
@@ -3683,134 +3724,134 @@
                 new SelectAuto(selectAutocomplete);
             </script> --}}
 
-            <!--MARKAH SASARAN (MS) VERIFIKASI CALCULATION-->
-            <!--MS_TL : MARKAH SASARAN TL-->
-            <!--MS_KT : MARKAH SASARAN KT-->
-            <!--MS_SB : MARKAH SASARAN SB-->
-            <!--MS_PA : MARKAH SASARAN PA-->
-            <!--MS_PD : MARKAH SASARAN PD-->
-            <!--MS_FL : MARKAH SASARAN FL-->
-            <!--MS_IN : MARKAH SASARAN IN-->
+            <!--MARKAH VERIFIKASI (MMV) VERIFIKASI CALCULATION-->
+            <!--MMV_TL : MARKAH VERIFIKASI TL-->
+            <!--MMV_KT : MARKAH VERIFIKASI KT-->
+            <!--MMV_SB : MARKAH VERIFIKASI SB-->
+            <!--MMV_PA : MARKAH VERIFIKASI PA-->
+            <!--MMV_PD : MARKAH VERIFIKASI PD-->
+            <!--MMV_FL : MARKAH VERIFIKASI FL-->
+            <!--MMV_IN : MARKAH VERIFIKASI IN-->
             <script>
-                function findTotalMS_TL(){
-                    var totalMS_TL = document.getElementById('totalMS_TL');
-                    var MS_TL = document.getElementsByClassName('MS_TL');
-                    var sumMS_TL = 0;
+                function findTotalMMV_TL(){
+                    var totalMMV_TL = document.getElementById('totalMMV_TL');
+                    var MMV_TL = document.getElementsByClassName('MMV_TL');
+                    var sumMMV_TL = 0;
 
-                    for( var i = 0; i < MS_TL.length; i++ ){
-                        sumMS_TL += Number(MS_TL[i].value);
-
-                    //display the total of inputs
-                    totalMS_TL.value = sumMS_TL;
-                    }
-                    document.getElementById('totalMS_TL').value = sumMS_TL;
-                }
-
-                function findTotalMS_KT(){
-                    var totalMS_KT = document.getElementById('totalMS_KT');
-                    var MS_KT = document.getElementsByClassName('MS_KT');
-                    var sumMS_KT = 0;
-
-                    for( var i = 0; i < MS_KT.length; i++ ){
-                        sumMS_KT += Number(MS_KT[i].value);
+                    for( var i = 0; i < MMV_TL.length; i++ ){
+                        sumMMV_TL += Number(MMV_TL[i].value);
 
                     //display the total of inputs
-                    totalMS_KT.value = sumMS_KT;
+                    totalMMV_TL.value = sumMMV_TL;
                     }
-                    document.getElementById('totalMS_KT').value = sumMS_KT;
+                    document.getElementById('totalMMV_TL').value = sumMMV_TL;
                 }
 
-                function findTotalMS_SB(){
-                    var totalMS_SB = document.getElementById('totalMS_SB');
-                    var MS_SB = document.getElementsByClassName('MS_SB');
-                    var sumMS_SB = 0;
+                function findTotalMMV_KT(){
+                    var totalMMV_KT = document.getElementById('totalMMV_KT');
+                    var MMV_KT = document.getElementsByClassName('MMV_KT');
+                    var sumMMV_KT = 0;
 
-                    for( var i = 0; i < MS_SB.length; i++ ){
-                        sumMS_SB += Number(MS_SB[i].value);
+                    for( var i = 0; i < MMV_KT.length; i++ ){
+                        sumMMV_KT += Number(MMV_KT[i].value);
 
                     //display the total of inputs
-                    totalMS_SB.value = sumMS_SB;
+                    totalMMV_KT.value = sumMMV_KT;
                     }
-                    document.getElementById('totalMS_SB').value = sumMS_SB;
+                    document.getElementById('totalMMV_KT').value = sumMMV_KT;
                 }
 
-                function findTotalMS_PA(){
-                    var totalMS_PA = document.getElementById('totalMS_PA');
-                    var MS_PA = document.getElementsByClassName('MS_PA');
-                    var sumMS_PA = 0;
+                function findTotalMMV_SB(){
+                    var totalMMV_SB = document.getElementById('totalMMV_SB');
+                    var MMV_SB = document.getElementsByClassName('MMV_SB');
+                    var sumMMV_SB = 0;
 
-                    for( var i = 0; i < MS_PA.length; i++ ){
-                        sumMS_PA += Number(MS_PA[i].value);
+                    for( var i = 0; i < MMV_SB.length; i++ ){
+                        sumMMV_SB += Number(MMV_SB[i].value);
 
                     //display the total of inputs
-                    totalMS_PA.value = sumMS_PA;
+                    totalMMV_SB.value = sumMMV_SB;
                     }
-                    document.getElementById('totalMS_PA').value = sumMS_PA;
+                    document.getElementById('totalMMV_SB').value = sumMMV_SB;
                 }
 
-                function findTotalMS_PD(){
-                    var totalMS_PD = document.getElementById('totalMS_PD');
-                    var MS_PD = document.getElementsByClassName('MS_PD');
-                    var sumMS_PD = 0;
+                function findTotalMMV_PA(){
+                    var totalMMV_PA = document.getElementById('totalMMV_PA');
+                    var MMV_PA = document.getElementsByClassName('MMV_PA');
+                    var sumMMV_PA = 0;
 
-                    for( var i = 0; i < MS_PD.length; i++ ){
-                        sumMS_PD += Number(MS_PD[i].value);
+                    for( var i = 0; i < MMV_PA.length; i++ ){
+                        sumMMV_PA += Number(MMV_PA[i].value);
 
                     //display the total of inputs
-                    totalMS_PD.value = sumMS_PD;
+                    totalMMV_PA.value = sumMMV_PA;
                     }
-                    document.getElementById('totalMS_PD').value = sumMS_PD;
+                    document.getElementById('totalMMV_PA').value = sumMMV_PA;
                 }
 
-                function findTotalMS_FL(){
-                    var totalMS_FL = document.getElementById('totalMS_FL');
-                    var MS_FL = document.getElementsByClassName('MS_FL');
-                    var sumMS_FL = 0;
+                function findTotalMMV_PD(){
+                    var totalMMV_PD = document.getElementById('totalMMV_PD');
+                    var MMV_PD = document.getElementsByClassName('MMV_PD');
+                    var sumMMV_PD = 0;
 
-                    for( var i = 0; i < MS_FL.length; i++ ){
-                        sumMS_FL += Number(MS_FL[i].value);
+                    for( var i = 0; i < MMV_PD.length; i++ ){
+                        sumMMV_PD += Number(MMV_PD[i].value);
 
                     //display the total of inputs
-                    totalMS_FL.value = sumMS_FL;
+                    totalMMV_PD.value = sumMMV_PD;
                     }
-                    document.getElementById('totalMS_FL').value = sumMS_FL;
+                    document.getElementById('totalMMV_PD').value = sumMMV_PD;
                 }
 
-                function findTotalMS_IN(){
-                    var totalMS_IN = document.getElementById('totalMS_IN');
-                    var MS_IN = document.getElementsByClassName('MS_IN');
-                    var sumMS_IN = 0;
+                function findTotalMMV_FL(){
+                    var totalMMV_FL = document.getElementById('totalMMV_FL');
+                    var MMV_FL = document.getElementsByClassName('MMV_FL');
+                    var sumMMV_FL = 0;
 
-                    for( var i = 0; i < MS_IN.length; i++ ){
-                        sumMS_IN += Number(MS_IN[i].value);
+                    for( var i = 0; i < MMV_FL.length; i++ ){
+                        sumMMV_FL += Number(MMV_FL[i].value);
 
                     //display the total of inputs
-                    totalMS_IN.value = sumMS_IN;
+                    totalMMV_FL.value = sumMMV_FL;
                     }
-                    document.getElementById('totalMS_IN').value = sumMS_IN;
+                    document.getElementById('totalMMV_FL').value = sumMMV_FL;
                 }
 
-                function findTotalMS(){
-                    var TL = totalMS_TL.value || 0;
-                    var KT = totalMS_KT.value || 0;
-                    var SB = totalMS_SB.value || 0;
-                    var PA = totalMS_PA.value || 0;
-                    var PD = totalMS_PD.value || 0;
-                    var FL = totalMS_FL.value || 0;
-                    var IN = totalMS_IN.value || 0;
-                    document.getElementById('totalMS').value = Number(TL) + Number(KT)
+                function findTotalMMV_IN(){
+                    var totalMMV_IN = document.getElementById('totalMMV_IN');
+                    var MMV_IN = document.getElementsByClassName('MMV_IN');
+                    var sumMMV_IN = 0;
+
+                    for( var i = 0; i < MMV_IN.length; i++ ){
+                        sumMMV_IN += Number(MMV_IN[i].value);
+
+                    //display the total of inputs
+                    totalMMV_IN.value = sumMMV_IN;
+                    }
+                    document.getElementById('totalMMV_IN').value = sumMMV_IN;
+                }
+
+                function findTotalMMV(){
+                    var TL = totalMMV_TL.value || 0;
+                    var KT = totalMMV_KT.value || 0;
+                    var SB = totalMMV_SB.value || 0;
+                    var PA = totalMMV_PA.value || 0;
+                    var PD = totalMMV_PD.value || 0;
+                    var FL = totalMMV_FL.value || 0;
+                    var IN = totalMMV_IN.value || 0;
+                    document.getElementById('totalMMV').value = Number(TL) + Number(KT)
                     + Number(SB) + Number(PA) + Number(PD) + Number(FL) + Number(IN);
                 }
 
                 document.addEventListener('keyup', function(){
-                    findTotalMS_TL();
-                    findTotalMS_KT();
-                    findTotalMS_SB();
-                    findTotalMS_PA();
-                    findTotalMS_PD();
-                    findTotalMS_FL();
-                    findTotalMS_IN();
-                    findTotalMS();
+                    findTotalMMV_TL();
+                    findTotalMMV_KT();
+                    findTotalMMV_SB();
+                    findTotalMMV_PA();
+                    findTotalMMV_PD();
+                    findTotalMMV_FL();
+                    findTotalMMV_IN();
+                    findTotalMMV();
                 });
                 
                 // function peratusan_markah() {
@@ -3821,7 +3862,7 @@
                 //     }
             </script>
 
-            <!--MARKAH VERIFIKASI (MV)  CALCULATION-->
+            <!--MARKAH VERIFIKASI (MV) PUN CALCULATION-->
             <!--MV_TL : MARKAH VERIFIKASI TL-->
             <!--MV_KT : MARKAH VERIFIKASI KT-->
             <!--MV_SB : MARKAH VERIFIKASI SB-->
@@ -3830,124 +3871,124 @@
             <!--MV_FL : MARKAH VERIFIKASI FL-->
             <!--MV_IN : MARKAH VERIFIKASI IN-->
             <script>
-                function findTotalMV_TL(){
-                    var totalMV_TL = document.getElementById('totalMV_TL');
-                    var MV_TL = document.getElementsByClassName('MV_TL');
-                    var sumMV_TL = 0;
+                function findTotalMV_TL_PUN(){
+                    var totalMV_TL_PUN = document.getElementById('totalMV_TL_PUN');
+                    var MV_TL_PUN = document.getElementsByClassName('MV_TL_PUN');
+                    var sumMV_TL_PUN = 0;
 
-                    for( var i = 0; i < MV_TL.length; i++ ){
-                        sumMV_TL += Number(MV_TL[i].value);
-
-                    //display the total of inputs
-                    totalMV_TL.value = sumMV_TL;
-                }
-                    document.getElementById('totalMV_TL').value = sumMV_TL;
-                }
-
-                function findTotalMV_KT(){
-                    var totalMV_KT = document.getElementById('totalMV_KT');
-                    var MV_KT = document.getElementsByClassName('MV_KT');
-                    var sumMV_KT = 0;
-
-                    for( var i = 0; i < MV_KT.length; i++ ){
-                        sumMV_KT += Number(MV_KT[i].value);
+                    for( var i = 0; i < MV_TL_PUN.length; i++ ){
+                        sumMV_TL_PUN += Number(MV_TL_PUN[i].value);
 
                     //display the total of inputs
-                    totalMV_KT.value = sumMV_KT;
+                    totalMV_TL_PUN.value = sumMV_TL_PUN;
+                }
+                    document.getElementById('totalMV_TL_PUN').value = sumMV_TL_PUN;
+                }
+
+                function findTotalMV_KT_PUN(){
+                    var totalMV_KT_PUN = document.getElementById('totalMV_KT_PUN');
+                    var MV_KT_PUN = document.getElementsByClassName('MV_KT_PUN');
+                    var sumMV_KT_PUN = 0;
+
+                    for( var i = 0; i < MV_KT_PUN.length; i++ ){
+                        sumMV_KT_PUN += Number(MV_KT_PUN[i].value);
+
+                    //display the total of inputs
+                    totalMV_KT_PUN.value = sumMV_KT_PUN;
                     }
-                    document.getElementById('totalMV_KT').value = sumMV_KT;
+                    document.getElementById('totalMV_KT_PUN').value = sumMV_KT_PUN;
                 }
 
-                function findTotalMV_SB(){
-                    var totalMV_SB = document.getElementById('totalMV_SB');
-                    var MV_SB = document.getElementsByClassName('MV_SB');
-                    var sumMV_SB = 0;
+                function findTotalMV_SB_PUN(){
+                    var totalMV_SB_PUN = document.getElementById('totalMV_SB_PUN');
+                    var MV_SB_PUN = document.getElementsByClassName('MV_SB_PUN');
+                    var sumMV_SB_PUN = 0;
 
-                    for( var i = 0; i < MV_SB.length; i++ ){
-                        sumMV_SB += Number(MV_SB[i].value);
+                    for( var i = 0; i < MV_SB_PUN.length; i++ ){
+                        sumMV_SB_PUN += Number(MV_SB_PUN[i].value);
 
                     //display the total of inputs
-                    totalMV_SB.value = sumMV_SB;
+                    totalMV_SB_PUN.value = sumMV_SB_PUN;
                     }
-                    document.getElementById('totalMV_SB').value = sumMV_SB;
+                    document.getElementById('totalMV_SB_PUN').value = sumMV_SB_PUN;
                 }
 
-                function findTotalMV_PA(){
-                    var totalMV_PA = document.getElementById('totalMV_PA');
-                    var MV_PA = document.getElementsByClassName('MV_PA');
-                    var sumMV_PA = 0;
+                function findTotalMV_PA_PUN(){
+                    var totalMV_PA_PUN = document.getElementById('totalMV_PA_PUN');
+                    var MV_PA = document.getElementsByClassName('MV_PA_PUN');
+                    var sumMV_PA_PUN = 0;
 
-                    for( var i = 0; i < MV_PA.length; i++ ){
-                        sumMV_PA += Number(MV_PA[i].value);
+                    for( var i = 0; i < MV_PA_PUN.length; i++ ){
+                        sumMV_PA_PUN += Number(MV_PA_PUN[i].value);
 
                     //display the total of inputs
-                    totalMV_PA.value = sumMV_PA;
+                    totalMV_PA_PUN.value = sumMV_PA_PUN;
                     }
-                    document.getElementById('totalMV_PA').value = sumMV_PA;
+                    document.getElementById('totalMV_PA_PUN').value = sumMV_PA_PUN;
                 }
 
-                function findTotalMV_PD(){
-                    var totalMV_PD = document.getElementById('totalMV_PD');
-                    var MV_PD = document.getElementsByClassName('MV_PD');
-                    var sumMV_PD = 0;
+                function findTotalMV_PD_PUN(){
+                    var totalMV_PD_PUN = document.getElementById('totalMV_PD_PUN');
+                    var MV_PD = document.getElementsByClassName('MV_PD_PUN');
+                    var sumMV_PD_PUN = 0;
 
-                    for( var i = 0; i < MV_PD.length; i++ ){
-                        sumMV_PD += Number(MV_PD[i].value);
+                    for( var i = 0; i < MV_PD_PUN.length; i++ ){
+                        sumMV_PD_PUN += Number(MV_PD_PUN[i].value);
 
                     //display the total of inputs
-                    totalMV_PD.value = sumMV_PD;
+                    totalMV_PD_PUN.value = sumMV_PD_PUN;
                     }
-                    document.getElementById('totalMV_PD').value = sumMV_PD;
+                    document.getElementById('totalMV_PD_PUN').value = sumMV_PD_PUN;
                 }
 
-                function findTotalMV_FL(){
-                    var totalMV_FL = document.getElementById('totalMV_FL');
-                    var MV_FL = document.getElementsByClassName('MV_FL');
-                    var sumMV_FL = 0;
+                function findTotalMV_FL_PUN(){
+                    var totalMV_FL_PUN = document.getElementById('totalMV_FL_PUN');
+                    var MV_FL_PUN = document.getElementsByClassName('MV_FL_PUN');
+                    var sumMV_FL_PUN = 0;
 
-                    for( var i = 0; i < MV_FL.length; i++ ){
-                        sumMV_FL += Number(MV_FL[i].value);
+                    for( var i = 0; i < MV_FL_PUN.length; i++ ){
+                        sumMV_FL_PUN += Number(MV_FL_PUN[i].value);
 
                     //display the total of inputs
-                    totalMV_FL.value = sumMV_FL;
+                    totalMV_FL_PUN.value = sumMV_FL_PUN;
                     }
-                    document.getElementById('totalMV_FL').value = sumMV_FL;
+                    document.getElementById('totalMV_FL_PUN').value = sumMV_FL_PUN;
                 }
 
-                function findTotalMV_IN(){
-                    var totalMV_IN = document.getElementById('totalMV_IN');
-                    var MV_IN = document.getElementsByClassName('MV_IN');
-                    var sumMV_IN = 0;
+                function findTotalMV_IN_PUN(){
+                    var totalMV_IN_PUN = document.getElementById('totalMV_IN_PUN');
+                    var MV_IN_PUN = document.getElementsByClassName('MV_IN_PUN');
+                    var sumMV_IN_PUN = 0;
 
-                    for( var i = 0; i < MV_IN.length; i++ ){
-                        sumMV_IN += Number(MV_IN[i].value);
+                    for( var i = 0; i < MV_IN_PUN.length; i++ ){
+                        sumMV_IN_PUN += Number(MV_IN_PUN[i].value);
 
                     //display the total of inputs
-                    totalMV_IN.value = sumMV_IN;
+                    totalMV_IN_PUN.value = sumMV_IN_PUN;
                     }
-                    document.getElementById('totalMV_IN').value = sumMV_IN;
+                    document.getElementById('totalMV_IN_PUN').value = sumMV_IN_PUN;
                 }
 
                 function findTotalMV(){
-                    var TL = totalMV_TL.value || 0;
-                    var KT = totalMV_KT.value || 0;
-                    var SB = totalMV_SB.value || 0;
-                    var PA = totalMV_PA.value || 0;
-                    var PD = totalMV_PD.value || 0;
-                    var FL = totalMV_FL.value || 0;
-                    var IN = totalMV_IN.value || 0;
-                    document.getElementById('totalMV').value = Number(TL) + Number(KT) + Number(SB) 
+                    var TL = totalMMV_TL_PUN.value || 0;
+                    var KT = totalMMV_KT_PUN.value || 0;
+                    var SB = totalMMV_SB_PUN.value || 0;
+                    var PA = totalMMV_PA_PUN.value || 0;
+                    var PD = totalMMV_PD_PUN.value || 0;
+                    var FL = totalMMV_FL_PUN.value || 0;
+                    var IN = totalMMV_IN_PUN.value || 0;
+                    document.getElementById('totalMV_PUN').value = Number(TL) + Number(KT) + Number(SB) 
                     + Number(PA) + Number(PD) + Number(FL) + Number(IN);
                 }
 
                 document.addEventListener('keyup', function(){
-                    findTotalMV_TL();
-                    findTotalMV_KT();
-                    findTotalMV_SB();
-                    findTotalMV_PA();
-                    findTotalMV_PD();
-                    findTotalMV_FL();
-                    findTotalMV_IN();
+                    findTotalMV_TL_PUN();
+                    findTotalMV_KT_PUN();
+                    findTotalMV_SB_PUN();
+                    findTotalMV_PA_PUN();
+                    findTotalMV_PD_PUN();
+                    findTotalMV_FL_PUN();
+                    findTotalMV_IN_PUN();
                     findTotalMV();
                 });
             </script>
