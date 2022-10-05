@@ -136,12 +136,12 @@ class ValidasiPermarkahanBangunanController extends Controller
 
     public function pengesahan_penilaian_validasi()
     {
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
         $projeks = Projek::all();
 
         return view('modul.validasi_permarkahan_bangunan.pengesahan_penilaian_validasi.index', [
-            'projeks'=>$projeks,
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'projeks'=>$projeks
+            // 'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         ]);
     }
 
@@ -166,9 +166,10 @@ class ValidasiPermarkahanBangunanController extends Controller
 
     public function jana_keputusan()
     {
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
+
         return view('modul.validasi_permarkahan_bangunan.jana_keputusan.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'projeks'=>$projeks
         ]);
     }
 
@@ -183,22 +184,34 @@ class ValidasiPermarkahanBangunanController extends Controller
 
     public function pengesahan_rayuan()
     {
-        return view('modul.validasi_permarkahan_bangunan.pengesahan_rayuan.index');
+        $projeks = Projek::all();
+        return view('modul.validasi_permarkahan_bangunan.pengesahan_rayuan.index',[
+            'projeks'=>$projeks
+        ]);
     }
 
     public function papar_pengesahan_rayuan($id)
     {
-        return view('modul.validasi_permarkahan_bangunan.pengesahan_rayuan.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+        return view('modul.validasi_permarkahan_bangunan.pengesahan_rayuan.edit',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function jana_sijil()
     {
-        return view('modul.validasi_permarkahan_bangunan.jana_sijil.index');
+        $projeks = Projek::all();
+        return view('modul.validasi_permarkahan_bangunan.jana_sijil.index',[
+            'projeks'=>$projeks
+        ]);
     }
 
     public function papar_jana_sijil($id)
     {
-        return view('modul.validasi_permarkahan_bangunan.jana_sijil.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+        return view('modul.validasi_permarkahan_bangunan.jana_sijil.edit',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function simpan_jana_sijil(Request $request, $id)
@@ -210,8 +223,11 @@ class ValidasiPermarkahanBangunanController extends Controller
     #ketua pasukan/penolong ketua pasukan
     public function permohonan_rayuan()
     {
+        $projeks = Projek::all();
 
-        return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.index');
+        return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.index',[
+            'projeks'=>$projeks
+        ]);
     }
 
     public function papar_permohonan_rayuan($id)
@@ -230,11 +246,10 @@ class ValidasiPermarkahanBangunanController extends Controller
     #Pasukan Validasi
     public function penilaian_validasi()
     {
-        // $projeks = Projek::all();
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
 
         return view('modul.validasi_permarkahan_bangunan.penilaian_validasi.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'projeks'=>$projeks
         ]);
     }
 
@@ -295,10 +310,11 @@ class ValidasiPermarkahanBangunanController extends Controller
     #ketua validasi
     public function borang_validasi()
     {
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
 
         return view('modul.validasi_permarkahan_bangunan.borang_validasi.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'projeks'=>$projeks
         ]);
     }
 
@@ -323,10 +339,9 @@ class ValidasiPermarkahanBangunanController extends Controller
     // Muat Turun Sijil Validasi
     public function sijil_validasi()
     {
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
-
+        $projeks = Projek::all();
         return view('modul.validasi_permarkahan_bangunan.sijil_validasi.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'projeks'=>$projeks
         ]);
     }
 
@@ -350,10 +365,10 @@ class ValidasiPermarkahanBangunanController extends Controller
     // Muat Turun Skor
     public function muat_turun_skor()
     {
-        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::all();
 
         return view('modul.validasi_permarkahan_bangunan.muat_turun_skor.index',[
-            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+            'projeks'=>$projeks
         ]);
     }
 

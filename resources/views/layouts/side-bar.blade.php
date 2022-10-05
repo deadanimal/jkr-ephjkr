@@ -359,11 +359,11 @@
 
                             {{-- BANGUNAN Melantik Pemudah Cara --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara/create') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_bangunan/melantik_pemudah_cara') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/pemudah_cara/create') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_bangunan/melantik_pemudah_cara') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
@@ -1289,6 +1289,96 @@
                             </li> --}}
                             <hr class="navbar-vertical-divider mx-3">
                         </ul>
+
+                        {{-- Modul Laporan --}}
+                    <a class="nav-link py-0 dropdown-indicator {{ Request::is('laporan/*') ? 'active-main' : '' }}"
+                        href="#laporan" role="button" data-bs-toggle="collapse"
+                        aria-expanded="{{ Request::is('laporan') ? 'true' : 'false' }}"
+                        aria-controls="laporan">
+                        <div class="d-flex align-items-center nav-link-side px-0">
+                            <span class="px-3"><span class="fas fa-home"></span> Laporan</span>
+                        </div>
+                    </a>
+                    <ul class="nav-item collapse {{ Request::is('laporan/*') ? 'show' : 'false' }} my-1"
+                        id="laporan">
+                    <li class="nav-item">
+                        <a class="nav-link {{ Request::is('laporan/keputusan_permarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'active' : '' }} py-0"
+                            href="/laporan/keputusan_permarkahan">
+                            <div class="d-flex align-items-center nav-link-side">
+                            <span
+                                class="px-0 {{ Request::is('laporan/keputusan_permarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'text-dark' : '' }}">Keputusan
+                                    Permarkahan</span>
+                            </div>
+                        </a>
+                    </li>
+                    <ul class="nav-item collapse {{ Request::is('laporan/*') ? 'show' : 'false' }} my-1"
+                        id="analisis_pencapaian">
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('laporan/keputusan_permarkahan/papar_senarai_projek') ? 'active' : '' }} py-0"
+                                href="/laporan/analisis_pencapaian/papar_senarai_projek">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span class="px-0">Papar Senarai Projek</span>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('laporan/analisis_pencapaian/jana_analisis_pencapaian') ? 'active' : '' }} py-0"
+                                href="/laporan/analisis_pencapaian/jana_analisis_pencapaian">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span class="px-0">Paparan Keputusan</span>
+                                </div>
+                            </a>
+
+                        </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link py-0 dropdown-indicator" href="#analisis_pencapaian" role="button"
+                            data-bs-toggle="collapse"
+                            aria-expanded="{{ Request::is('laporan/analisis_pencapaian/*') ? 'true' : 'false' }}"
+                            aria-controls="analisis_pencapaian">
+                            <div class="d-flex align-items-center nav-link-side">
+                                <span class="px-0">Analisis Pencapaian</span>
+                            </div>
+                        </a>
+                        <ul class="nav-item collapse {{ Request::is('laporan/analisis_pencapaian/*') ? 'show' : 'false' }} my-1"
+                        id="analisis_pencapaian">
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('laporan/analisis_pencapaian/papar_senarai_projek') ? 'active' : '' }} py-0"
+                                href="/laporan/analisis_pencapaian/papar_senarai_projek">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span class="px-0">Papar Senarai Projek</span>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('laporan/analisis_pencapaian/jana_analisis_pencapaian') ? 'active' : '' }} py-0"
+                                href="/laporan/analisis_pencapaian/jana_analisis_pencapaian">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span class="px-0">Jana Analisis Pencapaian</span>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('laporan/analisis_pencapaian/papar_analisis_pencapaian') ? 'active' : '' }} py-0"
+                                href="/laporan/analisis_pencapaian/papar_analisis_pencapaian">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span class="px-0">Papar Analisis Pencapaian</span>
+                                </div>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('laporan/analisis_pencapaian/muat_turun_analisis_pencapaian') ? 'active' : '' }} py-0"
+                                href="/laporan/analisis_pencapaian/muat_turun_analisis_pencapaian">
+                                <div class="d-flex align-items-center nav-link-side">
+                                    <span class="px-0">Muat Turun Analisis Pencapaian</span>
+                                </div>
+                            </a>
+
+                        </li>
 
 
 
