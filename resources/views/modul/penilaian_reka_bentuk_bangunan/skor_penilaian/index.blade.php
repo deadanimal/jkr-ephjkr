@@ -21,7 +21,7 @@
         <div class="mt-8 form-group row">
             <label class="col-sm-2 col-form-label">Nama Projek:</label>
                 <div class="col-sm-5">
-                    <input type="search" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
+                    <input type="text" id="myInput" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya"/>
                 </div>
                     <div class="col-sm-5">
                         <button type="button" class="btn btn-primary">Carian</button>
@@ -53,7 +53,7 @@
                                     {{-- </table>  --}}
 
                                     {{-- <table class="kotak" style="width:100%"> --}}
-                                    <tbody>
+                                    <tbody id="myTable">
                                         <!--LOOPING TABLES-->
                                         @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
@@ -64,8 +64,13 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
+                                                    {{-- @if () --}}
                                                     <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/create" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Pilih Senarai Paparan Projek">Pilih</a>
+
+                                                    {{-- @else --}}
+                                                    {{-- <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/edit" role="button"
+                                                    data-toggle="tooltip" data-placement="bottom" title="Pilih Senarai Paparan Projek">Pilih</a> --}}
                                                 </td>
                                             </tr> 
                                         @endforeach
@@ -79,4 +84,17 @@
             </div>
         </div>
     </div>
+
+<!---------------JavaScript--------------->
+        <!--Filter Paparan Senarai Projek-->
+        <script>
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+              });
+            });
+        </script>
 @endsection

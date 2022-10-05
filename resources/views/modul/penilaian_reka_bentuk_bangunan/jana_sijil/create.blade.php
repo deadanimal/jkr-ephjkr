@@ -16,7 +16,7 @@
 <div class="container-fluid">
     <div class="card-body">
         
-            <form action="/penilaian_reka_bentuk_bangunan/semakan_rawak/{id}" method="post" enctype="multipart/form-data">
+            <form action="/penilaian_reka_bentuk_bangunan/jana_sijil/{id}" method="post" enctype="multipart/form-data">
                 @csrf
                 @method('POST')
 
@@ -163,7 +163,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>29</th>
+                                <th>26</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
@@ -171,7 +171,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>29</th>
+                                <th>26</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
@@ -179,7 +179,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>29</th>
+                                <th>26</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
@@ -188,7 +188,7 @@
                                 <th>0</th>
 
                                 {{-- PUN --}}
-                                <th>24</th>
+                                <th>26</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
@@ -196,7 +196,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>27</th>
+                                <th>26</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
@@ -204,7 +204,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>27</th>
+                                <th>26</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
@@ -212,7 +212,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>27</th>
+                                <th>26</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</th> --}}
                                 <th>0</th>
@@ -266,7 +266,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>36</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -274,7 +274,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>52</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -282,7 +282,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>55</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -291,7 +291,7 @@
                                 <th>0</th>
 
                                 {{-- PUN --}}
-                                <th>19</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -299,7 +299,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>30</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -307,7 +307,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>51</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -315,7 +315,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>54</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -324,7 +324,7 @@
                                 <th>0</th>
 
                                 {{-- Sedia Ada --}}
-                                <th>0</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -332,7 +332,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -340,7 +340,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -348,7 +348,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>24</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}</th> --}}
                                 <th>0</th>
@@ -394,7 +394,7 @@
                                 <th>0</th>
 
                                 {{-- PUN --}}
-                                <th>15</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -402,7 +402,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>15</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -410,7 +410,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>15</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -418,7 +418,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>15</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -427,7 +427,7 @@
                                 <th>0</th>
 
                                 {{-- Sedia Ada --}}
-                                <th>0</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -435,7 +435,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -443,7 +443,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -451,7 +451,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>20</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}</th> --}}
                                 <th>0</th>
@@ -472,7 +472,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>22</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -480,7 +480,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>22</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -488,7 +488,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>22</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -505,7 +505,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>22</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -513,7 +513,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>22</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -521,7 +521,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>22</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -530,7 +530,7 @@
                                 <th>0</th>
 
                                 {{-- Sedia Ada --}}
-                                <th>0</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -538,7 +538,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -546,7 +546,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>14</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}</th> --}}
                                 <th>0</th>
@@ -575,7 +575,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>13</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -583,7 +583,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>25</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -591,7 +591,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>29</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -600,7 +600,7 @@
                                 <th>0</th>
 
                                 {{-- PUN --}}
-                                <th>1</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -608,7 +608,7 @@
                                 <th>0</th>
                                 <th>0</th>
                                 
-                                <th>13</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -616,7 +616,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>25</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -624,7 +624,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>27</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -633,7 +633,7 @@
                                 <th>0</th>
 
                                 {{-- Sedia Ada --}}
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -641,7 +641,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -649,7 +649,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -657,7 +657,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -678,7 +678,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>5</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -686,7 +686,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>5</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -694,7 +694,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>5</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -703,7 +703,7 @@
                                 <th>0</th>
 
                                 {{-- PUN --}}
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -711,7 +711,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>5</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -719,7 +719,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>5</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -727,7 +727,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>5</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -736,7 +736,7 @@
                                 <th>0</th>
 
                                 {{-- Sedia Ada --}}
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -744,7 +744,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -752,7 +752,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -760,7 +760,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -780,7 +780,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>6</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -788,7 +788,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>6</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -796,7 +796,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>6</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -805,7 +805,7 @@
                                 <th>0</th>
 
                                 {{-- PUN --}}
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -813,7 +813,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>6</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -821,7 +821,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>6</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -829,7 +829,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>6</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -838,7 +838,7 @@
                                 <th>0</th>
 
                                 {{-- Sedia Ada --}}
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -846,7 +846,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -854,7 +854,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -862,7 +862,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>11</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}</th> --}}
                                 <th>0</th>
@@ -882,7 +882,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>131</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -890,7 +890,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>159</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -898,7 +898,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>166</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -907,7 +907,7 @@
                                 <th>0</th>
 
                                 {{-- PUN --}}
-                                <th>73</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -915,7 +915,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>118</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -923,7 +923,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>151</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -931,7 +931,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>156</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -940,7 +940,7 @@
                                 <th>0</th>
 
                                 {{-- Sedia Ada --}}
-                                <th>0</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -948,7 +948,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -956,7 +956,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -964,7 +964,7 @@
                                 <th>0</th>
                                 <th>0</th>
 
-                                <th>0</th>
+                                <th>101</th>
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMS}}</th> --}}
                                 {{-- <th>{{$kriteria_phjkr_bangunan->markahMR}}</th> --}}
                                 <th>0</th>
@@ -989,9 +989,9 @@
 
                         <tr align="center" class="text-black">
                             <th colspan="3">
-                                <a class="button btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$kriteria_phjkr_bangunan->id}}">Semakan Rawak</a>
+                                <a class="button btn btn-primary" href="/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{{$kriteria_phjkr_bangunan->id}}">Jana Sijil</a>
                                 {{-- <a class="button btn btn-secondary" type="submit" href="/penilaian_reka_bentuk_bangunan/jana_sijil/create">Disahkan</a> --}}
-                                <button type="submit" class="btn btn-secondary">Disahkan</button>
+                                {{-- <button type="submit" class="btn btn-secondary">Disahkan</button> --}}
                             </th>
                         </tr>
 
@@ -1061,9 +1061,8 @@
                 {{-- <div class="outer-border row mx-3 mt-3">
                             <div class="drag-area">
                                 <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                        <img src="/assets/img/Group7164.png" alt="" > --}}
-                                    {{-- </div> --}}
-                                    {{-- <header>Muat Naik Fail Anda</header>  
+                                        <img src="/assets/img/Group7164.png" alt="" >
+                                    <header>Muat Naik Fail Anda</header>  
                             </div>
                 </div> --}}
 

@@ -72,5 +72,6 @@ class RolesAndPermissionSeeder extends Seeder
     //         'penilaian reka bentuk',
     //         'jana keputusan'
     //     ]);
+
     }
 }

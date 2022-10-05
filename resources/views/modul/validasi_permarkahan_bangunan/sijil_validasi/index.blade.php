@@ -52,16 +52,16 @@
                                     {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody>
                                         <!--LOOPING TABLES-->
-                                        @foreach ($kriteria_phjkr_bangunan as $key => $k)
+                                        @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
-                                                <td>{{ $k->id }}</td>
+                                                <td>{{ $p->id }}</td>
                                                 {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->id_ruj_skala}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->namaProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->alamatProjek}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">{{$k->statusProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->id_ruj_skala}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
+                                                <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/sijil_validasi/{{$k->id}}" role="button"
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/sijil_validasi/{{$p->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 

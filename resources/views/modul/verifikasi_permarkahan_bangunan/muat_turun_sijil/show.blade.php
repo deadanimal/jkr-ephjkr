@@ -3,9 +3,6 @@
 @section('content')
 <div class="container-fluid">
     <div class="card-body" id="skorkadpenilaian">
-        {{-- <form action="/penilaian_reka_bentuk_bangunan/muat_turun_sijil/{id}" method="post" enctype="multipart/form-data">
-            @csrf --}}
-            {{-- @method('PUT') --}}
             <div class="table-responsive scrollbar">
                 <div class="row mx-3">
                     <table class="table table-bordered line-table shadow-table-jkr line-corner-table-jkr">
@@ -969,7 +966,7 @@
                 <table class="table table-bordered line-table shadow-table-jkr">
                     <thead class="text-white line-table">
                         <tr align="center" style="background-color:#EB5500">
-                            <th colspan="3">KEPUTUSAN PENARAFAN HIJAU PERINGKAT REKA BENTUK (PRB)</th>
+                            <th colspan="3">KEPUTUSAN PENARAFAN HIJAU PERINGKAT VERIFIKASI BANGUNAN</th>
                         </tr>
 
                         {{-- <tr align="center" class="text-black">
@@ -1054,10 +1051,6 @@
                 {{-- <div class="mb-3 text-center">
                     <button class="btn btn-primary dropdown-toggle" id="download">Muat Turun</button>
                 </div> --}}
-
-
-
-        {{-- </form> <!--Form--> --}}
     </div> <!--Card Body-->
 </div> <!--Container Fluid-->
 

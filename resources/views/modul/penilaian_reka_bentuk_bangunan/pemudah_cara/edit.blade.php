@@ -20,9 +20,9 @@
         <b class="maklumat-pemudah-cara">Maklumat Pemudah Cara</b>
     </div>
     <div class="card-body">
-        <form action="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
+        <form action="/penilaian_reka_bentuk_bangunan/pemudah_cara/{{$pemudah_cara->id}}" enctype="multipart/form-data" method="POST">
+            @method('PUT')
             @csrf
-            {{-- @method('PUT') --}}
 
             <!--Nama-->
             {{-- <input type="text" name="projek_id" value={{$projeks->id}}> --}}
@@ -30,24 +30,24 @@
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Nama:</label>
                     <div class="col-sm-7">
-                        <input class="form-control" type="text" autocapitalize="off" name="nama" />                        
+                        <input class="form-control" type="text" autocapitalize="off" name="nama" value="{{$pemudah_cara->nama}}"/>                        
                     </div>
             </div>
 
             <!--Nama Projek-->
-            <div class="mb-3 form-group row">
+            {{-- <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Nama Projek:</label>
                     <div class="col-sm-7">
-                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek" /> 
+                        <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>  --}}
                         {{-- <textarea name="id" class="form-control" type="text">{{$projeks->id}}</textarea>                       --}}
-                    </div>
-            </div>
+                    {{-- </div>
+            </div> --}}
 
             <!--Syarikat/Cawangan-->
             <div class="mb-3 form-group row">
                 <label class="col-sm-2 col-form-label">Syarikat:</label>
                     <div class="col-sm-7">
-                        <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="syarikat_cawangan" value="{{$pemudah_cara->syarikat_cawangan}}"/>                        
                     </div>
             </div>
 
@@ -55,7 +55,7 @@
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">No. Tel:</label>
                     <div class="col-sm-7">
-                        <input class="form-control" type="number" autocapitalize="off" name="no_tel"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="no_tel" value="{{$pemudah_cara->no_tel}}"/>                        
                     </div>
             </div>
 
@@ -63,7 +63,7 @@
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">No. Fax:</label>
                     <div class="col-sm-7">
-                        <input class="form-control" type="number" autocapitalize="off" name="no_fax"/>                        
+                        <input class="form-control" type="number" autocapitalize="off" name="no_fax" value="{{$pemudah_cara->no_fax}}"/>                        
                     </div>
             </div>
 
@@ -71,7 +71,7 @@
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">E-mel:</label>
                     <div class="col-sm-7">
-                        <input class="form-control" type="text" autocapitalize="off" name="email"/>                        
+                        <input class="form-control" type="text" autocapitalize="off" name="email" value="{{$pemudah_cara->email}}"/>                        
                     </div>
             </div>
 
@@ -79,18 +79,18 @@
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Disiplin:</label>
                     <div class="col-sm-7">
-                        <input class="form-control" type="text" autocapitalize="off" name="disiplin"/>
+                        <input class="form-control" type="text" autocapitalize="off" name="disiplin" value="{{$pemudah_cara->disiplin}}"/>
                     </div>
             </div>
 
             <!--Kategori-->
-                <input class="form-control" type="hidden" name="kategori" value="bangunan" />
+                <input class="form-control" type="hidden" name="kategori" value="bangunan"/>
 
             <!--Button Daftar Pemudah Cara (TOOLTIPS)-->
             <div class="text-center">
                 {{-- <a href="#" class="btn btn-primary" type="submit">Daftar</a> --}}
                 <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                title="Lantik Pemudah Cara" type="submit">Lantik</button>
+                title="Kemaskini Pemudah Cara" type="submit">Kemaskini</button>
             </div>
         </form>
     </div> <!--card-body-->
