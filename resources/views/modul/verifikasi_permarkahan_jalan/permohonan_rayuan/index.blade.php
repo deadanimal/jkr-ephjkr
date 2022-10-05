@@ -29,11 +29,11 @@
         </div>
     </div>
 
-    <div class="row mb-3">
+    {{-- <div class="row mb-3">
         <div class="col text-end">
             <a href="/verifikasi_permarkahan_jalan/permohonan_rayuan/create" class="btn btn-primary">Pengesahan Rayuan</a>
         </div>
-    </div>
+    </div> --}}
 
 
     <div class="row d-flex justify-content-center table-responsive scrollbar">
@@ -46,6 +46,7 @@
                     <th scope="col">Alamat</th>
                     <th scope="col">Status Penilaian RekaBentuk</th>
                     <th scope="col">Rayuan</th>
+                    <th scope="col">Tindakan</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,6 +57,14 @@
                     <td>Jalan Sekapur Sireh</td>
                     <td>Berjaya</td>
                     <td>Tiada Rayuan dibuat</td>
+                    <td>
+                        <div class="row mb-3">
+                            <div class="col text-center">
+                                <a href="/verifikasi_permarkahan_jalan/permohonan_rayuan/create" class="btn btn-primary">Rayuan</a>
+                            </div>
+                        </div>
+                    </td>
+
                     
                 </tr>
             </tbody>

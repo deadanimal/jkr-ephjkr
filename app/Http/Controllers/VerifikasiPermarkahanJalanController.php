@@ -110,6 +110,7 @@ class VerifikasiPermarkahanJalanController extends Controller
     public function melantik_penilai_jalan($id)
     {
 
+        //dd('sd');
         $spk = Projek::find($id);
         // papar mcm index tapi ada button utk pengesahan
         return view('modul.verifikasi_permarkahan_jalan.melantik_penilai_jalan.create',[
@@ -284,5 +285,26 @@ class VerifikasiPermarkahanJalanController extends Controller
         $penilai_jalan->save();
 
         return redirect('/verifikasi_permarkahan_jalan/penilai_jalan');
+    }
+
+    public function pengesahan_rayuan_verifikasi()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.pengesahan_rayuan.index');
+        
+    }
+
+    public function jana_sijil_verifikasi()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.jana_sijil.index');
+        
+    }
+
+    public function muat_turun_verifikasi()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.muat_turun_sijil.index');
+        
     }
 }
