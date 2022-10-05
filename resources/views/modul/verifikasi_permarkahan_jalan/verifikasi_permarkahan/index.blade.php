@@ -17,17 +17,17 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>VERIFIKASI PERMARKAHAN JALAN</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>PENILAIAN VERIFIKASI PERMARKAHAN JALAN</strong></h3>
         </div>
     </div>
 
     <hr class="text-primary mb-3">
 
-    <div class="row mb-3">
+    {{-- <div class="row mb-3">
         <div class="col text-end">
             <a href="/verifikasi_permarkahan_jalan/verifikasi_permarkahan/create" class="btn btn-primary">Pengesahan</a>
         </div>
-    </div>
+    </div> --}}
 
 
     <div class="row d-flex justify-content-center table-responsive scrollbar">
@@ -40,6 +40,7 @@
                     <th scope="col">Nama Penilai</th>
                     <th scope="col">Nama Syarikat/Cawangan</th>
                     <th scope="col">Status Penilaian Markah</th>
+                    <th scope="col">Tindakan</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,6 +51,13 @@
                     <td>Ali bin Abu</td>
                     <td>PNSB</td>
                     <td>Lulus</td>
+                    <td> 
+                        <div class="row mb-3">
+                            <div class="col text-center">
+                                <a href="/verifikasi_permarkahan_jalan/permohonan_rayuan/create" class="btn btn-primary">Markah</a>
+                            </div>
+                        </div>
+                    </td>
                     
                 </tr>
             </tbody>

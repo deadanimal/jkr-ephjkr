@@ -20,11 +20,29 @@
 
     <hr class="text-primary">
 
-    <div class="row mt-3">
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+                <div class="card p-3  py-4">
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-3">
+                            <label for="nama_projek">Nama Projek:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="myInput" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-warning btn-block">Carian</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{-- <div class="row mt-3">
         <div class="col text-end">
             <a href="/verifikasi_permarkahan_jalan/senarai_projek_create/create" class="btn btn-primary">Tambah</a>
         </div>
-    </div>
+    </div> --}}
 
     <div class="row mt-2">
         <div class="col">
@@ -38,6 +56,8 @@
                                 <th class="sort">Nama Projek</th>
                                 <th class="sort">Alamat</th>
                                 <th class="sort">Status Projek</th>
+                                <th class="sort">Jenis Projek</th>
+                                <th class="sort">Kategori</th>
                                 <th class="sort">Nama Pemudah Cara</th>
                                 <th class="sort">Nama Penilai</th>
                                 {{-- <th class="sort">Tindakan</th> --}}
@@ -51,11 +71,20 @@
                                     <td>{{ $spk->namaProjek }} </td>
                                     <td>{{ $spk->alamatProjek }}</td>
                                     <td>{{ $spk->statusProjek }}</td>
+                                    <td>{{ $spk->jenisKategoriProjek }}</td>
+                                    <td>
+                                        <select class="select-action" name="action" class="btn btn-warning">
+                                            <option  disabled selected>Pilih Kategori</option>
+                                            <option value ="arkitek">New Road</option>
+                                            <option value ="mekanikal">Existing Road</option>
+                                         </select>
+                                    </td>
+                                    
                                     <td style="text-align: right">{{ $spk->nama }}
                                         <a href="/verifikasi_permarkahan_jalan/pemudah_cara/create/{{$spk->id}}" type="button" class="btn btn-warning">+</a>
                                     </td>
                                     <td style="text-align: right">{{ $spk->nama }}
-                                        <a href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan/create" type="button" class="btn btn-warning">+</a>
+                                        <a href="/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{{$spk->id}}" type="button" class="btn btn-warning">+</a>
                                     </td>
                                     
                                     {{-- <td>
