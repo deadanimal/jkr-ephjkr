@@ -1037,9 +1037,12 @@
 
                 <!--BUTTON MUAT TURUN SIJIL-->
                 <div class="dropdown text-center">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button href="/penilaian_reka_bentuk_bangunan/createPDFBangunan/{id}" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                       Muat Turun
                     </button>
+
+                    {{-- <a class="btn btn-primary href="/penilaian_reka_bentuk_bangunan/createPDFBangunan/{id}">Muat Turun Bangunan</a> --}}
+                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/createPDFBangunan/{id}">Muat Turun</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                       <li><a class="dropdown-item" id="download">Skor Kad Penilaian</a></li>
                       <li><a class="dropdown-item" id="embedded_sijil">Sijil Verifikasi Penilaian Reka Bentuk Bangunan </a></li>

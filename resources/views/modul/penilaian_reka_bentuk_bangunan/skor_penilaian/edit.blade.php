@@ -144,7 +144,7 @@
 
                                 <td>1</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL1_MS" name="markahTL1_MS" /></td> --}}
-                                <td><input type="number" min="0" max="1" autocapitalize="off" id="markahTL1_MR" name="markahTL1_MR" /></td>
+                                <td><input type="number" min="0" max="1" autocapitalize="off" id="markahTL1_MR" name="markahTL1_MR" value="markahTL1_MR"/></td>
                                 <td></td>
                                 <td></td>
                                 {{-- <td></td>
@@ -178,9 +178,9 @@
                                 </td>
                                 <td>3</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MS" name="markahTL2_MS" /></td> --}}
-                                <td><input type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MR" name="markahTL2_MR" /></td>
+                                <td><input type="number" min="0" max="3" autocapitalize="off" id="markahTL2_MR" name="markahTL2_MR" value="{{$kriteria_phjkr_bangunan->markahTL2_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahTL2_MR_PUN" name="markahTL2_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahTL2_MR_PUN" name="markahTL2_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL2_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td><span>&#183; Sijil ISO 14001</span><br>
@@ -211,9 +211,9 @@
                                 </td>                            
                                 <td>3</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MS" name="markahTL3_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MR" name="markahTL3_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MR" name="markahTL3_MR" value="{{$kriteria_phjkr_bangunan->markahTL3_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahTL3_MR_PUN" name="markahTL3_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahTL3_MR_PUN" name="markahTL3_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL3_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -245,9 +245,9 @@
                                 {{-- <th>A</th> --}}
                                 <td>2</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MS" name="markahTL32_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MR" name="markahTL32_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL32_MR" name="markahTL32_MR" value="{{$kriteria_phjkr_bangunan->markahTL32_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahTL32_MR_PUN" name="markahTL32_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahTL32_MR_PUN" name="markahTL32_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL32_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -284,9 +284,9 @@
                                 </td>                            
                                 <td>1</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MS" name="markahTL4_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MR" name="markahTL4_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL4_MR" name="markahTL4_MR" value="{{$kriteria_phjkr_bangunan->markahTL4_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahTL4_MR_PUN" name="markahTL4_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahTL4_MR_PUN" name="markahTL4_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL4_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -316,9 +316,9 @@
                                 </td>                            
                                 <td>1</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL5_MS" name="markahTL5_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL5_MR" name="markahTL5_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL5_MR" name="markahTL5_MR" value="{{$kriteria_phjkr_bangunan->markahTL5_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahTL5_MR_PUN" name="markahTL5_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahTL5_MR_PUN" name="markahTL5_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL5_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -349,9 +349,9 @@
                                 </td>                            
                                 <td>3</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" value="{{$kriteria_phjkr_bangunan->markahTL6_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahTL6_MR_PUN" name="markahTL6_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahTL6_MR_PUN" name="markahTL6_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL6_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -387,9 +387,9 @@
                                 </td>                            
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MS" name="markahTL6_MS" /></td> --}}
                                 <td>2</td>
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL6_MR" name="markahTL6_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL7_MR" name="markahTL7_MR" value="{{$kriteria_phjkr_bangunan->markahTL7_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahTL7_MR_PUN" name="markahTL7_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahTL7_MR_PUN" name="markahTL7_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL7_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -440,9 +440,9 @@
                                 <td colspan="6"></td>                            
                                 <td>3</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MS" name="markahTL81_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MR" name="markahTL81_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL81_MR" name="markahTL81_MR" value="{{$kriteria_phjkr_bangunan->markahTL81_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahTL81_MR_PUN" name="markahTL81_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahTL81_MR_PUN" name="markahTL81_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL81_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -475,9 +475,9 @@
                                 </td>                            
                                 <td>1</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MS" name="markahTL82_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MR" name="markahTL82_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL82_MR" name="markahTL82_MR" value="{{$kriteria_phjkr_bangunan->markahTL82_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahTL82_MR_PUN" name="markahTL82_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahTL82_MR_PUN" name="markahTL82_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL82_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -510,9 +510,9 @@
                                 </td>                            
                                 <td>1</td>
                                 {{-- <td colspan="4"><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MS" name="markahTL83_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MR" name="markahTL83_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL83_MR" name="markahTL83_MR" value="{{$kriteria_phjkr_bangunan->markahTL83_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahTL83_MR_PUN" name="markahTL83_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahTL83_MR_PUN" name="markahTL83_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL83_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -548,9 +548,9 @@
                                 </td>                            
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MS" name="markahTL84_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MR" name="markahTL84_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL84_MR" name="markahTL84_MR" value="{{$kriteria_phjkr_bangunan->markahTL84_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahTL84_MR_PUN" name="markahTL84_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahTL84_MR_PUN" name="markahTL84_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL84_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -581,9 +581,9 @@
                                 </td>                            
                                 <td>2</td>
                                 {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MS" name="markahTL85_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MR" name="markahTL85_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="2" autocapitalize="off" id="markahTL85_MR" name="markahTL85_MR" value="{{$kriteria_phjkr_bangunan->markahTL85_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahTL85_MR_PUN" name="markahTL85_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahTL85_MR_PUN" name="markahTL85_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL85_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -632,9 +632,9 @@
                                 </td>                            
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MS" name="markahTL91_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MR" name="markahTL91_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL91_MR" name="markahTL91_MR" value="{{$kriteria_phjkr_bangunan->markahTL91_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahTL91_MR_PUN" name="markahTL91_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahTL91_MR_PUN" name="markahTL91_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL91_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -669,9 +669,9 @@
                                 </td>
                                 <td>3</td>
                                 {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" value="{{$kriteria_phjkr_bangunan->markahTL92_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahTL92_MR_PUN" name="markahTL92_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahTL92_MR_PUN" name="markahTL92_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL92_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -705,9 +705,9 @@
                                 <td colspan="6"></td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_TL()" class="MS_TL" type="number" min="0" max="3" autocapitalize="off" id="markahTL92_MS" name="markahTL92_MS" /></td> --}}
-                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL92_MR" name="markahTL92_MR" /></td>
+                                <td><input onblur="findTotalMR_TL()" class="MR_TL" type="number" min="0" max="1" autocapitalize="off" id="markahTL10_MR" name="markahTL10_MR" value="{{$kriteria_phjkr_bangunan->markahTL10_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahTL10_MR_PUN" name="markahTL10_MR_PUN" ></td>
+                                <td><input type="number" min="0" max="1" id="markahTL10_MR_PUN" name="markahTL10_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTL10_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -737,9 +737,9 @@
                                 {{-- <td>
                                     <input id="totalMS_TL" type="number" name="markahTOTAL_TL_MS" id="markahTOTAL_TL_MS"/>
                                 </td> --}}
-                                <td><input type="number" min="0" max="29" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR"/></td>
+                                <td><input type="number" min="0" max="29" autocapitalize="off" name="markahTOTAL_TL_MR" id="markahTOTAL_TL_MR" value="{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}"/></td>
                                 <td>27</td>
-                                <td><input type="number" min="0" max="27" id="markahTOTAL_TL_MR_PUN" name="markahTOTAL_TL_MR_PUN"></td>
+                                <td><input type="number" min="0" max="27" id="markahTOTAL_TL_MR_PUN" name="markahTOTAL_TL_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                             </tr> 
@@ -841,9 +841,9 @@
 
                                 <td>2</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="2" id="markahKT1_MS" name="markahKT1_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="2" id="markahKT1_MR" name="markahKT1_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="2" id="markahKT1_MR" name="markahKT1_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT1_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahKT1_MR_PUN" name="markahKT1_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahKT1_MR_PUN" name="markahKT1_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT1_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -893,9 +893,9 @@
                                 </td>                            
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT21_MS" name="markahKT21_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT21_MR" name="markahKT21_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT21_MR" name="markahKT21_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT21_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT21_MR_PUN" name="markahKT21_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT21_MR_PUN" name="markahKT21_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT21_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -927,9 +927,9 @@
                                 </td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT22_MS" name="markahKT22_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT22_MR" name="markahKT22_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT22_MR" name="markahKT22_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT22_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT22_MR_PUN" name="markahKT22_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT22_MR_PUN" name="markahKT22_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT22_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -976,9 +976,9 @@
                                 </td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT31_MS" name="markahKT31_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT31_MR" name="markahKT31_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT31_MR" name="markahKT31_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT31_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT31_MR_PUN" name="markahKT31_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT31_MR_PUN" name="markahKT31_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT31_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1011,9 +1011,9 @@
                                 </td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT32_MS" name="markahKT32_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT32_MR" name="markahKT32_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT32_MR" name="markahKT32_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT32_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT32_MR_PUN" name="markahKT32_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT32_MR_PUN" name="markahKT32_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT32_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1038,9 +1038,9 @@
                                 </td>
                                 <td>5</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="5" id="markahKT4_MS" name="markahKT4_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="5" id="markahKT4_MR" name="markahKT4_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="5" id="markahKT4_MR" name="markahKT4_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT4_MR}}"/></td>
                                 <td>5</td>
-                                <td><input type="number" min="0" max="5" id="markahKT4_MR_PUN" name="markahKT4_MR_PUN"></td>
+                                <td><input type="number" min="0" max="5" id="markahKT4_MR_PUN" name="markahKT4_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT4_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1082,9 +1082,9 @@
                                 </td>
                                 <td>6</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT51_MR" name="markahKT51_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT51_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahKT51_MR_PUN" name="markahKT51_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahKT51_MR_PUN" name="markahKT51_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT51_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1119,9 +1119,9 @@
                                 </td>
                                 <td>6</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT52_MR}}"/></td>
                                 <td>6</td>
-                                <td><input type="number" min="0" max="6" id="markahKT52_MR_PUN" name="markahKT52_MR_PUN"></td>
+                                <td><input type="number" min="0" max="6" id="markahKT52_MR_PUN" name="markahKT52_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT52_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1154,9 +1154,9 @@
                                 </td>
                                 <td>6</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT53_MR" name="markahKT53_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT53_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT53_MR_PUN" name="markahKT53_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT53_MR_PUN" name="markahKT53_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT53_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1226,9 +1226,9 @@
                                 </td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT52_MR" name="markahKT52_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT61_MR" name="markahKT61_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT61_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT61_MR_PUN" name="markahKT61_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT61_MR_PUN" name="markahKT61_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT61_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1263,9 +1263,9 @@
                                 </td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT62_MR" name="markahKT62_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT62_MR" name="markahKT62_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT62_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT62_MR_PUN" name="markahKT62_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT62_MR_PUN" name="markahKT62_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT62_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1299,9 +1299,9 @@
                                 </td>
                                 <td>3</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="3" id="markahKT7_MR" name="markahKT7_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="3" id="markahKT7_MR" name="markahKT7_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT7_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahKT7_MR_PUN" name="markahKT7_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahKT7_MR_PUN" name="markahKT7_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT7_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1337,9 +1337,9 @@
                                 </td>
                                 <td>6</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT8_MS" name="markahKT8_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT8_MR" name="markahKT8_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT8_MR" name="markahKT8_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT8_MR}}"/></td>
                                 <td>6</td>
-                                <td><input type="number" min="0" max="6" id="markahKT8_MR_PUN" name="markahKT8_MR_PUN"></td>
+                                <td><input type="number" min="0" max="6" id="markahKT8_MR_PUN" name="markahKT8_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT8_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1372,9 +1372,9 @@
                                 </td>
                                 <td>10</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="10" id="markahKT9_MR" name="markahKT9_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="10" id="markahKT9_MR" name="markahKT9_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT9_MR}}"/></td>
                                 <td>10</td>
-                                <td><input type="number" min="0" max="10" id="markahKT9_MR_PUN" name="markahKT9_MR_PUN"></td>
+                                <td><input type="number" min="0" max="10" id="markahKT9_MR_PUN" name="markahKT9_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT9_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1439,9 +1439,9 @@
                                 </td>
                                 <td>6</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT101_MR" name="markahKT101_MR" autocapitalize="off"/></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="6" id="markahKT101_MR" name="markahKT101_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT101_MR}}"/></td>
                                 <td>5</td>
-                                <td><input type="number" min="0" max="5" id="markahKT101_MR_PUN" name="markahKT101_MR_PUN"></td>
+                                <td><input type="number" min="0" max="5" id="markahKT101_MR_PUN" name="markahKT101_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT101_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1480,9 +1480,9 @@
                                 </td>
                                 <td>5</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="5" id="markahKT102_MR" name="markahKT102_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="5" id="markahKT102_MR" name="markahKT102_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT102_MR}}"/></td>
                                 <td>5</td>
-                                <td><input type="number" min="0" max="5" id="markahKT102_MR_PUN" name="markahKT102_MR_PUN"></td>
+                                <td><input type="number" min="0" max="5" id="markahKT102_MR_PUN" name="markahKT102_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT102_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1517,9 +1517,9 @@
                                 </td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="6" id="markahKT52_MS" name="markahKT52_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT103_MR" name="markahKT103_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT103_MR" name="markahKT103_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT103_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT103_MR_PUN" name="markahKT103_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT103_MR_PUN" name="markahKT103_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT103_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1551,9 +1551,9 @@
                                 </td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_KT()" class="MS_KT" type="number" min="0" max="1" id="markahKT11_MS" name="markahKT11_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT11_MR" name="markahKT11_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_KT()" class="MR_KT" type="number" min="0" max="1" id="markahKT11_MR" name="markahKT11_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahKT11_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahKT11_MR_PUN" name="markahKT11_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahKT11_MR_PUN" name="markahKT11_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahKT11_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1580,9 +1580,9 @@
                                 <th colspan="6">Jumlah markah KT</th>
                                 <td colspan="3">55</td>
                                 {{-- <td colspan="2"><input id="totalMS_KT" type="number" min="0" max="24" autocapitalize="off" id="markahTOTAL_KT_MS" name="markahTOTAL_KT_MS"/></td> --}}
-                                <td><input id="totalMR_KT" type="number" min="0" max="55" autocapitalize="off" id="markahTOTAL_KT_MR" name="markahTOTAL_KT_MR"/></td>
+                                <td><input id="totalMR_KT" type="number" min="0" max="55" autocapitalize="off" id="markahTOTAL_KT_MR" name="markahTOTAL_KT_MR" value="{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR}}"/></td>
                                 <td>54</td>
-                                <td><input id="totalMR_KT" type="number" min="0" max="54" autocapitalize="off" id="markahTOTAL_KT_MR_PUN" name="markahTOTAL_KT_MR_PUN"/></td>
+                                <td><input id="totalMR_KT" type="number" min="0" max="54" autocapitalize="off" id="markahTOTAL_KT_MR_PUN" name="markahTOTAL_KT_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTOTAL_KT_MR_PUN}}"/></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                             </tr> 
@@ -1641,7 +1641,7 @@
                                 </td>
                                 <td>5</td>
                                 {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="5" id="markahSB1_MS" name="markahSB1_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="5" id="markahSB1_MR" name="markahSB1_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="5" id="markahSB1_MR" name="markahSB1_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahSB1_MR}}"/></td>
                                 <td></td>
                                 <td></td>
                                 {{-- <td></td>
@@ -1674,9 +1674,9 @@
                                 <td colspan="6">tarik id projek</td>
                                 <td>7</td>
                                 {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="7" id="markahSB2_MS" name="markahSB2_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="7" id="markahSB2_MR" name="markahSB2_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="7" id="markahSB2_MR" name="markahSB2_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahSB2_MR}}"/></td>
                                 <td>7</td>
-                                <td><input type="number" min="0" max="7" id="markahSB2_MR_PUN" name="markahSB2_MR_PUN"></td>
+                                <td><input type="number" min="0" max="7" id="markahSB2_MR_PUN" name="markahSB2_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahSB2_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1708,9 +1708,9 @@
                                 <td colspan="6">tarik id projek lah</td>
                                 <td>4</td>
                                 {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="4" id="markahSB3_MS" name="markahSB3_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB3_MR" name="markahSB3_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB3_MR" name="markahSB3_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahSB3_MR}}"/></td>
                                 <td>4</td>
-                                <td><input type="number" min="0" max="4" id="markahSB3_MR_PUN" name="markahSB3_MR_PUN"></td>
+                                <td><input type="number" min="0" max="4" id="markahSB3_MR_PUN" name="markahSB3_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahSB3_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1750,9 +1750,9 @@
                                 </td>
                                 <td>4</td>
                                 {{-- <td><input onblur="findTotalMS_SB()" class="MS_SB" type="number" min="0" max="4" id="markahSB4_MS" name="markahSB4_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB4_MR" name="markahSB4_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_SB()" class="MR_SB" type="number" min="0" max="4" id="markahSB4_MR" name="markahSB4_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahSB4_MR}}"/></td>
                                 <td>4</td>
-                                <td><input type="number" min="0" max="4" id="markahSB4_MR_PUN" name="markahSB4_MR_PUN"></td>
+                                <td><input type="number" min="0" max="4" id="markahSB4_MR_PUN" name="markahSB4_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahSB4_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1781,9 +1781,9 @@
                                     <th colspan="6">Jumlah markah SB</th>
                                     <td colspan="3">20</td>
                                     {{-- <td><input  id="totalMS_SB" type="number" autocapitalize="off" min="0" max="20" id="markahTOTAL_SB_MS" name="markahTOTAL_SB_MS"/></td> --}}
-                                    <td><input  id="totalMR_SB" type="number" autocapitalize="off" min="0" max="20" id="markahTOTAL_SB_MR" name="markahTOTAL_SB_MR"/></td>
+                                    <td><input  id="totalMR_SB" type="number" autocapitalize="off" min="0" max="20" id="markahTOTAL_SB_MR" name="markahTOTAL_SB_MR" value="{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR}}"/></td>
                                     <td>15</td>
-                                    <td><input type="number" min="0" max="15" id="markahTOTAL_SB_MR_PUN" name="markahTOTAL_SB_MR_PUN"></td>
+                                    <td><input type="number" min="0" max="15" id="markahTOTAL_SB_MR_PUN" name="markahTOTAL_SB_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTOTAL_SB_MR_PUN}}"></td>
                                     {{-- <td>0</td>
                                     <td>0</td> --}}
                                     <td colspan="5"></td>
@@ -1841,9 +1841,9 @@
                                 <td colspan="6"></td>
                                 <td>3</td>
                                 {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="3" id="markahPA3_MS" name="markahPA1_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="3" id="markahPA1_MR" name="markahPA1_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="3" id="markahPA1_MR" name="markahPA1_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPA1_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahPA1_MR_PUN" name="markahPA1_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahPA1_MR_PUN" name="markahPA1_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPA1_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1874,9 +1874,9 @@
                                 <td colspan="6"></td>
                                 <td>2</td>
                                 {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA2_MR" name="markahPA2_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPA2_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahPA2_MR_PUN" name="markahPA2_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahPA2_MR_PUN" name="markahPA2_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPA2_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1907,9 +1907,9 @@
                                 <td colspan="6"></td>
                                 <td>4</td>
                                 {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="4" id="markahPA3_MS" name="markahPA3_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="4" id="markahPA3_MR" name="markahPA3_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="4" id="markahPA3_MR" name="markahPA3_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPA3_MR}}"/></td>
                                 <td>4</td>
-                                <td><input type="number" min="0" max="4" id="markahPA3_MR_PUN" name="markahPA3_MR_PUN"></td>
+                                <td><input type="number" min="0" max="4" id="markahPA3_MR_PUN" name="markahPA3_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPA3_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1939,9 +1939,9 @@
                                 <td colspan="6"></td>
                                 <td>5</td>
                                 {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="5" id="markahPA32_MS" name="markahPA32_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="5" id="markahPA32_MR" name="markahPA32_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="5" id="markahPA32_MR" name="markahPA32_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPA32_MR}}"/></td>
                                 <td>5</td>
-                                <td><input type="number" min="0" max="5" id="markahPA32_MR_PUN" name="markahPA32_MR_PUN"></td>
+                                <td><input type="number" min="0" max="5" id="markahPA32_MR_PUN" name="markahPA32_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPA32_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -1974,9 +1974,9 @@
                                 <td colspan="6"></td>
                                 <td>5</td>
                                 {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA4_MR" name="markahPA4_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="2" id="markahPA4_MR" name="markahPA4_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPA4_MR}}"/></td>
                                 <td>5</td>
-                                <td><input type="number" min="0" max="5" id="markahPA4_MR_PUN" name="markahPA4_MR_PUN"></td>
+                                <td><input type="number" min="0" max="5" id="markahPA4_MR_PUN" name="markahPA4_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPA4_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -2008,9 +2008,9 @@
                                 <td colspan="6"></td>
                                 <td>3</td>
                                 {{-- <td><input onblur="findTotalMS_PA()" class="MS_PA" type="number" min="0" max="2" id="markahPA2_MS" name="markahPA2_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="3" id="markahPA5_MR" name="markahPA5_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_PA()" class="MR_PA" type="number" min="0" max="3" id="markahPA5_MR" name="markahPA5_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPA5_MR}}"/></td>
                                 <td>3</td>
-                                <td><input type="number" min="0" max="3" id="markahPA5_MR_PUN" name="markahPA5_MR_PUN"></td>
+                                <td><input type="number" min="0" max="3" id="markahPA5_MR_PUN" name="markahPA5_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPA5_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -2039,9 +2039,9 @@
                                 <th colspan="6">Jumlah markah PA</th>
                                 <th colspan="3">22</th>
                                 {{-- <th><input  id="totalMS_PA" type="number" min="0" max="14" autocapitalize="off" name="markahTOTAL_PA_MS"/></th> --}}
-                                <th><input  id="totalMR_PA" type="number" min="0" max="22" autocapitalize="off" id="markahTOTAL_PA_MR" name="markahTOTAL_PA_MR"/></th>
+                                <th><input  id="totalMR_PA" type="number" min="0" max="22" autocapitalize="off" id="markahTOTAL_PA_MR" name="markahTOTAL_PA_MR" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR}}"/></th>
                                 <th>22</th>
-                                <th><input type="number" min="0" max="22" id="markahTOTAL_PA_MR_PUN" name="markahTOTAL_PA_MR_PUN"></th>
+                                <th><input type="number" min="0" max="22" id="markahTOTAL_PA_MR_PUN" name="markahTOTAL_PA_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PA_MR_PUN}}"></th>
                                 {{-- <th>0</th>
                                 <th>0</th> --}}
                                 <th colspan="5"></th>
@@ -2102,9 +2102,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD1_MR" name="markahPD1_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD1_MR" name="markahPD1_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD1_MR}}"/></td>
                             <td>2</td>
-                            <td><input type="number" min="0" max="2" id="markahPD1_MR_PUN" name="markahPD1_MR_PUN"></td>
+                            <td><input type="number" min="0" max="2" id="markahPD1_MR_PUN" name="markahPD1_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD1_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td><span>&#183; Pelan susun atur lokasi papan tanda</span><br>
@@ -2148,7 +2148,7 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD21_MR" name="markahPD21_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD21_MR}}"/></td>
                             {{-- <td></td> --}}
                             <td></td>
                             <td></td>
@@ -2180,9 +2180,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off"/></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD22_MR" name="markahPD22_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD22_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD22_MR_PUN" name="markahPD22_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD22_MR_PUN" name="markahPD22_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD22_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td><span>&#183; Rekabentuk awalan yang menunjukkan pembahagian zon antara ruang pejabat
@@ -2212,9 +2212,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD23_MR" name="markahPD23_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD23_MR" name="markahPD23_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD23_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD23_MR_PUN" name="markahPD23_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD23_MR_PUN" name="markahPD23_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD23_MR}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2245,9 +2245,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD24_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD24_MR_PUN" name="markahPD24_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD24_MR_PUN" name="markahPD24_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD24_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2277,9 +2277,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD25_MS" name="markahPD25_MS" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1"id="markahPD25_MR" name="markahPD25_MR" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1"id="markahPD25_MR" name="markahPD25_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD25_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD25_MR_PUN" name="markahPD25_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD25_MR_PUN" name="markahPD25_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD25_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2326,9 +2326,9 @@
                             </td>
                             <td>2</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="2" id="markahPD31_MS" name="markahPD31_MS" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD31_MR" name="markahPD31_MR" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD31_MR" name="markahPD31_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD31_MR}}"/></td>
                             <td>2</td>
-                            <td><input type="number" min="0" max="2" id="markahPD31_MR_PUN" name="markahPD31_MR_PUN"></td>
+                            <td><input type="number" min="0" max="2" id="markahPD31_MR_PUN" name="markahPD31_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD31_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2360,9 +2360,9 @@
                             <td colspan="6"></td>
                             <td>2</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="2" id="markahPD32_MS" name="markahPD32_MS" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD32_MR" name="markahPD32_MR" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="2" id="markahPD32_MR" name="markahPD32_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD32_MR}}"/></td>
                             <td>2</td>
-                            <td><input type="number" min="0" max="2" id="markahPD32_MR_PUN" name="markahPD32_MR_PUN"></td>
+                            <td><input type="number" min="0" max="2" id="markahPD32_MR_PUN" name="markahPD32_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD32_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2396,9 +2396,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD33_MS" name="markahPD33_MS" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD33_MR" name="markahPD33_MR" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD33_MR" name="markahPD33_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD33_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD33_MR_PUN" name="markahPD33_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD33_MR_PUN" name="markahPD33_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD33_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2429,9 +2429,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="1" id="markahPD34_MS" name="markahPD34_MS" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD34_MR" name="markahPD34_MR" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="1" id="markahPD34_MR" name="markahPD34_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD34_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD34_MR_PUN" name="markahPD34_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD34_MR_PUN" name="markahPD34_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD34_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2464,9 +2464,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD35_MR" name="markahPD35_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD35_MR" name="markahPD35_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD35_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD35_MR_PUN" name="markahPD35_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD35_MR_PUN" name="markahPD35_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD35_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2528,9 +2528,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD41_MR" name="markahPD41_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD41_MR" name="markahPD41_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD41_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD41_MR_PUN" name="markahPD41_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD41_MR_PUN" name="markahPD41_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD41_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2563,9 +2563,9 @@
                             <td colspan="6"></td>
                             <td>2</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD42_MR" name="markahPD42_MR" type="number" min="0" max="2" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD42_MR" name="markahPD42_MR" type="number" min="0" max="2" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD42_MR}}"/></td>
                             <td>2</td>
-                            <td><input type="number" min="0" max="2" id="markahPD42_MR_PUN" name="markahPD42_MR_PUN"></td>
+                            <td><input type="number" min="0" max="2" id="markahPD42_MR_PUN" name="markahPD42_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD42_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2622,9 +2622,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD51_MR" name="markahPD51_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD51_MR" name="markahPD51_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD51_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD51_MR_PUN" name="markahPD51_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD51_MR_PUN" name="markahPD51_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD51_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2656,9 +2656,9 @@
                             <td colspan="6"></td>
                             <td>2</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD52_MR" name="markahPD52_MR" type="number" min="0" max="2" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD52_MR" name="markahPD52_MR" type="number" min="0" max="2" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD52_MR}}"/></td>
                             <td>2</td>
-                            <td><input type="number" min="0" max="2" id="markahPD52_MR_PUN" name="markahPD52_MR_PUN"></td>
+                            <td><input type="number" min="0" max="2" id="markahPD52_MR_PUN" name="markahPD52_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD52_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2720,9 +2720,9 @@
                             <td colspan="6"></td>
                             <td>3</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD61_MR" name="markahPD61_MR" type="number" min="0" max="3" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD61_MR" name="markahPD61_MR" type="number" min="0" max="3" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD61_MR}}"/></td>
                             <td>3</td>
-                            <td><input type="number" min="0" max="3" id="markahPD61_MR_PUN" name="markahPD61_MR_PUN"></td>
+                            <td><input type="number" min="0" max="3" id="markahPD61_MR_PUN" name="markahPD61_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD61_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2752,7 +2752,7 @@
                             <td colspan="6"></td>
                             <td>2</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD62_MR" name="markahPD62_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD62_MR" name="markahPD62_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD62_MR}}"/></td>
                             <td></td>
                             <td></td>
                             {{-- <td></td>
@@ -2783,9 +2783,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD7_MR" name="markahPD7_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD7_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD7_MR_PUN" name="markahPD7_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD7_MR_PUN" name="markahPD7_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD7_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2817,9 +2817,9 @@
                             <td colspan="6"></td>
                             <td>3</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" type="number" min="0" max="3" id="markahPD8_MS" name="markahPD8_MS" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="3" id="markahPD8_MR" name="markahPD8_MR" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="3" id="markahPD8_MR" name="markahPD8_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD8_MR}}"/></td>
                             <td>3</td>
-                            <td><input type="number" min="0" max="3" id="markahPD8_MR_PUN" name="markahPD8_MR_PUN"></td>
+                            <td><input type="number" min="0" max="3" id="markahPD8_MR_PUN" name="markahPD8_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD8_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2852,9 +2852,9 @@
                             <td colspan="6"></td>
                             <td>1</td>
                             {{-- <td><input onblur="findTotalMS_PD()" class="MS_PD" id="markahPD24_MS" name="markahPD24_MS" type="number" min="0" max="1" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD24_MR" name="markahPD24_MR" type="number" min="0" max="1" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_PD()" class="MR_PD" id="markahPD9_MR" name="markahPD9_MR" type="number" min="0" max="1" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahPD9_MR}}"/></td>
                             <td>1</td>
-                            <td><input type="number" min="0" max="1" id="markahPD9_MR_PUN" name="markahPD9_MR_PUN"></td>
+                            <td><input type="number" min="0" max="1" id="markahPD9_MR_PUN" name="markahPD9_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD9_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -2888,7 +2888,7 @@
                             {{-- <td><input onblur="findTotalMR_PD()" class="MR_PD" type="number" min="0" max="0" id="markahPD10_MR" name="markahPD10_MR" autocapitalize="off" /></td> --}}
                             <td></td>
                             <td>0</td>
-                            <td><input type="number" min="0" max="0" id="markahPD10_MR_PUN" name="markahPD10_MR_PUN"></td>
+                            <td><input type="number" min="0" max="0" id="markahPD10_MR_PUN" name="markahPD10_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahPD10_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td> 
@@ -2914,9 +2914,9 @@
                             <td colspan="6">Jumlah markah PD</td>
                             <td colspan="3">29</td>
                             {{-- <td><input  id="totalMS_PD" type="number" min="0" max="11" autocapitalize="off" name="markahTOTAL_PD_MS"/></td> --}}
-                            <td><input  id="totalMR_PD" type="number" min="0" max="29" autocapitalize="off" id="markahTOTAL_PD_MR" name="markahTOTAL_PD_MR"/></td>
+                            <td><input  id="totalMR_PD" type="number" min="0" max="29" autocapitalize="off" id="markahTOTAL_PD_MR" name="markahTOTAL_PD_MR" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR}}"/></td>
                             <td>27</td>
-                            <td><input type="number" min="0" max="27" id="markahTOTAL_PD_MR_PUN" name="markahTOTAL_PD_MR_PUN"></td>
+                            <td><input type="number" min="0" max="27" id="markahTOTAL_PD_MR_PUN" name="markahTOTAL_PD_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTOTAL_PD_MR_PUN}}"></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td colspan="5"></td>
@@ -3152,9 +3152,9 @@
                                 <td colspan="6"></td>
                                 <td>1</td>
                                 {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL31_MS" name="markahFL31_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="1" id="markahFL31_MR" name="markahFL31_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="1" id="markahFL31_MR" name="markahFL31_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahFL31_MR}}"/></td>
                                 <td>1</td>
-                                <td><input type="number" min="0" max="1" id="markahFL31_MR_PUN" name="markahFL31_MR_PUN"></td>
+                                <td><input type="number" min="0" max="1" id="markahFL31_MR_PUN" name="markahFL31_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahFL31_MR_PUN}}"></td>
                                 {{-- <td></td>
                                 <td></td> --}}
                                 <td>
@@ -3180,9 +3180,9 @@
                                 <td colspan="6"></td>
                                 <td>0</td>
                                 {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL32_MS" name="markahFL32_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL32_MR" name="markahFL32_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="0" id="markahFL32_MR" name="markahFL32_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahFL32_MR}}"/></td>
                                 <td>0</td>
-                                <td><input type="number" min="0" max="0" id="markahFL32_MR_PUN" name="markahFL32_MR_PUN"></td>
+                                <td><input type="number" min="0" max="0" id="markahFL32_MR_PUN" name="markahFL32_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahFL32_MR_PUN}}"></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -3207,9 +3207,9 @@
                                 <td colspan="6"></td>
                                 <td>2</td>
                                 {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL33_MS" name="markahFL33_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="2" id="markahFL33_MR" name="markahFL33_MR"autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="2" id="markahFL33_MR" name="markahFL33_MR"autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahFL33_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahFL33_MR_PUN" name="markahFL33_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahFL33_MR_PUN" name="markahFL33_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahFL33_MR_PUN}}"></td>
                                 <td></td>
                                 <td></td>
                                 <td>
@@ -3237,9 +3237,9 @@
                                 <td colspan="6"></td>
                                 <td>2</td>
                                 {{-- <td><input onblur="findTotalMS_FL()" class="MS_FL" type="number" min="0" max="0" id="markahFL34_MS" name="markahFL34_MS" autocapitalize="off" /></td> --}}
-                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="2" id="markahFL34_MR" name="markahFL34_MR" autocapitalize="off" /></td>
+                                <td><input onblur="findTotalMR_FL()" class="MR_FL" type="number" min="0" max="2" id="markahFL34_MR" name="markahFL34_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahFL34_MR}}"/></td>
                                 <td>2</td>
-                                <td><input type="number" min="0" max="2" id="markahFL34_MR_PUN" name="markahFL34_MR_PUN"></td>
+                                <td><input type="number" min="0" max="2" id="markahFL34_MR_PUN" name="markahFL34_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahFL34_MR_PUN}}"></td>
                                 <td></td>
                                 <td></td>
                                 <td> 
@@ -3262,9 +3262,9 @@
                                 <td colspan="6">Jumlah markah FL</td>
                                 <td colspan="3">5</td>
                                 {{-- <td><input  id="totalMS_FL" type="number" min="0" max="0" autocapitalize="off" name="markahTOTAL_FL_MS"/></td> --}}
-                                <td><input  id="totalMR_FL" type="number" min="0" max="5" autocapitalize="off" id="markahTOTAL_FL_MR" name="markahTOTAL_FL_MR"/></td>
+                                <td><input  id="totalMR_FL" type="number" min="0" max="5" autocapitalize="off" id="markahTOTAL_FL_MR" name="markahTOTAL_FL_MR" value="{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR}}"/></td>
                                 <td>5</td>
-                                <td><input  id="totalMR_FL" type="number" min="0" max="5" autocapitalize="off" id="markahTOTAL_FL_MR_PUN" name="markahTOTAL_FL_MR_PUN"/></td>
+                                <td><input  id="totalMR_FL" type="number" min="0" max="5" autocapitalize="off" id="markahTOTAL_FL_MR_PUN" name="markahTOTAL_FL_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTOTAL_FL_MR_PUN}}"/></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -3324,9 +3324,9 @@
                             <td colspan="6"></td>
                             <td>6</td>
                             {{-- <td><input onblur="findTotalMS_IN()" class="MS_IN" type="number" min="0" max="6" id="markahIN1_MS" name="markahIN1_MS" autocapitalize="off" /></td> --}}
-                            <td><input onblur="findTotalMR_IN()" class="MR_IN" type="number" min="0" max="6" id="markahIN1_MR" name="markahIN1_MR" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_IN()" class="MR_IN" type="number" min="0" max="6" id="markahIN1_MR" name="markahIN1_MR" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahIN1_MR}}"/></td>
                             <td>6</td>
-                            <td><input onblur="findTotalMR_IN()" class="MR_IN" type="number" min="0" max="6" id="markahIN1_MR_PUN" name="markahIN1_MR_PUN" autocapitalize="off" /></td>
+                            <td><input onblur="findTotalMR_IN()" class="MR_IN" type="number" min="0" max="6" id="markahIN1_MR_PUN" name="markahIN1_MR_PUN" autocapitalize="off" value="{{$kriteria_phjkr_bangunan->markahIN1_MR_PUN}}"/></td>
                             {{-- <td></td>
                             <td></td> --}}
                             <td>
@@ -3353,10 +3353,10 @@
                             <tr class="pg-7" align="center">
                                 <td colspan="6">Jumlah markah IN</td>
                                 <td colspan="3">6</td>
-                                <td><input  id="totalMS_IN" type="number" min="0" max="6" autocapitalize="off" id="markahTOTAL_IN_MS" name="markahTOTAL_IN_MS"/></td>
+                                <td><input  id="totalMS_IN" type="number" min="0" max="6" autocapitalize="off" id="markahTOTAL_IN_MR" name="markahTOTAL_IN_MR" value="{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}"/></td>
                                 <td>6</td>
                                 <td>
-                                    <input  id="totalMR_IN" type="number" min="0" max="6" autocapitalize="off" id="markahTOTAL_IN_MR_PUN" name="markahTOTAL_IN_MR_PUN"/>
+                                    <input  id="totalMR_IN" type="number" min="0" max="6" autocapitalize="off" id="markahTOTAL_IN_MR_PUN" name="markahTOTAL_IN_MR_PUN" value="{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR_PUN}}"/>
                                 </td>
                                 {{-- <td></td>
                                 <td></td> --}}
