@@ -108,4 +108,12 @@ class PenggunaController extends Controller
     {
         //
     }
+
+    public function pengguna_sembunyi()
+    {
+        //dd('sd');
+        return view('modul.pengurusan_maklumat.senarai_pengguna.pengguna_disembunyi', [
+            'pengguna' => User::get()
+        ]);
+    }
 }

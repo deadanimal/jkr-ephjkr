@@ -17,7 +17,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK JALAN</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>VERIFIKASI PERMARKAHAN JALAN</strong></h3>
         </div>
     </div>
 
@@ -78,62 +78,316 @@
                       
                       <th >Kod</th>
                       <th >Kriteria</th>
-                      <th colspan="3">Markah</th>
-                      <th >Ulasan / Maklum Balas Pemudah Cara</th>
+                      <th >Responsibility</th>
+                      <th colspan="4">Design</th>
+                      
        
                     </tr>
                     <tr>
+                      
                       <th></th>
                       <th></th>
-                      <th >7</th>
-                      <th >0</th>
-                      <th >0</th>
                       <th></th>
+                      <th >MAX POINT</th>
+                      <th >TARGET POINT</th>
+                      <th >ASSESSMENT POINT</th>
+                      <th>COMMENT BY ASSESSOR</th>
                     </tr>
   
                   </thead>
                   <tbody>
-  
+
                     <tr>
-                      <th rowspan="4">SM1</th>
-                      <th >Requirement for road works design</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <td>SM</td>
+                      <td colspan="6" align="left">site planning</td>
+                     
+                      
+                      
+                      
                     </tr>
   
                     <tr>
-                      <th >Traffic study</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td colspan="1" rowspan="12">SM1</td>
+                      <td colspan="2">Requirement for road works design</td>
+                      {{-- <td></td> --}}
+                      <td>7</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
                     </tr>
   
                     <tr>
-                      <th >Site investigation data</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >Traffic study</td>
+                      <td rowspan="7">CJ</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
                     <tr>
-                      <th >Survey drawing</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >Site investigation data</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >response to public</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
                     <tr>
-                      <th rowspan="1">SM2</th>
-                      <th >Road alignment</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >Survey drawing</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Flood records</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Value Management</td>
+                      <td>1</td>
+                      {{-- <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td> --}}
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >As Built Drawings</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Accident Reports</td>
+                      <td>CSFJ</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Structure Replacement</td>
+                      <td rowspan="3">CJ</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Forensic Report</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Pavement Evaluation</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+  
+                    <tr>
+                      <td rowspan="9">SM2</td>
+                      <td >Road alignment</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Slope not more tdan 6berms</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="7">SM3</td>
+                      <td >Road alignment</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Slope not more tdan 6berms</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td rowspan="4">SM4</td>
+                      <td >Road alignment</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Slope not more tdan 6berms</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >cut slope not ste</td>
+                      <td></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td colspan="3"> SUB TOTAL SM POINT</td>
+                      <td>18</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     </tr>
 
                   </tbody>

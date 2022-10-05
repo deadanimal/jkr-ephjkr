@@ -52,8 +52,8 @@
               <th >Component</th>
               <th>Product</th>
               <th>Point Allocated</th>
-              <th>Point Requested (design)</th>
-              <th>Point Requested (construction)</th>
+              {{-- <th>Point Requested (design)</th>
+              <th>Point Requested (construction)</th> --}}
               <th>Point Awarded</th>
               <th >Remark</th>
             </tr>
@@ -66,17 +66,18 @@
               <td >Epoxy paint</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorEpoxy" id="AwFloorFloorEpoxy"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorEpoxy" id="Cons_AwFloorFloorEpoxy"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorEpoxy" id="Awarded_AwFloorFloorEpoxy"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorEpoxy" id="Cons_AwFloorFloorEpoxy"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorEpoxy" id="Awarded_AwFloorFloorEpoxy"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorEpoxy" id="Remark_AwFloorFloorEpoxy"></td>                    
+              {{-- <td><input type="file" name="Remark_AwFloorFloorEpoxy" id="Remark_AwFloorFloorEpoxy"></td>                     --}}
             </tr>
   
             <tr>
               <td >Floor hardener</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorFloorHardener" id="AwFloorFloorFloorHardener"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorFloorHardener" id="Cons_AwFloorFloorFloorHardener"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorFloorHardener" id="Awarded_AwFloorFloorFloorHardener"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorFloorHardener" id="Cons_AwFloorFloorFloorHardener"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorFloorHardener" id="Awarded_AwFloorFloorFloorHardener"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorFloorHardener" id="Remark_AwFloorFloorFloorHardener"></td>                   
             </tr>
   
@@ -85,8 +86,8 @@
               <td >Ceramic tiles</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorCeramic" id="AwFloorFloorCeramic"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorCeramic" id="Cons_AwFloorFloorCeramic"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorCeramic" id="Awarded_AwFloorFloorCeramic"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorCeramic" id="Cons_AwFloorFloorCeramic"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorCeramic" id="Awarded_AwFloorFloorCeramic"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorCeramic" id="Remark_AwFloorFloorCeramic"></td>                   
             </tr>
   
@@ -94,8 +95,8 @@
               <td >Stones</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorStones" id="AwFloorFloorStones"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorStones" id="Cons_AwFloorFloorStones"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorStones" id="Awarded_AwFloorFloorStones"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorStones" id="Cons_AwFloorFloorStones"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorStones" id="Awarded_AwFloorFloorStones"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorStones" id="Remark_AwFloorFloorStones"></td>                    
             </tr>
   
@@ -103,8 +104,8 @@
               <td >Granites</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorGranite" id="AwFloorFloorGranite"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorGranite" id="Cons_AwFloorFloorGranite"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorGranite" id="Awarded_AwFloorFloorGranite"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorGranite" id="Cons_AwFloorFloorGranite"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorGranite" id="Awarded_AwFloorFloorGranite"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorGranite" id="Remark_AwFloorFloorGranite"></td>                    
             </tr>
   
@@ -112,8 +113,8 @@
               <td >Marble</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorMarble" id="AwFloorFloorMarble"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorMarble" id="Cons_AwFloorFloorMarble"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorMarble" id="Awarded_AwFloorFloorMarble"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorMarble" id="Cons_AwFloorFloorMarble"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorMarble" id="Awarded_AwFloorFloorMarble"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorMarble" id="Remark_AwFloorFloorMarble"></td>                   
             </tr>
   
@@ -121,8 +122,8 @@
               <td >Carpet</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorCarpet" id="AwFloorFloorCarpet"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorCarpet" id="Cons_AwFloorFloorCarpet"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorCarpet" id="Awarded_AwFloorFloorCarpet"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorCarpet" id="Cons_AwFloorFloorCarpet"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorCarpet" id="Awarded_AwFloorFloorCarpet"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorCarpet" id="Remark_AwFloorFloorCarpet"></td>                   
             </tr>
   
@@ -130,8 +131,8 @@
               <td >Carpet underlay</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorUnderlay" id="AwFloorFloorUnderlay"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorUnderlay" id="Cons_AwFloorFloorUnderlay"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorUnderlay" id="Awarded_AwFloorFloorUnderlay"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorUnderlay" id="Cons_AwFloorFloorUnderlay"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorUnderlay" id="Awarded_AwFloorFloorUnderlay"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorUnderlay" id="Remark_AwFloorFloorUnderlay"></td>                    
             </tr>
   
@@ -139,8 +140,8 @@
               <td >Vinyl</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorVinyl" id="AwFloorFloorVinyl"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorVinyl" id="Cons_AwFloorFloorVinyl"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorVinyl" id="Awarded_AwFloorFloorVinyl"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorVinyl" id="Cons_AwFloorFloorVinyl"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorVinyl" id="Awarded_AwFloorFloorVinyl"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorVinyl" id="Remark_AwFloorFloorVinyl"></td>                   
             </tr>
   
@@ -148,8 +149,8 @@
               <td >Timber</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorTimber" id="AwFloorFloorTimber"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorTimber" id="Cons_AwFloorFloorTimber"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorTimber" id="Awarded_AwFloorFloorTimber"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorTimber" id="Cons_AwFloorFloorTimber"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorTimber" id="Awarded_AwFloorFloorTimber"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorTimber" id="Remark_AwFloorFloorTimber"></td>                   
             </tr>
   
@@ -157,8 +158,8 @@
               <td >Interlocking pavers</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorPavers" id="AwFloorFloorPavers"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorPavers" id="Cons_AwFloorFloorPavers"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorPavers" id="Awarded_AwFloorFloorPavers"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorPavers" id="Cons_AwFloorFloorPavers"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorPavers" id="Awarded_AwFloorFloorPavers"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorPavers" id="Remark_AwFloorFloorPavers"></td>                    
             </tr>
   
@@ -166,8 +167,8 @@
               <td >Pebble wash</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorPebble" id="AwFloorFloorPebble"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorPebble" id="Cons_AwFloorFloorPebble"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorPebble" id="Awarded_AwFloorFloorPebble"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorPebble" id="Cons_AwFloorFloorPebble"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorPebble" id="Awarded_AwFloorFloorPebble"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorPebble" id="Remark_AwFloorFloorPebble"></td>                   
             </tr>
   
@@ -175,8 +176,8 @@
               <td >Bamboo</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorBamboo" id="AwFloorFloorBamboo"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorBamboo" id="Cons_AwFloorFloorBamboo"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorBamboo" id="Awarded_AwFloorFloorBamboo"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorBamboo" id="Cons_AwFloorFloorBamboo"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorBamboo" id="Awarded_AwFloorFloorBamboo"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorBamboo" id="Remark_AwFloorFloorBamboo"></td>                  
             </tr>
   
@@ -184,8 +185,8 @@
               <td >Cement render</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorCement" id="AwFloorFloorCement"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorCement" id="Cons_AwFloorFloorCement"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorCement" id="Awarded_AwFloorFloorCement"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorCement" id="Cons_AwFloorFloorCement"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorCement" id="Awarded_AwFloorFloorCement"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorCement" id="Remark_AwFloorFloorCement"></td>                    
             </tr>
   
@@ -193,8 +194,8 @@
               <td >Marmoleum</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorMarmoleum" id="AwFloorFloorMarmoleum"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorMarmoleum" id="Cons_AwFloorFloorMarmoleum"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorMarmoleum" id="Awarded_AwFloorFloorMarmoleum"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorMarmoleum" id="Cons_AwFloorFloorMarmoleum"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorMarmoleum" id="Awarded_AwFloorFloorMarmoleum"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorMarmoleum" id="Remark_AwFloorFloorMarmoleum"></td>                    
             </tr>
   
@@ -202,8 +203,8 @@
               <td >Rubber mat(playgrouubd)</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorRubber" id="AwFloorFloorRubber"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorRubber" id="Cons_AwFloorFloorRubber"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorRubber" id="Awarded_AwFloorFloorRubber"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorRubber" id="Cons_AwFloorFloorRubber"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorRubber" id="Awarded_AwFloorFloorRubber"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorRubber" id="Remark_AwFloorFloorRubber"></td>                    
             </tr>
   
@@ -211,8 +212,8 @@
               <td >Concrete imprint</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorConcrete" id="AwFloorFloorConcrete"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorConcrete" id="Cons_AwFloorFloorConcrete"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorConcrete" id="Awarded_AwFloorFloorConcrete"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorConcrete" id="Cons_AwFloorFloorConcrete"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorConcrete" id="Awarded_AwFloorFloorConcrete"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorConcrete" id="Remark_AwFloorFloorConcrete"></td>                   
             </tr>
   
@@ -220,8 +221,8 @@
               <td >Laminated flooring</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorFloorLaminate" id="AwFloorFloorLaminate"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorLaminate" id="Cons_AwFloorFloorLaminate"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorLaminate" id="Awarded_AwFloorFloorLaminate"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorLaminate" id="Cons_AwFloorFloorLaminate"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorLaminate" id="Awarded_AwFloorFloorLaminate"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorLaminate" id="Remark_AwFloorFloorLaminate"></td>                   
             </tr>
             
@@ -231,8 +232,8 @@
               <td >Adhesive</td>
               <td >2</td>
               <td> <input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorProofingAdhesive" id="AwFloorProofingAdhesive"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorProofingAdhesive" id="Cons_AwFloorProofingAdhesive"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorProofingAdhesive" id="Awarded_AwFloorProofingAdhesive"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorProofingAdhesive" id="Cons_AwFloorProofingAdhesive"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorProofingAdhesive" id="Awarded_AwFloorProofingAdhesive"></td>             --}}
               <td><input type="text" name="Remark_AwFloorProofingAdhesive" id="Remark_AwFloorProofingAdhesive"></td>                    
             </tr>
   
@@ -240,8 +241,8 @@
               <td >Sealant</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorProofingSealant" id="AwFloorProofingSealant"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorProofingSealant" id="Cons_AwFloorProofingSealant"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorProofingSealant" id="Awarded_AwFloorProofingSealant"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorProofingSealant" id="Cons_AwFloorProofingSealant"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorProofingSealant" id="Awarded_AwFloorProofingSealant"></td>             --}}
               <td><input type="text" name="Remark_AwFloorProofingSealant" id="Remark_AwFloorProofingSealant"></td>                  
             </tr>
   
@@ -249,8 +250,8 @@
               <td >Grout</td>
               <td >2</td>
               <td><input onblur="findTotalFloor()" type="number" min="0" max="2" class="floor" name="AwFloorProofingGrout" id="AwFloorProofingGrout"></td>            
-              <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorProofingGrout" id="Cons_AwFloorProofingGrout"></td>            
-              <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorProofingGrout" id="Awarded_AwFloorProofingGrout"></td>            
+              {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorProofingGrout" id="Cons_AwFloorProofingGrout"></td>             --}}
+              {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorProofingGrout" id="Awarded_AwFloorProofingGrout"></td>             --}}
               <td><input type="text" name="Remark_AwFloorProofingGrout" id="Remark_AwFloorProofingGrout"></td>                    
             </tr>
 
@@ -278,8 +279,8 @@
               <td >Office workstation</td>
               <td >2</td>
               <td> <input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltOffice" id="AwSystemBuiltOffice"></td>            
-              <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltOffice" id="Cons_AwSystemBuiltOffice"></td>            
-              <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltOffice" id="Awarded_AwSystemBuiltOffice"></td>            
+              {{-- <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltOffice" id="Cons_AwSystemBuiltOffice"></td>             --}}
+              {{-- <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltOffice" id="Awarded_AwSystemBuiltOffice"></td>             --}}
               <td><input type="text" name="Remark_AwSystemBuiltOffice" id="Remark_AwSystemBuiltOffice"></td> 
   
             </tr>
@@ -288,8 +289,8 @@
               <td >Toilet cubicle</td>
               <td >2</td>
               <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem " name="AwSystemBuiltToilet" id="AwSystemBuiltToilet"></td>            
-              <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltToilet" id="Cons_AwSystemBuiltToilet"></td>            
-              <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltToilet" id="Awarded_AwSystemBuiltToilet"></td>            
+              {{-- <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltToilet" id="Cons_AwSystemBuiltToilet"></td>             --}}
+              {{-- <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltToilet" id="Awarded_AwSystemBuiltToilet"></td>             --}}
               <td><input type="text" name="Remark_AwSystemBuiltToilet" id="Remark_AwSystemBuiltToilet"></td>                   
             </tr>
   
@@ -297,8 +298,8 @@
               <td >Institutional seating</td>
               <td >2</td>
               <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltInstitutional" id="AwSystemBuiltInstitutional"></td>            
-              <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltInstitutional" id="Cons_AwSystemBuiltInstitutional"></td>            
-              <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltInstitutional" id="Awarded_AwSystemBuiltInstitutional"></td>            
+              {{-- <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltInstitutional" id="Cons_AwSystemBuiltInstitutional"></td>             --}}
+              {{-- <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltInstitutional" id="Awarded_AwSystemBuiltInstitutional"></td>             --}}
               <td><input type="text" name="Remark_AwSystemBuiltInstitutional" id="Remark_AwSystemBuiltInstitutional"></td>                   
             </tr>
   
@@ -306,8 +307,8 @@
               <td >Built-in cupboards</td>
               <td >2</td>
               <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltCupboards" id="AwSystemBuiltCupboards"></td>            
-              <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltCupboards" id="Cons_AwSystemBuiltCupboards"></td>            
-              <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltCupboards" id="Awarded_AwSystemBuiltCupboards"></td>            
+              {{-- <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltCupboards" id="Cons_AwSystemBuiltCupboards"></td>             --}}
+              {{-- <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltCupboards" id="Awarded_AwSystemBuiltCupboards"></td>             --}}
               <td><input type="text" name="Remark_AwSystemBuiltCupboards" id="Remark_AwSystemBuiltCupboards"></td>                    
             </tr>
   
@@ -315,8 +316,8 @@
               <td >Sport facilities seating</td>
               <td >2</td>
               <td><input onblur="findTotalSystem()" type="number" min="0" max="2" class="prawsystem" name="AwSystemBuiltSport" id="AwSystemBuiltSport"></td>            
-              <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltSport" id="Cons_AwSystemBuiltSport"></td>            
-              <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltSport" id="Awarded_AwSystemBuiltSport"></td>            
+              {{-- <td> <input onblur="findTotalSystemConstruction()" type="number" min="0" max="2" class="prawsystem_construction" name="Cons_AwSystemBuiltSport" id="Cons_AwSystemBuiltSport"></td>             --}}
+              {{-- <td> <input onblur="findTotalSystemAwarded()" type="number" min="0" max="2" class="prawsystem_awarded" name="Awarded_AwSystemBuiltSport" id="Awarded_AwSystemBuiltSport"></td>             --}}
               <td><input type="text" name="Remark_AwSystemBuiltSport" id="Remark_AwSystemBuiltSport"></td>                    
             </tr>
 
@@ -337,7 +338,7 @@
   
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page4/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page4/create/{{$id}}" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
   
        

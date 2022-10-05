@@ -27,7 +27,7 @@
 </div>
 
 <div class="row3 mx-1 text-center">
-  <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
+  <form action= "/penilaian_reka_bentuk_gpss/simpan_pengesahan_penilaian/{id}" method="post" enctype="multipart/form-data">
     @method('POST')
       @csrf
       <div class="col">
@@ -43,8 +43,8 @@
               <th>Product</th>
               <th>Point Allocated</th>
               <th>Point Requested (design)</th>
-              <th>Point Requested (construction)</th>
-              <th>Point Awarded</th>
+              {{-- <th>Point Requested (construction)</th>
+              <th>Point Awarded</th> --}}
               <th >Remark</th>
             </tr>
           </thead>
@@ -56,8 +56,8 @@
               <td >Tap fitting</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryTapFitting}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryTapFitting}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryTapFitting}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryTapFitting}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryTapFitting}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryTapFitting}}</td>            
                                 
             </tr>
@@ -66,8 +66,8 @@
               <td >Water closet</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryWaterCloset}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryWaterCloset}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryWaterCloset}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryWaterCloset}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryWaterCloset}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryWaterCloset}}</td>
             </tr>
   
@@ -76,8 +76,8 @@
               <td >Water basin</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryWaterBasin}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryWaterBasin}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryWaterBasin}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryWaterBasin}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryWaterBasin}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryWaterBasin}}</td>                    
             </tr>
   
@@ -85,8 +85,8 @@
               <td >Sink</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitarySink}}   </td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitarySink}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitarySink}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitarySink}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitarySink}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitarySink}}</td>                   
             </tr>
   
@@ -94,8 +94,8 @@
               <td >Urinal</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryUrinal}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryUrinal}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryUrinal}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryUrinal}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryUrinal}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryUrinal}}</td>                    
             </tr>
   
@@ -103,8 +103,8 @@
               <td >Bidet</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryBidet}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryBidet}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryBidet}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryBidet}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryBidet}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryBidet}}</td>                    
             </tr>
   
@@ -112,8 +112,8 @@
               <td >Floor trap</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryFloorTrap}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryFloorTrap}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryFloorTrap}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryFloorTrap}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryFloorTrap}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryFloorTrap}}</td>                    
             </tr>
   
@@ -121,8 +121,8 @@
               <td >Shower</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryShower}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryShower}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryShower}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryShower}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryShower}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryShower}}</td>                    
             </tr>
   
@@ -130,8 +130,8 @@
               <td >Faucet</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSanitaryFaucet}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSanitaryFaucet}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSanitaryFaucet}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSanitaryFaucet}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSanitaryFaucet}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSanitaryFaucet}}</td>                   
             </tr>
           </tbody>
@@ -145,7 +145,7 @@
 
         <div>
           <!-- Design stage -->
-        <div class="mb-3 form-group row">
+        {{-- <div class="mb-3 form-group row">
           <label class="col-sm-5 col-form-label text-black">Prepared by: (Design Stage)</label>
               <div class="col-sm-5">
                   <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
@@ -164,12 +164,19 @@
               <div class="col-sm-5">
                   <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
               </div>
-      </div>
+      </div> --}}
         </div>
   
-        <div align="right" class="mt-3">
-          <button class="btn btn-primary" type="submit" title="Simpan">Hantar</button>
+        {{-- <div align="center" class="mt-3">
+          <button class="btn btn-primary" type="submit" title="sahkan" name="pengesahan">Sahkan</button>
+        </div> --}}
+
+      <div class="mb-3 row">
+          <label class="col-sm-2 col-form-label">Pengesahan:</label>
+        <div class="col-sm-10">
+          <button class="btn btn-primary" type="submit" title="sahkan" name="pengesahan">Sahkan</button>
         </div>
+      </div>
   
       </div>
   

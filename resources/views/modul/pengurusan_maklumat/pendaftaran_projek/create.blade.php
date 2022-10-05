@@ -43,56 +43,56 @@
                         <label class="col-form-label">Nama Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="namaProjek" type="text"/>
+                        <input class="form-control" name="namaProjek" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Alamat Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="alamatProjek" type="text"/>
+                        <input class="form-control" name="alamatProjek" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Poskod:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="poskod" type="number"/>
+                        <input class="form-control" name="poskod" type="number" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Bandar:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="bandar" type="text"/>
+                        <input class="form-control" name="bandar" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Negeri:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="negeri" type="text"/>
+                        <input class="form-control" name="negeri" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Keluasan Tapak:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="keluasanTapak" type="text"/>
+                        <input class="form-control" name="keluasanTapak" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Jumlah Blok Bangunan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="jumlahblokBangunan" type="text"/>
+                        <input class="form-control" name="jumlahblokBangunan" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Dokumen Sokongan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="dokumenSokongan" type="file"/>
+                        <input class="form-control" name="dokumenSokongan" type="file" required/>
                     </div>
 
                     {{-- <div class="col-3 mb-2">
@@ -106,42 +106,42 @@
                         <label class="col-form-label">Status Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="statusProjek"  value="Dalam Proses" type="text"/>
+                        <input class="form-control" name="statusProjek"  value="Dalam Proses" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Tarikh Jangka Mula Pembinaan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="tarikhJangkaMulaPembinaan" type="date"/>
+                        <input class="form-control" name="tarikhJangkaMulaPembinaan" type="date" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Tarikh Jangka Siap Pembinaan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="tarikhJangkaSiapPembinaan" type="date"/>
+                        <input class="form-control" name="tarikhJangkaSiapPembinaan" type="date" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Kaedah Pelaksanaan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="kaedahPelaksanaan" type="text"/>
+                        <input class="form-control" name="kaedahPelaksanaan" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Jenis Pelaksanaan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="jenisPelaksanaan" type="text"/>
+                        <input class="form-control" name="jenisPelaksanaan" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Kos Projek:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="kosProjek" type="text"/>
+                        <input class="form-control" name="kosProjek" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
@@ -167,7 +167,7 @@
                     </div>
                     <div class="col-7 mb-2">
                         <select class="form-select" aria-label="Default select example" name="jenisKategoriProjek">
-                            <option selected="">Sila Pilih</option>
+                            <option selected disabled="">Sila Pilih</option>
                             <option value="phJKR Bangunan">phJKR Bangunan</option>
                             <option value="phJKR Jalan">phJKR Jalan</option>
                             <option value="GPSS Bangunan">GPSS Bangunan</option>
@@ -179,7 +179,7 @@
                         <label class="col-form-label">Nama Ahli Pasukan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="ahli" type="text"/>
+                        <input class="form-control" name="ahli" type="text" required/>
                     </div>
 
                     <div class="col-3 mb-2">
