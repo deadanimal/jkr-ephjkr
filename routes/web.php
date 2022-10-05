@@ -160,10 +160,14 @@ Route::middleware('auth')->group(function () {
     Route::post('/penilaian_reka_bentuk_bangunan/simpan_skor/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_skor']);
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian', [PenilaianRekaBentukBangunanController::class, 'pengesahan_penilaian']);
     Route::get('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_pengesahan_penilaian']);
+
+    Route::put('/penilaian_reka_bentuk_bangunan/pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
+
     Route::post('/penilaian_reka_bentuk_bangunan/simpan_pengesahan_penilaian/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_pengesahan_penilaian']);
     Route::get('/penilaian_reka_bentuk_bangunan/jana_sijil', [PenilaianRekaBentukBangunanController::class, 'jana_sijil']);
     Route::get('/penilaian_reka_bentuk_bangunan/jana_sijil/{id}', [PenilaianRekaBentukBangunanController::class, 'papar_jana_sijil']);
     Route::post('/penilaian_reka_bentuk_bangunan/jana_sijil/{id}', [PenilaianRekaBentukBangunanController::class, 'simpan_jana_sijil']);
+
 
     Route::get('/penilaian_reka_bentuk_bangunan/createPDFBangunan/{id}', [PenilaianRekaBentukBangunanController::class, 'createPDFBangunan']);
 

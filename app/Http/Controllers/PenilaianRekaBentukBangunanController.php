@@ -10,18 +10,21 @@ use App\Models\PenilaianEphjkr;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use \PDF;
 use Illuminate\Support\Facades\DB;
-// use Spatie\Permission\Models\Permission;
-// use Spatie\Permission\Models\Role;
-// use Spatie\Permission\PermissionRegistrar;
+
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\PermissionRegistrar;
+
 
 use Illuminate\Http\Request;
 
 class PenilaianRekaBentukBangunanController extends Controller
 {
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 
     /**
      * Display a listing of the resource.
@@ -32,6 +35,7 @@ class PenilaianRekaBentukBangunanController extends Controller
     {
         $projeks = Projek::all();
         // Contoh
+
         // $user = $request->user();
         // if($user->hasRole('alpha') or $user->hasRole('beta')) {
         //     return view('modul.penilaian_reka_bentuk_bangunan.index',[
@@ -68,9 +72,11 @@ class PenilaianRekaBentukBangunanController extends Controller
 
 
 
-        return view('modul.penilaian_reka_bentuk_bangunan.index',[
-            'projeks'=>$projeks
-        ]);
+
+        // return view('modul.penilaian_reka_bentuk_bangunan.index',[
+        //     'projeks'=>$projeks
+        // ]);
+
 
 
         // $user = $request->user();
@@ -216,6 +222,14 @@ class PenilaianRekaBentukBangunanController extends Controller
         // 
 
 
+        // $user = $request->user();
+        // if($user->hasRole('Pemudah Cara (bagi PHJKR Bangunan & GPSS Bangunan dan Jalan)')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
+        //         'pemudah_cara'=>$pemudah_cara
+        //     ]);
+        // 
+
+
         // papar form pemudah cara with id projek
         
         // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
@@ -309,9 +323,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_skor(Request $request, $id)
     {
-        $penilaian_ephjkr = new PenilaianEphjkr();
-        $penilaian_ephjkr->ulasan = $request->ulasan;
-        $penilaian_ephjkr->save();
+
         // request all
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
 
@@ -467,6 +479,14 @@ class PenilaianRekaBentukBangunanController extends Controller
         //          'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         //     ]);
 
+        // Roles
+        // $user = $request->user();
+        // if($user->hasRole('Sekretariat')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index',[
+        //         'projeks'=>$projeks,
+        //          'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        //     ]);
+
         return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.index',[
             'projeks'=>$projeks
         ]);
@@ -523,6 +543,14 @@ class PenilaianRekaBentukBangunanController extends Controller
         //          'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         //     ]);
 
+        // Roles
+        // $user = $request->user();
+        // if($user->hasRole('Ketua Pasukan') or $user->hasRole('Ketua Pasukan')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.show',[
+        //         'projeks'=>$projeks,
+        //          'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        //     ]);
+
         return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.index', [
             'projeks'=>$projeks
         ]);
@@ -557,6 +585,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         return view('modul.penilaian_reka_bentuk_bangunan.jana_sijil.index');
     }
 
+
     public function papar_jana_sijil()
     {
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan();
@@ -576,6 +605,7 @@ class PenilaianRekaBentukBangunanController extends Controller
 
         return view('modul.penilaian_reka_bentuk_bangunan.jana_sijil.create');
     }
+
 
     public function createPDFBangunan($id){
 
