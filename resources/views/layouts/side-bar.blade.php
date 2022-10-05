@@ -877,22 +877,22 @@
                             </li>
                             {{-- Jana Sijil GPSS --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_verifikasi_gpss/jana_sijil_gpss') ? 'active' : '' }} py-0"
-                                    href="/penilaian_verifikasi_gpss/jana_sijil_gpss">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_gpss/jana_verifikasi') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_gpss/jana_verifikasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_verifikasi_gpss/jana_sijil_gpss') ? 'text-dark' : '' }}">Jana
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_gpss/jana_verifikasi') ? 'text-dark' : '' }}">Jana
                                             Sijil</span>
                                     </div>
                                 </a>
                             </li>
                             {{-- Papar dan Muat Turun Sijil Verifikasi GPSS --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_verifikasi_gpss/pengesahan_rayuan_gpss') ? 'active' : '' }} py-0"
-                                    href="/penilaian_verifikasi_gpss/pengesahan_rayuan_gpss">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_gpss/muat_turun_sijil_verifikasi') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_gpss/muat_turun_sijil_verifikasi">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_verifikasi_gpss/pengesahan_rayuan_gpss') ? 'text-dark' : '' }}">Papar dan Muat
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_gpss/muat_turun_sijil_verifikasi') ? 'text-dark' : '' }}">Papar dan Muat
                                             Turun Sijil Verifikasi</span>
                                     </div>
                                 </a>
@@ -992,7 +992,7 @@
                                 </a>
                             </li>
 
-                            {{-- Jana Keputusan --}}
+                            {{-- Papar Skor Kad --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/papar_skor_kad') ? 'active' : '' }} py-0"
                                     href="/penilaian_reka_bentuk_jalan/papar_skor_kad">
@@ -1039,11 +1039,11 @@
                             </li>
                             {{-- Jana Keputusan --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/jana_keputusan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/muat_turun_sijil') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/muat_turun_sijil">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/jana_keputusan') ? 'text-dark' : '' }}">Muat 
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/muat_turun_sijil') ? 'text-dark' : '' }}">Muat 
                                             Turun Sijil</span>
                                     </div>
                                 </a>

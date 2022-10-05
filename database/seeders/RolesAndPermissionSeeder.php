@@ -15,8 +15,6 @@ class RolesAndPermissionSeeder extends Seeder
      */
     public function run()
     {
-
-
         Permission::create(['name' => 'Dashboard']);
         Permission::create(['name' => 'faq']);
         Permission::create(['name' => 'hebahan']);

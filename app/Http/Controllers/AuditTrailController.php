@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Http\Requests\Request;
 use App\Http\Requests\StoreAuditTrailRequest;
 use App\Http\Requests\UpdateAuditTrailRequest;

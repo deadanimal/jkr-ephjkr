@@ -135,6 +135,18 @@ class PenilaianRekaBentukJalanController extends Controller
         return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page3.create');
     }
 
+    public function isi_skor_kad_page4() 
+    {
+        // create method
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page4.create');
+    }
+
+    public function isi_skor_kad_page5() 
+    {
+        // create method
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page5.create');
+    }
+
 
 
     public function penilai_jalan() 
@@ -175,6 +187,11 @@ class PenilaianRekaBentukJalanController extends Controller
     public function jana_sijil() 
     {
         return view('modul.penilaian_reka_bentuk_jalan.jana_sijil.index');
+    }
+
+    public function muat_turun_sijil() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.muat_turun_sijil.index');
     }
 
     

@@ -17,7 +17,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK JALAN</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>VERIFIKASI PERMARKAHAN JALAN</strong></h3>
         </div>
     </div>
 
@@ -29,6 +29,7 @@
         </div>
     </div>
 
+    
 
     <div>
       <form action="">
@@ -42,146 +43,211 @@
                       
                       <th >Kod</th>
                       <th >Kriteria</th>
-                      <th colspan="3">Markah</th>
-                      <th >Ulasan / Maklum Balas Pemudah Cara</th>
+                      <th >Responsibility</th>
+                      <th colspan="4">Design</th>
+                      
        
                     </tr>
                     <tr>
+                      
                       <th></th>
                       <th></th>
-                      <th >7</th>
-                      <th >0</th>
-                      <th >0</th>
                       <th></th>
+                      <th >MAX POINT</th>
+                      <th >TARGET POINT</th>
+                      <th >ASSESSMENT POINT</th>
+                      <th>COMMENT BY ASSESSOR</th>
                     </tr>
   
                   </thead>
                   <tbody>
-  
+
                     <tr>
-                      <th rowspan="4">PT1</th>
-                      <th >Existing pavement evaluation</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <td>PT</td>
+                      <td colspan="6" align="left">PAVEMENT TECHNOLOGIES</td>
+                     
+                      
+                      
+                      
                     </tr>
   
                     <tr>
-                      <th >Surface condition survey</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td colspan="1" rowspan="6">PT 1</td>
+                      <td colspan="2">EXISTING PAVEMENT EVALUATION</td>
+                      {{-- <td></td> --}}
+                      <td>3</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
                     </tr>
   
                     <tr>
-                      <th >Deflection test</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td>Surface Condition Survey</td>
+                      <td rowspan="5">CSFJ</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
                     <tr>
-                      <th >Trial pit</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
-                    </tr>
-  
-                    <tr>
-                      <th rowspan="1">PT2</th>
-                      <th >Permeable pavement</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >Coring & Dynamic Cone Penetrometer test</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
 
                     <tr>
-                      <th rowspan="4">AE1</th>
-                      <th >Safety audit</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <td >Deflection test</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
                     <tr>
-                      <th >Road safety audit</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
-                    </tr>
-  
-                    <tr>
-                      <th >Additional audit</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
-                    </tr>
-  
-                    <tr>
-                      <th >Survey drawing</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
-                    </tr>
-  
-                    <tr>
-                      <th rowspan="1">AE2</th>
-                      <th >Road alignment</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >Trial pit & Laboratory</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
 
                     <tr>
-                      <th rowspan="4">CA1</th>
-                      <th >Requirement for road works design</th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                      <th></th>
+                      <td >Surface Regularity Test (International Roughness Index, IRI)</td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    
+
+                    <tr>
+                      <td colspan="1" rowspan="4">PT 2</td>
+                      <td colspan="2">PERMEABLE PAVEMENT</td>
+                      {{-- <td></td> --}}
+                      <td>3</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
                     </tr>
   
+                    {{-- <tr>
+                      <td rowspan="9">SM2</td>
+                      <td colspan="2">Road alignment</td>
+                      <td>6</td>
+                      
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr> --}}
+
                     <tr>
-                      <th >To provide side safety</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >use of permeable (porous) pavement mix design</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
-  
                     <tr>
-                      <th >Provide designated road</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >Pavement crossfall 2.5% and min unpaved shoulder to drain</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
-  
                     <tr>
-                      <th >Create establish, implement routine maintenance for road</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td >Drainability of porous asphalt wearing course having a minimum thickness of 50mm</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
-  
+                    
+
                     <tr>
-                      <th rowspan="1">CA2</th>
-                      <th >House keeping</th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></th>
-                      <th><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></th>
+                      <td colspan="1" rowspan="2">PT 3</td>
+                      <td colspan="2">PAVEMENT PERFORMANCE TRACKING</td>
+                      {{-- <td></td> --}}
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >Use a process that allows construction quality measurements and long-term pavement performance measurements</td>
+                      <td></td>
+                      <td>2</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    
+
+                    <tr>
+                      <td colspan="1" rowspan="5">PT 4</td>
+                      <td colspan="2">LONG-LIFE PAVEMENT</td>
+                      {{-- <td></td> --}}
+                      <td>4</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      
+                      
+                    </tr>
+
+                    <tr>
+                      <td >Meet the requirements of Arahan Teknik Jalan</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >Pavement design is in accordance</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+                    <tr>
+                      <td >Drainability surface runoff</td>
+                      <td></td>
+                      <td>1</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr>
+                      <td >Riqid Pavement > 40 years design life</td>
+                      <td></td>
+                      <td>2</td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td colspan="3"> SUB TOTAL PT POINT</td>
+                      <td>12</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     </tr>
 
                   </tbody>

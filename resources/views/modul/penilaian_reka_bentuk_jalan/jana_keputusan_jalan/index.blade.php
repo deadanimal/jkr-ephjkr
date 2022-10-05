@@ -40,6 +40,7 @@
                     <th scope="col">Status Penilaian Verifikasi</th>
                     <th scope="col">Tindakan</th>
                 </tr>
+                
             </thead>
             <tbody>
                 <tr>

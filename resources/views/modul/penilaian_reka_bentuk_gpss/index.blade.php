@@ -8,7 +8,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Paparan Senarai Projek (Ketua Pasukan temp. view)
+                        Paparan Senarai Projek
                     </li>
                 </ol>
             </nav>
