@@ -51,8 +51,8 @@
               <th >Component</th>
               <th>Product</th>
               <th>Point Allocated</th>
-              <th>Point Requested (design)</th>
-              <th>Point Requested (construction)</th>
+              {{-- <th>Point Requested (design)</th>
+              <th>Point Requested (construction)</th> --}}
               <th>Point Awarded</th>
               <th >Remark</th>
             </tr>
@@ -65,8 +65,8 @@
               <td >Tap fitting</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryTapFitting" id="AwSanitaryTapFitting"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryTapFitting" id="Cons_AwSanitaryTapFitting"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryTapFitting" id="Awarded_AwSanitaryTapFitting"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryTapFitting" id="Cons_AwSanitaryTapFitting"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryTapFitting" id="Awarded_AwSanitaryTapFitting"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryTapFitting" id="Remark_AwSanitaryTapFitting"></td>            
                                  
             </tr>
@@ -75,8 +75,8 @@
               <td >Water closet</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryWaterCloset" id="AwSanitaryWaterCloset"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryWaterCloset" id="Cons_AwSanitaryWaterCloset"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryWaterCloset" id="Awarded_AwSanitaryWaterCloset"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryWaterCloset" id="Cons_AwSanitaryWaterCloset"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryWaterCloset" id="Awarded_AwSanitaryWaterCloset"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryWaterCloset" id="Remark_AwSanitaryWaterCloset"></td>                   
             </tr>
   
@@ -85,8 +85,8 @@
               <td >Water basin</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryWaterBasin" id="AwSanitaryWaterBasin"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryWaterBasin" id="Cons_AwSanitaryWaterBasin"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryWaterBasin" id="Awarded_AwSanitaryWaterBasin"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryWaterBasin" id="Cons_AwSanitaryWaterBasin"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryWaterBasin" id="Awarded_AwSanitaryWaterBasin"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryWaterBasin" id="Remark_AwSanitaryWaterBasin"></td>                   
             </tr>
   
@@ -94,8 +94,8 @@
               <td >Sink</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitarySink" id="AwSanitarySink"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitarySink" id="Cons_AwSanitarySink"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitarySink" id="Awarded_AwSanitarySink"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitarySink" id="Cons_AwSanitarySink"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitarySink" id="Awarded_AwSanitarySink"></td>             --}}
               <td><input type="text" name="Remark_AwSanitarySink" id="Remark_AwSanitarySink"></td>                    
             </tr>
   
@@ -103,8 +103,8 @@
               <td >Urinal</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryUrinal" id="AwSanitaryUrinal"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryUrinal" id="Cons_AwSanitaryUrinal"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryUrinal" id="Awarded_AwSanitaryUrinal"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryUrinal" id="Cons_AwSanitaryUrinal"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryUrinal" id="Awarded_AwSanitaryUrinal"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryUrinal" id="Remark_AwSanitaryUrinal"></td>                    
             </tr>
   
@@ -112,8 +112,8 @@
               <td >Bidet</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryBidet" id="AwSanitaryBidet"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryBidet" id="Cons_AwSanitaryBidet"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryBidet" id="Awarded_AwSanitaryBidet"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryBidet" id="Cons_AwSanitaryBidet"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryBidet" id="Awarded_AwSanitaryBidet"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryBidet" id="Remark_AwSanitaryBidet"></td>                   
             </tr>
   
@@ -121,8 +121,8 @@
               <td >Floor trap</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryFloorTrap" id="AwSanitaryFloorTrap"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryFloorTrap" id="Cons_AwSanitaryFloorTrap"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryFloorTrap" id="Awarded_AwSanitaryFloorTrap"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryFloorTrap" id="Cons_AwSanitaryFloorTrap"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryFloorTrap" id="Awarded_AwSanitaryFloorTrap"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryFloorTrap" id="Remark_AwSanitaryFloorTrap"></td>                    
             </tr>
   
@@ -130,8 +130,8 @@
               <td >Shower</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryShower" id="AwSanitaryShower"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryShower" id="Cons_AwSanitaryShower"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryShower" id="Awarded_AwSanitaryShower"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryShower" id="Cons_AwSanitaryShower"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryShower" id="Awarded_AwSanitaryShower"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryShower" id="Remark_AwSanitaryShower"></td>
             </tr>
   
@@ -139,8 +139,8 @@
               <td >Faucet</td>
               <td >2</td>
               <td><input onblur="findTotalSanitary()" type="number" min="0" max="2" class="sanitary" name="AwSanitaryFaucet" id="AwSanitaryFaucet"></td>            
-              <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryFaucet" id="Cons_AwSanitaryFaucet"></td>            
-              <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryFaucet" id="Awarded_AwSanitaryFaucet"></td>            
+              {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryFaucet" id="Cons_AwSanitaryFaucet"></td>             --}}
+              {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryFaucet" id="Awarded_AwSanitaryFaucet"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryFaucet" id="Remark_AwSanitaryFaucet"></td>                   
             </tr>
 

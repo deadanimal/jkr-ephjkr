@@ -44,8 +44,8 @@
               <th>Product</th>
               <th>Point Allocated</th>
               <th>Point Requested (design)</th>
-              <th>Point Requested (construction)</th>
-              <th>Point Awarded</th>
+              {{-- <th>Point Requested (construction)</th>
+              <th>Point Awarded</th> --}}
               <th >Remark</th>
             </tr>
           </thead>
@@ -57,8 +57,8 @@
               <td >Epoxy paint</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorEpoxy}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorEpoxy}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorEpoxy}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorEpoxy}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorEpoxy}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorEpoxy}}</td>            
                                   
             </tr>
@@ -67,8 +67,8 @@
               <td >Floor hardener</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorFloorHardener}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorFloorHardener}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorFloorHardener}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorFloorHardener}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorFloorHardener}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorFloorHardener}}</td>                   
             </tr>
   
@@ -77,8 +77,8 @@
               <td >Ceramic tiles</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorCeramic}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorCeramic}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorCeramic}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorCeramic}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorCeramic}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorCeramic}}</td>                    
             </tr>
   
@@ -86,8 +86,8 @@
               <td >Stones</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorStones}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorStones}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorStones}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorStones}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorStones}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorStones}}</td>                    
             </tr>
   
@@ -95,8 +95,8 @@
               <td >Granites</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorGranite}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorGranite}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorGranite}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorGranite}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorGranite}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorGranite}}</td>                    
             </tr>
   
@@ -104,8 +104,8 @@
               <td >Marble</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorMarble}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorMarble}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorMarble}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorMarble}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorMarble}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorMarble}}</td>                   
             </tr>
   
@@ -113,8 +113,8 @@
               <td >Carpet</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorCarpet}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorCarpet}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorCarpet}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorCarpet}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorCarpet}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorCarpet}}</td>                    
             </tr>
   
@@ -122,8 +122,8 @@
               <td >Carpet underlay</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorUnderlay}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorUnderlay}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorUnderlay}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorUnderlay}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorUnderlay}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorUnderlay}}</td>                    
             </tr>
   
@@ -131,8 +131,8 @@
               <td >Vinyl</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorVinyl}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorVinyl}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorVinyl}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorVinyl}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorVinyl}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorVinyl}}</td>                    
             </tr>
   
@@ -140,8 +140,8 @@
               <td >Timber</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorTimber}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorTimber}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorTimber}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorTimber}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorTimber}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorTimber}}</td>                    
             </tr>
   
@@ -149,8 +149,8 @@
               <td >Interlocking pavers</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorPavers}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorPavers}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorPavers}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorPavers}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorPavers}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorPavers}}</td>                    
             </tr>
   
@@ -158,8 +158,8 @@
               <td >Pebble wash</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorPebble}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorPebble}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorPebble}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorPebble}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorPebble}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorPebble}}</td>                  
             </tr>
   
@@ -167,8 +167,8 @@
               <td >Bamboo</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorBamboo}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorBamboo}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorBamboo}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorBamboo}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorBamboo}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorBamboo}}</td>                    
             </tr>
   
@@ -176,8 +176,8 @@
               <td >Cement render</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorCement}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorCement}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorCement}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorCement}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorCement}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorCement}}</td>                    
             </tr>
   
@@ -185,8 +185,8 @@
               <td >Marmoleum</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorMarmoleum}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorMarmoleum}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorMarmoleum}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorMarmoleum}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorMarmoleum}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorMarmoleum}}</td>                   
             </tr>
   
@@ -194,8 +194,8 @@
               <td >Rubber mat(playgrouubd)</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorRubber}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorRubber}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorRubber}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorRubber}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorRubber}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorRubber}}</td>
             </tr>
   
@@ -203,8 +203,8 @@
               <td >Concrete imprint</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorConcrete}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorConcrete}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorConcrete}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorConcrete}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorConcrete}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorConcrete}}</td>                   
             </tr>
   
@@ -212,8 +212,8 @@
               <td >Laminated flooring</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorFloorLaminate}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorFloorLaminate}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorFloorLaminate}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorFloorLaminate}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorFloorLaminate}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorFloorLaminate}}</td>                   
             </tr>
             
@@ -223,8 +223,8 @@
               <td >Adhesive</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwFloorProofingAdhesive}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorProofingAdhesive}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorProofingAdhesive}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorProofingAdhesive}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorProofingAdhesive}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorProofingAdhesive}}</td>                  
             </tr>
   
@@ -232,8 +232,8 @@
               <td >Sealant</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorProofingSealant}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorProofingSealant}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorProofingSealant}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorProofingSealant}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorProofingSealant}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorProofingSealant}}</td>                   
             </tr>
   
@@ -241,8 +241,8 @@
               <td >Grout</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwFloorProofingGrout}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwFloorProofingGrout}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwFloorProofingGrout}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwFloorProofingGrout}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwFloorProofingGrout}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwFloorProofingGrout}}</td>                   
             </tr>
   
@@ -258,8 +258,8 @@
               <td >Office workstation</td>
               <td >2</td>
               <td> {{$gpss_bangunan->AwSystemBuiltOffice}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSystemBuiltOffice}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltOffice}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSystemBuiltOffice}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSystemBuiltOffice}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSystemBuiltOffice}}</td>
   
             </tr>
@@ -268,8 +268,8 @@
               <td >Toilet cubicle</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltToilet}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSystemBuiltToilet}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltToilet}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSystemBuiltToilet}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSystemBuiltToilet}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSystemBuiltToilet}}</td>                   
             </tr>
   
@@ -277,8 +277,8 @@
               <td >Institutional seating</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltInstitutional}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSystemBuiltInstitutional}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltInstitutional}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSystemBuiltInstitutional}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSystemBuiltInstitutional}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSystemBuiltInstitutional}}</td>                   
             </tr>
   
@@ -286,8 +286,8 @@
               <td >Built-in cupboards</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltCupboards}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSystemBuiltCupboards}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltCupboards}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSystemBuiltCupboards}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSystemBuiltCupboards}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSystemBuiltCupboards}}</td>                   
             </tr>
   
@@ -295,8 +295,8 @@
               <td >Sport facilities seating</td>
               <td >2</td>
               <td>{{$gpss_bangunan->AwSystemBuiltSport}}</td>            
-              <td>{{$gpss_bangunan->Cons_AwSystemBuiltSport}}</td>            
-              <td>{{$gpss_bangunan->Awarded_AwSystemBuiltSport}}</td>            
+              {{-- <td>{{$gpss_bangunan->Cons_AwSystemBuiltSport}}</td>             --}}
+              {{-- <td>{{$gpss_bangunan->Awarded_AwSystemBuiltSport}}</td>             --}}
               <td>{{$gpss_bangunan->Remark_AwSystemBuiltSport}}</td>                   
             </tr>
   
