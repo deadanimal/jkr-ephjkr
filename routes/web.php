@@ -242,7 +242,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page3/{id}', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian_skor_penilaian_arkitek_page3']);
     Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page4/{id}', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian_skor_penilaian_arkitek_page4']);
     // action pengesahan, update() method?
-    Route::put('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
+    Route::post('/penilaian_reka_bentuk_gpss/simpan_pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
 
     // jana keputusan
     Route::get('/penilaian_reka_bentuk_gpss/jana_keputusan', [PenilaianRekaBentukGpssController::class, 'jana_keputusan']);

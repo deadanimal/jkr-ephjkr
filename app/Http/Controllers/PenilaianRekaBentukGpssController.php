@@ -1,10 +1,11 @@
 <?php
 namespace App\Http\Controllers; 
-use App\Models\Projek;
-use Illuminate\Http\Request;
-use App\Models\PemudahCara;
 use App\Models\KriteriaGpssBangunan;
+use App\Models\PemudahCara;
+use App\Models\PenilaianEphjkr;
+use App\Models\Projek;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
+use Illuminate\Http\Request;
 use Laravel\Ui\Presets\React;
 
 class PenilaianRekaBentukGpssController extends Controller
@@ -449,6 +450,13 @@ class PenilaianRekaBentukGpssController extends Controller
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
         // simpan pengesahan penilaian
+        $pengesahan_penilaian_gpss = new PenilaianEphjkr;
+        $pengesahan_penilaian_gpss->pengesahan = $request->input('pengesahan');
+        $pengesahan_penilaian_gpss->save();
+        alert()->success('Berjaya disahkan.', 'Berjaya');
+
+
+
         return redirect('/penilaian_reka_bentuk_gpss/pengesahan_penilaian');
     }
 
