@@ -6,6 +6,7 @@ use App\Models\PenilaianEphjkr;
 use App\Models\Projek;
 use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Ui\Presets\React;
 
 class PenilaianRekaBentukGpssController extends Controller
@@ -92,7 +93,10 @@ class PenilaianRekaBentukGpssController extends Controller
        //papar table projek with button melantik pemudah cara
        //should be isi form pemudahcara - create()
 
-       $pemudah_cara = PemudahCara::all();
+    //    $pemudah_cara = PemudahCara::where('id', Auth::user()->id)->get();
+        $pemudah_cara = PemudahCara::all();
+       
+        
          
          return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index',[
             'pemudah_cara'=> $pemudah_cara

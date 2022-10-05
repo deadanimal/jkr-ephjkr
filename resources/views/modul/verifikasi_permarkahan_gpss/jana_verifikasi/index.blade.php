@@ -17,7 +17,7 @@
 
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK JALAN</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>VERIFIKASI PERMARKAHAN GPSS</strong></h3>
         </div>
     </div>
 
@@ -41,7 +41,7 @@
                     <td>Bina Jalan</td>
                     <td>Jalan Sekapur Sireh</td>
                     <td align="center">
-                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="button" class="btn btn-warning">Jana</a>
+                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="button" class="btn btn-warning">JANA</a>
                     </td>
                 
                 </tr>
