@@ -53,9 +53,10 @@
               <th>Product</th>
               <th>Point Allocated</th>
               <th>Point Requested (design)</th>
-              <th>Point Requested (construction)</th>
-              <th>Point Awarded</th>
+              {{-- <th>Point Requested (construction)</th>
+              <th>Point Awarded</th> --}}
               <th >Remark</th>
+              <th >Supporting Documents</th>
             </tr>
           </thead>
           <tbody>
@@ -68,10 +69,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonCement" id="CwCommonCement">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -80,10 +80,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonTimber" id="CwCommonTimber">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -92,10 +91,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonBar" id="CwCommonBar">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -104,10 +102,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonSand" id="CwCommonSand">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -116,10 +113,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonAggregate" id="CwCommonAggregate">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -128,10 +124,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwCommonStone" id="CwCommonStone">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr class="text-center">
@@ -142,10 +137,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksGeotextile" id="CwEarthworksGeotextile">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -154,10 +148,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksErosion" id="CwEarthworksErosion">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -166,10 +159,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksGeogrid" id="CwEarthworksGeogrid">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -178,10 +170,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksMulching" id="CwEarthworksMulching">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -190,10 +181,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksGabion" id="CwEarthworksGabion">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -202,10 +192,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwEarthworksHydroseeding" id="CwEarthworksHydroseeding">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr class="text-center">
@@ -216,10 +205,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageCulvert" id="CwDrainageCulvert">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -228,10 +216,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageSump" id="CwDrainageSump">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -240,10 +227,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainagePipe" id="CwDrainagePipe">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -252,10 +238,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageTank" id="CwDrainageTank">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -264,10 +249,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageGeotextile" id="CwDrainageGeotextile">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -276,31 +260,30 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwDrainageGrating" id="CwDrainageGrating">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
-              {{-- <tr class="text-center">
+              <tr class="text-center">
                 <td rowspan="15" >7</td>
                 <td rowspan="15">Pavement/road furniture</td>
                 <td >Asphalt concrete</td>
                 <td >2</td>
                 <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
                 <td >Porous asphalt</td>
                 <td >2</td>
                 <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
-              </tr> --}}
+                <td><input type="file"></td>                    
+              </tr>
 
               <tr>
                 <td >Prime coat</td>
@@ -308,10 +291,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwPavementsPrime" id="CwPavementsPrime">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                        
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -320,23 +302,21 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwPavementsTack" id="CwPavementsTack">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
-              {{-- <tr>
+              <tr>
                 <td >Retroreflective sheeting</td>
                 <td >2</td>
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
-              </tr> --}}
+                <td><input type="file"></td>                    
+              </tr>
 
               <tr>
                 <td >Road paint</td>
@@ -344,47 +324,43 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadPaint" id="CwRoadPaint">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
-              {{-- <tr>
+              <tr>
                 <td >Paver block</td>
                 <td >2</td>
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
-              </tr> --}}
+                <td><input type="file"></td>                    
+              </tr>
 
-              {{-- <tr>
+              <tr>
                 <td >Permeable paver</td>
                 <td >2</td>
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
-              </tr> --}}
+                <td><input type="file"></td>                    
+              </tr>
 
-              {{-- <tr>
+              <tr>
                 <td >Kerb</td>
                 <td >2</td>
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="N/A" id="N/A">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
-              </tr> --}}
+                <td><input type="file"></td>                    
+              </tr>
 
               <tr>
                 <td >Road stud</td>
@@ -392,10 +368,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadStud" id="CwRoadStud">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                       
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -404,10 +379,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadChevron" id="CwRoadChevron">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -416,10 +390,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadGuardrails" id="CwRoadGuardrails">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -428,10 +401,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadRailings" id="CwRoadRailings">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -440,10 +412,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadGuardrails" id="CwRoadGuardrails">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -452,10 +423,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwRoadSignages" id="CwRoadSignages">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr class="text-center">
@@ -464,18 +434,18 @@
                 <td >Pipes</td>
                 <td >2</td>
                 <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterPipes" id="CwWaterPipes"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
                 <td >Bulk meter</td>
                 <td >2</td>
                 <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterBulk" id="CwWaterBulk"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                           
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -484,10 +454,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterValves" id="CwWaterValves">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -496,10 +465,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterTank" id="CwWaterTank">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -508,10 +476,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterPump" id="CwWaterPump">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -520,10 +487,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterFirstFlush" id="CwWaterFirstFlush">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -532,10 +498,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwWaterSand" id="CwWaterSand">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr class="text-center">
@@ -544,18 +509,18 @@
                 <td >Pipes</td>
                 <td >2</td>
                 <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeveragePipes" id="CwSeveragePipes"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
                 <td >Tank</td>
                 <td >2</td>
                 <td><input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeverageTank" id="CwSeverageTank"></td>            
-                <td><input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -564,10 +529,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeveragePump" id="CwSeveragePump">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                          
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr>
@@ -576,10 +540,9 @@
                 <td>
                   <input onblur="findTotalmarkahPRCw()" type="number" min="0" max="2" class="civil" name="CwSeverageManhole" id="CwSeverageManhole">
                 </td>            
-                <td>
-                  <input type="number" min="0" max="2"></td>            
-                <td><input type="number" min="0" max="2"></td>            
+                         
                 <td><input type="text"></td>                    
+                <td><input type="file"></td>                    
               </tr>
 
               <tr style="display: none">
@@ -591,7 +554,7 @@
 
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/create" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/create/{{$id}}" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
       </div>
   </form>

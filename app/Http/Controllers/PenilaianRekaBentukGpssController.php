@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers; 
 use App\Models\KriteriaGpssBangunan;
+use App\Models\KriteriaGpssJalan;
 use App\Models\PemudahCara;
 use App\Models\PenilaianEphjkr;
 use App\Models\Projek;
@@ -284,18 +285,19 @@ class PenilaianRekaBentukGpssController extends Controller
         $gpss_bangunan->fill($validatedData);
         $request->session()->put('gpss_bangunan', $gpss_bangunan);
         alert()->success('Markah disimpan', 'Berjaya');
-        $gpss_bangunan->save();
+        // $gpss_bangunan->save();
 
 
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
     }
 
-    public function skor_penilaian_mekanikal(Request $request)
+    public function skor_penilaian_mekanikal(Request $request, $id)
     {
         // mechanical works
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
         $gpss_bangunan = $request->session()->all();        
 
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.mekanikal.create', compact('gpss_bangunan'));
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.mekanikal.create', compact('gpss_bangunan','id'));
     }
 
     public function simpan_skor_penilaian_mekanikal(Request $request, $id)
@@ -310,11 +312,12 @@ class PenilaianRekaBentukGpssController extends Controller
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create');
     }
 
-    public function skor_penilaian_elektrikal(Request $request)
+    public function skor_penilaian_elektrikal(Request $request,$id)
     {
         // elektrikal works
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
         $gpss_bangunan = $request->session()->all();        
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.elektrikal.create', compact('gpss_bangunan'));
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.elektrikal.create', compact('gpss_bangunan','id'));
     }
 
     public function simpan_skor_penilaian_elektrikal(Request $request, $id)
@@ -350,11 +353,12 @@ class PenilaianRekaBentukGpssController extends Controller
     //     return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian/elektrikal_page2');
     // }
 
-    public function skor_penilaian_civil(Request $request)
+    public function skor_penilaian_civil(Request $request,$id)
     {
         // civil works
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
         $gpss_bangunan = $request->session()->all(); 
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.civil.create',compact('gpss_bangunan'));
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.civil.create',compact('gpss_bangunan','id'));
     }
 
     public function simpan_skor_penilaian_civil(Request $request, $id)
@@ -370,12 +374,13 @@ class PenilaianRekaBentukGpssController extends Controller
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/create');
     }
 
-    public function skor_penilaian_civil_page2(Request $request)
+    public function skor_penilaian_civil_page2(Request $request,$id)
     {
         // continue civil works
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
         $gpss_bangunan = $request->session()->all(); 
 
-        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.civil_page2.create',compact('gpss_bangunan'));
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.civil_page2.create',compact('gpss_bangunan','id'));
     }
 
     public function simpan_skor_penilaian_civil_page2(Request $request, $id)
@@ -391,7 +396,83 @@ class PenilaianRekaBentukGpssController extends Controller
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
     }
 
+    public function skor_penilaian_building_category_1(Request $request, $id)
+    {
+        // continue civil works
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        $gpss_bangunan = $request->session()->all(); 
 
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.building_category_1.create',compact('gpss_bangunan','id'));
+    }
+
+    public function skor_penilaian_building_category_2(Request $request, $id)
+    {
+        // continue civil works
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        $gpss_bangunan = $request->session()->all(); 
+
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.building_category_2.create',compact('gpss_bangunan','id'));
+    }
+
+    public function skor_penilaian_building_category_3(Request $request, $id)
+    {
+        // continue civil works
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+        $gpss_bangunan = $request->session()->all(); 
+
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.building_category_3.create',compact('gpss_bangunan','id'));
+    }
+
+    // this is  for category dropdown
+    public function skor_penilaian_road(Request $request, $id)
+    {
+        
+        $gpss_jalan = KriteriaGpssJalan::find($id);
+        $gpss_jalan = $request->session()->all(); 
+
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.road.create',compact('gpss_jalan','id'));
+    }
+
+    public function skor_penilaian_jalan(Request $request,$id)
+    {
+        $gpss_jalan = KriteriaGpssJalan::find($id);
+        $gpss_jalan = $request->session()->all(); 
+
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.jalan.create',compact('gpss_jalan','id'));
+    }
+
+    public function simpan_skor_penilaian_jalan(Request $request, $id)
+    {
+        $validatedData = $request->all();
+        $gpss_jalan = $request->session()->get('gpss_jalan');
+        $gpss_jalan->fill($validatedData);
+        $request->session()->put('gpss_jalan', $gpss_jalan);
+        alert()->success('Markah disimpan', 'Berjaya');
+        // $gpss_jalan->save();
+
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_struktur_jalan/create');
+    }
+
+    public function skor_penilaian_struktur_jalan(Request $request,$id)
+    {
+        $gpss_jalan = KriteriaGpssJalan::find($id);
+        $gpss_jalan = $request->session()->all(); 
+
+        return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.struktur_jalan.create',compact('gpss_jalan','id'));
+    }
+
+    public function simpan_skor_penilaian_struktur_jalan(Request $request, $id)
+    {
+        $validatedData = $request->all();
+        $gpss_jalan = $request->session()->get('gpss_jalan');
+        $gpss_jalan->fill($validatedData);
+        $request->session()->put('gpss_jalan', $gpss_jalan);
+        alert()->success('Markah disimpan', 'Berjaya');
+        $gpss_jalan->save();
+
+        return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
+    }
+    
 
     #pengesahan penilaian for Sekretariat views
     public function pengesahan_penilaian()
@@ -447,6 +528,78 @@ class PenilaianRekaBentukGpssController extends Controller
         // dd('pape');
         // papar form pengesahan penilaian with id projek
         return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.arkitek_page4.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_mekanikal($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.mekanikal.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_elektrikal($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.elektrikal.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_civil($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.civil.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_civil_page2($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.civil_page2.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_jalan($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.jalan.show',[
+            'gpss_bangunan' => $gpss_bangunan
+        ])
+        ;
+    }
+
+    public function pengesahan_penilaian_skor_penilaian_struktur_jalan($id)
+    {
+        $gpss_bangunan = KriteriaGpssBangunan::find($id);
+
+        // dd('pape');
+        // papar form pengesahan penilaian with id projek
+        return view('modul.penilaian_reka_bentuk_gpss.pengesahan_penilaian.struktur_jalan.show',[
             'gpss_bangunan' => $gpss_bangunan
         ])
         ;

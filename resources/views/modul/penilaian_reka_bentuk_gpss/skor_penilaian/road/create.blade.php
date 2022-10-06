@@ -680,7 +680,7 @@
 
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create/{{$id}}" type="button" class="btn btn-secondary">Seterusnya</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_struktur_jalan/create/{{$id}}" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
   
        

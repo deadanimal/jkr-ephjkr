@@ -52,10 +52,11 @@
               <th >Component</th>
               <th>Product</th>
               <th>Point Allocated</th>
-              {{-- <th>Point Requested (design)</th>
-              <th>Point Requested (construction)</th> --}}
-              <th>Point Awarded</th>
+              <th>Point Requested (design)</th>
+              {{-- <th>Point Requested (construction)</th> --}}
+              {{-- <th>Point Awarded</th> --}}
               <th >Remark</th>
+              <th>Supporting Documents</th>
             </tr>
           </thead>
           <tbody>
@@ -69,7 +70,7 @@
               {{-- <td><input onblur="findTotalFloorConstruction()" type="number" min="0" max="2" class="floor_construction" name="Cons_AwFloorFloorEpoxy" id="Cons_AwFloorFloorEpoxy"></td>             --}}
               {{-- <td><input onblur="findTotalFloorAwarded()" type="number" min="0" max="2" class="floor_awarded" name="Awarded_AwFloorFloorEpoxy" id="Awarded_AwFloorFloorEpoxy"></td>             --}}
               <td><input type="text" name="Remark_AwFloorFloorEpoxy" id="Remark_AwFloorFloorEpoxy"></td>                    
-              {{-- <td><input type="file" name="Remark_AwFloorFloorEpoxy" id="Remark_AwFloorFloorEpoxy"></td>                     --}}
+              <td><input type="file" name="Remark_AwFloorFloorEpoxy" id="Remark_AwFloorFloorEpoxy"></td>                    
             </tr>
   
             <tr>

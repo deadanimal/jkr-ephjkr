@@ -200,7 +200,7 @@ Route::middleware('auth')->group(function () {
     // Penilaian Reka Bentuk Gpss - papar projek, index() method
     Route::get('/penilaian_reka_bentuk_gpss', [PenilaianRekaBentukGpssController::class, 'index']);
     // papar form pemudah cara, create() method
-    Route::get('/penilaian_reka_bentuk_gpss/pemudah_cara/create', [PenilaianRekaBentukGpssController::class, 'pemudah_cara']);
+    Route::get('/penilaian_reka_bentuk_gpss/pemudah_cara/create/{id}', [PenilaianRekaBentukGpssController::class, 'pemudah_cara']);
     //action form pemudah cara, show() method
     Route::post('/penilaian_reka_bentuk_gpss/melantik_pemudah_cara/{id}', [PenilaianRekaBentukGpssController::class, 'melantik_pemudah_cara']);
 
@@ -214,32 +214,43 @@ Route::middleware('auth')->group(function () {
 
     // Pemudah Cara views
     // architectural works - Roof forms
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek']);
     // architectural works - Window forms
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page2']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page2']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page2']);
     // architectural works - Floor forms
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page3']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page3/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page3']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page3/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page3']);
     // architectural works - Sanitary forms
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page4/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page4']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page4/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_arkitek_page4']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_arkitek_page4/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_arkitek_page4']);
     // mechanical works form
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_mekanikal']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_mekanikal']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_mekanikal/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_mekanikal']);
     // electrical works form
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_elektrikal']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_elektrikal']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_elektrikal/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_elektrikal']);
     // electrical works form page 2
-    // Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/elektrikal_page2/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_elektrikal_page2']);
+    // Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian/elektrikal_page2/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_elektrikal_page2']);
     // Route::post('/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_elektrikal_page2']);
     // civil works
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_civil']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_civil']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_civil/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_civil']);
     // civil works page2
-    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/create', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_civil_page2']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_civil_page2/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_civil_page2']);
     Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_civil_page2/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_civil_page2']);
+    // building category 1
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_1/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_building_category_1']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_2/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_building_category_2']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_3/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_building_category_3']);
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_road/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_road']);
+    // road works
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_jalan/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_jalan']);
+    Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_jalan/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_jalan']);
+    // road structure works
+    Route::get('/penilaian_reka_bentuk_gpss/skor_penilaian_struktur_jalan/create/{id}', [PenilaianRekaBentukGpssController::class, 'skor_penilaian_struktur_jalan']);
+    Route::post('/penilaian_reka_bentuk_gpss/simpan_skor_penilaian_struktur_jalan/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_skor_penilaian_struktur_jalan']);
 
     // Sekretariat views
     // Pengesahan Penilaian, index() method
@@ -251,7 +262,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/arkitek_page4/{id}', [PenilaianRekaBentukGpssController::class, 'pengesahan_penilaian_skor_penilaian_arkitek_page4']);
     // action pengesahan, update() method?
     Route::put('/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{id}', [PenilaianRekaBentukGpssController::class, 'simpan_pengesahan_penilaian']);
-
     // jana keputusan
     Route::get('/penilaian_reka_bentuk_gpss/jana_keputusan', [PenilaianRekaBentukGpssController::class, 'jana_keputusan']);
     // papar form pengesahan

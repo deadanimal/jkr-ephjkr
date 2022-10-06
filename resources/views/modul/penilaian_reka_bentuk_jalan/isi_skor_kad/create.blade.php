@@ -99,7 +99,7 @@
 
                     <tr>
                       <td>SM</td>
-                      <td colspan="6" align="left">site planning</td>
+                      <td colspan="6" align="left">SUSTAINABLE SITE PLANNING AND MANAGEMENT</td>
                      
                       
                       
@@ -108,7 +108,7 @@
   
                     <tr>
                       <td colspan="1" rowspan="12">SM1</td>
-                      <td colspan="2">Requirement for road works design</td>
+                      <td colspan="2">REQUIREMENT FOR ROAD WORKS DESIGN</td>
                       {{-- <td></td> --}}
                       <td>7</td>
                       <td>0</td>
@@ -122,92 +122,105 @@
                       <td >Traffic study</td>
                       <td rowspan="7">CJ</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
                     <tr>
                       <td >Site investigation data</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-
-                    <tr>
-                      <td >response to public</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
-                    </tr>
-  
-                    <tr>
-                      <td >Survey drawing</td>
-                      <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                     
                     </tr>
 
                     <tr>
                       <td >Flood records</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      
+                    </tr>
+  
+                    <tr>
+                      <td >Response to public complaints or requests from public, local authority & etc.</td>
+                      <td>1</td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      
                     </tr>
 
                     <tr>
-                      <td >Value Management</td>
+                      <td >Value Management (VM)</td>
                       <td>1</td>
-                      {{-- <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td> --}}
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                 
+                    </tr>
+
+                    <tr>
+                      <td >Survey Drawing</td>
+                      <td>1</td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      
+                  
                     </tr>
 
                     <tr>
                       <td >As Built Drawings</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                
                     </tr>
 
                     <tr>
                       <td >Accident Reports</td>
                       <td>CSFJ</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      
                     </tr>
 
                     <tr>
                       <td >Structure Replacement</td>
                       <td rowspan="3">CJ</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      
                     </tr>
 
                     <tr>
                       <td >Forensic Report</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      
                     </tr>
 
                     <tr>
                       <td >Pavement Evaluation</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointSM1()" type="number" min="0" max="2" class="targetPointSM1" ></td>
+                      <td><input onblur="findAssessmentPointSM1()" type="number" min="0" max="2" class="assessmentPointSM1"></td>
+                      <td><input onblur="commentSM1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td>markahSM1<input type="text" name="markahSM1" id="markahSM1" /></td>            
                     </tr>
   
                     <tr>
@@ -398,7 +411,22 @@
                   <a href="/penilaian_reka_bentuk_jalan/isi_skor_kad_page2" type="button" class="btn btn-primary">Simpan</a>          
                 </div>
       </form>
-      </div>   
+      </div> 
+      
+      
+      <script>
+        function findTargetPointSM1(){
+        var arr = document.getElementsByClassName('targetPointSM1');
+        // add new var 
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+                // add tot2
+        }
+        document.getElementById('markahSM1').value = tot;
+      } 
+        </script> 
     
     
     <!--Container Fluid-->

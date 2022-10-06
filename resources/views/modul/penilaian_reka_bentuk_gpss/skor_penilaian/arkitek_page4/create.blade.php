@@ -51,10 +51,11 @@
               <th >Component</th>
               <th>Product</th>
               <th>Point Allocated</th>
-              {{-- <th>Point Requested (design)</th>
-              <th>Point Requested (construction)</th> --}}
-              <th>Point Awarded</th>
+              <th>Point Requested (design)</th>
+              {{-- <th>Point Requested (construction)</th>
+              <th>Point Awarded</th> --}}
               <th >Remark</th>
+              <th>Supporting Documents</th>
             </tr>
           </thead>
           <tbody>
@@ -68,6 +69,7 @@
               {{-- <td><input onblur="findTotalSanitaryConstruction()" type="number" min="0" max="2" class="sanitary_construction" name="Cons_AwSanitaryTapFitting" id="Cons_AwSanitaryTapFitting"></td>             --}}
               {{-- <td><input onblur="findTotalSanitaryAwarded()" type="number" min="0" max="2" class="sanitary_awarded" name="Awarded_AwSanitaryTapFitting" id="Awarded_AwSanitaryTapFitting"></td>             --}}
               <td><input type="text" name="Remark_AwSanitaryTapFitting" id="Remark_AwSanitaryTapFitting"></td>            
+              <td><input type="file" name="Remark_AwSanitaryTapFitting" id="Remark_AwSanitaryTapFitting"></td>            
                                  
             </tr>
   
@@ -191,7 +193,7 @@
   
         <div align="right" class="mt-3">
           <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
-          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian" type="button" class="btn btn-secondary">Hantar</a>          
+          <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create/{{$id}}" type="button" class="btn btn-secondary">Seterusnya</a>          
         </div>
   
       </div>

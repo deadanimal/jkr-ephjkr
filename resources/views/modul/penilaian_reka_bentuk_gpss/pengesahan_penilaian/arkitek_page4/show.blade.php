@@ -144,27 +144,7 @@
         </div>
 
         <div>
-          <!-- Design stage -->
-        {{-- <div class="mb-3 form-group row">
-          <label class="col-sm-5 col-form-label text-black">Prepared by: (Design Stage)</label>
-              <div class="col-sm-5">
-                  <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
-              </div>
-      </div>
-      <!-- Construction stage -->
-      <div class="mb-3 form-group row">
-          <label class="col-sm-5 col-form-label text-black">Prepared by: (Construction Stage)</label>
-              <div class="col-sm-5">
-                  <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
-              </div>
-      </div>
-      <!-- Checked -->
-      <div class="mb-3 form-group row">
-          <label class="col-sm-5 col-form-label text-black">Checked by: (Construction Stage)</label>
-              <div class="col-sm-5">
-                  <input class="form-control" type="text" autocapitalize="off" name="namaProjek"/>
-              </div>
-      </div> --}}
+        
         </div>
   
         {{-- <div align="center" class="mt-3">
@@ -173,7 +153,7 @@
 
       <div class="mb-3 row">
           <label class="col-sm-2 col-form-label">Pengesahan:</label>
-        <div class="col-sm-10">
+        <div class="col-sm-10" align='center'>
           <button class="btn btn-primary" type="submit" title="sahkan" name="pengesahan">Sahkan</button>
         </div>
       </div>
