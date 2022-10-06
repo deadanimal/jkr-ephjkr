@@ -98,7 +98,7 @@ class IntegrasiController extends Controller
         //dd($response);
         $response = json_decode($response, true) ['data'];
 
-        //dd($response);
+        // dd($response);
         return view('modul.pengurusan_maklumat.pendaftaran_projek.integrasi', [
             'id_pengguna' => $response
         ]);
