@@ -152,10 +152,10 @@
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td></td>
+                                    <td>{{$kriteria_phjkr_bangunan->markahTL1_MMV_PUN}}</td>
+                                    <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MMV_PUN" name="markahTL3_MMV_PUN" /></td>
                                     <td>Tidak Berkenaan</td>
-                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL1_ULASAN_VERIFIKASI}}</td>
-                                    <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" autocapitalize="off" id="markahTL1_ML_PUN" name="markahTL1_ML_PUN" /></td>
+                                    <td>{{$kriteria_phjkr_bangunan->markahTL1_ULASAN_VERIFIKASI}}</td>
 
                                     <td colspan="4">
                                     <form class="form">
