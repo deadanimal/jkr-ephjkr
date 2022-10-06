@@ -8,28 +8,62 @@
 
 @section('content')
     {{-- header --}}
-    <div class="row mb-3">
-        <div class="col">
-            <nav style="--falcon-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%23748194'/%3E%3C/svg%3E&#34;);"
-                aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Jana Keputusan
-                    </li>
-                </ol>
-            </nav>
-        </div>
+    <div class="header" >
+        <h1 class="header-title" style="color: #EB5500">
+            PENILAIAN REKA BENTUK GPSS
+        </h1>
     </div>
-    <div class="row">
-        <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN VERIFIKASI PERMARKAHAN GPSS</strong></h3>
-        </div>
-    </div>
-    
     <hr style="background-color: #EB5500;">
     {{-- body --}}
     <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="card p-3  py-4">
+                {{-- @foreach ($projeks as $p) --}}
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <label for="nama_projek">Nama:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Hospital Seri Iskandar">
+                        {{-- <input type="text" class="form-control" value=" {{$p->namaProjek}} ">--}}
+                    </div>
+                </div>
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <label for="nama_projek">ID Rujukan Skala:</label>
+                    </div>
+                    <div class="col-md-6">
+                        {{-- <input type="text" class="form-control" value=" {{$p->id_ruj_skala}} ">  --}}
+                        <input type="text" class="form-control" placeholder="SKL0202">
+
+                    </div>
+                </div>
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <label for="nama_projek">Alamat:</label>
+                    </div>
+                    <div class="col-md-6">
+                        {{-- <input type="text" class="form-control" value=" {{ $p->alamatProjek }}">  --}}
+                        <input type="text" class="form-control" placeholder="Mukah">
+                       
+                    </div>
+                </div>
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <label for="nama_projek">Kos Projek Semasa:</label>
+                    </div>
+                    <div class="col-md-6">
+                        {{-- <input type="text" class="form-control" value=" {{ $p->kosProjek }}"> --}}
+                        <input type="text" class="form-control" placeholder="RM50,000,000">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- @endforeach --}}
+
         
+
         <div>
             <form action= "/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/{id}" method="post" enctype="multipart/form-data">
                 @method('POST')

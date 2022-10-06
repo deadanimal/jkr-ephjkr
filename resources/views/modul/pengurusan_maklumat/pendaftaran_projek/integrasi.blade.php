@@ -40,7 +40,7 @@
                             @foreach ($id_pengguna as $r)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    {{-- <td>{{ $r->tajuk }}</td> --}}
+                                    <td>{{ $r['tajuk'] }}</td>
                                 </tr>
                             @endforeach
                         </tbody>

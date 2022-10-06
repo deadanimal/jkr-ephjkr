@@ -37,7 +37,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Penilaian Reka Bentuk
+                        Paparan Senarai Projek
                     </li>
                 </ol>
             </nav>
@@ -50,7 +50,6 @@
     </div>
     
     <hr style="background-color: #EB5500;">
-    
     {{-- body --}}
     <div class="container mt-5">
     <div class="row d-flex justify-content-center">

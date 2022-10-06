@@ -257,16 +257,4 @@ class VerifikasiPermarkahanGpssController extends Controller
 
         return view('modul.verifikasi_permarkahan_gpss.pengesahan_rayuan_verifikasi.index');
     }
-
-    public function jana_verifikasi()
-    {
-
-        return view('modul.verifikasi_permarkahan_gpss.jana_verifikasi.index');
-    }
-
-    public function muat_turun_sijil_verifikasi()
-    {
-
-        return view('modul.verifikasi_permarkahan_gpss.muat_turun_sijil_verifikasi.index');
-    }
 }

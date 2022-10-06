@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreGugurProjekRequest;
-use App\Http\Requests\UpdateGugurProjekRequest;
 use App\Models\GugurProjek;
+use App\Models\Projek;
+use App\Models\User;
+use Illuminate\Http\Request;
+use Spatie\Permission\Contracts\Role;
 
 class GugurProjekController extends Controller
 {
@@ -16,6 +18,15 @@ class GugurProjekController extends Controller
     public function index()
     {
         //
+        
+        // $gugur_projek = GugurProjek::all();
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
+        //     'gugur_projek'=>$gugur_projek
+        // ]);
+        
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.index', [
+        //     'pendaftaran_projek' => Projek::with('gugur_projek')->get()
+        // ]);
     }
 
     /**
@@ -25,16 +36,16 @@ class GugurProjekController extends Controller
      */
     public function create()
     {
-        //
+        // dd('2');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreGugurProjekRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreGugurProjekRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -42,21 +53,29 @@ class GugurProjekController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\GugurProjek  $gugurProjek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(GugurProjek $gugurProjek)
+    public function show($id)
     {
         //
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.gugur_projek.edit', [
+        //     'pp' => Projek::with('gugur_projek')->where('id', $id)->first(),
+        //     'gugur_projek' => GugurProjek::with(['pengguna', 'peranan'])->where('projek_id', $id)->get(),
+        //     'pengguna' => User::all(),
+        //     'peranan' => Role::all(),
+
+        // ]);
+        
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\GugurProjek  $gugurProjek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(GugurProjek $gugurProjek)
+    public function edit($id)
     {
         //
     }
@@ -64,11 +83,11 @@ class GugurProjekController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateGugurProjekRequest  $request
-     * @param  \App\Models\GugurProjek  $gugurProjek
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateGugurProjekRequest $request, GugurProjek $gugurProjek)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +95,10 @@ class GugurProjekController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\GugurProjek  $gugurProjek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(GugurProjek $gugurProjek)
+    public function destroy($id)
     {
         //
     }

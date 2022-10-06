@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Hebahan extends Model
 {
     use HasFactory;
+
+    public function pengguna()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

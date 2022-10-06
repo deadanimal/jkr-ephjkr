@@ -37,7 +37,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Hantar Skor Kad dan Muat Naik Dokumen Sokongan
+                        Paparan Senarai Projek
                     </li>
                 </ol>
             </nav>

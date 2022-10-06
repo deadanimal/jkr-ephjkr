@@ -19,6 +19,7 @@ class VerifikasiPermarkahanJalanController extends Controller
      */
     public function index()
     {
+        //asdasdas
         //
         // $senarai_projek = Projek::all();
         // return view('modul.verifikasi_permarkahan_jalan.papar_senarai_projek.index', [
@@ -126,6 +127,13 @@ class VerifikasiPermarkahanJalanController extends Controller
         return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.create',[
             'spk' => $spk
         ]);
+        
+    }
+
+    public function papar_pemudah_cara()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.index');
         
     }
 

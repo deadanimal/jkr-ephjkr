@@ -37,6 +37,10 @@ class PemudahCaraController extends Controller
     public function store(StorePemudahCaraRequest $request)
     {
         //
+
+
+
+
     }
 
     /**

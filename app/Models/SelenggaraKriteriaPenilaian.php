@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class SelenggaraKriteriaPenilaian extends Model
 {
     use HasFactory;
+
+    // public $table = 'penilaian_ephjkrs';
+
+    // protected $guarded = ['id'];
 }

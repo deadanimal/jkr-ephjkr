@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StorePengesahanPendaftaranProjekRequest;
-use App\Http\Requests\UpdatePengesahanPendaftaranProjekRequest;
 use App\Models\PengesahanPendaftaranProjek;
+use App\Models\Projek;
+use Illuminate\Http\Request;
 
 class PengesahanPendaftaranProjekController extends Controller
 {
@@ -16,6 +16,12 @@ class PengesahanPendaftaranProjekController extends Controller
     public function index()
     {
         //
+        
+        // $pengesahan_projek = PengesahanPendaftaranProjek::all();
+        // // dd($pengesahan_projek);
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.index', [
+        //     'pengesahan_projek'=>$pengesahan_projek
+        // ]);
     }
 
     /**
@@ -26,15 +32,16 @@ class PengesahanPendaftaranProjekController extends Controller
     public function create()
     {
         //
+        // return view('modul.pengurusan_maklumat.pendaftaran_projek.pengesahan_projek.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorePengesahanPendaftaranProjekRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorePengesahanPendaftaranProjekRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -42,10 +49,10 @@ class PengesahanPendaftaranProjekController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\PengesahanPendaftaranProjek  $pengesahanPendaftaranProjek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(PengesahanPendaftaranProjek $pengesahanPendaftaranProjek)
+    public function show($id)
     {
         //
     }
@@ -53,10 +60,10 @@ class PengesahanPendaftaranProjekController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\PengesahanPendaftaranProjek  $pengesahanPendaftaranProjek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(PengesahanPendaftaranProjek $pengesahanPendaftaranProjek)
+    public function edit($id)
     {
         //
     }
@@ -64,11 +71,11 @@ class PengesahanPendaftaranProjekController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatePengesahanPendaftaranProjekRequest  $request
-     * @param  \App\Models\PengesahanPendaftaranProjek  $pengesahanPendaftaranProjek
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatePengesahanPendaftaranProjekRequest $request, PengesahanPendaftaranProjek $pengesahanPendaftaranProjek)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +83,10 @@ class PengesahanPendaftaranProjekController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\PengesahanPendaftaranProjek  $pengesahanPendaftaranProjek
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PengesahanPendaftaranProjek $pengesahanPendaftaranProjek)
+    public function destroy($id)
     {
         //
     }

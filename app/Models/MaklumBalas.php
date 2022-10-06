@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class MaklumBalas extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    public function pengguna()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

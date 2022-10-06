@@ -40,7 +40,6 @@
                     <th scope="col">Status Penilaian Verifikasi</th>
                     <th scope="col">Tindakan</th>
                 </tr>
-                
             </thead>
             <tbody>
                 <tr>
@@ -111,7 +110,7 @@
                         <td colspan="1">EW</td>
                         <td colspan="2">ENVIRONMENT & WATER</td>
                         {{-- <td></td> --}}
-                        <td>4</td>
+                        <td>5</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
@@ -120,7 +119,7 @@
                         <td colspan="1">AE</td>
                         <td colspan="2">ACCESS & EQUITY</td>
                         {{-- <td></td> --}}
-                        <td>3</td>
+                        <td>5</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
@@ -129,7 +128,7 @@
                         <td colspan="1">CA</td>
                         <td colspan="2">CONSTRUCTION ACTIVITIES</td>
                         {{-- <td></td> --}}
-                        <td>19</td>
+                        <td>22</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
@@ -164,7 +163,7 @@
                       <tr>
                         <td colspan="3">TOTAL CORE POINTS	</td>
                         {{-- <td></td> --}}
-                        <td>68</td>
+                        <td>74</td>
                         <td>0</td>
                         <td>0</td>
                       </tr>
