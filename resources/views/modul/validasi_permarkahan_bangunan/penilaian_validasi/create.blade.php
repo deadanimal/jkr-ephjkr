@@ -156,7 +156,7 @@
                                     <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahTL3_MMV_PUN" name="markahTL3_MMV_PUN" /></td>
                                     <td>Tidak Berkenaan</td>
                                     <td>{{$kriteria_phjkr_bangunan->markahTL1_ULASAN_VERIFIKASI}}</td>
-
+                                    <td colspan="5"></td>
                                     <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
