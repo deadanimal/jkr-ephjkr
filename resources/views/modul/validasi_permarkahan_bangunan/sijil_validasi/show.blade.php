@@ -14,7 +14,7 @@
                 PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
             </h1>
             <hr class="line-6">
-
+{{--  --}}
 <div class="container-fluid">
     <div class="table-responsive scrollbar">
     <div class="card-body">
