@@ -13,6 +13,7 @@
             </h1>
             <hr class="line-6">
 
+{{--  --}}
 <div class="container-fluid">
     <div class="card-body">
         <form action="/validasi_permarkahan_bangunan/pengesahan_rayuan/{id}" method="post" enctype="multipart/form-data">
