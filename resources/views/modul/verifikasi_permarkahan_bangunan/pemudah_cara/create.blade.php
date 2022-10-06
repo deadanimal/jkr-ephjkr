@@ -19,7 +19,7 @@
     <b class="maklumat-pemudah-cara">Maklumat Pemudah Cara</b>
 </div>
 <div class="card-body">
-    <form action="/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
+    <form action="/verifikasi_permarkahan_bangunan/melantik_pemudah_cara/{id}" method="post" enctype="multipart/form-data">
         @csrf
         {{-- @method('PUT') --}}
 

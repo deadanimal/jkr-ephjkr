@@ -10,6 +10,9 @@ use App\Models\PemudahCara;
 use App\Models\KriteriaPhjkrBangunan;
 use App\Models\PasukanValidasi;
 use Illuminate\Http\Request;
+use App\Mail\SimpanRayuan;
+use App\Models\PenilaianEphjkr;
+use Illuminate\Support\Facades\Mail;
 
 class ValidasiPermarkahanBangunanController extends Controller
 {
@@ -129,7 +132,7 @@ class ValidasiPermarkahanBangunanController extends Controller
         $pasukan_validasi->save();
 
         // submit form melantik pasukan validasi
-        return redirect('/validasi_permarkahan_bangunan/melantik_pasukan_validasi');
+        return redirect('/validasi_permarkahan_bangunan/penilaian_validasi');
 
 
     }
@@ -242,8 +245,17 @@ class ValidasiPermarkahanBangunanController extends Controller
 
     public function simpan_permohonan_rayuan(Request $request, $id)
     {
+        $penilaian_ephjkr = PenilaianEphjkr::all();
+
+        $penilaian_ephjkr->ulasan = $request->ulasan;
+
+
+
+
+        Mail::to('maisarah.musa@pipeline-network.com')->send(new SimpanRayuan());
+
         alert()->success('PERMOHONAN RAYUAN BERJAYA', 'Berjaya');
-        return redirect('/validasi_permarkahan_bangunan/form_permohonan_rayuan');
+        return redirect('/validasi_permarkahan_bangunan/permohonan_rayuan');
     }
 
     #Pasukan Validasi

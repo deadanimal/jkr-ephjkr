@@ -337,7 +337,7 @@ Route::middleware('auth')->group(function () {
     //Ketua Pasukan/Pen Ketua Pasukan
     Route::get('/validasi_permarkahan_bangunan/permohonan_rayuan', [ValidasiPermarkahanBangunanController::class, 'permohonan_rayuan']);
     Route::get('/validasi_permarkahan_bangunan/permohonan_rayuan/{id}', [ValidasiPermarkahanBangunanController::class, 'papar_permohonan_rayuan']);
-    Route::post('/validasi_permarkahan_bangunan/permohonan_rayuan/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_permohonan_rayuan']);
+    Route::post('/validasi_permarkahan_bangunan/simpan_permohonan_rayuan/{id}', [ValidasiPermarkahanBangunanController::class, 'simpan_permohonan_rayuan']);
 
     // Pasukan Validasi
     Route::get('/validasi_permarkahan_bangunan/penilaian_validasi', [ValidasiPermarkahanBangunanController::class, 'penilaian_validasi']);

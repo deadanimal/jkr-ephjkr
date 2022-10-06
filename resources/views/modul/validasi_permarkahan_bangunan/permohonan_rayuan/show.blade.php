@@ -16,9 +16,9 @@
 <div class="container-fluid">
     <div class="card-body">
         <div class="table-responsive scrollbar">
-        <form action="/validasi_permarkahan_bangunan/permohonan_rayuan/{id}" method="post" enctype="multipart/form-data">
+        <form action="/validasi_permarkahan_bangunan/simpan_permohonan_rayuan/{id}" method="post" enctype="multipart/form-data">
             @csrf
-            {{-- @method('PUT') --}}
+            @method('POST')
 
             <!--Nama Projek-->
             {{-- <div class="mb-3 form-group row">
@@ -2359,7 +2359,7 @@
                                 title="Sah" type="submit">Sah</button>
                             </div>
         
-                </div>          <!--Scrollbar-->
+                {{-- </div>          <!--Scrollbar--> --}}
 
                     <!--Sebab Rayuan-->
                     <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
@@ -2367,18 +2367,21 @@
 
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1"></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nyatakan sebab rayuan..."></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" id="ulasan" placeholder="Nyatakan sebab rayuan..."></textarea>
                     </div>
 
                     <!--Button Batal & Hantar-->
                     <div class="mt-3 text-center">
                     <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
                     data-toggle="tooltip" data-placement="bottom" title="Batal">Batal</a>
-                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
-                    data-toggle="tooltip" data-placement="bottom" title="Hantar">Hantar</a>
+                    {{-- <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
+                    data-toggle="tooltip" data-placement="bottom" title="Hantar">Hantar</a> --}}
+
+                    <button class="btn btn-primary" type="submit">Hantar</button>
                     </div>     
 
         </form> <!--Form Action--> 
+        </div>          <!--Scrollbar-->
     </div> <!--Card Body-->
 </div> <!--Container Fluid-->
 @endsection

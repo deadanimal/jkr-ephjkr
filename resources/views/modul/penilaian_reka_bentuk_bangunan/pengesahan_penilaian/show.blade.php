@@ -2811,7 +2811,9 @@
                     
                         <div class="mt-3 text-center pg-7">
                             <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
-                                title="Sah" type="submit">Sah</button>
+                                title="Sah" type="submit" id="pengesahan" name="pengesahan" value="sah">Sah</button>
+                            <button  class="btn btn-primary" type="submit" name="pengesahan" value="tolak">Tolak</button>
+
                         </div>
                 </form>
             </div>          <!--Scrollbar-->

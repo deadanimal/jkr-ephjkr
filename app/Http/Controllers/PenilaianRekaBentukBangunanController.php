@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\DB;
 // use Spatie\Permission\Models\Permission;
 // use Spatie\Permission\Models\Role;
 // use Spatie\Permission\PermissionRegistrar;
-
 use Illuminate\Http\Request;
+
 
 class PenilaianRekaBentukBangunanController extends Controller
 {
@@ -174,9 +174,16 @@ class PenilaianRekaBentukBangunanController extends Controller
         //     ]);
 
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',
-        compact('projeks'),
-        compact('pemudah_cara')
+            compact('projeks'),
+            compact('pemudah_cara')
         );
+
+        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
+        //     'p'=> Projek::with('namaProjek')->where('id', $id)->first(),
+        //     'pc'=> PemudahCara::with(['nama', 'namaSyarikat'])->where('projek_id', $id)->get()
+        // ]);
+
+
     }
 
     public function pemudah_cara($id)
@@ -439,7 +446,20 @@ class PenilaianRekaBentukBangunanController extends Controller
 
     public function simpan_pengesahan_penilaian(Request $request, $id)
     {
+        $penilaian_ephjkr = new PenilaianEphjkr();
 
+
+        if ($request->pengesahan=="sah"){	
+            $penilaian_ephjkr->pengesahan="Sah";
+            
+        
+            }
+            else if($request->pengesahan=="tolak"){
+            $penilaian_ephjkr->pengesahan="Tolak";
+            
+            }
+
+            $penilaian_ephjkr->save();
         alert()->success('Penilaian Disahkan.', 'Berjaya');
 
         // simpan pengesahan penilaian

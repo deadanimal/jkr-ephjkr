@@ -182,7 +182,7 @@ class VerifikasiPermarkahanBangunanController extends Controller
         $projeks->save();
 
         // // submit form melantik pemudah cara
-        return redirect('/verifikasi_permarkahan_bangunan/melantik_pemudah_cara');
+        return redirect('/verifikasi_permarkahan_bangunan/pemudah_cara/create');
     }
 
     #semakan rawak verifikasi permarkahan bangunan

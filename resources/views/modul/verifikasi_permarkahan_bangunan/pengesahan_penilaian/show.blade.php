@@ -139,7 +139,7 @@
                                     <td></td>
                                     <td></td>
                                     <td>Tidak Berkenaan</td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL1_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -171,7 +171,7 @@
                                         <span>&#183; Laporan Pelan Pengurusan Alam Sekitar</span><br>
                                         <span>&#183; Borang SPAS (Peringkat pembinaan)</span>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL2_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -207,7 +207,7 @@
                                             atau setaraf
                                         </span>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL3_ULASAN_VERIFIKASI}}</td>
                                     <td>
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -236,7 +236,7 @@
                                         <span>&#183; Pengesahan kuantiti tanah potong/tambak sebenar oleh PD/SO atau setaraf</span><br>
                                         <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL32_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -266,7 +266,7 @@
                                     <td>
                                         <span>&#183; Pengesahan pelaksanaan ESCP di tapak</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL4_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -296,7 +296,7 @@
                                     <td>
                                         <span>Tidak Berkenaan</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL5_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -331,7 +331,7 @@
                                         <span>&#183; Laporan penyenggaraan sistem perparitan berkala</span><br>
                                         <span>&#183; Bukti bergambar</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL6_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -367,7 +367,7 @@
                                         <span>&#183; Bukti bergambar kerja-kerja penambahbaikan yang dilaksanakan
                                             mengikut laporan audit akses</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL7_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -418,7 +418,7 @@
                                         <span> &#40;a&#41; Lukisan siap bina landskap</span><br>
                                         <span>&#183; Bukti bergambar pokok tidak ditebang dan disenggara dengan baik</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL81_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -449,7 +449,7 @@
                                         <span> &#40;a&#41; Pelan tapak siap bina yang telah disahkan oleh Arkitek Bertauliah</span><br>
                                         Nyatakan sekiranya ada perubahan
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL82_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -481,7 +481,7 @@
                                         <span> &#183; Inventori pokok</span><br>
                                         <span> &#183; Bukti bergambar</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL83_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -513,7 +513,7 @@
                                     <td>
                                         <span> &#183; Bukti bergambar</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL84_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -544,7 +544,7 @@
                                         <span> &#183; Lukisan siap bina</span><br>
                                         <span> &#183; Bukti bergambar</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL85_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -598,7 +598,7 @@
                                         <span>&#183; Bukti bergambar</span><br>
                                         <span>&#183; Lukisan siap bina</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL91_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -631,7 +631,7 @@
                                         <span>&#183; Lukisan siap bina</span><br>
                                         <span>&#183; Rekod Senggaraan</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL92_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                         <form class="form">
                                             <label for="form__input" class="form__label">
@@ -664,7 +664,7 @@
                                         <span>&#183; Lukisan siap bina tempat letak kenderaan dan penanda</span><br>
                                         <span>&#183; Bukti bergambar</span><br>
                                     </td>
-                                    <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                    <td colspan="5">{{$kriteria_phjkr_bangunan->markahTL10_ULASAN_VERIFIKASI}}</td>
                                     <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -760,7 +760,7 @@
                                     <span>&#183; Lukisan siap bina</span><br>
                                     <span>&#183; Bukti bergambar</span>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT1_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -811,7 +811,7 @@
                                 <td>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT21_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -841,7 +841,7 @@
                                 <td>
                                     <span> &#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT22_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -892,7 +892,7 @@
                                     <span>&#183; Katalog bahan yang diluluskan untuk pembinaan</span><br>
                                     <span>&#183; Pengiraan U-Value yang disahkan</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT31_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -923,7 +923,7 @@
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT32_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -953,7 +953,7 @@
                                 <td>
                                     <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT4_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1008,7 +1008,7 @@
                                     <span> &#183; Lukisan siap bina litar lampu yang telah di zon dan lokasi pemasangan sensor</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT51_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1043,7 +1043,7 @@
                                     <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT52_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1078,7 +1078,7 @@
                                     <span> &#183; Laporan pengambilan data mengikut spesifikasi</span><br>
                                     <span> &#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT53_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1144,7 +1144,7 @@
                                     <span> &#183; Laporan pengukuran dan verifikasi</span><br>
                                     <span> &#183; Pengiraan COP</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT61_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1180,7 +1180,7 @@
                                     <span> &#183; Brosur pembekal</span><br>
                                     <span> &#183; Rekod inventori</span>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT62_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1211,7 +1211,7 @@
                                     <span> &#183; Lukisan butiran</span><br>
                                     <span> &#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT7_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1246,7 +1246,7 @@
                                     <span> &#183; Salinan lukisan siap bina dan laporan uji terima yang mematuhi kehendak rekabentuk</span><br>
                                     <span> &#183; Pengiraan penjanaan tenaga boleh baharu berbanding jumlah penggunaan tenaga tahunan bangunan</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT8_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1283,7 +1283,7 @@
                                     <span> &#183; Lukisan siap bina yang berkaitan</span>
                                     <span> &#183; Pengiraan peratus pengurangan</span>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT9_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1348,7 +1348,7 @@
                                     <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
                                     <span> &#183; Bukti bergambar</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT101_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1386,7 +1386,7 @@
                                     <span> &#183; Gambar rajah litar</span><br>
                                     <span> &#183; Laporan BEMS</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT102_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1422,7 +1422,7 @@
                                     <span> &#183; Laporan verifikasi dan pelan penambahbaikan</span><br>
                                     <span> &#183; Manual Operasi dan Penyenggaraan</span>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT103_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1455,7 +1455,7 @@
                                 <td>
                                     <span>&#183; Dokumen lengkap pengujian dan pentauliahan yang telah disahkan</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahKT11_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1547,7 +1547,7 @@
                                 <span>&#183; Lukisan pembinaan IBS</span><br>
                                 <span>&#183; Lukisan siap bina</span><br>      
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahSB1_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -1579,7 +1579,7 @@
                                 <span>&#183; Bukti bergambar</span><br>
                                 <span>&#183; Borang pengiraan skor GPSS</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahSB2_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -1615,7 +1615,7 @@
                                 <span>&#183; Bukti bergambar</span><br>
                                 <span>&#183; Pengiraan kitar semula (jika ada)</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahSB3_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -1646,7 +1646,7 @@
                                 <span>&#183; Pematuhan pelan pengurusan sisa domestik</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahSB4_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -1736,7 +1736,7 @@
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahPA1_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1767,7 +1767,7 @@
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahPA2_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1798,7 +1798,7 @@
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Pensijilan WELPS</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahPA3_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1828,7 +1828,7 @@
                                     <span>&#183; Bukti bergambar</span><br>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahPA32_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1858,7 +1858,7 @@
                                 <td>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahPA4_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1888,7 +1888,7 @@
                                 <td>
                                     <span>&#183; Lukisan siap bina</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahPA5_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -1975,15 +1975,15 @@
                             <td>2</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD1_MMV_PUN}}</td>
                             <td>2</td>
-                            <td>{{$kriteria_phjkr_bangunan->markahIN1_MMV_SEDIA}}</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD1_MMV_SEDIA}}</td>
                             <td>
                                 <span> a &#41; Baru</span><br>
                                 <span> &#183; Gambar papan tanda dan lokasi larangan merokok</span><br>
                                 <span> b &#41; Sedia ada</span><br>
                                 <span> &#183; Gambar papan tanda dan lokasi larangan merokok</span><br>
                                 <span> &#183; Rekod pelaksanaan program kesedaran atau langkah penguatkuasaan</span><br>                            </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                            <td colspan="4">
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD1_ULASAN_VERIFIKASI}}</td>
+                                <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
                                         <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
@@ -2020,7 +2020,7 @@
                             <td>Lebar bangunan yang efektif &#40;no deep planning&#41;</td>
                             <td colspan="6"></td>
                             <td>1</td>
-                            <td>{{$kriteria_phjkr_bangunan->markahPD1_MR}}</td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD21_MR}}</td>
                             <td>1</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD21_MMV_PUN}}</td>
                             <td></td>
@@ -2032,7 +2032,7 @@
                             <td>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD21_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2063,7 +2063,7 @@
                                 <span>&#183; Lukisan siap bina</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD22_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2094,7 +2094,7 @@
                                 <span>&#183; Lukisan siap bina</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD23_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2125,7 +2125,7 @@
                             <td>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD24_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2155,7 +2155,7 @@
                             <td>
                                 <span>&#183; Bukti bergambar bagi mengesahkan skima warna yang digunakan</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD25_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2205,7 +2205,7 @@
                             <td>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD31_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2237,7 +2237,7 @@
                                 <span>&#183; Lukisan siap bina</span><br>
                                 <span>&#183; Bukti bergambar</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD32_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2269,7 +2269,7 @@
                                     bagi mengesahkan bidai yang digunakan</span><br>
                                 <span>&#183; Laporan prestasi pencahayaan (jika ada)</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD33_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2300,7 +2300,7 @@
                                 <span>&#183; Katalog dan sample bahan yang diluluskan oleh S.O.</span><br>
                                 <span>&#183; Lukisan Siap Bina</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD34_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2331,7 +2331,7 @@
                                 <span>&#183; Pengiraan dan lukisan terpasang bagi siling yang menunjukkan susun atur lampu</span><br>
                                 <span>&#183; Laporan Pengujian dan Pentauliahan</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD35_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2383,7 +2383,7 @@
                                     pengudaraan secara semula jadi</span><br>
                                 <span>&#183; Pelan susun atur</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD41_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2409,7 +2409,7 @@
                             <td>2</td>
                             <td>{{$kriteria_phjkr_bangunan->markahPD42_MMV_PUN}}</td>
                             <td>2</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="2" autocapitalize="off" id="markahPD42_MMV_SEDIA" name="markahPD42_MMV_SEDIA" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahPD42_MMV_SEDIA}}</td>
                             <td>
                                             <span>&#183; Mengemukakan lukisan pelan lantai yang menunjukkan
                                                 ruang pengudaraan secara semulajadi</span><br>
@@ -2417,7 +2417,7 @@
                                             <span>&#183; Pelan susun atur</span><br>
 
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD42_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2472,7 +2472,7 @@
                                 <span>&#183; Menyediakan kaji selidik tahap keselesaan pengguna</span><br>
 
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD51_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2503,7 +2503,7 @@
                                 <span>&#183; Bukti bergambar</span><br>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD52_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2557,7 +2557,7 @@
                                 <span>&#183; Rekod senggara sistem pemantauan dan kawalan CO2</span><br>
 
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD61_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2588,7 +2588,7 @@
                                 <span>&#183; Laporan bergambar berkala tahap kebersihan tapak</span><br>
                                 <span>&#183; Laporan flush out</span>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD62_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2622,7 +2622,7 @@
                                 <span>&#183; Manufacturer's data sheets untuk bahan-bahan akustik 
                                     yang telah digunakan dalam bangunan</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD7_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2655,7 +2655,7 @@
                                 <span>&#183; Gambar semasa kerja pemasangan</span><br>
                                 <span>&#183; Lukisan siap bina</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD8_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2686,7 +2686,7 @@
                                 <span>&#183; Laporan ringkas yang menggariskan strategi yang akan dilaksanakan
                                     untuk memenuhi keperluan bagi pencegahan kulapok</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD9_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2716,7 +2716,7 @@
                             <td>
                                 <span>&#183; Laporan maklumbalas kaji selidik</span><br>
                             </td>
-                            <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahPD10_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 <form class="form">
                                     <label for="form__input" class="form__label">
@@ -2805,7 +2805,7 @@
                                     <span>&#183; Laporan Audit Tenaga untuk audit yang telah dijalankan sekiranya terdapat perubahan
                                         ketara pada penggunaan tenaga elektrik bangunan</span><br>
                                 </td>
-                                <td colspan="5"></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahFL1_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -2941,7 +2941,7 @@
 
                             <!--FL3-->
                             <tr class="pg-6" align="center">
-                                <td>FL2.1</td>
+                                <td>FL3</td>
                                 <td>Penyenggaraan Lestari</td>
                                 <td colspan="6"></td>
                                 <td></td>
@@ -2975,15 +2975,15 @@
                                 <td>FL3.1</td>
                                 <td>Ruang pejabat untuk pasukan penyenggaraan</td>
                                 <td colspan="6"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>1</td>
+                                <td>{{$kriteria_phjkr_bangunan->markahFL31_MMR}}</td>
+                                <td>1</td>
+                                <td>{{$kriteria_phjkr_bangunan->markahFL31_MMV}}</td>
+                                <td>1</td>
+                                <td>{{$kriteria_phjkr_bangunan->markahFL31_MMR_PUN}}</td>
+                                <td>1</td>
+                                <td>{{$kriteria_phjkr_bangunan->markahFL31_MMV_SEDIA}}</td>
+                                <td>1</td>
                                 <td></td>
                                 <td>
                                     <span>&#183; Lukisan siap bina</span><br>
@@ -3020,7 +3020,7 @@
                                         dan REEM yang berjaya dilantik
                                     </span>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahFL32_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -3050,7 +3050,7 @@
                                 <td>
                                     <span>&#183; Tatacara pelaksanaan pengurusan aset</span>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahFL33_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -3091,7 +3091,7 @@
                                     <span>&#183; Completion Compliance Certificate (CCC)</span><br>
                                     <span>&#183; Sijil Kerja Awam, Arkitek, Elektrikal & Mekanikal</span><br>
                                 </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                                <td colspan="5">{{$kriteria_phjkr_bangunan->markahFL34_ULASAN_VERIFIKASI}}</td>
                                 <td colspan="4">
                                     <form class="form">
                                         <label for="form__input" class="form__label">
@@ -3170,7 +3170,7 @@
                             <td>6</td>
                             <td>{{$kriteria_phjkr_bangunan->markahIN1_MR}}</td>
                             <td>6</td>
-                            <td><input onblur="findTotalMV_SB()" class="sum_mv_sb" type="number" min="0" max="6" autocapitalize="off" id="markahIN1_MMV" name="markahIN1_MMV" /></td>
+                            <td>{{$kriteria_phjkr_bangunan->markahIN1_MMV}}</td>
                             <td>6</td>
                             <td>{{$kriteria_phjkr_bangunan->markahIN1_MR_PUN}}</td>
                             <td>6</td>
@@ -3181,9 +3181,7 @@
                                 <span>&#183; Lukisan siap bina dan bukti bergambar</span><br>
                                 <span>&#183; Laporan prestasi inovasi</span><br>
                             </td>
-                            <td colspan="5">
-                                {{-- <textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea> --}}
-                            </td>
+                            <td colspan="5">{{$kriteria_phjkr_bangunan->markahIN1_ULASAN_VERIFIKASI}}</td>
                             <td colspan="4">
                                 {{-- <form class="form">
                                     <label for="form__input" class="form__label">
@@ -3202,13 +3200,13 @@
                                 <td colspan="3">6</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR}}</td>
                                 <td>6</td>
-                                <td><input type="number" min="0" max="6" id="markahTOTAL_IN_MMV" name="markahTOTAL_IN_MMV"></td>
+                                <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MMV}}</td>
                                 <td>6</td>
                                 <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MR_PUN}}</td>
                                 <td>6</td>
-                                <td><input type="number" min="0" max="6" id="markahTOTAL_IN_MMV_PUN" name="markahTOTAL_IN_MMV_PUN"></td>
+                                <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MMV_PUN}}</td>
                                 <td>6</td>
-                                <td><input type="number" min="0" max="6" id="markahTOTAL_IN_MMV_SEDIA" name="markahTOTAL_IN_MMV_SEDIA"></td>
+                                <td>{{$kriteria_phjkr_bangunan->markahTOTAL_IN_MMV_SEDIA}}</td>
                                 <td></td>
                                 <td></td>
                             </tr> 
