@@ -276,6 +276,7 @@
                                     <td>TL4</td>
                                     <td>Pelan Kawalan Hakisan & Kelodak (ESCP)</td>
                                     <td colspan="6"></td>
+                                    <td></td>
                                     <td>1</td>
                                     <td>{{$kriteria_phjkr_bangunan->markahTL4_MR}}</td>
                                     <td>1</td>
