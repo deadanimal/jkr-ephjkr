@@ -362,6 +362,7 @@ Route::middleware('auth')->group(function () {
     //Route::get('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'index']);
     //Route::post('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'create']);
     Route::get('/verifikasi_permarkahan_jalan/papar_senarai_projek', [VerifikasiPermarkahanJalanController::class, 'papar_senarai_projek_verifikasi']);
+    Route::get('/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan', [VerifikasiPermarkahanJalanController::class, 'papar_pemudah_cara']);
     Route::get('/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{id}', [VerifikasiPermarkahanJalanController::class, 'melantik_penilai_jalan']);
     Route::post('/verifikasi_permarkahan_jalan/melantik_penilai_jalan/simpan/{id}', [VerifikasiPermarkahanJalanController::class, 'simpan_penilai_jalan']);
     //Route::post('/verifikasi_permarkahan_jalan/senarai_projek_create', [VerifikasiPermarkahanJalanController::class, 'senarai_projek_create']);

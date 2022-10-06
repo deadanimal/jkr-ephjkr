@@ -129,6 +129,13 @@ class VerifikasiPermarkahanJalanController extends Controller
         
     }
 
+    public function papar_pemudah_cara()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.index');
+        
+    }
+
     // public function pemudah_cara_simpan(Request $request, $id)
     // {
     //     // papar mcm index tapi ada button utk pengesahan
