@@ -435,7 +435,7 @@ Route::middleware('auth')->group(function () {
     // Modul Laporan
     // Keputusan Permarkahan
     // Papar senarai projek
-    Route::get('/laporan', [LaporanController::class, 'keputusan_permarkahan']);
+    Route::get('/laporan/keputusan_pemarkahan', [LaporanController::class, 'keputusan_pemarkahan']);
     Route::get('/laporan/paparan_keputusan/{id}', [LaporanController::class, 'paparan_keputusan']);
     Route::get('/laporan/muat_turun_keputusan/{id}', [LaporanController::class, 'muat_turun_keputusan']);
 

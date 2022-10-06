@@ -91,11 +91,11 @@ class LaporanController extends Controller
         //
     }
 
-    public function keputusan_markah()
+    public function keputusan_pemarkahan()
     {
         $projeks = Projek::all();
 
-        return view('modul.laporan.keputusan_permarkahan.index',[
+        return view('modul.laporan.keputusan_pemarkahan.index',[
             'projeks'=>$projeks
         ]);
     }

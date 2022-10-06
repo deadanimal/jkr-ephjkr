@@ -43,50 +43,24 @@ class PenilaianRekaBentukBangunanController extends Controller
 
         // $user = $request->user();
         // if($user->hasRole('Ketua Pasukan') or $user->hasRole('Penolong Ketua Pasukan')) {
-        //     return view('modul.penilaian_reka_bentuk_bangunan.create',[
+        //     return view('modul.penilaian_reka_bentuk_bangunan.index',[
         //         'projeks'=>$projeks
         //     ]);
-        // } else {
-        //     return view('modul.penilaian_reka_bentuk_bangunan.index');
+        // } 
+        // else if($user->hasRole('Pemudah Cara 1')){
+        //     return view('modul.penilaian_reka_bentuk_bangunan.pemudahcara',[
+        //         'projeks'=>$projeks
+        //     ]);
         // }
-
-        // Reset cached roles and permissions
-        // app()[PermissionRegistrar::class]->forgetCachedPermissions();
-
-        // create permissions
-        // Permission::create(['name' => 'Ketua Pasukan']);
-
-        // create roles and assign existing permissions
-        // $role1 = Role::where(['name' => 'Ketua Pasukan'])->get()->first();
-        // $role1->givePermissionTo('modul.penilaian_reka_bentuk_bangunan.index');
-        // $role1->givePermissionTo('delete articles');
-
-        // $role2 = Role::create(['name' => 'Penolong Ketua Pasukan']);
-        // $role2->givePermissionTo('publish articles');
-        // $role2->givePermissionTo('unpublish articles');
-
-
-
+        // else {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.papar_projek',[
+        //         'projeks'=>$projeks
+        //     ]);
+        // }
 
         return view('modul.penilaian_reka_bentuk_bangunan.index',[
             'projeks'=>$projeks
         ]);
-
-
-        // $user = $request->user();
-        // if($user->hasRole('alpha') or $user->hasRole('beta')) {
-        //     return view('modul.penilaian_reka_bentuk_bangunan.index',[
-        //         'projeks'=>$projeks
-        //     ]);
-        // } else {
-        //     return view('tak_leh_viewla');
-        // }
-
-        
-        
-
-        // paparan senarai projek
-
 
     }
 
@@ -193,6 +167,12 @@ class PenilaianRekaBentukBangunanController extends Controller
         //     'pemudah_cara'=>$pemudah_cara
         // ]);
 
+        // $user = $request->user();
+        // if($user->hasRole('Pemudah Cara 1')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
+        //         'projeks'=>$projeks
+        //     ]);
+
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',
         compact('projeks'),
         compact('pemudah_cara')
@@ -209,7 +189,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         $pemudah_cara = PemudahCara::find($id);
 
         // $user = $request->user();
-        // if($user->hasRole('Pemudah Cara (bagi PHJKR Bangunan & GPSS Bangunan dan Jalan)')) {
+        // if($user->hasRole('Pemudah Cara 1')) {
         //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create',[
         //         'pemudah_cara'=>$pemudah_cara
         //     ]);
@@ -233,6 +213,12 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function kemaskini_pemudah_cara($id)
     {
         $pemudah_cara = PemudahCara::find($id);
+
+        // $user = $request->user();
+        // if($user->hasRole('Pemudah Cara 1')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.edit',[
+        //         'projeks'=>$projeks
+        //     ]);
 
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.edit',
         compact('pemudah_cara'));
@@ -272,7 +258,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         $projeks = Projek::all();
 
         // $user = $request->user();
-        // if($user->hasRole('Pemudah Cara (bagi PHJKR Bangunan & GPSS Bangunan dan Jalan')) {
+        // if($user->hasRole('Pemudah Cara 1')) {
         //     return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.index',[
         //         'projeks'=>$projeks,
         //          'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
@@ -436,6 +422,14 @@ class PenilaianRekaBentukBangunanController extends Controller
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
         $penilaian_ephjkr = PenilaianEphjkr::find($id);
 
+        // Roles
+        // $user = $request->user();
+        // if($user->hasRole('Sekretariat')) {
+        //     return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.show',[
+        //         'projeks'=>$projeks,
+        //          'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        //     ]);
+
         // papar form pengesahan penilaian with id projek 
         return view('modul.penilaian_reka_bentuk_bangunan.pengesahan_penilaian.show',[
             'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan,
@@ -518,7 +512,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         // Roles
         // $user = $request->user();
         // if($user->hasRole('Ketua Pasukan') or $user->hasRole('Ketua Pasukan')) {
-        //     return view('modul.penilaian_reka_bentuk_bangunan.semakan_rawak.show',[
+        //     return view('modul.penilaian_reka_bentuk_bangunan.muat_turun_sijil.index',[
         //         'projeks'=>$projeks,
         //          'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
         //     ]);

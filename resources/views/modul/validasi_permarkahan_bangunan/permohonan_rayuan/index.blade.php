@@ -63,7 +63,7 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">Rayuan Dibuat/Tiada</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/edit" role="button"
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/permohonan_rayuan/{{$p->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Rayuan">Rayuan</a>
                                                 </td>
                                             </tr> 

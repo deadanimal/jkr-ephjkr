@@ -47,6 +47,9 @@
                                                 <th class="text-center">Nama Projek</th>
                                                 <th class="text-center">Alamat</th>
                                                 <th class="text-center">Status</th>
+                                                <th class="text-center">Penilaian Reka Bentuk Bangunan</th>
+                                                <th class="text-center">Verifikasi Permarkahan Bangunan</th>
+                                                <th class="text-center">Validasi Permarkahan Bangunan</th>
                                                 <th class="text-center">Tindakan</th> 
                                             </tr>
                                         </thead>
@@ -63,6 +66,9 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
                                                 <td style="text-align: center; vertical-align: middle;">
                                                     {{-- @if () --}}
                                                     <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/create" role="button"

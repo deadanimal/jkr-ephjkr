@@ -1302,11 +1302,11 @@
                     <ul class="nav-item collapse {{ Request::is('laporan/*') ? 'show' : 'false' }} my-1"
                         id="laporan">
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('laporan/keputusan_permarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'active' : '' }} py-0"
-                            href="/laporan/keputusan_permarkahan">
+                        <a class="nav-link {{ Request::is('laporan/keputusan_pemarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'active' : '' }} py-0"
+                            href="/laporan/keputusan_pemarkahan">
                             <div class="d-flex align-items-center nav-link-side">
                             <span
-                                class="px-0 {{ Request::is('laporan/keputusan_permarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'text-dark' : '' }}">Keputusan
+                                class="px-0 {{ Request::is('laporan/keputusan_pemarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'text-dark' : '' }}">Keputusan
                                     Permarkahan</span>
                             </div>
                         </a>

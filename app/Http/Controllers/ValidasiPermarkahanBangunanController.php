@@ -234,7 +234,10 @@ class ValidasiPermarkahanBangunanController extends Controller
     {
         // $pasukan_validasi = PemudahCara::find($id);
         // $projeks = Projek::find($id);
-        return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.edit');
+        $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
+        return view('modul.validasi_permarkahan_bangunan.permohonan_rayuan.show',[
+            'kriteria_phjkr_bangunan'=>$kriteria_phjkr_bangunan
+        ]);
     }
 
     public function simpan_permohonan_rayuan(Request $request, $id)
