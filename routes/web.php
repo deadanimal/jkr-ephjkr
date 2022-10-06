@@ -362,9 +362,12 @@ Route::middleware('auth')->group(function () {
     //Route::get('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'index']);
     //Route::post('/verifikasi_permarkahan_jalan', [VerifikasiPermarkahanJalanController::class, 'create']);
     Route::get('/verifikasi_permarkahan_jalan/papar_senarai_projek', [VerifikasiPermarkahanJalanController::class, 'papar_senarai_projek_verifikasi']);
-    Route::get('/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan', [VerifikasiPermarkahanJalanController::class, 'papar_pemudah_cara']);
+    Route::get('/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan', [VerifikasiPermarkahanJalanController::class, 'papar_pemudah_cara_verifikasi']);
+    Route::get('/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan/edit/{id}', [VerifikasiPermarkahanJalanController::class, 'kemaskini_verifikasi_jalan']);
+    Route::delete('/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan/delete/{id}', [VerifikasiPermarkahanJalanController::class, 'pemudah_cara_padam']);
     Route::get('/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{id}', [VerifikasiPermarkahanJalanController::class, 'melantik_penilai_jalan']);
     Route::post('/verifikasi_permarkahan_jalan/melantik_penilai_jalan/simpan/{id}', [VerifikasiPermarkahanJalanController::class, 'simpan_penilai_jalan']);
+    Route::get('/verifikasi_permarkahan_jalan/melantik_penilai_jalan', [VerifikasiPermarkahanJalanController::class, 'papar_penilai_jalan']);
     //Route::post('/verifikasi_permarkahan_jalan/senarai_projek_create', [VerifikasiPermarkahanJalanController::class, 'senarai_projek_create']);
     //Route::get('/verifikasi_permarkahan_jalan/pemudah_cara/create', [VerifikasiPermarkahanJalanController::class, 'pemudah_cara']);
     Route::get('/verifikasi_permarkahan_jalan/pemudah_cara/create/{id}', [VerifikasiPermarkahanJalanController::class, 'pemudah_cara']);

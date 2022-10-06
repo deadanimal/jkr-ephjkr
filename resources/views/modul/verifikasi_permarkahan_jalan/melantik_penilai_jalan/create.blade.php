@@ -37,46 +37,40 @@
                 @csrf
                 <div class="row mx-4">
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Projek:</label>
+                        <label class="col-form-label">Nama:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="namaFAQ" type="text"/>
+                        <input class="form-control" name="nama" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Syarikat/Cawangan:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="soalanFAQ" type="text"/>
+                        <input class="form-control" name="syarikat_cawangan" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">Nama Pemudah Cara Jalan:</label>
+                        <label class="col-form-label">No Telefon:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="JawapanFAQ" type="text"/>
+                        <input class="form-control" name="no_tel" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
-                        <label class="col-form-label">No. Tel:</label>
+                        <label class="col-form-label">no_fax:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="JawapanFAQ" type="text"/>
+                        <input class="form-control" name="no_fax" type="text"/>
                     </div>
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">E-mel:</label>
                     </div>
                     <div class="col-7 mb-2">
-                        <input class="form-control" name="JawapanFAQ" type="text"/>
+                        <input class="form-control" name="email" type="text"/>
                     </div>
 
-                    <div class="col-3 mb-2">
-                        <label class="col-form-label">No. Fax:</label>
-                    </div>
-                    <div class="col-7 mb-2">
-                        <input class="form-control" name="JawapanFAQ" type="text"/>
-                    </div>
 
                     
     

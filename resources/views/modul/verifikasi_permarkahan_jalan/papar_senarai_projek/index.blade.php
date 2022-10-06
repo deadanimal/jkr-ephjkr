@@ -80,11 +80,11 @@
                                          </select>
                                     </td>
                                     
-                                    <td style="text-align: right">{{ $spk->nama }}
-                                        <a href="/verifikasi_permarkahan_jalan/pemudah_cara/create/{{$spk->id}}" type="button" class="btn btn-warning">+</a>
+                                    <td style="text-align: center">{{ $spk->nama }}
+                                        <a href="/verifikasi_permarkahan_jalan/pemudah_cara/create/{{$spk->id}}" type="button" class="btn btn-warning">Lantik</a>
                                     </td>
-                                    <td style="text-align: right">{{ $spk->nama }}
-                                        <a href="/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{{$spk->id}}" type="button" class="btn btn-warning">+</a>
+                                    <td style="text-align: center">{{ $spk->nama }}
+                                        <a href="/penilaian_reka_bentuk_jalan/melantik_pemudah_cara_jalan/{{$spk->id}}" type="button" class="btn btn-warning">Lantik</a>
                                     </td>
                                     
                                     {{-- <td>

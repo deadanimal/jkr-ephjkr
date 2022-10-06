@@ -107,6 +107,15 @@ class VerifikasiPermarkahanJalanController extends Controller
         
     }
 
+    public function papar_penilai_jalan()
+    {
+        $verifikasi_jalan = PemudahCara::all();
+        return view('modul.verifikasi_permarkahan_jalan.melantik_penilai_jalan.index',[
+            'verifikasi_jalan' => $verifikasi_jalan
+        ]);
+        
+    }
+
     //melantik penilai jalan
     public function melantik_penilai_jalan($id)
     {
@@ -130,10 +139,25 @@ class VerifikasiPermarkahanJalanController extends Controller
         
     }
 
-    public function papar_pemudah_cara()
+    public function papar_pemudah_cara_verifikasi()
     {
         
-        return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.index');
+        $verifikasi_jalan = PemudahCara::all();
+        return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.index',[
+            'verifikasi_jalan' => $verifikasi_jalan
+        ]);
+        
+        
+    }
+
+    public function pemudah_cara_padam($id)
+    {
+        // papar mcm index tapi ada button utk pengesahan
+        
+        $projeks = Projek::find($id);
+        $projeks->delete();
+        alert()->success('Maklumat telah dihapuskan', 'Berjaya');
+        return redirect('/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan');
         
     }
 
@@ -274,14 +298,14 @@ class VerifikasiPermarkahanJalanController extends Controller
 
         $pemudah_cara->save();
 
-        return redirect('/verifikasi_permarkahan_jalan/pemudah_cara');
+        return redirect('/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan');
     }
 
     //simpan penilai jalan
     public function simpan_penilai_jalan(Request $request, $id)
     {
         // submit form melantik penilai jalan
-        $penilai_jalan = new PenilaiJalanVerifikasi();
+        $penilai_jalan = new PemudahCara;
         $penilai_jalan->namaProjek = $request->input('namaProjek');
         $penilai_jalan->syarikat_cawangan = $request->input('syarikat_cawangan');
         $penilai_jalan->nama = $request->input('nama');

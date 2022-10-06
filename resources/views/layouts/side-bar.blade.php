@@ -1079,7 +1079,7 @@
                             {{-- JALAN (Verifikasi) Melantik Pemudah Cara --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/pemudah_cara/create">
+                                    href="/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
@@ -1103,7 +1103,7 @@
                             {{-- JALAN (Verifikasi) Melantik Penilai jalan --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan/create">
+                                    href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'text-dark' : '' }}">Melantik
