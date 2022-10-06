@@ -13,7 +13,7 @@
         PENILAIAN VALIDASI PERMARKAHAN BANGUNAN
     </h1>
     <hr class="line-6">
-    
+    {{--  --}}
 
 </div>
     <div class="container-fluid">
