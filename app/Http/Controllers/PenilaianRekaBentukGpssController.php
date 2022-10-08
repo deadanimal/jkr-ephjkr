@@ -97,8 +97,6 @@ class PenilaianRekaBentukGpssController extends Controller
     //    $pemudah_cara = PemudahCara::where('id', Auth::user()->id)->get();
         $pemudah_cara = PemudahCara::all();
        
-        
-         
          return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.index',[
             'pemudah_cara'=> $pemudah_cara
          ]);
@@ -109,6 +107,7 @@ class PenilaianRekaBentukGpssController extends Controller
 
         //should
         $pemudah_cara = PemudahCara::all();
+        
         return view('modul.penilaian_reka_bentuk_gpss.pemudah_cara.create', compact('pemudah_cara'));
     }
     public function melantik_pemudah_cara(Request $request, $id)
@@ -212,7 +211,7 @@ class PenilaianRekaBentukGpssController extends Controller
         $gpss_bangunan->fill($validatedData);
         $request->session()->put('gpss_bangunan', $gpss_bangunan);
         // $gpss_bangunan->save();
-        alert()->success('Markah disimpan', 'Berjaya');
+        // alert()->success('Markah disimpan', 'Berjaya');
         
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek_page2/create');
     }
@@ -224,6 +223,7 @@ class PenilaianRekaBentukGpssController extends Controller
         // dd($id);
         $gpss_bangunan = KriteriaGpssBangunan::find($id);
         // HTTP Sessions - to store data temporary
+        $validatedData = $request->all();
         $gpss_bangunan = $request->session()->all();        
         // dd($id);
 
@@ -282,10 +282,11 @@ class PenilaianRekaBentukGpssController extends Controller
         // simpan skor penilaian
         $validatedData = $request->all();
         $gpss_bangunan = $request->session()->get('gpss_bangunan');
+        // dd($gpss_bangunan);
         $gpss_bangunan->fill($validatedData);
         $request->session()->put('gpss_bangunan', $gpss_bangunan);
+        $gpss_bangunan->save();
         alert()->success('Markah disimpan', 'Berjaya');
-        // $gpss_bangunan->save();
 
 
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
@@ -328,6 +329,8 @@ class PenilaianRekaBentukGpssController extends Controller
         $gpss_bangunan->fill($validatedData);
         $request->session()->put('gpss_bangunan', $gpss_bangunan);
         alert()->success('Markah disimpan', 'Berjaya');
+        $gpss_bangunan->save();
+
 
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create');
     }
@@ -391,7 +394,7 @@ class PenilaianRekaBentukGpssController extends Controller
         $gpss_bangunan->fill($validatedData);
         $request->session()->put('gpss_bangunan', $gpss_bangunan);
         alert()->success('Markah disimpan', 'Berjaya');
-        $gpss_bangunan->save();
+        // $gpss_bangunan->save();
 
         return redirect('/penilaian_reka_bentuk_gpss/skor_penilaian');
     }
@@ -404,6 +407,7 @@ class PenilaianRekaBentukGpssController extends Controller
 
         return view('modul.penilaian_reka_bentuk_gpss.skor_penilaian.building_category_1.create',compact('gpss_bangunan','id'));
     }
+
 
     public function skor_penilaian_building_category_2(Request $request, $id)
     {
@@ -665,14 +669,11 @@ class PenilaianRekaBentukGpssController extends Controller
 
     }
     
-    public function papar_muatTurun_sijil()
+    public function papar_sijil()
     {
         // $gpss_bangunan = KriteriaGpssBangunan::find($id);
 
-        // index jana keputusan
-        return view('modul.penilaian_reka_bentuk_gpss.papar_muatTurun_sijil.index', [
-            // 'gpss_bangunan' => $gpss_bangunan
-        ]);
+        return view('modul.penilaian_reka_bentuk_gpss.papar_sijil.index');
     }
 
     public function createPDF($id){

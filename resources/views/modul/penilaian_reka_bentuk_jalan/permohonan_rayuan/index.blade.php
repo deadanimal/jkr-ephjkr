@@ -8,7 +8,7 @@
             aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Paparan Senarai Projek
+                    Permohonan Rayuan
                 </li>
             </ol>
         </nav>
@@ -33,10 +33,11 @@
                     <th scope="col">Alamat</th>
                     <th scope="col">Status Penilaian Reka Bentuk</th>
                     <th scope="col">Rayuan</th>
+                    <th scope="col">Tindakan</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
                     <td>Bina Jalan</td>
@@ -44,13 +45,32 @@
                     <td>PENILAIAN REKA BENTUK BERJAYA</td>
                     <td>Tiada Rayuan Dibuat</td>
                     
-                </tr>
+                </tr> --}}
 
-                {{-- <tr>
+                <tr>
                     @foreach ($projeks as $p)
 
                     {{-- <th scope="row">1.</th> --}}
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $p->id_ruj_skala }}</td>
+                    <td>{{ $p->namaProjek }}</td>
+                    <td>{{ $p->alamatProjek }}</td>
+                    <td>{{ $p->statusProjek }}</td>
+                    <td>{{ $p->jenisKategoriProjek }}</td>
+                    {{-- <td>
+                        <select class="select-action" name="action" class="btn btn-warning">
+                            <option  disabled selected>Pilih Kategori</option>
+                            <option value ="new">New Road</option>
+                            <option value ="existing">Existing Road</option>
+                         
+                         </select>
+                    </td>  --}}
+                    <td style="text-align: center">{{ $p->nama }}
+                        <a href="#" type="button" class="btn btn-warning">Mohon Rayuan</a>
+                    </td>
                     
+                </tr>
+                    @endforeach
 
 
             </tbody>

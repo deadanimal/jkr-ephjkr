@@ -73,7 +73,7 @@
                         <input type="checkbox" value="Lantik" id="lantik" name="lantik">
                     </td>
                     <td style="text-align: center">
-                        <a href="/verifikasi_permarkahan_gpss/penilai_jalan_verifikasi_gpss/create" type="button" class="btn btn-warning">Kemaskini Penilai Jalan</a>
+                        <a href="/verifikasi_permarkahan_gpss/penilai_jalan_verifikasi_gpss/create/{{$pc->id}}" type="button" class="btn btn-warning">Kemaskini Penilai Jalan</a>
                     </td> 
                 </tr>
                     @endforeach

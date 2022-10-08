@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\KriteriaPhjkrJalan;
 use App\Models\Projek;
 use App\Models\PemudahCara;
 use App\Models\PenilaianRekaBentukBangunan;
@@ -19,6 +20,7 @@ class VerifikasiPermarkahanJalanController extends Controller
      */
     public function index()
     {
+        //asdasdas
         //
         // $senarai_projek = Projek::all();
         // return view('modul.verifikasi_permarkahan_jalan.papar_senarai_projek.index', [
@@ -129,6 +131,13 @@ class VerifikasiPermarkahanJalanController extends Controller
         
     }
 
+    public function papar_pemudah_cara()
+    {
+        
+        return view('modul.verifikasi_permarkahan_jalan.pemudah_cara.index');
+        
+    }
+
     // public function pemudah_cara_simpan(Request $request, $id)
     // {
     //     // papar mcm index tapi ada button utk pengesahan
@@ -151,41 +160,124 @@ class VerifikasiPermarkahanJalanController extends Controller
         
     // }
 
-    public function isi_skor_kad_verifikasi()
+    public function isi_skor_kad_verifikasi(Request $request)
     {
         // papar mcm index tapi ada button utk pengesahan
         
         //dd('sd');
-        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_verifikasi.index');
+        $vp_jalan = $request->session()->all();
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_verifikasi.index',compact('vp_jalan'));
         
     }
 
-    public function isi_skor_kad_verifikasi2()
+    public function simpan_isi_skor_kad_verifikasi(Request $request) 
+    {   
+        $validatedData = $request->all();
+
+        $vp_jalan = new KriteriaPhjkrJalan();
+        $vp_jalan->fill( $validatedData);
+        $request->session()->put('vp_jalan', $vp_jalan);
+
+
+        // $rb_jalan->markahSM1 = $request->input('markahSM1');
+        // $rb_jalan->markahSM2 = $request->input('markahSM2');
+        // $rb_jalan->markahSM3 = $request->input('markahSM3');
+        // $rb_jalan->markahSM4 = $request->input('markahSM4');
+        // alert()->success('Markah disimpan', 'Berjaya');
+
+        // $rb_jalan->save();
+
+        
+        return redirect('/verifikasi_permarkahan_jalan/isi_skor_kad_page2');
+    }
+
+    public function isi_skor_kad_verifikasi2(Request $request)
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page2.create');
+        $vp_jalan = $request->session()->all();
+
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page2.create',compact('vp_jalan'));
         
     }
 
-    public function isi_skor_kad_verifikasi3()
+    public function simpan_isi_skor_kad_verifikasi2(Request $request) 
+    {
+        $validatedData = $request->all();
+
+        $vp_jalan = new KriteriaPhjkrJalan();
+        $vp_jalan->fill( $validatedData);
+        $request->session()->put('vp_jalan', $vp_jalan);
+        // $rb_jalan = $request->session()->get('rb_jalan');
+        // alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        // $rb_jalan->save();
+
+        return redirect('/verifikasi_permarkahan_jalan/isi_skor_kad_page3');
+    }
+
+    public function isi_skor_kad_verifikasi3(Request $request)
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page3.create');
+        $vp_jalan = $request->session()->all();
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page3.create',compact('vp_jalan'));
         
     }
 
-    public function isi_skor_kad_verifikasi4()
+    public function simpan_isi_skor_kad_verifikasi3(Request $request) 
+    {
+        $validatedData = $request->all();
+
+        $vp_jalan = new KriteriaPhjkrJalan();
+        $vp_jalan->fill( $validatedData);
+        $request->session()->put('vp_jalan', $vp_jalan);
+        // $rb_jalan = $request->session()->get('rb_jalan');
+        // alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        // $rb_jalan->save();
+
+        return redirect('/verifikasi_permarkahan_jalan/isi_skor_kad_page4');
+    }
+
+    public function isi_skor_kad_verifikasi4(Request $request)
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page4.create');
+        $vp_jalan = $request->session()->all();
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page4.create',compact('vp_jalan'));
         
     }
 
-    public function isi_skor_kad_verifikasi5()
+    public function simpan_isi_skor_kad_verifikasi4(Request $request) 
+    {
+        $validatedData = $request->all();
+
+        $vp_jalan = new KriteriaPhjkrJalan();
+        $vp_jalan->fill( $validatedData);
+        $request->session()->put('vp_jalan', $vp_jalan);
+        // $rb_jalan = $request->session()->get('rb_jalan');
+        // alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        // $rb_jalan->save();
+
+        return redirect('/verifikasi_permarkahan_jalan/isi_skor_kad_page5');
+    }
+
+    public function isi_skor_kad_verifikasi5(Request $request)
     {
         // papar mcm index tapi ada button utk pengesahan
-        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page5.create');
+        $vp_jalan = $request->session()->all();
+        return view('modul.verifikasi_permarkahan_jalan.isi_skor_kad_page5.create',compact('vp_jalan'));
         
+    }
+
+    public function simpan_isi_skor_kad_verifikasi5(Request $request) 
+    {
+        $validatedData = $request->all();
+
+        $vp_jalan = new KriteriaPhjkrJalan();
+        $vp_jalan->fill( $validatedData);
+        $request->session()->put('vp_jalan', $vp_jalan);
+        // $rb_jalan = $request->session()->get('rb_jalan');
+        // alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        // $rb_jalan->save();
+
+        return redirect('/verifikasi_permarkahan_jalan/isi_skor_kad_verifikasi');
     }
 
     public function markah_penilaian_verifikasi()

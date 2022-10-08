@@ -50,7 +50,7 @@
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
                     <th scope="col">Jenis Projek</th>
-                    <th scope="col">Kategori</th>
+                    {{-- <th scope="col">Kategori</th> --}}
                     <th scope="col">Tindakan</th>
 
                 </tr>
@@ -76,7 +76,7 @@
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
                     <td>{{ $p->jenisKategoriProjek }}</td>
-                    <td>
+                    {{-- <td>
                         <select class="select-action" name="action" class="btn btn-warning">
                             <option  disabled selected>Pilih Kategori</option>
                             <option value ="arkitek">Bangunan 1</option>
@@ -84,7 +84,7 @@
                             <option value ="elektrikal">Elektrikal</option>
                             <option value ="civil">Civil</option>
                          </select>
-                    </td> 
+                    </td>  --}}
                     <td style="text-align: center">{{ $p->nama }}
                         <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{{$p->id}}" type="button" class="btn btn-warning">Lantik Pemudah Cara</a>
                     </td>

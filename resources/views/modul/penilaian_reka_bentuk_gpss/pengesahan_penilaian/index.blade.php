@@ -64,7 +64,7 @@
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
                     <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{{$p->id}}" type="button" class="btn btn-warning">PAPAR</a>
+                        <a href="/penilaian_reka_bentuk_gpss/pengesahan_penilaian/{{$p->id}}" type="button" class="btn btn-warning">PENGESAHAN</a>
                     </td> 
                 </tr>
                     @endforeach

@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('Pengguna')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Admin',
                 'email'=> 'jkr-admin@pipeline.com.my',
@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Pengurusan Atasan')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Pengurusan Atasan',
                 'email'=> 'jkr-pengurusan-atasan@pipeline.com.my',
@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Pentadbir')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Pentadbir',
                 'email'=> 'jkr-pentadbir@pipeline.com.my',
@@ -40,7 +40,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Ketua Pasukan')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Ketua Pasukan',
                 'email'=> 'jkr-ketua-pasukan@pipeline.com.my',
@@ -48,7 +48,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Penolong Ketua Pasukan')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Penolong Ketua Pasukan',
                 'email'=> 'jkr-penolong-ketua-pasukan@pipeline.com.my',
@@ -56,7 +56,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Sekretariat')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Sekretariat',
                 'email'=> 'jkr-sekretariat@pipeline.com.my',
@@ -64,7 +64,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Pemudah Cara 1')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Pemudah Cara 1',
                 'email'=> 'jkr-pemudah-cara-1@pipeline.com.my',
@@ -72,7 +72,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Pemudah Cara 2')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Pemudah Cara 2',
                 'email'=> 'jkr-pemudah-cara-2@pipeline.com.my',
@@ -80,7 +80,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Ketua Penilai')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Ketua Penilai',
                 'email'=> 'jkr-ketua-penilai@pipeline.com.my',
@@ -88,7 +88,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Penilai Jalan')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Penilai Jalan',
                 'email'=> 'jkr-penilai-jalan@pipeline.com.my',
@@ -96,7 +96,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Penilai GPSS')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Penilai GPSS',
                 'email'=> 'jkr-penilai-GPSS@pipeline.com.my',
@@ -104,7 +104,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Ketua Validasi')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Ketua Validasi',
                 'email'=> 'jkr-ketua-validasi@pipeline.com.my',
@@ -112,7 +112,7 @@ class UserSeeder extends Seeder
             ],
         ]);
 
-        DB::table('Pasukan Validasi')->insert([
+        DB::table('users')->insert([
             [
                 'name'=> 'JKR Pasukan Validasi',
                 'email'=> 'jkr-pasukan-validasi@pipeline.com.my',

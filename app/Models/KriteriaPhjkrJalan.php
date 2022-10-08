@@ -9,6 +9,8 @@ class KriteriaPhjkrJalan extends Model
 {
     use HasFactory;
 
+    protected $guarded = ['id'];
+
     public function penilaian_ephjkr()
     {
         return $this->belongsTo(PenilaianEphjkr::class);

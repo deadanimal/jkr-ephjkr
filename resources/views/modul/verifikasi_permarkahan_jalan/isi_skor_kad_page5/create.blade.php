@@ -32,7 +32,9 @@
     
 
     <div>
-      <form action="">
+      <form action="/verifikasi_permarkahan_jalan/simpan_isi_skor_kad_page5/{id}" method="post" enctype="multipart/form-data">
+        @method('POST')
+        @csrf
         <table>
           <div class="row3 mx-4 table-responsive scrollbar">
               <div class="col">
@@ -55,7 +57,7 @@
                       <th></th>
                       <th >MAX POINT</th>
                       <th >TARGET POINT</th>
-                      <th >ASSESSMENT POINT</th>
+                      {{-- <th >ASSESSMENT POINT</th> --}}
                       <th>COMMENT BY ASSESSOR</th>
                     </tr>
   
@@ -87,21 +89,15 @@
                       <td>Come up with an idea for a design or construction best practice for road that is not currently included in Manual pH JKR and is more sustainable than standard or conventional practices</td>
                       <td rowspan="1">ANY</td>
                       <td>5</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointIN()" type="number" min="0" max="2" class="targetPointIN"></td>
+                      {{-- <td><input onblur="findAssessmentPointIN()" type="number" min="0" max="2" class="assessmentPointIN"></td> --}}
+                      <td><input onblur="commentIN()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
-  
-                    
-
-                    
-
-                    
 
                     <tr >
                       <td colspan="3"> TOTAL INNOVATION POINT</td>
-                      <td>5</td>
-                      <td></td>
+                      <td><input type="text" name="markahIN" id="markahIN" /></td> 
+                      <td></td>           
                       <td></td>
                       <td></td>
                     </tr>
@@ -110,11 +106,26 @@
                 </table>
 
                 <div align="center" class="mt-3">
-                  <button class="btn btn-primary" type="submit" title="Simpan">Batal</button>
-                  <a href="/verifikasi_permarkahan_jalan/isi_skor_kad_verifikasi3" type="button" class="btn btn-primary">Simpan</a>          
+                  <button class="btn btn-primary" type="submit" title="Batal">Batal</button>
+                  <button class="btn btn-primary" type="submit" title="Simpan">Simpan</button>
+                  {{-- <a href="/penilaian_reka_bentuk_jalan/isi_skor_kad" type="button" class="btn btn-primary">Simpan</a>           --}}
                 </div>
       </form>
-      </div>   
+      </div>  
+      
+      <script>
+        function findTargetPointIN(){
+        var arr = document.getElementsByClassName('targetPointIN');
+        // add new var 
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+                // add tot2
+        }
+        document.getElementById('markahIN').value = tot;
+      } 
+        </script> 
     
     
     <!--Container Fluid-->

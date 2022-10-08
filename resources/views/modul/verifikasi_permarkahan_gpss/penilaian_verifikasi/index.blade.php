@@ -1,5 +1,34 @@
 @extends('layouts.base')
 
+<style>
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+
+  .show {display: block;}
+</style>
+
 @section('content')
     {{-- header --}}
     <div class="row mb-3">
@@ -8,7 +37,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Penilaian Verifikasi
+                        Penilaian Reka Bentuk
                     </li>
                 </ol>
             </nav>
@@ -16,7 +45,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN VERIFIKASI PERMARKAHAN GPSS</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK GPSS</strong></h3>
         </div>
     </div>
     
@@ -38,6 +67,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
     <div class="container-fluid mt-5">
@@ -50,13 +80,23 @@
                     <th scope="col">Nama Projek</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Tindakan</th>
-                    {{-- <th scope="col">Tindakan</th> --}}
+                    <th scope="col">Tindakan/Bidang</th>
                 </tr>
             </thead>
             <tbody>
+                {{-- <tr>
+                    <th scope="row">1.</th>
+                    <td>SKL0202</td>
+                    <td>Hospital Seri Iskandar</td>
+                    <td>Mukah</td>
+                    <td>BERJAYA DIDAFTAR</td>
+                    <td style="text-align: center">
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="submit" class="btn btn-warning margin-auto">PILIH</a>
+                    </td>
+                </tr> --}}
+                @foreach ($projeks as $p)
+
                 <tr>
-                    @foreach ($projeks as $p)
 
                     {{-- <th scope="row">1.</th> --}}
                     <td>{{ $loop->iteration }}</td>
@@ -64,13 +104,52 @@
                     <td>{{ $p->namaProjek }}</td>
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
-                    <td style="text-align: center">
-                        <a href="/verifikasi_permarkahan_gpss/pengesahan_penilaian/{{$p->id}}" type="button" class="btn btn-warning">PILIH</a>
+                    {{-- <td style="text-align: center">{{ $p->nama }}
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}" type="button" class="btn btn-warning">PILIH</a>
+                    </td> --}}
+                    <td style="text-align: center">{{ $p->nama }} 
+                        <div class="dropdown">
+                            <button onclick="myFunction({{$p->id}})" class="dropbtn btn btn-warning">Pilih Bidang</button>
+                            <div id="gpss_dropdown{{$p->id}}" class="dropdown-content ">
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}">Arkitek</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create/{{$p->id}}">Mekanikal</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create/{{$p->id}}">Elektrikal</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create/{{$p->id}}">Civil</a> --}}
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}">Building Category 1</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_2/create/{{$p->id}}">Building Category 2</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_3/create/{{$p->id}}">Building Category 3</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_road/create/{{$p->id}}">Road</a>
+                            </div>
+                          </div>
                     </td> 
                 </tr>
-                    @endforeach
-            </tbody>
+                    @endforeach                                
+            </tbody>      
             </table>
         </div>
     </div>
+
+    
+
+   <script>
+     function myFunction(id) {
+        document.getElementById("gpss_dropdown"+id).classList.toggle("show");
+      }
+      
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+   </script>
+      
+
 @endsection

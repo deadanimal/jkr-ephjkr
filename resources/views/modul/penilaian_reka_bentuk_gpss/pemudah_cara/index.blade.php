@@ -30,7 +30,7 @@
                         <label for="nama_projek">Nama Projek:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
+                        <input type="text" id="myInput" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
                     </div>
                     <div class="col-md-3">
                         <button class="btn btn-warning btn-block">Carian</button>
@@ -39,6 +39,12 @@
             </div>
         </div>
     </div>
+
+
+    <div class="col text-end">
+        <button class="btn btn-warning btn-block">Tambah</button>
+    </div>
+
     <div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center">
         <table class="table table-bordered">
@@ -55,8 +61,8 @@
                     <th scope="col">Tindakan</th>
                     
                 </tr>
-            </thead>
-            <tbody>
+            </thead> 
+            <tbody id="myTable">
                
 
                 <tr>
@@ -74,8 +80,14 @@
                     </td>
                     <td>
                         <div class="row">
+                            {{-- <div class="col-auto">
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/{{$pc->id}}" --}}
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create"
+                                    class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></a>
+                            </div> --}}
                             <div class="col-auto">
-                                <a href="/penilaian_reka_bentuk_gpss/edit_pemudah_cara/{{$pc->id}}/edit"
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/edit_pemudah_cara/{{$pc->id}}/edit" --}}
+                                <a href="#"
                                     class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                             </div>
                             <div class="col-auto">
@@ -98,4 +110,15 @@
             </table>
         </div>
     </div>
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+    </script>
+
 @endsection

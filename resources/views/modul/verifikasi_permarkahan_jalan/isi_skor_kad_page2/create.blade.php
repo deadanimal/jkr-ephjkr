@@ -32,7 +32,9 @@
     
 
     <div>
-      <form action="">
+      <form action="/verifikasi_permarkahan_jalan/simpan_isi_skor_kad_page2/{id}" method="post" enctype="multipart/form-data">
+        @method('POST')
+        @csrf
         <table>
           <div class="row3 mx-4 table-responsive scrollbar">
               <div class="col">
@@ -55,7 +57,7 @@
                       <th></th>
                       <th >MAX POINT</th>
                       <th >TARGET POINT</th>
-                      <th >ASSESSMENT POINT</th>
+                      {{-- <th >ASSESSMENT POINT</th> --}}
                       <th>COMMENT BY ASSESSOR</th>
                     </tr>
   
@@ -72,7 +74,7 @@
                     </tr>
   
                     <tr>
-                      <td colspan="1" rowspan="6">PT 1</td>
+                      <td colspan="1" rowspan="6">PT1</td>
                       <td colspan="2">EXISTING PAVEMENT EVALUATION</td>
                       {{-- <td></td> --}}
                       <td>3</td>
@@ -87,41 +89,45 @@
                       <td>Surface Condition Survey</td>
                       <td rowspan="5">CSFJ</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT1()" type="number" min="0" max="2" class="targetPointPT1" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT1()" type="number" min="0" max="2" class="assessmentPointPT1"></td> --}}
+                      <td><input onblur="commentPT1()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
                     <tr>
                       <td >Coring & Dynamic Cone Penetrometer test</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT1()" type="number" min="0" max="2" class="targetPointPT1" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT1()" type="number" min="0" max="2" class="assessmentPointPT1"></td> --}}
+                      <td><input onblur="commentPT1()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
 
                     <tr>
                       <td >Deflection test</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT1()" type="number" min="0" max="2" class="targetPointPT1" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT1()" type="number" min="0" max="2" class="assessmentPointPT1"></td> --}}
+                      <td><input onblur="commentPT1()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
   
                     <tr>
                       <td >Trial pit & Laboratory</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT1()" type="number" min="0" max="2" class="targetPointPT1" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT1()" type="number" min="0" max="2" class="assessmentPointPT1"></td> --}}
+                      <td><input onblur="commentPT1()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
 
                     <tr>
                       <td >Surface Regularity Test (International Roughness Index, IRI)</td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT1()" type="number" min="0" max="2" class="targetPointPT1" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT1()" type="number" min="0" max="2" class="assessmentPointPT1"></td> --}}
+                      <td><input onblur="commentPT1()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td style="display: none">markahPT1<input type="text" name="markahPT1" id="markahPT1" /></td>            
                     </tr>
 
                     
@@ -152,25 +158,29 @@
                       <td >use of permeable (porous) pavement mix design</td>
                       <td></td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT2()" type="number" min="0" max="2" class="targetPointPT2" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT2()" type="number" min="0" max="2" class="assessmentPointPT2"></td> --}}
+                      <td><input onblur="commentPT2()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
                       <td >Pavement crossfall 2.5% and min unpaved shoulder to drain</td>
                       <td></td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT2()" type="number" min="0" max="2" class="targetPointPT2" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT2()" type="number" min="0" max="2" class="assessmentPointPT2"></td> --}}
+                      <td><input onblur="commentPT2()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
                       <td >Drainability of porous asphalt wearing course having a minimum thickness of 50mm</td>
                       <td></td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT2()" type="number" min="0" max="2" class="targetPointPT2" ></td>
+                      {{-- <td><input onblur="findAssessmentPointPT2()" type="number" min="0" max="2" class="assessmentPointPT2"></td> --}}
+                      <td><input onblur="commentPT2()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td style="display: none">markahPT2<input type="text" name="markahPT2" id="markahPT2" /></td>            
                     </tr>
                     
 
@@ -190,9 +200,13 @@
                       <td >Use a process that allows construction quality measurements and long-term pavement performance measurements</td>
                       <td></td>
                       <td>2</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT3()" type="number" min="0" max="2" class="targetPointPT3" name="" id=""></td>
+                      {{-- <td><input onblur="findAssessmentPointPT3()" type="number" min="0" max="2" class="assessmentPointPT3" name="" id=""></td> --}}
+                      <td><input onblur="commentPT3()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td style="display: none">markahPT3<input type="text" name="markahPT3" id="markahPT3" /></td>            
                     </tr>
                     
 
@@ -212,34 +226,38 @@
                       <td >Meet the requirements of Arahan Teknik Jalan</td>
                       <td></td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT4()" type="number" min="0" max="2" class="targetPointPT4"></td>
+                      {{-- <td><input onblur="findAssessmentPointPT4()" type="number" min="0" max="2" class="assessmentPointPT4"></td> --}}
+                      <td><input onblur="commentPT4()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
                       <td >Pavement design is in accordance</td>
                       <td></td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT4()" type="number" min="0" max="2" class="targetPointPT4"></td>
+                      {{-- <td><input onblur="findAssessmentPointPT4()" type="number" min="0" max="2" class="assessmentPointPT4"></td> --}}
+                      <td><input onblur="commentPT4()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
                     <tr>
                       <td >Drainability surface runoff</td>
                       <td></td>
                       <td>1</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT4()" type="number" min="0" max="2" class="targetPointPT4"></td>
+                      {{-- <td><input onblur="findAssessmentPointPT4()" type="number" min="0" max="2" class="assessmentPointPT4"></td> --}}
+                      <td><input onblur="commentPT4()" type="text" min="0" max="2" class="road" name="" id=""></td>
                     </tr>
 
                     <tr>
                       <td >Riqid Pavement > 40 years design life</td>
                       <td></td>
                       <td>2</td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="number" min="0" max="2" class="road" name="" id=""></td>
-                      <td><input onblur="roadWorks()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                      <td><input onblur="findTargetPointPT4()" type="number" min="0" max="2" class="targetPointPT4"></td>
+                      {{-- <td><input onblur="findAssessmentPointPT4()" type="number" min="0" max="2" class="assessmentPointPT4"></td> --}}
+                      <td><input onblur="commentPT4()" type="text" min="0" max="2" class="road" name="" id=""></td>
+                    </tr>
+
+                    <tr >
+                      <td style="display: none">markahPT4<input type="text" name="markahPT4" id="markahPT4" /></td>            
                     </tr>
 
                     <tr >
@@ -255,10 +273,53 @@
 
                 <div align="center" class="mt-3">
                   <button class="btn btn-primary" type="submit" title="Simpan">Batal</button>
-                  <a href="/verifikasi_permarkahan_jalan/isi_skor_kad_verifikasi3" type="button" class="btn btn-primary">Simpan</a>          
+                  <button class="btn btn-primary" type="submit" title="Hantar">Simpan</button>
+                  <a href="/verifikasi_permarkahan_jalan/isi_skor_kad_page3" type="button" class="btn btn-primary">Seterusnya</a>          
                 </div>
       </form>
-      </div>   
+      </div>
+      
+      <script>
+        function findTargetPointPT1(){
+        var arr = document.getElementsByClassName('targetPointPT1');
+        // add new var 
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+                // add tot2
+        }
+        document.getElementById('markahPT1').value = tot;
+      } 
+        </script> 
+
+      <script>
+        function findTargetPointPT3(){
+        var arr = document.getElementsByClassName('targetPointPT3');
+        // add new var 
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+                // add tot2
+        }
+        document.getElementById('markahPT3').value = tot;
+      } 
+        </script> 
+
+      <script>
+        function findTargetPointPT4(){
+        var arr = document.getElementsByClassName('targetPointPT4');
+        // add new var 
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseFloat(arr[i].value))
+                tot += parseFloat(arr[i].value);
+                // add tot2
+        }
+        document.getElementById('markahPT4').value = tot;
+      } 
+        </script> 
     
     
     <!--Container Fluid-->
@@ -269,7 +330,7 @@
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
             })
-            </script>
+        </script>
 
 @endsection
 

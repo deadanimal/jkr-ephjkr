@@ -16,7 +16,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN VERIFIKASI PERMARKAHAN GPSS</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK GPSS</strong></h3>
         </div>
     </div>
     
@@ -30,7 +30,7 @@
                         <label for="nama_projek">Nama Projek:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
+                        <input type="text" id="myInput" class="form-control" placeholder="e-Penarafan Hijau Jabatan Kerja Raya">
                     </div>
                     <div class="col-md-3">
                         <button class="btn btn-warning btn-block">Carian</button>
@@ -39,6 +39,12 @@
             </div>
         </div>
     </div>
+
+
+    <div class="col text-end">
+        <button class="btn btn-warning btn-block">Tambah</button>
+    </div>
+
     <div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center">
         <table class="table table-bordered">
@@ -51,12 +57,12 @@
                     <th scope="col">Nombor Fax</th>
                     <th scope="col">Email</th>
                     <th scope="col">Disiplin</th>
-                    {{-- <th scope="col">Lantik</th> --}}
-                    <th></th>
+                    <th scope="col">Lantik</th>
+                    <th scope="col">Tindakan</th>
                     
                 </tr>
-            </thead>
-            <tbody>
+            </thead> 
+            <tbody id="myTable">
                
 
                 <tr>
@@ -69,12 +75,34 @@
                     <td>{{ $pc->no_fax }}</td>
                     <td>{{ $pc->email }}</td>
                     <td>{{ $pc->disiplin }}</td>
-                    {{-- <td align="center">
+                    <td align="center">
                         <input type="checkbox" value="Lantik" id="lantik" name="lantik">
+                    </td>
+                    <td>
+                        <div class="row">
+                            {{-- <div class="col-auto">
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/{{$pc->id}}" --}}
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create"
+                                    class="btn btn-sm btn-primary"><i class="fas fa-plus"></i></a>
+                            </div> --}}
+                            <div class="col-auto">
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/edit_pemudah_cara/{{$pc->id}}/edit" --}}
+                                <a href="#"
+                                    class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <form action="/penilaian_reka_bentuk_gpss/delete_pemudah_cara/{{$pc->id}}" method="post">
+                                    @method('DELETE')
+                                    @csrf
+                                    <button type="submit" class="btn btn-sm btn-outline-primary"><i class="fas fa-trash-alt"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </td>
+                    {{-- <td style="text-align: center">
+                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{{$pc->id}}" type="button" class="btn btn-warning" >Kemaskini</a>
                     </td> --}}
-                    <td style="text-align: center">
-                        <a href="/penilaian_reka_bentuk_gpss/pemudah_cara/create/{id}" type="button" class="btn btn-warning">Kemaskini Pemudah Cara</a>
-                    </td> 
+                 
                 </tr>
                     @endforeach
                     
@@ -82,4 +110,15 @@
             </table>
         </div>
     </div>
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+    </script>
+
 @endsection

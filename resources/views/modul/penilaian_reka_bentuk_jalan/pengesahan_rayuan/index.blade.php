@@ -8,7 +8,7 @@
             aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                    Paparan Senarai Projek
+                    Pengesahan Rayuan
                 </li>
             </ol>
         </nav>
@@ -31,31 +31,46 @@
                     <th scope="col">ID Rujukan</th>
                     <th scope="col">Nama Projek</th>
                     <th scope="col">Alamat</th>
-                    <th scope="col">Sebab Rayuan</th>
-                    <th scope="col">Status Rayuan</th>
+                    <th scope="col">Status Penilaian Reka Bentuk</th>
+                    <th scope="col">Rayuan</th>
+                    <th scope="col">Tindakan</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                {{-- <tr>
                     <th scope="row">1.</th>
                     <td>SKL0202</td>
                     <td>Bina Jalan</td>
                     <td>Jalan Sekapur Sireh</td>
-                    <td>Penilaian reka bentuk salah masuk markah</td>
-                    <td>Permohonan rayuan dalam proses</td>
-                </tr>
+                    <td>PENILAIAN REKA BENTUK BERJAYA</td>
+                    <td>Tiada Rayuan Dibuat</td>
+                    
+                </tr> --}}
 
                 <tr>
-                    <th scope="row">2.</th>
-                    <td>SKL0202</td>
-                    <td>Bina Jalan</td>
-                    <td>Jalan Sekapur Sireh</td>
-                    <td>Penilaian reka bentuk salah masuk markah</td>
-                    <td>Permohonan rayuan berjaya</td>
-                </tr>
+                    @foreach ($projeks as $p)
 
-            
+                    {{-- <th scope="row">1.</th> --}}
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $p->id_ruj_skala }}</td>
+                    <td>{{ $p->namaProjek }}</td>
+                    <td>{{ $p->alamatProjek }}</td>
+                    <td>{{ $p->statusProjek }}</td>
+                    <td>{{ $p->jenisKategoriProjek }}</td>
+                    {{-- <td>
+                        <select class="select-action" name="action" class="btn btn-warning">
+                            <option  disabled selected>Pilih Kategori</option>
+                            <option value ="new">New Road</option>
+                            <option value ="existing">Existing Road</option>
+                         
+                         </select>
+                    </td>  --}}
+                    <td style="text-align: center">{{ $p->nama }}
+                        <a href="#" type="button" class="btn btn-warning">Pengesahan Rayuan</a>
+                    </td>
                     
+                </tr>
+                    @endforeach
 
 
             </tbody>

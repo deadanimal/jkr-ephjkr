@@ -877,11 +877,11 @@
                             </li>
                             {{-- Jana Sijil GPSS --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_gpss/jana_verifikasi') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_gpss/jana_verifikasi">
+                                <a class="nav-link {{ Request::is('verifikasi_permarkahan_gpss/jana_sijil_gpss') ? 'active' : '' }} py-0"
+                                    href="/verifikasi_permarkahan_gpss/jana_sijil_gpss">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('verifikasi_permarkahan_gpss/jana_verifikasi') ? 'text-dark' : '' }}">Jana
+                                            class="px-0 {{ Request::is('verifikasi_permarkahan_gpss/jana_sijil_gpss') ? 'text-dark' : '' }}">Jana
                                             Sijil</span>
                                     </div>
                                 </a>
@@ -925,11 +925,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/pemudah_cara_jalan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/pemudah_cara_jalan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/papar_senarai_pemudah_cara_jalan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/papar_senarai_pemudah_cara_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/pemudah_cara_jalan') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/papar_senarai_pemudah_cara_jalan') ? 'text-dark' : '' }}">Melantik
                                             Pemudah Cara</span>
                                     </div>
                                 </a>
@@ -948,11 +948,11 @@
                             </li>
                             {{-- Penilaian Reka Bentuk --}}
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/penilai_jalan') ? 'active' : '' }} py-0"
-                                    href="/penilaian_reka_bentuk_jalan/penilai_jalan">
+                                <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/papar_senarai_penilai_jalan') ? 'active' : '' }} py-0"
+                                    href="/penilaian_reka_bentuk_jalan/papar_senarai_penilai_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/penilai_jalan') ? 'text-dark' : '' }}">Melantik
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/papar_senarai_penilai_jalan') ? 'text-dark' : '' }}">Melantik
                                             Penilai Jalan</span>
                                     </div>
                                 </a>
@@ -963,7 +963,7 @@
                                     href="/penilaian_reka_bentuk_jalan/penilai_reka_bentuk">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/penilai_reka_bentuk') ? 'text-dark' : '' }}">Penilai
+                                            class="px-0 {{ Request::is('penilaian_reka_bentuk_jalan/penilai_reka_bentuk') ? 'text-dark' : '' }}">Penilaian
                                             Reka Bentuk</span>
                                     </div>
                                 </a>
@@ -992,7 +992,7 @@
                                 </a>
                             </li>
 
-                            {{-- Papar Skor Kad --}}
+                            {{-- Jana Keputusan --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('penilaian_reka_bentuk_jalan/papar_skor_kad') ? 'active' : '' }} py-0"
                                     href="/penilaian_reka_bentuk_jalan/papar_skor_kad">
@@ -1079,7 +1079,7 @@
                             {{-- JALAN (Verifikasi) Melantik Pemudah Cara --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/pemudah_cara/create">
+                                    href="/verifikasi_permarkahan_jalan/melantik_pemudah_cara_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('verifikasi_permarkahan_jalan/pemudah_cara') ? 'text-dark' : '' }}">Melantik
@@ -1103,7 +1103,7 @@
                             {{-- JALAN (Verifikasi) Melantik Penilai jalan --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan/create">
+                                    href="/verifikasi_permarkahan_jalan/melantik_penilai_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/melantik_penilai_jalan') ? 'text-dark' : '' }}">Melantik
@@ -1142,8 +1142,8 @@
                                     href="/verifikasi_permarkahan_jalan/verifikasi_permarkahan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
-                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/verifikasi_permarkahan') ? 'text-dark' : '' }}">Penilaian
-                                            Verifikasi </span>
+                                            class="px-0 {{ Request::is('/verifikasi_permarkahan_jalan/verifikasi_permarkahan') ? 'text-dark' : '' }}">Verifikasi 
+                                            Permarkahan</span>
                                     </div>
                                 </a>
                             </li>
@@ -1201,7 +1201,7 @@
                             {{-- JALAN (Verifikasi) Pengesahan Rayuan --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/pengesahan_rayuan_verifikasi">
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Pengesahan 
@@ -1214,7 +1214,7 @@
                             {{-- JALAN (Verifikasi) Jana Sijil --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/jana_sijil_verifikasi">
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Jana 
@@ -1227,7 +1227,7 @@
                             {{-- JALAN (Verifikasi) Muat Turun Sijil --}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('verifikasi_permarkahan_jalan') ? 'active' : '' }} py-0"
-                                    href="/verifikasi_permarkahan_jalan/muat_turun_sijil">
+                                    href="/verifikasi_permarkahan_jalan">
                                     <div class="d-flex align-items-center nav-link-side">
                                         <span
                                             class="px-0 {{ Request::is('verifikasi_permarkahan_jalan') ? 'text-dark' : '' }}">Muat Turun 
@@ -1302,11 +1302,11 @@
                     <ul class="nav-item collapse {{ Request::is('laporan/*') ? 'show' : 'false' }} my-1"
                         id="laporan">
                     <li class="nav-item">
-                        <a class="nav-link {{ Request::is('laporan/keputusan_permarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'active' : '' }} py-0"
-                            href="/laporan/keputusan_permarkahan">
+                        <a class="nav-link {{ Request::is('laporan/keputusan_pemarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'active' : '' }} py-0"
+                            href="/laporan/keputusan_pemarkahan">
                             <div class="d-flex align-items-center nav-link-side">
                             <span
-                                class="px-0 {{ Request::is('laporan/keputusan_permarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'text-dark' : '' }}">Keputusan
+                                class="px-0 {{ Request::is('laporan/keputusan_pemarkahan') || Request::is('laporan/keputusan_permarkahan/*') ? 'text-dark' : '' }}">Keputusan
                                     Permarkahan</span>
                             </div>
                         </a>

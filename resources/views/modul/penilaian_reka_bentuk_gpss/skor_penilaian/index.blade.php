@@ -115,7 +115,7 @@
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create/{{$p->id}}">Mekanikal</a>
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create/{{$p->id}}">Elektrikal</a>
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create/{{$p->id}}">Civil</a> --}}
-                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_1/create/{{$p->id}}">Building Category 1</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}">Building Category 1</a>
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_2/create/{{$p->id}}">Building Category 2</a>
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_3/create/{{$p->id}}">Building Category 3</a>
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_road/create/{{$p->id}}">Road</a>

@@ -8,7 +8,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Paparan Senarai Projek (Ketua Pasukan temp. view)
+                        Paparan Senarai Projek
                     </li>
                 </ol>
             </nav>
@@ -16,7 +16,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK GPSS</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK JALAN</strong></h3>
         </div>
     </div>
     
@@ -50,7 +50,7 @@
                     <th scope="col">Alamat</th>
                     <th scope="col">Status</th>
                     <th scope="col">Jenis Projek</th>
-                    <th scope="col">Kategori</th>
+                    {{-- <th scope="col">Kategori</th> --}}
                     <th scope="col">Nama Pemudah Cara</th>
 
                 </tr>
@@ -76,16 +76,16 @@
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
                     <td>{{ $p->jenisKategoriProjek }}</td>
-                    <td>
+                    {{-- <td>
                         <select class="select-action" name="action" class="btn btn-warning">
                             <option  disabled selected>Pilih Kategori</option>
                             <option value ="new">New Road</option>
                             <option value ="existing">Existing Road</option>
                          
                          </select>
-                    </td> 
+                    </td>  --}}
                     <td style="text-align: center">{{ $p->nama }}
-                        <a href="/penilaian_reka_bentuk_jalan/pemudah_cara_jalan/{{$p->id}}" type="button" class="btn btn-warning">+</a>
+                        <a href="/penilaian_reka_bentuk_jalan/pemudah_cara_jalan/{{$p->id}}" type="button" class="btn btn-warning">Lantik</a>
                     </td>
                     
                 </tr>

@@ -61,12 +61,13 @@
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
-                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_sijil/edit" role="button"
+                                                    <a class="btn btn-primary" href="/validasi_permarkahan_bangunan/jana_sijil/{{$p->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Papar">Papar</a>
                                                 </td>
                                             </tr> 
                                         @endforeach
                                         </tbody>
+                                        {{--  --}}
                                     {{-- </table> --}}
                                 </table> 
                             </div>

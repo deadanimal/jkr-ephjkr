@@ -74,7 +74,7 @@
                     <td>{{ $p->alamatProjek }}</td>
                     <td>{{ $p->statusProjek }}</td>
                     <td style="text-align: center">{{ $p->nama }}
-                        <a href="/penilaian_reka_bentuk_gpss/papar_muatTurun_sijil" type="submit" class="btn btn-warning margin-auto">Penilaian</a>
+                        <a href="/penilaian_reka_bentuk_gpss/papar_sijil" type="submit" class="btn btn-warning margin-auto">Papar Sijil</a>
                     </td>
                     {{-- <td>
                         <select class="select-action" name="action" class="btn btn-warning">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Http\Controllers\ProjekController;
+use App\Models\KriteriaPhjkrJalan;
 use App\Models\Projek;
 
 use Illuminate\Http\Request;
@@ -89,9 +90,24 @@ class PenilaianRekaBentukJalanController extends Controller
         //
     }
 
+    public function papar_senarai_pemudah_cara_jalan()
+     {
+       //papar table projek with button melantik pemudah cara
+       //should be isi form pemudahcara - create()
+
+    //    $pemudah_cara = PemudahCara::where('id', Auth::user()->id)->get();
+        $pemudah_cara = PemudahCara::all();
+       
+         return view('modul.penilaian_reka_bentuk_jalan.papar_senarai_pemudah_cara_jalan.index',[
+            'pemudah_cara'=> $pemudah_cara
+         ]);
+     }
+
     public function pemudah_cara_jalan() 
-    {
-        return view('modul.penilaian_reka_bentuk_jalan.pemudah_cara_jalan.create');
+    {   
+        $pemudah_cara = PemudahCara::all();
+
+        return view('modul.penilaian_reka_bentuk_jalan.pemudah_cara_jalan.create', compact('pemudah_cara'));
     }
 
     public function melantik_pemudah_cara_jalan(Request $request, $id)
@@ -112,10 +128,47 @@ class PenilaianRekaBentukJalanController extends Controller
         return redirect('/penilaian_reka_bentuk_jalan/pemudah_cara_jalan');
     }
 
-    public function isi_skor_kad() 
+    public function papar_senarai_penilai_jalan()
+    {
+      //papar table projek with button melantik pemudah cara
+      //should be isi form pemudahcara - create()
+
+   //    $pemudah_cara = PemudahCara::where('id', Auth::user()->id)->get();
+       $pemudah_cara = PemudahCara::all();
+      
+        return view('modul.penilaian_reka_bentuk_jalan.papar_senarai_pemudah_cara_jalan.index',[
+           'pemudah_cara'=> $pemudah_cara
+        ]);
+    }
+
+
+
+    public function isi_skor_kad(Request $request) 
     {
         // create method
-        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad.create');
+        $rb_jalan = $request->session()->all();
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad.create',compact('rb_jalan'));
+    }
+
+    public function simpan_isi_skor_kad(Request $request) 
+    {   
+        $validatedData = $request->all();
+
+        $rb_jalan = new KriteriaPhjkrJalan();
+        $rb_jalan->fill( $validatedData);
+        $request->session()->put('rb_jalan', $rb_jalan);
+
+
+        // $rb_jalan->markahSM1 = $request->input('markahSM1');
+        // $rb_jalan->markahSM2 = $request->input('markahSM2');
+        // $rb_jalan->markahSM3 = $request->input('markahSM3');
+        // $rb_jalan->markahSM4 = $request->input('markahSM4');
+        // alert()->success('Markah disimpan', 'Berjaya');
+
+        // $rb_jalan->save();
+
+        
+        return redirect('/penilaian_reka_bentuk_jalan/isi_skor_kad_page2');
     }
 
     // store() method - refer to which table?
@@ -123,36 +176,95 @@ class PenilaianRekaBentukJalanController extends Controller
 
     // next page isi_skor_kad
 
-    public function isi_skor_kad_page2() 
+    public function isi_skor_kad_page2(Request $request) 
     {
         // create method
-        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page2.create');
+        $rb_jalan = $request->session()->all();
+
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page2.create',compact('rb_jalan'));
     }
 
-    public function isi_skor_kad_page3() 
+    public function simpan_isi_skor_kad_page2(Request $request) 
     {
-        // create method
-        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page3.create');
+        $validatedData = $request->all();
+
+        $rb_jalan = new KriteriaPhjkrJalan();
+        $rb_jalan->fill( $validatedData);
+        $request->session()->put('rb_jalan', $rb_jalan);
+        // $rb_jalan = $request->session()->get('rb_jalan');
+        // alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        // $rb_jalan->save();
+
+        return redirect('/penilaian_reka_bentuk_jalan/isi_skor_kad_page3');
     }
 
-    public function isi_skor_kad_page4() 
+
+
+    public function isi_skor_kad_page3(Request $request) 
     {
-        // create method
-        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page4.create');
+        $rb_jalan = $request->session()->all();
+
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page3.create',compact('rb_jalan') );
     }
 
-    public function isi_skor_kad_page5() 
+    public function simpan_isi_skor_kad_page3(Request $request) 
     {
-        // create method
-        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page5.create');
+        $validatedData = $request->all();
+
+        $rb_jalan = new KriteriaPhjkrJalan();
+        $rb_jalan->fill( $validatedData);
+        $request->session()->put('rb_jalan', $rb_jalan);
+
+        // $rb_jalan = $request->session()->get('rb_jalan');
+        // alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        // $rb_jalan->save();
+
+        return redirect('/penilaian_reka_bentuk_jalan/isi_skor_kad_page4');
     }
 
-
-
-    public function penilai_jalan() 
+    public function isi_skor_kad_page4(Request $request) 
     {
-        return view('modul.penilaian_reka_bentuk_jalan.penilai_jalan.index');
+        $rb_jalan = $request->session()->all();
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page4.create',compact('rb_jalan') );
     }
+
+    public function simpan_isi_skor_kad_page4(Request $request) 
+    {
+        $validatedData = $request->all();
+
+        $rb_jalan = new KriteriaPhjkrJalan();
+        $rb_jalan->fill( $validatedData);
+        $request->session()->put('rb_jalan', $rb_jalan);
+
+        // $rb_jalan = $request->session()->get('rb_jalan');
+        // alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        // $rb_jalan->save();
+
+        return redirect('/penilaian_reka_bentuk_jalan/isi_skor_kad_page5');
+    }
+
+    public function isi_skor_kad_page5(Request $request) 
+    {
+        $rb_jalan = $request->session()->all();
+        return view('modul.penilaian_reka_bentuk_jalan.isi_skor_kad_page5.create',compact('rb_jalan'));
+    }
+
+    public function simpan_isi_skor_kad_page5(Request $request) 
+    {
+        // $validatedData = $request->all();
+
+        // $rb_jalan = new KriteriaPhjkrJalan();
+        // $rb_jalan->fill( $validatedData);
+        // $request->session()->put('rb_jalan', $rb_jalan);
+
+        $rb_jalan = $request->session()->get('rb_jalan');
+        alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
+        $rb_jalan->save();
+
+        return redirect('/penilaian_reka_bentuk_jalan/isi_skor_kad');
+    }
+
+
 
     public function penilai_reka_bentuk() 
     {
@@ -163,7 +275,6 @@ class PenilaianRekaBentukJalanController extends Controller
     {
         return view('modul.penilaian_reka_bentuk_jalan.pengesahan_penilaian_jalan.index');
     }
-
     public function jana_keputusan_jalan() 
     {
         return view('modul.penilaian_reka_bentuk_jalan.jana_keputusan_jalan.index');
@@ -176,12 +287,16 @@ class PenilaianRekaBentukJalanController extends Controller
 
     public function permohonan_rayuan() 
     {
-        return view('modul.penilaian_reka_bentuk_jalan.permohonan_rayuan.index');
+        $projeks = Projek::all();
+        return view('modul.penilaian_reka_bentuk_jalan.permohonan_rayuan.index',[
+            'projeks'=> $projeks,
+        ]);
     }
 
     public function pengesahan_rayuan() 
-    {
-        return view('modul.penilaian_reka_bentuk_jalan.pengesahan_rayuan.index');
+    {   
+        $projeks = Projek::all();
+        return view('modul.penilaian_reka_bentuk_jalan.pengesahan_rayuan.index', compact('projeks'));
     }
 
     public function jana_sijil() 

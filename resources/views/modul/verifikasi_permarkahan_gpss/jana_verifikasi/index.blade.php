@@ -41,7 +41,7 @@
                     <td>Bina Jalan</td>
                     <td>Jalan Sekapur Sireh</td>
                     <td align="center">
-                        <a href="/penilaian_reka_bentuk_gpss/melantik_pemudah_cara" type="button" class="btn btn-warning">JANA</a>
+                        <a href="#" type="button" class="btn btn-warning">JANA</a>
                     </td>
                 
                 </tr>

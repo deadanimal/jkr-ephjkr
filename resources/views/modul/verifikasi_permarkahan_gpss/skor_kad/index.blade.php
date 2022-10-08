@@ -37,7 +37,7 @@
                 aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item text-dark-green-jkr" style="font-weight: 700" aria-current="page">
-                        Hantar Skor Kad dan Muat Naik Dokumen Sokongan
+                        Penilaian Reka Bentuk
                     </li>
                 </ol>
             </nav>
@@ -45,11 +45,12 @@
     </div>
     <div class="row">
         <div class="col">
-            <h3 class="mb-0 text-primary"><strong>PENILAIAN VERIFIKASI PERMARKAHAN GPSS</strong></h3>
+            <h3 class="mb-0 text-primary"><strong>PENILAIAN REKA BENTUK GPSS</strong></h3>
         </div>
     </div>
     
     <hr style="background-color: #EB5500;">
+    
     {{-- body --}}
     <div class="container mt-5">
     <div class="row d-flex justify-content-center">
@@ -83,7 +84,16 @@
                 </tr>
             </thead>
             <tbody>
-                
+                {{-- <tr>
+                    <th scope="row">1.</th>
+                    <td>SKL0202</td>
+                    <td>Hospital Seri Iskandar</td>
+                    <td>Mukah</td>
+                    <td>BERJAYA DIDAFTAR</td>
+                    <td style="text-align: center">
+                        <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create" type="submit" class="btn btn-warning margin-auto">PILIH</a>
+                    </td>
+                </tr> --}}
                 @foreach ($projeks as $p)
 
                 <tr>
@@ -101,10 +111,14 @@
                         <div class="dropdown">
                             <button onclick="myFunction({{$p->id}})" class="dropbtn btn btn-warning">Pilih Bidang</button>
                             <div id="gpss_dropdown{{$p->id}}" class="dropdown-content ">
-                                <a href="/verifikasi_permarkahan_gpss/skor_verifikasi_arkitek/create/{{$p->id}}">Arkitek</a>
+                                {{-- <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}">Arkitek</a>
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_mekanikal/create/{{$p->id}}">Mekanikal</a>
                                 <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_elektrikal/create/{{$p->id}}">Elektrikal</a>
-                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create/{{$p->id}}">Civil</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_civil/create/{{$p->id}}">Civil</a> --}}
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_arkitek/create/{{$p->id}}">Building Category 1</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_2/create/{{$p->id}}">Building Category 2</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_building_category_3/create/{{$p->id}}">Building Category 3</a>
+                                <a href="/penilaian_reka_bentuk_gpss/skor_penilaian_road/create/{{$p->id}}">Road</a>
                             </div>
                           </div>
                     </td> 
