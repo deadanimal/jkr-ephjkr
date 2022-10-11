@@ -17,11 +17,11 @@
     <div class="container-fluid">
             <div class="col-12">
                 <div class="card-header">
-                    <div class="row mt-3">
+                    {{-- <div class="row mt-3"> --}}
                         {{-- <div class="col text-end">
                             <a href="/penilaian_reka_bentuk_bangunan/pemudah_cara/create/{id}" class="btn btn-primary">Tambah</a>
                         </div> --}}
-                    </div>
+                    {{-- </div> --}}
                     <div class="mt-5 row">
                                 <table class="table table-bordered line-table" style="width:100%">
                                         <thead class="text-white bg-orange-jkr">
@@ -34,18 +34,32 @@
                                                 <th class="text-center">Tindakan</th>                                                    
                                             </tr>
                                         </thead>
-                                    {{-- </table>  --}}
 
-                                    {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody id="myTable">
                                         <!--LOOPING TABLES-->
                                         @foreach ($projeks as $key => $p)
+                                        {{-- @foreach ($pemudah_cara as $key => $pc) --}}
+                                        {{-- @foreach ($all as $key => $p) --}}
+                                        {{-- @foreach ($all as $p) --}}
+
                                             <tr class="text-black">
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->id}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->nama}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->syarikat_cawangan}}</td>
-                                                <td style="text-align: center; vertical-align: middle;">Ketua Pemudah Cara</td>
+                                                <td style="text-align: center; vertical-align: middle;">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input " type="checkbox" value="" name="check" id="flexCheckDefault" onclick="onlyOne(this)">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          Ketua Pemudah Cara
+                                                        </label><br>
+                                                        
+                                                        <input class="form-check-input" type="checkbox" value="" name="check" id="flexCheckDefault" onclick="onlyOne(this)">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          Pemudah Cara
+                                                        </label>
+                                                    </div>
+                                                </td>
                                                 <td>
                                                     <div class="row">
                                                         <div class="col-auto">
@@ -61,8 +75,8 @@
                                                         </div>
                                                     </div>
                                                 </td>
-
                                         @endforeach
+                                        {{-- @endforeach --}}
                                     </tbody>
                                     {{-- </table> --}}
                                 </table> 
@@ -190,12 +204,22 @@
             </div> <!--card-body-->
     </div> <!--Container Fluid-->
 
-            <!--JS-->
-            <!--JS BUTTON TOOLTIPS-->
+            <!--JavaScript-->
+            <!--BUTTON TOOLTIPS-->
             <script>
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
             })
+            </script>
+
+            <!--Checkbox (Select one only)-->
+            <script>
+            function onlyOne(checkbox) {
+                var checkboxes = document.getElementsByName('check')
+                checkboxes.forEach((item) => {
+                    if (item !== checkbox) item.checked = false
+                })
+            }
             </script>
 @endsection

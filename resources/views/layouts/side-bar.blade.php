@@ -414,6 +414,17 @@
                                     </div>
                                 </a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('maisarah_bangunan/baru_a') ? 'active' : '' }} py-0"
+                                    href="/maisarah_bangunan/baru_a">
+                                    <div class="d-flex align-items-center nav-link-side">
+                                        <span
+                                            class="px-0 {{ Request::is('maisarah_bangunan/muat_turun_sijil') ? 'text-dark' : '' }}">
+                                            Pembangunan Baru A</span>
+                                    </div>
+                                </a>
+                            </li>
                             <hr class="navbar-vertical-divider mx-3">
                         </ul>
 

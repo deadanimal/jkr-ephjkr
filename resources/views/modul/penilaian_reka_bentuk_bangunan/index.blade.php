@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-<style>
+{{-- <style>
     table {
     border-collapse: collapse;
     border-radius: 1em;
@@ -8,7 +8,7 @@
     box-shadow: 0px 2.86088px 7.15219px 7.15219px rgba(0, 0, 0, 0.05);
     border-color: #F4A258;
     }
-</style>
+</style> --}}
 
 @section('content')
 
@@ -49,9 +49,7 @@
                                                 <th class="text-center">Tindakan</th> 
                                             </tr>
                                         </thead>
-                                    {{-- </table>  --}}
 
-                                    {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody id="myTable">
                                         <!--LOOPING TABLES-->
                                         @foreach ($projeks as $key => $p)
@@ -68,7 +66,6 @@
 
                                         @endforeach
                                         </tbody>
-                                    {{-- </table> --}}
                                 </table> 
                             </div>
                         </div>

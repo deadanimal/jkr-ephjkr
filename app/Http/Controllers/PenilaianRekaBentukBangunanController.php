@@ -131,7 +131,9 @@ class PenilaianRekaBentukBangunanController extends Controller
 
         // dd($id);
         // return redirect()->back();
+        // return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
         return redirect('/penilaian_reka_bentuk_bangunan/melantik_pemudah_cara');
+
     }
 
     /**
@@ -153,11 +155,12 @@ class PenilaianRekaBentukBangunanController extends Controller
     // ketua pasukan atau pen ketua pasukan
     public function papar_pemudah_cara()
     {
+        // $all = [];
+        // $projeks = Projek::where('id', '1')->get();
+        // $pemudah_cara = PemudahCara::where('id', '1')->get();
+        // $projeks = Projek::find($id);
         $projeks = Projek::all();
         $pemudah_cara = PemudahCara::all();
-        // $projeks = new Projek;
-        // $projeks = Projek::find($id);
-        // $pemudah_cara = PemudahCara::find($id);
         // $pemudah_cara = PemudahCara::find($id);
         
 
@@ -172,6 +175,11 @@ class PenilaianRekaBentukBangunanController extends Controller
         //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',[
         //         'projeks'=>$projeks
         //     ]);
+
+        // dd($projeks);
+        // return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',
+        //     compact('all')
+        // );
 
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.index',
             compact('projeks'),
@@ -192,7 +200,7 @@ class PenilaianRekaBentukBangunanController extends Controller
         // $pemudah_cara = PemudahCara::find($id);
         // $projeks = new Projek();
         // $projeks = Projek::all();
-        // $projeks = Projek::find($id);
+        $projeks = Projek::find($id);
         $pemudah_cara = PemudahCara::find($id);
 
         // $user = $request->user();
@@ -212,7 +220,8 @@ class PenilaianRekaBentukBangunanController extends Controller
     //     return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create', compact('pemudah_cara','id'),
     // compact('projeks'));
         return view('modul.penilaian_reka_bentuk_bangunan.pemudah_cara.create', 
-        compact('pemudah_cara')
+        compact('pemudah_cara'),
+        compact('projeks')
         );
         
     }
@@ -281,8 +290,8 @@ class PenilaianRekaBentukBangunanController extends Controller
     public function papar_skor_penilaian($id)
     {
         // $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::find($id);
-        // $projeks = Projek::all();
         $kriteria_phjkr_bangunan = KriteriaPhjkrBangunan::all();
+        $projeks = Projek::find($id);
 
         // Roles
         // $user = $request->user();
@@ -294,10 +303,16 @@ class PenilaianRekaBentukBangunanController extends Controller
         
 
         // papar form skor penilaian with id projek 
-        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.create',[
-            'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan,
-            // 'projeks'=>$projeks
-        ]);
+        // return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.create',[
+        //     'kriteria_phjkr_bangunan'=> $kriteria_phjkr_bangunan,
+        //     'projeks'=>$projeks
+        // ]);
+
+        // dd($kriteria_phjkr_bangunan);
+        return view('modul.penilaian_reka_bentuk_bangunan.skor_penilaian.create',
+            compact('kriteria_phjkr_bangunan'),
+            compact('projeks', 'id')
+        );
     }
 
     public function simpan_skor(Request $request, $id)
@@ -305,6 +320,8 @@ class PenilaianRekaBentukBangunanController extends Controller
         $penilaian_ephjkr = new PenilaianEphjkr();
         $penilaian_ephjkr->ulasan = $request->ulasan;
         $penilaian_ephjkr->save();
+
+
         // request all
         $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
 
@@ -598,6 +615,543 @@ class PenilaianRekaBentukBangunanController extends Controller
         return $pdf->download('sijil.pdf');
  
     }
+
+    // test form markah
+    public function baru_a_page1()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_a.rekabentuk_baru_a_page1.create');
+    }
+
+    public function simpan_skor_rekabentuk(Request $request)
+    {
+
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan->save();
+        alert()->success('PENILAIAN REKA BENTUK BANGUNAN BERJAYA', 'Berjaya');
+
+        return redirect()->back();
+    }
+
+    public function simpan_skor_verifikasi(Request $request)
+    {
+
+        $kriteria_phjkr_bangunan = new KriteriaPhjkrBangunan($request->all());
+        $kriteria_phjkr_bangunan->save();
+        alert()->success('PENILAIAN VERIFIKASI BERJAYA', 'Berjaya');
+
+        return redirect()->back();
+    }
+
+    public function baru_a_page2()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_a.rekabentuk_baru_a_page2.create');
+    }
+
+    public function baru_a_page3()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_a.rekabentuk_baru_a_page3.create');
+    }
+
+    public function baru_a_page4()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_a.rekabentuk_baru_a_page4.create');
+    }
+
+    public function baru_a_page5()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_a.rekabentuk_baru_a_page5.create');
+    }
+
+    public function baru_a_page6()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_a.rekabentuk_baru_a_page6.create');
+    }
+
+    public function baru_a_page7()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_a.rekabentuk_baru_a_page7.create');
+    }
+
+    // Baru B
+    public function baru_b_page1()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_b.rekabentuk_baru_b_page1.create');
+    }
+
+    public function baru_b_page2()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_b.rekabentuk_baru_b_page2.create');
+    }
+
+    public function baru_b_page3()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_b.rekabentuk_baru_b_page3.create');
+    }
+
+    public function baru_b_page4()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_b.rekabentuk_baru_b_page4.create');
+    }
+
+    public function baru_b_page5()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_b.rekabentuk_baru_b_page5.create');
+    }
+
+    public function baru_b_page6()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_b.rekabentuk_baru_b_page6.create');
+    }
+
+    public function baru_b_page7()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_b.rekabentuk_baru_b_page7.create');
+    }
+
+    // baru c
+    public function baru_c_page1()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_c.rekabentuk_baru_c_page1.create');
+    }
+
+    public function baru_c_page2()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_c.rekabentuk_baru_c_page2.create');
+    }
+
+    public function baru_c_page3()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_c.rekabentuk_baru_c_page3.create');
+    }
+
+    public function baru_c_page4()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_c.rekabentuk_baru_c_page4.create');
+    }
+
+    public function baru_c_page5()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_c.rekabentuk_baru_c_page5.create');
+    }
+
+    public function baru_c_page6()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_c.rekabentuk_baru_c_page6.create');
+    }
+
+    public function baru_c_page7()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_c.rekabentuk_baru_c_page7.create');
+    }
+
+    // pun a
+    public function baru_d_page1()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_d.rekabentuk_baru_d_page1.create');
+    }
+
+    public function baru_d_page2()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_d.rekabentuk_baru_d_page2.create');
+    }
+
+    public function baru_d_page3()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_d.rekabentuk_baru_d_page3.create');
+    }
+
+    public function baru_d_page4()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_d.rekabentuk_baru_d_page4.create');
+    }
+
+    public function baru_d_page5()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_d.rekabentuk_baru_d_page5.create');
+    }
+
+    public function baru_d_page6()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_d.rekabentuk_baru_d_page6.create');
+    }
+
+    public function baru_d_page7()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_baru_d.rekabentuk_baru_d_page7.create');
+    }
+
+
+    // pun a
+    public function pun_a_page1()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_pun_a.rekabentuk_pun_a_page1.create');
+    }
+
+    public function pun_a_page2()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_pun_a.rekabentuk_pun_a_page2.create');
+    }
+
+    public function pun_a_page3()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_pun_a.rekabentuk_pun_a_page3.create');
+    }
+
+    public function pun_a_page4()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_pun_a.rekabentuk_pun_a_page4.create');
+    }
+
+    public function pun_a_page5()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_pun_a.rekabentuk_pun_a_page5.create');
+    }
+
+    public function pun_a_page6()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_pun_a.rekabentuk_pun_a_page6.create');
+    }
+
+    public function pun_a_page7()
+    {
+        // $projeks = Projek::all();
+        // $projeks = Projek::find($id);
+
+        return view('maisarah_bangunan.rekabentuk_pun_a.rekabentuk_pun_a_page7.create');
+    }
+
+
+     // pun b
+     public function pun_b_page1()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_b.rekabentuk_pun_b_page1.create');
+     }
+ 
+     public function pun_b_page2()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_b.rekabentuk_pun_b_page2.create');
+     }
+ 
+     public function pun_b_page3()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_b.rekabentuk_pun_b_page3.create');
+     }
+ 
+     public function pun_b_page4()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_b.rekabentuk_pun_b_page4.create');
+     }
+ 
+     public function pun_b_page5()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_b.rekabentuk_pun_b_page5.create');
+     }
+ 
+     public function pun_b_page6()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_b.rekabentuk_pun_b_page6.create');
+     }
+ 
+     public function pun_b_page7()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_b.rekabentuk_pun_b_page7.create');
+     }
+
+     // pun c
+     public function pun_c_page1()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_c.rekabentuk_pun_c_page1.create');
+     }
+ 
+     public function pun_c_page2()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_c.rekabentuk_pun_c_page2.create');
+     }
+ 
+     public function pun_c_page3()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_c.rekabentuk_pun_c_page3.create');
+     }
+ 
+     public function pun_c_page4()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_c.rekabentuk_pun_c_page4.create');
+     }
+ 
+     public function pun_c_page5()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_c.rekabentuk_pun_c_page5.create');
+     }
+ 
+     public function pun_c_page6()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_c.rekabentuk_pun_c_page6.create');
+     }
+ 
+     public function pun_c_page7()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_c.rekabentuk_pun_c_page7.create');
+     }
+
+     // pun d
+     public function pun_d_page1()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_d.rekabentuk_pun_d_page1.create');
+     }
+ 
+     public function pun_d_page2()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_d.rekabentuk_pun_d_page2.create');
+     }
+ 
+     public function pun_d_page3()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_d.rekabentuk_pun_d_page3.create');
+     }
+ 
+     public function pun_d_page4()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_d.rekabentuk_pun_d_page4.create');
+     }
+ 
+     public function pun_d_page5()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_d.rekabentuk_pun_d_page5.create');
+     }
+ 
+     public function pun_d_page6()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_d.rekabentuk_pun_d_page6.create');
+     }
+ 
+     public function pun_d_page7()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.rekabentuk_pun_d.rekabentuk_pun_d_page7.create');
+     }
+
+
+     // verifikasi baru a
+     public function verifikasi_baru_a_page1()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.verifikasi_baru_a.verifikasi_baru_a_page1.create');
+     }
+ 
+     public function verifikasi_baru_a_page2()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.verifikasi_baru_a.verifikasi_baru_a_page2.create');
+     }
+ 
+     public function verifikasi_baru_a_page3()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.verifikasi_baru_a.verifikasi_baru_a_page3.create');
+     }
+ 
+     public function verifikasi_baru_a_page4()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.verifikasi_baru_a.verifikasi_baru_a_page4.create');
+     }
+ 
+     public function verifikasi_baru_a_page5()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.verifikasi_baru_a.verifikasi_baru_a_page5.create');
+     }
+ 
+     public function verifikasi_baru_a_page6()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.verifikasi_baru_a.verifikasi_baru_a_page6.create');
+     }
+ 
+     public function verifikasi_baru_a_page7()
+     {
+         // $projeks = Projek::all();
+         // $projeks = Projek::find($id);
+ 
+         return view('maisarah_bangunan.verifikasi_baru_a.verifikasi_baru_a_page7.create');
+     }
+
 
     
 }

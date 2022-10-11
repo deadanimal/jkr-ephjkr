@@ -30,6 +30,7 @@ use App\Http\Controllers\VerifikasiPermarkahanJalanController;
 use App\Http\Controllers\VerifikasiPermarkahanGpssController;
 use App\Http\Controllers\ValidasiPermarkahanBangunanController;
 use App\Models\Laporan;
+use App\Models\PenilaianRekaBentukBangunan;
 use App\Models\ValidasiPermarkahanBangunan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -444,6 +445,87 @@ Route::middleware('auth')->group(function () {
     Route::get('/laporan/jana_analisis_pencapaian/{id}', [LaporanController::class, 'jana_analisis_pencapaian']);
     Route::get('/laporan/papar_analisis_pencapaian/{id}', [LaporanController::class, 'papar_analisis_pencapaian']);
     Route::get('/laporan/muat_turun_analisis_pencapaian/{id}', [LaporanController::class, 'muat_turun_analisis_pencapaian']);
+
+
+    // route test prb
+    Route::get('/maisarah_bangunan/baru_a_page1', [PenilaianRekaBentukBangunanController::class, 'baru_a_page1']);
+    Route::get('/maisarah_bangunan/baru_a_page2', [PenilaianRekaBentukBangunanController::class, 'baru_a_page2']);
+    Route::get('/maisarah_bangunan/baru_a_page3', [PenilaianRekaBentukBangunanController::class, 'baru_a_page3']);
+    Route::get('/maisarah_bangunan/baru_a_page4', [PenilaianRekaBentukBangunanController::class, 'baru_a_page4']);
+    Route::get('/maisarah_bangunan/baru_a_page5', [PenilaianRekaBentukBangunanController::class, 'baru_a_page5']);
+    Route::get('/maisarah_bangunan/baru_a_page6', [PenilaianRekaBentukBangunanController::class, 'baru_a_page6']);
+    Route::get('/maisarah_bangunan/baru_a_page7', [PenilaianRekaBentukBangunanController::class, 'baru_a_page7']);
+    Route::post('/maisarah_bangunan/simpan_skor_rekabentuk', [PenilaianRekaBentukBangunanController::class, 'simpan_skor_rekabentuk']);
+
+    Route::get('/maisarah_bangunan/baru_b_page1', [PenilaianRekaBentukBangunanController::class, 'baru_b_page1']);
+    Route::get('/maisarah_bangunan/baru_b_page2', [PenilaianRekaBentukBangunanController::class, 'baru_b_page2']);
+    Route::get('/maisarah_bangunan/baru_b_page3', [PenilaianRekaBentukBangunanController::class, 'baru_b_page3']);
+    Route::get('/maisarah_bangunan/baru_b_page4', [PenilaianRekaBentukBangunanController::class, 'baru_b_page4']);
+    Route::get('/maisarah_bangunan/baru_b_page5', [PenilaianRekaBentukBangunanController::class, 'baru_b_page5']);
+    Route::get('/maisarah_bangunan/baru_b_page6', [PenilaianRekaBentukBangunanController::class, 'baru_b_page6']);
+    Route::get('/maisarah_bangunan/baru_b_page7', [PenilaianRekaBentukBangunanController::class, 'baru_b_page7']);
+    // Route::post('/maisarah_bangunan/simpan_skor_baru_b', [PenilaianRekaBentukBangunanController::class, 'simpan_skor_baru_b']);
+
+    Route::get('/maisarah_bangunan/baru_c_page1', [PenilaianRekaBentukBangunanController::class, 'baru_c_page1']);
+    Route::get('/maisarah_bangunan/baru_c_page2', [PenilaianRekaBentukBangunanController::class, 'baru_c_page2']);
+    Route::get('/maisarah_bangunan/baru_c_page3', [PenilaianRekaBentukBangunanController::class, 'baru_c_page3']);
+    Route::get('/maisarah_bangunan/baru_c_page4', [PenilaianRekaBentukBangunanController::class, 'baru_c_page4']);
+    Route::get('/maisarah_bangunan/baru_c_page5', [PenilaianRekaBentukBangunanController::class, 'baru_c_page5']);
+    Route::get('/maisarah_bangunan/baru_c_page6', [PenilaianRekaBentukBangunanController::class, 'baru_c_page6']);
+    Route::get('/maisarah_bangunan/baru_c_page7', [PenilaianRekaBentukBangunanController::class, 'baru_c_page7']);
+    // Route::post('/maisarah_bangunan/simpan_skor_baru_c', [PenilaianRekaBentukBangunanController::class, 'simpan_skor_baru_c']);
+
+    Route::get('/maisarah_bangunan/baru_d_page1', [PenilaianRekaBentukBangunanController::class, 'baru_d_page1']);
+    Route::get('/maisarah_bangunan/baru_d_page2', [PenilaianRekaBentukBangunanController::class, 'baru_d_page2']);
+    Route::get('/maisarah_bangunan/baru_d_page3', [PenilaianRekaBentukBangunanController::class, 'baru_d_page3']);
+    Route::get('/maisarah_bangunan/baru_d_page4', [PenilaianRekaBentukBangunanController::class, 'baru_d_page4']);
+    Route::get('/maisarah_bangunan/baru_d_page5', [PenilaianRekaBentukBangunanController::class, 'baru_d_page5']);
+    Route::get('/maisarah_bangunan/baru_d_page6', [PenilaianRekaBentukBangunanController::class, 'baru_d_page6']);
+    Route::get('/maisarah_bangunan/baru_d_page7', [PenilaianRekaBentukBangunanController::class, 'baru_d_page7']);
+    // Route::post('/maisarah_bangunan/simpan_skor_baru_d', [PenilaianRekaBentukBangunanController::class, 'simpan_skor_baru_d']);
+
+    Route::get('/maisarah_bangunan/pun_a_page1', [PenilaianRekaBentukBangunanController::class, 'pun_a_page1']);
+    Route::get('/maisarah_bangunan/pun_a_page2', [PenilaianRekaBentukBangunanController::class, 'pun_a_page2']);
+    Route::get('/maisarah_bangunan/pun_a_page3', [PenilaianRekaBentukBangunanController::class, 'pun_a_page3']);
+    Route::get('/maisarah_bangunan/pun_a_page4', [PenilaianRekaBentukBangunanController::class, 'pun_a_page4']);
+    Route::get('/maisarah_bangunan/pun_a_page5', [PenilaianRekaBentukBangunanController::class, 'pun_a_page5']);
+    Route::get('/maisarah_bangunan/pun_a_page6', [PenilaianRekaBentukBangunanController::class, 'pun_a_page6']);
+    Route::get('/maisarah_bangunan/pun_a_page7', [PenilaianRekaBentukBangunanController::class, 'pun_a_page7']);
+
+    Route::get('/maisarah_bangunan/pun_b_page1', [PenilaianRekaBentukBangunanController::class, 'pun_b_page1']);
+    Route::get('/maisarah_bangunan/pun_b_page2', [PenilaianRekaBentukBangunanController::class, 'pun_b_page2']);
+    Route::get('/maisarah_bangunan/pun_b_page3', [PenilaianRekaBentukBangunanController::class, 'pun_b_page3']);
+    Route::get('/maisarah_bangunan/pun_b_page4', [PenilaianRekaBentukBangunanController::class, 'pun_b_page4']);
+    Route::get('/maisarah_bangunan/pun_b_page5', [PenilaianRekaBentukBangunanController::class, 'pun_b_page5']);
+    Route::get('/maisarah_bangunan/pun_b_page6', [PenilaianRekaBentukBangunanController::class, 'pun_b_page6']);
+    Route::get('/maisarah_bangunan/pun_b_page7', [PenilaianRekaBentukBangunanController::class, 'pun_b_page7']);
+
+    Route::get('/maisarah_bangunan/pun_c_page1', [PenilaianRekaBentukBangunanController::class, 'pun_c_page1']);
+    Route::get('/maisarah_bangunan/pun_c_page2', [PenilaianRekaBentukBangunanController::class, 'pun_c_page2']);
+    Route::get('/maisarah_bangunan/pun_c_page3', [PenilaianRekaBentukBangunanController::class, 'pun_c_page3']);
+    Route::get('/maisarah_bangunan/pun_c_page4', [PenilaianRekaBentukBangunanController::class, 'pun_c_page4']);
+    Route::get('/maisarah_bangunan/pun_c_page5', [PenilaianRekaBentukBangunanController::class, 'pun_c_page5']);
+    Route::get('/maisarah_bangunan/pun_c_page6', [PenilaianRekaBentukBangunanController::class, 'pun_c_page6']);
+    Route::get('/maisarah_bangunan/pun_c_page7', [PenilaianRekaBentukBangunanController::class, 'pun_c_page7']);
+
+    Route::get('/maisarah_bangunan/pun_d_page1', [PenilaianRekaBentukBangunanController::class, 'pun_d_page1']);
+    Route::get('/maisarah_bangunan/pun_d_page2', [PenilaianRekaBentukBangunanController::class, 'pun_d_page2']);
+    Route::get('/maisarah_bangunan/pun_d_page3', [PenilaianRekaBentukBangunanController::class, 'pun_d_page3']);
+    Route::get('/maisarah_bangunan/pun_d_page4', [PenilaianRekaBentukBangunanController::class, 'pun_d_page4']);
+    Route::get('/maisarah_bangunan/pun_d_page5', [PenilaianRekaBentukBangunanController::class, 'pun_d_page5']);
+    Route::get('/maisarah_bangunan/pun_d_page6', [PenilaianRekaBentukBangunanController::class, 'pun_d_page6']);
+    Route::get('/maisarah_bangunan/pun_d_page7', [PenilaianRekaBentukBangunanController::class, 'pun_d_page7']);
+
+    Route::get('/maisarah_bangunan/verifikasi_baru_a_page1', [PenilaianRekaBentukBangunanController::class, 'verifikasi_baru_a_page1']);
+    Route::get('/maisarah_bangunan/verifikasi_baru_a_page2', [PenilaianRekaBentukBangunanController::class, 'verifikasi_baru_a_page2']);
+    Route::get('/maisarah_bangunan/verifikasi_baru_a_page3', [PenilaianRekaBentukBangunanController::class, 'verifikasi_baru_a_page3']);
+    Route::get('/maisarah_bangunan/verifikasi_baru_a_page4', [PenilaianRekaBentukBangunanController::class, 'verifikasi_baru_a_page4']);
+    Route::get('/maisarah_bangunan/verifikasi_baru_a_page5', [PenilaianRekaBentukBangunanController::class, 'verifikasi_baru_a_page5']);
+    Route::get('/maisarah_bangunan/verifikasi_baru_a_page6', [PenilaianRekaBentukBangunanController::class, 'verifikasi_baru_a_page6']);
+    Route::get('/maisarah_bangunan/verifikasi_baru_a_page7', [PenilaianRekaBentukBangunanController::class, 'verifikasi_baru_a_page7']);
+    Route::post('/maisarah_bangunan/simpan_skor_verifikasi', [PenilaianRekaBentukBangunanController::class, 'simpan_skor_verifikasi']);
+
+
 
 
 

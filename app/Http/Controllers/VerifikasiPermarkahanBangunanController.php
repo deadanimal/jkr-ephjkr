@@ -168,12 +168,12 @@ class VerifikasiPermarkahanBangunanController extends Controller
         $pemudah_cara = new PemudahCara;
         $projeks = new Projek;
 
-        $pemudah_cara->nama = $request->input('nama');
-        $pemudah_cara->syarikat_cawangan = $request->input('syarikat_cawangan');
-        $pemudah_cara->no_tel = $request->input('no_tel');
-        $pemudah_cara->no_fax = $request->input('no_fax');
-        $pemudah_cara->email = $request->input('email');
-        $pemudah_cara->disiplin = $request->input('disiplin');
+        $pemudah_cara->nama = $request->nama;
+        $pemudah_cara->syarikat_cawangan = $request->syarikat_cawangan;
+        $pemudah_cara->no_tel = $request->no_tel;
+        $pemudah_cara->no_fax = $request->no_fax;
+        $pemudah_cara->email = $request->email;
+        $pemudah_cara->disiplin = $request->disiplin;
         $pemudah_cara->kategori = $request->kategori;
         alert()->success('Pemudah cara berjaya didaftar.', 'Berjaya');
         $pemudah_cara->save();
@@ -268,25 +268,6 @@ class VerifikasiPermarkahanBangunanController extends Controller
         $kriteria_phjkr_bangunan->markahTOTAL_FL_MSV = $markah_FL_total;
         $kriteria_phjkr_bangunan->markahTOTAL_IN_MSV = $markah_IN_total;
         $kriteria_phjkr_bangunan->save();
-
-        // $kriteria_phjkr_bangunan->markahMSV = $request->markahTOTAL_TL_MSV
-        // + $request->markahTOTAL_KT_MSV
-        // + $request->markahTOTAL_SB_MSV
-        // + $request->markahTOTAL_PA_MSV
-        // + $request->markahTOTAL_PD_MSV
-        // + $request->markahTOTAL_FL_MSV
-        // + $request->markahTOTAL_IN_MSV;
-
-        // $kriteria_phjkr_bangunan->markahMMV = $request->markahTOTAL_TL_MMV
-        // + $request->markahTOTAL_KT_MMV
-        // + $request->markahTOTAL_SB_MMV
-        // + $request->markahTOTAL_PA_MMV
-        // + $request->markahTOTAL_PD_MMV
-        // + $request->markahTOTAL_FL_MMV
-        // + $request->markahTOTAL_IN_MMV;
-
-
-
         alert()->success('PENILAIAN VERIFIKASI DISIMPAN', 'Berjaya');
 
         return redirect('/verifikasi_permarkahan_bangunan/skor_penilaian');

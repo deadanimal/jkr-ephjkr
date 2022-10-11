@@ -50,22 +50,19 @@
                                                 <th class="text-center">Tindakan</th> 
                                             </tr>
                                         </thead>
-                                    {{-- </table>  --}}
 
-                                    {{-- <table class="kotak" style="width:100%"> --}}
                                     <tbody id="myTable">
                                         <!--LOOPING TABLES-->
                                         @foreach ($projeks as $key => $p)
                                             <tr class="text-black">
                                                 <td style="text-align: center; vertical-align: middle;">{{ $p->id }}</td>
-                                                {{-- <td style="text-align: center; vertical-align: middle;">1</td> --}}
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->id_ruj_skala}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->namaProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->alamatProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">{{$p->statusProjek}}</td>
                                                 <td style="text-align: center; vertical-align: middle;">
                                                     {{-- @if () --}}
-                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/create" role="button"
+                                                    <a class="btn btn-primary" href="/penilaian_reka_bentuk_bangunan/skor_penilaian/{{$p->id}}" role="button"
                                                     data-toggle="tooltip" data-placement="bottom" title="Pilih Senarai Paparan Projek">Pilih</a>
 
                                                     {{-- @else --}}
@@ -75,7 +72,6 @@
                                             </tr> 
                                         @endforeach
                                         </tbody>
-                                    {{-- </table> --}}
                                 </table> 
                             </div>
                         </div>
