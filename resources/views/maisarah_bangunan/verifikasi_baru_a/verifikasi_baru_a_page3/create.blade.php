@@ -14,778 +14,157 @@
                     @csrf
                     @method('POST')
 
-                     <!--------------------------------------- MarkahKT ---------------------------------------->
-                     <table id="example" class="table table-bordered line-table display">
-                        <thead class="text-white">
-                            <tr class="pg-2" align="center" style="background-color:#EB5500">
-                                <th rowspan="3">Kod</th>
-                                <th rowspan="3">Kriteria</th>
-                                <th rowspan="3" colspan="6">Kategori bangunan</th>
-                                <th colspan="4">Pembangunan Baru</th>
-                                <th rowspan="2">Dokumen Pembuktian</th>
-                                <th rowspan="3" colspan="5">Ulasan/Maklumbalas</th>
-                                <th rowspan="3" colspan="4">Muat Naik Dokumen Sokongan</th>
-                            </tr>
+                    
+                   <!--------------------------------------- MarkahSB ---------------------------------------->
+                   <table id="example" class="table table-bordered line-table display">
 
-                            <tr class="pg-2" align="center" style="background-color:#EB5500">
-                                <th colspan="4">Markah</th>
-                            </tr>
-                        
-                            <tr class="pg-2" align="center" style="background-color:#EB5500">
-                                <th>MM</th>
-                                <th>MR</th>
-                                <th>MMV</th>
-                                <th>MV</th>
-                                <th>Verifikasi (Peringkat 3)</th>
-                            </tr>
+                    <thead class="text-white">
+                        <tr class="pg-3" align="center" style="background-color:#EB5500">
+                            <th rowspan="3">Kod</th>
+                            <th rowspan="3">Kriteria</th>
+                            <th rowspan="3" colspan="6">Kategori bangunan</th>
+                            <th colspan="4">Pembangunan Baru</th>
+                            <th rowspan="2">Dokumen Pembuktian</th>
+                            <th rowspan="3" colspan="5">Ulasan/Maklumbalas</th>
+                            <th rowspan="3" colspan="4">Muat Naik Dokumen Sokongan</th>
+                        </tr>
 
-                            <tr class="pg-2" style="background-color:#EB5500">
-                                <th>KT</th>
-                                <th colspan="23">PENGURUSAN KECEKAPAN TENAGA DAN PENGGUNAAN TENAGA BOLEH BAHARU</th>
-                            </tr>
-                        </thead>
+                        <tr class="pg-3" align="center" style="background-color:#EB5500">
+                            <th colspan="4">Markah</th>
+                        </tr>
 
-                            <!--KT1-->
-                            <tr class="pg-2" align="center">
-                                <td>KT1</td>
-                                <td>Rekabentuk bumbung</td>
-                                <td colspan="6"></td>
-                                <td>2</td>
-                                <td></td>
-                                <td>2</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="2" autocapitalize="off" id="markahKT1_MMV" name="markahKT1_MMV" required/></td>
-                                <td>
-                                    <span>&#183; Katalog bahan dan sampel yang diluluskan</span><br>
-                                    <span>&#183; Lukisan siap bina</span><br>
-                                    <span>&#183; Bukti bergambar</span>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
+                        <tr class="pg-3" align="center" style="background-color:#EB5500">
+                            <th>MM</th>
+                            <th>MR</th>
+                            <th>MMV</th>
+                            <th>MV</th>
+                            <th>Verifikasi (Peringkat 3)</th>
+                        </tr>
 
-                            <!--KT2--><!--NO INPUT-->
-                            <tr class="pg-2" align="center">
-                                <td>KT2</td>
-                                <td>Orientasi bangunan</td>
-                                <td colspan="6"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td colspan="5"></td>
-                                <td colspan="4"></td>
+                        <tr class="pg-3" style="background-color:#EB5500">
+                            <th>SB</th>
+                            <th colspan="23">PENGURUSAN SUMBER DAN BAHAN</th>
+                        </tr>
+                    </thead>
 
-                            </tr>
+                    <!--SB1--><!--Baru dan PUN shj-->
+                    <tr class="pg-3" align="center">
+                        <td>SB1</td>
+                        <td>Sistem Binaan Berindustri (IBS)</td>
+                        <td colspan="6"></td>
+                        <td>5</td>
+                        <td></td>
+                        <td>5</td>
+                        <td><input onblur="findTotalMMV_SB()" class="MMV_SB" type="number" min="0" max="7" autocapitalize="off" id="markahSB1_MMV" name="markahSB1_MMV" required/></td>
+                        <td>
+                            <span>&#183; Lukisan pembinaan IBS</span><br>
+                            <span>&#183; Lukisan siap bina</span><br>      
+                        </td>
+                        <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                        <td colspan="4"><input  id="formFileSm" type="file">
 
-                            <!--KT2.1-->
-                            <tr class="pg-2" align="center">
-                                <td>KT2.1</td>
-                                <td>Fasad Utama bangunan yang menghadap orientasi utara-selatan</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT21_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV" name="markahKT21_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT21_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV_PUN" name="markahKT21_MMV_PUN" /></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT21_MMV_SEDIA" name="markahKT21_MMV_SEDIA" /></td>
-                                <td>
-                                    <span>&#183; Lukisan siap bina</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
+                            {{-- <form class="form">
+                                <label for="form__input" class="form__label">
+                                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                    <span id="custom-text">No file chosen, yet.</span>
+                                </label>
+                            </form> --}}
+                        </td>
+                    </tr>
 
-                            <!--KT2.2-->
-                            <tr class="pg-2" align="center">
-                                <td>KT2.2</td>
-                                <td>Meminimumkan bukaan pada fasad yang menghadap timur dan barat</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT22_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV" name="markahKT22_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT22_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV_PUN" name="markahKT22_MMV_PUN" /></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT22_MMV_SEDIA" name="markahKT22_MMV_SEDIA" /></td>
-                                <td>
-                                    <span> &#183; Lukisan siap bina</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
+                    <!--SB2--><!--Baru dan PUN shj-->
+                    <tr class="pg-3" align="center">
+                        <td>SB2</td>
+                        <td>Produk hijau</td>
+                        <td colspan="6"></td>
+                        <td>7</td>
+                        <td></td>
+                        <td>7</td>
+                        <td><input onblur="findTotalMMV_SB()" class="MMV_SB" type="number" min="0" max="7" autocapitalize="off" id="markahSB2_MMV" name="markahSB2_MMV" required/></td>
+                        <td>
+                            <span>&#183; Brosur pembekal</span><br>
+                            <span>&#183; Bukti bergambar</span><br>
+                            <span>&#183; Borang pengiraan skor GPSS</span><br>
+                        </td>
+                        <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                        <td colspan="4"><input  id="formFileSm" type="file">
 
-                            <!--KT3--><!--NO INPUT-->
-                            <tr class="pg-2" align="center">
-                                <td>KT3</td>
-                                <td>Rekabentuk fasad</td>
-                                <td colspan="6"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td colspan="5"></td>
-                                <td colspan="4"></td>
-                            </tr>
+                            {{-- <form class="form">
+                                <label for="form__input" class="form__label">
+                                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                    <span id="custom-text">No file chosen, yet.</span>
+                                </label>
+                            </form> --}}
+                        </td>
+                    </tr>
 
-                            <!--KT3.1--><!--Baru | PUN-->
-                            <tr class="pg-2" align="center">
-                                <td>KT3.1</td>
-                                <td>Dinding luar bangunan</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT31_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT31_MMV" name="markahKT31_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT31_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT31_MMV_PUN" name="markahKT31_MMV_PUN" /></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span>&#183; Katalog bahan yang diluluskan untuk pembinaan</span><br>
-                                    <span>&#183; Pengiraan U-Value yang disahkan</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
+                    <!--SB3--><!--Baru dan PUN shj-->
+                    <tr class="pg-3" align="center">
+                        <td>SB3</td>
+                        <td>Pengurusan sisa semasa pembinaan</td>
+                        <td colspan="6"></td>
+                        <td>4</td>
+                        <td></td>
+                        <td>4</td>
+                        <td><input onblur="findTotalMMV_SB()" class="MMV_SB" type="number" min="0" max="7" autocapitalize="off" id="markahSB3_MMV" name="markahSB3_MMV" required/></td>
+                        <td>
+                            <span>&#183; Dokumen bukti proses penyimpanan</span><br>
+                            <span>&#183; Dokumen bukti proses penghantaran ke tapak pelupusan</span><br>
+                            <span>&#183; Dokumen bukti proses pelupusan sisa berjadual seperti resit
+                                dan borang semasa audit dijalankan
+                            </span><br>
+                            <span>&#183; Bukti bergambar</span><br>
+                            <span>&#183; Pengiraan kitar semula (jika ada)</span><br>
+                        </td>
+                        <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                        <td colspan="4"><input  id="formFileSm" type="file">
 
-                            <!--KT3.2-->
-                            <tr class="pg-2" align="center">
-                                <td>KT3.2</td>
-                                <td>Pengadang Suria Luaran</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT32_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV" name="markahKT32_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT32_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV_PUN" name="markahKT32_MMV_PUN" /></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT32_MMV_SEDIA" name="markahKT32_MMV_SEDIA" /></td>
-                                <td>
-                                    <span>&#183; Bukti bergambar</span><br>
-                                    <span>&#183; Lukisan siap bina</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
+                            {{-- <form class="form">
+                                <label for="form__input" class="form__label">
+                                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                    <span id="custom-text">No file chosen, yet.</span>
+                                </label>
+                            </form> --}}
+                        </td>        
+                    </tr>
 
-                            <!--KT4-->
-                            <tr class="pg-2" align="center">
-                                <td>KT4</td>
-                                <td>OTTV & RTTV</td>
-                                <td colspan="6"></td>
-                                <td>5</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT4_MR}}</td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MMV" name="markahKT4_MMV" /></td>
-                                <td>5</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT4_MR_PUN}}</td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT4_MMV_PUN" name="markahKT4_MMV_PUN" /></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <span>&#183; Pengiraan OTTV dan RTTV yang disahkan</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
+                    <!--SB4-->
+                    <tr class="pg-3" align="center">
+                        <td>SB4</td>
+                        <td>3r-Semasa Operasi</td>
+                        <td colspan="6"></td>
+                        <td>4</td>
+                        <td></td>
+                        <td>4</td>
+                        <td><input onblur="findTotalMMV_SB()" class="MMV_SB" type="number" min="0" max="4" autocapitalize="off" id="markahSB4_MMV" name="markahSB4_MMV" required/></td>
+                        <td>
+                            <span>&#183; Pematuhan pelan pengurusan sisa domestik</span><br>
+                            <span>&#183; Bukti bergambar</span><br>
+                        </td>
+                        <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
+                        <td colspan="4">
+                            <form class="form">
+                                <label for="form__input" class="form__label">
+                                    <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
+                                    <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
+                                    <span id="custom-text">No file chosen, yet.</span>
+                                </label>
+                            </form>
+                        </td>
+                    <tr>
 
-                            <!--KT5--><!--NO INPUT-->
-                            <tr class="pg-2" align="center">
-                                <td>KT5</td>
-                                <td>Kecekapan pencahayaan</td>
-                                <td colspan="6"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td colspan="5"></td>
-                                <td colspan="4"></td>
-                            </tr>
-
-                            <!--KT5.1-->
-                            <tr class="pg-2" align="center">
-                                <td>KT5.1</td>
-                                <td>Zon Pencahayaan</td>
-                                <td colspan="6"></td>
-                                <td>3</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT51_MR}}</td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV" name="markahKT51_MMV" /></td>
-                                <td>3</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT51_MR_PUN}}</td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV_PUN" name="markahKT51_MMV_PUN" /></td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT51_MMV_SEDIA" name="markahKT51_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Lukisan siap bina litar lampu yang telah di zon dan lokasi pemasangan sensor</span><br>
-                                    <span> &#183; Bukti bergambar</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT5.2-->
-                            <tr class="pg-2" align="center">
-                                <td>KT5.2</td>
-                                <td>Kawalan Pencahayaan</td>
-                                <td colspan="6"></td>
-                                <td>6</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT52_MR}}</td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV" name="markahKT52_MMV" /></td>
-                                <td>6</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT52_MR_PUN}}</td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV_PUN" name="markahKT52_MMV_PUN" /></td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT52_MMV_SEDIA" name="markahKT52_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
-                                    <span> &#183; Bukti bergambar</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT5.3-->
-                            <tr class="pg-2" align="center">
-                                <td>KT5.3</td>
-                                <td>Lighting Power Density (LPD)</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT53_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV" name="markahKT53_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT53_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV_PUN" name="markahKT53_MMV_PUN" /></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT53_MMV_SEDIA" name="markahKT53_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Laporan pengambilan data mengikut spesifikasi</span><br>
-                                    <span> &#183; Lukisan siap bina</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-                            
-                            <!--KT6--><!--No input-->
-                            <tr class="pg-2" align="center">
-                                <td>KT6</td>
-                                <td>Sistem penyaman udara dan pengudaraan mekanikal (ACMV)</td>
-                                <td colspan="6"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    {{-- <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
-                                    <span> &#183; Bukti bergambar</span><br> --}}
-                                </td>
-                                <td colspan="5"></td>
-                                <td colspan="4">
-                                    {{-- <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form> --}}
-                                </td>
-                            </tr>
-
-                            <!--KT6.1-->
-                            <tr class="pg-2" align="center">
-                                <td>KT6.1</td>
-                                <td>Coefficient of Performance (COP)</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT61_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV" name="markahKT61_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT61_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV_PUN" name="markahKT61_MMV_PUN" /></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT61_MMV_SEDIA" name="markahKT61_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Laporan pengukuran dan verifikasi</span><br>
-                                    <span> &#183; Pengiraan COP</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT6.2-->
-                            <tr class="pg-2" align="center">
-                                <td>KT6.2</td>
-                                <td>Green Refrigerant</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT62_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV" name="markahKT62_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT62_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV_PUN" name="markahKT62_MMV_PUN" /></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT62_MMV_SEDIA" name="markahKT62_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Rekod penyenggaraan peralatan</span><br>
-                                    <span> &#183; Brosur pembekal</span><br>
-                                    <span> &#183; Rekod inventori</span>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT7-->
-                            <tr class="pg-2" align="center">
-                                <td>KT7</td>
-                                <td>Penyusupan udara</td>
-                                <td colspan="6"></td>
-                                <td>3</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT7_MR}}</td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV" name="markahKT7_MMV" /></td>
-                                <td>3</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT7_MR_PUN}}</td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV_PUN" name="markahKT7_MMV_PUN" /></td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT7_MMV_SEDIA" name="markahKT7_MMV_SEDIA" /></td>
-                                <td>
-                                    <span> &#183; Lukisan butiran</span><br>
-                                    <span> &#183; Lukisan siap bina</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT8-->
-                            <tr class="pg-2" align="center">
-                                <td>KT8</td>
-                                <td>Tenaga Boleh Baharu (TBB)</td>
-                                <td colspan="6"></td>
-                                <td>6</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT8_MR}}</td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV" name="markahKT8_MMV" /></td>
-                                <td>6</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT8_MR_PUN}}</td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV_PUN" name="markahKT8_MMV_PUN" /></td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT8_MMV_SEDIA" name="markahKT8_MMV_SEDIA" /></td>
-                                {{-- <td colspan="2">
-                                    <span>&#183; Mengemukakan lukisan rekabentuk sistem dan simulasi pengiraan
-                                        bagi anggaran tenaga baharu yang boleh dihasilkan oleh sistem tersebut</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Salinan lukisan siap bina dan laporan uji terima yang mematuhi kehendak rekabentuk</span><br>
-                                    <span> &#183; Pengiraan penjanaan tenaga boleh baharu berbanding jumlah penggunaan tenaga tahunan bangunan</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT9-->
-                            <tr class="pg-2" align="center">
-                                <td>KT9</td>
-                                <td>Prestasi Penggunaan Tenaga</td>
-                                <td colspan="6"></td>
-                                <td>10</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT9_MR}}</td>
-                                <td>10</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV" name="markahKT9_MMV" /></td>
-                                <td>10</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT9_MR_PUN}}</td>
-                                <td>10</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV_PUN" name="markahKT9_MMV_PUN" /></td>
-                                <td>10</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="10" autocapitalize="off" id="markahKT9_MMV_SEDIA" name="markahKT9_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Pengiraan semula berdasarkan bacaan meter</span><br>
-                                    <span> &#183; Bil elektrik 12 bulan (jika berkaitan)</span><br>
-                                    <span> &#183; Lukisan siap bina yang berkaitan</span>
-                                    <span> &#183; Pengiraan peratus pengurangan</span>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT10--><!--No input-->
-                            <tr class="pg-2" align="center">
-                                <td>KT10</td>
-                                <td>Paparan dan kawalan</td>
-                                <td colspan="6"></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    {{-- <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
-                                    <span> &#183; Bukti bergambar</span><br> --}}
-                                </td>
-                                <td colspan="5"></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT10.1-->
-                            <tr class="pg-2" align="center">
-                                <td>KT10.1</td>
-                                <td>Pemasangan sub-meter digital</td>
-                                <td colspan="6"></td>
-                                <td>6</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT101_MR}}</td>
-                                <td>6</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="6" autocapitalize="off" id="markahKT101_MMV" name="markahKT101_MMV" /></td>
-                                <td>5</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT101_MR_PUN}}</td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT101_MMV_PUN" name="markahKT101_MMV_PUN" /></td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT101_MMV_SEDIA" name="markahKT101_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Lukisan siap bina yang menunjukkan lokasi suis</span><br>
-                                    <span> &#183; Bukti bergambar</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT10.2-->
-                            <tr class="pg-2" align="center">
-                                <td>KT10.2</td>
-                                <td>Sistem Pengurusan Kawalan Tenaga</td>
-                                <td colspan="6"></td>
-                                <td>5</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT102_MR}}</td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV" name="markahKT102_MMV" /></td>
-                                <td>5</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT102_MR_PUN}}</td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV_PUN" name="markahKT102_MMV_PUN" /></td>
-                                <td>5</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="5" autocapitalize="off" id="markahKT102_MMV_SEDIA" name="markahKT102_MMV_SEDIA" /></td>
-                                <td>
-                                    <span> a &#41; Baru</span><br>
-                                    <span> &#183; Lukisan siap bina</span><br>
-                                    <span> &#183; Gambar rajah litar</span><br>
-                                    <span> &#183; Rekod Pengujian dan Pentauliahan</span><br>
-                                    <span> &#183; Sijil pengiktirafan MS ISO 50001</span><br>
-                                    <span> b &#41; Sedia ada</span><br>
-                                    <span> &#183; Lukisan siap bina</span><br>
-                                    <span> &#183; Gambar rajah litar</span><br>
-                                    <span> &#183; Laporan BEMS</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT10.3-->
-                            <tr class="pg-2" align="center">
-                                <td>KT10.3</td>
-                                <td>Verifikasi sistem paparan dan kawalan</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT103_MR}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV" name="markahKT103_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT103_MR_PUN}}</td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV_PUN" name="markahKT103_MMV_PUN" /></td>
-                                <td>1</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="1" autocapitalize="off" id="markahKT103_MMV_SEDIA" name="markahKT103_MMV_SEDIA" /></td>
-                                {{-- <td>
-                                    <span>&#183; Lukisan pelan lantai yang menunjukkan lokasi dan bilangan suis</span><br>
-                                    <span>&#183; Lukisan skematik rekabentuk pendawaian</span><br>
-                                </td> --}}
-                                <td>
-                                    <span> &#183; Senarai penggunaan tenaga berdasarkan bil elektrik bulanan</span><br>
-                                    <span> &#183; Laporan verifikasi dan pelan penambahbaikan</span><br>
-                                    <span> &#183; Manual Operasi dan Penyenggaraan</span>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--KT11-->
-                            <tr class="pg-2" align="center">
-                                <td>KT11</td>
-                                <td>Pengujian dan pentauliahan</td>
-                                <td colspan="6"></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT11_MR}}</td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV" name="markahKT11_MMV" /></td>
-                                <td>1</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahKT11_MR_PUN}}</td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV_PUN" name="markahKT11_MMV_PUN" /></td>
-                                <td>3</td>
-                                <td><input onblur="findTotalMV_TL()" class="sum_mv_tl" type="number" min="0" max="3" autocapitalize="off" id="markahKT11_MMV_SEDIA" name="markahKT11_MMV_SEDIA" /></td>
-                                {{-- <td colspan="2">
-                                    <span>&#183; Pelan pengujian dan pentauliahan</span><br>
-                                </td> --}}
-                                <td>
-                                    <span>&#183; Dokumen lengkap pengujian dan pentauliahan yang telah disahkan</span><br>
-                                </td>
-                                <td colspan="5"><textarea maxlength="255" rows="5" cols="5" class="form-control" placeholder="Ulasan/Maklumbalas"></textarea></td>
-                                <td colspan="4">
-                                    <form class="form">
-                                        <label for="form__input" class="form__label">
-                                            <input class="form__input" type="file" name="dokumenSokongan" id="form__input" value="{{$dokumen_sokongan ?? ''}}">
-                                            <img src="/assets/img/illustrations/Group9047.png" alt="Error" class="form__icon">
-                                            <span id="custom-text">No file chosen, yet.</span>
-                                        </label>
-                                    </form>
-                                </td>
-                            </tr>
-
-                            <!--JUMLAH MARKAHKT-->
-                            <tr class="pg-2" align="center">
-                                <td colspan="6">Jumlah markah KT</td>
-                                <td colspan="3">55</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR}}</td>
-                                <td>57</td>
-                                <td><input type="number" min="0" max="57" id="markahTOTAL_TL_MMV" name="markahTOTAL_TL_MMV"></td>
-                                <td>54</td>
-                                <td>{{$kriteria_phjkr_bangunan->markahTOTAL_TL_MR_PUN}}</td>
-                                <td>56</td>
-                                {{-- <td colspan="2"></td> --}}
-                                <td><input type="number" min="0" max="56" id="markahTOTAL_TL_MMV_PUN"></td>
-                                <td>48</td>
-                                <td><input type="number" min="0" max="48" id="markahTOTAL_TL_MMV_SEDIA" name="markahTOTAL_TL_MMV_SEDIA"></td>
-                                <td></td>
-                                <td></td>
-                            </tr> 
-                            
-                    </table>
-
+                        <!--JUMLAH MARKAHSB-->
+                        <tr class="pg-3" align="center">
+                            <td colspan="6">Jumlah markah SB</td>
+                            <td colspan="3">20</td>
+                            <td></td>
+                            <td>20</td>
+                            <td><input id="totalMMV_SB" type="number" min="0" max="20" id="markahTOTAL_SB_MMV" name="markahTOTAL_SB_MMV"></td>
+                        </tr>  
+            </table>
                 
                     <div class="mb-3 mt-3 text-center">
                         <button class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" 
@@ -942,5 +321,12 @@
                     findTotalMMV_IN();
                     findTotalMMV();
                 });
+                
+                // function peratusan_markah() {
+
+                //     var peratus = document.getElementById("totalMS").value;
+                //     // Method returns the element of num1 id
+                //     document.getElementById("peratus").value = (totalMS * 100) / 101 + "%";
+                //     }
             </script>
 @endsection

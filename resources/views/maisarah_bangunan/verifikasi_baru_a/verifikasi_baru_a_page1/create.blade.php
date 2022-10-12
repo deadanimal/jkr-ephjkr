@@ -24,7 +24,6 @@
                                     <th rowspan="3">Kriteria</th>
                                     <th rowspan="3" colspan="6">Kategori bangunan</th>
                                     <th colspan="4">Pembangunan Baru</th>
-                                    {{-- <th colspan="4">Pemuliharaan/ Ubahsuai/ Naiktaraf (PUN)</th> --}}
                                     <th rowspan="2">Dokumen Pembuktian</th>
                                     <th rowspan="3" colspan="5">Ulasan/Maklumbalas</th>
                                     <th rowspan="3" colspan="4">Muat Naik Dokumen Sokongan</th>
@@ -33,7 +32,6 @@
                 
                                 <tr class="pg-1" align="center" style="background-color:#EB5500">
                                     <th colspan="4">Markah</th>
-                                    {{-- <th colspan="4">Markah</th> --}}
                                 </tr>
                             
                                 <tr class="pg-1" align="center" style="background-color:#EB5500">
