@@ -147,6 +147,11 @@ class PenilaianRekaBentukJalanController extends Controller
         return view('modul.penilaian_reka_bentuk_jalan.penilai_reka_bentuk.index');
     }
 
+    public function penilai_reka_bentuk_1() 
+    {
+        return view('modul.penilaian_reka_bentuk_jalan.penilai_reka_bentuk.create');
+    }
+
     public function pengesahan_penilaian_jalan() 
     {
         return view('modul.penilaian_reka_bentuk_jalan.pengesahan_penilaian_jalan.index');

@@ -342,6 +342,7 @@ Route::middleware('auth')->group(function () {
     //store() and edit() later
     Route::get('/penilaian_reka_bentuk_jalan/penilai_jalan', [PenilaianRekaBentukJalanController::class, 'penilai_jalan']);
     Route::get('/penilaian_reka_bentuk_jalan/penilai_reka_bentuk', [PenilaianRekaBentukJalanController::class, 'penilai_reka_bentuk']);
+    Route::get('/penilaian_reka_bentuk_jalan/penilai_reka_bentuk1', [PenilaianRekaBentukJalanController::class, 'penilai_reka_bentuk_1']);
     //penilai_reka_bentuk edit() method
     Route::get('/penilaian_reka_bentuk_jalan/pengesahan_penilaian_jalan', [PenilaianRekaBentukJalanController::class, 'pengesahan_penilaian_jalan']);
     Route::get('/penilaian_reka_bentuk_jalan/jana_keputusan_jalan', [PenilaianRekaBentukJalanController::class, 'jana_keputusan_jalan']);

@@ -162,7 +162,7 @@
                         <input class="form-control" name="tarikh" type="date"/>
                     </div> --}}
 
-                    <div class="col-3 mb-2">
+                    {{-- <div class="col-3 mb-2">
                         <label class="col-form-label">Jenis Kategori:</label>
                     </div>
                     <div class="col-7 mb-2">
@@ -173,7 +173,57 @@
                             <option value="GPSS Bangunan">GPSS Bangunan</option>
                             <option value="GPSS Jalan">GPSS Jalan</option>
                         </select>
+                    </div> --}}
+
+                    <div class="col-3 mb-2">
+                        <label class="col-form-label">Jenis Kategori:</label>
                     </div>
+                    <div class="col-7 mb-2">
+                        <div class="d-grid gap-2">
+                            <div class="btn-group">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">Sila pilih</button>
+                                <div class="dropdown-menu py-0">
+                                    <div class="col-15 mb-2">
+                                        <select class="form-select" aria-label="Default select example" name="jenisKategoriProjek">
+                                            <option selected disabled="">GPSS Bangunan</option>
+                                            <option value="phJKR Bangunan">category building 1</option>
+                                            <option value="phJKR Jalan">category building 2</option>
+                                            <option value="GPSS Bangunan">category building 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-15 mb-2">
+                                        <select class="form-select" aria-label="Default select example" name="jenisKategoriProjek">
+                                            <option selected disabled="">GPSS Jalan</option>
+                                            <option value="phJKR Bangunan">building road</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="col-15 mb-2">
+                                        <select class="form-select" aria-label="Default select example" name="jenisKategoriProjek">
+                                            <option selected disabled="">ePHJKR Bangunan</option>
+                                            <option value="phJKR Bangunan">Baru</option>
+                                            <option value="phJKR Jalan">sedia ada</option>
+                                            <option value="GPSS Bangunan">PUN</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="col-15 mb-2">
+                                        <select class="form-select" aria-label="Default select example" name="jenisKategoriProjek">
+                                            <option selected disabled="">ePHJKR Jalan</option>
+                                            <option value="phJKR Bangunan">New Road</option>
+                                            <option value="phJKR Jalan">Upgrading Road</option>
+                                            
+                                        </select>
+                                    </div>
+                              </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+
+                    
 
                     <div class="col-3 mb-2">
                         <label class="col-form-label">Nama Ahli Pasukan:</label>
